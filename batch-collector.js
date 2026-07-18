@@ -9,7 +9,7 @@ const KRX_LOGIN_PASSWORD = process.env.KRX_LOGIN_PASSWORD;
 
 const krxApi = axios.create({
   baseURL: 'http://data.krx.co.kr/comm/api',
-  headers: { 'authorization': `Bearer ${KRX_API_KEY}`, timeout: 180000 }  // 180초
+  headers: { 'authorization': `Bearer ${KRX_API_KEY}`, timeout: 300000 }
 });
 
 function getTodayDate() {
@@ -20,96 +20,235 @@ function getTodayDate() {
   return `${year}${month}${day}`;
 }
 
-// KRX 로그인 (재시도 5회, 극도로 여유로운 timeout)
-async function loginKRX(page) {
-  console.log('🔐 KRX 로그인 중...');
-  
-  for (let attempt = 1; attempt <= 5; attempt++) {
-    try {
-      console.log(`  시도 ${attempt}/5...`);
-      
-      // 페이지 로드 timeout 180초 (3분)
-      console.log(`    📄 페이지 로드 중 (180초 대기)...`);
-      await page.goto('https://data.krx.co.kr/', { 
-        waitUntil: 'networkidle', 
-        timeout: 180000
-      });
-      console.log(`    ✓ 페이지 로드 완료`);
-      
-      await page.waitForTimeout(8000);
+const wait = milliseconds =>
+  new Promise(resolve =>
+    setTimeout(resolve, milliseconds)
+  );
 
-      // 로그인 링크 찾기 timeout 120초 (2분)
-      console.log(`    🔗 로그인 링크 찾는 중 (120초 대기)...`);
-      const loginLink = page.locator('a[href*="/contents/MDC/COMS/client/MDCCOMS001.cmd"]').first();
-      await loginLink.waitFor({ state: 'visible', timeout: 120000 });
-      console.log(`    ✓ 로그인 링크 발견`);
-      
-      await loginLink.click();
-      await page.waitForTimeout(8000);
+// 메인 페이지와 모든 iframe에서 로그인 입력창 탐색
+async function findLoginFrame(page) {
+  for (let attempt = 0; attempt < 30; attempt += 1) {
+    const frames = page.frames();
 
-      // iframe에서 로그인 입력창 찾기 timeout 120초 (2분)
-      console.log(`    📝 로그인 입력창 찾는 중 (120초 대기)...`);
-      const frames = page.frames();
-      let loginFrame = null;
-      let frameAttempts = 0;
-      
-      for (let i = 0; i < 60; i++) {  // 60회 시도 (각 2초 = 120초)
-        frameAttempts++;
-        for (const frame of frames) {
-          try {
-            const idInput = frame.locator('input[name="mbrId"]').first();
-            // 각 input 요소 timeout 5초
-            if (await idInput.isVisible({ timeout: 5000 }).catch(() => false)) {
-              loginFrame = frame;
-              console.log(`    ✓ 로그인 입력창 발견 (시도 ${frameAttempts})`);
-              break;
-            }
-          } catch (e) {}
-        }
-        if (loginFrame) break;
-        if (i % 10 === 0 && i > 0) console.log(`    ⏳ ${i * 2}초 경과...`);
-        await page.waitForTimeout(2000);
-      }
+    for (const frame of frames) {
+      const idInput = frame
+        .locator(
+          'input[name="mbrId"], ' +
+          'input[id*="mbrId"], ' +
+          'input[placeholder*="아이디"]'
+        )
+        .first();
 
-      if (!loginFrame) throw new Error('로그인 입력창 찾지 못함');
+      const visible = await idInput
+        .isVisible({
+          timeout: 300
+        })
+        .catch(() => false);
 
-      // 로그인 정보 입력
-      console.log(`    ✓ 로그인 정보 입력 중...`);
-      await loginFrame.locator('input[name="mbrId"]').fill(KRX_LOGIN_ID);
-      await page.waitForTimeout(2000);
-      
-      await loginFrame.locator('input[name="pw"]').fill(KRX_LOGIN_PASSWORD);
-      await page.waitForTimeout(2000);
-      
-      // 로그인 버튼 클릭 timeout 60초
-      console.log(`    🔘 로그인 버튼 찾는 중 (60초 대기)...`);
-      const submitBtn = loginFrame.locator('button[type="submit"]').first();
-      await submitBtn.waitFor({ state: 'visible', timeout: 60000 });
-      await submitBtn.click();
-
-      // 로그인 완료 대기 timeout 20초
-      console.log(`    ⏳ 로그인 처리 중 (20초 대기)...`);
-      await page.waitForTimeout(20000);
-      
-      console.log('✅ 로그인 완료');
-      return true;
-
-    } catch (error) {
-      console.error(`  ❌ 시도 ${attempt} 실패:`, error.message);
-      if (attempt < 5) {
-        console.log(`  ⏳ 10초 후 재시도...`);
-        await page.waitForTimeout(10000);
+      if (visible) {
+        return frame;
       }
     }
+
+    await wait(500);
   }
 
-  return false;
+  return null;
 }
 
-// ETF 목록 조회 (timeout 180초)
+// KRX 로그인 (이전 작동했던 코드)
+async function loginKRX(page) {
+  let browser;
+
+  try {
+    if (!KRX_LOGIN_ID || !KRX_LOGIN_PASSWORD) {
+      throw new Error(
+        '.env에 KRX_LOGIN_ID와 KRX_LOGIN_PASSWORD가 없습니다.'
+      );
+    }
+
+    console.log('🚀 KRX 자동 로그인 시작...\n');
+
+    console.log(
+      '📍 1단계: KRX 메인 페이지 로드...'
+    );
+
+    await page.goto(
+      'https://data.krx.co.kr/',
+      {
+        waitUntil: 'domcontentloaded',
+        timeout: 30000
+      }
+    );
+
+    await page.waitForTimeout(2500);
+
+    console.log(
+      '📍 2단계: 로그인 링크 클릭...'
+    );
+
+    const loginLink = page
+      .locator(
+        'a[href*="/contents/MDC/COMS/client/MDCCOMS001.cmd"]'
+      )
+      .first();
+
+    await loginLink.waitFor({
+      state: 'visible',
+      timeout: 15000
+    });
+
+    await loginLink.click();
+
+    await page.waitForTimeout(3000);
+
+    console.log(
+      `  페이지 URL: ${page.url()}`
+    );
+
+    console.log(
+      '📍 3단계: 로그인 입력 화면 탐색...'
+    );
+
+    const loginFrame = await findLoginFrame(
+      page
+    );
+
+    if (!loginFrame) {
+      await page.screenshot({
+        path: 'login-form-error.png',
+        fullPage: true
+      });
+
+      throw new Error(
+        '메인 페이지와 iframe에서 ID 입력창을 찾지 못했습니다.'
+      );
+    }
+
+    console.log(
+      `✓ 로그인 입력 화면 발견: ${loginFrame.url()}`
+    );
+
+    const idInput = loginFrame
+      .locator(
+        'input[name="mbrId"], ' +
+        'input[id*="mbrId"], ' +
+        'input[placeholder*="아이디"]'
+      )
+      .first();
+
+    const passwordInput = loginFrame
+      .locator(
+        'input[name="pw"], ' +
+        'input[type="password"], ' +
+        'input[placeholder*="비밀번호"]'
+      )
+      .first();
+
+    console.log('📍 4단계: ID 입력...');
+
+    await idInput.waitFor({
+      state: 'visible',
+      timeout: 10000
+    });
+
+    await idInput.click();
+    await idInput.fill(KRX_LOGIN_ID);
+
+    console.log('✓ ID 입력 완료');
+
+    console.log(
+      '📍 5단계: 비밀번호 입력...'
+    );
+
+    await passwordInput.waitFor({
+      state: 'visible',
+      timeout: 10000
+    });
+
+    await passwordInput.click();
+    await passwordInput.fill(
+      KRX_LOGIN_PASSWORD
+    );
+
+    const passwordLength = (
+      await passwordInput.inputValue()
+    ).length;
+
+    if (passwordLength === 0) {
+      throw new Error(
+        '비밀번호가 입력되지 않았습니다.'
+      );
+    }
+
+    console.log(
+      `✓ 비밀번호 입력 완료 (${passwordLength}자)`
+    );
+
+    console.log(
+      '📍 6단계: 화면 가운데 로그인 버튼 클릭...'
+    );
+
+    const loginButton = loginFrame
+      .locator(
+        'button[type="submit"], ' +
+        'button:has-text("로그인"), ' +
+        'a:has-text("로그인")'
+      )
+      .filter({
+        visible: true
+      })
+      .first();
+
+    const buttonVisible = await loginButton
+      .isVisible({
+        timeout: 5000
+      })
+      .catch(() => false);
+
+    if (buttonVisible) {
+      await loginButton.click();
+    } else {
+      await passwordInput.press('Enter');
+    }
+
+    console.log(
+      '📍 7단계: 로그인 완료 대기...'
+    );
+
+    await page.waitForTimeout(7000);
+
+    // 로그인 입력창이 계속 보이면 로그인 실패
+    const remainingLoginFrame =
+      await findLoginFrame(page);
+
+    if (remainingLoginFrame) {
+      await page.screenshot({
+        path: 'login-failed.png',
+        fullPage: true
+      });
+
+      throw new Error(
+        '로그인 화면이 그대로 남아 있습니다. ID와 비밀번호를 확인하세요.'
+      );
+    }
+
+    console.log('✅ KRX 로그인 완료!\n');
+    return true;
+
+  } catch (error) {
+    console.error(
+      '\n❌ 자동 로그인 실패:',
+      error.message
+    );
+    return false;
+  }
+}
+
+// ETF 목록 조회
 async function getETFList() {
   try {
-    console.log('📊 KRX에서 ETF 목록 조회 중 (180초 대기)...');
+    console.log('📊 KRX에서 ETF 목록 조회 중...');
     
     const response = await krxApi.get('/etfInvstGuideDtl', {
       params: { isuCd: '', pageNumber: 1, pageSize: 500 },
@@ -142,7 +281,7 @@ function getDefaultETFList() {
   ];
 }
 
-// ETF 시세 조회 (timeout 120초)
+// ETF 시세 조회
 async function getETFPrice(etfCode) {
   try {
     const response = await krxApi.get('/staticsData/equityPrice', {
@@ -156,7 +295,7 @@ async function getETFPrice(etfCode) {
         code: etfCode,
         price: parseFloat(data.TrdPrc),
         priceChange: parseFloat(data.TrdPrcChg),
-        priceChangeChangePercent: parseFloat(data.TrdPrcRtChg)
+        priceChangePercent: parseFloat(data.TrdPrcRtChg)
       };
     }
     return null;
@@ -197,7 +336,7 @@ function calculateContribution(weight, stockReturn) {
 
 // 메인 배치
 async function main() {
-  console.log('🚀 배치 수집 시작 (극도로 여유로운 timeout)\n');
+  console.log('🚀 배치 수집 시작\n');
 
   let browser;
   const today = getTodayDate();
@@ -208,29 +347,22 @@ async function main() {
       throw new Error('환경변수 누락: KRX_API_KEY, KRX_LOGIN_ID, KRX_LOGIN_PASSWORD');
     }
 
-    // 브라우저 시작
-    console.log('🌐 Playwright 브라우서 시작 (300초 대기)...');
+    console.log('🌐 Playwright 브라우저 시작...');
     browser = await chromium.launch({
       headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu'],
-      timeout: 300000  // 300초 (5분)
+      args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu']
     });
     console.log('✓ 브라우저 시작 완료\n');
 
-    const context = await browser.newContext({ timeout: 300000 });
-    const page = await context.newPage({ timeout: 300000 });
+    const context = await browser.newContext();
+    const page = await context.newPage();
 
-    // 로그인 (재시도 5회)
     if (!await loginKRX(page)) {
-      throw new Error('KRX 로그인 실패 (5회 재시도 모두 실패)');
+      throw new Error('KRX 로그인 실패');
     }
 
-    console.log('');
-
-    // ETF 목록 조회
     const etfList = await getETFList();
 
-    // 각 ETF 데이터 수집
     console.log('📊 ETF 데이터 수집 중...\n');
     
     for (let i = 0; i < etfList.length; i++) {
@@ -238,15 +370,13 @@ async function main() {
       console.log(`[${i + 1}/${etfList.length}] 📊 ${etf.name} (${etf.code})`);
 
       try {
-        // 시세 조회 (3회 재시도, 각 120초)
         let priceData = null;
         for (let attempt = 1; attempt <= 3; attempt++) {
-          console.log(`      시도 ${attempt}/3 (120초 대기)...`);
           priceData = await getETFPrice(etf.code);
           if (priceData) break;
           if (attempt < 3) {
-            console.log(`      ⏳ 10초 후 재시도...`);
-            await new Promise(resolve => setTimeout(resolve, 10000));
+            console.log(`      ⏳ 5초 후 재시도...`);
+            await new Promise(resolve => setTimeout(resolve, 5000));
           }
         }
 
@@ -255,7 +385,6 @@ async function main() {
           continue;
         }
 
-        // PDF 구성 데이터 조회
         const components = await getETFCompositionFromPDF(page, etf.code, etf.name);
         const componentsWithContribution = components.map(comp => ({
           ...comp,
@@ -268,7 +397,7 @@ async function main() {
             name: etf.name,
             marketPrice: priceData.price,
             priceChange: priceData.priceChange,
-            priceChangePercent: priceData.priceChangeChangePercent
+            priceChangePercent: priceData.priceChangePercent
           },
           components: componentsWithContribution,
           summary: {
@@ -285,11 +414,9 @@ async function main() {
         console.error(`   ❌ 오류:`, error.message);
       }
 
-      // 다음 ETF 전까지 2초 대기
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      await new Promise(resolve => setTimeout(resolve, 1000));
     }
 
-    // 결과 저장
     const filePath = 'etf-data.json';
     fs.writeFileSync(filePath, JSON.stringify(results, null, 2), 'utf-8');
 
