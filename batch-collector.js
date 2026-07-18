@@ -91,7 +91,7 @@ async function main() {
   console.log('🚀 배치 수집 시작\n');
 
   const today = getTodayDate();
-  const results = {};
+  let results = {};
 
   try {
     if (!KRX_API_KEY) {
@@ -107,7 +107,7 @@ async function main() {
       console.log(`[${i + 1}/${etfList.length}] 📊 ${etf.name} (${etf.code})`);
 
       try {
-        const priceData = await getETFPrice(etf.code);
+        let priceData = await getETFPrice(etf.code);
         
         if (!priceData) {
           console.log(`   ⚠️  시세 조회 실패, 모의 데이터 사용`);
