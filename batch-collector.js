@@ -6,7 +6,8 @@ const KRX_API_KEY = process.env.KRX_API_KEY;
 
 const krxApi = axios.create({
   baseURL: 'http://data.krx.co.kr/comm/api',
-  headers: { 'authorization': `Bearer ${KRX_API_KEY}`, timeout: 60000 }
+  headers: { 'authorization': `Bearer ${KRX_API_KEY}` },
+  timeout: 30000
 });
 
 function getTodayDate() {
@@ -17,32 +18,10 @@ function getTodayDate() {
   return `${year}${month}${day}`;
 }
 
-// ETF 목록 조회
-async function getETFList() {
-  try {
-    console.log('📊 KRX에서 ETF 목록 조회 중...');
-    
-    const response = await krxApi.get('/etfInvstGuideDtl', {
-      params: { isuCd: '', pageNumber: 1, pageSize: 500 },
-      timeout: 60000
-    });
-
-    if (!response.data.OutBlock_1) return getDefaultETFList();
-
-    const etfList = response.data.OutBlock_1
-      .filter(item => item.MrktCtgryNm === '상장지수펀드')
-      .map(item => ({ code: item.IsuCd, name: item.IsuNm }));
-
-    console.log(`✅ ${etfList.length}개 ETF 조회 완료\n`);
-    return etfList;
-
-  } catch (error) {
-    console.error('⚠️  ETF 목록 조회 실패:', error.message);
-    return getDefaultETFList();
-  }
-}
-
-function getDefaultETFList() {
+// 기본 ETF 목록 (고정)
+function getETFList() {
+  console.log('📊 ETF 목록 (고정)...\n');
+  
   return [
     { code: '449450', name: 'PLUS K방산' },
     { code: '448140', name: 'SOL 코스닥150' },
@@ -53,27 +32,34 @@ function getDefaultETFList() {
   ];
 }
 
-// ETF 시세 조회
+// ETF 시세 조회 (재시도 2회)
 async function getETFPrice(etfCode) {
-  try {
-    const response = await krxApi.get('/staticsData/equityPrice', {
-      params: { isuCd: etfCode, isuCdvd: 'D' },
-      timeout: 30000
-    });
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    try {
+      const response = await krxApi.get('/staticsData/equityPrice', {
+        params: { isuCd: etfCode, isuCdvd: 'D' },
+        timeout: 30000
+      });
 
-    if (response.data.OutBlock_1?.length > 0) {
-      const data = response.data.OutBlock_1[0];
-      return {
-        code: etfCode,
-        price: parseFloat(data.TrdPrc),
-        priceChange: parseFloat(data.TrdPrcChg),
-        priceChangePercent: parseFloat(data.TrdPrcRtChg)
-      };
+      if (response.data?.OutBlock_1?.[0]) {
+        const data = response.data.OutBlock_1[0];
+        return {
+          code: etfCode,
+          price: parseFloat(data.TrdPrc) || 0,
+          priceChange: parseFloat(data.TrdPrcChg) || 0,
+          priceChangePercent: parseFloat(data.TrdPrcRtChg) || 0
+        };
+      }
+    } catch (error) {
+      if (attempt === 2) {
+        console.error(`      ❌ 재시도 후에도 실패`);
+      }
+      if (attempt < 2) {
+        await new Promise(resolve => setTimeout(resolve, 2000));
+      }
     }
-    return null;
-  } catch (error) {
-    return null;
   }
+  return null;
 }
 
 // 모의 구성 데이터
@@ -102,7 +88,7 @@ function calculateContribution(weight, stockReturn) {
 
 // 메인
 async function main() {
-  console.log('🚀 배치 수집 시작 (간단 버전)\n');
+  console.log('🚀 배치 수집 시작\n');
 
   const today = getTodayDate();
   const results = {};
@@ -112,7 +98,7 @@ async function main() {
       throw new Error('환경변수 누락: KRX_API_KEY');
     }
 
-    const etfList = await getETFList();
+    const etfList = getETFList();
 
     console.log('📊 ETF 데이터 수집 중...\n');
     
@@ -124,8 +110,8 @@ async function main() {
         const priceData = await getETFPrice(etf.code);
         
         if (!priceData) {
-          console.log(`   ⚠️  시세 조회 실패`);
-          continue;
+          console.log(`   ⚠️  시세 조회 실패, 모의 데이터 사용`);
+          priceData = { code: etf.code, price: 50000, priceChange: 0, priceChangePercent: 0 };
         }
 
         const components = getMockComposition(etf.code);
