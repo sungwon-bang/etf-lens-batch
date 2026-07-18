@@ -31,7 +31,7 @@ jobs:
           KRX_API_KEY: ${{ secrets.KRX_API_KEY }}
           KRX_LOGIN_ID: ${{ secrets.KRX_LOGIN_ID }}
           KRX_LOGIN_PASSWORD: ${{ secrets.KRX_LOGIN_PASSWORD }}
-        run: node batch-collector-github-actions.js
+        run: node batch-collector.js
 
       - name: 변경사항 커밋 & 푸시
         run: |
