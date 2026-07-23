@@ -5,6 +5,13 @@ on:
     # GitHub 예약 실행은 지연될 수 있어 11:30 KST에 요청한다.
     - cron: '30 2 * * *'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'batch-collector.js'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/batch-collect-with-playwright.yml'
 
 permissions:
   contents: write
