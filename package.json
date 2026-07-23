@@ -1,14 +1,13 @@
 {
   "name": "etf-lens-batch",
   "version": "1.0.0",
-  "description": "ETF 배치 수집 시스템",
-  "main": "batch-collector.js",
+  "description": "요청 기반 KRX ETF PDF 구성종목 수집기",
+  "main": "krx-worker.js",
   "scripts": {
-    "collect": "node batch-collector.js",
+    "collect": "node krx-worker.js",
     "start": "npm run collect"
   },
-  "keywords": ["etf", "krx", "batch"],
-  "author": "",
+  "keywords": ["etf", "krx", "pdf", "playwright"],
   "license": "MIT",
   "dependencies": {
     "axios": "^1.6.0",
