@@ -2,9 +2,9 @@
   "name": "etf-lens-batch",
   "version": "1.0.0",
   "description": "ETF 배치 수집 시스템",
-  "main": "batch-collector-github-actions.js",
+  "main": "batch-collector.js",
   "scripts": {
-    "collect": "node batch-collector-github-actions.js",
+    "collect": "node batch-collector.js",
     "start": "npm run collect"
   },
   "keywords": ["etf", "krx", "batch"],
