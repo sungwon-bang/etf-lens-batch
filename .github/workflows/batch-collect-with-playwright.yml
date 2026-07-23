@@ -1,9 +1,9 @@
-name: ETF 정오 배치 수집
+name: ETF PDF 야간 배치 수집
 
 on:
   schedule:
-    # GitHub 예약 실행은 지연될 수 있어 11:30 KST에 요청한다.
-    - cron: '30 2 * * *'
+    # 매일 23:30 KST = 14:30 UTC. GitHub 예약 실행은 혼잡 시 지연될 수 있다.
+    - cron: '30 14 * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -37,9 +37,11 @@ jobs:
       - name: 의존성 설치
         run: npm ci
 
-      - name: KRX 전체 ETF 데이터 수집
+      - name: 배치 수집기 실행
         env:
           KRX_API_KEY: ${{ secrets.KRX_API_KEY }}
+          KRX_LOGIN_ID: ${{ secrets.KRX_LOGIN_ID }}
+          KRX_LOGIN_PASSWORD: ${{ secrets.KRX_LOGIN_PASSWORD }}
         run: npm run collect
 
       - name: 변경사항 커밋 & 푸시
