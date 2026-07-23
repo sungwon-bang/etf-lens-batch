@@ -1,163 +1,121 @@
 const axios = require('axios');
 const fs = require('fs');
+const path = require('path');
 require('dotenv').config();
 
 const KRX_API_KEY = process.env.KRX_API_KEY;
+const OUTPUT_PATH = path.join(__dirname, 'etf-data.json');
+const KRX_TIME_ZONE = 'Asia/Seoul';
+const MAX_LOOKBACK_DAYS = 14;
 
 const krxApi = axios.create({
-  baseURL: 'http://data.krx.co.kr/comm/api',
-  headers: { 'authorization': `Bearer ${KRX_API_KEY}` },
-  timeout: 30000
+  baseURL: 'https://data-dbg.krx.co.kr/svc/apis',
+  headers: { AUTH_KEY: KRX_API_KEY },
+  timeout: 60_000
 });
 
-function getTodayDate() {
-  const today = new Date();
-  const year = today.getFullYear();
-  const month = String(today.getMonth() + 1).padStart(2, '0');
-  const day = String(today.getDate()).padStart(2, '0');
-  return `${year}${month}${day}`;
+function formatKrxDate(date) {
+  return new Intl.DateTimeFormat('en-CA', {
+    timeZone: KRX_TIME_ZONE,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).format(date).replaceAll('-', '');
 }
 
-// 기본 ETF 목록 (고정)
-function getETFList() {
-  console.log('📊 ETF 목록 (고정)...\n');
-  
-  return [
-    { code: '449450', name: 'PLUS K방산' },
-    { code: '448140', name: 'SOL 코스닥150' },
-    { code: '405060', name: 'TIGER 200' },
-    { code: '102110', name: 'TIGER 200' },
-    { code: '102780', name: 'KODEX 200' },
-    { code: '139290', name: 'KODEX 반도체' }
-  ];
+function dateDaysAgo(days) {
+  return new Date(Date.now() - days * 24 * 60 * 60 * 1000);
 }
 
-// ETF 시세 조회 (재시도 2회)
-async function getETFPrice(etfCode) {
-  for (let attempt = 1; attempt <= 2; attempt++) {
-    try {
-      const response = await krxApi.get('/staticsData/equityPrice', {
-        params: { isuCd: etfCode, isuCdvd: 'D' },
-        timeout: 30000
-      });
+function number(value) {
+  const parsed = Number(String(value ?? '').replaceAll(',', ''));
+  return Number.isFinite(parsed) ? parsed : 0;
+}
 
-      if (response.data?.OutBlock_1?.[0]) {
-        const data = response.data.OutBlock_1[0];
-        return {
-          code: etfCode,
-          price: parseFloat(data.TrdPrc) || 0,
-          priceChange: parseFloat(data.TrdPrcChg) || 0,
-          priceChangePercent: parseFloat(data.TrdPrcRtChg) || 0
-        };
-      }
-    } catch (error) {
-      if (attempt === 2) {
-        console.error(`      ❌ 재시도 후에도 실패`);
-      }
-      if (attempt < 2) {
-        await new Promise(resolve => setTimeout(resolve, 2000));
-      }
+async function fetchLatestEtfMarket() {
+  for (let daysAgo = 0; daysAgo <= MAX_LOOKBACK_DAYS; daysAgo += 1) {
+    const basDd = formatKrxDate(dateDaysAgo(daysAgo));
+    const response = await krxApi.get('/etp/etf_bydd_trd', {
+      params: { basDd }
+    });
+    const rows = response.data?.OutBlock_1;
+
+    if (Array.isArray(rows) && rows.length > 0) {
+      return { basDd, rows };
     }
+
+    console.log(`거래 데이터 없음: ${basDd}`);
   }
-  return null;
+
+  throw new Error(`최근 ${MAX_LOOKBACK_DAYS}일 내 ETF 일별매매정보가 없습니다.`);
 }
 
-// 모의 구성 데이터
-function getMockComposition(etfCode) {
-  const mockData = {
-    '449450': [
-      { code: '012450', name: '한화에어로스페이스', weight: 20.68, stockReturn: 1.51 },
-      { code: '042660', name: 'LG화학', weight: 15.30, stockReturn: 0.85 },
-      { code: '000660', name: 'SK하이닉스', weight: 12.45, stockReturn: 2.10 }
-    ],
-    '448140': [
-      { code: '005930', name: '삼성전자', weight: 25.00, stockReturn: 1.20 },
-      { code: '000270', name: 'KIA', weight: 18.50, stockReturn: 0.95 }
-    ],
-    '405060': [
-      { code: '005940', name: '삼성전기', weight: 22.10, stockReturn: 1.10 },
-      { code: '000810', name: '삼성화재', weight: 16.80, stockReturn: 0.92 }
-    ]
-  };
-  return mockData[etfCode] || [];
-}
-
-function calculateContribution(weight, stockReturn) {
-  return (weight / 100) * stockReturn;
-}
-
-// 메인
-async function main() {
-  console.log('🚀 배치 수집 시작\n');
-
-  const today = getTodayDate();
-  let results = {};
-
+function readPreviousData() {
   try {
-    if (!KRX_API_KEY) {
-      throw new Error('환경변수 누락: KRX_API_KEY');
-    }
-
-    const etfList = getETFList();
-
-    console.log('📊 ETF 데이터 수집 중...\n');
-    
-    for (let i = 0; i < etfList.length; i++) {
-      const etf = etfList[i];
-      console.log(`[${i + 1}/${etfList.length}] 📊 ${etf.name} (${etf.code})`);
-
-      try {
-        let priceData = await getETFPrice(etf.code);
-        
-        if (!priceData) {
-          console.log(`   ⚠️  시세 조회 실패, 모의 데이터 사용`);
-          priceData = { code: etf.code, price: 50000, priceChange: 0, priceChangePercent: 0 };
-        }
-
-        const components = getMockComposition(etf.code);
-        const componentsWithContribution = components.map(comp => ({
-          ...comp,
-          contribution: calculateContribution(comp.weight, comp.stockReturn)
-        }));
-
-        results[etf.code] = {
-          etf: {
-            code: etf.code,
-            name: etf.name,
-            marketPrice: priceData.price,
-            priceChange: priceData.priceChange,
-            priceChangePercent: priceData.priceChangePercent
-          },
-          components: componentsWithContribution,
-          summary: {
-            totalComponents: components.length,
-            totalContribution: componentsWithContribution.reduce((sum, c) => sum + c.contribution, 0)
-          },
-          date: today,
-          timestamp: new Date().toISOString()
-        };
-
-        console.log(`   ✅ 완료`);
-
-      } catch (error) {
-        console.error(`   ❌ 오류:`, error.message);
-      }
-
-      await new Promise(resolve => setTimeout(resolve, 500));
-    }
-
-    const filePath = 'etf-data.json';
-    fs.writeFileSync(filePath, JSON.stringify(results, null, 2), 'utf-8');
-
-    console.log(`\n✅ 데이터 저장 완료: ${filePath}`);
-    console.log(`📊 ${Object.keys(results).length}개 ETF 수집됨\n`);
-
-    process.exit(0);
-
-  } catch (error) {
-    console.error('\n❌ 배치 실패:', error.message);
-    process.exit(1);
+    return JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf8'));
+  } catch {
+    return {};
   }
 }
 
-main();
+function buildResults(rows, basDd, previousData) {
+  const timestamp = new Date().toISOString();
+
+  return Object.fromEntries(rows.map((row) => {
+    const code = String(row.ISU_CD ?? '').trim().toUpperCase();
+    if (!/^[0-9A-Z]{6}$/.test(code)) {
+      throw new Error(`올바르지 않은 ETF 종목코드: ${code || '(빈 값)'}`);
+    }
+
+    const previous = previousData[code] ?? {};
+    const components = Array.isArray(previous.components) ? previous.components : [];
+    const hasSameDateComponents = previous.date === basDd && components.length > 0;
+
+    return [code, {
+      etf: {
+        code,
+        name: String(row.ISU_NM ?? '').trim(),
+        marketPrice: number(row.TDD_CLSPRC),
+        priceChange: number(row.CMPPREVDD_PRC),
+        priceChangePercent: number(row.FLUC_RT),
+        nav: number(row.NAV),
+        marketCap: number(row.MKTCAP)
+      },
+      // PDF 구성종목은 별도 로그인 수집 결과가 같은 기준일일 때만 유지한다.
+      components: hasSameDateComponents ? components : [],
+      summary: {
+        totalComponents: hasSameDateComponents ? components.length : 0,
+        totalContribution: hasSameDateComponents
+          ? components.reduce((sum, item) => sum + number(item.contribution), 0)
+          : 0,
+        compositionStatus: hasSameDateComponents ? 'collected' : 'pending'
+      },
+      date: basDd,
+      timestamp
+    }];
+  }));
+}
+
+async function main() {
+  if (!KRX_API_KEY) {
+    throw new Error('환경변수 KRX_API_KEY가 없습니다.');
+  }
+
+  console.log('KRX 전체 ETF 일별매매정보 수집 시작');
+  const previousData = readPreviousData();
+  const { basDd, rows } = await fetchLatestEtfMarket();
+  const results = buildResults(rows, basDd, previousData);
+  const count = Object.keys(results).length;
+
+  if (count === 0) {
+    throw new Error('수집 결과가 0건이므로 기존 파일을 덮어쓰지 않습니다.');
+  }
+
+  fs.writeFileSync(OUTPUT_PATH, `${JSON.stringify(results, null, 2)}\n`, 'utf8');
+  console.log(`수집 완료: 기준일 ${basDd}, ETF ${count}개`);
+}
+
+main().catch((error) => {
+  console.error('배치 실패:', error.response?.data ?? error.message);
+  process.exitCode = 1;
+});
