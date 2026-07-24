@@ -1,6 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 
+const COMPOSITION_MENU_ID = 'MDC0201030108';
+const COMPOSITION_URL =
+  `https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=${COMPOSITION_MENU_ID}`;
+
 function csvRows(text) {
   return text.split(/\r?\n/).filter(Boolean).map((line) => {
     const values = [];
@@ -52,20 +56,25 @@ function parseCsv(file) {
 async function downloadComposition(context, { code, date }) {
   const page = await context.newPage();
   try {
-    await page.goto('https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201', {
+    await page.goto(COMPOSITION_URL, {
       waitUntil: 'domcontentloaded',
       timeout: 60_000,
     });
-    for (const menuId of ['MDC0201020000', 'MDC0201020100', 'MDC0201030108']) {
-      await page.evaluate((id) => document.querySelector(`[data-menu-id="${id}"]`)?.click(), menuId);
-      await page.waitForTimeout(menuId === 'MDC0201030108' ? 2_500 : 500);
-    }
-    await page.locator('#btnisuCd_finder_secuprodisu1_0').click({ timeout: 15_000 });
-    const search = page.locator('#searchText__finder_secuprodisu1_0');
+    const finderButton = page.locator(
+      '[id^="btnisuCd_finder_secuprodisu1_"]:visible',
+    ).first();
+    await finderButton.waitFor({ state: 'visible', timeout: 30_000 });
+    await finderButton.click();
+
+    const search = page.locator(
+      '[id^="searchText__finder_secuprodisu1_"]:visible',
+    ).first();
+    await search.waitFor({ state: 'visible', timeout: 15_000 });
     await search.fill(code);
     await search.press('Enter');
     await page.waitForTimeout(1_500);
-    const result = page.getByText(code, { exact: false }).last();
+    const finderLayer = page.locator('[id^="jsLayer_finder_secuprodisu1_"]:visible').last();
+    const result = finderLayer.getByText(code, { exact: false }).last();
     if (!(await result.isVisible().catch(() => false))) throw new Error('ETF 검색 결과가 없습니다.');
     await result.click();
 
@@ -93,4 +102,9 @@ async function downloadComposition(context, { code, date }) {
   }
 }
 
-module.exports = { downloadComposition, parseCsv };
+module.exports = {
+  COMPOSITION_MENU_ID,
+  COMPOSITION_URL,
+  downloadComposition,
+  parseCsv,
+};
