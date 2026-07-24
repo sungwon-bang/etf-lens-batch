@@ -4,8 +4,10 @@
   "description": "KRX 전체 ETF PDF 구성종목 야간 수집기",
   "main": "krx-worker.js",
   "scripts": {
+    "login": "node krx-auto-login.js",
     "collect": "node krx-worker.js",
-    "start": "npm run collect"
+    "start": "npm run collect",
+    "test": "node --test"
   },
   "keywords": ["etf", "krx", "batch"],
   "author": "",

@@ -5,6 +5,15 @@ on:
     # 매일 23:30 KST = 14:30 UTC
     - cron: '30 14 * * *'
   workflow_dispatch:
+    inputs:
+      mode:
+        description: '실행 모드'
+        required: true
+        default: 'login_only'
+        type: choice
+        options:
+          - login_only
+          - collect
 
 permissions:
   contents: write
@@ -33,7 +42,18 @@ jobs:
       - name: Chromium 설치
         run: npx playwright install --with-deps chromium
 
+      - name: KRX 로그인 및 세션 저장
+        env:
+          KRX_LOGIN_ID: ${{ secrets.KRX_LOGIN_ID }}
+          KRX_LOGIN_PASSWORD: ${{ secrets.KRX_LOGIN_PASSWORD }}
+        run: npm run login
+
+      - name: 로그인 전용 검증 완료
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'login_only'
+        run: echo "KRX 로그인과 세션 저장을 정상 완료했습니다."
+
       - name: 전체 ETF PDF 구성종목 수집
+        if: github.event_name == 'schedule' || inputs.mode == 'collect'
         env:
           KRX_API_KEY: ${{ secrets.KRX_API_KEY }}
           KRX_LOGIN_ID: ${{ secrets.KRX_LOGIN_ID }}
@@ -42,7 +62,7 @@ jobs:
         run: npm run collect
 
       - name: 최종 결과 커밋
-        if: always()
+        if: always() && (github.event_name == 'schedule' || inputs.mode == 'collect')
         run: |
           if git diff --quiet -- data/etf-compositions.json; then
             echo "추가 변경 없음"

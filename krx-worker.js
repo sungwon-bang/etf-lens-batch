@@ -86,6 +86,15 @@ async function main() {
   let context;
   let sessionStartedAt = 0;
 
+  const openSavedSession = async () => {
+    if (!fs.existsSync(SESSION_PATH)) return false;
+    await context?.close().catch(() => {});
+    context = await browser.newContext({ storageState: SESSION_PATH, acceptDownloads: true });
+    sessionStartedAt = Date.now();
+    console.log('로그인 전용 단계에서 저장한 KRX 세션을 불러왔습니다.');
+    return true;
+  };
+
   const renewSession = async () => {
     await context?.close().catch(() => {});
     fs.rmSync(SESSION_PATH, { force: true });
@@ -110,6 +119,7 @@ async function main() {
   };
 
   try {
+    if (!(await openSavedSession())) await renewSession();
     const pending = etfs.filter((etf) => !state.items[etf.code]);
     console.log(`기준일 ${date}: 전체 ${etfs.length}개, 남은 ${pending.length}개`);
     let sinceCheckpoint = 0;
