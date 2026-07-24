@@ -3,15 +3,39 @@
     "date": "20260723",
     "total": 1150,
     "completed": 0,
-    "failed": 50,
+    "failed": 69,
     "status": "running",
-    "updatedAt": "2026-07-24T08:50:32.378Z"
+    "updatedAt": "2026-07-24T09:03:38.363Z"
   },
   "items": {},
   "failures": {
     "105190": {
       "code": "105190",
       "name": "ACE 200",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "114460": {
+      "code": "114460",
+      "name": "ACE 국고채3년",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "152500": {
+      "code": "152500",
+      "name": "ACE 레버리지",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "190620": {
+      "code": "190620",
+      "name": "ACE 단기통안채",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "225130": {
+      "code": "225130",
+      "name": "ACE 골드선물 레버리지(합성 H)",
       "attempts": 1,
       "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
     },
@@ -33,6 +57,12 @@
       "attempts": 1,
       "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
     },
+    "265690": {
+      "code": "265690",
+      "name": "ACE 러시아MSCI(합성)",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
     "291130": {
       "code": "291130",
       "name": "ACE MSCI멕시코(합성)",
@@ -42,6 +72,12 @@
     "332500": {
       "code": "332500",
       "name": "ACE 200TR",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "365780": {
+      "code": "365780",
+      "name": "ACE 국고채10년",
       "attempts": 1,
       "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
     },
@@ -63,9 +99,39 @@
       "attempts": 1,
       "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
     },
+    "414270": {
+      "code": "414270",
+      "name": "ACE 글로벌자율주행액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "435040": {
+      "code": "435040",
+      "name": "ACE 글로벌브랜드TOP10",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "440640": {
+      "code": "440640",
+      "name": "ACE 단기채권알파액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "446770": {
+      "code": "446770",
+      "name": "ACE 글로벌반도체TOP4 Plus",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
     "451060": {
       "code": "451060",
       "name": "1Q 200액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "460960": {
+      "code": "460960",
+      "name": "ACE 글로벌인컴TOP10",
       "attempts": 1,
       "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
     },
@@ -117,6 +183,24 @@
       "attempts": 1,
       "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
     },
+    "483330": {
+      "code": "483330",
+      "name": "ACE 마이크로소프트밸류체인액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "483340": {
+      "code": "483340",
+      "name": "ACE 구글밸류체인액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "487340": {
+      "code": "487340",
+      "name": "ACE 머니마켓액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
     "491610": {
       "code": "491610",
       "name": "1Q CD금리액티브(합성)",
@@ -129,9 +213,27 @@
       "attempts": 1,
       "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
     },
+    "494330": {
+      "code": "494330",
+      "name": "ACE 라이프자산주주가치액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "494340": {
+      "code": "494340",
+      "name": "ACE 글로벌AI맞춤형반도체",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
     "495330": {
       "code": "495330",
       "name": "1Q 코리아밸류업",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "497510": {
+      "code": "497510",
+      "name": "ACE 글로벌빅파마",
       "attempts": 1,
       "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
     },
@@ -306,6 +408,18 @@
     "0199C0": {
       "code": "0199C0",
       "name": "ACE 고배당주Plus커버드콜액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0153P0": {
+      "code": "0153P0",
+      "name": "ACE 리츠부동산인프라액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0085P0": {
+      "code": "0085P0",
+      "name": "ACE 미국10년국채액티브",
       "attempts": 1,
       "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
     }
