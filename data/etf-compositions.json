@@ -1,12 +1,163 @@
 {
   "meta": {
-    "date": "",
-    "total": 0,
+    "date": "20260723",
+    "total": 1150,
     "completed": 0,
-    "failed": 0,
-    "status": "empty",
-    "updatedAt": ""
+    "failed": 25,
+    "status": "running",
+    "updatedAt": "2026-07-24T08:33:19.406Z"
   },
   "items": {},
-  "failures": {}
+  "failures": {
+    "451060": {
+      "code": "451060",
+      "name": "1Q 200액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "463290": {
+      "code": "463290",
+      "name": "1Q 단기금융채액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "479080": {
+      "code": "479080",
+      "name": "1Q 머니마켓액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "491610": {
+      "code": "491610",
+      "name": "1Q CD금리액티브(합성)",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "492500": {
+      "code": "492500",
+      "name": "1Q 현대차그룹채권(A+이상)&국고통안",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "495330": {
+      "code": "495330",
+      "name": "1Q 코리아밸류업",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0184E0": {
+      "code": "0184E0",
+      "name": "1Q 200채권혼합50액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0182R0": {
+      "code": "0182R0",
+      "name": "1Q K반도체TOP2+",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0182S0": {
+      "code": "0182S0",
+      "name": "1Q K반도체TOP2채권혼합50",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0103T0": {
+      "code": "0103T0",
+      "name": "1Q K소버린AI",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0198D0": {
+      "code": "0198D0",
+      "name": "1Q SK하이닉스선물단일종목레버리지",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0131W0": {
+      "code": "0131W0",
+      "name": "1Q 단기특수은행채액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0026S0": {
+      "code": "0026S0",
+      "name": "1Q 미국S&P500",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0052S0": {
+      "code": "0052S0",
+      "name": "1Q 미국S&P500미국채혼합50액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0069M0": {
+      "code": "0069M0",
+      "name": "1Q 미국나스닥100",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0111P0": {
+      "code": "0111P0",
+      "name": "1Q 미국나스닥100미국채혼합50액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0083S0": {
+      "code": "0083S0",
+      "name": "1Q 미국메디컬AI",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0004G0": {
+      "code": "0004G0",
+      "name": "1Q 미국배당TOP30",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0131V0": {
+      "code": "0131V0",
+      "name": "1Q 미국우주항공테크",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0198B0": {
+      "code": "0198B0",
+      "name": "1Q 삼성전자선물단일종목레버리지",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0094X0": {
+      "code": "0094X0",
+      "name": "1Q 샤오미밸류체인액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0172V0": {
+      "code": "0172V0",
+      "name": "1Q 은액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0017Y0": {
+      "code": "0017Y0",
+      "name": "1Q 종합채권(AA-이상)액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0052T0": {
+      "code": "0052T0",
+      "name": "1Q 중단기회사채(A-이상)액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    },
+    "0186S0": {
+      "code": "0186S0",
+      "name": "1Q 코스닥150채권혼합50액티브",
+      "attempts": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator('a[href*=\"MDCCOMS001.cmd\"]').first()\n"
+    }
+  }
 }
