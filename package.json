@@ -1,16 +1,16 @@
 {
   "name": "etf-lens-batch",
   "version": "1.0.0",
-  "description": "요청 기반 KRX ETF PDF 구성종목 수집기",
+  "description": "KRX 전체 ETF PDF 구성종목 야간 수집기",
   "main": "krx-worker.js",
   "scripts": {
     "collect": "node krx-worker.js",
     "start": "npm run collect"
   },
-  "keywords": ["etf", "krx", "pdf", "playwright"],
+  "keywords": ["etf", "krx", "batch"],
+  "author": "",
   "license": "MIT",
   "dependencies": {
-    "axios": "^1.6.0",
     "dotenv": "^16.3.1",
     "playwright": "^1.40.0"
   },
