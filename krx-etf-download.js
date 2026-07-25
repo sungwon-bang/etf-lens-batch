@@ -55,40 +55,75 @@ function parseCsv(file) {
 
 async function selectFinderResult(page, { code, name }) {
   const deadline = Date.now() + 20_000;
-  const selectors = [
+  const rowSelectors = [
     '[id^="jsLayer_finder_secuprodisu1_"]:visible tr',
     '[id*="finder_secuprodisu1_"]:visible tr',
+    '[id*="finder_secuprodisu1_"]:visible [role="row"]',
+    '[id*="finder_secuprodisu1_"]:visible li',
     '.CI-GRID-BODY-TABLE-TBODY:visible tr',
+    '[role="dialog"]:visible tr',
+    '[role="dialog"]:visible [role="row"]',
     'table:visible tbody tr',
   ];
 
   while (Date.now() < deadline) {
-    for (const selector of selectors) {
-      const rows = page.locator(selector);
-      const count = await rows.count();
-      for (let index = 0; index < count; index += 1) {
-        const row = rows.nth(index);
-        const text = (await row.innerText().catch(() => '')).replace(/\s+/g, ' ').trim();
-        if (!text || (!text.includes(code) && !text.includes(name))) continue;
-        console.log(`ETF 검색 결과 선택: ${text.slice(0, 120)}`);
-        const clickable = row.locator('a, button, [onclick]').first();
-        if (await clickable.isVisible().catch(() => false)) {
-          await clickable.click();
-        } else {
-          await row.click();
+    for (const frame of page.frames()) {
+      for (const selector of rowSelectors) {
+        const rows = frame.locator(selector);
+        const count = await rows.count();
+        for (let index = 0; index < count; index += 1) {
+          const row = rows.nth(index);
+          const text = (await row.innerText().catch(() => '')).replace(/\s+/g, ' ').trim();
+          if (!text || (!text.includes(code) && !text.includes(name))) continue;
+          console.log(`ETF 검색 결과 행 선택: ${text.slice(0, 120)}`);
+          const clickable = row.locator('a, button, [onclick]').first();
+          if (await clickable.isVisible().catch(() => false)) {
+            await clickable.click({ noWaitAfter: true });
+          } else {
+            await row.click({ noWaitAfter: true });
+          }
+          return;
         }
-        return;
+      }
+
+      // KRX finder revisions sometimes render the result as a div/span rather
+      // than a table row. Find the smallest visible text node and click its
+      // nearest interactive/result container.
+      for (const value of [code, name]) {
+        const matches = frame.getByText(value, { exact: false });
+        const count = Math.min(await matches.count(), 20);
+        let best;
+        let bestLength = Number.POSITIVE_INFINITY;
+        for (let index = 0; index < count; index += 1) {
+          const match = matches.nth(index);
+          if (!(await match.isVisible().catch(() => false))) continue;
+          const text = (await match.innerText().catch(() => '')).replace(/\s+/g, ' ').trim();
+          if (!text.includes(value) || text.length >= bestLength) continue;
+          best = match;
+          bestLength = text.length;
+        }
+        if (best) {
+          const container = best.locator(
+            'xpath=ancestor-or-self::*[self::tr or self::li or @role="row" or self::a or self::button or @onclick][1]',
+          );
+          const target = await container.count() ? container.first() : best;
+          console.log(`ETF 검색 결과 텍스트 선택: ${(await target.innerText().catch(() => value)).slice(0, 120)}`);
+          await target.click({ force: true, noWaitAfter: true });
+          return;
+        }
       }
     }
     await page.waitForTimeout(500);
   }
 
-  const visibleRows = await page.locator('table:visible tbody tr').evaluateAll((rows) =>
-    rows.slice(0, 30).map((row) =>
-      (row.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 160)),
-  ).catch(() => []);
+  const frameStates = await Promise.all(page.frames().map(async (frame) => ({
+    url: frame.url(),
+    text: (await frame.locator('body').innerText().catch(() => ''))
+      .replace(/\s+/g, ' ')
+      .slice(0, 500),
+  })));
   throw new Error(
-    `ETF 검색 결과가 없습니다. 검색어=${code}, 화면행=${JSON.stringify(visibleRows)}`,
+    `ETF 검색 결과가 없습니다. 검색어=${code}, 프레임=${JSON.stringify(frameStates)}`,
   );
 }
 
