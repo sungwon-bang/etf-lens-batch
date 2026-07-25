@@ -113,7 +113,15 @@ async function clickLoginEntry(page) {
       const candidate = locator.nth(index);
       if (!(await candidate.isVisible().catch(() => false))) continue;
       console.log(`KRX 로그인 진입 선택자: ${selector}`);
-      await candidate.click({ force: true, timeout: 10_000 });
+      // KRX occasionally completes the click but keeps the navigation request
+      // open long enough for Playwright's implicit navigation wait to time out.
+      // The login form is detected separately by findLoginFrame(), so do not
+      // make the click itself depend on navigation completion.
+      await candidate.click({
+        force: true,
+        timeout: 10_000,
+        noWaitAfter: true,
+      });
       return;
     }
   }
