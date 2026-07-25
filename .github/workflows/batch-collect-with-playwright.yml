@@ -87,7 +87,7 @@ jobs:
         run: npm run collect
 
       - name: 오류 진단자료 저장
-        if: failure()
+        if: always() && (github.event_name == 'schedule' || inputs.mode == 'collect' || contains(github.event.head_commit.message, '[collect]'))
         uses: actions/upload-artifact@v4
         with:
           name: krx-diagnostics-${{ github.run_id }}-${{ github.run_attempt }}
