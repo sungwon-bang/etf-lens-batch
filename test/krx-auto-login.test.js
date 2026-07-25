@@ -1,11 +1,12 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
 
-const { LOGIN_URL } = require('../krx-auto-login');
+const {
+  KRX_HOME_URL,
+  LOGIN_LINK_SELECTOR,
+} = require('../krx-auto-login');
 
-test('로그인 전용 URL을 직접 사용한다', () => {
-  assert.equal(
-    LOGIN_URL,
-    'https://data.krx.co.kr/contents/MDC/COMS/client/MDCCOMS001.cmd',
-  );
+test('KRX 메인 화면의 로그인 링크를 통해 로그인한다', () => {
+  assert.equal(KRX_HOME_URL, 'https://data.krx.co.kr/');
+  assert.equal(LOGIN_LINK_SELECTOR, 'a[href*="MDCCOMS001.cmd"]');
 });
