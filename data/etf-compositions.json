@@ -3,9 +3,9 @@
     "date": "20260723",
     "total": 1150,
     "completed": 5,
-    "failed": 105,
+    "failed": 115,
     "status": "running",
-    "updatedAt": "2026-07-25T15:33:59.993Z"
+    "updatedAt": "2026-07-25T15:34:07.805Z"
   },
   "items": {
     "385600": {
@@ -1704,6 +1704,12 @@
       "attempts": 1,
       "error": "[131890] PDF 조회 실패: KRX PDF 조회 결과가 없습니다. 종목=131890, 조회일자=20260723"
     },
+    "145670": {
+      "code": "145670",
+      "name": "ACE 인버스",
+      "attempts": 1,
+      "error": "browserContext.newPage: Target page, context or browser has been closed"
+    },
     "152500": {
       "code": "152500",
       "name": "ACE 레버리지",
@@ -1722,6 +1728,18 @@
       "attempts": 1,
       "error": "[190620] PDF 조회 실패: KRX PDF 조회 결과가 없습니다. 종목=190620, 조회일자=20260723"
     },
+    "196030": {
+      "code": "196030",
+      "name": "ACE 일본TOPIX레버리지(H)",
+      "attempts": 1,
+      "error": "browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "205720": {
+      "code": "205720",
+      "name": "ACE 일본TOPIX인버스(합성 H)",
+      "attempts": 1,
+      "error": "browserContext.newPage: Target page, context or browser has been closed"
+    },
     "225130": {
       "code": "225130",
       "name": "ACE 골드선물 레버리지(합성 H)",
@@ -1733,6 +1751,12 @@
       "name": "ACE Fn성장소비주도주",
       "attempts": 1,
       "error": "[226380] PDF 조회 실패: KRX PDF 조회 결과가 없습니다. 종목=226380, 조회일자=20260723"
+    },
+    "238720": {
+      "code": "238720",
+      "name": "ACE 일본Nikkei225(H)",
+      "attempts": 1,
+      "error": "browserContext.newPage: Target page, context or browser has been closed"
     },
     "245710": {
       "code": "245710",
@@ -1841,6 +1865,12 @@
       "name": "ACE 글로벌자율주행액티브",
       "attempts": 1,
       "error": "[414270] PDF 조회 실패: KRX PDF 조회 결과가 없습니다. 종목=414270, 조회일자=20260723"
+    },
+    "433500": {
+      "code": "433500",
+      "name": "ACE 원자력TOP10",
+      "attempts": 1,
+      "error": "browserContext.newPage: Target page, context or browser has been closed"
     },
     "435040": {
       "code": "435040",
@@ -2040,6 +2070,18 @@
       "attempts": 1,
       "error": "[487340] PDF 조회 실패: KRX PDF 조회 결과가 없습니다. 종목=487340, 조회일자=20260723"
     },
+    "487910": {
+      "code": "487910",
+      "name": "ACE 인도컨슈머파워액티브",
+      "attempts": 1,
+      "error": "browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "487920": {
+      "code": "487920",
+      "name": "ACE 인도시장대표BIG5그룹액티브",
+      "attempts": 1,
+      "error": "browserContext.newPage: Target page, context or browser has been closed"
+    },
     "491610": {
       "code": "491610",
       "name": "1Q CD금리액티브(합성)",
@@ -2069,6 +2111,12 @@
       "name": "ACE 글로벌빅파마",
       "attempts": 1,
       "error": "[497510] PDF 조회 실패: KRX PDF 조회 결과가 없습니다. 종목=497510, 조회일자=20260723"
+    },
+    "497520": {
+      "code": "497520",
+      "name": "ACE 일라이릴리밸류체인",
+      "attempts": 1,
+      "error": "browserContext.newPage: Target page, context or browser has been closed"
     },
     "0184E0": {
       "code": "0184E0",
@@ -2309,6 +2357,18 @@
       "name": "ACE 삼성전자단일종목레버리지",
       "attempts": 1,
       "error": "[0194M0] PDF 조회 실패: KRX PDF 조회 결과가 없습니다. 종목=0194M0, 조회일자=20260723"
+    },
+    "0099L0": {
+      "code": "0099L0",
+      "name": "ACE 우량회사채(AA-이상)액티브",
+      "attempts": 1,
+      "error": "[0099L0] PDF 조회 실패: page.waitForTimeout: Target page, context or browser has been closed"
+    },
+    "0102X0": {
+      "code": "0102X0",
+      "name": "ACE 유럽방산TOP10",
+      "attempts": 1,
+      "error": "browserContext.newPage: Target page, context or browser has been closed"
     }
   }
 }
