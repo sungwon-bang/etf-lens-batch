@@ -125,9 +125,13 @@ async function loginContext(context, { saveSession = true } = {}) {
 
   try {
     const page = await context.newPage();
-    page.on('dialog', async (dialog) => {
+    const acceptDialog = async (dialog) => {
       console.log(`KRX 대화상자 자동 승인: ${dialog.type()}`);
       await dialog.accept().catch(() => {});
+    };
+    page.on('dialog', acceptDialog);
+    context.on('page', (newPage) => {
+      newPage.on('dialog', acceptDialog);
     });
     await loadKrxHome(page);
     await clickLoginEntry(page);
@@ -140,7 +144,7 @@ async function loginContext(context, { saveSession = true } = {}) {
       throw new Error(`KRX 로그인 입력창을 찾지 못했습니다. 현재 URL: ${page.url()}`);
     }
 
-    const { frame } = surface;
+    const { page: loginPage, frame } = surface;
     const idInput = frame.locator('input[name="mbrId"]').first();
     const passwordInput = frame.locator(
       'input[name="pw"], input[type="password"], input[placeholder*="비밀번호"]',
@@ -172,7 +176,10 @@ async function loginContext(context, { saveSession = true } = {}) {
       fs.writeFileSync(SESSION_PATH, JSON.stringify(state, null, 2));
     }
     console.log(`KRX 로그인 완료: 쿠키 ${state.cookies.length}개`);
-    return { context, page };
+    return {
+      context,
+      page: loginPage.isClosed() ? page : loginPage,
+    };
   } finally {
     // The caller owns the context. Keeping it open is required because KRX does
     // not accept a session copied into a different browser context.
