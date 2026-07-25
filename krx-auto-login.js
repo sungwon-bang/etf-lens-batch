@@ -5,18 +5,76 @@ require('dotenv').config();
 const SESSION_PATH = 'krx-session.json';
 const KRX_HOME_URL = 'https://data.krx.co.kr/';
 const LOGIN_LINK_SELECTOR = 'a[href*="MDCCOMS001.cmd"]';
+const DIAGNOSTIC_DIR = 'diagnostics';
 
-async function findLoginFrame(page, timeoutMs = 20_000) {
+async function saveDiagnostics(page, label) {
+  fs.mkdirSync(DIAGNOSTIC_DIR, { recursive: true });
+  const safeLabel = label.replace(/[^a-z0-9_-]/gi, '-');
+  await page.screenshot({
+    path: `${DIAGNOSTIC_DIR}/${safeLabel}.png`,
+    fullPage: true,
+  }).catch(() => {});
+  fs.writeFileSync(
+    `${DIAGNOSTIC_DIR}/${safeLabel}.html`,
+    await page.content().catch(() => ''),
+  );
+  const controls = await page.locator('a, button, [onclick]').evaluateAll((items) =>
+    items.slice(0, 100).map((item) => ({
+      tag: item.tagName,
+      text: (item.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 80),
+      href: item.getAttribute('href'),
+      onclick: item.getAttribute('onclick'),
+      id: item.id,
+      className: item.className,
+    })),
+  ).catch(() => []);
+  fs.writeFileSync(
+    `${DIAGNOSTIC_DIR}/${safeLabel}-controls.json`,
+    `${JSON.stringify(controls, null, 2)}\n`,
+  );
+}
+
+async function findLoginFrame(pages, timeoutMs = 20_000) {
   const deadline = Date.now() + timeoutMs;
   while (Date.now() < deadline) {
-    const frame = page.frames().find((item) => item.url().includes('login.jsp'));
-    if (frame) {
-      const idInput = frame.locator('input[name="mbrId"]');
-      if (await idInput.isVisible().catch(() => false)) return frame;
+    for (const page of pages()) {
+      for (const frame of page.frames()) {
+        const idInput = frame.locator(
+          'input[name="mbrId"], input[placeholder*="아이디"]',
+        );
+        if (await idInput.first().isVisible().catch(() => false)) {
+          return { page, frame };
+        }
+      }
     }
-    await page.waitForTimeout(250);
+    await new Promise((resolve) => setTimeout(resolve, 250));
   }
   return null;
+}
+
+async function clickLoginEntry(page) {
+  const candidates = [
+    LOGIN_LINK_SELECTOR,
+    'a[href*="/contents/MDC/COMS/client/MDCCOMS001.cmd"]',
+    '[onclick*="MDCCOMS001"]',
+    'a:has-text("로그인")',
+    'button:has-text("로그인")',
+    'img[alt*="로그인"]',
+    'img[title*="로그인"]',
+  ];
+  for (const selector of candidates) {
+    const locator = page.locator(selector);
+    const count = await locator.count();
+    for (let index = 0; index < count; index += 1) {
+      const candidate = locator.nth(index);
+      if (!(await candidate.isVisible().catch(() => false))) continue;
+      console.log(`KRX 로그인 진입 선택자: ${selector}`);
+      await candidate.click({ force: true, timeout: 10_000 });
+      return;
+    }
+  }
+  await saveDiagnostics(page, 'login-entry-not-found');
+  throw new Error(`KRX 로그인 진입 버튼을 찾지 못했습니다. 현재 URL: ${page.url()}`);
 }
 
 async function login() {
@@ -29,17 +87,21 @@ async function login() {
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto(KRX_HOME_URL, { waitUntil: 'domcontentloaded', timeout: 60_000 });
+    await clickLoginEntry(page);
 
-    const loginLink = page.locator(LOGIN_LINK_SELECTOR).first();
-    await loginLink.click({ timeout: 20_000 });
-
-    const frame = await findLoginFrame(page);
-    if (!frame) {
-      throw new Error(`KRX 로그인 프레임(login.jsp)을 찾지 못했습니다. 현재 URL: ${page.url()}`);
+    const surface = await findLoginFrame(() => context.pages());
+    if (!surface) {
+      await Promise.all(context.pages().map((item, index) =>
+        saveDiagnostics(item, `login-form-not-found-${index}`),
+      ));
+      throw new Error(`KRX 로그인 입력창을 찾지 못했습니다. 현재 URL: ${page.url()}`);
     }
 
+    const { frame } = surface;
     const idInput = frame.locator('input[name="mbrId"]').first();
-    const passwordInput = frame.locator('input[name="pw"]').first();
+    const passwordInput = frame.locator(
+      'input[name="pw"], input[type="password"], input[placeholder*="비밀번호"]',
+    ).first();
     await idInput.fill(id);
     await passwordInput.fill(password);
     await passwordInput.press('Enter');
@@ -71,5 +133,8 @@ module.exports = {
   SESSION_PATH,
   KRX_HOME_URL,
   LOGIN_LINK_SELECTOR,
+  DIAGNOSTIC_DIR,
+  clickLoginEntry,
   findLoginFrame,
+  saveDiagnostics,
 };
