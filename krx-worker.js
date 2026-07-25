@@ -10,6 +10,17 @@ const OUTPUT_PATH = path.join(__dirname, 'data', 'etf-compositions.json');
 const CHECKPOINT_SIZE = Math.max(1, Number(process.env.CHECKPOINT_SIZE || 25));
 const SESSION_MAX_AGE_MS = 20 * 60 * 1000;
 const MAX_LOOKBACK_DAYS = 14;
+const KRX_CONTEXT_OPTIONS = {
+  userAgent:
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' +
+    'AppleWebKit/537.36 (KHTML, like Gecko) ' +
+    'Chrome/149.0.0.0 Safari/537.36',
+  locale: 'ko-KR',
+  timezoneId: 'Asia/Seoul',
+  extraHTTPHeaders: {
+    'Accept-Language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',
+  },
+};
 
 function seoulDate(daysAgo = 0) {
   const date = new Date(Date.now() - daysAgo * 86_400_000);
@@ -89,7 +100,11 @@ async function main() {
   const openSavedSession = async () => {
     if (!fs.existsSync(SESSION_PATH)) return false;
     await context?.close().catch(() => {});
-    context = await browser.newContext({ storageState: SESSION_PATH, acceptDownloads: true });
+    context = await browser.newContext({
+      ...KRX_CONTEXT_OPTIONS,
+      storageState: SESSION_PATH,
+      acceptDownloads: true,
+    });
     sessionStartedAt = Date.now();
     console.log('로그인 전용 단계에서 저장한 KRX 세션을 불러왔습니다.');
     return true;
@@ -99,7 +114,11 @@ async function main() {
     await context?.close().catch(() => {});
     fs.rmSync(SESSION_PATH, { force: true });
     await login();
-    context = await browser.newContext({ storageState: SESSION_PATH, acceptDownloads: true });
+    context = await browser.newContext({
+      ...KRX_CONTEXT_OPTIONS,
+      storageState: SESSION_PATH,
+      acceptDownloads: true,
+    });
     sessionStartedAt = Date.now();
   };
 
