@@ -6,6 +6,41 @@ const SESSION_PATH = 'krx-session.json';
 const KRX_HOME_URL = 'https://data.krx.co.kr/';
 const LOGIN_LINK_SELECTOR = 'a[href*="MDCCOMS001.cmd"]';
 const DIAGNOSTIC_DIR = 'diagnostics';
+const KRX_UNAVAILABLE_TEXT = 'Service unavailable';
+const HOME_MAX_ATTEMPTS = 8;
+const HOME_RETRY_DELAY_MS = 15_000;
+
+async function loadKrxHome(
+  page,
+  maxAttempts = HOME_MAX_ATTEMPTS,
+  retryDelayMs = HOME_RETRY_DELAY_MS,
+) {
+  let lastError;
+  for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+    try {
+      await page.goto(KRX_HOME_URL, {
+        waitUntil: 'domcontentloaded',
+        timeout: 60_000,
+      });
+      const bodyText = await page.locator('body').innerText().catch(() => '');
+      if (!bodyText.includes(KRX_UNAVAILABLE_TEXT)) {
+        console.log(`KRX 메인 접속 완료 (${attempt}/${maxAttempts})`);
+        return;
+      }
+      lastError = new Error('KRX가 Service unavailable 페이지를 반환했습니다.');
+    } catch (error) {
+      lastError = error;
+    }
+
+    console.warn(
+      `KRX 메인 접속 재시도 ${attempt}/${maxAttempts}: ${lastError.message}`,
+    );
+    if (attempt < maxAttempts) await page.waitForTimeout(retryDelayMs);
+  }
+
+  await saveDiagnostics(page, 'krx-home-unavailable');
+  throw lastError;
+}
 
 async function saveDiagnostics(page, label) {
   fs.mkdirSync(DIAGNOSTIC_DIR, { recursive: true });
@@ -86,7 +121,7 @@ async function login() {
   try {
     const context = await browser.newContext();
     const page = await context.newPage();
-    await page.goto(KRX_HOME_URL, { waitUntil: 'domcontentloaded', timeout: 60_000 });
+    await loadKrxHome(page);
     await clickLoginEntry(page);
 
     const surface = await findLoginFrame(() => context.pages());
@@ -134,6 +169,10 @@ module.exports = {
   KRX_HOME_URL,
   LOGIN_LINK_SELECTOR,
   DIAGNOSTIC_DIR,
+  KRX_UNAVAILABLE_TEXT,
+  HOME_MAX_ATTEMPTS,
+  HOME_RETRY_DELAY_MS,
+  loadKrxHome,
   clickLoginEntry,
   findLoginFrame,
   saveDiagnostics,
