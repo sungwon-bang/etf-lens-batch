@@ -101,6 +101,35 @@ async function finderAlreadySelected(page, { code, name }) {
   return true;
 }
 
+async function normalizeFinderSelection(page, { code, name }) {
+  for (const { frame } of finderSurfaces(page)) {
+    const normalized = await frame.evaluate(({ targetCode, targetName }) => {
+      const primary = document.getElementById('isuCd_finder_secuprodisu1_0');
+      if (!primary || !String(primary.value || '').includes(targetCode)) return null;
+      const display = document.getElementById('tboxisuCd_finder_secuprodisu1_0');
+      const secondary = document.getElementById('isuCd_finder_secuprodisu1_02');
+      const codeName = document.getElementById('codeNmisuCd_finder_secuprodisu1_0');
+      if (display) display.value = `${targetCode}/${targetName}`;
+      if (secondary) secondary.value = primary.value;
+      if (codeName) codeName.value = targetName;
+      [display, primary, secondary, codeName].filter(Boolean).forEach((input) => {
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+        input.dispatchEvent(new Event('change', { bubbles: true }));
+      });
+      return {
+        display: display?.value || '',
+        primary: primary.value,
+        secondary: secondary?.value || '',
+      };
+    }, { targetCode: code, targetName: name }).catch(() => null);
+    if (normalized) {
+      console.log(`ETF 조회 폼 동기화: ${JSON.stringify(normalized)}`);
+      return true;
+    }
+  }
+  return false;
+}
+
 async function triggerFinderSearch(page, search, { code, name }) {
   await search.press('Enter', { timeout: 10_000 });
   await page.waitForTimeout(1_500);
@@ -274,29 +303,48 @@ async function downloadComposition(context, { code, name, date }, existingPage =
       await selectFinderResult(page, { code, name });
     }
 
+    if (!(await normalizeFinderSelection(page, { code, name }))) {
+      throw new Error('검색 결과 선택 후 내부 종목코드 동기화에 실패했습니다.');
+    }
     if (!(await finderAlreadySelected(page, { code, name }))) {
       throw new Error('검색 결과 클릭 후 내부 종목코드가 설정되지 않았습니다.');
     }
 
     const dateInput = page.locator('input[id*="trdDd"], input[name*="trdDd"], input[id*="basDd"], input[name*="basDd"]').first();
     if (await dateInput.isVisible().catch(() => false)) {
-      await dateInput.fill(`${date.slice(0, 4)}-${date.slice(4, 6)}-${date.slice(6)}`);
+      await dateInput.fill(date);
+      await dateInput.press('Tab').catch(() => {});
+      await dateInput.evaluate((input, targetDate) => {
+        input.value = targetDate;
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+        input.dispatchEvent(new Event('change', { bubbles: true }));
+      }, date);
+      console.log(`[${code}] 조회일자 확정: ${await dateInput.inputValue()}`);
     }
     mark('PDF 조회');
     await page.locator('#jsSearchButton').click({ timeout: 15_000, noWaitAfter: true });
     await page.waitForTimeout(3_000);
+    const resultRows = page.locator('.CI-GRID-BODY-TABLE-TBODY tr, .CI-GRID-BODY-TABLE tbody tr');
+    if (!(await resultRows.count())) {
+      throw new Error(`KRX PDF 조회 결과가 없습니다. 종목=${code}, 조회일자=${date}`);
+    }
     mark('다운로드 메뉴 열기');
     await page.locator('img[title*="다운로드"]').first().click({
       timeout: 15_000,
       noWaitAfter: true,
     });
     mark('CSV 다운로드');
-    const downloadPromise = page.waitForEvent('download', { timeout: 45_000 });
-    await page.locator('a').filter({ hasText: 'CSV' }).last().click({
-      timeout: 15_000,
-      noWaitAfter: true,
-    });
-    const download = await downloadPromise;
+    const csvLink = page.locator('a').filter({ hasText: /CSV/i }).last();
+    if (!(await csvLink.waitFor({ state: 'visible', timeout: 15_000 }).then(() => true).catch(() => false))) {
+      const alertText = await page.locator('[role="dialog"]:visible').innerText().catch(() => '');
+      throw new Error(
+        `CSV 다운로드 링크가 없습니다.${alertText ? ` KRX 메시지=${alertText.replace(/\\s+/g, ' ').trim()}` : ''}`,
+      );
+    }
+    const [download] = await Promise.all([
+      page.waitForEvent('download', { timeout: 45_000 }),
+      csvLink.click({ timeout: 15_000, noWaitAfter: true }),
+    ]);
     const file = path.join(process.cwd(), `krx-${code}-${date}.csv`);
     await download.saveAs(file);
     try {
