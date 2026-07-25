@@ -5,15 +5,15 @@
     "completed": 0,
     "failed": 1,
     "status": "partial",
-    "updatedAt": "2026-07-25T04:40:15.211Z"
+    "updatedAt": "2026-07-25T04:40:57.149Z"
   },
   "items": {},
   "failures": {
     "449450": {
       "code": "449450",
       "name": "PLUS K방산",
-      "attempts": 2,
-      "error": "ETF 검색 결과가 없습니다."
+      "attempts": 3,
+      "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first() to be visible\u001b[22m\n"
     }
   }
 }
