@@ -3,13 +3,18 @@ const fs = require('fs');
 require('dotenv').config();
 
 const SESSION_PATH = 'krx-session.json';
-const LOGIN_URL = 'https://data.krx.co.kr/contents/MDC/COMS/client/MDCCOMS001.cmd';
+const KRX_HOME_URL = 'https://data.krx.co.kr/';
+const LOGIN_LINK_SELECTOR = 'a[href*="MDCCOMS001.cmd"]';
 
-async function findLoginScope(page) {
-  const candidates = [page, ...page.frames()];
-  for (const scope of candidates) {
-    const idInput = scope.locator('input[name="mbrId"], input[id*="mbrId"]').first();
-    if (await idInput.isVisible().catch(() => false)) return scope;
+async function findLoginFrame(page, timeoutMs = 20_000) {
+  const deadline = Date.now() + timeoutMs;
+  while (Date.now() < deadline) {
+    const frame = page.frames().find((item) => item.url().includes('login.jsp'));
+    if (frame) {
+      const idInput = frame.locator('input[name="mbrId"]');
+      if (await idInput.isVisible().catch(() => false)) return frame;
+    }
+    await page.waitForTimeout(250);
   }
   return null;
 }
@@ -23,15 +28,27 @@ async function login() {
   try {
     const context = await browser.newContext();
     const page = await context.newPage();
-    await page.goto(LOGIN_URL, { waitUntil: 'domcontentloaded', timeout: 60_000 });
-    await page.waitForTimeout(2_000);
-    const scope = await findLoginScope(page);
-    if (!scope) throw new Error(`KRX 로그인 입력창을 찾지 못했습니다. 현재 URL: ${page.url()}`);
-    await scope.locator('input[name="mbrId"], input[id*="mbrId"]').first().fill(id);
-    const passwordInput = scope.locator('input[name="pw"], input[type="password"]').first();
+    await page.goto(KRX_HOME_URL, { waitUntil: 'domcontentloaded', timeout: 60_000 });
+
+    const loginLink = page.locator(LOGIN_LINK_SELECTOR).first();
+    await loginLink.click({ timeout: 20_000 });
+
+    const frame = await findLoginFrame(page);
+    if (!frame) {
+      throw new Error(`KRX 로그인 프레임(login.jsp)을 찾지 못했습니다. 현재 URL: ${page.url()}`);
+    }
+
+    const idInput = frame.locator('input[name="mbrId"]').first();
+    const passwordInput = frame.locator('input[name="pw"]').first();
+    await idInput.fill(id);
     await passwordInput.fill(password);
     await passwordInput.press('Enter');
     await page.waitForTimeout(5_000);
+
+    if (await idInput.isVisible().catch(() => false)) {
+      throw new Error('로그인 제출 후에도 입력창이 남아 있습니다. GitHub Secrets의 아이디·비밀번호를 확인하세요.');
+    }
+
     const state = await context.storageState();
     if (!state.cookies.length) throw new Error('로그인 세션 쿠키가 생성되지 않았습니다.');
     fs.writeFileSync(SESSION_PATH, JSON.stringify(state, null, 2));
@@ -49,4 +66,10 @@ if (require.main === module) {
   });
 }
 
-module.exports = { login, SESSION_PATH, LOGIN_URL, findLoginScope };
+module.exports = {
+  login,
+  SESSION_PATH,
+  KRX_HOME_URL,
+  LOGIN_LINK_SELECTOR,
+  findLoginFrame,
+};
