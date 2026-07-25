@@ -42,7 +42,8 @@ jobs:
   collect:
     # KRX가 GitHub 호스팅 서버를 차단하므로 한국 내 Windows PC에서 실행합니다.
     runs-on: [self-hosted, Windows, X64]
-    timeout-minutes: 720
+    # 브라우저가 응답 없이 멈춰도 Windows runner를 장시간 점유하지 않습니다.
+    timeout-minutes: 35
 
     steps:
       - name: 저장소 클론
@@ -82,6 +83,7 @@ jobs:
           KRX_LOGIN_PASSWORD: ${{ secrets.KRX_LOGIN_PASSWORD }}
           ETF_CODE_FILTER: ${{ contains(github.event.head_commit.message, '[verify-449450]') && '449450' || '' }}
           CHECKPOINT_SIZE: ${{ contains(github.event.head_commit.message, '[verify-449450]') && '1' || '25' }}
+          BATCH_TIMEOUT_MS: ${{ contains(github.event.head_commit.message, '[verify-449450]') && '1200000' || '1500000' }}
         run: npm run collect
 
       - name: 오류 진단자료 저장
