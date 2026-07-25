@@ -1,6 +1,17 @@
 name: ETF PDF 야간 전체 수집
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/batch-collect-with-playwright.yml'
+      - 'krx-auto-login.js'
+      - 'krx-etf-download.js'
+      - 'krx-worker.js'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'test/**'
   schedule:
     # 매일 23:30 KST = 14:30 UTC
     - cron: '30 14 * * *'
@@ -63,7 +74,7 @@ jobs:
         run: npm run login
 
       - name: 로그인 전용 검증 완료
-        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'login_only'
+        if: (github.event_name == 'workflow_dispatch' && inputs.mode == 'login_only') || github.event_name == 'push'
         run: echo "KRX 로그인과 세션 저장을 정상 완료했습니다."
 
       - name: 전체 ETF PDF 구성종목 수집
