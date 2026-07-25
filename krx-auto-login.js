@@ -199,30 +199,58 @@ async function loginContext(context, { saveSession = true } = {}) {
       throw new Error(`KRX 로그인 입력창을 찾지 못했습니다. 현재 URL: ${page.url()}`);
     }
 
-    const { page: loginPage, frame } = surface;
-    const idInput = frame.locator('input[name="mbrId"]').first();
-    const passwordInput = frame.locator(
-      'input[name="pw"], input[type="password"], input[placeholder*="비밀번호"]',
-    ).first();
-    let loggedIn = false;
+    let currentSurface = surface;
+    let authenticatedPage;
+    let lastAuthError;
+
     for (let attempt = 1; attempt <= LOGIN_MAX_ATTEMPTS; attempt += 1) {
+      const { page: loginPage, frame } = currentSurface;
+      const idInput = frame.locator('input[name="mbrId"]').first();
+      const passwordInput = frame.locator(
+        'input[name="pw"], input[type="password"], input[placeholder*="비밀번호"]',
+      ).first();
       await idInput.fill(id);
       await passwordInput.fill(password);
       await passwordInput.press('Enter');
-      await page.waitForTimeout(5_000);
-      if (!(await idInput.isVisible().catch(() => false))) {
-        loggedIn = true;
-        break;
+
+      // Do not interrupt the popup while KRX is finalizing its server-side
+      // session. The form disappearing alone is not proof of authentication.
+      await Promise.race([
+        loginPage.waitForEvent('close', { timeout: 30_000 }),
+        loginPage.waitForLoadState('networkidle', { timeout: 30_000 }),
+      ]).catch(() => {});
+      await page.waitForTimeout(3_000);
+      if (!loginPage.isClosed() && loginPage !== page) {
+        await loginPage.close().catch(() => {});
       }
-      console.warn(`KRX 로그인 제출 재시도 ${attempt}/${LOGIN_MAX_ATTEMPTS}`);
+
+      try {
+        authenticatedPage = await findAuthenticatedCompositionPage(
+          context,
+          [page],
+        );
+        lastAuthError = undefined;
+        break;
+      } catch (error) {
+        lastAuthError = error;
+        console.warn(
+          `KRX 로그인 실검증 재시도 ${attempt}/${LOGIN_MAX_ATTEMPTS}: ${error.message}`,
+        );
+      }
+
       if (attempt < LOGIN_MAX_ATTEMPTS) {
         await page.waitForTimeout(LOGIN_RETRY_DELAY_MS);
+        await loadKrxHome(page);
+        await clickLoginEntry(page);
+        currentSurface = await findLoginFrame(() => context.pages());
+        if (!currentSurface) {
+          throw new Error('KRX 로그인 재시도 입력창을 찾지 못했습니다.');
+        }
       }
     }
 
-    if (!loggedIn) {
-      await saveDiagnostics(page, 'login-submit-rejected');
-      throw new Error('KRX가 로그인 제출을 반복해서 거절했습니다.');
+    if (!authenticatedPage) {
+      throw lastAuthError || new Error('KRX 로그인 실검증에 실패했습니다.');
     }
 
     const state = await context.storageState();
@@ -230,11 +258,7 @@ async function loginContext(context, { saveSession = true } = {}) {
     if (saveSession) {
       fs.writeFileSync(SESSION_PATH, JSON.stringify(state, null, 2));
     }
-    console.log(`KRX 로그인 완료: 쿠키 ${state.cookies.length}개`);
-    const authenticatedPage = await findAuthenticatedCompositionPage(
-      context,
-      [loginPage, page],
-    );
+    console.log(`KRX 로그인 및 PDF 접근 완료: 쿠키 ${state.cookies.length}개`);
     return {
       context,
       page: authenticatedPage,
