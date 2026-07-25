@@ -92,8 +92,9 @@ async function selectFinderResult(page, { code, name }) {
   );
 }
 
-async function downloadComposition(context, { code, date }) {
-  const page = await context.newPage();
+async function downloadComposition(context, { code, date }, existingPage = null) {
+  const page = existingPage || await context.newPage();
+  const ownsPage = !existingPage;
   try {
     await page.goto(COMPOSITION_URL, {
       waitUntil: 'domcontentloaded',
@@ -144,7 +145,7 @@ async function downloadComposition(context, { code, date }) {
     );
     throw error;
   } finally {
-    await page.close();
+    if (ownsPage) await page.close();
   }
 }
 
