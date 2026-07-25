@@ -3,9 +3,9 @@
     "date": "20260723",
     "total": 1150,
     "completed": 5,
-    "failed": 115,
+    "failed": 120,
     "status": "running",
-    "updatedAt": "2026-07-25T15:34:07.805Z"
+    "updatedAt": "2026-07-25T15:34:09.121Z"
   },
   "items": {
     "385600": {
@@ -1716,6 +1716,12 @@
       "attempts": 1,
       "error": "[152500] PDF 조회 실패: KRX PDF 조회 결과가 없습니다. 종목=152500, 조회일자=20260723"
     },
+    "168580": {
+      "code": "168580",
+      "name": "ACE 중국본토CSI300",
+      "attempts": 1,
+      "error": "browserContext.newPage: Target page, context or browser has been closed"
+    },
     "181480": {
       "code": "181480",
       "name": "ACE 미국부동산리츠(합성 H)",
@@ -1818,6 +1824,12 @@
       "attempts": 1,
       "error": "[332500] PDF 조회 실패: KRX PDF 조회 결과가 없습니다. 종목=332500, 조회일자=20260723"
     },
+    "356540": {
+      "code": "356540",
+      "name": "ACE 종합채권(AA-이상)액티브",
+      "attempts": 1,
+      "error": "browserContext.newPage: Target page, context or browser has been closed"
+    },
     "360200": {
       "code": "360200",
       "name": "ACE 미국S&P500",
@@ -1866,6 +1878,12 @@
       "attempts": 1,
       "error": "[414270] PDF 조회 실패: KRX PDF 조회 결과가 없습니다. 종목=414270, 조회일자=20260723"
     },
+    "416090": {
+      "code": "416090",
+      "name": "ACE 중국과창판STAR50",
+      "attempts": 1,
+      "error": "browserContext.newPage: Target page, context or browser has been closed"
+    },
     "433500": {
       "code": "433500",
       "name": "ACE 원자력TOP10",
@@ -1907,6 +1925,12 @@
       "name": "ACE 글로벌반도체TOP4 Plus",
       "attempts": 1,
       "error": "[446770] PDF 조회 실패: KRX PDF 조회 결과가 없습니다. 종목=446770, 조회일자=20260723"
+    },
+    "447430": {
+      "code": "447430",
+      "name": "ACE 주주환원가치주액티브",
+      "attempts": 1,
+      "error": "browserContext.newPage: Target page, context or browser has been closed"
     },
     "448540": {
       "code": "448540",
@@ -1973,6 +1997,12 @@
       "name": "ACE 미국빅테크TOP7 Plus인버스(합성)",
       "attempts": 1,
       "error": "[465620] CSV 다운로드 실패: 구성종목이 0건입니다."
+    },
+    "469160": {
+      "code": "469160",
+      "name": "ACE 일본반도체",
+      "attempts": 1,
+      "error": "browserContext.newPage: Target page, context or browser has been closed"
     },
     "473440": {
       "code": "473440",
