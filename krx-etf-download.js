@@ -53,6 +53,70 @@ function parseCsv(file) {
   })).filter((item) => item.code && item.name && item.weight > 0);
 }
 
+async function selectedFinderValues(page) {
+  return page.locator(
+    'input[id*="isuCd"], input[name*="isuCd"]',
+  ).evaluateAll((inputs) => inputs
+    .filter((input) => !String(input.id || input.name).includes('searchText'))
+    .map((input) => ({
+      id: input.id || input.name || '',
+      value: String(input.value || '').trim(),
+    }))
+    .filter((item) => item.value));
+}
+
+async function finderAlreadySelected(page, { code, name }) {
+  const values = await selectedFinderValues(page).catch(() => []);
+  const selected = values.find((item) => (
+    item.value.includes(code)
+    || item.value.includes(name)
+  ));
+  if (!selected) return false;
+  console.log(`ETF 검색 자동선택 확인: ${selected.id}=${selected.value}`);
+  return true;
+}
+
+async function triggerFinderSearch(page, search, { code, name }) {
+  // Exact-code Enter can either render a result list or immediately select the
+  // only result and close the finder. Check the underlying finder value before
+  // waiting for a row that no longer exists.
+  await search.press('Enter', { timeout: 10_000 });
+  await page.waitForTimeout(1_000);
+  if (await finderAlreadySelected(page, { code, name })) return true;
+
+  // Some KRX revisions ignore Enter and require the finder-local search button.
+  // Keep this scoped to finder elements so the main PDF "조회" button is never
+  // clicked accidentally.
+  const buttonSelectors = [
+    '[id^="jsSearchButton__finder_secuprodisu1_"]:visible',
+    '[id^="searchBtn__finder_secuprodisu1_"]:visible',
+    '[id^="btnSearch__finder_secuprodisu1_"]:visible',
+    '[id*="finder_secuprodisu1_"] button:visible',
+    '[id*="finder_secuprodisu1_"] a:visible',
+  ];
+  for (const selector of buttonSelectors) {
+    const candidates = page.locator(selector);
+    const count = Math.min(await candidates.count(), 20);
+    for (let index = 0; index < count; index += 1) {
+      const candidate = candidates.nth(index);
+      const label = [
+        await candidate.innerText().catch(() => ''),
+        await candidate.getAttribute('title').catch(() => ''),
+        await candidate.getAttribute('aria-label').catch(() => ''),
+        await candidate.getAttribute('alt').catch(() => ''),
+        await candidate.getAttribute('id').catch(() => ''),
+      ].filter(Boolean).join(' ');
+      if (!/(검색|조회|search)/i.test(label)) continue;
+      console.log(`ETF finder 검색 버튼 클릭: ${label.slice(0, 160)}`);
+      await candidate.click({ force: true, noWaitAfter: true, timeout: 10_000 });
+      await page.waitForTimeout(1_000);
+      if (await finderAlreadySelected(page, { code, name })) return true;
+      return false;
+    }
+  }
+  return false;
+}
+
 async function selectFinderResult(page, { code, name }) {
   const deadline = Date.now() + 20_000;
   const rowSelectors = [
@@ -160,11 +224,18 @@ async function downloadComposition(context, { code, name, date }, existingPage =
     ).first();
     mark('검색 입력창 대기');
     await search.waitFor({ state: 'visible', timeout: 15_000 });
-    await search.fill(code, { timeout: 10_000 });
+    await search.fill('', { timeout: 10_000 });
+    await search.type(code, { delay: 80, timeout: 10_000 });
     mark('검색 실행');
-    await search.press('Enter', { timeout: 10_000 });
-    mark('검색 결과 선택');
-    await selectFinderResult(page, { code, name });
+    const automaticallySelected = await triggerFinderSearch(
+      page,
+      search,
+      { code, name },
+    );
+    if (!automaticallySelected) {
+      mark('검색 결과 선택');
+      await selectFinderResult(page, { code, name });
+    }
 
     const dateInput = page.locator('input[id*="trdDd"], input[name*="trdDd"], input[id*="basDd"], input[name*="basDd"]').first();
     if (await dateInput.isVisible().catch(() => false)) {
@@ -217,4 +288,6 @@ module.exports = {
   downloadComposition,
   parseCsv,
   selectFinderResult,
+  finderAlreadySelected,
+  triggerFinderSearch,
 };
