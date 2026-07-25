@@ -9,6 +9,10 @@ const DIAGNOSTIC_DIR = 'diagnostics';
 const KRX_UNAVAILABLE_TEXT = 'Service unavailable';
 const HOME_MAX_ATTEMPTS = 8;
 const HOME_RETRY_DELAY_MS = 15_000;
+const WINDOWS_CHROME_USER_AGENT =
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' +
+  'AppleWebKit/537.36 (KHTML, like Gecko) ' +
+  'Chrome/149.0.0.0 Safari/537.36';
 
 async function loadKrxHome(
   page,
@@ -117,9 +121,19 @@ async function login() {
   const password = process.env.KRX_LOGIN_PASSWORD;
   if (!id || !password) throw new Error('KRX_LOGIN_ID와 KRX_LOGIN_PASSWORD가 필요합니다.');
 
-  const browser = await chromium.launch({ headless: true, args: ['--no-sandbox'] });
+  const browser = await chromium.launch({
+    headless: true,
+    args: ['--no-sandbox', '--disable-blink-features=AutomationControlled'],
+  });
   try {
-    const context = await browser.newContext();
+    const context = await browser.newContext({
+      userAgent: WINDOWS_CHROME_USER_AGENT,
+      locale: 'ko-KR',
+      timezoneId: 'Asia/Seoul',
+      extraHTTPHeaders: {
+        'Accept-Language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',
+      },
+    });
     const page = await context.newPage();
     await loadKrxHome(page);
     await clickLoginEntry(page);
@@ -172,6 +186,7 @@ module.exports = {
   KRX_UNAVAILABLE_TEXT,
   HOME_MAX_ATTEMPTS,
   HOME_RETRY_DELAY_MS,
+  WINDOWS_CHROME_USER_AGENT,
   loadKrxHome,
   clickLoginEntry,
   findLoginFrame,
