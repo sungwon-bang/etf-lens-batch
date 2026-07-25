@@ -3,7 +3,11 @@ const { execFileSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 require('dotenv').config();
-const { login, SESSION_PATH } = require('./krx-auto-login');
+const {
+  loginContext,
+  SESSION_PATH,
+  WINDOWS_CHROME_USER_AGENT,
+} = require('./krx-auto-login');
 const { downloadComposition } = require('./krx-etf-download');
 
 const OUTPUT_PATH = path.join(__dirname, 'data', 'etf-compositions.json');
@@ -11,10 +15,7 @@ const CHECKPOINT_SIZE = Math.max(1, Number(process.env.CHECKPOINT_SIZE || 25));
 const SESSION_MAX_AGE_MS = 20 * 60 * 1000;
 const MAX_LOOKBACK_DAYS = 14;
 const KRX_CONTEXT_OPTIONS = {
-  userAgent:
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' +
-    'AppleWebKit/537.36 (KHTML, like Gecko) ' +
-    'Chrome/149.0.0.0 Safari/537.36',
+  userAgent: WINDOWS_CHROME_USER_AGENT,
   locale: 'ko-KR',
   timezoneId: 'Asia/Seoul',
   extraHTTPHeaders: {
@@ -104,29 +105,16 @@ async function main() {
   let context;
   let sessionStartedAt = 0;
 
-  const openSavedSession = async () => {
-    if (!fs.existsSync(SESSION_PATH)) return false;
-    await context?.close().catch(() => {});
-    context = await browser.newContext({
-      ...KRX_CONTEXT_OPTIONS,
-      storageState: SESSION_PATH,
-      acceptDownloads: true,
-    });
-    sessionStartedAt = Date.now();
-    console.log('로그인 전용 단계에서 저장한 KRX 세션을 불러왔습니다.');
-    return true;
-  };
-
   const renewSession = async () => {
     await context?.close().catch(() => {});
     fs.rmSync(SESSION_PATH, { force: true });
-    await login();
     context = await browser.newContext({
       ...KRX_CONTEXT_OPTIONS,
-      storageState: SESSION_PATH,
       acceptDownloads: true,
     });
+    await loginContext(context, { saveSession: false });
     sessionStartedAt = Date.now();
+    console.log('수집용 브라우저 컨텍스트에서 KRX 로그인을 완료했습니다.');
   };
 
   const collect = async (etf) => {
@@ -145,7 +133,7 @@ async function main() {
   };
 
   try {
-    if (!(await openSavedSession())) await renewSession();
+    await renewSession();
     const pending = targetEtfs.filter((etf) => !state.items[etf.code]);
     console.log(`기준일 ${date}: 전체 ${targetEtfs.length}개, 남은 ${pending.length}개`);
     let sinceCheckpoint = 0;
