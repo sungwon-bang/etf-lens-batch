@@ -79,7 +79,8 @@ jobs:
           KRX_API_KEY: ${{ secrets.KRX_API_KEY }}
           KRX_LOGIN_ID: ${{ secrets.KRX_LOGIN_ID }}
           KRX_LOGIN_PASSWORD: ${{ secrets.KRX_LOGIN_PASSWORD }}
-          CHECKPOINT_SIZE: '25'
+          ETF_CODE_FILTER: ${{ contains(github.event.head_commit.message, '[verify-449450]') && '449450' || '' }}
+          CHECKPOINT_SIZE: ${{ contains(github.event.head_commit.message, '[verify-449450]') && '1' || '25' }}
         run: npm run collect
 
       - name: 오류 진단자료 저장
