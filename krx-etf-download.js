@@ -95,34 +95,60 @@ async function selectFinderResult(page, { code, name }) {
 async function downloadComposition(context, { code, name, date }, existingPage = null) {
   const page = existingPage || await context.newPage();
   const ownsPage = !existingPage;
+  let stage = 'start';
+  const mark = (nextStage) => {
+    stage = nextStage;
+    console.log(`[${code}] ${stage}`);
+  };
   try {
-    await page.goto(COMPOSITION_URL, {
-      waitUntil: 'domcontentloaded',
-      timeout: 60_000,
-    });
     const finderButton = page.locator(
       '[id^="btnisuCd_finder_secuprodisu1_"]:visible',
     ).first();
+    const alreadyReady = existingPage
+      && await finderButton.isVisible().catch(() => false);
+    if (!alreadyReady) {
+      mark('PDF 화면 이동');
+      await page.goto(COMPOSITION_URL, {
+        waitUntil: 'domcontentloaded',
+        timeout: 60_000,
+      });
+    } else {
+      mark('로그인 검증에 사용한 PDF 화면 재사용');
+    }
+    mark('종목검색 버튼 대기');
     await finderButton.waitFor({ state: 'visible', timeout: 30_000 });
-    await finderButton.click();
+    mark('종목검색 팝업 열기');
+    await finderButton.click({ timeout: 15_000, noWaitAfter: true });
 
     const search = page.locator(
       '[id^="searchText__finder_secuprodisu1_"]:visible',
     ).first();
+    mark('검색 입력창 대기');
     await search.waitFor({ state: 'visible', timeout: 15_000 });
-    await search.fill(code);
-    await search.press('Enter');
+    await search.fill(code, { timeout: 10_000 });
+    mark('검색 실행');
+    await search.press('Enter', { timeout: 10_000 });
+    mark('검색 결과 선택');
     await selectFinderResult(page, { code, name });
 
     const dateInput = page.locator('input[id*="trdDd"], input[name*="trdDd"], input[id*="basDd"], input[name*="basDd"]').first();
     if (await dateInput.isVisible().catch(() => false)) {
       await dateInput.fill(`${date.slice(0, 4)}-${date.slice(4, 6)}-${date.slice(6)}`);
     }
-    await page.locator('#jsSearchButton').click({ timeout: 15_000 });
+    mark('PDF 조회');
+    await page.locator('#jsSearchButton').click({ timeout: 15_000, noWaitAfter: true });
     await page.waitForTimeout(3_000);
-    await page.locator('img[title*="다운로드"]').first().click({ timeout: 15_000 });
+    mark('다운로드 메뉴 열기');
+    await page.locator('img[title*="다운로드"]').first().click({
+      timeout: 15_000,
+      noWaitAfter: true,
+    });
+    mark('CSV 다운로드');
     const downloadPromise = page.waitForEvent('download', { timeout: 45_000 });
-    await page.locator('a').filter({ hasText: 'CSV' }).last().click({ timeout: 15_000 });
+    await page.locator('a').filter({ hasText: 'CSV' }).last().click({
+      timeout: 15_000,
+      noWaitAfter: true,
+    });
     const download = await downloadPromise;
     const file = path.join(process.cwd(), `krx-${code}-${date}.csv`);
     await download.saveAs(file);
@@ -143,6 +169,7 @@ async function downloadComposition(context, { code, name, date }, existingPage =
       `diagnostics/collect-${code}.html`,
       await page.content().catch(() => ''),
     );
+    error.message = `[${code}] ${stage} 실패: ${error.message}`;
     throw error;
   } finally {
     if (ownsPage) await page.close();
