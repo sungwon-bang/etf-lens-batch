@@ -97,6 +97,17 @@ async function downloadComposition(context, { code, date }) {
     } finally {
       fs.rmSync(file, { force: true });
     }
+  } catch (error) {
+    fs.mkdirSync('diagnostics', { recursive: true });
+    await page.screenshot({
+      path: `diagnostics/collect-${code}.png`,
+      fullPage: true,
+    }).catch(() => {});
+    fs.writeFileSync(
+      `diagnostics/collect-${code}.html`,
+      await page.content().catch(() => ''),
+    );
+    throw error;
   } finally {
     await page.close();
   }
