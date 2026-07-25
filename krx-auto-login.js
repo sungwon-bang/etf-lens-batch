@@ -9,6 +9,8 @@ const DIAGNOSTIC_DIR = 'diagnostics';
 const KRX_UNAVAILABLE_TEXT = 'Service unavailable';
 const HOME_MAX_ATTEMPTS = 8;
 const HOME_RETRY_DELAY_MS = 15_000;
+const LOGIN_MAX_ATTEMPTS = 4;
+const LOGIN_RETRY_DELAY_MS = 60_000;
 const WINDOWS_CHROME_USER_AGENT =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' +
   'AppleWebKit/537.36 (KHTML, like Gecko) ' +
@@ -151,13 +153,25 @@ async function login() {
     const passwordInput = frame.locator(
       'input[name="pw"], input[type="password"], input[placeholder*="비밀번호"]',
     ).first();
-    await idInput.fill(id);
-    await passwordInput.fill(password);
-    await passwordInput.press('Enter');
-    await page.waitForTimeout(5_000);
+    let loggedIn = false;
+    for (let attempt = 1; attempt <= LOGIN_MAX_ATTEMPTS; attempt += 1) {
+      await idInput.fill(id);
+      await passwordInput.fill(password);
+      await passwordInput.press('Enter');
+      await page.waitForTimeout(5_000);
+      if (!(await idInput.isVisible().catch(() => false))) {
+        loggedIn = true;
+        break;
+      }
+      console.warn(`KRX 로그인 제출 재시도 ${attempt}/${LOGIN_MAX_ATTEMPTS}`);
+      if (attempt < LOGIN_MAX_ATTEMPTS) {
+        await page.waitForTimeout(LOGIN_RETRY_DELAY_MS);
+      }
+    }
 
-    if (await idInput.isVisible().catch(() => false)) {
-      throw new Error('로그인 제출 후에도 입력창이 남아 있습니다. GitHub Secrets의 아이디·비밀번호를 확인하세요.');
+    if (!loggedIn) {
+      await saveDiagnostics(page, 'login-submit-rejected');
+      throw new Error('KRX가 로그인 제출을 반복해서 거절했습니다.');
     }
 
     const state = await context.storageState();
@@ -186,6 +200,8 @@ module.exports = {
   KRX_UNAVAILABLE_TEXT,
   HOME_MAX_ATTEMPTS,
   HOME_RETRY_DELAY_MS,
+  LOGIN_MAX_ATTEMPTS,
+  LOGIN_RETRY_DELAY_MS,
   WINDOWS_CHROME_USER_AGENT,
   loadKrxHome,
   clickLoginEntry,
