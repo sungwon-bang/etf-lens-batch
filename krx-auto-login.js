@@ -172,8 +172,7 @@ async function loginContext(context, { saveSession = true } = {}) {
       fs.writeFileSync(SESSION_PATH, JSON.stringify(state, null, 2));
     }
     console.log(`KRX 로그인 완료: 쿠키 ${state.cookies.length}개`);
-    await page.close().catch(() => {});
-    return context;
+    return { context, page };
   } finally {
     // The caller owns the context. Keeping it open is required because KRX does
     // not accept a session copied into a different browser context.
