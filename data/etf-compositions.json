@@ -2,10 +2,10 @@
   "meta": {
     "date": "20260724",
     "total": 1150,
-    "completed": 2,
-    "failed": 3,
+    "completed": 3,
+    "failed": 7,
     "status": "running",
-    "updatedAt": "2026-07-25T15:37:39.403Z"
+    "updatedAt": "2026-07-25T15:40:08.005Z"
   },
   "items": {
     "451060": {
@@ -1651,9 +1651,163 @@
         }
       ],
       "collectedAt": "2026-07-25T15:37:02.851Z"
+    },
+    "0103T0": {
+      "etf": {
+        "code": "0103T0",
+        "name": "1Q K소버린AI",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 16,
+        "totalWeight": 99.98999999999998
+      },
+      "components": [
+        {
+          "code": "035420",
+          "name": "NAVER",
+          "quantity": 586,
+          "evaluationAmount": 128920000,
+          "marketCap": 121595000,
+          "weight": 30.2
+        },
+        {
+          "code": "035720",
+          "name": "카카오",
+          "quantity": 2640,
+          "evaluationAmount": 98076000,
+          "marketCap": 95568000,
+          "weight": 23.73
+        },
+        {
+          "code": "018260",
+          "name": "삼성에스디에스",
+          "quantity": 310,
+          "evaluationAmount": 67580000,
+          "marketCap": 64945000,
+          "weight": 16.13
+        },
+        {
+          "code": "064400",
+          "name": "LG씨엔에스",
+          "quantity": 381,
+          "evaluationAmount": 26631900,
+          "marketCap": 24574500,
+          "weight": 6.1
+        },
+        {
+          "code": "307950",
+          "name": "현대오토에버",
+          "quantity": 54,
+          "evaluationAmount": 23220000,
+          "marketCap": 20466000,
+          "weight": 5.08
+        },
+        {
+          "code": "300080",
+          "name": "플리토",
+          "quantity": 1265,
+          "evaluationAmount": 10347700,
+          "marketCap": 9867000,
+          "weight": 2.45
+        },
+        {
+          "code": "181710",
+          "name": "NHN",
+          "quantity": 238,
+          "evaluationAmount": 9163000,
+          "marketCap": 8663200,
+          "weight": 2.15
+        },
+        {
+          "code": "064260",
+          "name": "다날",
+          "quantity": 1901,
+          "evaluationAmount": 8811135,
+          "marketCap": 8288360,
+          "weight": 2.06
+        },
+        {
+          "code": "041190",
+          "name": "우리기술투자",
+          "quantity": 1821,
+          "evaluationAmount": 8394810,
+          "marketCap": 8148975,
+          "weight": 2.02
+        },
+        {
+          "code": "022100",
+          "name": "포스코DX",
+          "quantity": 418,
+          "evaluationAmount": 8422700,
+          "marketCap": 8029780,
+          "weight": 1.99
+        },
+        {
+          "code": "030520",
+          "name": "한컴",
+          "quantity": 480,
+          "evaluationAmount": 8097600,
+          "marketCap": 7891200,
+          "weight": 1.96
+        },
+        {
+          "code": "486990",
+          "name": "노타",
+          "quantity": 350,
+          "evaluationAmount": 6580000,
+          "marketCap": 7035000,
+          "weight": 1.75
+        },
+        {
+          "code": "304100",
+          "name": "솔트룩스",
+          "quantity": 614,
+          "evaluationAmount": 7312740,
+          "marketCap": 6796980,
+          "weight": 1.69
+        },
+        {
+          "code": "490470",
+          "name": "세미파이브",
+          "quantity": 354,
+          "evaluationAmount": 6361380,
+          "marketCap": 5890560,
+          "weight": 1.46
+        },
+        {
+          "code": "124500",
+          "name": "아이티센글로벌",
+          "quantity": 220,
+          "evaluationAmount": 5170000,
+          "marketCap": 4631000,
+          "weight": 1.15
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 278745,
+          "weight": 0.07
+        }
+      ],
+      "collectedAt": "2026-07-25T15:37:52.768Z"
     }
   },
   "failures": {
+    "463290": {
+      "code": "463290",
+      "name": "1Q 단기금융채액티브",
+      "attempts": 1,
+      "error": "[463290] CSV 다운로드 실패: 구성종목이 0건입니다."
+    },
+    "479080": {
+      "code": "479080",
+      "name": "1Q 머니마켓액티브",
+      "attempts": 1,
+      "error": "[479080] CSV 다운로드 실패: 구성종목이 0건입니다."
+    },
     "491610": {
       "code": "491610",
       "name": "1Q CD금리액티브(합성)",
@@ -1671,6 +1825,18 @@
       "name": "1Q K반도체TOP2채권혼합50",
       "attempts": 1,
       "error": "[0182S0] CSV 다운로드 실패: 구성종목이 0건입니다."
+    },
+    "0198D0": {
+      "code": "0198D0",
+      "name": "1Q SK하이닉스선물단일종목레버리지",
+      "attempts": 1,
+      "error": "[0198D0] CSV 다운로드 실패: 구성종목이 0건입니다."
+    },
+    "0131W0": {
+      "code": "0131W0",
+      "name": "1Q 단기특수은행채액티브",
+      "attempts": 1,
+      "error": "[0131W0] CSV 다운로드 실패: 구성종목이 0건입니다."
     }
   }
 }
