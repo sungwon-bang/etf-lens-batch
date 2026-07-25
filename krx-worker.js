@@ -13,6 +13,12 @@ const { downloadComposition } = require('./krx-etf-download');
 const OUTPUT_PATH = path.join(__dirname, 'data', 'etf-compositions.json');
 const CHECKPOINT_SIZE = Math.max(1, Number(process.env.CHECKPOINT_SIZE || 25));
 const SESSION_MAX_AGE_MS = 20 * 60 * 1000;
+const LOGIN_TIMEOUT_MS = 8 * 60 * 1000;
+const ETF_TIMEOUT_MS = 4 * 60 * 1000;
+const BATCH_TIMEOUT_MS = Math.max(
+  10 * 60 * 1000,
+  Number(process.env.BATCH_TIMEOUT_MS || 25 * 60 * 1000),
+);
 const MAX_LOOKBACK_DAYS = 14;
 const KRX_CONTEXT_OPTIONS = {
   userAgent: WINDOWS_CHROME_USER_AGENT,
@@ -23,6 +29,16 @@ const KRX_CONTEXT_OPTIONS = {
   },
 };
 let runtimeState;
+
+function withTimeout(promise, timeoutMs, label) {
+  let timer;
+  const timeout = new Promise((_, reject) => {
+    timer = setTimeout(() => {
+      reject(new Error(`${label} 제한시간 ${Math.round(timeoutMs / 1000)}초 초과`));
+    }, timeoutMs);
+  });
+  return Promise.race([promise, timeout]).finally(() => clearTimeout(timer));
+}
 
 function seoulDate(daysAgo = 0) {
   const date = new Date(Date.now() - daysAgo * 86_400_000);
@@ -116,7 +132,11 @@ async function main() {
       ...KRX_CONTEXT_OPTIONS,
       acceptDownloads: true,
     });
-    const authenticated = await loginContext(context, { saveSession: false });
+    const authenticated = await withTimeout(
+      loginContext(context, { saveSession: false }),
+      LOGIN_TIMEOUT_MS,
+      'KRX 로그인 및 PDF 화면 확인',
+    );
     collectionPage = authenticated.page;
     sessionStartedAt = Date.now();
     console.log('수집에 재사용할 동일 페이지에서 KRX 로그인을 완료했습니다.');
@@ -124,10 +144,14 @@ async function main() {
 
   const collect = async (etf) => {
     if (!context || Date.now() - sessionStartedAt >= SESSION_MAX_AGE_MS) await renewSession();
-    const components = await downloadComposition(
-      context,
-      { ...etf, date },
-      collectionPage,
+    const components = await withTimeout(
+      downloadComposition(
+        context,
+        { ...etf, date },
+        collectionPage,
+      ),
+      ETF_TIMEOUT_MS,
+      `ETF ${etf.code} PDF 수집`,
     );
     state.items[etf.code] = {
       etf: { ...etf, date },
@@ -193,7 +217,7 @@ async function main() {
   }
 }
 
-main().catch((error) => {
+withTimeout(main(), BATCH_TIMEOUT_MS, 'ETF PDF 배치 전체 실행').catch((error) => {
   console.error('전체 ETF PDF 배치 실패:', error.message);
   const state = runtimeState || {
     meta: {
@@ -216,5 +240,8 @@ main().catch((error) => {
   state.meta.status = 'failed';
   writeState(state);
   publishCheckpoint('data: record fatal ETF PDF batch error');
-  process.exitCode = 1;
+  // Promise.race cannot cancel a stuck Playwright operation. Exit explicitly
+  // after the failure checkpoint so the workflow can upload diagnostics and
+  // release the self-hosted runner.
+  process.exit(1);
 });
