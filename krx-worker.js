@@ -17,7 +17,7 @@ const LOGIN_TIMEOUT_MS = 8 * 60 * 1000;
 const ETF_TIMEOUT_MS = 4 * 60 * 1000;
 const BATCH_TIMEOUT_MS = Math.max(
   10 * 60 * 1000,
-  Number(process.env.BATCH_TIMEOUT_MS || 25 * 60 * 1000),
+  Number(process.env.BATCH_TIMEOUT_MS || 10 * 60 * 60 * 1000),
 );
 const MAX_LOOKBACK_DAYS = 14;
 const KRX_CONTEXT_OPTIONS = {
@@ -45,6 +45,20 @@ function seoulDate(daysAgo = 0) {
   return new Intl.DateTimeFormat('en-CA', {
     timeZone: 'Asia/Seoul', year: 'numeric', month: '2-digit', day: '2-digit',
   }).format(date).replaceAll('-', '');
+}
+
+function recentBusinessDates(universeDate, limit = 3) {
+  const candidates = [];
+  for (let daysAgo = 0; daysAgo <= MAX_LOOKBACK_DAYS && candidates.length < limit; daysAgo += 1) {
+    const date = new Date(Date.now() - daysAgo * 86_400_000);
+    const weekday = new Intl.DateTimeFormat('en-US', {
+      timeZone: 'Asia/Seoul', weekday: 'short',
+    }).format(date);
+    if (weekday === 'Sat' || weekday === 'Sun') continue;
+    candidates.push(seoulDate(daysAgo));
+  }
+  if (universeDate && !candidates.includes(universeDate)) candidates.push(universeDate);
+  return [...new Set(candidates)].slice(0, limit);
 }
 
 async function fetchEtfUniverse() {
@@ -111,14 +125,14 @@ function publishCheckpoint(message) {
       timeout: 45_000,
     });
   } catch (error) {
-    // A checkpoint push must not strand the browser or abort the remaining
-    // retries. The workflow's final commit step can publish accumulated commits.
     console.warn(`체크포인트 push 보류: ${error.message}`);
   }
 }
 
 async function main() {
-  const { date, etfs } = await fetchEtfUniverse();
+  const { date: universeDate, etfs } = await fetchEtfUniverse();
+  const queryDates = recentBusinessDates(universeDate);
+  const stateDate = queryDates[0] || universeDate;
   const filterCode = String(process.env.ETF_CODE_FILTER || '').trim();
   const targetEtfs = filterCode
     ? etfs.filter((etf) => etf.code === filterCode)
@@ -126,9 +140,7 @@ async function main() {
   if (filterCode && !targetEtfs.length) {
     throw new Error(`ETF 목록에서 검증 종목 ${filterCode}을 찾지 못했습니다.`);
   }
-  const state = initialState(date, targetEtfs);
-  // A single-code verification must exercise the collector again even when a
-  // previous run wrote a superficially successful but invalid checkpoint.
+  const state = initialState(stateDate, targetEtfs);
   if (filterCode) {
     delete state.items[filterCode];
     delete state.failures[filterCode];
@@ -163,17 +175,30 @@ async function main() {
 
   const collect = async (etf) => {
     if (!context || Date.now() - sessionStartedAt >= SESSION_MAX_AGE_MS) await renewSession();
-    const components = await withTimeout(
-      downloadComposition(
-        context,
-        { ...etf, date },
-        collectionPage,
-      ),
-      ETF_TIMEOUT_MS,
-      `ETF ${etf.code} PDF 수집`,
-    );
+    let components;
+    let collectedDate;
+    let lastError;
+    for (const queryDate of queryDates) {
+      try {
+        components = await withTimeout(
+          downloadComposition(
+            context,
+            { code: etf.code, name: etf.name, date: queryDate },
+            collectionPage,
+          ),
+          ETF_TIMEOUT_MS,
+          `ETF ${etf.code} PDF 수집 (${queryDate})`,
+        );
+        collectedDate = queryDate;
+        break;
+      } catch (error) {
+        lastError = error;
+        console.warn(`[${etf.code}] 조회일자 ${queryDate} 실패: ${error.message}`);
+      }
+    }
+    if (!components) throw lastError || new Error('사용 가능한 PDF 조회일자를 찾지 못했습니다.');
     state.items[etf.code] = {
-      etf: { ...etf, date },
+      etf: { code: etf.code, name: etf.name, date: collectedDate },
       summary: {
         totalComponents: components.length,
         totalWeight: components.reduce((sum, item) => sum + item.weight, 0),
@@ -188,7 +213,7 @@ async function main() {
     await renewSession();
     delete state.failures._batch;
     const pending = targetEtfs.filter((etf) => !state.items[etf.code]);
-    console.log(`기준일 ${date}: 전체 ${targetEtfs.length}개, 남은 ${pending.length}개`);
+    console.log(`ETF 목록 기준일 ${universeDate}, PDF 조회 후보 ${queryDates.join(', ')}: 전체 ${targetEtfs.length}개, 남은 ${pending.length}개`);
     let sinceCheckpoint = 0;
 
     for (const etf of pending) {
@@ -196,7 +221,7 @@ async function main() {
         await collect(etf);
         console.log(`완료 ${etf.code} ${etf.name}`);
       } catch (error) {
-        state.failures[etf.code] = { ...etf, attempts: 1, error: error.message };
+        state.failures[etf.code] = { code: etf.code, name: etf.name, attempts: 1, error: error.message };
         console.error(`1차 실패 ${etf.code}: ${error.message}`);
         await renewSession().catch((loginError) => console.error(`재로그인 실패: ${loginError.message}`));
       }
@@ -217,7 +242,7 @@ async function main() {
           await collect(etf);
           console.log(`재시도 완료 ${etf.code} ${etf.name}`);
         } catch (error) {
-          state.failures[etf.code] = { ...etf, attempts: round, error: error.message };
+          state.failures[etf.code] = { code: etf.code, name: etf.name, attempts: round, error: error.message };
           console.error(`${round}차 실패 ${etf.code}: ${error.message}`);
         }
         writeState(state);
@@ -259,8 +284,5 @@ withTimeout(main(), BATCH_TIMEOUT_MS, 'ETF PDF 배치 전체 실행').catch((err
   state.meta.status = 'failed';
   writeState(state);
   publishCheckpoint('data: record fatal ETF PDF batch error');
-  // Promise.race cannot cancel a stuck Playwright operation. Exit explicitly
-  // after the failure checkpoint so the workflow can upload diagnostics and
-  // release the self-hosted runner.
   process.exit(1);
 });
