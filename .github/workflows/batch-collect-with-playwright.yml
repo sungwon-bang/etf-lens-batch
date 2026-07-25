@@ -48,6 +48,15 @@ jobs:
           KRX_LOGIN_PASSWORD: ${{ secrets.KRX_LOGIN_PASSWORD }}
         run: npm run login
 
+      - name: 로그인 오류 진단자료 저장
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: krx-login-diagnostics-${{ github.run_attempt }}
+          path: diagnostics/
+          if-no-files-found: ignore
+          retention-days: 7
+
       - name: 로그인 전용 검증 완료
         if: github.event_name == 'workflow_dispatch' && inputs.mode == 'login_only'
         run: echo "KRX 로그인과 세션 저장을 정상 완료했습니다."
