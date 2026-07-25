@@ -92,7 +92,14 @@ function publishCheckpoint(message) {
 
 async function main() {
   const { date, etfs } = await fetchEtfUniverse();
-  const state = initialState(date, etfs);
+  const filterCode = String(process.env.ETF_CODE_FILTER || '').trim();
+  const targetEtfs = filterCode
+    ? etfs.filter((etf) => etf.code === filterCode)
+    : etfs;
+  if (filterCode && !targetEtfs.length) {
+    throw new Error(`ETF 목록에서 검증 종목 ${filterCode}을 찾지 못했습니다.`);
+  }
+  const state = initialState(date, targetEtfs);
   const browser = await chromium.launch({ headless: true, args: ['--no-sandbox'] });
   let context;
   let sessionStartedAt = 0;
@@ -139,8 +146,8 @@ async function main() {
 
   try {
     if (!(await openSavedSession())) await renewSession();
-    const pending = etfs.filter((etf) => !state.items[etf.code]);
-    console.log(`기준일 ${date}: 전체 ${etfs.length}개, 남은 ${pending.length}개`);
+    const pending = targetEtfs.filter((etf) => !state.items[etf.code]);
+    console.log(`기준일 ${date}: 전체 ${targetEtfs.length}개, 남은 ${pending.length}개`);
     let sinceCheckpoint = 0;
 
     for (const etf of pending) {
