@@ -1,6 +1,17 @@
 name: ETF PDF 야간 전체 수집
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'krx-auto-login.js'
+      - 'krx-etf-download.js'
+      - 'krx-worker.js'
+      - 'test/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/batch-collect-with-playwright.yml'
   schedule:
     # 매일 23:30 KST = 14:30 UTC
     - cron: '30 14 * * *'
