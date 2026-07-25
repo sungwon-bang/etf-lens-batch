@@ -43,14 +43,39 @@ function parseCsv(file) {
   if (indexes.code < 0 || indexes.name < 0 || indexes.weight < 0) {
     throw new Error(`필수 CSV 열을 찾지 못했습니다: ${header.join(', ')}`);
   }
-  return rows.slice(1).map((row) => ({
-    code: String(row[indexes.code] ?? '').trim().toUpperCase(),
-    name: String(row[indexes.name] ?? '').trim(),
-    quantity: indexes.quantity >= 0 ? toNumber(row[indexes.quantity]) : 0,
-    evaluationAmount: indexes.amount >= 0 ? toNumber(row[indexes.amount]) : 0,
-    marketCap: indexes.marketCap >= 0 ? toNumber(row[indexes.marketCap]) : 0,
-    weight: toNumber(row[indexes.weight]),
-  })).filter((item) => item.code && item.name && item.weight > 0);
+
+  const components = rows.slice(1).map((row) => {
+    const rawWeight = String(row[indexes.weight] ?? '').trim();
+    const evaluationAmount = indexes.amount >= 0 ? toNumber(row[indexes.amount]) : 0;
+    const marketCap = indexes.marketCap >= 0 ? toNumber(row[indexes.marketCap]) : 0;
+    return {
+      code: String(row[indexes.code] ?? '').trim().toUpperCase(),
+      name: String(row[indexes.name] ?? '').trim(),
+      quantity: indexes.quantity >= 0 ? toNumber(row[indexes.quantity]) : 0,
+      evaluationAmount,
+      marketCap,
+      weight: toNumber(rawWeight),
+      weightPresent: Boolean(rawWeight && rawWeight !== '-'),
+      valuationBase: Math.abs(marketCap) || Math.abs(evaluationAmount),
+    };
+  }).filter((item) => (
+    item.code
+    && item.name
+    && item.code !== 'CASH00000001'
+    && !/설정현금액/.test(item.name)
+    && (item.weight > 0 || item.quantity !== 0 || item.valuationBase > 0)
+  ));
+
+  if (components.some((item) => !item.weightPresent && item.valuationBase > 0)) {
+    const totalValue = components.reduce((sum, item) => sum + item.valuationBase, 0);
+    if (totalValue > 0) {
+      components.forEach((item) => {
+        item.weight = Number(((item.valuationBase / totalValue) * 100).toFixed(6));
+      });
+    }
+  }
+
+  return components.map(({ weightPresent, valuationBase, ...item }) => item);
 }
 
 function finderSurfaces(page) {
