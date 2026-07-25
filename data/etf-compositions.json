@@ -2,10 +2,10 @@
   "meta": {
     "date": "20260724",
     "total": 1150,
-    "completed": 67,
+    "completed": 72,
     "failed": 1,
     "status": "running",
-    "updatedAt": "2026-07-25T16:01:03.771Z"
+    "updatedAt": "2026-07-25T16:02:03.433Z"
   },
   "items": {
     "105190": {
@@ -8546,6 +8546,322 @@
       ],
       "collectedAt": "2026-07-25T15:35:37.928Z"
     },
+    "452250": {
+      "etf": {
+        "code": "452250",
+        "name": "ACE 미국30년국채선물레버리지(합성 H)",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 4,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "SWAP00000002",
+          "name": "스왑(KB증권)",
+          "quantity": 0,
+          "evaluationAmount": -6443350,
+          "marketCap": 0,
+          "weight": 2.329879
+        },
+        {
+          "code": "SWAP00000005",
+          "name": "스왑(미래에셋증권)",
+          "quantity": 0,
+          "evaluationAmount": -3533032,
+          "marketCap": 0,
+          "weight": 1.277525
+        },
+        {
+          "code": "SWAP00000011",
+          "name": "스왑(키움증권)",
+          "quantity": 0,
+          "evaluationAmount": -6340050,
+          "marketCap": 0,
+          "weight": 2.292527
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 260236516,
+          "weight": 94.100069
+        }
+      ],
+      "collectedAt": "2026-07-25T16:01:40.268Z"
+    },
+    "453850": {
+      "etf": {
+        "code": "453850",
+        "name": "ACE 미국30년국채액티브(H)",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 32,
+        "totalWeight": 99.99999999999999
+      },
+      "components": [
+        {
+          "code": "KRYZFXSG7685",
+          "name": "FX스왑 USD 260706-25",
+          "quantity": -231190993,
+          "evaluationAmount": -231190993,
+          "marketCap": 0,
+          "weight": 33.66237
+        },
+        {
+          "code": "KRYZFXSG7F47",
+          "name": "FX스왑 USD 260715-80",
+          "quantity": -117052582,
+          "evaluationAmount": -117052582,
+          "marketCap": 0,
+          "weight": 17.043343
+        },
+        {
+          "code": "KRYZFXSG7LAS",
+          "name": "FX스왑 USD 260720-32",
+          "quantity": -59532374,
+          "evaluationAmount": -59532374,
+          "marketCap": 0,
+          "weight": 8.668161
+        },
+        {
+          "code": "KRYZFXSG7P74",
+          "name": "FX스왑 USD 260723-03",
+          "quantity": -101996026,
+          "evaluationAmount": -101996026,
+          "marketCap": 0,
+          "weight": 14.851046
+        },
+        {
+          "code": "US4642874329",
+          "name": "ISHARES 20+ YEAR TREASURY BD",
+          "quantity": 949.57,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US46438T2006",
+          "name": "ISHARES 25+ YR TREAS STRIPS",
+          "quantity": 191.4,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US72201R8824",
+          "name": "PIMCO 25+ YR ZERO CPN US TIF",
+          "quantity": 309.55,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US74347R1721",
+          "name": "PROSHARES ULTRA 20+ YEAR TSY",
+          "quantity": 44.42,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912803HH90",
+          "name": "SP 0 02/15/55",
+          "quantity": 80340.26,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912803HS55",
+          "name": "SP 0 02/15/56",
+          "quantity": 7088.85,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912803HL03",
+          "name": "SP 0 05/15/55",
+          "quantity": 100189.04,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912803HN68",
+          "name": "SP 0 08/15/55",
+          "quantity": 97826.09,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912803HQ99",
+          "name": "SP 0 11/15/55",
+          "quantity": 9924.39,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810SU34",
+          "name": "T 1 7/8 02/15/51",
+          "quantity": 11814.74,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810TG31",
+          "name": "T 2.875 05/15/52",
+          "quantity": 1370.51,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810TJ79",
+          "name": "T 3 08/15/52",
+          "quantity": 1465.03,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810TN81",
+          "name": "T 3 5/8 02/15/53",
+          "quantity": 6805.29,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810TR95",
+          "name": "T 3 5/8 05/15/53",
+          "quantity": 5198.49,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UE63",
+          "name": "T 4 1/2 11/15/54",
+          "quantity": 5671.08,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810TX63",
+          "name": "T 4 1/4 02/15/54",
+          "quantity": 20557.66,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UC08",
+          "name": "T 4 1/4 08/15/54",
+          "quantity": 5198.49,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810TT51",
+          "name": "T 4 1/8 08/15/53",
+          "quantity": 4962.19,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UR76",
+          "name": "T 4 3/4 02/15/56",
+          "quantity": 3780.72,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UK24",
+          "name": "T 4 3/4 05/15/55",
+          "quantity": 2362.95,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UM89",
+          "name": "T 4 3/4 08/15/55",
+          "quantity": 5198.49,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810TV08",
+          "name": "T 4 3/4 11/15/53",
+          "quantity": 3308.13,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UG12",
+          "name": "T 4 5/8 02/15/55",
+          "quantity": 4725.9,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UA42",
+          "name": "T 4 5/8 05/15/54",
+          "quantity": 3308.13,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UP11",
+          "name": "T 4 5/8 11/15/55",
+          "quantity": 52149.6,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US9219107094",
+          "name": "VANGUARD EXTENDED DUR TREAS",
+          "quantity": 1393.19,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "USDZZ0000001",
+          "name": "[USD] 예금",
+          "quantity": 13481.56,
+          "evaluationAmount": 19774750,
+          "marketCap": 0,
+          "weight": 2.879286
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 157246841,
+          "weight": 22.895794
+        }
+      ],
+      "collectedAt": "2026-07-25T16:02:03.433Z"
+    },
     "460960": {
       "etf": {
         "code": "460960",
@@ -9337,6 +9653,212 @@
         }
       ],
       "collectedAt": "2026-07-25T15:53:33.812Z"
+    },
+    "476760": {
+      "etf": {
+        "code": "476760",
+        "name": "ACE 미국30년국채액티브",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 24,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "US4642874329",
+          "name": "ISHARES 20+ YEAR TREASURY BD",
+          "quantity": 886.44,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US46438T2006",
+          "name": "ISHARES 25+ YR TREAS STRIPS",
+          "quantity": 252.37,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US72201R8824",
+          "name": "PIMCO 25+ YR ZERO CPN US TIF",
+          "quantity": 916.4,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912803HH90",
+          "name": "SP 0 02/15/55",
+          "quantity": 85173.5,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912803HS55",
+          "name": "SP 0 02/15/56",
+          "quantity": 3154.57,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912803HL03",
+          "name": "SP 0 05/15/55",
+          "quantity": 88328.08,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912803HN68",
+          "name": "SP 0 08/15/55",
+          "quantity": 82018.93,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912803HQ99",
+          "name": "SP 0 11/15/55",
+          "quantity": 52050.47,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810SU34",
+          "name": "T 1 7/8 02/15/51",
+          "quantity": 6309.15,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810TR95",
+          "name": "T 3 5/8 05/15/53",
+          "quantity": 6624.61,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UE63",
+          "name": "T 4 1/2 11/15/54",
+          "quantity": 12618.3,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810TX63",
+          "name": "T 4 1/4 02/15/54",
+          "quantity": 8044.16,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UC08",
+          "name": "T 4 1/4 08/15/54",
+          "quantity": 19558.36,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810TT51",
+          "name": "T 4 1/8 08/15/53",
+          "quantity": 3943.22,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UR76",
+          "name": "T 4 3/4 02/15/56",
+          "quantity": 8201.89,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UK24",
+          "name": "T 4 3/4 05/15/55",
+          "quantity": 15772.87,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UM89",
+          "name": "T 4 3/4 08/15/55",
+          "quantity": 14195.58,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810TV08",
+          "name": "T 4 3/4 11/15/53",
+          "quantity": 4889.59,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UG12",
+          "name": "T 4 5/8 02/15/55",
+          "quantity": 15457.41,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UA42",
+          "name": "T 4 5/8 05/15/54",
+          "quantity": 5835.96,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UP11",
+          "name": "T 4 5/8 11/15/55",
+          "quantity": 75298.78,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US9219107094",
+          "name": "VANGUARD EXTENDED DUR TREAS",
+          "quantity": 1900.63,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "USDZZ0000001",
+          "name": "[USD] 예금",
+          "quantity": 213501.24,
+          "evaluationAmount": 313163615,
+          "marketCap": 0,
+          "weight": 78.821338
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": -84144554,
+          "weight": 21.178662
+        }
+      ],
+      "collectedAt": "2026-07-25T16:01:51.673Z"
     },
     "479080": {
       "etf": {
@@ -26961,6 +27483,290 @@
         }
       ],
       "collectedAt": "2026-07-25T16:00:41.347Z"
+    },
+    "0085P0": {
+      "etf": {
+        "code": "0085P0",
+        "name": "ACE 미국10년국채액티브",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 16,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "US912810FT08",
+          "name": "T 4 1/2 02/15/36",
+          "quantity": 3989.9,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US91282CNC19",
+          "name": "T 4 1/4 05/15/35",
+          "quantity": 28282.83,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US91282CNT44",
+          "name": "T 4 1/4 08/15/35",
+          "quantity": 47474.75,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US91282CPZ85",
+          "name": "T 4 1/8 02/15/36",
+          "quantity": 40404.04,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US91282CPJ44",
+          "name": "T 4 11/15/35",
+          "quantity": 42424.24,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810PT97",
+          "name": "T 4 3/4 02/15/37",
+          "quantity": 8585.86,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810PW27",
+          "name": "T 4 3/8 02/15/38",
+          "quantity": 6060.61,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US91282CQQ77",
+          "name": "T 4 3/8 05/15/36",
+          "quantity": 26262.63,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810QD37",
+          "name": "T 4 3/8 11/15/39",
+          "quantity": 8080.81,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US91282CMM00",
+          "name": "T 4 5/8 02/15/35",
+          "quantity": 1515.15,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "USDZZ0000001",
+          "name": "USD현금",
+          "quantity": 234842.36,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US4642886539",
+          "name": "iShares 10-20 Year Treasury Bond ETF",
+          "quantity": 1881.31,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US4642874402",
+          "name": "iShares 7-10 Year Treasury Bond ETF",
+          "quantity": 729.29,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US46438G6465",
+          "name": "iShares iBonds Dec 2034 Term Treasury ET",
+          "quantity": 20.2,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US46438G4221",
+          "name": "iShares iBonds Dec 2035 Term Treasury ET",
+          "quantity": 3552.91,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": -98587621,
+          "weight": 100
+        }
+      ],
+      "collectedAt": "2026-07-25T16:01:16.427Z"
+    },
+    "0085N0": {
+      "etf": {
+        "code": "0085N0",
+        "name": "ACE 미국10년국채액티브(H)",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 16,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "US912810FT08",
+          "name": "T 4 1/2 02/15/36",
+          "quantity": 1571.43,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US91282CNC19",
+          "name": "T 4 1/4 05/15/35",
+          "quantity": 6000,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US91282CNT44",
+          "name": "T 4 1/4 08/15/35",
+          "quantity": 12857.14,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US91282CPZ85",
+          "name": "T 4 1/8 02/15/36",
+          "quantity": 91428.57,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US91282CPJ44",
+          "name": "T 4 11/15/35",
+          "quantity": 27142.86,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810PT97",
+          "name": "T 4 3/4 02/15/37",
+          "quantity": 12857.14,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810PW27",
+          "name": "T 4 3/8 02/15/38",
+          "quantity": 11428.57,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US91282CQQ77",
+          "name": "T 4 3/8 05/15/36",
+          "quantity": 5714.29,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810QD37",
+          "name": "T 4 3/8 11/15/39",
+          "quantity": 21428.57,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US91282CMM00",
+          "name": "T 4 5/8 02/15/35",
+          "quantity": 3714.29,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "USDZZ0000001",
+          "name": "USD현금",
+          "quantity": 149800.76,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US4642886539",
+          "name": "iShares 10-20 Year Treasury Bond ETF",
+          "quantity": 1731.43,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US4642874402",
+          "name": "iShares 7-10 Year Treasury Bond ETF",
+          "quantity": 677.14,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US46438G4221",
+          "name": "iShares iBonds Dec 2035 Term Treasury ET",
+          "quantity": 3316.07,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "FXFWD0000USD",
+          "name": "외국환포워드USD",
+          "quantity": -939692167,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 24680980,
+          "weight": 100
+        }
+      ],
+      "collectedAt": "2026-07-25T16:01:28.600Z"
     }
   },
   "failures": {
