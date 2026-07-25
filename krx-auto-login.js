@@ -137,6 +137,10 @@ async function login() {
       },
     });
     const page = await context.newPage();
+    page.on('dialog', async (dialog) => {
+      console.log(`KRX 대화상자 자동 승인: ${dialog.type()}`);
+      await dialog.accept().catch(() => {});
+    });
     await loadKrxHome(page);
     await clickLoginEntry(page);
 
