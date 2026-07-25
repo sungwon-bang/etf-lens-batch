@@ -118,24 +118,12 @@ async function clickLoginEntry(page) {
   throw new Error(`KRX 로그인 진입 버튼을 찾지 못했습니다. 현재 URL: ${page.url()}`);
 }
 
-async function login() {
+async function loginContext(context, { saveSession = true } = {}) {
   const id = process.env.KRX_LOGIN_ID;
   const password = process.env.KRX_LOGIN_PASSWORD;
   if (!id || !password) throw new Error('KRX_LOGIN_ID와 KRX_LOGIN_PASSWORD가 필요합니다.');
 
-  const browser = await chromium.launch({
-    headless: true,
-    args: ['--no-sandbox', '--disable-blink-features=AutomationControlled'],
-  });
   try {
-    const context = await browser.newContext({
-      userAgent: WINDOWS_CHROME_USER_AGENT,
-      locale: 'ko-KR',
-      timezoneId: 'Asia/Seoul',
-      extraHTTPHeaders: {
-        'Accept-Language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',
-      },
-    });
     const page = await context.newPage();
     page.on('dialog', async (dialog) => {
       console.log(`KRX 대화상자 자동 승인: ${dialog.type()}`);
@@ -180,8 +168,33 @@ async function login() {
 
     const state = await context.storageState();
     if (!state.cookies.length) throw new Error('로그인 세션 쿠키가 생성되지 않았습니다.');
-    fs.writeFileSync(SESSION_PATH, JSON.stringify(state, null, 2));
+    if (saveSession) {
+      fs.writeFileSync(SESSION_PATH, JSON.stringify(state, null, 2));
+    }
     console.log(`KRX 로그인 완료: 쿠키 ${state.cookies.length}개`);
+    await page.close().catch(() => {});
+    return context;
+  } finally {
+    // The caller owns the context. Keeping it open is required because KRX does
+    // not accept a session copied into a different browser context.
+  }
+}
+
+async function login() {
+  const browser = await chromium.launch({
+    headless: true,
+    args: ['--no-sandbox', '--disable-blink-features=AutomationControlled'],
+  });
+  try {
+    const context = await browser.newContext({
+      userAgent: WINDOWS_CHROME_USER_AGENT,
+      locale: 'ko-KR',
+      timezoneId: 'Asia/Seoul',
+      extraHTTPHeaders: {
+        'Accept-Language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',
+      },
+    });
+    await loginContext(context);
     return SESSION_PATH;
   } finally {
     await browser.close();
@@ -197,6 +210,7 @@ if (require.main === module) {
 
 module.exports = {
   login,
+  loginContext,
   SESSION_PATH,
   KRX_HOME_URL,
   LOGIN_LINK_SELECTOR,
