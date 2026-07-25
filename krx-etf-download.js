@@ -78,12 +78,26 @@ async function selectedFinderValues(page) {
 
 async function finderAlreadySelected(page, { code, name }) {
   const values = await selectedFinderValues(page).catch(() => []);
-  const selected = values.find((item) => (
+  const matchesTarget = (item) => (
     item.value.includes(code)
     || item.value.includes(name)
+  );
+  const display = values.find((item) => (
+    /^tbox/i.test(item.id)
+    && matchesTarget(item)
   ));
-  if (!selected) return false;
-  console.log(`ETF 검색 자동선택 확인: ${selected.id}=${selected.value}`);
+  const backing = values.find((item) => (
+    !/(tbox|searchText)/i.test(item.id)
+    && matchesTarget(item)
+  ));
+  if (!display || !backing) {
+    if (display) {
+      console.log(`ETF 표시값만 입력됨, 결과 행 선택 필요: ${display.id}=${display.value}`);
+    }
+    return false;
+  }
+  console.log(`ETF 선택 표시값 확인: ${display.id}=${display.value}`);
+  console.log(`ETF 내부 종목코드 확인: ${backing.id}=${backing.value}`);
   return true;
 }
 
@@ -261,7 +275,7 @@ async function downloadComposition(context, { code, name, date }, existingPage =
     }
 
     if (!(await finderAlreadySelected(page, { code, name }))) {
-      console.log(`[${code}] 선택값 직접 확인은 실패했지만 조회 단계로 진행합니다.`);
+      throw new Error('검색 결과 클릭 후 내부 종목코드가 설정되지 않았습니다.');
     }
 
     const dateInput = page.locator('input[id*="trdDd"], input[name*="trdDd"], input[id*="basDd"], input[name*="basDd"]').first();
@@ -288,6 +302,19 @@ async function downloadComposition(context, { code, name, date }, existingPage =
     try {
       const components = parseCsv(file);
       if (!components.length) throw new Error('구성종목이 0건입니다.');
+      const nonCashComponents = components.filter((item) => (
+        !/(원화현금|외화현금|현금성자산|cash)/i.test(item.name)
+      ));
+      if (!nonCashComponents.length) {
+        fs.mkdirSync('diagnostics', { recursive: true });
+        fs.copyFileSync(
+          file,
+          path.join('diagnostics', `invalid-cash-only-${code}-${date}.csv`),
+        );
+        throw new Error(
+          `CSV가 현금성 구성종목만 포함합니다: ${components.map((item) => item.name).join(', ')}`,
+        );
+      }
       return components;
     } finally {
       fs.rmSync(file, { force: true });
