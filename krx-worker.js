@@ -127,6 +127,13 @@ async function main() {
     throw new Error(`ETF 목록에서 검증 종목 ${filterCode}을 찾지 못했습니다.`);
   }
   const state = initialState(date, targetEtfs);
+  // A single-code verification must exercise the collector again even when a
+  // previous run wrote a superficially successful but invalid checkpoint.
+  if (filterCode) {
+    delete state.items[filterCode];
+    delete state.failures[filterCode];
+    writeState(state);
+  }
   runtimeState = state;
   const browser = await chromium.launch({
     headless: true,
