@@ -29,6 +29,11 @@ on:
 permissions:
   contents: write
 
+defaults:
+  run:
+    # PowerShell 실행 정책의 영향을 받지 않는 Windows 기본 셸을 사용합니다.
+    shell: cmd
+
 concurrency:
   group: etf-pdf-nightly-batch
   cancel-in-progress: false
@@ -56,16 +61,7 @@ jobs:
         run: npx playwright install chromium
 
       - name: KRX 접속 사전검사
-        shell: powershell
-        run: |
-          $response = Invoke-WebRequest -Uri "https://data.krx.co.kr/" -UseBasicParsing -TimeoutSec 60
-          if ($response.StatusCode -ne 200) {
-            throw "KRX 접속 실패: HTTP $($response.StatusCode)"
-          }
-          if ($response.Content -match "Service unavailable") {
-            throw "현재 실행 PC에서도 KRX가 Service unavailable을 반환했습니다."
-          }
-          Write-Host "KRX 접속 확인 완료"
+        run: curl.exe --fail --silent --show-error --max-time 60 --output NUL https://data.krx.co.kr/
 
       - name: KRX 로그인 및 세션 저장
         env:
@@ -97,13 +93,8 @@ jobs:
 
       - name: 최종 결과 커밋
         if: always() && (github.event_name == 'schedule' || inputs.mode == 'collect')
-        shell: powershell
         run: |
-          git diff --quiet -- data/etf-compositions.json
-          if ($LASTEXITCODE -eq 0) {
-            Write-Host "추가 변경 없음"
-            exit 0
-          }
+          git diff --quiet -- data/etf-compositions.json && exit /b 0
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/etf-compositions.json
