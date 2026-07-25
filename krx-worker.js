@@ -22,6 +22,7 @@ const KRX_CONTEXT_OPTIONS = {
     'Accept-Language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',
   },
 };
+let runtimeState;
 
 function seoulDate(daysAgo = 0) {
   const date = new Date(Date.now() - daysAgo * 86_400_000);
@@ -101,6 +102,7 @@ async function main() {
     throw new Error(`ETF 목록에서 검증 종목 ${filterCode}을 찾지 못했습니다.`);
   }
   const state = initialState(date, targetEtfs);
+  runtimeState = state;
   const browser = await chromium.launch({ headless: true, args: ['--no-sandbox'] });
   let context;
   let collectionPage;
@@ -141,6 +143,7 @@ async function main() {
 
   try {
     await renewSession();
+    delete state.failures._batch;
     const pending = targetEtfs.filter((etf) => !state.items[etf.code]);
     console.log(`기준일 ${date}: 전체 ${targetEtfs.length}개, 남은 ${pending.length}개`);
     let sinceCheckpoint = 0;
@@ -192,5 +195,26 @@ async function main() {
 
 main().catch((error) => {
   console.error('전체 ETF PDF 배치 실패:', error.message);
+  const state = runtimeState || {
+    meta: {
+      date: seoulDate(),
+      total: 0,
+      completed: 0,
+      failed: 0,
+      status: 'failed',
+      updatedAt: new Date().toISOString(),
+    },
+    items: {},
+    failures: {},
+  };
+  state.failures ??= {};
+  state.failures._batch = {
+    stage: 'batch-initialization',
+    error: error.message,
+    failedAt: new Date().toISOString(),
+  };
+  state.meta.status = 'failed';
+  writeState(state);
+  publishCheckpoint('data: record fatal ETF PDF batch error');
   process.exitCode = 1;
 });
