@@ -1,17 +1,6 @@
 name: ETF PDF 야간 전체 수집
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'krx-auto-login.js'
-      - 'krx-etf-download.js'
-      - 'krx-worker.js'
-      - 'test/**'
-      - 'package.json'
-      - 'package-lock.json'
-      - '.github/workflows/batch-collect-with-playwright.yml'
   schedule:
     # 매일 23:30 KST = 14:30 UTC
     - cron: '30 14 * * *'
@@ -35,8 +24,9 @@ concurrency:
 
 jobs:
   collect:
-    runs-on: ubuntu-latest
-    timeout-minutes: 330
+    # KRX가 GitHub 호스팅 서버를 차단하므로 한국 내 Windows PC에서 실행합니다.
+    runs-on: [self-hosted, Windows, X64]
+    timeout-minutes: 720
 
     steps:
       - name: 저장소 클론
@@ -46,27 +36,31 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '24'
+          cache: npm
 
       - name: 의존성 설치
         run: npm ci
 
       - name: Chromium 설치
-        run: npx playwright install --with-deps chromium
+        run: npx playwright install chromium
+
+      - name: KRX 접속 사전검사
+        shell: powershell
+        run: |
+          $response = Invoke-WebRequest -Uri "https://data.krx.co.kr/" -UseBasicParsing -TimeoutSec 60
+          if ($response.StatusCode -ne 200) {
+            throw "KRX 접속 실패: HTTP $($response.StatusCode)"
+          }
+          if ($response.Content -match "Service unavailable") {
+            throw "현재 실행 PC에서도 KRX가 Service unavailable을 반환했습니다."
+          }
+          Write-Host "KRX 접속 확인 완료"
 
       - name: KRX 로그인 및 세션 저장
         env:
           KRX_LOGIN_ID: ${{ secrets.KRX_LOGIN_ID }}
           KRX_LOGIN_PASSWORD: ${{ secrets.KRX_LOGIN_PASSWORD }}
         run: npm run login
-
-      - name: 로그인 오류 진단자료 저장
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: krx-login-diagnostics-${{ github.run_attempt }}
-          path: diagnostics/
-          if-no-files-found: ignore
-          retention-days: 7
 
       - name: 로그인 전용 검증 완료
         if: github.event_name == 'workflow_dispatch' && inputs.mode == 'login_only'
@@ -81,13 +75,24 @@ jobs:
           CHECKPOINT_SIZE: '25'
         run: npm run collect
 
+      - name: 오류 진단자료 저장
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: krx-diagnostics-${{ github.run_id }}-${{ github.run_attempt }}
+          path: diagnostics/
+          if-no-files-found: ignore
+          retention-days: 7
+
       - name: 최종 결과 커밋
         if: always() && (github.event_name == 'schedule' || inputs.mode == 'collect')
+        shell: powershell
         run: |
-          if git diff --quiet -- data/etf-compositions.json; then
-            echo "추가 변경 없음"
+          git diff --quiet -- data/etf-compositions.json
+          if ($LASTEXITCODE -eq 0) {
+            Write-Host "추가 변경 없음"
             exit 0
-          fi
+          }
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/etf-compositions.json
