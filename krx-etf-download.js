@@ -53,6 +53,45 @@ function parseCsv(file) {
   })).filter((item) => item.code && item.name && item.weight > 0);
 }
 
+async function selectFinderResult(page, { code, name }) {
+  const deadline = Date.now() + 20_000;
+  const selectors = [
+    '[id^="jsLayer_finder_secuprodisu1_"]:visible tr',
+    '[id*="finder_secuprodisu1_"]:visible tr',
+    '.CI-GRID-BODY-TABLE-TBODY:visible tr',
+    'table:visible tbody tr',
+  ];
+
+  while (Date.now() < deadline) {
+    for (const selector of selectors) {
+      const rows = page.locator(selector);
+      const count = await rows.count();
+      for (let index = 0; index < count; index += 1) {
+        const row = rows.nth(index);
+        const text = (await row.innerText().catch(() => '')).replace(/\s+/g, ' ').trim();
+        if (!text || (!text.includes(code) && !text.includes(name))) continue;
+        console.log(`ETF 검색 결과 선택: ${text.slice(0, 120)}`);
+        const clickable = row.locator('a, button, [onclick]').first();
+        if (await clickable.isVisible().catch(() => false)) {
+          await clickable.click();
+        } else {
+          await row.click();
+        }
+        return;
+      }
+    }
+    await page.waitForTimeout(500);
+  }
+
+  const visibleRows = await page.locator('table:visible tbody tr').evaluateAll((rows) =>
+    rows.slice(0, 30).map((row) =>
+      (row.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 160)),
+  ).catch(() => []);
+  throw new Error(
+    `ETF 검색 결과가 없습니다. 검색어=${code}, 화면행=${JSON.stringify(visibleRows)}`,
+  );
+}
+
 async function downloadComposition(context, { code, date }) {
   const page = await context.newPage();
   try {
@@ -72,11 +111,7 @@ async function downloadComposition(context, { code, date }) {
     await search.waitFor({ state: 'visible', timeout: 15_000 });
     await search.fill(code);
     await search.press('Enter');
-    await page.waitForTimeout(1_500);
-    const finderLayer = page.locator('[id^="jsLayer_finder_secuprodisu1_"]:visible').last();
-    const result = finderLayer.getByText(code, { exact: false }).last();
-    if (!(await result.isVisible().catch(() => false))) throw new Error('ETF 검색 결과가 없습니다.');
-    await result.click();
+    await selectFinderResult(page, { code, name });
 
     const dateInput = page.locator('input[id*="trdDd"], input[name*="trdDd"], input[id*="basDd"], input[name*="basDd"]').first();
     if (await dateInput.isVisible().catch(() => false)) {
@@ -118,4 +153,5 @@ module.exports = {
   COMPOSITION_URL,
   downloadComposition,
   parseCsv,
+  selectFinderResult,
 };
