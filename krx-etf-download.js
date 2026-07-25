@@ -92,7 +92,7 @@ async function selectFinderResult(page, { code, name }) {
   );
 }
 
-async function downloadComposition(context, { code, date }, existingPage = null) {
+async function downloadComposition(context, { code, name, date }, existingPage = null) {
   const page = existingPage || await context.newPage();
   const ownsPage = !existingPage;
   try {
