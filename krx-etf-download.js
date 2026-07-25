@@ -53,16 +53,27 @@ function parseCsv(file) {
   })).filter((item) => item.code && item.name && item.weight > 0);
 }
 
+function finderSurfaces(page) {
+  return page.context().pages()
+    .filter((candidate) => !candidate.isClosed())
+    .flatMap((candidate) => candidate.frames().map((frame) => ({ page: candidate, frame })));
+}
+
 async function selectedFinderValues(page) {
-  return page.locator(
-    'input[id*="isuCd"], input[name*="isuCd"]',
-  ).evaluateAll((inputs) => inputs
-    .filter((input) => !String(input.id || input.name).includes('searchText'))
-    .map((input) => ({
-      id: input.id || input.name || '',
-      value: String(input.value || '').trim(),
-    }))
-    .filter((item) => item.value));
+  const values = [];
+  for (const { frame } of finderSurfaces(page)) {
+    const frameValues = await frame.locator(
+      'input[id*="isuCd"], input[name*="isuCd"], input[id*="isuNm"], input[name*="isuNm"]',
+    ).evaluateAll((inputs) => inputs
+      .filter((input) => !String(input.id || input.name).includes('searchText'))
+      .map((input) => ({
+        id: input.id || input.name || '',
+        value: String(input.value || '').trim(),
+      }))
+      .filter((item) => item.value)).catch(() => []);
+    values.push(...frameValues);
+  }
+  return values;
 }
 
 async function finderAlreadySelected(page, { code, name }) {
@@ -77,16 +88,10 @@ async function finderAlreadySelected(page, { code, name }) {
 }
 
 async function triggerFinderSearch(page, search, { code, name }) {
-  // Exact-code Enter can either render a result list or immediately select the
-  // only result and close the finder. Check the underlying finder value before
-  // waiting for a row that no longer exists.
   await search.press('Enter', { timeout: 10_000 });
-  await page.waitForTimeout(1_000);
+  await page.waitForTimeout(1_500);
   if (await finderAlreadySelected(page, { code, name })) return true;
 
-  // Some KRX revisions ignore Enter and require the finder-local search button.
-  // Keep this scoped to finder elements so the main PDF "조회" button is never
-  // clicked accidentally.
   const buttonSelectors = [
     '[id^="jsSearchButton__finder_secuprodisu1_"]:visible',
     '[id^="searchBtn__finder_secuprodisu1_"]:visible',
@@ -94,31 +99,33 @@ async function triggerFinderSearch(page, search, { code, name }) {
     '[id*="finder_secuprodisu1_"] button:visible',
     '[id*="finder_secuprodisu1_"] a:visible',
   ];
-  for (const selector of buttonSelectors) {
-    const candidates = page.locator(selector);
-    const count = Math.min(await candidates.count(), 20);
-    for (let index = 0; index < count; index += 1) {
-      const candidate = candidates.nth(index);
-      const label = [
-        await candidate.innerText().catch(() => ''),
-        await candidate.getAttribute('title').catch(() => ''),
-        await candidate.getAttribute('aria-label').catch(() => ''),
-        await candidate.getAttribute('alt').catch(() => ''),
-        await candidate.getAttribute('id').catch(() => ''),
-      ].filter(Boolean).join(' ');
-      if (!/(검색|조회|search)/i.test(label)) continue;
-      console.log(`ETF finder 검색 버튼 클릭: ${label.slice(0, 160)}`);
-      await candidate.click({ force: true, noWaitAfter: true, timeout: 10_000 });
-      await page.waitForTimeout(1_000);
-      if (await finderAlreadySelected(page, { code, name })) return true;
-      return false;
+  for (const { frame } of finderSurfaces(page)) {
+    for (const selector of buttonSelectors) {
+      const candidates = frame.locator(selector);
+      const count = Math.min(await candidates.count(), 20);
+      for (let index = 0; index < count; index += 1) {
+        const candidate = candidates.nth(index);
+        const label = [
+          await candidate.innerText().catch(() => ''),
+          await candidate.getAttribute('title').catch(() => ''),
+          await candidate.getAttribute('aria-label').catch(() => ''),
+          await candidate.getAttribute('alt').catch(() => ''),
+          await candidate.getAttribute('id').catch(() => ''),
+        ].filter(Boolean).join(' ');
+        if (!/(검색|조회|search)/i.test(label)) continue;
+        console.log(`ETF finder 검색 버튼 클릭: ${label.slice(0, 160)}`);
+        await candidate.click({ force: true, noWaitAfter: true, timeout: 10_000 });
+        await page.waitForTimeout(1_500);
+        if (await finderAlreadySelected(page, { code, name })) return true;
+        return false;
+      }
     }
   }
   return false;
 }
 
 async function selectFinderResult(page, { code, name }) {
-  const deadline = Date.now() + 20_000;
+  const deadline = Date.now() + 25_000;
   const rowSelectors = [
     '[id^="jsLayer_finder_secuprodisu1_"]:visible tr',
     '[id*="finder_secuprodisu1_"]:visible tr',
@@ -131,7 +138,7 @@ async function selectFinderResult(page, { code, name }) {
   ];
 
   while (Date.now() < deadline) {
-    for (const frame of page.frames()) {
+    for (const { page: surfacePage, frame } of finderSurfaces(page)) {
       for (const selector of rowSelectors) {
         const rows = frame.locator(selector);
         const count = await rows.count();
@@ -139,20 +146,18 @@ async function selectFinderResult(page, { code, name }) {
           const row = rows.nth(index);
           const text = (await row.innerText().catch(() => '')).replace(/\s+/g, ' ').trim();
           if (!text || (!text.includes(code) && !text.includes(name))) continue;
-          console.log(`ETF 검색 결과 행 선택: ${text.slice(0, 120)}`);
+          console.log(`ETF 검색 결과 행 선택: ${text.slice(0, 120)} / ${surfacePage.url()}`);
           const clickable = row.locator('a, button, [onclick]').first();
           if (await clickable.isVisible().catch(() => false)) {
-            await clickable.click({ noWaitAfter: true });
+            await clickable.click({ force: true, noWaitAfter: true });
           } else {
-            await row.click({ noWaitAfter: true });
+            await row.click({ force: true, noWaitAfter: true });
           }
+          await page.waitForTimeout(1_000);
           return;
         }
       }
 
-      // KRX finder revisions sometimes render the result as a div/span rather
-      // than a table row. Find the smallest visible text node and click its
-      // nearest interactive/result container.
       for (const value of [code, name]) {
         const matches = frame.getByText(value, { exact: false });
         const count = Math.min(await matches.count(), 20);
@@ -171,8 +176,9 @@ async function selectFinderResult(page, { code, name }) {
             'xpath=ancestor-or-self::*[self::tr or self::li or @role="row" or self::a or self::button or @onclick][1]',
           );
           const target = await container.count() ? container.first() : best;
-          console.log(`ETF 검색 결과 텍스트 선택: ${(await target.innerText().catch(() => value)).slice(0, 120)}`);
+          console.log(`ETF 검색 결과 텍스트 선택: ${(await target.innerText().catch(() => value)).slice(0, 120)} / ${surfacePage.url()}`);
           await target.click({ force: true, noWaitAfter: true });
+          await page.waitForTimeout(1_000);
           return;
         }
       }
@@ -180,15 +186,35 @@ async function selectFinderResult(page, { code, name }) {
     await page.waitForTimeout(500);
   }
 
-  const frameStates = await Promise.all(page.frames().map(async (frame) => ({
-    url: frame.url(),
-    text: (await frame.locator('body').innerText().catch(() => ''))
-      .replace(/\s+/g, ' ')
-      .slice(0, 500),
-  })));
+  const pageStates = [];
+  for (const candidate of page.context().pages().filter((item) => !item.isClosed())) {
+    for (const frame of candidate.frames()) {
+      pageStates.push({
+        pageUrl: candidate.url(),
+        frameUrl: frame.url(),
+        text: (await frame.locator('body').innerText().catch(() => ''))
+          .replace(/\s+/g, ' ')
+          .slice(0, 800),
+      });
+    }
+  }
   throw new Error(
-    `ETF 검색 결과가 없습니다. 검색어=${code}, 프레임=${JSON.stringify(frameStates)}`,
+    `ETF 검색 결과가 없습니다. 검색어=${code}, 화면=${JSON.stringify(pageStates)}`,
   );
+}
+
+async function findFinderSearchInput(page) {
+  const deadline = Date.now() + 15_000;
+  while (Date.now() < deadline) {
+    for (const { frame } of finderSurfaces(page)) {
+      const search = frame.locator(
+        '[id^="searchText__finder_secuprodisu1_"]:visible, input[placeholder*="종목"]:visible',
+      ).first();
+      if (await search.isVisible().catch(() => false)) return search;
+    }
+    await page.waitForTimeout(250);
+  }
+  throw new Error('종목검색 입력창을 모든 KRX 탭과 프레임에서 찾지 못했습니다.');
 }
 
 async function downloadComposition(context, { code, name, date }, existingPage = null) {
@@ -219,11 +245,8 @@ async function downloadComposition(context, { code, name, date }, existingPage =
     mark('종목검색 팝업 열기');
     await finderButton.click({ timeout: 15_000, noWaitAfter: true });
 
-    const search = page.locator(
-      '[id^="searchText__finder_secuprodisu1_"]:visible',
-    ).first();
     mark('검색 입력창 대기');
-    await search.waitFor({ state: 'visible', timeout: 15_000 });
+    const search = await findFinderSearchInput(page);
     await search.fill('', { timeout: 10_000 });
     await search.type(code, { delay: 80, timeout: 10_000 });
     mark('검색 실행');
@@ -235,6 +258,10 @@ async function downloadComposition(context, { code, name, date }, existingPage =
     if (!automaticallySelected) {
       mark('검색 결과 선택');
       await selectFinderResult(page, { code, name });
+    }
+
+    if (!(await finderAlreadySelected(page, { code, name }))) {
+      console.log(`[${code}] 선택값 직접 확인은 실패했지만 조회 단계로 진행합니다.`);
     }
 
     const dateInput = page.locator('input[id*="trdDd"], input[name*="trdDd"], input[id*="basDd"], input[name*="basDd"]').first();
