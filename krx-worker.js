@@ -103,23 +103,30 @@ async function main() {
   const state = initialState(date, targetEtfs);
   const browser = await chromium.launch({ headless: true, args: ['--no-sandbox'] });
   let context;
+  let collectionPage;
   let sessionStartedAt = 0;
 
   const renewSession = async () => {
     await context?.close().catch(() => {});
+    collectionPage = undefined;
     fs.rmSync(SESSION_PATH, { force: true });
     context = await browser.newContext({
       ...KRX_CONTEXT_OPTIONS,
       acceptDownloads: true,
     });
-    await loginContext(context, { saveSession: false });
+    const authenticated = await loginContext(context, { saveSession: false });
+    collectionPage = authenticated.page;
     sessionStartedAt = Date.now();
-    console.log('수집용 브라우저 컨텍스트에서 KRX 로그인을 완료했습니다.');
+    console.log('수집에 재사용할 동일 페이지에서 KRX 로그인을 완료했습니다.');
   };
 
   const collect = async (etf) => {
     if (!context || Date.now() - sessionStartedAt >= SESSION_MAX_AGE_MS) await renewSession();
-    const components = await downloadComposition(context, { ...etf, date });
+    const components = await downloadComposition(
+      context,
+      { ...etf, date },
+      collectionPage,
+    );
     state.items[etf.code] = {
       etf: { ...etf, date },
       summary: {
