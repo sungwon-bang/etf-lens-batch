@@ -119,7 +119,10 @@ async function main() {
   }
   const state = initialState(date, targetEtfs);
   runtimeState = state;
-  const browser = await chromium.launch({ headless: true, args: ['--no-sandbox'] });
+  const browser = await chromium.launch({
+    headless: true,
+    args: ['--no-sandbox', '--disable-blink-features=AutomationControlled'],
+  });
   let context;
   let collectionPage;
   let sessionStartedAt = 0;
