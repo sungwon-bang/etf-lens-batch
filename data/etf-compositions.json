@@ -2,18 +2,116 @@
   "meta": {
     "date": "20260724",
     "total": 1,
-    "completed": 0,
-    "failed": 1,
+    "completed": 1,
+    "failed": 0,
     "status": "completed",
-    "updatedAt": "2026-07-25T13:27:30.181Z"
+    "updatedAt": "2026-07-25T13:27:51.868Z"
   },
-  "items": {},
-  "failures": {
+  "items": {
     "449450": {
-      "code": "449450",
-      "name": "PLUS K방산",
-      "attempts": 2,
-      "error": "[449450] PDF 조회 실패: KRX PDF 조회 결과가 없습니다. 종목=449450, 조회일자=20260724"
+      "etf": {
+        "code": "449450",
+        "name": "PLUS K방산",
+        "attempts": 2,
+        "error": "[449450] PDF 조회 실패: KRX PDF 조회 결과가 없습니다. 종목=449450, 조회일자=20260724",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 11,
+        "totalWeight": 99.99999999999999
+      },
+      "components": [
+        {
+          "code": "012450",
+          "name": "한화에어로스페이스",
+          "quantity": 237,
+          "evaluationAmount": 227046000,
+          "marketCap": 232023000,
+          "weight": 20.91
+        },
+        {
+          "code": "042660",
+          "name": "한화오션",
+          "quantity": 2301,
+          "evaluationAmount": 206859900,
+          "marketCap": 202257900,
+          "weight": 18.23
+        },
+        {
+          "code": "064350",
+          "name": "현대로템",
+          "quantity": 1225,
+          "evaluationAmount": 203962500,
+          "marketCap": 194040000,
+          "weight": 17.48
+        },
+        {
+          "code": "047810",
+          "name": "한국항공우주",
+          "quantity": 1194,
+          "evaluationAmount": 195935400,
+          "marketCap": 188771400,
+          "weight": 17.01
+        },
+        {
+          "code": "079550",
+          "name": "LIG디펜스앤에어로스페이스",
+          "quantity": 228,
+          "evaluationAmount": 167808000,
+          "marketCap": 173736000,
+          "weight": 15.66
+        },
+        {
+          "code": "272210",
+          "name": "한화시스템",
+          "quantity": 1221,
+          "evaluationAmount": 85103700,
+          "marketCap": 83272200,
+          "weight": 7.5
+        },
+        {
+          "code": "103140",
+          "name": "풍산",
+          "quantity": 296,
+          "evaluationAmount": 19299200,
+          "marketCap": 20216800,
+          "weight": 1.82
+        },
+        {
+          "code": "077970",
+          "name": "STX엔진",
+          "quantity": 260,
+          "evaluationAmount": 6786000,
+          "marketCap": 6643000,
+          "weight": 0.6
+        },
+        {
+          "code": "003570",
+          "name": "SNT다이내믹스",
+          "quantity": 164,
+          "evaluationAmount": 5584200,
+          "marketCap": 5740000,
+          "weight": 0.52
+        },
+        {
+          "code": "484870",
+          "name": "엠앤씨솔루션",
+          "quantity": 117,
+          "evaluationAmount": 2562300,
+          "marketCap": 2492100,
+          "weight": 0.22
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 574923,
+          "weight": 0.05
+        }
+      ],
+      "collectedAt": "2026-07-25T13:27:51.868Z"
     }
-  }
+  },
+  "failures": {}
 }
