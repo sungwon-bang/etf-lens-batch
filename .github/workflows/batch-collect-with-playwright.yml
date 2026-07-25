@@ -74,7 +74,7 @@ jobs:
         run: echo "KRX 로그인과 세션 저장을 정상 완료했습니다."
 
       - name: 전체 ETF PDF 구성종목 수집
-        if: github.event_name == 'schedule' || inputs.mode == 'collect'
+        if: github.event_name == 'schedule' || inputs.mode == 'collect' || contains(github.event.head_commit.message, '[collect]')
         env:
           KRX_API_KEY: ${{ secrets.KRX_API_KEY }}
           KRX_LOGIN_ID: ${{ secrets.KRX_LOGIN_ID }}
@@ -92,7 +92,7 @@ jobs:
           retention-days: 7
 
       - name: 최종 결과 커밋
-        if: always() && (github.event_name == 'schedule' || inputs.mode == 'collect')
+        if: always() && (github.event_name == 'schedule' || inputs.mode == 'collect' || contains(github.event.head_commit.message, '[collect]'))
         run: |
           git diff --quiet -- data/etf-compositions.json && exit /b 0
           git config user.name "github-actions[bot]"
