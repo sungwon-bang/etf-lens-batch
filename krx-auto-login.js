@@ -4,6 +4,9 @@ require('dotenv').config();
 
 const SESSION_PATH = 'krx-session.json';
 const KRX_HOME_URL = 'https://data.krx.co.kr/';
+const KRX_COMPOSITION_URL =
+  'https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108';
+const KRX_FINDER_SELECTOR = '[id^="btnisuCd_finder_secuprodisu1_"]:visible';
 const LOGIN_LINK_SELECTOR = 'a[href*="MDCCOMS001.cmd"]';
 const DIAGNOSTIC_DIR = 'diagnostics';
 const KRX_UNAVAILABLE_TEXT = 'Service unavailable';
@@ -118,6 +121,50 @@ async function clickLoginEntry(page) {
   throw new Error(`KRX 로그인 진입 버튼을 찾지 못했습니다. 현재 URL: ${page.url()}`);
 }
 
+async function findAuthenticatedCompositionPage(context, preferredPages) {
+  const candidates = [...new Set([
+    ...preferredPages,
+    ...context.pages(),
+  ])].filter((candidate) => candidate && !candidate.isClosed());
+  const diagnostics = [];
+
+  for (const candidate of candidates) {
+    try {
+      await candidate.goto(KRX_COMPOSITION_URL, {
+        waitUntil: 'domcontentloaded',
+        timeout: 60_000,
+      });
+      const finder = candidate.locator(KRX_FINDER_SELECTOR).first();
+      if (await finder.waitFor({
+        state: 'visible',
+        timeout: 15_000,
+      }).then(() => true).catch(() => false)) {
+        console.log(`KRX 인증 PDF 페이지 확인: ${candidate.url()}`);
+        return candidate;
+      }
+      diagnostics.push({
+        url: candidate.url(),
+        title: await candidate.title().catch(() => ''),
+        body: (await candidate.locator('body').innerText().catch(() => ''))
+          .replace(/\s+/g, ' ')
+          .slice(0, 300),
+      });
+    } catch (error) {
+      diagnostics.push({
+        url: candidate.url(),
+        error: error.message,
+      });
+    }
+  }
+
+  await Promise.all(candidates.map((candidate, index) =>
+    saveDiagnostics(candidate, `authenticated-page-not-found-${index}`),
+  ));
+  throw new Error(
+    `로그인 후 인증된 PDF 페이지를 찾지 못했습니다: ${JSON.stringify(diagnostics)}`,
+  );
+}
+
 async function loginContext(context, { saveSession = true } = {}) {
   const id = process.env.KRX_LOGIN_ID;
   const password = process.env.KRX_LOGIN_PASSWORD;
@@ -176,9 +223,13 @@ async function loginContext(context, { saveSession = true } = {}) {
       fs.writeFileSync(SESSION_PATH, JSON.stringify(state, null, 2));
     }
     console.log(`KRX 로그인 완료: 쿠키 ${state.cookies.length}개`);
+    const authenticatedPage = await findAuthenticatedCompositionPage(
+      context,
+      [loginPage, page],
+    );
     return {
       context,
-      page: loginPage.isClosed() ? page : loginPage,
+      page: authenticatedPage,
     };
   } finally {
     // The caller owns the context. Keeping it open is required because KRX does
@@ -219,6 +270,8 @@ module.exports = {
   loginContext,
   SESSION_PATH,
   KRX_HOME_URL,
+  KRX_COMPOSITION_URL,
+  KRX_FINDER_SELECTOR,
   LOGIN_LINK_SELECTOR,
   DIAGNOSTIC_DIR,
   KRX_UNAVAILABLE_TEXT,
@@ -230,5 +283,6 @@ module.exports = {
   loadKrxHome,
   clickLoginEntry,
   findLoginFrame,
+  findAuthenticatedCompositionPage,
   saveDiagnostics,
 };
