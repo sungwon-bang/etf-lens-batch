@@ -8,6 +8,12 @@ const KRX_COMPOSITION_URL =
   'https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108';
 const KRX_FINDER_SELECTOR = '[id^="btnisuCd_finder_secuprodisu1_"]:visible';
 const LOGIN_LINK_SELECTOR = 'a[href*="MDCCOMS001.cmd"]';
+const KRX_LOGIN_PAGE_URL =
+  'https://data.krx.co.kr/contents/MDC/COMS/client/MDCCOMS001.cmd';
+const KRX_LOGIN_IFRAME_URL =
+  'https://data.krx.co.kr/contents/MDC/COMS/client/view/login.jsp?site=mdc';
+const KRX_LOGIN_REQUEST_URL =
+  'https://data.krx.co.kr/contents/MDC/COMS/client/MDCCOMS001D1.cmd';
 const DIAGNOSTIC_DIR = 'diagnostics';
 const KRX_UNAVAILABLE_TEXT = 'Service unavailable';
 const HOME_MAX_ATTEMPTS = 8;
@@ -173,10 +179,81 @@ async function findAuthenticatedCompositionPage(context, preferredPages) {
   );
 }
 
+async function loginByRequest(context, id, password) {
+  const headers = {
+    'User-Agent': WINDOWS_CHROME_USER_AGENT,
+    Referer: KRX_LOGIN_PAGE_URL,
+  };
+  await context.request.get(KRX_LOGIN_PAGE_URL, {
+    headers,
+    timeout: 30_000,
+  });
+  await context.request.get(KRX_LOGIN_IFRAME_URL, {
+    headers,
+    timeout: 30_000,
+  });
+
+  const form = {
+    mbrNm: '',
+    telNo: '',
+    di: '',
+    certType: '',
+    mbrId: id,
+    pw: password,
+  };
+  let response = await context.request.post(KRX_LOGIN_REQUEST_URL, {
+    form,
+    headers,
+    timeout: 30_000,
+  });
+  if (!response.ok()) {
+    throw new Error(`KRX 인증 요청 HTTP 오류: ${response.status()}`);
+  }
+  let data = await response.json();
+  if (data._error_code === 'CD011') {
+    response = await context.request.post(KRX_LOGIN_REQUEST_URL, {
+      form: { ...form, skipDup: 'Y' },
+      headers,
+      timeout: 30_000,
+    });
+    if (!response.ok()) {
+      throw new Error(`KRX 중복 로그인 승인 HTTP 오류: ${response.status()}`);
+    }
+    data = await response.json();
+  }
+  if (data._error_code !== 'CD001') {
+    throw new Error(
+      `KRX 인증 거절: ${data._error_code || 'UNKNOWN'} ${data._error_message || ''}`.trim(),
+    );
+  }
+  console.log('KRX 직접 인증 응답 확인: CD001');
+}
+
 async function loginContext(context, { saveSession = true } = {}) {
   const id = process.env.KRX_LOGIN_ID;
   const password = process.env.KRX_LOGIN_PASSWORD;
   if (!id || !password) throw new Error('KRX_LOGIN_ID와 KRX_LOGIN_PASSWORD가 필요합니다.');
+
+  try {
+    await loginByRequest(context, id, password);
+    const directPage = await context.newPage();
+    const authenticatedPage = await findAuthenticatedCompositionPage(
+      context,
+      [directPage],
+    );
+    const state = await context.storageState();
+    if (!state.cookies.length) throw new Error('로그인 세션 쿠키가 생성되지 않았습니다.');
+    if (saveSession) {
+      fs.writeFileSync(SESSION_PATH, JSON.stringify(state, null, 2));
+    }
+    console.log(`KRX 직접 인증 및 PDF 접근 완료: 쿠키 ${state.cookies.length}개`);
+    return {
+      context,
+      page: authenticatedPage,
+    };
+  } catch (directError) {
+    console.warn(`KRX 직접 인증 실패, 화면 로그인으로 대체: ${directError.message}`);
+  }
 
   try {
     const page = await context.newPage();
@@ -312,6 +389,10 @@ module.exports = {
   LOGIN_MAX_ATTEMPTS,
   LOGIN_RETRY_DELAY_MS,
   WINDOWS_CHROME_USER_AGENT,
+  KRX_LOGIN_PAGE_URL,
+  KRX_LOGIN_IFRAME_URL,
+  KRX_LOGIN_REQUEST_URL,
+  loginByRequest,
   loadKrxHome,
   clickLoginEntry,
   findLoginFrame,
