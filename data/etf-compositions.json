@@ -2,10 +2,10 @@
   "meta": {
     "date": "20260724",
     "total": 1150,
-    "completed": 43,
+    "completed": 48,
     "failed": 0,
     "status": "running",
-    "updatedAt": "2026-07-25T15:55:35.336Z"
+    "updatedAt": "2026-07-25T15:56:35.379Z"
   },
   "items": {
     "105190": {
@@ -2059,6 +2059,112 @@
         }
       ],
       "collectedAt": "2026-07-25T15:54:22.966Z"
+    },
+    "256440": {
+      "etf": {
+        "code": "256440",
+        "name": "ACE MSCI인도네시아(합성)",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 3,
+        "totalWeight": 100.00000000000001
+      },
+      "components": [
+        {
+          "code": "SWAP00000004",
+          "name": "스왑(NH투자증권)",
+          "quantity": 0,
+          "evaluationAmount": 6838058,
+          "marketCap": 0,
+          "weight": 1.195434
+        },
+        {
+          "code": "SWAP00000010",
+          "name": "스왑(메리츠증권)",
+          "quantity": 0,
+          "evaluationAmount": 394071612,
+          "marketCap": 0,
+          "weight": 68.891884
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 171104901,
+          "weight": 29.912682
+        }
+      ],
+      "collectedAt": "2026-07-25T15:56:12.678Z"
+    },
+    "261920": {
+      "etf": {
+        "code": "261920",
+        "name": "ACE MSCI필리핀(합성)",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 2,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "SWAP00000004",
+          "name": "스왑(NH투자증권)",
+          "quantity": 0,
+          "evaluationAmount": -48960709,
+          "marketCap": 0,
+          "weight": 3.376737
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 1400980751,
+          "weight": 96.623263
+        }
+      ],
+      "collectedAt": "2026-07-25T15:56:23.630Z"
+    },
+    "291130": {
+      "etf": {
+        "code": "291130",
+        "name": "ACE MSCI멕시코(합성)",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 3,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "SWAP00000004",
+          "name": "스왑(NH투자증권)",
+          "quantity": 0,
+          "evaluationAmount": -10935383,
+          "marketCap": 0,
+          "weight": 0.52302
+        },
+        {
+          "code": "SWAP00000009",
+          "name": "스왑(삼성증권)",
+          "quantity": 0,
+          "evaluationAmount": -61934205,
+          "marketCap": 0,
+          "weight": 2.962204
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 2017945344,
+          "weight": 96.514776
+        }
+      ],
+      "collectedAt": "2026-07-25T15:56:01.788Z"
     },
     "332500": {
       "etf": {
@@ -21457,6 +21563,194 @@
         }
       ],
       "collectedAt": "2026-07-25T15:55:35.336Z"
+    },
+    "0177X0": {
+      "etf": {
+        "code": "0177X0",
+        "name": "ACE K휴머노이드로봇산업TOP2+",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 16,
+        "totalWeight": 100.01
+      },
+      "components": [
+        {
+          "code": "005380",
+          "name": "현대차",
+          "quantity": 204,
+          "evaluationAmount": 88128000,
+          "marketCap": 81804000,
+          "weight": 19.72
+        },
+        {
+          "code": "108490",
+          "name": "로보티즈",
+          "quantity": 388,
+          "evaluationAmount": 84002000,
+          "marketCap": 74263200,
+          "weight": 17.9
+        },
+        {
+          "code": "058610",
+          "name": "에스피지",
+          "quantity": 911,
+          "evaluationAmount": 76250700,
+          "marketCap": 65227600,
+          "weight": 15.72
+        },
+        {
+          "code": "277810",
+          "name": "레인보우로보틱스",
+          "quantity": 129,
+          "evaluationAmount": 65532000,
+          "marketCap": 53986500,
+          "weight": 13.01
+        },
+        {
+          "code": "012330",
+          "name": "현대모비스",
+          "quantity": 61,
+          "evaluationAmount": 31964000,
+          "marketCap": 29402000,
+          "weight": 7.09
+        },
+        {
+          "code": "437730",
+          "name": "삼현",
+          "quantity": 722,
+          "evaluationAmount": 27399900,
+          "marketCap": 23356700,
+          "weight": 5.63
+        },
+        {
+          "code": "204320",
+          "name": "HL만도",
+          "quantity": 440,
+          "evaluationAmount": 20790000,
+          "marketCap": 19624000,
+          "weight": 4.73
+        },
+        {
+          "code": "307950",
+          "name": "현대오토에버",
+          "quantity": 41,
+          "evaluationAmount": 17630000,
+          "marketCap": 15539000,
+          "weight": 3.75
+        },
+        {
+          "code": "348340",
+          "name": "뉴로메카",
+          "quantity": 470,
+          "evaluationAmount": 13771000,
+          "marketCap": 12596000,
+          "weight": 3.04
+        },
+        {
+          "code": "388720",
+          "name": "유일로보틱스",
+          "quantity": 198,
+          "evaluationAmount": 13048200,
+          "marketCap": 11820600,
+          "weight": 2.85
+        },
+        {
+          "code": "454910",
+          "name": "두산로보틱스",
+          "quantity": 119,
+          "evaluationAmount": 8306200,
+          "marketCap": 7699300,
+          "weight": 1.86
+        },
+        {
+          "code": "005850",
+          "name": "에스엘",
+          "quantity": 119,
+          "evaluationAmount": 6771100,
+          "marketCap": 6461700,
+          "weight": 1.56
+        },
+        {
+          "code": "466100",
+          "name": "클로봇",
+          "quantity": 196,
+          "evaluationAmount": 5154800,
+          "marketCap": 4635400,
+          "weight": 1.12
+        },
+        {
+          "code": "448900",
+          "name": "한국피아이엠",
+          "quantity": 87,
+          "evaluationAmount": 4567500,
+          "marketCap": 4032450,
+          "weight": 0.97
+        },
+        {
+          "code": "090710",
+          "name": "휴림로봇",
+          "quantity": 613,
+          "evaluationAmount": 4456510,
+          "marketCap": 4021280,
+          "weight": 0.97
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 386942,
+          "weight": 0.09
+        }
+      ],
+      "collectedAt": "2026-07-25T15:55:49.620Z"
+    },
+    "0194T0": {
+      "etf": {
+        "code": "0194T0",
+        "name": "ACE SK하이닉스단일종목레버리지",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 4,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "quantity": 147,
+          "evaluationAmount": 282093000,
+          "marketCap": 258573000,
+          "weight": 44.14624
+        },
+        {
+          "code": "0192L0",
+          "name": "RISE SK하이닉스단일종목레버리지",
+          "quantity": 3511,
+          "evaluationAmount": 46029210,
+          "marketCap": 38936990,
+          "weight": 6.647723
+        },
+        {
+          "code": "KR4A50680003",
+          "name": "SK하이닉스 F 202608 (  10)",
+          "quantity": 14.88,
+          "evaluationAmount": 286737600,
+          "marketCap": 0,
+          "weight": 48.95479
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 1471601,
+          "weight": 0.251247
+        }
+      ],
+      "collectedAt": "2026-07-25T15:56:35.379Z"
     }
   },
   "failures": {}
