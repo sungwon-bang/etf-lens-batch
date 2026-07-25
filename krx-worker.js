@@ -105,7 +105,16 @@ function publishCheckpoint(message) {
   execFileSync('git', ['config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com']);
   execFileSync('git', ['add', 'data/etf-compositions.json']);
   execFileSync('git', ['commit', '-m', message], { stdio: 'inherit' });
-  execFileSync('git', ['push'], { stdio: 'inherit' });
+  try {
+    execFileSync('git', ['push'], {
+      stdio: 'inherit',
+      timeout: 45_000,
+    });
+  } catch (error) {
+    // A checkpoint push must not strand the browser or abort the remaining
+    // retries. The workflow's final commit step can publish accumulated commits.
+    console.warn(`체크포인트 push 보류: ${error.message}`);
+  }
 }
 
 async function main() {
