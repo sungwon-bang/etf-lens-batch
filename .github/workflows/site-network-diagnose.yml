@@ -1,11 +1,11 @@
-name: ETF Lens 실시간 수익률 우선 검증
+name: ETF Lens 실시간 수익률 복구 및 검증
 
 on:
   push:
     branches: [main]
     paths:
       - 'site-network-diagnose.js'
-      - 'enrich-etf-contributions.js'
+      - 'repair-site-contributions.js'
       - '.github/workflows/site-network-diagnose.yml'
   workflow_dispatch:
 
@@ -31,10 +31,21 @@ jobs:
       - name: 의존성 설치
         run: npm ci
 
+      - name: 최신 KRX 수익률을 홈페이지에 반영
+        id: repair
+        continue-on-error: true
+        env:
+          ETF_SITE_URL: https://etf-attribution-mvp.bang-starone.chatgpt.site
+          ETF_SITE_TOKEN: ${{ secrets.ETF_SITE_TOKEN }}
+          ETF_CODE: '449450'
+        run: node repair-site-contributions.js
+
       - name: Chromium 설치
+        if: always()
         run: npx playwright install --with-deps chromium
 
-      - name: 배포 API와 프론트 우선순위 검증
+      - name: 배포 API와 화면 수익률 검증
+        if: always()
         env:
           ETF_SITE_URL: https://etf-attribution-mvp.bang-starone.chatgpt.site/
           ETF_CODE: '449450'
@@ -42,19 +53,20 @@ jobs:
           ETF_DATE: '20260724'
         run: node site-network-diagnose.js
 
-      - name: 최신 진단 결과 커밋
+      - name: 최신 복구·진단 결과 커밋
         if: always()
         run: |
-          if [ ! -f diagnostics/site-network.json ]; then exit 0; fi
           mkdir -p data/site-diagnostics
-          cp diagnostics/site-network.json data/site-diagnostics/latest-network.json
-          cp diagnostics/site-body.txt data/site-diagnostics/latest-body.txt
-          cp diagnostics/site-api-summary.json data/site-diagnostics/latest-api-summary.json
+          if [ -f diagnostics/site-network.json ]; then
+            cp diagnostics/site-network.json data/site-diagnostics/latest-network.json
+            cp diagnostics/site-body.txt data/site-diagnostics/latest-body.txt
+            cp diagnostics/site-api-summary.json data/site-diagnostics/latest-api-summary.json
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/site-diagnostics/
           git diff --cached --quiet && exit 0
-          git commit -m "data: verify ETF Lens live KRX return priority"
+          git commit -m "data: repair and verify ETF Lens live returns"
           git pull --rebase origin main
           git push
 
@@ -66,3 +78,7 @@ jobs:
           path: diagnostics/
           if-no-files-found: warn
           retention-days: 7
+
+      - name: 복구 실패 처리
+        if: steps.repair.outcome != 'success'
+        run: exit 1
