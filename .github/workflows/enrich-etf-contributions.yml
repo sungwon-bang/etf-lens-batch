@@ -1,0 +1,48 @@
+name: ETF 기여도 체크포인트 보강
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'enrich-etf-contributions.js'
+      - '.github/workflows/enrich-etf-contributions.yml'
+  workflow_dispatch:
+    inputs:
+      code:
+        description: '보강할 ETF 종목코드'
+        required: true
+        default: '449450'
+
+permissions:
+  contents: write
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Node.js 설치
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: 실시간 KRX 수익률로 기여도 보강
+        env:
+          ETF_SITE_URL: https://etf-attribution-mvp.bang-starone.chatgpt.site
+          ETF_CODE: ${{ github.event_name == 'workflow_dispatch' && inputs.code || '449450' }}
+        run: node enrich-etf-contributions.js
+
+      - name: 보강 결과 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/etf-compositions.json data/site-diagnostics/enrichment-result.json
+          git diff --cached --quiet && exit 0
+          git commit -m "data: enrich ETF contribution returns for 449450"
+          git pull --rebase origin main
+          git push
