@@ -89,8 +89,8 @@ jobs:
           ETF_CODE_FILTER: ${{ github.event_name == 'push' && contains(github.event.head_commit.message, '[verify-449450]') && '449450' || '' }}
           # 단일 종목 검증은 직렬, 전체 수집은 동일 로그인 세션의 독립 페이지 2개로 처리한다.
           COLLECT_CONCURRENCY: ${{ github.event_name == 'push' && contains(github.event.head_commit.message, '[verify-449450]') && '1' || '2' }}
-          # Git push는 상대적으로 비싸므로 25종목마다 원격 체크포인트를 남긴다.
-          CHECKPOINT_SIZE: ${{ github.event_name == 'push' && contains(github.event.head_commit.message, '[verify-449450]') && '1' || '25' }}
+          # 최적화 검증 중에는 4종목마다 저장해 오류를 빠르게 감지한다.
+          CHECKPOINT_SIZE: ${{ github.event_name == 'push' && contains(github.event.head_commit.message, '[verify-449450]') && '1' || '4' }}
           # 약 5시간 20분 뒤에는 정상적으로 체크포인트를 남기고 후속 실행으로 넘긴다.
           BATCH_TIMEOUT_MS: ${{ github.event_name == 'push' && contains(github.event.head_commit.message, '[verify-449450]') && '1200000' || '19200000' }}
         run: npm run collect
