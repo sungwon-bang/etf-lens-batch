@@ -40,7 +40,7 @@ async function main() {
     const contentType = headers['content-type'] || '';
     let body = '';
     if (/json|text|javascript/.test(contentType)) {
-      body = compact(await response.text().catch(() => ''), 12000);
+      body = compact(await response.text().catch(() => ''), 20000);
     }
     events.push({
       kind: 'response',
@@ -54,9 +54,9 @@ async function main() {
   });
 
   console.log(`사이트 접속: ${SITE_URL}`);
-  await page.goto(SITE_URL, { waitUntil: 'networkidle', timeout: 120_000 });
+  await page.goto(SITE_URL, { waitUntil: 'domcontentloaded', timeout: 120_000 });
+  await page.waitForTimeout(8_000);
 
-  const searchInput = page.locator('input').filter({ has: page.locator('') });
   const inputs = page.locator('input:visible');
   const inputCount = await inputs.count();
   let targetInput = null;
@@ -75,17 +75,14 @@ async function main() {
     await targetInput.fill(TARGET_CODE).catch(async () => targetInput.fill(TARGET_NAME));
     const searchButton = page.getByRole('button', { name: /검색|조회/i }).first();
     if (await searchButton.isVisible().catch(() => false)) {
-      await Promise.all([
-        page.waitForTimeout(500),
-        searchButton.click(),
-      ]);
+      await searchButton.click();
     } else {
       await targetInput.press('Enter').catch(() => {});
     }
-    await page.waitForTimeout(12_000);
+    await page.waitForTimeout(15_000);
   }
 
-  const bodyText = compact(await page.locator('body').innerText(), 50000);
+  const bodyText = compact(await page.locator('body').innerText(), 60000);
   const localStorage = await page.evaluate(() => Object.fromEntries(Object.entries(localStorage)));
   const sessionStorage = await page.evaluate(() => Object.fromEntries(Object.entries(sessionStorage)));
   const scripts = await page.locator('script[src]').evaluateAll((nodes) => nodes.map((node) => node.src));
@@ -93,6 +90,7 @@ async function main() {
   await page.screenshot({ path: 'diagnostics/site-449450.png', fullPage: true });
   fs.writeFileSync('diagnostics/site-body.txt', `${bodyText}\n`);
   fs.writeFileSync('diagnostics/site-network.json', JSON.stringify({
+    capturedAt: new Date().toISOString(),
     siteUrl: SITE_URL,
     targetCode: TARGET_CODE,
     targetName: TARGET_NAME,
@@ -109,9 +107,9 @@ async function main() {
   console.log(`XHR/fetch 응답 수: ${apiEvents.length}`);
   for (const item of apiEvents) {
     console.log(`[${item.status}] ${item.method} ${item.url}`);
-    if (item.body) console.log(`응답: ${item.body.slice(0, 1000)}`);
+    if (item.body) console.log(`응답: ${item.body.slice(0, 1500)}`);
   }
-  console.log(`화면 본문: ${bodyText.slice(0, 5000)}`);
+  console.log(`화면 본문: ${bodyText.slice(0, 7000)}`);
   await browser.close();
 }
 
