@@ -2,10 +2,10 @@
   "meta": {
     "date": "20260724",
     "total": 1150,
-    "completed": 230,
+    "completed": 235,
     "failed": 1,
     "status": "running",
-    "updatedAt": "2026-07-26T05:29:24.823Z"
+    "updatedAt": "2026-07-26T05:30:44.903Z"
   },
   "items": {
     "100910": {
@@ -2656,6 +2656,52 @@
       ],
       "collectedAt": "2026-07-25T15:57:49.083Z"
     },
+    "114470": {
+      "etf": {
+        "code": "114470",
+        "name": "KIWOOM 국고채3년",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 4,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "KR103501GF63",
+          "name": "국고채권02250-2806(25-4)",
+          "quantity": 0,
+          "evaluationAmount": 333000000,
+          "marketCap": 0,
+          "weight": 30.389448
+        },
+        {
+          "code": "KR103501GFC3",
+          "name": "국고채권02750-2812(25-10)",
+          "quantity": 0,
+          "evaluationAmount": 333000000,
+          "marketCap": 0,
+          "weight": 30.389448
+        },
+        {
+          "code": "KR103503GG37",
+          "name": "국고채권03375-3103(26-3)",
+          "quantity": 0,
+          "evaluationAmount": 333000000,
+          "marketCap": 0,
+          "weight": 30.389448
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 96775086,
+          "weight": 8.831656
+        }
+      ],
+      "collectedAt": "2026-07-26T05:30:11.594Z"
+    },
     "131890": {
       "etf": {
         "code": "131890",
@@ -4535,6 +4581,60 @@
         }
       ],
       "collectedAt": "2026-07-25T16:00:29.570Z"
+    },
+    "167860": {
+      "etf": {
+        "code": "167860",
+        "name": "KIWOOM 국고채10년레버리지",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 5,
+        "totalWeight": 99.99999899999999
+      },
+      "components": [
+        {
+          "code": "KR4A67690003",
+          "name": "10년국채   F 202609",
+          "quantity": 8.24,
+          "evaluationAmount": 861492000,
+          "marketCap": 0,
+          "weight": 43.714556
+        },
+        {
+          "code": "KR103502GF62",
+          "name": "국고채권02625-3506(25-5)",
+          "quantity": 0,
+          "evaluationAmount": 353000000,
+          "marketCap": 0,
+          "weight": 17.912224
+        },
+        {
+          "code": "KR103502GEC4",
+          "name": "국고채권03000-3412(24-13)",
+          "quantity": 0,
+          "evaluationAmount": 353000000,
+          "marketCap": 0,
+          "weight": 17.912224
+        },
+        {
+          "code": "KR103502GFC1",
+          "name": "국고채권03250-3512(25-11)",
+          "quantity": 0,
+          "evaluationAmount": 353000000,
+          "marketCap": 0,
+          "weight": 17.912224
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": -50229170,
+          "weight": 2.548771
+        }
+      ],
+      "collectedAt": "2026-07-26T05:29:41.650Z"
     },
     "168580": {
       "etf": {
@@ -65018,6 +65118,60 @@
       ],
       "collectedAt": "2026-07-25T16:15:06.733Z"
     },
+    "471460": {
+      "etf": {
+        "code": "471460",
+        "name": "KIWOOM 국고채30년액티브",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 5,
+        "totalWeight": 99.999999
+      },
+      "components": [
+        {
+          "code": "167860",
+          "name": "KIWOOM 국고채10년레버리지",
+          "quantity": 1200,
+          "evaluationAmount": 108468000,
+          "marketCap": 107556000,
+          "weight": 6.75089
+        },
+        {
+          "code": "KR103501GG39",
+          "name": "국고채권03500-5603(26-2)",
+          "quantity": 0,
+          "evaluationAmount": 1000000000,
+          "marketCap": 0,
+          "weight": 62.766281
+        },
+        {
+          "code": "KRC035LP5430",
+          "name": "국고채원금분리채권01230-5403(24-2)",
+          "quantity": 0,
+          "evaluationAmount": 40000000,
+          "marketCap": 0,
+          "weight": 2.510651
+        },
+        {
+          "code": "KRZE08801G2K",
+          "name": "신한 자금부 20260219-365-1",
+          "quantity": 0,
+          "evaluationAmount": 200000000,
+          "marketCap": 0,
+          "weight": 12.553256
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화예금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": -245656115,
+          "weight": 15.418921
+        }
+      ],
+      "collectedAt": "2026-07-26T05:29:55.144Z"
+    },
     "472840": {
       "etf": {
         "code": "472840",
@@ -67035,6 +67189,148 @@
         }
       ],
       "collectedAt": "2026-07-25T15:52:21.745Z"
+    },
+    "473490": {
+      "etf": {
+        "code": "473490",
+        "name": "KIWOOM 글로벌AI반도체",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 16,
+        "totalWeight": 100.000001
+      },
+      "components": [
+        {
+          "code": "000990",
+          "name": "DB하이텍",
+          "quantity": 34.11,
+          "evaluationAmount": 3755511,
+          "marketCap": 3411000,
+          "weight": 30.322949
+        },
+        {
+          "code": "403870",
+          "name": "HPSP",
+          "quantity": 71.11,
+          "evaluationAmount": 2819511,
+          "marketCap": 2535072,
+          "weight": 22.536165
+        },
+        {
+          "code": "036540",
+          "name": "SFA반도체",
+          "quantity": 92.96,
+          "evaluationAmount": 513139,
+          "marketCap": 474096,
+          "weight": 4.214597
+        },
+        {
+          "code": "200710",
+          "name": "에이디테크놀로지",
+          "quantity": 13.44,
+          "evaluationAmount": 372960,
+          "marketCap": 348768,
+          "weight": 3.100462
+        },
+        {
+          "code": "US0079031078",
+          "name": "ADVANCED MICRO DEVICES",
+          "quantity": 718.63,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG037AX1015",
+          "name": "AMBARELLA INC",
+          "quantity": 51.41,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US0316521006",
+          "name": "AMKOR TECHNOLOGY INC",
+          "quantity": 50.85,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US00215W1009",
+          "name": "ASE TECHNOLOGY HOLDING -ADR",
+          "quantity": 1964,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US1273871087",
+          "name": "CADENCE DESIGN SYS INC",
+          "quantity": 342.48,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG393871085",
+          "name": "GLOBALFOUNDRIES INC",
+          "quantity": 133,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US5184151042",
+          "name": "LATTICE SEMICONDUCTOR CORP",
+          "quantity": 171.04,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US67066G1040",
+          "name": "NVIDIA CORP",
+          "quantity": 825.89,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US8716071076",
+          "name": "SYNOPSYS INC",
+          "quantity": 232.48,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US8740391003",
+          "name": "TAIWAN SEMICONDUCTOR-SP ADR",
+          "quantity": 441.67,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US9108734057",
+          "name": "UNITED MICROELECTRON-SP ADR",
+          "quantity": 2973.89,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": -4479970,
+          "weight": 39.825828
+        }
+      ],
+      "collectedAt": "2026-07-26T05:30:28.437Z"
     },
     "473590": {
       "etf": {
@@ -73023,6 +73319,820 @@
         }
       ],
       "collectedAt": "2026-07-26T05:27:22.756Z"
+    },
+    "489860": {
+      "etf": {
+        "code": "489860",
+        "name": "KIWOOM 글로벌전력GRID인프라",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 100,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "267260",
+          "name": "HD현대일렉트릭",
+          "quantity": 14.08,
+          "evaluationAmount": 12237431,
+          "marketCap": 11404800,
+          "weight": 23.015573
+        },
+        {
+          "code": "010120",
+          "name": "LS ELECTRIC",
+          "quantity": 43.72,
+          "evaluationAmount": 9770838,
+          "marketCap": 8831440,
+          "weight": 17.822378
+        },
+        {
+          "code": "001440",
+          "name": "대한전선",
+          "quantity": 73.04,
+          "evaluationAmount": 2264240,
+          "marketCap": 2052424,
+          "weight": 4.141915
+        },
+        {
+          "code": "062040",
+          "name": "산일전기",
+          "quantity": 9.91,
+          "evaluationAmount": 1819237,
+          "marketCap": 1692628,
+          "weight": 3.415825
+        },
+        {
+          "code": "103590",
+          "name": "일진전기",
+          "quantity": 15.82,
+          "evaluationAmount": 1053332,
+          "marketCap": 1007734,
+          "weight": 2.033668
+        },
+        {
+          "code": "006400",
+          "name": "삼성SDI",
+          "quantity": 1.53,
+          "evaluationAmount": 712548,
+          "marketCap": 654840,
+          "weight": 1.321507
+        },
+        {
+          "code": "229640",
+          "name": "LS에코에너지",
+          "quantity": 6.7,
+          "evaluationAmount": 353332,
+          "marketCap": 311885,
+          "weight": 0.629403
+        },
+        {
+          "code": "298040",
+          "name": "효성중공업",
+          "quantity": 0.11,
+          "evaluationAmount": 312967,
+          "marketCap": 294910,
+          "weight": 0.595146
+        },
+        {
+          "code": "CH0012221716",
+          "name": "ABB LTD-REG",
+          "quantity": 446.11,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US0079731008",
+          "name": "ADVANCED ENERGY INDUSTRIES",
+          "quantity": 0.76,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US00130H1059",
+          "name": "AES CORP",
+          "quantity": 15.29,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "NL0012817175",
+          "name": "ALFEN N.V.",
+          "quantity": 14.75,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US0301112076",
+          "name": "AMERICAN SUPERCONDUCTOR CORP",
+          "quantity": 30.03,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US0326541051",
+          "name": "ANALOG DEVICES INC",
+          "quantity": 10.42,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JE00BTDN8H13",
+          "name": "APTIV PLC",
+          "quantity": 125.99,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US0396531008",
+          "name": "ARCOSA INC",
+          "quantity": 0.98,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US0476491081",
+          "name": "ATKORE INC",
+          "quantity": 19.85,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US15234Q2075",
+          "name": "AXIA ENERGIA-ADR",
+          "quantity": 1.37,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3937200008",
+          "name": "AZBIL CORP",
+          "quantity": 14.51,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US0024741045",
+          "name": "AZZ INC",
+          "quantity": 0.54,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US0774541066",
+          "name": "BELDEN INC",
+          "quantity": 0.61,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CH1101098163",
+          "name": "BELIMO HOLDING AG-REG",
+          "quantity": 6.24,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CH0130293662",
+          "name": "BKW AG",
+          "quantity": 0.46,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "BE0974303357",
+          "name": "CENERGY HOLDINGS SA",
+          "quantity": 43.13,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US17275R1023",
+          "name": "CISCO SYSTEMS INC",
+          "quantity": 84.55,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3497800007",
+          "name": "DAIHEN CORP",
+          "quantity": 15.15,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US2537981027",
+          "name": "DIGI INTERNATIONAL INC",
+          "quantity": 0.76,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "DE000ENAG999",
+          "name": "E.ON SE",
+          "quantity": 1123.24,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "IE00B8KQN827",
+          "name": "EATON CORP PLC",
+          "quantity": 118.93,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "PTEDP0AM0009",
+          "name": "EDP SA",
+          "quantity": 60.23,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "BE0003822393",
+          "name": "ELIA GROUP SA/NV",
+          "quantity": 33.99,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US2910111044",
+          "name": "EMERSON ELECTRIC CO",
+          "quantity": 12.7,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "IT0003128367",
+          "name": "ENEL SPA",
+          "quantity": 188.6,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US29275Y1029",
+          "name": "ENERSYS",
+          "quantity": 0.75,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "FR0010208488",
+          "name": "ENGIE",
+          "quantity": 40.31,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US29355A1079",
+          "name": "ENPHASE ENERGY INC",
+          "quantity": 70.41,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US2963151046",
+          "name": "ESCO TECHNOLOGIES INC",
+          "quantity": 0.53,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US34379V1035",
+          "name": "FLUENCE ENERGY INC",
+          "quantity": 50.33,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CA3495531079",
+          "name": "FORTIS INC",
+          "quantity": 12.4,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3820000002",
+          "name": "FUJI ELECTRIC CO LTD",
+          "quantity": 6.72,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3811000003",
+          "name": "FUJIKURA LTD",
+          "quantity": 45.16,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US36828A1016",
+          "name": "GE VERNOVA INC",
+          "quantity": 5.39,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US3687361044",
+          "name": "GENERAC HOLDINGS INC",
+          "quantity": 1.29,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CA4085491039",
+          "name": "HAMMOND POWER SOLUTIONS INC",
+          "quantity": 6.16,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3788600009",
+          "name": "HITACHI LTD",
+          "quantity": 106.54,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US4385162056",
+          "name": "HONEYWELL INTERNATIONAL INC",
+          "quantity": 7.16,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US4435106079",
+          "name": "HUBBELL INC",
+          "quantity": 29.66,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CA4488112083",
+          "name": "HYDRO ONE LTD",
+          "quantity": 215.43,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "ES0144580Y14",
+          "name": "IBERDROLA SA",
+          "quantity": 143.5,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "DE0006231004",
+          "name": "INFINEON TECHNOLOGIES AG",
+          "quantity": 29.66,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US4592001014",
+          "name": "INTL BUSINESS MACHINES CORP",
+          "quantity": 20.15,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US4657411066",
+          "name": "ITRON INC",
+          "quantity": 23.41,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "IE00BY7QL619",
+          "name": "JOHNSON CONTROLS INTERNATION",
+          "quantity": 325.21,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CH0371153492",
+          "name": "LANDIS + GYR GROUP AG",
+          "quantity": 15.45,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "FR0010307819",
+          "name": "LEGRAND SA",
+          "quantity": 6.46,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US5370081045",
+          "name": "LITTELFUSE INC",
+          "quantity": 0.53,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US5763231090",
+          "name": "MASTEC INC",
+          "quantity": 1.37,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3919800007",
+          "name": "MEIDENSHA CORP",
+          "quantity": 30.31,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3902400005",
+          "name": "MITSUBISHI ELECTRIC CORP",
+          "quantity": 52.72,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US55405W1045",
+          "name": "MYR GROUP INC/DELAWARE",
+          "quantity": 9.05,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "GB00BDR05C01",
+          "name": "NATIONAL GRID PLC",
+          "quantity": 1480.49,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "FR0000044448",
+          "name": "NEXANS SA",
+          "quantity": 26.38,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3695200000",
+          "name": "NGK CORP",
+          "quantity": 7.41,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "DK0010287663",
+          "name": "NKT A/S",
+          "quantity": 34.53,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "IE00BDVJJQ56",
+          "name": "NVENT ELECTRIC PLC",
+          "quantity": 100.67,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US67066G1040",
+          "name": "NVIDIA CORP",
+          "quantity": 56.42,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "NL0009538784",
+          "name": "NXP SEMICONDUCTORS NV",
+          "quantity": 4.87,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US68389X1054",
+          "name": "ORACLE CORP",
+          "quantity": 42.05,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3187600006",
+          "name": "OSAKI ELECTRIC CO LTD",
+          "quantity": 30.04,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3866800000",
+          "name": "PANASONIC HOLDINGS CORP",
+          "quantity": 60.58,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "DE000PFSE212",
+          "name": "PFISTERER HOLDING SE",
+          "quantity": 5.02,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US7404441047",
+          "name": "PREFORMED LINE PRODUCTS CO",
+          "quantity": 1.06,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US74164F1030",
+          "name": "PRIMORIS SERVICES CORP",
+          "quantity": 0.99,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "IT0004176001",
+          "name": "PRYSMIAN SPA",
+          "quantity": 138.11,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US7475251036",
+          "name": "QUALCOMM INC",
+          "quantity": 22.35,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US74762E1029",
+          "name": "QUANTA SERVICES INC",
+          "quantity": 66.98,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CH1107979838",
+          "name": "R&S GROUP HOLDING AG",
+          "quantity": 21.22,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "ES0173093024",
+          "name": "REDEIA CORP SA",
+          "quantity": 274.84,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "PTREL0AM0008",
+          "name": "REDES ENERGETICAS NACIONAIS",
+          "quantity": 216.89,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3164720009",
+          "name": "RENESAS ELECTRONICS CORP",
+          "quantity": 38.98,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "DE0007164600",
+          "name": "SAP SE",
+          "quantity": 26.69,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "FR0000121972",
+          "name": "SCHNEIDER ELECTRIC SE",
+          "quantity": 151.48,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "DE0007236101",
+          "name": "SIEMENS AG-REG",
+          "quantity": 16.58,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "DE000A0DJ6J9",
+          "name": "SMA SOLAR TECHNOLOGY AG",
+          "quantity": 12.93,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US83417M1045",
+          "name": "SOLAREDGE TECHNOLOGIES INC",
+          "quantity": 37.03,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "FR0012757854",
+          "name": "SPIE SA",
+          "quantity": 105.55,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "GB0007908733",
+          "name": "SSE PLC",
+          "quantity": 25.62,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CA85853F1053",
+          "name": "STELLA-JONES INC",
+          "quantity": 0.99,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US8610121027",
+          "name": "STMICROELECTRONICS NV-NY SHS",
+          "quantity": 3.04,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3407400005",
+          "name": "SUMITOMO ELECTRIC INDUSTRIES",
+          "quantity": 75.86,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3591600006",
+          "name": "TAKAOKA TOKO CO LTD",
+          "quantity": 7.51,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "IT0003242622",
+          "name": "TERNA-RETE ELETTRICA NAZIONA",
+          "quantity": 884.9,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US88160R1014",
+          "name": "TESLA INC",
+          "quantity": 27.36,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US8825081040",
+          "name": "TEXAS INSTRUMENTS INC",
+          "quantity": 19.54,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US8962391004",
+          "name": "TRIMBLE INC",
+          "quantity": 4.64,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US9202531011",
+          "name": "VALMONT INDUSTRIES",
+          "quantity": 0.45,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "AT0000746409",
+          "name": "VERBUND AG",
+          "quantity": 2.89,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US95082P1057",
+          "name": "WESCO INTERNATIONAL INC",
+          "quantity": 1.07,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US96924N1000",
+          "name": "WILLDAN GROUP INC",
+          "quantity": 9.5,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 23301874,
+          "weight": 47.024585
+        }
+      ],
+      "collectedAt": "2026-07-26T05:30:44.903Z"
     },
     "491610": {
       "etf": {
