@@ -19,6 +19,14 @@ async function readJsonResponse(response) {
   }
 }
 
+async function safeGet(request, url) {
+  try {
+    return await readJsonResponse(await request.get(url, { timeout: 120_000 }));
+  } catch (error) {
+    return { status: 0, url, error: error.message };
+  }
+}
+
 async function main() {
   fs.mkdirSync('diagnostics', { recursive: true });
   const browser = await chromium.launch({ headless: true, args: ['--no-sandbox'] });
@@ -103,7 +111,7 @@ async function main() {
   const direct = {};
   for (const [name, pathname] of Object.entries(directPaths)) {
     const url = new URL(pathname, base).toString();
-    direct[name] = await readJsonResponse(await context.request.get(url, { timeout: 120_000 }));
+    direct[name] = await safeGet(context.request, url);
   }
 
   const currentMarket = direct.currentMarketData.json || {};
@@ -120,11 +128,20 @@ async function main() {
   const localStorage = await page.evaluate(() => Object.fromEntries(Object.entries(localStorage)));
   const sessionStorage = await page.evaluate(() => Object.fromEntries(Object.entries(sessionStorage)));
   const scripts = await page.locator('script[src]').evaluateAll((nodes) => nodes.map((node) => node.src));
+  const capturedAt = new Date().toISOString();
+  const apiSummary = {
+    capturedAt,
+    targetCode: TARGET_CODE,
+    targetDate: TARGET_DATE,
+    targetEtf,
+    componentSample,
+    direct,
+  };
 
   await page.screenshot({ path: 'diagnostics/site-449450.png', fullPage: true });
   fs.writeFileSync('diagnostics/site-body.txt', `${bodyText}\n`);
   fs.writeFileSync('diagnostics/site-network.json', JSON.stringify({
-    capturedAt: new Date().toISOString(),
+    capturedAt,
     siteUrl: SITE_URL,
     targetCode: TARGET_CODE,
     targetName: TARGET_NAME,
@@ -135,16 +152,10 @@ async function main() {
     sessionStorage,
     consoleMessages,
     events,
+    apiSummary,
     bodyText,
   }, null, 2));
-  fs.writeFileSync('diagnostics/site-api-summary.json', JSON.stringify({
-    capturedAt: new Date().toISOString(),
-    targetCode: TARGET_CODE,
-    targetDate: TARGET_DATE,
-    targetEtf,
-    componentSample,
-    direct,
-  }, null, 2));
+  fs.writeFileSync('diagnostics/site-api-summary.json', JSON.stringify(apiSummary, null, 2));
 
   const apiEvents = events.filter((item) => item.kind === 'response' && ['xhr', 'fetch'].includes(item.resourceType));
   console.log(`XHR/fetch 응답 수: ${apiEvents.length}`);
@@ -154,6 +165,7 @@ async function main() {
   }
   console.log(`직접 조회 ETF ${TARGET_CODE}: ${JSON.stringify(targetEtf)}`);
   console.log(`구성종목 샘플: ${JSON.stringify(componentSample.slice(0, 5))}`);
+  console.log(`직접 API 상태: ${JSON.stringify(Object.fromEntries(Object.entries(direct).map(([key, value]) => [key, value.status])))}`);
   console.log(`화면 본문: ${bodyText.slice(0, 7000)}`);
   await browser.close();
 }
