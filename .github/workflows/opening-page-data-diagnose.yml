@@ -1,0 +1,42 @@
+name: ETF 오프닝 페이지 데이터 진단
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'opening-page-data-diagnose.js'
+      - '.github/workflows/opening-page-data-diagnose.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Node.js 설치
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: 오프닝 페이지 데이터 구조 진단
+        env:
+          ETF_SITE_URL: https://etf-attribution-mvp.bang-starone.chatgpt.site
+        run: node opening-page-data-diagnose.js
+
+      - name: 진단 결과 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/site-diagnostics/opening-page-data.json
+          git diff --cached --quiet && exit 0
+          git commit -m "data: inspect ETF opening page ranking fields"
+          git pull --rebase origin main
+          git push
