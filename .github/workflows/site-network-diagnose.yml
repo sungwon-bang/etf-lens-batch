@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'site-network-diagnose.js'
+      - 'repair-site-contributions.js'
       - '.github/workflows/site-network-diagnose.yml'
   workflow_dispatch:
 
@@ -58,13 +59,35 @@ jobs:
           git pull --rebase origin main
           git push
 
-      - name: GitHub 데이터 반영 대기
+      - name: 홈페이지 /api/pdf 직접 보정
+        id: repair
         if: steps.enrich.outcome == 'success'
-        run: sleep 60
+        continue-on-error: true
+        env:
+          ETF_SITE_URL: https://etf-attribution-mvp.bang-starone.chatgpt.site
+          ETF_SITE_TOKEN: ${{ secrets.ETF_SITE_TOKEN }}
+          ETF_CODE: '449450'
+        run: node repair-site-contributions.js
+
+      - name: 홈페이지 보정 결과 커밋
+        if: always()
+        run: |
+          if [ ! -f data/site-diagnostics/repair-result.json ]; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/site-diagnostics/repair-result.json
+          git diff --cached --quiet && exit 0
+          git commit -m "data: record ETF Lens contribution repair result"
+          git pull --rebase origin main
+          git push
+
+      - name: 홈페이지 저장 반영 대기
+        if: steps.repair.outcome == 'success'
+        run: sleep 15
 
       - name: 배포 API non-zero 재검증
         id: verify
-        if: steps.enrich.outcome == 'success'
+        if: steps.repair.outcome == 'success'
         continue-on-error: true
         env:
           ETF_SITE_URL: https://etf-attribution-mvp.bang-starone.chatgpt.site/
@@ -102,6 +125,6 @@ jobs:
           if-no-files-found: warn
           retention-days: 7
 
-      - name: 보강·배포 검증 결과 확인
-        if: steps.enrich.outcome != 'success' || steps.verify.outcome != 'success'
+      - name: 보강·업로드·배포 검증 결과 확인
+        if: steps.enrich.outcome != 'success' || steps.repair.outcome != 'success' || steps.verify.outcome != 'success'
         run: exit 1
