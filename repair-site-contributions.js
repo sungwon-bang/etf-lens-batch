@@ -34,6 +34,21 @@ function writeResult(result) {
   fs.writeFileSync(RESULT_PATH, `${JSON.stringify(result, null, 2)}\n`);
 }
 
+function summarizeComponents(components) {
+  const nonZero = components.filter((component) => (
+    Number(component.stockReturn) !== 0 || Number(component.contribution) !== 0
+  ));
+  return {
+    componentCount: components.length,
+    nonZeroCount: nonZero.length,
+    sample: components.slice(0, 5).map((component) => ({
+      code: component.code,
+      stockReturn: component.stockReturn,
+      contribution: component.contribution,
+    })),
+  };
+}
+
 async function main() {
   const result = {
     capturedAt: new Date().toISOString(),
@@ -44,17 +59,34 @@ async function main() {
   };
 
   try {
-    if (!SITE_TOKEN) {
-      throw new Error('GitHub Secret ETF_SITE_TOKEN이 설정되지 않았습니다.');
-    }
-
     const market = await fetchJson(`${SITE_URL}/api/market-data`);
     const asOf = String(market.meta?.asOf || '').replaceAll('-', '');
     if (!/^\d{8}$/.test(asOf)) throw new Error(`유효한 KRX 기준일이 없습니다: ${market.meta?.asOf}`);
 
-    const batch = await fetchJson(`${SITE_URL}/api/batch-data?code=${TARGET_CODE}&date=${asOf}`);
+    const batch = await fetchJson(`${SITE_URL}/api/batch-data?code=${TARGET_CODE}&date=${asOf}&check=${Date.now()}`);
     if (!Array.isArray(batch.components) || !batch.components.length) {
       throw new Error(`배치 구성종목이 없습니다: ${TARGET_CODE}/${asOf}`);
+    }
+
+    const current = summarizeComponents(batch.components);
+    if (current.nonZeroCount > 0) {
+      Object.assign(result, {
+        status: 'completed',
+        action: 'already_reflected',
+        asOf,
+        marketSource: market.meta?.source || null,
+        stockApiComplete: market.meta?.stockApiComplete ?? null,
+        verifiedComponentCount: current.componentCount,
+        verifiedNonZeroReturns: current.nonZeroCount,
+        totalContribution: Number(batch.summary?.totalContribution || 0),
+        sample: current.sample,
+      });
+      writeResult(result);
+      return;
+    }
+
+    if (!SITE_TOKEN) {
+      throw new Error('GitHub Secret ETF_SITE_TOKEN이 설정되지 않았습니다.');
     }
 
     const components = batch.components.map((component) => {
@@ -111,10 +143,11 @@ async function main() {
     await new Promise((resolve) => setTimeout(resolve, 3000));
     const verified = await fetchJson(`${SITE_URL}/api/batch-data?code=${TARGET_CODE}&date=${asOf}&repair=${Date.now()}`);
     const verifiedComponents = Array.isArray(verified.components) ? verified.components : [];
-    const nonZero = verifiedComponents.filter((component) => Number(component.stockReturn) !== 0);
+    const verifiedSummary = summarizeComponents(verifiedComponents);
 
     Object.assign(result, {
-      status: nonZero.length ? 'completed' : 'uploaded_but_not_reflected',
+      status: verifiedSummary.nonZeroCount ? 'completed' : 'uploaded_but_not_reflected',
+      action: 'uploaded',
       asOf,
       marketSource: market.meta?.source || null,
       stockApiComplete: market.meta?.stockApiComplete ?? null,
@@ -123,17 +156,13 @@ async function main() {
       totalContribution,
       uploadStatus: uploadResponse.status,
       uploadBody,
-      verifiedComponentCount: verifiedComponents.length,
-      verifiedNonZeroReturns: nonZero.length,
-      sample: verifiedComponents.slice(0, 5).map((component) => ({
-        code: component.code,
-        stockReturn: component.stockReturn,
-        contribution: component.contribution,
-      })),
+      verifiedComponentCount: verifiedSummary.componentCount,
+      verifiedNonZeroReturns: verifiedSummary.nonZeroCount,
+      sample: verifiedSummary.sample,
     });
 
     writeResult(result);
-    if (!nonZero.length) process.exitCode = 2;
+    if (!verifiedSummary.nonZeroCount) process.exitCode = 2;
   } catch (error) {
     Object.assign(result, { status: 'failed', error: error.message });
     writeResult(result);
