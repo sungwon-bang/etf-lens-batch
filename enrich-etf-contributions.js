@@ -49,20 +49,36 @@ function main() {
     item.summary = {
       ...item.summary,
       totalContribution: null,
-      pricedComponents: 0,
+      pricedComponents: null,
       contributionSource: 'live-market-data-only',
     };
     delete item.enrichedAt;
     state.meta.updatedAt = new Date().toISOString();
+
+    const storedNonNullReturns = item.components.filter(
+      (component) => component.stockReturn !== null,
+    ).length;
+    const storedNonNullContributions = item.components.filter(
+      (component) => component.contribution !== null,
+    ).length;
+
+    if (storedNonNullReturns !== 0 || storedNonNullContributions !== 0) {
+      throw new Error(
+        `저장 수익률 정규화 실패: returns=${storedNonNullReturns}, contributions=${storedNonNullContributions}`,
+      );
+    }
+
     fs.writeFileSync(OUTPUT_PATH, `${JSON.stringify(state, null, 2)}\n`);
 
     Object.assign(result, {
-      status: 'checkpoint_updated',
+      status: 'completed',
       date: itemDate,
       componentCount: item.components.length,
       before,
-      storedNonNullReturns: item.components.filter((component) => component.stockReturn !== null).length,
-      storedNonNullContributions: item.components.filter((component) => component.contribution !== null).length,
+      storedNonNullReturns,
+      storedNonNullContributions,
+      summaryTotalContribution: item.summary.totalContribution,
+      summaryPricedComponents: item.summary.pricedComponents,
       sample: item.components.slice(0, 5).map((component) => ({
         code: component.code,
         stockReturn: component.stockReturn,
