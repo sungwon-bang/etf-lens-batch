@@ -1,7 +1,4 @@
-name: ETF PDF 야간 전체 수집
-
-# KRX finder 내부코드 및 PDF 유효성 검증; 449450 검증 후 전체 배치 재개
-# 개인 PC 종료 후 GitHub-hosted runner 전체 수집 재시작
+name: ETF 데이터 야간 전체 수집
 
 on:
   push:
@@ -11,6 +8,7 @@ on:
       - '.github/workflows/batch-collect-with-playwright.yml'
       - 'krx-auto-login.js'
       - 'krx-etf-download.js'
+      - 'krx-stock-returns.js'
       - 'krx-worker.js'
       - 'package.json'
       - 'package-lock.json'
@@ -35,14 +33,11 @@ permissions:
 
 concurrency:
   group: etf-pdf-nightly-batch
-  # 코드 수정·정기 실행은 기존 실행을 교체하지만, 자동 이어받기는 현재 실행 종료 후 대기한다.
   cancel-in-progress: ${{ github.event_name != 'workflow_dispatch' }}
 
 jobs:
   collect:
-    # GitHub가 매 실행마다 새 Windows VM을 제공하므로 개인 PC 전원과 무관하게 실행된다.
     runs-on: windows-latest
-    # 표준 GitHub-hosted runner의 6시간 제한보다 먼저 종료해 결과 저장·이어받기 시간을 확보한다.
     timeout-minutes: 350
     defaults:
       run:
@@ -80,18 +75,15 @@ jobs:
         if: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'login_only') || (github.event_name == 'push' && !contains(github.event.head_commit.message, '[collect]')) }}
         run: echo "KRX 로그인과 세션 저장을 정상 완료했습니다."
 
-      - name: 전체 ETF PDF 구성종목 수집
+      - name: 개별종목 수익률 및 전체 ETF PDF 구성종목 수집
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'collect') || (github.event_name == 'push' && contains(github.event.head_commit.message, '[collect]')) }}
         env:
           KRX_API_KEY: ${{ secrets.KRX_API_KEY }}
           KRX_LOGIN_ID: ${{ secrets.KRX_LOGIN_ID }}
           KRX_LOGIN_PASSWORD: ${{ secrets.KRX_LOGIN_PASSWORD }}
           ETF_CODE_FILTER: ${{ github.event_name == 'push' && contains(github.event.head_commit.message, '[verify-449450]') && '449450' || '' }}
-          # 단일 종목 검증은 직렬, 전체 수집은 동일 로그인 세션의 독립 페이지 2개로 처리한다.
           COLLECT_CONCURRENCY: ${{ github.event_name == 'push' && contains(github.event.head_commit.message, '[verify-449450]') && '1' || '2' }}
-          # 검증 완료: Git push 부하를 줄이기 위해 25종목마다 원격 체크포인트를 남긴다.
           CHECKPOINT_SIZE: ${{ github.event_name == 'push' && contains(github.event.head_commit.message, '[verify-449450]') && '1' || '25' }}
-          # 약 5시간 20분 뒤에는 정상적으로 체크포인트를 남기고 후속 실행으로 넘긴다.
           BATCH_TIMEOUT_MS: ${{ github.event_name == 'push' && contains(github.event.head_commit.message, '[verify-449450]') && '1200000' || '19200000' }}
         run: npm run collect
 
@@ -106,12 +98,15 @@ jobs:
 
       - name: 최종 결과 커밋
         if: ${{ always() && (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'collect') || (github.event_name == 'push' && contains(github.event.head_commit.message, '[collect]'))) }}
+        shell: pwsh
         run: |
-          git diff --quiet -- data/etf-compositions.json && exit /b 0
+          $files = @('data/etf-compositions.json', 'data/stock-returns.json')
+          git add -- $files
+          git diff --cached --quiet
+          if ($LASTEXITCODE -eq 0) { exit 0 }
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/etf-compositions.json
-          git commit -m "data: finalize ETF PDF collection"
+          git commit -m "data: finalize ETF and stock return collection"
           git pull --rebase origin main
           git push
 
