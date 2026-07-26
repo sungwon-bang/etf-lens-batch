@@ -1,0 +1,89 @@
+{
+  "capturedAt": "2026-07-26T16:51:15.085Z",
+  "targetCode": "449450",
+  "desiredArchitecture": {
+    "pdfJson": "composition and weight only; stockReturn/contribution missing or null",
+    "batchApi": "preserve missing or null; never coerce to zero",
+    "frontend": "always prioritize /api/market-data stocks[code].returnRate"
+  },
+  "collectionState": {
+    "date": "20260727",
+    "total": 1150,
+    "completed": 390,
+    "failed": 0,
+    "status": "running",
+    "updatedAt": "2026-07-26T16:47:40.105Z"
+  },
+  "localPdfData": {
+    "itemExists": false,
+    "date": null,
+    "componentCount": 0,
+    "stockReturnFields": {
+      "missing": 0,
+      "null": 0,
+      "zero": 0,
+      "nonZero": 0,
+      "other": 0
+    },
+    "contributionFields": {
+      "missing": 0,
+      "null": 0,
+      "zero": 0,
+      "nonZero": 0,
+      "other": 0
+    },
+    "conforms": false,
+    "sample": []
+  },
+  "marketData": {
+    "status": 200,
+    "source": "krx-api-live",
+    "asOf": "2026-07-23",
+    "stockApiComplete": true,
+    "targetEtf": {
+      "code": "449450",
+      "name": "PLUS K방산",
+      "close": 56110,
+      "change": 4390,
+      "returnRate": 8.49,
+      "nav": 56076.11
+    },
+    "targetStocksAvailable": 0
+  },
+  "batchData": {
+    "requestedDate": "20260723",
+    "status": 404,
+    "etf": null,
+    "componentCount": 0,
+    "stockReturnFields": {
+      "missing": 0,
+      "null": 0,
+      "zero": 0,
+      "nonZero": 0,
+      "other": 0
+    },
+    "contributionFields": {
+      "missing": 0,
+      "null": 0,
+      "zero": 0,
+      "nonZero": 0,
+      "other": 0
+    },
+    "preservesNullOrMissing": false,
+    "sample": []
+  },
+  "deployedBundle": {
+    "scriptCount": 0,
+    "usesBatchFirst": false,
+    "usesLiveFirst": false,
+    "batchFirstSnippet": null,
+    "liveFirstSnippet": null
+  },
+  "verdict": {
+    "localPdfConforms": false,
+    "batchApiConforms": false,
+    "frontendConforms": false,
+    "fullyConforms": false,
+    "enrichmentPerformed": false
+  }
+}
