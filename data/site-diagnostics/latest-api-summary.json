@@ -1,5 +1,5 @@
 {
-  "capturedAt": "2026-07-26T13:36:19.127Z",
+  "capturedAt": "2026-07-26T13:39:14.575Z",
   "targetCode": "449450",
   "targetDate": "20260724",
   "currentMarketData": {
@@ -100,7 +100,52 @@
     "text": null,
     "count": 1147
   },
-  "enrichment": null,
+  "enrichment": {
+    "capturedAt": "2026-07-26T13:39:14.575Z",
+    "targetCode": "449450",
+    "status": "completed",
+    "date": "20260724",
+    "componentCount": 11,
+    "pricedComponents": 10,
+    "totalContribution": -0.945053,
+    "sample": [
+      {
+        "code": "012450",
+        "name": "한화에어로스페이스",
+        "weight": 20.91,
+        "stockReturn": 2.19,
+        "contribution": 0.457929
+      },
+      {
+        "code": "042660",
+        "name": "한화오션",
+        "weight": 18.23,
+        "stockReturn": -2.22,
+        "contribution": -0.404706
+      },
+      {
+        "code": "064350",
+        "name": "현대로템",
+        "weight": 17.48,
+        "stockReturn": -4.86,
+        "contribution": -0.849528
+      },
+      {
+        "code": "047810",
+        "name": "한국항공우주",
+        "weight": 17.01,
+        "stockReturn": -3.66,
+        "contribution": -0.622566
+      },
+      {
+        "code": "079550",
+        "name": "LIG디펜스앤에어로스페이스",
+        "weight": 15.66,
+        "stockReturn": 3.53,
+        "contribution": 0.552798
+      }
+    ]
+  },
   "componentSample": [
     {
       "code": "012450",
