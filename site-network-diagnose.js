@@ -27,6 +27,15 @@ async function safeGet(request, url) {
   }
 }
 
+function statusOnly(result) {
+  return {
+    status: result.status,
+    url: result.url,
+    error: result.error || null,
+    text: result.text || null,
+  };
+}
+
 async function main() {
   fs.mkdirSync('diagnostics', { recursive: true });
   const browser = await chromium.launch({ headless: true, args: ['--no-sandbox'] });
@@ -115,28 +124,59 @@ async function main() {
   }
 
   const currentMarket = direct.currentMarketData.json || {};
-  const targetEtf = currentMarket.etfs?.[TARGET_CODE] || null;
+  const previousMarket = direct.previousMarketData.json || {};
   const batch = direct.batchData.json || {};
+  const history = direct.history.json || {};
+  const etfList = direct.etfList.json || [];
+  const targetEtf = currentMarket.etfs?.[TARGET_CODE] || null;
+  const previousTargetEtf = previousMarket.etfs?.[TARGET_CODE] || null;
   const componentCodes = (batch.components || []).map((item) => item.code).filter(Boolean);
   const componentSample = componentCodes.slice(0, 20).map((code) => ({
     code,
     marketData: currentMarket.stocks?.[code] || null,
     batchComponent: (batch.components || []).find((item) => item.code === code) || null,
   }));
-
-  const bodyText = compact(await page.locator('body').innerText(), 60000);
-  const localStorage = await page.evaluate(() => Object.fromEntries(Object.entries(localStorage)));
-  const sessionStorage = await page.evaluate(() => Object.fromEntries(Object.entries(sessionStorage)));
-  const scripts = await page.locator('script[src]').evaluateAll((nodes) => nodes.map((node) => node.src));
+  const historyPoints = Array.isArray(history.points) ? history.points : [];
   const capturedAt = new Date().toISOString();
   const apiSummary = {
     capturedAt,
     targetCode: TARGET_CODE,
     targetDate: TARGET_DATE,
-    targetEtf,
+    currentMarketData: {
+      ...statusOnly(direct.currentMarketData),
+      meta: currentMarket.meta || null,
+      etfCount: currentMarket.etfs ? Object.keys(currentMarket.etfs).length : 0,
+      stockCount: currentMarket.stocks ? Object.keys(currentMarket.stocks).length : 0,
+      targetEtf,
+    },
+    previousMarketData: {
+      ...statusOnly(direct.previousMarketData),
+      meta: previousMarket.meta || null,
+      targetEtf: previousTargetEtf,
+    },
+    batchData: {
+      ...statusOnly(direct.batchData),
+      etf: batch.etf || null,
+      summary: batch.summary || null,
+      componentCount: componentCodes.length,
+    },
+    history: {
+      ...statusOnly(direct.history),
+      pointCount: historyPoints.length,
+      first: historyPoints[0] || null,
+      last: historyPoints.at(-1) || null,
+    },
+    etfList: {
+      ...statusOnly(direct.etfList),
+      count: Array.isArray(etfList) ? etfList.length : 0,
+    },
     componentSample,
-    direct,
   };
+
+  const bodyText = compact(await page.locator('body').innerText(), 60000);
+  const localStorage = await page.evaluate(() => Object.fromEntries(Object.entries(localStorage)));
+  const sessionStorage = await page.evaluate(() => Object.fromEntries(Object.entries(sessionStorage)));
+  const scripts = await page.locator('script[src]').evaluateAll((nodes) => nodes.map((node) => node.src));
 
   await page.screenshot({ path: 'diagnostics/site-449450.png', fullPage: true });
   fs.writeFileSync('diagnostics/site-body.txt', `${bodyText}\n`);
@@ -163,9 +203,7 @@ async function main() {
     console.log(`[${item.status}] ${item.method} ${item.url}`);
     if (item.body) console.log(`응답: ${item.body.slice(0, 1500)}`);
   }
-  console.log(`직접 조회 ETF ${TARGET_CODE}: ${JSON.stringify(targetEtf)}`);
-  console.log(`구성종목 샘플: ${JSON.stringify(componentSample.slice(0, 5))}`);
-  console.log(`직접 API 상태: ${JSON.stringify(Object.fromEntries(Object.entries(direct).map(([key, value]) => [key, value.status])))}`);
+  console.log(`API 요약: ${JSON.stringify(apiSummary)}`);
   console.log(`화면 본문: ${bodyText.slice(0, 7000)}`);
   await browser.close();
 }
