@@ -2,10 +2,10 @@
   "meta": {
     "date": "20260724",
     "total": 1150,
-    "completed": 250,
+    "completed": 255,
     "failed": 1,
     "status": "running",
-    "updatedAt": "2026-07-26T05:35:03.954Z"
+    "updatedAt": "2026-07-26T05:36:26.561Z"
   },
   "items": {
     "100910": {
@@ -2969,6 +2969,66 @@
         }
       ],
       "collectedAt": "2026-07-25T16:08:16.621Z"
+    },
+    "138230": {
+      "etf": {
+        "code": "138230",
+        "name": "KIWOOM 미국달러선물",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 2,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "KR4A75680004",
+          "name": "미국달러 F 202608",
+          "quantity": 11.68,
+          "evaluationAmount": 171450720,
+          "marketCap": 0,
+          "weight": 49.994417
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 171489014,
+          "weight": 50.005583
+        }
+      ],
+      "collectedAt": "2026-07-26T05:35:20.403Z"
+    },
+    "139660": {
+      "etf": {
+        "code": "139660",
+        "name": "KIWOOM 미국달러선물인버스",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 2,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "KR4A75680004",
+          "name": "미국달러 F 202608",
+          "quantity": -5.39,
+          "evaluationAmount": -79131553,
+          "marketCap": 0,
+          "weight": 50.047775
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 78980476,
+          "weight": 49.952225
+        }
+      ],
+      "collectedAt": "2026-07-26T05:35:53.590Z"
     },
     "145670": {
       "etf": {
@@ -7922,6 +7982,44 @@
       ],
       "collectedAt": "2026-07-25T15:57:13.163Z"
     },
+    "225800": {
+      "etf": {
+        "code": "225800",
+        "name": "KIWOOM 미국달러선물레버리지",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 3,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "138230",
+          "name": "KIWOOM 미국달러선물",
+          "quantity": 2160,
+          "evaluationAmount": 37011600,
+          "marketCap": 36925200,
+          "weight": 7.83534
+        },
+        {
+          "code": "KR4A75680004",
+          "name": "미국달러 F 202608",
+          "quantity": 20.56,
+          "evaluationAmount": 301800240,
+          "marketCap": 0,
+          "weight": 64.040479
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 132539367,
+          "weight": 28.124181
+        }
+      ],
+      "collectedAt": "2026-07-26T05:35:36.238Z"
+    },
     "226380": {
       "etf": {
         "code": "226380",
@@ -8351,6 +8449,44 @@
         }
       ],
       "collectedAt": "2026-07-25T15:54:22.966Z"
+    },
+    "230480": {
+      "etf": {
+        "code": "230480",
+        "name": "KIWOOM 미국달러선물인버스2X",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 3,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "139660",
+          "name": "KIWOOM 미국달러선물인버스",
+          "quantity": 987.27,
+          "evaluationAmount": 7774779,
+          "marketCap": 7799433,
+          "weight": 6.732923
+        },
+        {
+          "code": "KR4A75680004",
+          "name": "미국달러 F 202608",
+          "quantity": -5.09,
+          "evaluationAmount": -74708771,
+          "marketCap": 0,
+          "weight": 64.492945
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 33332019,
+          "weight": 28.774132
+        }
+      ],
+      "collectedAt": "2026-07-26T05:36:12.771Z"
     },
     "238720": {
       "etf": {
@@ -131475,6 +131611,60 @@
         }
       ],
       "collectedAt": "2026-07-26T05:34:31.234Z"
+    },
+    "0084E0": {
+      "etf": {
+        "code": "0084E0",
+        "name": "KIWOOM 미국대형주500월간목표헤지액티브",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 5,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "US46436E7186",
+          "name": "ISHARES 0-3 MONTH TREASURY B",
+          "quantity": 905,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US4642872000",
+          "name": "ISHARES CORE S&P 500 ETF",
+          "quantity": 123,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US78468R6633",
+          "name": "SS SPDR BB 1-3M T-BILL ETF",
+          "quantity": 995,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US9229083632",
+          "name": "VANGUARD S&P 500 ETF",
+          "quantity": 135,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 2194544,
+          "weight": 100
+        }
+      ],
+      "collectedAt": "2026-07-26T05:36:26.561Z"
     }
   },
   "failures": {
