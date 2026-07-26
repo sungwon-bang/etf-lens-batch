@@ -38,6 +38,7 @@ jobs:
           ETF_SITE_URL: https://etf-attribution-mvp.bang-starone.chatgpt.site/
           ETF_CODE: '449450'
           ETF_NAME: PLUS K방산
+          ETF_DATE: '20260724'
         run: node site-network-diagnose.js
 
       - name: 최신 진단 결과 커밋
@@ -47,9 +48,12 @@ jobs:
           mkdir -p data/site-diagnostics
           cp diagnostics/site-network.json data/site-diagnostics/latest-network.json
           cp diagnostics/site-body.txt data/site-diagnostics/latest-body.txt
+          if [ -f diagnostics/site-api-summary.json ]; then
+            cp diagnostics/site-api-summary.json data/site-diagnostics/latest-api-summary.json
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/site-diagnostics/latest-network.json data/site-diagnostics/latest-body.txt
+          git add data/site-diagnostics/
           git diff --cached --quiet && exit 0
           git commit -m "data: update ETF Lens deployed API diagnosis"
           git pull --rebase origin main
