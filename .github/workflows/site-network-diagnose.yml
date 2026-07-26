@@ -14,7 +14,7 @@ permissions:
 jobs:
   diagnose:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - name: 저장소 체크아웃
         uses: actions/checkout@v4
@@ -33,12 +33,46 @@ jobs:
       - name: Chromium 설치
         run: npx playwright install --with-deps chromium
 
-      - name: 배포 사이트 API 네트워크 진단
+      - name: 실시간 수익률 보강 및 1차 진단
+        id: enrich
+        continue-on-error: true
         env:
           ETF_SITE_URL: https://etf-attribution-mvp.bang-starone.chatgpt.site/
           ETF_CODE: '449450'
           ETF_NAME: PLUS K방산
           ETF_DATE: '20260724'
+        run: node site-network-diagnose.js
+
+      - name: 보강 데이터 우선 커밋
+        if: always()
+        run: |
+          mkdir -p data/site-diagnostics
+          if [ -f diagnostics/enrichment-result.json ]; then
+            cp diagnostics/enrichment-result.json data/site-diagnostics/enrichment-result.json
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/etf-compositions.json data/site-diagnostics/enrichment-result.json
+          git diff --cached --quiet && exit 0
+          git commit -m "data: enrich 449450 contributions from live KRX returns"
+          git pull --rebase origin main
+          git push
+
+      - name: GitHub 데이터 반영 대기
+        if: steps.enrich.outcome == 'success'
+        run: sleep 60
+
+      - name: 배포 API non-zero 재검증
+        id: verify
+        if: steps.enrich.outcome == 'success'
+        continue-on-error: true
+        env:
+          ETF_SITE_URL: https://etf-attribution-mvp.bang-starone.chatgpt.site/
+          ETF_CODE: '449450'
+          ETF_NAME: PLUS K방산
+          ETF_DATE: '20260724'
+          SKIP_ENRICH: '1'
+          VERIFY_EXPECT_NONZERO: '1'
         run: node site-network-diagnose.js
 
       - name: 최신 진단 결과 커밋
@@ -67,3 +101,7 @@ jobs:
           path: diagnostics/
           if-no-files-found: warn
           retention-days: 7
+
+      - name: 보강·배포 검증 결과 확인
+        if: steps.enrich.outcome != 'success' || steps.verify.outcome != 'success'
+        run: exit 1
