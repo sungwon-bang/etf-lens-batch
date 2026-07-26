@@ -11,46 +11,24 @@ function round(value, digits = 6) {
   return Number(Number(value).toFixed(digits));
 }
 
-async function readJson(response) {
+async function fetchJson(url, options = {}) {
+  const response = await fetch(url, options);
   const text = await response.text();
+  let body;
   try {
-    return JSON.parse(text);
+    body = JSON.parse(text);
   } catch {
     throw new Error(`JSON 응답이 아닙니다 (${response.status}): ${text.slice(0, 500)}`);
   }
-}
-
-async function fetchJson(url, options = {}) {
-  const response = await fetch(url, options);
-  const body = await readJson(response);
   if (!response.ok) {
     throw new Error(`${response.status} ${url}: ${body.error || JSON.stringify(body).slice(0, 500)}`);
   }
-  return body;
+  return { response, body };
 }
 
 function writeResult(result) {
   fs.mkdirSync(path.dirname(RESULT_PATH), { recursive: true });
   fs.writeFileSync(RESULT_PATH, `${JSON.stringify(result, null, 2)}\n`);
-}
-
-function summarizeComponents(components) {
-  const nullish = components.filter((component) => (
-    component.stockReturn == null && component.contribution == null
-  ));
-  const zeroed = components.filter((component) => (
-    component.stockReturn === 0 && component.contribution === 0
-  ));
-  return {
-    componentCount: components.length,
-    nullishCount: nullish.length,
-    zeroedCount: zeroed.length,
-    sample: components.slice(0, 5).map((component) => ({
-      code: component.code,
-      stockReturn: component.stockReturn,
-      contribution: component.contribution,
-    })),
-  };
 }
 
 async function main() {
@@ -63,41 +41,43 @@ async function main() {
   };
 
   try {
-    if (!SITE_TOKEN) {
-      throw new Error('GitHub Secret ETF_SITE_TOKEN이 설정되지 않았습니다.');
-    }
+    if (!SITE_TOKEN) throw new Error('GitHub Secret ETF_SITE_TOKEN이 설정되지 않았습니다.');
 
-    const market = await fetchJson(`${SITE_URL}/api/market-data`);
+    const { body: market } = await fetchJson(`${SITE_URL}/api/market-data?repair=${Date.now()}`);
     const asOf = String(market.meta?.asOf || '').replaceAll('-', '');
-    if (!/^\d{8}$/.test(asOf)) {
-      throw new Error(`유효한 KRX 기준일이 없습니다: ${market.meta?.asOf}`);
-    }
+    if (!/^\d{8}$/.test(asOf)) throw new Error(`유효한 KRX 기준일이 없습니다: ${market.meta?.asOf}`);
 
-    const batch = await fetchJson(
+    const { body: batch } = await fetchJson(
       `${SITE_URL}/api/batch-data?code=${TARGET_CODE}&date=${asOf}&before=${Date.now()}`,
     );
     if (!Array.isArray(batch.components) || !batch.components.length) {
       throw new Error(`배치 구성종목이 없습니다: ${TARGET_CODE}/${asOf}`);
     }
 
-    const livePreview = batch.components.slice(0, 5).map((component) => ({
-      code: component.code,
-      returnRate: market.stocks?.[component.code]?.returnRate ?? null,
-      expectedContribution: Number.isFinite(market.stocks?.[component.code]?.returnRate)
-        ? round(Number(component.weight || 0) * market.stocks[component.code].returnRate / 100)
-        : null,
-    }));
-
-    const components = batch.components.map((component) => ({
-      code: component.code,
-      name: component.name,
-      quantity: component.quantity || 0,
-      evaluationAmount: component.evaluationAmount || 0,
-      marketCap: component.marketCap || 0,
-      weight: component.weight,
-      stockReturn: null,
-      contribution: null,
-    }));
+    let pricedComponents = 0;
+    let totalContribution = 0;
+    const components = batch.components.map((component) => {
+      const live = market.stocks?.[component.code];
+      const stockReturn = Number.isFinite(live?.returnRate) ? Number(live.returnRate) : null;
+      const contribution = stockReturn === null
+        ? null
+        : round(Number(component.weight || 0) * stockReturn / 100);
+      if (stockReturn !== null) {
+        pricedComponents += 1;
+        totalContribution += contribution;
+      }
+      return {
+        code: component.code,
+        name: live?.name || component.name,
+        quantity: Number(component.quantity || 0),
+        evaluationAmount: Number(component.evaluationAmount || 0),
+        marketCap: Number(component.marketCap || 0),
+        weight: Number(component.weight || 0),
+        stockReturn,
+        contribution,
+      };
+    });
+    totalContribution = round(totalContribution);
 
     const payload = {
       etf: {
@@ -108,14 +88,11 @@ async function main() {
       },
       summary: {
         totalComponents: components.length,
-        totalWeight: round(components.reduce(
-          (sum, component) => sum + Number(component.weight || 0),
-          0,
-        )),
-        totalContribution: null,
-        pricedComponents: null,
+        totalWeight: round(components.reduce((sum, component) => sum + component.weight, 0)),
+        totalContribution,
+        pricedComponents,
         currency: 'KRW',
-        marketDataSource: null,
+        marketDataSource: market.meta?.source || 'krx-api-live',
       },
       components,
     };
@@ -130,47 +107,43 @@ async function main() {
     });
     const uploadText = await uploadResponse.text();
     let uploadBody;
-    try {
-      uploadBody = JSON.parse(uploadText);
-    } catch {
-      uploadBody = { raw: uploadText.slice(0, 1000) };
-    }
+    try { uploadBody = JSON.parse(uploadText); } catch { uploadBody = { raw: uploadText.slice(0, 1000) }; }
     if (!uploadResponse.ok) {
-      throw new Error(
-        `홈페이지 업로드 실패 (${uploadResponse.status}): ${JSON.stringify(uploadBody)}`,
-      );
+      throw new Error(`홈페이지 업로드 실패 (${uploadResponse.status}): ${JSON.stringify(uploadBody)}`);
     }
 
-    await new Promise((resolve) => setTimeout(resolve, 3000));
-    const verified = await fetchJson(
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+    const { body: verified } = await fetchJson(
       `${SITE_URL}/api/batch-data?code=${TARGET_CODE}&date=${asOf}&after=${Date.now()}`,
     );
-    const verifiedComponents = Array.isArray(verified.components)
-      ? verified.components
-      : [];
-    const verifiedSummary = summarizeComponents(verifiedComponents);
+    const verifiedComponents = Array.isArray(verified.components) ? verified.components : [];
+    const nonZero = verifiedComponents.filter((component) => (
+      Number(component.stockReturn) !== 0 || Number(component.contribution) !== 0
+    ));
 
     Object.assign(result, {
-      status: verifiedSummary.nullishCount === verifiedSummary.componentCount
-        ? 'completed'
-        : verifiedSummary.zeroedCount === verifiedSummary.componentCount
-          ? 'api_converted_null_to_zero'
-          : 'partial',
-      action: 'cleared_persisted_returns',
+      status: nonZero.length ? 'completed' : 'uploaded_but_not_reflected',
+      action: 'uploaded_live_returns',
       asOf,
       marketSource: market.meta?.source || null,
       stockApiComplete: market.meta?.stockApiComplete ?? null,
       uploadStatus: uploadResponse.status,
       uploadBody,
-      verifiedComponentCount: verifiedSummary.componentCount,
-      verifiedNullishReturns: verifiedSummary.nullishCount,
-      verifiedZeroedReturns: verifiedSummary.zeroedCount,
-      batchSample: verifiedSummary.sample,
-      livePreview,
+      componentCount: components.length,
+      pricedComponents,
+      totalContribution,
+      verifiedComponentCount: verifiedComponents.length,
+      verifiedNonZeroReturns: nonZero.length,
+      sample: verifiedComponents.slice(0, 7).map((component) => ({
+        code: component.code,
+        name: component.name,
+        weight: component.weight,
+        stockReturn: component.stockReturn,
+        contribution: component.contribution,
+      })),
     });
-
     writeResult(result);
-    if (result.status !== 'completed') process.exitCode = 2;
+    if (!nonZero.length) process.exitCode = 2;
   } catch (error) {
     Object.assign(result, { status: 'failed', error: error.message });
     writeResult(result);
