@@ -1,4 +1,4 @@
-name: ETF 기여도 체크포인트 보강
+name: ETF PDF 수익률 필드 정규화
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       code:
-        description: '보강할 ETF 종목코드'
+        description: '정규화할 ETF 종목코드'
         required: true
         default: '449450'
 
@@ -17,7 +17,7 @@ permissions:
   contents: write
 
 jobs:
-  enrich:
+  normalize:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -31,18 +31,18 @@ jobs:
         with:
           node-version: '24'
 
-      - name: 실시간 KRX 수익률로 기여도 보강
+      - name: PDF JSON의 저장 수익률 제거
         env:
           ETF_SITE_URL: https://etf-attribution-mvp.bang-starone.chatgpt.site
           ETF_CODE: ${{ github.event_name == 'workflow_dispatch' && inputs.code || '449450' }}
         run: node enrich-etf-contributions.js
 
-      - name: 보강 결과 커밋
+      - name: 정규화 결과 커밋
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/etf-compositions.json data/site-diagnostics/enrichment-result.json
           git diff --cached --quiet && exit 0
-          git commit -m "data: enrich ETF contribution returns for 449450"
+          git commit -m "data: clear stored ETF returns for live KRX fallback"
           git pull --rebase origin main
           git push
