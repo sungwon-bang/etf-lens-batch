@@ -1,13 +1,11 @@
 {
   "name": "etf-lens-batch",
   "version": "1.0.0",
-  "description": "KRX 전체 ETF PDF 구성종목 및 개별종목 수익률 야간 수집기",
+  "description": "KRX 전체 ETF PDF 구성종목 야간 수집기",
   "main": "krx-worker.js",
   "scripts": {
     "login": "node krx-auto-login.js",
-    "collect:pdf": "node krx-worker.js",
-    "collect:stocks": "node krx-stock-returns.js",
-    "collect": "npm run collect:stocks && npm run collect:pdf",
+    "collect": "node krx-worker.js",
     "start": "npm run collect",
     "test": "node --test"
   },
