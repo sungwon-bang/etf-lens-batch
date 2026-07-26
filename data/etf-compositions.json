@@ -5,7 +5,7 @@
     "completed": 1150,
     "failed": 0,
     "status": "completed",
-    "updatedAt": "2026-07-26T08:56:59.180Z"
+    "updatedAt": "2026-07-26T13:34:22.294Z"
   },
   "items": {
     "100910": {
@@ -345146,7 +345146,11 @@
       },
       "summary": {
         "totalComponents": 11,
-        "totalWeight": 99.99999999999999
+        "totalWeight": 99.99999999999999,
+        "totalContribution": -0.945053,
+        "pricedComponents": 10,
+        "marketDataDate": "20260724",
+        "marketDataSource": "krx-api-live"
       },
       "components": [
         {
@@ -345155,7 +345159,11 @@
           "quantity": 237,
           "evaluationAmount": 227046000,
           "marketCap": 232023000,
-          "weight": 20.91
+          "weight": 20.91,
+          "stockReturn": 2.19,
+          "contribution": 0.457929,
+          "marketDataDate": "20260724",
+          "marketDataSource": "krx-api-live"
         },
         {
           "code": "042660",
@@ -345163,7 +345171,11 @@
           "quantity": 2301,
           "evaluationAmount": 206859900,
           "marketCap": 202257900,
-          "weight": 18.23
+          "weight": 18.23,
+          "stockReturn": -2.22,
+          "contribution": -0.404706,
+          "marketDataDate": "20260724",
+          "marketDataSource": "krx-api-live"
         },
         {
           "code": "064350",
@@ -345171,7 +345183,11 @@
           "quantity": 1225,
           "evaluationAmount": 203962500,
           "marketCap": 194040000,
-          "weight": 17.48
+          "weight": 17.48,
+          "stockReturn": -4.86,
+          "contribution": -0.849528,
+          "marketDataDate": "20260724",
+          "marketDataSource": "krx-api-live"
         },
         {
           "code": "047810",
@@ -345179,7 +345195,11 @@
           "quantity": 1194,
           "evaluationAmount": 195935400,
           "marketCap": 188771400,
-          "weight": 17.01
+          "weight": 17.01,
+          "stockReturn": -3.66,
+          "contribution": -0.622566,
+          "marketDataDate": "20260724",
+          "marketDataSource": "krx-api-live"
         },
         {
           "code": "079550",
@@ -345187,7 +345207,11 @@
           "quantity": 228,
           "evaluationAmount": 167808000,
           "marketCap": 173736000,
-          "weight": 15.66
+          "weight": 15.66,
+          "stockReturn": 3.53,
+          "contribution": 0.552798,
+          "marketDataDate": "20260724",
+          "marketDataSource": "krx-api-live"
         },
         {
           "code": "272210",
@@ -345195,7 +345219,11 @@
           "quantity": 1221,
           "evaluationAmount": 85103700,
           "marketCap": 83272200,
-          "weight": 7.5
+          "weight": 7.5,
+          "stockReturn": -2.15,
+          "contribution": -0.16125,
+          "marketDataDate": "20260724",
+          "marketDataSource": "krx-api-live"
         },
         {
           "code": "103140",
@@ -345203,7 +345231,11 @@
           "quantity": 296,
           "evaluationAmount": 19299200,
           "marketCap": 20216800,
-          "weight": 1.82
+          "weight": 1.82,
+          "stockReturn": 4.75,
+          "contribution": 0.08645,
+          "marketDataDate": "20260724",
+          "marketDataSource": "krx-api-live"
         },
         {
           "code": "077970",
@@ -345211,7 +345243,11 @@
           "quantity": 260,
           "evaluationAmount": 6786000,
           "marketCap": 6643000,
-          "weight": 0.6
+          "weight": 0.6,
+          "stockReturn": -2.11,
+          "contribution": -0.01266,
+          "marketDataDate": "20260724",
+          "marketDataSource": "krx-api-live"
         },
         {
           "code": "003570",
@@ -345219,7 +345255,11 @@
           "quantity": 164,
           "evaluationAmount": 5584200,
           "marketCap": 5740000,
-          "weight": 0.52
+          "weight": 0.52,
+          "stockReturn": 2.79,
+          "contribution": 0.014508,
+          "marketDataDate": "20260724",
+          "marketDataSource": "krx-api-live"
         },
         {
           "code": "484870",
@@ -345227,7 +345267,11 @@
           "quantity": 117,
           "evaluationAmount": 2562300,
           "marketCap": 2492100,
-          "weight": 0.22
+          "weight": 0.22,
+          "stockReturn": -2.74,
+          "contribution": -0.006028,
+          "marketDataDate": "20260724",
+          "marketDataSource": "krx-api-live"
         },
         {
           "code": "KRD010010001",
@@ -345235,10 +345279,15 @@
           "quantity": 0,
           "evaluationAmount": 0,
           "marketCap": 574923,
-          "weight": 0.05
+          "weight": 0.05,
+          "stockReturn": null,
+          "contribution": null,
+          "marketDataDate": "20260724",
+          "marketDataSource": "krx-api-live"
         }
       ],
-      "collectedAt": "2026-07-26T07:04:22.484Z"
+      "collectedAt": "2026-07-26T07:04:22.484Z",
+      "enrichedAt": "2026-07-26T13:34:22.294Z"
     },
     "449580": {
       "etf": {
