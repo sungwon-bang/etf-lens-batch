@@ -36,12 +36,14 @@ jobs:
           node-version: '24'
 
       - name: PDF JSON의 저장 수익률 제거
+        id: normalize
+        continue-on-error: true
         env:
-          ETF_SITE_URL: https://etf-attribution-mvp.bang-starone.chatgpt.site
           ETF_CODE: ${{ github.event_name == 'workflow_dispatch' && inputs.code || '449450' }}
         run: node enrich-etf-contributions.js
 
       - name: 정규화 결과 커밋
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -50,3 +52,7 @@ jobs:
           git commit -m "data: clear stored ETF returns for live KRX fallback"
           git pull --rebase origin main
           git push
+
+      - name: 정규화 성공 확인
+        if: steps.normalize.outcome != 'success'
+        run: exit 1
