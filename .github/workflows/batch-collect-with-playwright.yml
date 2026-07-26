@@ -30,15 +30,19 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: etf-pdf-nightly-batch
-  cancel-in-progress: true
+  # 코드 수정·정기 실행은 기존 실행을 교체하지만, 자동 이어받기는 현재 실행 종료 후 대기한다.
+  cancel-in-progress: ${{ github.event_name != 'workflow_dispatch' }}
 
 jobs:
   collect:
-    runs-on: [self-hosted, Windows, X64]
-    timeout-minutes: 720
+    # GitHub가 매 실행마다 새 Windows VM을 제공하므로 개인 PC 전원과 무관하게 실행된다.
+    runs-on: windows-latest
+    # 표준 GitHub-hosted runner의 6시간 제한보다 먼저 종료해 결과 저장·이어받기 시간을 확보한다.
+    timeout-minutes: 350
     defaults:
       run:
         shell: cmd
@@ -83,7 +87,8 @@ jobs:
           KRX_LOGIN_PASSWORD: ${{ secrets.KRX_LOGIN_PASSWORD }}
           ETF_CODE_FILTER: ${{ github.event_name == 'push' && contains(github.event.head_commit.message, '[verify-449450]') && '449450' || '' }}
           CHECKPOINT_SIZE: ${{ github.event_name == 'push' && contains(github.event.head_commit.message, '[verify-449450]') && '1' || '5' }}
-          BATCH_TIMEOUT_MS: ${{ github.event_name == 'push' && contains(github.event.head_commit.message, '[verify-449450]') && '1200000' || '39600000' }}
+          # 약 5시간 20분 뒤에는 정상적으로 체크포인트를 남기고 후속 실행으로 넘긴다.
+          BATCH_TIMEOUT_MS: ${{ github.event_name == 'push' && contains(github.event.head_commit.message, '[verify-449450]') && '1200000' || '19200000' }}
         run: npm run collect
 
       - name: 오류 진단자료 저장
@@ -105,3 +110,28 @@ jobs:
           git commit -m "data: finalize ETF PDF collection"
           git pull --rebase origin main
           git push
+
+      - name: 미완료 수집 자동 이어받기
+        if: ${{ always() && (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'collect') || (github.event_name == 'push' && contains(github.event.head_commit.message, '[collect]'))) }}
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if (-not (Test-Path 'data/etf-compositions.json')) {
+            Write-Host '수집 상태 파일이 없어 자동 이어받기를 생략합니다.'
+            exit 0
+          }
+
+          $state = Get-Content 'data/etf-compositions.json' -Raw | ConvertFrom-Json
+          $completed = [int]$state.meta.completed
+          $total = [int]$state.meta.total
+          $failed = [int]$state.meta.failed
+          $status = [string]$state.meta.status
+          Write-Host "현재 상태: status=$status, completed=$completed/$total, failed=$failed"
+
+          if ($status -ne 'completed' -or $completed -lt $total -or $failed -gt 0) {
+            Write-Host '미완료 종목만 이어서 수집하도록 다음 GitHub-hosted 실행을 예약합니다.'
+            gh workflow run batch-collect-with-playwright.yml --ref main -f mode=collect
+          } else {
+            Write-Host '전체 ETF PDF 수집이 완료되어 후속 실행을 예약하지 않습니다.'
+          }
