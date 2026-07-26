@@ -3,9 +3,9 @@
     "date": "20260724",
     "total": 1150,
     "completed": 146,
-    "failed": 1,
+    "failed": 6,
     "status": "running",
-    "updatedAt": "2026-07-26T05:05:07.177Z"
+    "updatedAt": "2026-07-26T05:05:18.364Z"
   },
   "items": {
     "105190": {
@@ -72315,6 +72315,36 @@
       "name": "ACE 러시아MSCI(합성)",
       "attempts": 1,
       "error": "[265690] CSV 다운로드 실패: CSV가 현금성 구성종목만 포함합니다: 원화현금"
+    },
+    "285690": {
+      "code": "285690",
+      "name": "FOCUS ESG리더스",
+      "attempts": 1,
+      "error": "browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "448570": {
+      "code": "448570",
+      "name": "FOCUS AI코리아액티브",
+      "attempts": 1,
+      "error": "browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "0220B0": {
+      "code": "0220B0",
+      "name": "DS 코스닥액티브",
+      "attempts": 1,
+      "error": "[0220B0] PDF 화면 이동 실패: page.goto: Target page, context or browser has been closed"
+    },
+    "0098Z0": {
+      "code": "0098Z0",
+      "name": "FOCUS 200",
+      "attempts": 1,
+      "error": "browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "0176P0": {
+      "code": "0176P0",
+      "name": "FOCUS AI반도체위클리고정커버드콜",
+      "attempts": 1,
+      "error": "browserContext.newPage: Target page, context or browser has been closed"
     }
   }
 }
