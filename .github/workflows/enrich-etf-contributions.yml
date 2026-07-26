@@ -16,6 +16,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: etf-return-normalization
+  cancel-in-progress: true
+
 jobs:
   normalize:
     runs-on: ubuntu-latest
