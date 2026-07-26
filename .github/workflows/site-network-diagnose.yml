@@ -1,0 +1,48 @@
+name: ETF Lens 배포 API 진단
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site-network-diagnose.js'
+      - '.github/workflows/site-network-diagnose.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Node.js 설치
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: 의존성 설치
+        run: npm ci
+
+      - name: Chromium 설치
+        run: npx playwright install --with-deps chromium
+
+      - name: 배포 사이트 API 네트워크 진단
+        env:
+          ETF_SITE_URL: https://etf-attribution-mvp.bang-starone.chatgpt.site/
+          ETF_CODE: '449450'
+          ETF_NAME: PLUS K방산
+        run: node site-network-diagnose.js
+
+      - name: 진단자료 업로드
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: etf-site-network-${{ github.run_id }}
+          path: diagnostics/
+          if-no-files-found: warn
+          retention-days: 7
