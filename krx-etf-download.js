@@ -457,13 +457,8 @@ async function downloadComposition(context, { code, name, date }, existingPage =
         !/(원화현금|외화현금|현금성자산|cash)/i.test(item.name)
       ));
       if (!nonCashComponents.length) {
-        fs.mkdirSync('diagnostics', { recursive: true });
-        fs.copyFileSync(
-          file,
-          path.join('diagnostics', `invalid-cash-only-${code}-${date}.csv`),
-        );
-        throw new Error(
-          `CSV가 현금성 구성종목만 포함합니다: ${components.map((item) => item.name).join(', ')}`,
+        console.warn(
+          `[${code}] KRX PDF가 현금성 구성종목만 제공하여 공개 내용을 그대로 보존합니다: ${components.map((item) => item.name).join(', ')}`,
         );
       }
       return components;
