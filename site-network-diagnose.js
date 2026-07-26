@@ -4,9 +4,19 @@ const fs = require('fs');
 const SITE_URL = process.env.ETF_SITE_URL || 'https://etf-attribution-mvp.bang-starone.chatgpt.site/';
 const TARGET_CODE = process.env.ETF_CODE || '449450';
 const TARGET_NAME = process.env.ETF_NAME || 'PLUS K방산';
+const TARGET_DATE = process.env.ETF_DATE || '20260724';
 
 function compact(value, max = 2000) {
   return String(value ?? '').replace(/\s+/g, ' ').trim().slice(0, max);
+}
+
+async function readJsonResponse(response) {
+  const text = await response.text().catch(() => '');
+  try {
+    return { status: response.status(), url: response.url(), json: JSON.parse(text) };
+  } catch {
+    return { status: response.status(), url: response.url(), text: compact(text, 5000) };
+  }
 }
 
 async function main() {
@@ -82,6 +92,30 @@ async function main() {
     await page.waitForTimeout(15_000);
   }
 
+  const base = new URL(SITE_URL);
+  const directPaths = {
+    currentMarketData: '/api/market-data',
+    previousMarketData: `/api/market-data?date=${TARGET_DATE}&previous=1`,
+    batchData: `/api/batch-data?code=${TARGET_CODE}&date=${TARGET_DATE}`,
+    history: `/api/etf-history?code=${TARGET_CODE}&period=1M&date=${TARGET_DATE}`,
+    etfList: '/etfs.json',
+  };
+  const direct = {};
+  for (const [name, pathname] of Object.entries(directPaths)) {
+    const url = new URL(pathname, base).toString();
+    direct[name] = await readJsonResponse(await context.request.get(url, { timeout: 120_000 }));
+  }
+
+  const currentMarket = direct.currentMarketData.json || {};
+  const targetEtf = currentMarket.etfs?.[TARGET_CODE] || null;
+  const batch = direct.batchData.json || {};
+  const componentCodes = (batch.components || []).map((item) => item.code).filter(Boolean);
+  const componentSample = componentCodes.slice(0, 20).map((code) => ({
+    code,
+    marketData: currentMarket.stocks?.[code] || null,
+    batchComponent: (batch.components || []).find((item) => item.code === code) || null,
+  }));
+
   const bodyText = compact(await page.locator('body').innerText(), 60000);
   const localStorage = await page.evaluate(() => Object.fromEntries(Object.entries(localStorage)));
   const sessionStorage = await page.evaluate(() => Object.fromEntries(Object.entries(sessionStorage)));
@@ -94,6 +128,7 @@ async function main() {
     siteUrl: SITE_URL,
     targetCode: TARGET_CODE,
     targetName: TARGET_NAME,
+    targetDate: TARGET_DATE,
     finalUrl: page.url(),
     scripts,
     localStorage,
@@ -102,6 +137,14 @@ async function main() {
     events,
     bodyText,
   }, null, 2));
+  fs.writeFileSync('diagnostics/site-api-summary.json', JSON.stringify({
+    capturedAt: new Date().toISOString(),
+    targetCode: TARGET_CODE,
+    targetDate: TARGET_DATE,
+    targetEtf,
+    componentSample,
+    direct,
+  }, null, 2));
 
   const apiEvents = events.filter((item) => item.kind === 'response' && ['xhr', 'fetch'].includes(item.resourceType));
   console.log(`XHR/fetch 응답 수: ${apiEvents.length}`);
@@ -109,6 +152,8 @@ async function main() {
     console.log(`[${item.status}] ${item.method} ${item.url}`);
     if (item.body) console.log(`응답: ${item.body.slice(0, 1500)}`);
   }
+  console.log(`직접 조회 ETF ${TARGET_CODE}: ${JSON.stringify(targetEtf)}`);
+  console.log(`구성종목 샘플: ${JSON.stringify(componentSample.slice(0, 5))}`);
   console.log(`화면 본문: ${bodyText.slice(0, 7000)}`);
   await browser.close();
 }
