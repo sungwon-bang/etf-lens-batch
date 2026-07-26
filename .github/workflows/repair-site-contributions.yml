@@ -1,0 +1,57 @@
+name: ETF Lens 기여도 데이터 복구
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'repair-site-contributions.js'
+      - '.github/workflows/repair-site-contributions.yml'
+  workflow_dispatch:
+    inputs:
+      code:
+        description: '복구할 ETF 종목코드'
+        required: true
+        default: '449450'
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Node.js 설치
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: 홈페이지 기여도 데이터 복구
+        id: repair
+        continue-on-error: true
+        env:
+          ETF_SITE_URL: https://etf-attribution-mvp.bang-starone.chatgpt.site
+          ETF_SITE_TOKEN: ${{ secrets.ETF_SITE_TOKEN }}
+          ETF_CODE: ${{ github.event_name == 'workflow_dispatch' && inputs.code || '449450' }}
+        run: node repair-site-contributions.js
+
+      - name: 복구 결과 커밋
+        if: always()
+        run: |
+          if [ ! -f data/site-diagnostics/repair-result.json ]; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/site-diagnostics/repair-result.json
+          git diff --cached --quiet && exit 0
+          git commit -m "data: record ETF Lens contribution repair result"
+          git pull --rebase origin main
+          git push
+
+      - name: 복구 검증
+        if: steps.repair.outcome != 'success'
+        run: exit 1
