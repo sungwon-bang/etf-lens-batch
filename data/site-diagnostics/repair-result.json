@@ -1,8 +1,41 @@
 {
-  "capturedAt": "2026-07-26T13:39:18.081Z",
+  "capturedAt": "2026-07-26T13:43:16.684Z",
   "targetCode": "449450",
   "siteUrl": "https://etf-attribution-mvp.bang-starone.chatgpt.site",
   "tokenConfigured": false,
-  "status": "failed",
-  "error": "GitHub Secret ETF_SITE_TOKEN이 설정되지 않았습니다."
+  "status": "completed",
+  "action": "already_reflected",
+  "asOf": "20260724",
+  "marketSource": "krx-api-live",
+  "stockApiComplete": true,
+  "verifiedComponentCount": 11,
+  "verifiedNonZeroReturns": 10,
+  "totalContribution": -0.945053,
+  "sample": [
+    {
+      "code": "012450",
+      "stockReturn": 2.19,
+      "contribution": 0.457929
+    },
+    {
+      "code": "042660",
+      "stockReturn": -2.22,
+      "contribution": -0.404706
+    },
+    {
+      "code": "064350",
+      "stockReturn": -4.86,
+      "contribution": -0.849528
+    },
+    {
+      "code": "047810",
+      "stockReturn": -3.66,
+      "contribution": -0.622566
+    },
+    {
+      "code": "079550",
+      "stockReturn": 3.53,
+      "contribution": 0.552798
+    }
+  ]
 }
