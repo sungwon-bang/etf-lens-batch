@@ -1,0 +1,52 @@
+name: ETF Lens 실시간 수익률 우선 검증
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'repair-site-contributions.js'
+      - '.github/workflows/repair-site-contributions.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Node.js 설치
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: PDF 저장 수익률 제거 및 검증
+        id: repair
+        continue-on-error: true
+        env:
+          ETF_SITE_URL: https://etf-attribution-mvp.bang-starone.chatgpt.site
+          ETF_SITE_TOKEN: ${{ secrets.ETF_SITE_TOKEN }}
+          ETF_CODE: '449450'
+        run: node repair-site-contributions.js
+
+      - name: 검증 결과 커밋
+        if: always()
+        run: |
+          if [ ! -f data/site-diagnostics/repair-result.json ]; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/site-diagnostics/repair-result.json
+          git diff --cached --quiet && exit 0
+          git commit -m "data: verify token-based live return fallback"
+          git pull --rebase origin main
+          git push
+
+      - name: 검증 실패 처리
+        if: steps.repair.outcome != 'success'
+        run: exit 1
