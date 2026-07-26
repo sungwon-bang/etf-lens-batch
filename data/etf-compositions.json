@@ -2,10 +2,10 @@
   "meta": {
     "date": "20260724",
     "total": 1150,
-    "completed": 1149,
-    "failed": 1,
+    "completed": 1150,
+    "failed": 0,
     "status": "running",
-    "updatedAt": "2026-07-26T08:42:45.913Z"
+    "updatedAt": "2026-07-26T08:45:50.086Z"
   },
   "items": {
     "100910": {
@@ -98885,6 +98885,28 @@
         }
       ],
       "collectedAt": "2026-07-25T15:56:23.630Z"
+    },
+    "265690": {
+      "etf": {
+        "code": "265690",
+        "name": "ACE 러시아MSCI(합성)",
+        "date": "20260724"
+      },
+      "summary": {
+        "totalComponents": 1,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 2415039,
+          "weight": 100
+        }
+      ],
+      "collectedAt": "2026-07-26T08:45:50.085Z"
     },
     "266160": {
       "etf": {
@@ -614975,12 +614997,5 @@
       "collectedAt": "2026-07-26T08:40:57.785Z"
     }
   },
-  "failures": {
-    "265690": {
-      "code": "265690",
-      "name": "ACE 러시아MSCI(합성)",
-      "attempts": 1,
-      "error": "[265690] CSV 다운로드 실패: CSV가 현금성 구성종목만 포함합니다: 원화현금"
-    }
-  }
+  "failures": {}
 }
