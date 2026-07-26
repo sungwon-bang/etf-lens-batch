@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   diagnose:
@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: 저장소 체크아웃
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Node.js 설치
         uses: actions/setup-node@v4
@@ -37,6 +39,21 @@ jobs:
           ETF_CODE: '449450'
           ETF_NAME: PLUS K방산
         run: node site-network-diagnose.js
+
+      - name: 최신 진단 결과 커밋
+        if: always()
+        run: |
+          if [ ! -f diagnostics/site-network.json ]; then exit 0; fi
+          mkdir -p data/site-diagnostics
+          cp diagnostics/site-network.json data/site-diagnostics/latest-network.json
+          cp diagnostics/site-body.txt data/site-diagnostics/latest-body.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/site-diagnostics/latest-network.json data/site-diagnostics/latest-body.txt
+          git diff --cached --quiet && exit 0
+          git commit -m "data: update ETF Lens deployed API diagnosis"
+          git pull --rebase origin main
+          git push
 
       - name: 진단자료 업로드
         if: always()
