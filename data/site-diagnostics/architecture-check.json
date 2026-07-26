@@ -1,5 +1,5 @@
 {
-  "capturedAt": "2026-07-26T16:51:15.085Z",
+  "capturedAt": "2026-07-26T16:53:31.135Z",
   "targetCode": "449450",
   "desiredArchitecture": {
     "pdfJson": "composition and weight only; stockReturn/contribution missing or null",
@@ -32,7 +32,7 @@
       "nonZero": 0,
       "other": 0
     },
-    "conforms": false,
+    "conforms": null,
     "sample": []
   },
   "marketData": {
@@ -51,7 +51,33 @@
     "targetStocksAvailable": 0
   },
   "batchData": {
-    "requestedDate": "20260723",
+    "requestedDate": null,
+    "attempts": [
+      {
+        "date": "20260727",
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260727&architectureCheck=1785084818595"
+      },
+      {
+        "date": "20260723",
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260723&architectureCheck=1785084819223"
+      },
+      {
+        "date": "20260724",
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260724&architectureCheck=1785084819343"
+      },
+      {
+        "date": null,
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&architectureCheck=1785084819451"
+      }
+    ],
     "status": 404,
     "etf": null,
     "componentCount": 0,
@@ -69,19 +95,73 @@
       "nonZero": 0,
       "other": 0
     },
-    "preservesNullOrMissing": false,
+    "preservesNullOrMissing": null,
     "sample": []
   },
   "deployedBundle": {
-    "scriptCount": 0,
-    "usesBatchFirst": false,
+    "rootStatus": 200,
+    "rootContentType": "text/html; charset=utf-8",
+    "rootSnippet": "<!DOCTYPE html><html lang=\"ko\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/assets/index-B-ED0Tmj.css\" data-rsc-css-href=\"/assets/index-B-ED0Tmj.css\" data-precedence=\"vite-rsc/importer-resources\"/><link rel=\"modulepreload\" href=\"/assets/layout-segment-context-CeUo3fZp.js\" crossorigin=\"\"/><link rel=\"modulepreload\" href=\"/assets/rolldown-runtime-S-ySWqyJ.js\" crossorigin=\"\"/><link rel=\"modulepreload\" href=\"/assets/index-C74t56Tn.js\" crossorigin=\"\"/><link rel=\"modulepreload\" href=\"/assets/framework-CXnKph_e.js\" crossorigin=\"\"/><link rel=\"modulepreload\" href=\"/assets/page-C38lZqhW.js\" crossorigin=\"\"/><title>ETF Lens | ETF 수익률 기여도 분석</title><meta name=\"description\" content=\"KRX 전종목 시세와 ETF PDF를 기반으로 구성종목별 수익률 기여도와 잔차를 분석합니다.\"/><link rel=\"shortcut icon\" href=\"/favicon.svg\"/><link rel=\"icon\" href=\"/favicon.svg\"/><meta name=\"codex-preview\" content=\"development\"/><script>self.__VINEXT_RSC_PARAMS__={}</script><script>self.__VINEXT_RSC_NAV__={\"pathname\":\"/\",\"searchParams\":[]}</script><link rel=\"modulepreload\" href=\"/assets/index-C74t56Tn.js\" /> <link rel=\"preload\" href=\"/assets/_vinext_fonts/geist-8ac0455e797f/g",
+    "discoveredAssetCount": 8,
+    "successfulScriptCount": 7,
+    "scripts": [
+      {
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/assets/layout-segment-context-CeUo3fZp.js",
+        "status": 200,
+        "contentType": "text/javascript",
+        "error": null
+      },
+      {
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/assets/rolldown-runtime-S-ySWqyJ.js",
+        "status": 200,
+        "contentType": "text/javascript",
+        "error": null
+      },
+      {
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/assets/index-C74t56Tn.js",
+        "status": 200,
+        "contentType": "text/javascript",
+        "error": null
+      },
+      {
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/assets/framework-CXnKph_e.js",
+        "status": 200,
+        "contentType": "text/javascript",
+        "error": null
+      },
+      {
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/assets/page-C38lZqhW.js",
+        "status": 200,
+        "contentType": "text/javascript",
+        "error": null
+      },
+      {
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/cdn-cgi/challenge-platform/scripts/jsd/main.js",
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "error": null
+      },
+      {
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/cdn-cgi/challenge-platform/h/g/scripts/jsd/b0da9f4911ba/main.js?",
+        "status": 200,
+        "contentType": "application/javascript; charset=UTF-8",
+        "error": null
+      },
+      {
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/etfs.js",
+        "status": 404,
+        "contentType": "text/plain;charset=UTF-8",
+        "error": null
+      }
+    ],
+    "usesBatchFirst": true,
     "usesLiveFirst": false,
-    "batchFirstSnippet": null,
+    "batchFirstSnippet": "aleCompare(n.name,`ko`)).slice(0,10):e.slice(0,8)},[e,T]),ne=I===`ready`&&!!P,H=!a.test(C.name),U=n[C.code],W=(0,r.useMemo)(()=>[...P?.components??[]].filter(e=>e.weight>=1).sort((e,t)=>t.weight-e.weight),[P]),G=(0,r.useMemo)(()=>W.map(e=>{let t=u[e.code],n=e.stockReturn??t?.returnRate??0;return{...e,name:t?.name??e.name,returnRate:n,contribution:e.weight*n/100}}),[W,u]),K=(0,r.useMemo)(()=>[...G].sort((e,t)=>Math.abs(t[k])-Math.abs(e[k])),[G,k]),q=G.reduce((e,t)=>e+t.contribution,0),J=G.reduce((e,t)=>e+t.weight,0),Y=Math.max(1e-4,...G.map(",
     "liveFirstSnippet": null
   },
   "verdict": {
-    "localPdfConforms": false,
-    "batchApiConforms": false,
+    "localPdfConforms": null,
+    "batchApiConforms": null,
     "frontendConforms": false,
     "fullyConforms": false,
     "enrichmentPerformed": false
