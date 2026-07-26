@@ -12,6 +12,10 @@ const { downloadComposition } = require('./krx-etf-download');
 
 const OUTPUT_PATH = path.join(__dirname, 'data', 'etf-compositions.json');
 const CHECKPOINT_SIZE = Math.max(1, Number(process.env.CHECKPOINT_SIZE || 25));
+const COLLECT_CONCURRENCY = Math.max(
+  1,
+  Math.min(2, Number(process.env.COLLECT_CONCURRENCY || 1)),
+);
 const SESSION_MAX_AGE_MS = 20 * 60 * 1000;
 const LOGIN_TIMEOUT_MS = 8 * 60 * 1000;
 const ETF_TIMEOUT_MS = 4 * 60 * 1000;
@@ -129,6 +133,11 @@ function publishCheckpoint(message) {
   }
 }
 
+function isSessionFailure(error) {
+  return /(browser|context|page).*(closed|crashed)|Target page|login|로그인|session|세션/i
+    .test(String(error?.message || error || ''));
+}
+
 async function main() {
   const { date: universeDate, etfs } = await fetchEtfUniverse();
   const queryDates = recentBusinessDates(universeDate);
@@ -152,12 +161,12 @@ async function main() {
     args: ['--no-sandbox', '--disable-blink-features=AutomationControlled'],
   });
   let context;
-  let collectionPage;
+  let collectionPages = [];
   let sessionStartedAt = 0;
 
   const renewSession = async () => {
     await context?.close().catch(() => {});
-    collectionPage = undefined;
+    collectionPages = [];
     fs.rmSync(SESSION_PATH, { force: true });
     context = await browser.newContext({
       ...KRX_CONTEXT_OPTIONS,
@@ -168,13 +177,15 @@ async function main() {
       LOGIN_TIMEOUT_MS,
       'KRX 로그인 및 PDF 화면 확인',
     );
-    collectionPage = authenticated.page;
+    collectionPages.push(authenticated.page);
+    for (let index = 1; index < COLLECT_CONCURRENCY; index += 1) {
+      collectionPages.push(await context.newPage());
+    }
     sessionStartedAt = Date.now();
-    console.log('수집에 재사용할 동일 페이지에서 KRX 로그인을 완료했습니다.');
+    console.log(`KRX 로그인을 완료하고 수집 페이지 ${collectionPages.length}개를 준비했습니다.`);
   };
 
-  const collect = async (etf) => {
-    if (!context || Date.now() - sessionStartedAt >= SESSION_MAX_AGE_MS) await renewSession();
+  const collect = async (etf, page) => {
     let components;
     let collectedDate;
     let lastError;
@@ -184,7 +195,7 @@ async function main() {
           downloadComposition(
             context,
             { code: etf.code, name: etf.name, date: queryDate },
-            collectionPage,
+            page,
           ),
           ETF_TIMEOUT_MS,
           `ETF ${etf.code} PDF 수집 (${queryDate})`,
@@ -194,6 +205,7 @@ async function main() {
       } catch (error) {
         lastError = error;
         console.warn(`[${etf.code}] 조회일자 ${queryDate} 실패: ${error.message}`);
+        if (isSessionFailure(error)) break;
       }
     }
     if (!components) throw lastError || new Error('사용 가능한 PDF 조회일자를 찾지 못했습니다.');
@@ -209,43 +221,75 @@ async function main() {
     delete state.failures[etf.code];
   };
 
+  const runBatch = async (batch, attempt = 1) => {
+    const outcomes = await Promise.all(batch.map(async (etf, index) => {
+      try {
+        await collect(etf, collectionPages[index]);
+        return { etf, ok: true };
+      } catch (error) {
+        return { etf, ok: false, error };
+      }
+    }));
+
+    let renewRequired = false;
+    for (const outcome of outcomes) {
+      if (outcome.ok) {
+        console.log(`${attempt === 1 ? '완료' : '재시도 완료'} ${outcome.etf.code} ${outcome.etf.name}`);
+        continue;
+      }
+      state.failures[outcome.etf.code] = {
+        code: outcome.etf.code,
+        name: outcome.etf.name,
+        attempts: attempt,
+        error: outcome.error.message,
+      };
+      console.error(`${attempt}차 실패 ${outcome.etf.code}: ${outcome.error.message}`);
+      renewRequired ||= isSessionFailure(outcome.error);
+    }
+    writeState(state);
+    return { outcomes, renewRequired };
+  };
+
   try {
     await renewSession();
     delete state.failures._batch;
     const pending = targetEtfs.filter((etf) => !state.items[etf.code]);
-    console.log(`ETF 목록 기준일 ${universeDate}, PDF 조회 후보 ${queryDates.join(', ')}: 전체 ${targetEtfs.length}개, 남은 ${pending.length}개`);
+    console.log(
+      `ETF 목록 기준일 ${universeDate}, PDF 조회 후보 ${queryDates.join(', ')}: `
+      + `전체 ${targetEtfs.length}개, 남은 ${pending.length}개, 동시수집 ${COLLECT_CONCURRENCY}`,
+    );
     let sinceCheckpoint = 0;
 
-    for (const etf of pending) {
-      try {
-        await collect(etf);
-        console.log(`완료 ${etf.code} ${etf.name}`);
-      } catch (error) {
-        state.failures[etf.code] = { code: etf.code, name: etf.name, attempts: 1, error: error.message };
-        console.error(`1차 실패 ${etf.code}: ${error.message}`);
-        await renewSession().catch((loginError) => console.error(`재로그인 실패: ${loginError.message}`));
-      }
-      writeState(state);
-      sinceCheckpoint += 1;
+    for (let offset = 0; offset < pending.length; offset += COLLECT_CONCURRENCY) {
+      if (!context || Date.now() - sessionStartedAt >= SESSION_MAX_AGE_MS) await renewSession();
+      const batch = pending.slice(offset, offset + COLLECT_CONCURRENCY);
+      const { renewRequired } = await runBatch(batch, 1);
+      sinceCheckpoint += batch.length;
       if (sinceCheckpoint >= CHECKPOINT_SIZE) {
         publishCheckpoint(`data: checkpoint ETF PDF ${state.meta.completed}/${state.meta.total}`);
         sinceCheckpoint = 0;
       }
+      if (renewRequired) {
+        await renewSession().catch((loginError) => {
+          console.error(`재로그인 실패: ${loginError.message}`);
+          throw loginError;
+        });
+      }
+    }
+
+    if (sinceCheckpoint > 0) {
+      publishCheckpoint(`data: checkpoint ETF PDF ${state.meta.completed}/${state.meta.total}`);
     }
 
     for (let round = 2; round <= 3 && Object.keys(state.failures).length; round += 1) {
-      const failures = Object.values(state.failures);
+      const failures = Object.values(state.failures).filter((etf) => etf?.code);
+      if (!failures.length) break;
       console.log(`실패 종목 ${round}차 시도: ${failures.length}개`);
       await renewSession();
-      for (const etf of failures) {
-        try {
-          await collect(etf);
-          console.log(`재시도 완료 ${etf.code} ${etf.name}`);
-        } catch (error) {
-          state.failures[etf.code] = { code: etf.code, name: etf.name, attempts: round, error: error.message };
-          console.error(`${round}차 실패 ${etf.code}: ${error.message}`);
-        }
-        writeState(state);
+      for (let offset = 0; offset < failures.length; offset += COLLECT_CONCURRENCY) {
+        const batch = failures.slice(offset, offset + COLLECT_CONCURRENCY);
+        const { renewRequired } = await runBatch(batch, round);
+        if (renewRequired) await renewSession();
       }
       publishCheckpoint(`data: retry ETF PDF round ${round}`);
     }
