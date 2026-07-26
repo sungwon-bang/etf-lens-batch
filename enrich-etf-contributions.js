@@ -7,13 +7,18 @@ const TARGET_CODE = process.env.ETF_CODE || '449450';
 const OUTPUT_PATH = path.join(__dirname, 'data', 'etf-compositions.json');
 const RESULT_PATH = path.join(__dirname, 'data', 'site-diagnostics', 'enrichment-result.json');
 
-function round(value, digits = 6) {
-  return Number(Number(value).toFixed(digits));
-}
-
 function writeResult(result) {
   fs.mkdirSync(path.dirname(RESULT_PATH), { recursive: true });
   fs.writeFileSync(RESULT_PATH, `${JSON.stringify(result, null, 2)}\n`);
+}
+
+async function fetchJson(url) {
+  const response = await fetch(url, { headers: { Accept: 'application/json' } });
+  const text = await response.text();
+  let body;
+  try { body = JSON.parse(text); } catch { body = { raw: text.slice(0, 1000) }; }
+  if (!response.ok) throw new Error(`${response.status} ${url}: ${JSON.stringify(body)}`);
+  return body;
 }
 
 async function main() {
@@ -21,6 +26,7 @@ async function main() {
     capturedAt: new Date().toISOString(),
     targetCode: TARGET_CODE,
     status: 'running',
+    strategy: 'stored-return-null-live-market-fallback',
   };
 
   try {
@@ -28,58 +34,42 @@ async function main() {
     const item = state.items?.[TARGET_CODE];
     if (!item) throw new Error(`ETF 배치 항목이 없습니다: ${TARGET_CODE}`);
 
-    const response = await fetch(`${SITE_URL}/api/market-data`);
-    if (!response.ok) throw new Error(`시장 데이터 API 실패 (${response.status})`);
-    const market = await response.json();
-    const marketDate = String(market.meta?.asOf || '').replaceAll('-', '');
     const itemDate = String(item.etf?.date || state.meta?.date || '');
+    const market = await fetchJson(`${SITE_URL}/api/market-data`);
+    const marketDate = String(market.meta?.asOf || '').replaceAll('-', '');
     if (marketDate !== itemDate) {
       throw new Error(`기준일 불일치: 시장=${marketDate}, PDF=${itemDate}`);
     }
 
-    let pricedComponents = 0;
-    let totalContribution = 0;
     item.components = item.components.map((component) => {
-      const live = market.stocks?.[component.code];
-      const stockReturn = Number.isFinite(live?.returnRate) ? live.returnRate : null;
-      const contribution = stockReturn === null
-        ? null
-        : round(Number(component.weight || 0) * stockReturn / 100);
-      if (stockReturn !== null) {
-        pricedComponents += 1;
-        totalContribution += contribution;
-      }
-      return {
-        ...component,
-        stockReturn,
-        contribution,
-        marketDataDate: marketDate,
-        marketDataSource: market.meta?.source || 'krx-api-live',
-      };
+      const normalized = { ...component };
+      normalized.stockReturn = null;
+      normalized.contribution = null;
+      delete normalized.marketDataDate;
+      delete normalized.marketDataSource;
+      return normalized;
     });
 
-    totalContribution = round(totalContribution);
     item.summary = {
       ...item.summary,
-      totalContribution,
-      pricedComponents,
-      marketDataDate: marketDate,
-      marketDataSource: market.meta?.source || 'krx-api-live',
+      totalContribution: null,
+      pricedComponents: 0,
+      contributionSource: 'live-market-data-only',
     };
-    item.enrichedAt = new Date().toISOString();
+    delete item.enrichedAt;
     state.meta.updatedAt = new Date().toISOString();
     fs.writeFileSync(OUTPUT_PATH, `${JSON.stringify(state, null, 2)}\n`);
 
     Object.assign(result, {
-      status: 'completed',
-      date: marketDate,
+      status: 'checkpoint_updated',
+      date: itemDate,
       componentCount: item.components.length,
-      pricedComponents,
-      totalContribution,
-      sample: item.components.slice(0, 5).map((component) => ({
+      storedNonNullReturns: item.components.filter((component) => component.stockReturn !== null).length,
+      sampleBeforeApi: item.components.slice(0, 5).map((component) => ({
         code: component.code,
         stockReturn: component.stockReturn,
         contribution: component.contribution,
+        liveReturnRate: market.stocks?.[component.code]?.returnRate ?? null,
       })),
     });
     writeResult(result);
