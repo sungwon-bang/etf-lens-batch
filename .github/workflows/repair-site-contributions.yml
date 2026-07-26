@@ -6,6 +6,8 @@ on:
     paths:
       - 'repair-site-contributions.js'
       - '.github/workflows/repair-site-contributions.yml'
+  schedule:
+    - cron: '20 * * * *'
   workflow_dispatch:
     inputs:
       code:
@@ -40,14 +42,22 @@ jobs:
           ETF_CODE: ${{ github.event_name == 'workflow_dispatch' && inputs.code || '449450' }}
         run: node repair-site-contributions.js
 
-      - name: 복구 결과 커밋
+      - name: 의미 있는 복구 결과만 커밋
         if: always()
         run: |
-          if [ ! -f data/site-diagnostics/repair-result.json ]; then exit 0; fi
+          result=data/site-diagnostics/repair-result.json
+          if [ ! -f "$result" ]; then exit 0; fi
+          if git show HEAD:"$result" > /tmp/repair-old.json 2>/dev/null; then
+            jq 'del(.capturedAt)' /tmp/repair-old.json > /tmp/repair-old-normalized.json
+            jq 'del(.capturedAt)' "$result" > /tmp/repair-new-normalized.json
+            if cmp -s /tmp/repair-old-normalized.json /tmp/repair-new-normalized.json; then
+              git checkout -- "$result"
+              exit 0
+            fi
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/site-diagnostics/repair-result.json
-          git diff --cached --quiet && exit 0
+          git add "$result"
           git commit -m "data: record ETF Lens contribution repair result"
           git pull --rebase origin main
           git push
