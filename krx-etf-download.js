@@ -4,6 +4,11 @@ const path = require('path');
 const COMPOSITION_MENU_ID = 'MDC0201030108';
 const COMPOSITION_URL =
   `https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=${COMPOSITION_MENU_ID}`;
+const POLL_INTERVAL_MS = 100;
+const FINDER_AUTOSELECT_TIMEOUT_MS = 800;
+const FINDER_SETTLE_TIMEOUT_MS = 2_500;
+const PDF_RESPONSE_TIMEOUT_MS = 15_000;
+const trackedFinderPages = new WeakMap();
 
 function csvRows(text) {
   return text.split(/\r?\n/).filter(Boolean).map((line) => {
@@ -78,15 +83,46 @@ function parseCsv(file) {
   return components.map(({ weightPresent, valuationBase, ...item }) => item);
 }
 
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function waitForCondition(check, timeoutMs, intervalMs = POLL_INTERVAL_MS) {
+  const deadline = Date.now() + timeoutMs;
+  while (Date.now() < deadline) {
+    const value = await Promise.resolve().then(check).catch(() => false);
+    if (value) return value;
+    await sleep(intervalMs);
+  }
+  return false;
+}
+
+function trackFinderPage(ownerPage, finderPage) {
+  if (!finderPage || finderPage.isClosed()) return;
+  let pages = trackedFinderPages.get(ownerPage);
+  if (!pages) {
+    pages = new Set();
+    trackedFinderPages.set(ownerPage, pages);
+  }
+  pages.add(finderPage);
+  finderPage.once('close', () => pages.delete(finderPage));
+}
+
 function finderSurfaces(page) {
-  return page.context().pages()
-    .filter((candidate) => !candidate.isClosed())
-    .flatMap((candidate) => candidate.frames().map((frame) => ({ page: candidate, frame })));
+  const candidates = [page, ...Array.from(trackedFinderPages.get(page) || [])]
+    .filter((candidate, index, items) => (
+      candidate
+      && !candidate.isClosed()
+      && items.indexOf(candidate) === index
+    ));
+  return candidates.flatMap((candidate) => (
+    candidate.frames().map((frame) => ({ page: candidate, frame }))
+  ));
 }
 
 async function selectedFinderValues(page) {
   const values = [];
-  for (const { frame } of finderSurfaces(page)) {
+  for (const frame of page.frames()) {
     const frameValues = await frame.locator(
       'input[id*="isuCd"], input[name*="isuCd"], input[id*="isuNm"], input[name*="isuNm"]',
     ).evaluateAll((inputs) => inputs
@@ -101,7 +137,7 @@ async function selectedFinderValues(page) {
   return values;
 }
 
-async function finderAlreadySelected(page, { code, name }) {
+async function finderAlreadySelected(page, { code, name }, { log = true } = {}) {
   const values = await selectedFinderValues(page).catch(() => []);
   const matchesTarget = (item) => (
     item.value.includes(code)
@@ -116,18 +152,29 @@ async function finderAlreadySelected(page, { code, name }) {
     && matchesTarget(item)
   ));
   if (!display || !backing) {
-    if (display) {
+    if (log && display) {
       console.log(`ETF 표시값만 입력됨, 결과 행 선택 필요: ${display.id}=${display.value}`);
     }
     return false;
   }
-  console.log(`ETF 선택 표시값 확인: ${display.id}=${display.value}`);
-  console.log(`ETF 내부 종목코드 확인: ${backing.id}=${backing.value}`);
+  if (log) {
+    console.log(`ETF 선택 표시값 확인: ${display.id}=${display.value}`);
+    console.log(`ETF 내부 종목코드 확인: ${backing.id}=${backing.value}`);
+  }
   return true;
 }
 
-async function normalizeFinderSelection(page, { code, name }) {
-  for (const { frame } of finderSurfaces(page)) {
+async function waitForFinderSelected(page, target, timeoutMs) {
+  const selected = await waitForCondition(
+    () => finderAlreadySelected(page, target, { log: false }),
+    timeoutMs,
+  );
+  if (selected) await finderAlreadySelected(page, target);
+  return Boolean(selected);
+}
+
+async function normalizeFinderSelection(page, { code, name }, { log = true } = {}) {
+  for (const frame of page.frames()) {
     const normalized = await frame.evaluate(({ targetCode, targetName }) => {
       const primary = document.getElementById('isuCd_finder_secuprodisu1_0');
       if (!primary || !String(primary.value || '').includes(targetCode)) return null;
@@ -148,17 +195,28 @@ async function normalizeFinderSelection(page, { code, name }) {
       };
     }, { targetCode: code, targetName: name }).catch(() => null);
     if (normalized) {
-      console.log(`ETF 조회 폼 동기화: ${JSON.stringify(normalized)}`);
+      if (log) console.log(`ETF 조회 폼 동기화: ${JSON.stringify(normalized)}`);
       return true;
     }
   }
   return false;
 }
 
+async function waitForNormalizedSelection(page, target, timeoutMs = FINDER_SETTLE_TIMEOUT_MS) {
+  const ready = await waitForCondition(async () => {
+    if (!(await normalizeFinderSelection(page, target, { log: false }))) return false;
+    return finderAlreadySelected(page, target, { log: false });
+  }, timeoutMs);
+  if (ready) {
+    await normalizeFinderSelection(page, target);
+    await finderAlreadySelected(page, target);
+  }
+  return Boolean(ready);
+}
+
 async function triggerFinderSearch(page, search, { code, name }) {
   await search.press('Enter', { timeout: 10_000 });
-  await page.waitForTimeout(1_500);
-  if (await finderAlreadySelected(page, { code, name })) return true;
+  if (await waitForFinderSelected(page, { code, name }, FINDER_AUTOSELECT_TIMEOUT_MS)) return true;
 
   const buttonSelectors = [
     '[id^="jsSearchButton__finder_secuprodisu1_"]:visible',
@@ -183,8 +241,7 @@ async function triggerFinderSearch(page, search, { code, name }) {
         if (!/(검색|조회|search)/i.test(label)) continue;
         console.log(`ETF finder 검색 버튼 클릭: ${label.slice(0, 160)}`);
         await candidate.click({ force: true, noWaitAfter: true, timeout: 10_000 });
-        await page.waitForTimeout(1_500);
-        if (await finderAlreadySelected(page, { code, name })) return true;
+        if (await waitForFinderSelected(page, { code, name }, FINDER_AUTOSELECT_TIMEOUT_MS)) return true;
         return false;
       }
     }
@@ -221,7 +278,6 @@ async function selectFinderResult(page, { code, name }) {
           } else {
             await row.click({ force: true, noWaitAfter: true });
           }
-          await page.waitForTimeout(1_000);
           return;
         }
       }
@@ -246,25 +302,22 @@ async function selectFinderResult(page, { code, name }) {
           const target = await container.count() ? container.first() : best;
           console.log(`ETF 검색 결과 텍스트 선택: ${(await target.innerText().catch(() => value)).slice(0, 120)} / ${surfacePage.url()}`);
           await target.click({ force: true, noWaitAfter: true });
-          await page.waitForTimeout(1_000);
           return;
         }
       }
     }
-    await page.waitForTimeout(500);
+    await sleep(100);
   }
 
   const pageStates = [];
-  for (const candidate of page.context().pages().filter((item) => !item.isClosed())) {
-    for (const frame of candidate.frames()) {
-      pageStates.push({
-        pageUrl: candidate.url(),
-        frameUrl: frame.url(),
-        text: (await frame.locator('body').innerText().catch(() => ''))
-          .replace(/\s+/g, ' ')
-          .slice(0, 800),
-      });
-    }
+  for (const { page: surfacePage, frame } of finderSurfaces(page)) {
+    pageStates.push({
+      pageUrl: surfacePage.url(),
+      frameUrl: frame.url(),
+      text: (await frame.locator('body').innerText().catch(() => ''))
+        .replace(/\s+/g, ' ')
+        .slice(0, 800),
+    });
   }
   throw new Error(
     `ETF 검색 결과가 없습니다. 검색어=${code}, 화면=${JSON.stringify(pageStates)}`,
@@ -280,9 +333,22 @@ async function findFinderSearchInput(page) {
       ).first();
       if (await search.isVisible().catch(() => false)) return search;
     }
-    await page.waitForTimeout(250);
+    await sleep(100);
   }
-  throw new Error('종목검색 입력창을 모든 KRX 탭과 프레임에서 찾지 못했습니다.');
+  throw new Error('종목검색 입력창을 현재 KRX PDF 화면과 연결된 검색창에서 찾지 못했습니다.');
+}
+
+function isKrxDataResponse(response) {
+  return response.request().method() === 'POST'
+    && /\/comm\/bldAttendant\/getJsonData\.cmd(?:\?|$)/.test(response.url());
+}
+
+async function clickAndWaitForKrxData(page, click) {
+  const responsePromise = page.waitForResponse(isKrxDataResponse, {
+    timeout: PDF_RESPONSE_TIMEOUT_MS,
+  }).catch(() => null);
+  await click();
+  return responsePromise;
 }
 
 async function downloadComposition(context, { code, name, date }, existingPage = null) {
@@ -311,28 +377,31 @@ async function downloadComposition(context, { code, name, date }, existingPage =
     mark('종목검색 버튼 대기');
     await finderButton.waitFor({ state: 'visible', timeout: 30_000 });
     mark('종목검색 팝업 열기');
-    await finderButton.click({ timeout: 15_000, noWaitAfter: true });
+    const popupHandler = (popup) => trackFinderPage(page, popup);
+    page.on('popup', popupHandler);
+    try {
+      await finderButton.click({ timeout: 15_000, noWaitAfter: true });
 
-    mark('검색 입력창 대기');
-    const search = await findFinderSearchInput(page);
-    await search.fill('', { timeout: 10_000 });
-    await search.type(code, { delay: 80, timeout: 10_000 });
-    mark('검색 실행');
-    const automaticallySelected = await triggerFinderSearch(
-      page,
-      search,
-      { code, name },
-    );
-    if (!automaticallySelected) {
-      mark('검색 결과 선택');
-      await selectFinderResult(page, { code, name });
+      mark('검색 입력창 대기');
+      const search = await findFinderSearchInput(page);
+      await search.fill('', { timeout: 10_000 });
+      await search.type(code, { delay: 20, timeout: 10_000 });
+      mark('검색 실행');
+      const automaticallySelected = await triggerFinderSearch(
+        page,
+        search,
+        { code, name },
+      );
+      if (!automaticallySelected) {
+        mark('검색 결과 선택');
+        await selectFinderResult(page, { code, name });
+      }
+    } finally {
+      page.off('popup', popupHandler);
     }
 
-    if (!(await normalizeFinderSelection(page, { code, name }))) {
+    if (!(await waitForNormalizedSelection(page, { code, name }))) {
       throw new Error('검색 결과 선택 후 내부 종목코드 동기화에 실패했습니다.');
-    }
-    if (!(await finderAlreadySelected(page, { code, name }))) {
-      throw new Error('검색 결과 클릭 후 내부 종목코드가 설정되지 않았습니다.');
     }
 
     const dateInput = page.locator('input[id*="trdDd"], input[name*="trdDd"], input[id*="basDd"], input[name*="basDd"]').first();
@@ -347,9 +416,18 @@ async function downloadComposition(context, { code, name, date }, existingPage =
       console.log(`[${code}] 조회일자 확정: ${await dateInput.inputValue()}`);
     }
     mark('PDF 조회');
-    await page.locator('#jsSearchButton').click({ timeout: 15_000, noWaitAfter: true });
-    await page.waitForTimeout(3_000);
     const resultRows = page.locator('.CI-GRID-BODY-TABLE-TBODY tr, .CI-GRID-BODY-TABLE tbody tr');
+    const response = await clickAndWaitForKrxData(
+      page,
+      () => page.locator('#jsSearchButton').click({ timeout: 15_000, noWaitAfter: true }),
+    );
+    if (response) {
+      if (!response.ok()) throw new Error(`KRX PDF 조회 응답 오류 (${response.status()})`);
+      await resultRows.first().waitFor({ state: 'attached', timeout: 5_000 }).catch(() => {});
+    } else {
+      console.warn(`[${code}] KRX 조회 응답 감지 실패, 안전 대기 3초를 적용합니다.`);
+      await page.waitForTimeout(3_000);
+    }
     if (!(await resultRows.count())) {
       throw new Error(`KRX PDF 조회 결과가 없습니다. 종목=${code}, 조회일자=${date}`);
     }
@@ -363,7 +441,7 @@ async function downloadComposition(context, { code, name, date }, existingPage =
     if (!(await csvLink.waitFor({ state: 'visible', timeout: 15_000 }).then(() => true).catch(() => false))) {
       const alertText = await page.locator('[role="dialog"]:visible').innerText().catch(() => '');
       throw new Error(
-        `CSV 다운로드 링크가 없습니다.${alertText ? ` KRX 메시지=${alertText.replace(/\\s+/g, ' ').trim()}` : ''}`,
+        `CSV 다운로드 링크가 없습니다.${alertText ? ` KRX 메시지=${alertText.replace(/\s+/g, ' ').trim()}` : ''}`,
       );
     }
     const [download] = await Promise.all([
