@@ -1,6 +1,7 @@
 name: ETF PDF 야간 전체 수집
 
 # KRX finder 내부코드 및 PDF 유효성 검증; 449450 검증 후 전체 배치 재개
+# 개인 PC 종료 후 GitHub-hosted runner 전체 수집 재시작
 
 on:
   push:
