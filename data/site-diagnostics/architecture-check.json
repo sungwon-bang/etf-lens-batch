@@ -1,5 +1,5 @@
 {
-  "capturedAt": "2026-07-26T16:53:31.135Z",
+  "capturedAt": "2026-07-27T16:49:10.283Z",
   "targetCode": "449450",
   "desiredArchitecture": {
     "pdfJson": "composition and weight only; stockReturn/contribution missing or null",
@@ -7,12 +7,12 @@
     "frontend": "always prioritize /api/market-data stocks[code].returnRate"
   },
   "collectionState": {
-    "date": "20260727",
+    "date": "20260728",
     "total": 1150,
-    "completed": 390,
+    "completed": 364,
     "failed": 0,
     "status": "running",
-    "updatedAt": "2026-07-26T16:47:40.105Z"
+    "updatedAt": "2026-07-27T16:48:48.753Z"
   },
   "localPdfData": {
     "itemExists": false,
@@ -38,15 +38,15 @@
   "marketData": {
     "status": 200,
     "source": "krx-api-live",
-    "asOf": "2026-07-23",
+    "asOf": "2026-07-26",
     "stockApiComplete": true,
     "targetEtf": {
       "code": "449450",
       "name": "PLUS K방산",
-      "close": 56110,
-      "change": 4390,
-      "returnRate": 8.49,
-      "nav": 56076.11
+      "close": 0,
+      "change": 0,
+      "returnRate": 0,
+      "nav": 0
     },
     "targetStocksAvailable": 0
   },
@@ -54,28 +54,34 @@
     "requestedDate": null,
     "attempts": [
       {
-        "date": "20260727",
+        "date": "20260728",
         "status": 404,
         "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260727&architectureCheck=1785084818595"
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260728&architectureCheck=1785170953400"
       },
       {
-        "date": "20260723",
+        "date": "20260726",
         "status": 404,
         "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260723&architectureCheck=1785084819223"
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260726&architectureCheck=1785170953940"
       },
       {
         "date": "20260724",
         "status": 404,
         "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260724&architectureCheck=1785084819343"
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260724&architectureCheck=1785170954019"
+      },
+      {
+        "date": "20260723",
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260723&architectureCheck=1785170954099"
       },
       {
         "date": null,
         "status": 404,
         "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&architectureCheck=1785084819451"
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&architectureCheck=1785170954159"
       }
     ],
     "status": 404,
