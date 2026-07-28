@@ -1,5 +1,5 @@
 {
-  "capturedAt": "2026-07-27T16:49:10.283Z",
+  "capturedAt": "2026-07-28T00:45:22.002Z",
   "targetCode": "449450",
   "desiredArchitecture": {
     "pdfJson": "composition and weight only; stockReturn/contribution missing or null",
@@ -38,15 +38,15 @@
   "marketData": {
     "status": 200,
     "source": "krx-api-live",
-    "asOf": "2026-07-26",
+    "asOf": "2026-07-27",
     "stockApiComplete": true,
     "targetEtf": {
       "code": "449450",
       "name": "PLUS K방산",
-      "close": 0,
-      "change": 0,
-      "returnRate": 0,
-      "nav": 0
+      "close": 51430,
+      "change": -3745,
+      "returnRate": -6.79,
+      "nav": 51172.87
     },
     "targetStocksAvailable": 0
   },
@@ -57,31 +57,31 @@
         "date": "20260728",
         "status": 404,
         "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260728&architectureCheck=1785170953400"
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260728&architectureCheck=1785199531529"
       },
       {
-        "date": "20260726",
+        "date": "20260727",
         "status": 404,
         "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260726&architectureCheck=1785170953940"
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260727&architectureCheck=1785199531876"
       },
       {
         "date": "20260724",
         "status": 404,
         "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260724&architectureCheck=1785170954019"
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260724&architectureCheck=1785199531946"
       },
       {
         "date": "20260723",
         "status": 404,
         "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260723&architectureCheck=1785170954099"
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260723&architectureCheck=1785199532015"
       },
       {
         "date": null,
         "status": 404,
         "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&architectureCheck=1785170954159"
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&architectureCheck=1785199532077"
       }
     ],
     "status": 404,
