@@ -1,0 +1,39 @@
+name: 449450 읽기 전용 즉시 검증
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/verify-449450-readonly-now.yml'
+      - 'verify-449450-readonly-now.js'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: 449450 PDF·API·프론트 읽기 전용 검증
+        env:
+          ETF_SITE_URL: https://etf-attribution-mvp.bang-starone.chatgpt.site
+        run: node verify-449450-readonly-now.js
+      - name: 결과 커밋
+        if: always()
+        run: |
+          test -f data/site-diagnostics/verify-449450-now.json || exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/site-diagnostics/verify-449450-now.json
+          git diff --cached --quiet && exit 0
+          git commit -m "data: record 449450 read-only verification"
+          git pull --rebase origin main
+          git push
