@@ -1,0 +1,136 @@
+{
+  "capturedAt": "2026-07-28T16:49:36.784Z",
+  "targetCode": "449450",
+  "collectionState": {
+    "date": "20260729",
+    "total": 1150,
+    "completed": 1150,
+    "failed": 0,
+    "status": "completed",
+    "updatedAt": "2026-07-28T16:47:46.092Z"
+  },
+  "localPdfData": {
+    "itemExists": true,
+    "date": "20260729",
+    "componentCount": 11,
+    "stockReturnFields": {
+      "missing": 11,
+      "null": 0,
+      "zero": 0,
+      "nonZero": 0,
+      "other": 0
+    },
+    "contributionFields": {
+      "missing": 11,
+      "null": 0,
+      "zero": 0,
+      "nonZero": 0,
+      "other": 0
+    },
+    "conforms": true,
+    "sample": [
+      {
+        "code": "079550",
+        "name": "LIG디펜스앤에어로스페이스",
+        "quantity": 228,
+        "evaluationAmount": 158688000,
+        "marketCap": 0,
+        "weight": 15.505089
+      },
+      {
+        "code": "003570",
+        "name": "SNT다이내믹스",
+        "quantity": 164,
+        "evaluationAmount": 5510400,
+        "marketCap": 0,
+        "weight": 0.53841
+      },
+      {
+        "code": "077970",
+        "name": "STX엔진",
+        "quantity": 260,
+        "evaluationAmount": 6383000,
+        "marketCap": 0,
+        "weight": 0.62367
+      }
+    ]
+  },
+  "marketData": {
+    "status": 200,
+    "source": "krx-api-live",
+    "asOf": "2026-07-27",
+    "stockApiComplete": true,
+    "targetEtf": {
+      "code": "449450",
+      "name": "PLUS K방산",
+      "close": 51430,
+      "change": -3745,
+      "returnRate": -6.79,
+      "nav": 51172.87
+    },
+    "targetStocksAvailable": 10
+  },
+  "batchData": {
+    "requestedDate": "20260729",
+    "attempts": [
+      {
+        "date": "20260729",
+        "status": 200,
+        "componentCount": 11,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260729&verify=1785257375061"
+      }
+    ],
+    "status": 200,
+    "componentCount": 11,
+    "stockReturnFields": {
+      "missing": 0,
+      "null": 0,
+      "zero": 11,
+      "nonZero": 0,
+      "other": 0
+    },
+    "contributionFields": {
+      "missing": 0,
+      "null": 0,
+      "zero": 11,
+      "nonZero": 0,
+      "other": 0
+    },
+    "preservesNullOrMissing": false,
+    "sample": [
+      {
+        "code": "079550",
+        "name": "LIG디펜스앤에어로스페이스",
+        "weight": 15.505089,
+        "stockReturn": 0,
+        "contribution": 0
+      },
+      {
+        "code": "003570",
+        "name": "SNT다이내믹스",
+        "weight": 0.53841,
+        "stockReturn": 0,
+        "contribution": 0
+      },
+      {
+        "code": "077970",
+        "name": "STX엔진",
+        "weight": 0.62367,
+        "stockReturn": 0,
+        "contribution": 0
+      }
+    ]
+  },
+  "deployedBundle": {
+    "successfulScriptCount": 6,
+    "usesBatchFirst": true,
+    "usesLiveFirst": false
+  },
+  "verdict": {
+    "localPdfConforms": true,
+    "batchApiConforms": false,
+    "frontendConforms": false,
+    "fullyConforms": false,
+    "enrichmentPerformed": false
+  }
+}
