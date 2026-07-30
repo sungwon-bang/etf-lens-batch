@@ -1,17 +1,17 @@
 {
-  "capturedAt": "2026-07-30T15:44:13.270Z",
+  "capturedAt": "2026-07-30T16:50:24.976Z",
   "targetCode": "449450",
   "collectionState": {
-    "date": "20260730",
+    "date": "20260731",
     "total": 1155,
     "completed": 1155,
     "failed": 0,
     "status": "completed",
-    "updatedAt": "2026-07-29T16:37:17.722Z"
+    "updatedAt": "2026-07-30T16:38:36.056Z"
   },
   "localPdfData": {
     "itemExists": true,
-    "date": "20260730",
+    "date": "20260731",
     "componentCount": 11,
     "stockReturnFields": {
       "missing": 11,
@@ -33,25 +33,25 @@
         "code": "079550",
         "name": "LIG디펜스앤에어로스페이스",
         "quantity": 228,
-        "evaluationAmount": 158916000,
+        "evaluationAmount": 141360000,
         "marketCap": 0,
-        "weight": 16.226255
+        "weight": 15.922898
       },
       {
         "code": "003570",
         "name": "SNT다이내믹스",
         "quantity": 164,
-        "evaluationAmount": 5182400,
+        "evaluationAmount": 4756000,
         "marketCap": 0,
-        "weight": 0.529153
+        "weight": 0.535719
       },
       {
         "code": "077970",
         "name": "STX엔진",
         "quantity": 260,
-        "evaluationAmount": 5681000,
+        "evaluationAmount": 5083000,
         "marketCap": 0,
-        "weight": 0.580063
+        "weight": 0.572553
       }
     ]
   },
@@ -71,13 +71,13 @@
     "targetStocksAvailable": 10
   },
   "batchData": {
-    "requestedDate": "20260730",
+    "requestedDate": "20260731",
     "attempts": [
       {
-        "date": "20260730",
+        "date": "20260731",
         "status": 200,
         "componentCount": 11,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260730&verify=1785426251953"
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260731&verify=1785430223586"
       }
     ],
     "status": 200,
@@ -101,21 +101,21 @@
       {
         "code": "079550",
         "name": "LIG디펜스앤에어로스페이스",
-        "weight": 16.226255,
+        "weight": 15.922898,
         "stockReturn": 0,
         "contribution": 0
       },
       {
         "code": "003570",
         "name": "SNT다이내믹스",
-        "weight": 0.529153,
+        "weight": 0.535719,
         "stockReturn": 0,
         "contribution": 0
       },
       {
         "code": "077970",
         "name": "STX엔진",
-        "weight": 0.580063,
+        "weight": 0.572553,
         "stockReturn": 0,
         "contribution": 0
       }
