@@ -2,10 +2,10 @@
   "meta": {
     "date": "20260803",
     "total": 1155,
-    "completed": 616,
-    "failed": 0,
+    "completed": 634,
+    "failed": 8,
     "status": "failed",
-    "updatedAt": "2026-08-02T18:56:33.717Z"
+    "updatedAt": "2026-08-02T19:00:34.637Z"
   },
   "items": {
     "100910": {
@@ -16315,6 +16315,68 @@
         }
       ],
       "collectedAt": "2026-08-02T18:56:33.571Z"
+    },
+    "195980": {
+      "etf": {
+        "code": "195980",
+        "name": "PLUS 신흥국MSCI(합성 H)",
+        "date": "20260803"
+      },
+      "summary": {
+        "totalComponents": 6,
+        "totalWeight": 99.99999899999999
+      },
+      "components": [
+        {
+          "code": "225060",
+          "name": "TIGER 이머징마켓MSCI레버리지(합성 H)",
+          "quantity": 20,
+          "evaluationAmount": 272400,
+          "marketCap": 0,
+          "weight": 0.096767
+        },
+        {
+          "code": "KRYZTRSF2K02",
+          "name": "스왑(KB증권)_6285_250219",
+          "quantity": 1738845.88,
+          "evaluationAmount": 1738845,
+          "marketCap": 0,
+          "weight": 0.617707
+        },
+        {
+          "code": "KRYZTRSE7G05",
+          "name": "스왑(NH투자증권)_6285_240716",
+          "quantity": 7275933.86,
+          "evaluationAmount": 7275933,
+          "marketCap": 0,
+          "weight": 2.584701
+        },
+        {
+          "code": "KRYZTRSDAX04",
+          "name": "스왑(미래에셋증권_231030)",
+          "quantity": 158338155.7,
+          "evaluationAmount": 158338155,
+          "marketCap": 0,
+          "weight": 56.248009
+        },
+        {
+          "code": "KRYZTRSDAX05",
+          "name": "스왑(키움증권)_231030_1",
+          "quantity": 113459153.89,
+          "evaluationAmount": 113459153,
+          "marketCap": 0,
+          "weight": 40.305203
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 415529,
+          "weight": 0.147612
+        }
+      ],
+      "collectedAt": "2026-08-02T18:56:41.231Z"
     },
     "196030": {
       "etf": {
@@ -33598,6 +33660,156 @@
       ],
       "collectedAt": "2026-08-02T16:03:05.677Z"
     },
+    "239660": {
+      "etf": {
+        "code": "239660",
+        "name": "PLUS 우량회사채50",
+        "date": "20260803"
+      },
+      "summary": {
+        "totalComponents": 17,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "KR6003451F55",
+          "name": "KB증권47-1",
+          "quantity": 0,
+          "evaluationAmount": 110598666,
+          "marketCap": 0,
+          "weight": 4.545428
+        },
+        {
+          "code": "298340",
+          "name": "PLUS 국채선물3년",
+          "quantity": 1111.11,
+          "evaluationAmount": 62544443,
+          "marketCap": 0,
+          "weight": 2.570476
+        },
+        {
+          "code": "KR103501GF63",
+          "name": "국고채권02250-2806(25-4)",
+          "quantity": 0,
+          "evaluationAmount": 54286222,
+          "marketCap": 0,
+          "weight": 2.231077
+        },
+        {
+          "code": "KR103501GFC3",
+          "name": "국고채권02750-2812(25-10)",
+          "quantity": 0,
+          "evaluationAmount": 109017666,
+          "marketCap": 0,
+          "weight": 4.480451
+        },
+        {
+          "code": "KR103502GG38",
+          "name": "국고채권03000-2803(26-1)",
+          "quantity": 0,
+          "evaluationAmount": 222365111,
+          "marketCap": 0,
+          "weight": 9.138849
+        },
+        {
+          "code": "KR103501GE64",
+          "name": "국고채권03250-2706(24-4)",
+          "quantity": 0,
+          "evaluationAmount": 557338888,
+          "marketCap": 0,
+          "weight": 22.905733
+        },
+        {
+          "code": "KRZFA03546GK",
+          "name": "대신증권 20260727-270-105",
+          "quantity": 0,
+          "evaluationAmount": 111111111,
+          "marketCap": 0,
+          "weight": 4.566488
+        },
+        {
+          "code": "KRZFA03547GK",
+          "name": "대신증권 20260727-270-106",
+          "quantity": 0,
+          "evaluationAmount": 111111111,
+          "marketCap": 0,
+          "weight": 4.566488
+        },
+        {
+          "code": "KR6006801DC5",
+          "name": "미래에셋증권68",
+          "quantity": 0,
+          "evaluationAmount": 112045444,
+          "marketCap": 0,
+          "weight": 4.604888
+        },
+        {
+          "code": "KR6082971G34",
+          "name": "미래에셋캐피탈132-1",
+          "quantity": 0,
+          "evaluationAmount": 110102444,
+          "marketCap": 0,
+          "weight": 4.525034
+        },
+        {
+          "code": "KR603271EE14",
+          "name": "신한카드2207-3",
+          "quantity": 0,
+          "evaluationAmount": 110884333,
+          "marketCap": 0,
+          "weight": 4.557168
+        },
+        {
+          "code": "KR6176944G46",
+          "name": "아이엠캐피탈149-2",
+          "quantity": 0,
+          "evaluationAmount": 110333555,
+          "marketCap": 0,
+          "weight": 4.534532
+        },
+        {
+          "code": "KR6030751EB2",
+          "name": "하나증권12-1",
+          "quantity": 0,
+          "evaluationAmount": 112079111,
+          "marketCap": 0,
+          "weight": 4.606271
+        },
+        {
+          "code": "KR6019801G40",
+          "name": "하나캐피탈477-1",
+          "quantity": 0,
+          "evaluationAmount": 110769222,
+          "marketCap": 0,
+          "weight": 4.552437
+        },
+        {
+          "code": "KR6005442F78",
+          "name": "현대지에프홀딩스1-2",
+          "quantity": 0,
+          "evaluationAmount": 108449333,
+          "marketCap": 0,
+          "weight": 4.457093
+        },
+        {
+          "code": "KR6029888FA4",
+          "name": "현대캐피탈2078-3",
+          "quantity": 0,
+          "evaluationAmount": 109421888,
+          "marketCap": 0,
+          "weight": 4.497064
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 210726551,
+          "weight": 8.660523
+        }
+      ],
+      "collectedAt": "2026-08-02T18:56:43.384Z"
+    },
     "244580": {
       "etf": {
         "code": "244580",
@@ -48244,6 +48456,44 @@
       ],
       "collectedAt": "2026-08-02T15:40:42.211Z"
     },
+    "256450": {
+      "etf": {
+        "code": "256450",
+        "name": "PLUS 심천차이넥스트(합성)",
+        "date": "20260803"
+      },
+      "summary": {
+        "totalComponents": 3,
+        "totalWeight": 100.00000100000001
+      },
+      "components": [
+        {
+          "code": "KRYZTRSDAX07",
+          "name": "스왑(NH투자증권_231030)",
+          "quantity": 116165822.2,
+          "evaluationAmount": 116165822,
+          "marketCap": 0,
+          "weight": 37.605495
+        },
+        {
+          "code": "KRYZTRSDAX08",
+          "name": "스왑(미래에셋증권_231030)",
+          "quantity": 191723672,
+          "evaluationAmount": 191723672,
+          "marketCap": 0,
+          "weight": 62.065274
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 1017018,
+          "weight": 0.329232
+        }
+      ],
+      "collectedAt": "2026-08-02T18:56:41.171Z"
+    },
     "256750": {
       "etf": {
         "code": "256750",
@@ -50329,6 +50579,428 @@
         }
       ],
       "collectedAt": "2026-08-02T18:14:04.090Z"
+    },
+    "266550": {
+      "etf": {
+        "code": "266550",
+        "name": "PLUS 중형주저변동50",
+        "date": "20260803"
+      },
+      "summary": {
+        "totalComponents": 51,
+        "totalWeight": 99.999999
+      },
+      "components": [
+        {
+          "code": "282330",
+          "name": "BGF리테일",
+          "quantity": 166,
+          "evaluationAmount": 20982400,
+          "marketCap": 0,
+          "weight": 2.420478
+        },
+        {
+          "code": "000120",
+          "name": "CJ대한통운",
+          "quantity": 185,
+          "evaluationAmount": 13579000,
+          "marketCap": 0,
+          "weight": 1.56644
+        },
+        {
+          "code": "097950",
+          "name": "CJ제일제당",
+          "quantity": 141,
+          "evaluationAmount": 26691300,
+          "marketCap": 0,
+          "weight": 3.079042
+        },
+        {
+          "code": "007070",
+          "name": "GS리테일",
+          "quantity": 769,
+          "evaluationAmount": 18917400,
+          "marketCap": 0,
+          "weight": 2.182264
+        },
+        {
+          "code": "012630",
+          "name": "HDC",
+          "quantity": 718,
+          "evaluationAmount": 13713800,
+          "marketCap": 0,
+          "weight": 1.58199
+        },
+        {
+          "code": "298050",
+          "name": "HS효성첨단소재",
+          "quantity": 49,
+          "evaluationAmount": 7212800,
+          "marketCap": 0,
+          "weight": 0.832051
+        },
+        {
+          "code": "294870",
+          "name": "IPARK현대산업개발",
+          "quantity": 574,
+          "evaluationAmount": 11118380,
+          "marketCap": 0,
+          "weight": 1.282589
+        },
+        {
+          "code": "175330",
+          "name": "JB금융지주",
+          "quantity": 873,
+          "evaluationAmount": 23483700,
+          "marketCap": 0,
+          "weight": 2.709021
+        },
+        {
+          "code": "016380",
+          "name": "KG스틸",
+          "quantity": 1685,
+          "evaluationAmount": 9065300,
+          "marketCap": 0,
+          "weight": 1.045751
+        },
+        {
+          "code": "051900",
+          "name": "LG생활건강",
+          "quantity": 91,
+          "evaluationAmount": 26572000,
+          "marketCap": 0,
+          "weight": 3.06528
+        },
+        {
+          "code": "108320",
+          "name": "LX세미콘",
+          "quantity": 267,
+          "evaluationAmount": 8196900,
+          "marketCap": 0,
+          "weight": 0.945574
+        },
+        {
+          "code": "001120",
+          "name": "LX인터내셔널",
+          "quantity": 427,
+          "evaluationAmount": 15243900,
+          "marketCap": 0,
+          "weight": 1.758498
+        },
+        {
+          "code": "036570",
+          "name": "NC",
+          "quantity": 90,
+          "evaluationAmount": 20610000,
+          "marketCap": 0,
+          "weight": 2.377518
+        },
+        {
+          "code": "005090",
+          "name": "SGC에너지",
+          "quantity": 201,
+          "evaluationAmount": 7266150,
+          "marketCap": 0,
+          "weight": 0.838205
+        },
+        {
+          "code": "018670",
+          "name": "SK가스",
+          "quantity": 79,
+          "evaluationAmount": 17893500,
+          "marketCap": 0,
+          "weight": 2.06415
+        },
+        {
+          "code": "001740",
+          "name": "SK네트웍스",
+          "quantity": 2351,
+          "evaluationAmount": 15163950,
+          "marketCap": 0,
+          "weight": 1.749276
+        },
+        {
+          "code": "139130",
+          "name": "iM금융지주",
+          "quantity": 1554,
+          "evaluationAmount": 25656540,
+          "marketCap": 0,
+          "weight": 2.959675
+        },
+        {
+          "code": "035250",
+          "name": "강원랜드",
+          "quantity": 1837,
+          "evaluationAmount": 26746720,
+          "marketCap": 0,
+          "weight": 3.085435
+        },
+        {
+          "code": "011780",
+          "name": "금호석유화학",
+          "quantity": 108,
+          "evaluationAmount": 12204000,
+          "marketCap": 0,
+          "weight": 1.407823
+        },
+        {
+          "code": "251270",
+          "name": "넷마블",
+          "quantity": 315,
+          "evaluationAmount": 12111750,
+          "marketCap": 0,
+          "weight": 1.397181
+        },
+        {
+          "code": "006280",
+          "name": "녹십자",
+          "quantity": 106,
+          "evaluationAmount": 12105200,
+          "marketCap": 0,
+          "weight": 1.396426
+        },
+        {
+          "code": "005250",
+          "name": "녹십자홀딩스",
+          "quantity": 1555,
+          "evaluationAmount": 14166050,
+          "marketCap": 0,
+          "weight": 1.63416
+        },
+        {
+          "code": "004370",
+          "name": "농심",
+          "quantity": 53,
+          "evaluationAmount": 20511000,
+          "marketCap": 0,
+          "weight": 2.366098
+        },
+        {
+          "code": "003540",
+          "name": "대신증권",
+          "quantity": 503,
+          "evaluationAmount": 12046850,
+          "marketCap": 0,
+          "weight": 1.389695
+        },
+        {
+          "code": "069620",
+          "name": "대웅제약",
+          "quantity": 104,
+          "evaluationAmount": 13041600,
+          "marketCap": 0,
+          "weight": 1.504447
+        },
+        {
+          "code": "192080",
+          "name": "더블유게임즈",
+          "quantity": 291,
+          "evaluationAmount": 17460000,
+          "marketCap": 0,
+          "weight": 2.014142
+        },
+        {
+          "code": "023530",
+          "name": "롯데쇼핑",
+          "quantity": 125,
+          "evaluationAmount": 14075000,
+          "marketCap": 0,
+          "weight": 1.623657
+        },
+        {
+          "code": "004000",
+          "name": "롯데정밀화학",
+          "quantity": 328,
+          "evaluationAmount": 14924000,
+          "marketCap": 0,
+          "weight": 1.721596
+        },
+        {
+          "code": "004990",
+          "name": "롯데지주",
+          "quantity": 610,
+          "evaluationAmount": 13450500,
+          "marketCap": 0,
+          "weight": 1.551616
+        },
+        {
+          "code": "081660",
+          "name": "미스토홀딩스",
+          "quantity": 521,
+          "evaluationAmount": 23731550,
+          "marketCap": 0,
+          "weight": 2.737613
+        },
+        {
+          "code": "031210",
+          "name": "서울보증보험",
+          "quantity": 312,
+          "evaluationAmount": 13197600,
+          "marketCap": 0,
+          "weight": 1.522442
+        },
+        {
+          "code": "004170",
+          "name": "신세계",
+          "quantity": 38,
+          "evaluationAmount": 15048000,
+          "marketCap": 0,
+          "weight": 1.7359
+        },
+        {
+          "code": "001720",
+          "name": "신영증권",
+          "quantity": 66,
+          "evaluationAmount": 8586600,
+          "marketCap": 0,
+          "weight": 0.990529
+        },
+        {
+          "code": "010780",
+          "name": "아이에스동서",
+          "quantity": 421,
+          "evaluationAmount": 7199100,
+          "marketCap": 0,
+          "weight": 0.83047
+        },
+        {
+          "code": "012750",
+          "name": "에스원",
+          "quantity": 337,
+          "evaluationAmount": 24196600,
+          "marketCap": 0,
+          "weight": 2.79126
+        },
+        {
+          "code": "271560",
+          "name": "오리온",
+          "quantity": 204,
+          "evaluationAmount": 27601200,
+          "marketCap": 0,
+          "weight": 3.184006
+        },
+        {
+          "code": "003470",
+          "name": "유안타증권",
+          "quantity": 3761,
+          "evaluationAmount": 14855950,
+          "marketCap": 0,
+          "weight": 1.713746
+        },
+        {
+          "code": "214320",
+          "name": "이노션",
+          "quantity": 1318,
+          "evaluationAmount": 25213340,
+          "marketCap": 0,
+          "weight": 2.908548
+        },
+        {
+          "code": "030000",
+          "name": "제일기획",
+          "quantity": 1396,
+          "evaluationAmount": 26761320,
+          "marketCap": 0,
+          "weight": 3.08712
+        },
+        {
+          "code": "003690",
+          "name": "코리안리",
+          "quantity": 1859,
+          "evaluationAmount": 25096500,
+          "marketCap": 0,
+          "weight": 2.89507
+        },
+        {
+          "code": "120110",
+          "name": "코오롱인더",
+          "quantity": 293,
+          "evaluationAmount": 13492650,
+          "marketCap": 0,
+          "weight": 1.556479
+        },
+        {
+          "code": "028670",
+          "name": "팬오션",
+          "quantity": 4117,
+          "evaluationAmount": 20317395,
+          "marketCap": 0,
+          "weight": 2.343764
+        },
+        {
+          "code": "005810",
+          "name": "풍산홀딩스",
+          "quantity": 455,
+          "evaluationAmount": 15174250,
+          "marketCap": 0,
+          "weight": 1.750464
+        },
+        {
+          "code": "161890",
+          "name": "한국콜마",
+          "quantity": 239,
+          "evaluationAmount": 22274800,
+          "marketCap": 0,
+          "weight": 2.569566
+        },
+        {
+          "code": "051600",
+          "name": "한전KPS",
+          "quantity": 453,
+          "evaluationAmount": 19682850,
+          "marketCap": 0,
+          "weight": 2.270565
+        },
+        {
+          "code": "069960",
+          "name": "현대백화점",
+          "quantity": 102,
+          "evaluationAmount": 11556600,
+          "marketCap": 0,
+          "weight": 1.333141
+        },
+        {
+          "code": "017800",
+          "name": "현대엘리베이터",
+          "quantity": 303,
+          "evaluationAmount": 20149500,
+          "marketCap": 0,
+          "weight": 2.324396
+        },
+        {
+          "code": "004020",
+          "name": "현대제철",
+          "quantity": 813,
+          "evaluationAmount": 20446950,
+          "marketCap": 0,
+          "weight": 2.358709
+        },
+        {
+          "code": "001450",
+          "name": "현대해상",
+          "quantity": 611,
+          "evaluationAmount": 23676250,
+          "marketCap": 0,
+          "weight": 2.731233
+        },
+        {
+          "code": "008770",
+          "name": "호텔신라",
+          "quantity": 478,
+          "evaluationAmount": 20482300,
+          "marketCap": 0,
+          "weight": 2.362787
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 3919237,
+          "weight": 0.452113
+        }
+      ],
+      "collectedAt": "2026-08-02T18:56:54.522Z"
     },
     "269420": {
       "etf": {
@@ -66114,6 +66786,268 @@
       ],
       "collectedAt": "2026-08-02T16:02:02.334Z"
     },
+    "280920": {
+      "etf": {
+        "code": "280920",
+        "name": "PLUS 주도업종",
+        "date": "20260803"
+      },
+      "summary": {
+        "totalComponents": 31,
+        "totalWeight": 99.999998
+      },
+      "components": [
+        {
+          "code": "267260",
+          "name": "HD현대일렉트릭",
+          "quantity": 36,
+          "evaluationAmount": 20988000,
+          "marketCap": 0,
+          "weight": 2.251636
+        },
+        {
+          "code": "003550",
+          "name": "LG",
+          "quantity": 134,
+          "evaluationAmount": 12917600,
+          "marketCap": 0,
+          "weight": 1.385827
+        },
+        {
+          "code": "373220",
+          "name": "LG에너지솔루션",
+          "quantity": 77,
+          "evaluationAmount": 24640000,
+          "marketCap": 0,
+          "weight": 2.64343
+        },
+        {
+          "code": "011070",
+          "name": "LG이노텍",
+          "quantity": 23,
+          "evaluationAmount": 9752000,
+          "marketCap": 0,
+          "weight": 1.046215
+        },
+        {
+          "code": "066570",
+          "name": "LG전자",
+          "quantity": 177,
+          "evaluationAmount": 26196000,
+          "marketCap": 0,
+          "weight": 2.810361
+        },
+        {
+          "code": "010120",
+          "name": "LS ELECTRIC",
+          "quantity": 128,
+          "evaluationAmount": 19238400,
+          "marketCap": 0,
+          "weight": 2.063935
+        },
+        {
+          "code": "034730",
+          "name": "SK",
+          "quantity": 55,
+          "evaluationAmount": 25767500,
+          "marketCap": 0,
+          "weight": 2.764391
+        },
+        {
+          "code": "017670",
+          "name": "SK텔레콤",
+          "quantity": 219,
+          "evaluationAmount": 17125800,
+          "marketCap": 0,
+          "weight": 1.837291
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "quantity": 398,
+          "evaluationAmount": 48078400,
+          "marketCap": 0,
+          "weight": 5.15795
+        },
+        {
+          "code": "000150",
+          "name": "두산",
+          "quantity": 11,
+          "evaluationAmount": 9900000,
+          "marketCap": 0,
+          "weight": 1.062093
+        },
+        {
+          "code": "034020",
+          "name": "두산에너빌리티",
+          "quantity": 705,
+          "evaluationAmount": 42441000,
+          "marketCap": 0,
+          "weight": 4.553158
+        },
+        {
+          "code": "006800",
+          "name": "미래에셋증권",
+          "quantity": 414,
+          "evaluationAmount": 12502800,
+          "marketCap": 0,
+          "weight": 1.341326
+        },
+        {
+          "code": "006400",
+          "name": "삼성SDI",
+          "quantity": 97,
+          "evaluationAmount": 34774500,
+          "marketCap": 0,
+          "weight": 3.73068
+        },
+        {
+          "code": "028260",
+          "name": "삼성물산",
+          "quantity": 157,
+          "evaluationAmount": 46158000,
+          "marketCap": 0,
+          "weight": 4.951926
+        },
+        {
+          "code": "032830",
+          "name": "삼성생명",
+          "quantity": 138,
+          "evaluationAmount": 36432000,
+          "marketCap": 0,
+          "weight": 3.9085
+        },
+        {
+          "code": "018260",
+          "name": "삼성에스디에스",
+          "quantity": 62,
+          "evaluationAmount": 12319400,
+          "marketCap": 0,
+          "weight": 1.321651
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "quantity": 90,
+          "evaluationAmount": 79110000,
+          "marketCap": 0,
+          "weight": 8.487085
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "quantity": 905,
+          "evaluationAmount": 187335000,
+          "marketCap": 0,
+          "weight": 20.097687
+        },
+        {
+          "code": "000810",
+          "name": "삼성화재",
+          "quantity": 48,
+          "evaluationAmount": 29664000,
+          "marketCap": 0,
+          "weight": 3.182415
+        },
+        {
+          "code": "004170",
+          "name": "신세계",
+          "quantity": 9,
+          "evaluationAmount": 3564000,
+          "marketCap": 0,
+          "weight": 0.382353
+        },
+        {
+          "code": "033240",
+          "name": "자화전자",
+          "quantity": 20,
+          "evaluationAmount": 386200,
+          "marketCap": 0,
+          "weight": 0.041432
+        },
+        {
+          "code": "489790",
+          "name": "한화비전",
+          "quantity": 55,
+          "evaluationAmount": 1925000,
+          "marketCap": 0,
+          "weight": 0.206518
+        },
+        {
+          "code": "009830",
+          "name": "한화솔루션",
+          "quantity": 232,
+          "evaluationAmount": 5452000,
+          "marketCap": 0,
+          "weight": 0.584902
+        },
+        {
+          "code": "012450",
+          "name": "한화에어로스페이스",
+          "quantity": 56,
+          "evaluationAmount": 48440000,
+          "marketCap": 0,
+          "weight": 5.196744
+        },
+        {
+          "code": "000720",
+          "name": "현대건설",
+          "quantity": 119,
+          "evaluationAmount": 9722300,
+          "marketCap": 0,
+          "weight": 1.043029
+        },
+        {
+          "code": "086280",
+          "name": "현대글로비스",
+          "quantity": 62,
+          "evaluationAmount": 11885400,
+          "marketCap": 0,
+          "weight": 1.27509
+        },
+        {
+          "code": "064350",
+          "name": "현대로템",
+          "quantity": 118,
+          "evaluationAmount": 14219000,
+          "marketCap": 0,
+          "weight": 1.525444
+        },
+        {
+          "code": "012330",
+          "name": "현대모비스",
+          "quantity": 97,
+          "evaluationAmount": 43165000,
+          "marketCap": 0,
+          "weight": 4.630831
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "quantity": 219,
+          "evaluationAmount": 76869000,
+          "marketCap": 0,
+          "weight": 8.246666
+        },
+        {
+          "code": "298040",
+          "name": "효성중공업",
+          "quantity": 9,
+          "evaluationAmount": 17046000,
+          "marketCap": 0,
+          "weight": 1.82873
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 4107880,
+          "weight": 0.440702
+        }
+      ],
+      "collectedAt": "2026-08-02T18:56:52.312Z"
+    },
     "280930": {
       "etf": {
         "code": "280930",
@@ -79171,6 +80105,1220 @@
         }
       ],
       "collectedAt": "2026-08-02T17:29:18.178Z"
+    },
+    "301400": {
+      "etf": {
+        "code": "301400",
+        "name": "PLUS 코스닥150",
+        "date": "20260803"
+      },
+      "summary": {
+        "totalComponents": 150,
+        "totalWeight": 100.000007
+      },
+      "components": [
+        {
+          "code": "035760",
+          "name": "CJ ENM",
+          "quantity": 48,
+          "evaluationAmount": 1459200,
+          "marketCap": 0,
+          "weight": 0.271247
+        },
+        {
+          "code": "195940",
+          "name": "HK이노엔",
+          "quantity": 61,
+          "evaluationAmount": 2128900,
+          "marketCap": 0,
+          "weight": 0.395736
+        },
+        {
+          "code": "028300",
+          "name": "HLB",
+          "quantity": 494,
+          "evaluationAmount": 14795300,
+          "marketCap": 0,
+          "weight": 2.750259
+        },
+        {
+          "code": "403870",
+          "name": "HPSP",
+          "quantity": 274,
+          "evaluationAmount": 7822700,
+          "marketCap": 0,
+          "weight": 1.454141
+        },
+        {
+          "code": "095340",
+          "name": "ISC",
+          "quantity": 43,
+          "evaluationAmount": 4579500,
+          "marketCap": 0,
+          "weight": 0.851271
+        },
+        {
+          "code": "035900",
+          "name": "JYP Ent.",
+          "quantity": 112,
+          "evaluationAmount": 4704000,
+          "marketCap": 0,
+          "weight": 0.874414
+        },
+        {
+          "code": "060370",
+          "name": "LS마린솔루션",
+          "quantity": 66,
+          "evaluationAmount": 1557600,
+          "marketCap": 0,
+          "weight": 0.289538
+        },
+        {
+          "code": "417200",
+          "name": "LS머트리얼즈",
+          "quantity": 160,
+          "evaluationAmount": 1443200,
+          "marketCap": 0,
+          "weight": 0.268273
+        },
+        {
+          "code": "060250",
+          "name": "NHN KCP",
+          "quantity": 91,
+          "evaluationAmount": 1026480,
+          "marketCap": 0,
+          "weight": 0.19081
+        },
+        {
+          "code": "218410",
+          "name": "RFHIC",
+          "quantity": 69,
+          "evaluationAmount": 2435700,
+          "marketCap": 0,
+          "weight": 0.452766
+        },
+        {
+          "code": "056190",
+          "name": "SFA",
+          "quantity": 54,
+          "evaluationAmount": 968220,
+          "marketCap": 0,
+          "weight": 0.17998
+        },
+        {
+          "code": "222080",
+          "name": "SFA넥셀",
+          "quantity": 216,
+          "evaluationAmount": 1283040,
+          "marketCap": 0,
+          "weight": 0.238501
+        },
+        {
+          "code": "036540",
+          "name": "SFA반도체",
+          "quantity": 312,
+          "evaluationAmount": 1212120,
+          "marketCap": 0,
+          "weight": 0.225318
+        },
+        {
+          "code": "067160",
+          "name": "SOOP",
+          "quantity": 32,
+          "evaluationAmount": 1544000,
+          "marketCap": 0,
+          "weight": 0.28701
+        },
+        {
+          "code": "399720",
+          "name": "가온칩스",
+          "quantity": 26,
+          "evaluationAmount": 1097200,
+          "marketCap": 0,
+          "weight": 0.203956
+        },
+        {
+          "code": "036620",
+          "name": "감성코퍼레이션",
+          "quantity": 259,
+          "evaluationAmount": 1026935,
+          "marketCap": 0,
+          "weight": 0.190894
+        },
+        {
+          "code": "098460",
+          "name": "고영",
+          "quantity": 217,
+          "evaluationAmount": 4893350,
+          "marketCap": 0,
+          "weight": 0.909612
+        },
+        {
+          "code": "420770",
+          "name": "기가비스",
+          "quantity": 21,
+          "evaluationAmount": 1768200,
+          "marketCap": 0,
+          "weight": 0.328686
+        },
+        {
+          "code": "121600",
+          "name": "나노신소재",
+          "quantity": 38,
+          "evaluationAmount": 1352800,
+          "marketCap": 0,
+          "weight": 0.251468
+        },
+        {
+          "code": "253590",
+          "name": "네오셈",
+          "quantity": 83,
+          "evaluationAmount": 572700,
+          "marketCap": 0,
+          "weight": 0.106458
+        },
+        {
+          "code": "095660",
+          "name": "네오위즈",
+          "quantity": 51,
+          "evaluationAmount": 938400,
+          "marketCap": 0,
+          "weight": 0.174437
+        },
+        {
+          "code": "007390",
+          "name": "네이처셀",
+          "quantity": 215,
+          "evaluationAmount": 4902000,
+          "marketCap": 0,
+          "weight": 0.91122
+        },
+        {
+          "code": "348210",
+          "name": "넥스틴",
+          "quantity": 32,
+          "evaluationAmount": 809600,
+          "marketCap": 0,
+          "weight": 0.150494
+        },
+        {
+          "code": "225570",
+          "name": "넥슨게임즈",
+          "quantity": 97,
+          "evaluationAmount": 835170,
+          "marketCap": 0,
+          "weight": 0.155248
+        },
+        {
+          "code": "032190",
+          "name": "다우데이타",
+          "quantity": 55,
+          "evaluationAmount": 920700,
+          "marketCap": 0,
+          "weight": 0.171146
+        },
+        {
+          "code": "078600",
+          "name": "대주전자재료",
+          "quantity": 47,
+          "evaluationAmount": 2932800,
+          "marketCap": 0,
+          "weight": 0.54517
+        },
+        {
+          "code": "213420",
+          "name": "덕산네오룩스",
+          "quantity": 54,
+          "evaluationAmount": 1447200,
+          "marketCap": 0,
+          "weight": 0.269016
+        },
+        {
+          "code": "194480",
+          "name": "데브시스터즈",
+          "quantity": 33,
+          "evaluationAmount": 470250,
+          "marketCap": 0,
+          "weight": 0.087414
+        },
+        {
+          "code": "033500",
+          "name": "동성화인텍",
+          "quantity": 75,
+          "evaluationAmount": 1104000,
+          "marketCap": 0,
+          "weight": 0.20522
+        },
+        {
+          "code": "005290",
+          "name": "동진쎄미켐",
+          "quantity": 142,
+          "evaluationAmount": 4707300,
+          "marketCap": 0,
+          "weight": 0.875028
+        },
+        {
+          "code": "025900",
+          "name": "동화기업",
+          "quantity": 45,
+          "evaluationAmount": 232200,
+          "marketCap": 0,
+          "weight": 0.043163
+        },
+        {
+          "code": "131970",
+          "name": "두산테스나",
+          "quantity": 50,
+          "evaluationAmount": 2590000,
+          "marketCap": 0,
+          "weight": 0.481448
+        },
+        {
+          "code": "347850",
+          "name": "디앤디파마텍",
+          "quantity": 146,
+          "evaluationAmount": 6672200,
+          "marketCap": 0,
+          "weight": 1.240278
+        },
+        {
+          "code": "376300",
+          "name": "디어유",
+          "quantity": 50,
+          "evaluationAmount": 952500,
+          "marketCap": 0,
+          "weight": 0.177058
+        },
+        {
+          "code": "281740",
+          "name": "레이크머티리얼즈",
+          "quantity": 155,
+          "evaluationAmount": 1495750,
+          "marketCap": 0,
+          "weight": 0.278041
+        },
+        {
+          "code": "277810",
+          "name": "레인보우로보틱스",
+          "quantity": 33,
+          "evaluationAmount": 12309000,
+          "marketCap": 0,
+          "weight": 2.288087
+        },
+        {
+          "code": "090360",
+          "name": "로보스타",
+          "quantity": 27,
+          "evaluationAmount": 1387800,
+          "marketCap": 0,
+          "weight": 0.257974
+        },
+        {
+          "code": "108490",
+          "name": "로보티즈",
+          "quantity": 48,
+          "evaluationAmount": 7603200,
+          "marketCap": 0,
+          "weight": 1.413339
+        },
+        {
+          "code": "328130",
+          "name": "루닛",
+          "quantity": 270,
+          "evaluationAmount": 2300400,
+          "marketCap": 0,
+          "weight": 0.427615
+        },
+        {
+          "code": "141080",
+          "name": "리가켐바이오",
+          "quantity": 109,
+          "evaluationAmount": 8491100,
+          "marketCap": 0,
+          "weight": 1.578388
+        },
+        {
+          "code": "058470",
+          "name": "리노공업",
+          "quantity": 209,
+          "evaluationAmount": 11536800,
+          "marketCap": 0,
+          "weight": 2.144545
+        },
+        {
+          "code": "215200",
+          "name": "메가스터디교육",
+          "quantity": 26,
+          "evaluationAmount": 1058200,
+          "marketCap": 0,
+          "weight": 0.196706
+        },
+        {
+          "code": "100790",
+          "name": "미래에셋벤처투자",
+          "quantity": 76,
+          "evaluationAmount": 800280,
+          "marketCap": 0,
+          "weight": 0.148762
+        },
+        {
+          "code": "310210",
+          "name": "보로노이",
+          "quantity": 45,
+          "evaluationAmount": 4536000,
+          "marketCap": 0,
+          "weight": 0.843185
+        },
+        {
+          "code": "089970",
+          "name": "브이엠",
+          "quantity": 94,
+          "evaluationAmount": 4756400,
+          "marketCap": 0,
+          "weight": 0.884155
+        },
+        {
+          "code": "018290",
+          "name": "브이티",
+          "quantity": 90,
+          "evaluationAmount": 985500,
+          "marketCap": 0,
+          "weight": 0.183192
+        },
+        {
+          "code": "083650",
+          "name": "비에이치아이",
+          "quantity": 89,
+          "evaluationAmount": 3079400,
+          "marketCap": 0,
+          "weight": 0.572422
+        },
+        {
+          "code": "082920",
+          "name": "비츠로셀",
+          "quantity": 115,
+          "evaluationAmount": 2817500,
+          "marketCap": 0,
+          "weight": 0.523738
+        },
+        {
+          "code": "000250",
+          "name": "삼천당제약",
+          "quantity": 58,
+          "evaluationAmount": 7534200,
+          "marketCap": 0,
+          "weight": 1.400513
+        },
+        {
+          "code": "038500",
+          "name": "삼표시멘트",
+          "quantity": 159,
+          "evaluationAmount": 1003290,
+          "marketCap": 0,
+          "weight": 0.186499
+        },
+        {
+          "code": "437730",
+          "name": "삼현",
+          "quantity": 48,
+          "evaluationAmount": 1564800,
+          "marketCap": 0,
+          "weight": 0.290877
+        },
+        {
+          "code": "006730",
+          "name": "서부T&D",
+          "quantity": 134,
+          "evaluationAmount": 1273000,
+          "marketCap": 0,
+          "weight": 0.236635
+        },
+        {
+          "code": "178320",
+          "name": "서진시스템",
+          "quantity": 207,
+          "evaluationAmount": 5775300,
+          "marketCap": 0,
+          "weight": 1.073555
+        },
+        {
+          "code": "171090",
+          "name": "선익시스템",
+          "quantity": 22,
+          "evaluationAmount": 1089000,
+          "marketCap": 0,
+          "weight": 0.202431
+        },
+        {
+          "code": "014620",
+          "name": "성광벤드",
+          "quantity": 69,
+          "evaluationAmount": 1804350,
+          "marketCap": 0,
+          "weight": 0.335406
+        },
+        {
+          "code": "015750",
+          "name": "성우하이텍",
+          "quantity": 196,
+          "evaluationAmount": 1009400,
+          "marketCap": 0,
+          "weight": 0.187635
+        },
+        {
+          "code": "043260",
+          "name": "성호전자",
+          "quantity": 135,
+          "evaluationAmount": 1599750,
+          "marketCap": 0,
+          "weight": 0.297373
+        },
+        {
+          "code": "068760",
+          "name": "셀트리온제약",
+          "quantity": 84,
+          "evaluationAmount": 3250800,
+          "marketCap": 0,
+          "weight": 0.604283
+        },
+        {
+          "code": "357780",
+          "name": "솔브레인",
+          "quantity": 17,
+          "evaluationAmount": 3816500,
+          "marketCap": 0,
+          "weight": 0.709439
+        },
+        {
+          "code": "036830",
+          "name": "솔브레인홀딩스",
+          "quantity": 22,
+          "evaluationAmount": 594000,
+          "marketCap": 0,
+          "weight": 0.110417
+        },
+        {
+          "code": "253450",
+          "name": "스튜디오드래곤",
+          "quantity": 57,
+          "evaluationAmount": 1199850,
+          "marketCap": 0,
+          "weight": 0.223037
+        },
+        {
+          "code": "025320",
+          "name": "시노펙스",
+          "quantity": 338,
+          "evaluationAmount": 1057940,
+          "marketCap": 0,
+          "weight": 0.196658
+        },
+        {
+          "code": "065350",
+          "name": "신성델타테크",
+          "quantity": 76,
+          "evaluationAmount": 1888600,
+          "marketCap": 0,
+          "weight": 0.351067
+        },
+        {
+          "code": "257720",
+          "name": "실리콘투",
+          "quantity": 149,
+          "evaluationAmount": 4924450,
+          "marketCap": 0,
+          "weight": 0.915393
+        },
+        {
+          "code": "222800",
+          "name": "심텍",
+          "quantity": 104,
+          "evaluationAmount": 6635200,
+          "marketCap": 0,
+          "weight": 1.2334
+        },
+        {
+          "code": "099320",
+          "name": "쎄트렉아이",
+          "quantity": 29,
+          "evaluationAmount": 1670400,
+          "marketCap": 0,
+          "weight": 0.310506
+        },
+        {
+          "code": "050890",
+          "name": "쏠리드",
+          "quantity": 223,
+          "evaluationAmount": 1652430,
+          "marketCap": 0,
+          "weight": 0.307166
+        },
+        {
+          "code": "352480",
+          "name": "씨앤씨인터내셔널",
+          "quantity": 14,
+          "evaluationAmount": 236740,
+          "marketCap": 0,
+          "weight": 0.044007
+        },
+        {
+          "code": "096530",
+          "name": "씨젠",
+          "quantity": 130,
+          "evaluationAmount": 3269500,
+          "marketCap": 0,
+          "weight": 0.607759
+        },
+        {
+          "code": "025980",
+          "name": "아난티",
+          "quantity": 295,
+          "evaluationAmount": 986775,
+          "marketCap": 0,
+          "weight": 0.183429
+        },
+        {
+          "code": "214430",
+          "name": "아이쓰리시스템",
+          "quantity": 20,
+          "evaluationAmount": 1060000,
+          "marketCap": 0,
+          "weight": 0.197041
+        },
+        {
+          "code": "124500",
+          "name": "아이티센글로벌",
+          "quantity": 75,
+          "evaluationAmount": 1384500,
+          "marketCap": 0,
+          "weight": 0.257361
+        },
+        {
+          "code": "053800",
+          "name": "안랩",
+          "quantity": 22,
+          "evaluationAmount": 1163800,
+          "marketCap": 0,
+          "weight": 0.216336
+        },
+        {
+          "code": "196170",
+          "name": "알테오젠",
+          "quantity": 172,
+          "evaluationAmount": 48074000,
+          "marketCap": 0,
+          "weight": 8.936349
+        },
+        {
+          "code": "101490",
+          "name": "에스앤에스텍",
+          "quantity": 68,
+          "evaluationAmount": 2329000,
+          "marketCap": 0,
+          "weight": 0.432932
+        },
+        {
+          "code": "041510",
+          "name": "에스엠",
+          "quantity": 57,
+          "evaluationAmount": 3796200,
+          "marketCap": 0,
+          "weight": 0.705666
+        },
+        {
+          "code": "237690",
+          "name": "에스티팜",
+          "quantity": 54,
+          "evaluationAmount": 4573800,
+          "marketCap": 0,
+          "weight": 0.850212
+        },
+        {
+          "code": "058610",
+          "name": "에스피지",
+          "quantity": 57,
+          "evaluationAmount": 4377600,
+          "marketCap": 0,
+          "weight": 0.813741
+        },
+        {
+          "code": "298380",
+          "name": "에이비엘바이오",
+          "quantity": 175,
+          "evaluationAmount": 10640000,
+          "marketCap": 0,
+          "weight": 1.977841
+        },
+        {
+          "code": "295310",
+          "name": "에이치브이엠",
+          "quantity": 33,
+          "evaluationAmount": 1011450,
+          "marketCap": 0,
+          "weight": 0.188016
+        },
+        {
+          "code": "0009K0",
+          "name": "에임드바이오",
+          "quantity": 117,
+          "evaluationAmount": 2094300,
+          "marketCap": 0,
+          "weight": 0.389304
+        },
+        {
+          "code": "086520",
+          "name": "에코프로",
+          "quantity": 412,
+          "evaluationAmount": 29087200,
+          "marketCap": 0,
+          "weight": 5.406943
+        },
+        {
+          "code": "247540",
+          "name": "에코프로비엠",
+          "quantity": 227,
+          "evaluationAmount": 21905500,
+          "marketCap": 0,
+          "weight": 4.071956
+        },
+        {
+          "code": "036810",
+          "name": "에프에스티",
+          "quantity": 68,
+          "evaluationAmount": 1046520,
+          "marketCap": 0,
+          "weight": 0.194535
+        },
+        {
+          "code": "348370",
+          "name": "엔켐",
+          "quantity": 84,
+          "evaluationAmount": 1252440,
+          "marketCap": 0,
+          "weight": 0.232813
+        },
+        {
+          "code": "290650",
+          "name": "엘앤씨바이오",
+          "quantity": 81,
+          "evaluationAmount": 4171500,
+          "marketCap": 0,
+          "weight": 0.775429
+        },
+        {
+          "code": "475830",
+          "name": "오름테라퓨틱",
+          "quantity": 76,
+          "evaluationAmount": 2872800,
+          "marketCap": 0,
+          "weight": 0.534017
+        },
+        {
+          "code": "039200",
+          "name": "오스코텍",
+          "quantity": 139,
+          "evaluationAmount": 3947600,
+          "marketCap": 0,
+          "weight": 0.733809
+        },
+        {
+          "code": "226950",
+          "name": "올릭스",
+          "quantity": 68,
+          "evaluationAmount": 6086000,
+          "marketCap": 0,
+          "weight": 1.13131
+        },
+        {
+          "code": "232140",
+          "name": "와이씨",
+          "quantity": 166,
+          "evaluationAmount": 1185240,
+          "marketCap": 0,
+          "weight": 0.220321
+        },
+        {
+          "code": "122870",
+          "name": "와이지엔터테인먼트",
+          "quantity": 60,
+          "evaluationAmount": 2232000,
+          "marketCap": 0,
+          "weight": 0.414901
+        },
+        {
+          "code": "032820",
+          "name": "우리기술",
+          "quantity": 665,
+          "evaluationAmount": 5147100,
+          "marketCap": 0,
+          "weight": 0.956781
+        },
+        {
+          "code": "041190",
+          "name": "우리기술투자",
+          "quantity": 220,
+          "evaluationAmount": 864600,
+          "marketCap": 0,
+          "weight": 0.160718
+        },
+        {
+          "code": "240810",
+          "name": "원익IPS",
+          "quantity": 139,
+          "evaluationAmount": 10605700,
+          "marketCap": 0,
+          "weight": 1.971466
+        },
+        {
+          "code": "074600",
+          "name": "원익QnC",
+          "quantity": 66,
+          "evaluationAmount": 1362900,
+          "marketCap": 0,
+          "weight": 0.253346
+        },
+        {
+          "code": "030530",
+          "name": "원익홀딩스",
+          "quantity": 169,
+          "evaluationAmount": 2264600,
+          "marketCap": 0,
+          "weight": 0.420961
+        },
+        {
+          "code": "069080",
+          "name": "웹젠",
+          "quantity": 81,
+          "evaluationAmount": 950940,
+          "marketCap": 0,
+          "weight": 0.176768
+        },
+        {
+          "code": "112040",
+          "name": "위메이드",
+          "quantity": 82,
+          "evaluationAmount": 1165220,
+          "marketCap": 0,
+          "weight": 0.2166
+        },
+        {
+          "code": "101730",
+          "name": "위메이드맥스",
+          "quantity": 88,
+          "evaluationAmount": 264440,
+          "marketCap": 0,
+          "weight": 0.049156
+        },
+        {
+          "code": "388720",
+          "name": "유일로보틱스",
+          "quantity": 25,
+          "evaluationAmount": 1400000,
+          "marketCap": 0,
+          "weight": 0.260242
+        },
+        {
+          "code": "056080",
+          "name": "유진로봇",
+          "quantity": 77,
+          "evaluationAmount": 721490,
+          "marketCap": 0,
+          "weight": 0.134116
+        },
+        {
+          "code": "084370",
+          "name": "유진테크",
+          "quantity": 58,
+          "evaluationAmount": 5138800,
+          "marketCap": 0,
+          "weight": 0.955238
+        },
+        {
+          "code": "272290",
+          "name": "이녹스첨단소재",
+          "quantity": 51,
+          "evaluationAmount": 881280,
+          "marketCap": 0,
+          "weight": 0.163819
+        },
+        {
+          "code": "039030",
+          "name": "이오테크닉스",
+          "quantity": 35,
+          "evaluationAmount": 8400000,
+          "marketCap": 0,
+          "weight": 1.561454
+        },
+        {
+          "code": "211050",
+          "name": "인카금융서비스",
+          "quantity": 110,
+          "evaluationAmount": 1043900,
+          "marketCap": 0,
+          "weight": 0.194048
+        },
+        {
+          "code": "189300",
+          "name": "인텔리안테크",
+          "quantity": 33,
+          "evaluationAmount": 1625250,
+          "marketCap": 0,
+          "weight": 0.302113
+        },
+        {
+          "code": "033100",
+          "name": "제룡전기",
+          "quantity": 44,
+          "evaluationAmount": 1606000,
+          "marketCap": 0,
+          "weight": 0.298535
+        },
+        {
+          "code": "204270",
+          "name": "제이앤티씨",
+          "quantity": 80,
+          "evaluationAmount": 896800,
+          "marketCap": 0,
+          "weight": 0.166704
+        },
+        {
+          "code": "080220",
+          "name": "제주반도체",
+          "quantity": 128,
+          "evaluationAmount": 6412800,
+          "marketCap": 0,
+          "weight": 1.192058
+        },
+        {
+          "code": "082270",
+          "name": "젬백스",
+          "quantity": 140,
+          "evaluationAmount": 1286600,
+          "marketCap": 0,
+          "weight": 0.239163
+        },
+        {
+          "code": "036930",
+          "name": "주성엔지니어링",
+          "quantity": 131,
+          "evaluationAmount": 12877300,
+          "marketCap": 0,
+          "weight": 2.393727
+        },
+        {
+          "code": "358570",
+          "name": "지아이이노베이션",
+          "quantity": 255,
+          "evaluationAmount": 1739100,
+          "marketCap": 0,
+          "weight": 0.323277
+        },
+        {
+          "code": "085660",
+          "name": "차바이오텍",
+          "quantity": 282,
+          "evaluationAmount": 2264460,
+          "marketCap": 0,
+          "weight": 0.420934
+        },
+        {
+          "code": "278280",
+          "name": "천보",
+          "quantity": 28,
+          "evaluationAmount": 791000,
+          "marketCap": 0,
+          "weight": 0.147037
+        },
+        {
+          "code": "293490",
+          "name": "카카오게임즈",
+          "quantity": 163,
+          "evaluationAmount": 1222500,
+          "marketCap": 0,
+          "weight": 0.227247
+        },
+        {
+          "code": "042000",
+          "name": "카페24",
+          "quantity": 78,
+          "evaluationAmount": 1228500,
+          "marketCap": 0,
+          "weight": 0.228363
+        },
+        {
+          "code": "078340",
+          "name": "컴투스",
+          "quantity": 32,
+          "evaluationAmount": 886400,
+          "marketCap": 0,
+          "weight": 0.164771
+        },
+        {
+          "code": "214370",
+          "name": "케어젠",
+          "quantity": 66,
+          "evaluationAmount": 3253800,
+          "marketCap": 0,
+          "weight": 0.60484
+        },
+        {
+          "code": "032500",
+          "name": "케이엠더블유",
+          "quantity": 123,
+          "evaluationAmount": 1520280,
+          "marketCap": 0,
+          "weight": 0.282601
+        },
+        {
+          "code": "052400",
+          "name": "코나아이",
+          "quantity": 35,
+          "evaluationAmount": 1288000,
+          "marketCap": 0,
+          "weight": 0.239423
+        },
+        {
+          "code": "241710",
+          "name": "코스메카코리아",
+          "quantity": 26,
+          "evaluationAmount": 2080000,
+          "marketCap": 0,
+          "weight": 0.386646
+        },
+        {
+          "code": "060280",
+          "name": "큐렉소",
+          "quantity": 122,
+          "evaluationAmount": 885720,
+          "marketCap": 0,
+          "weight": 0.164644
+        },
+        {
+          "code": "445680",
+          "name": "큐리옥스바이오시스템즈",
+          "quantity": 60,
+          "evaluationAmount": 2088000,
+          "marketCap": 0,
+          "weight": 0.388133
+        },
+        {
+          "code": "214150",
+          "name": "클래시스",
+          "quantity": 121,
+          "evaluationAmount": 4543550,
+          "marketCap": 0,
+          "weight": 0.844589
+        },
+        {
+          "code": "466100",
+          "name": "클로봇",
+          "quantity": 110,
+          "evaluationAmount": 2244000,
+          "marketCap": 0,
+          "weight": 0.417131
+        },
+        {
+          "code": "323280",
+          "name": "태성",
+          "quantity": 90,
+          "evaluationAmount": 2164500,
+          "marketCap": 0,
+          "weight": 0.402353
+        },
+        {
+          "code": "095610",
+          "name": "테스",
+          "quantity": 49,
+          "evaluationAmount": 4900000,
+          "marketCap": 0,
+          "weight": 0.910848
+        },
+        {
+          "code": "089030",
+          "name": "테크윙",
+          "quantity": 112,
+          "evaluationAmount": 3572800,
+          "marketCap": 0,
+          "weight": 0.664138
+        },
+        {
+          "code": "064760",
+          "name": "티씨케이",
+          "quantity": 24,
+          "evaluationAmount": 3316800,
+          "marketCap": 0,
+          "weight": 0.616551
+        },
+        {
+          "code": "131290",
+          "name": "티에스이",
+          "quantity": 23,
+          "evaluationAmount": 3302800,
+          "marketCap": 0,
+          "weight": 0.613949
+        },
+        {
+          "code": "214450",
+          "name": "파마리서치",
+          "quantity": 29,
+          "evaluationAmount": 10092000,
+          "marketCap": 0,
+          "weight": 1.875975
+        },
+        {
+          "code": "140860",
+          "name": "파크시스템스",
+          "quantity": 19,
+          "evaluationAmount": 4313000,
+          "marketCap": 0,
+          "weight": 0.801732
+        },
+        {
+          "code": "263750",
+          "name": "펄어비스",
+          "quantity": 160,
+          "evaluationAmount": 5136000,
+          "marketCap": 0,
+          "weight": 0.954717
+        },
+        {
+          "code": "251970",
+          "name": "펌텍코리아",
+          "quantity": 19,
+          "evaluationAmount": 881600,
+          "marketCap": 0,
+          "weight": 0.163878
+        },
+        {
+          "code": "087010",
+          "name": "펩트론",
+          "quantity": 90,
+          "evaluationAmount": 10872000,
+          "marketCap": 0,
+          "weight": 2.020967
+        },
+        {
+          "code": "009520",
+          "name": "포스코엠텍",
+          "quantity": 88,
+          "evaluationAmount": 807840,
+          "marketCap": 0,
+          "weight": 0.150167
+        },
+        {
+          "code": "319660",
+          "name": "피에스케이",
+          "quantity": 83,
+          "evaluationAmount": 8416200,
+          "marketCap": 0,
+          "weight": 1.564465
+        },
+        {
+          "code": "031980",
+          "name": "피에스케이홀딩스",
+          "quantity": 30,
+          "evaluationAmount": 2316000,
+          "marketCap": 0,
+          "weight": 0.430515
+        },
+        {
+          "code": "137400",
+          "name": "피엔티",
+          "quantity": 80,
+          "evaluationAmount": 2052000,
+          "marketCap": 0,
+          "weight": 0.381441
+        },
+        {
+          "code": "161580",
+          "name": "필옵틱스",
+          "quantity": 71,
+          "evaluationAmount": 1430650,
+          "marketCap": 0,
+          "weight": 0.26594
+        },
+        {
+          "code": "067310",
+          "name": "하나마이크론",
+          "quantity": 202,
+          "evaluationAmount": 4999500,
+          "marketCap": 0,
+          "weight": 0.929344
+        },
+        {
+          "code": "166090",
+          "name": "하나머티리얼즈",
+          "quantity": 44,
+          "evaluationAmount": 1898600,
+          "marketCap": 0,
+          "weight": 0.352926
+        },
+        {
+          "code": "003380",
+          "name": "하림지주",
+          "quantity": 184,
+          "evaluationAmount": 1637600,
+          "marketCap": 0,
+          "weight": 0.304409
+        },
+        {
+          "code": "125490",
+          "name": "한라캐스트",
+          "quantity": 94,
+          "evaluationAmount": 579040,
+          "marketCap": 0,
+          "weight": 0.107636
+        },
+        {
+          "code": "030520",
+          "name": "한컴",
+          "quantity": 64,
+          "evaluationAmount": 1013760,
+          "marketCap": 0,
+          "weight": 0.188445
+        },
+        {
+          "code": "319400",
+          "name": "현대무벡스",
+          "quantity": 235,
+          "evaluationAmount": 4547250,
+          "marketCap": 0,
+          "weight": 0.845276
+        },
+        {
+          "code": "048410",
+          "name": "현대바이오",
+          "quantity": 370,
+          "evaluationAmount": 1949900,
+          "marketCap": 0,
+          "weight": 0.362462
+        },
+        {
+          "code": "090710",
+          "name": "휴림로봇",
+          "quantity": 499,
+          "evaluationAmount": 2769450,
+          "marketCap": 0,
+          "weight": 0.514806
+        },
+        {
+          "code": "145020",
+          "name": "휴젤",
+          "quantity": 23,
+          "evaluationAmount": 5163500,
+          "marketCap": 0,
+          "weight": 0.959829
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 405857,
+          "weight": 0.075444
+        }
+      ],
+      "collectedAt": "2026-08-02T18:56:59.117Z"
     },
     "304660": {
       "etf": {
@@ -155010,6 +157158,148 @@
       ],
       "collectedAt": "2026-08-02T16:46:48.074Z"
     },
+    "421320": {
+      "etf": {
+        "code": "421320",
+        "name": "PLUS 우주항공",
+        "date": "20260803"
+      },
+      "summary": {
+        "totalComponents": 16,
+        "totalWeight": 99.99999899999999
+      },
+      "components": [
+        {
+          "code": "211270",
+          "name": "AP위성",
+          "quantity": 3043,
+          "evaluationAmount": 18866600,
+          "marketCap": 0,
+          "weight": 1.77683
+        },
+        {
+          "code": "079550",
+          "name": "LIG디펜스앤에어로스페이스",
+          "quantity": 243,
+          "evaluationAmount": 155763000,
+          "marketCap": 0,
+          "weight": 14.669543
+        },
+        {
+          "code": "474170",
+          "name": "루미르",
+          "quantity": 2619,
+          "evaluationAmount": 12505725,
+          "marketCap": 0,
+          "weight": 1.177772
+        },
+        {
+          "code": "347700",
+          "name": "스피어",
+          "quantity": 5797,
+          "evaluationAmount": 75071150,
+          "marketCap": 0,
+          "weight": 7.070097
+        },
+        {
+          "code": "099320",
+          "name": "쎄트렉아이",
+          "quantity": 1316,
+          "evaluationAmount": 75801600,
+          "marketCap": 0,
+          "weight": 7.138889
+        },
+        {
+          "code": "295310",
+          "name": "에이치브이엠",
+          "quantity": 2252,
+          "evaluationAmount": 69023800,
+          "marketCap": 0,
+          "weight": 6.500566
+        },
+        {
+          "code": "462350",
+          "name": "이노스페이스",
+          "quantity": 7120,
+          "evaluationAmount": 35208400,
+          "marketCap": 0,
+          "weight": 3.315878
+        },
+        {
+          "code": "189300",
+          "name": "인텔리안테크",
+          "quantity": 1714,
+          "evaluationAmount": 84414500,
+          "marketCap": 0,
+          "weight": 7.95004
+        },
+        {
+          "code": "361390",
+          "name": "제노코",
+          "quantity": 1371,
+          "evaluationAmount": 13860810,
+          "marketCap": 0,
+          "weight": 1.305392
+        },
+        {
+          "code": "451760",
+          "name": "컨텍",
+          "quantity": 3054,
+          "evaluationAmount": 17926980,
+          "marketCap": 0,
+          "weight": 1.688338
+        },
+        {
+          "code": "274090",
+          "name": "켄코아에어로스페이스",
+          "quantity": 2886,
+          "evaluationAmount": 21933600,
+          "marketCap": 0,
+          "weight": 2.065676
+        },
+        {
+          "code": "368770",
+          "name": "파이버프로",
+          "quantity": 5775,
+          "evaluationAmount": 55613250,
+          "marketCap": 0,
+          "weight": 5.237579
+        },
+        {
+          "code": "047810",
+          "name": "한국항공우주",
+          "quantity": 1415,
+          "evaluationAmount": 170790500,
+          "marketCap": 0,
+          "weight": 16.084812
+        },
+        {
+          "code": "272210",
+          "name": "한화시스템",
+          "quantity": 1992,
+          "evaluationAmount": 109759200,
+          "marketCap": 0,
+          "weight": 10.336969
+        },
+        {
+          "code": "012450",
+          "name": "한화에어로스페이스",
+          "quantity": 166,
+          "evaluationAmount": 143590000,
+          "marketCap": 0,
+          "weight": 13.523107
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 1683091,
+          "weight": 0.158511
+        }
+      ],
+      "collectedAt": "2026-08-02T18:56:45.543Z"
+    },
     "423160": {
       "etf": {
         "code": "423160",
@@ -180616,6 +182906,100 @@
       ],
       "collectedAt": "2026-08-02T16:23:41.086Z"
     },
+    "447660": {
+      "etf": {
+        "code": "447660",
+        "name": "PLUS 애플채권혼합",
+        "date": "20260803"
+      },
+      "summary": {
+        "totalComponents": 10,
+        "totalWeight": 99.999999
+      },
+      "components": [
+        {
+          "code": "114460",
+          "name": "ACE 국고채3년",
+          "quantity": 52.67,
+          "evaluationAmount": 5288779,
+          "marketCap": 0,
+          "weight": 1.061113
+        },
+        {
+          "code": "US0378331005",
+          "name": "APPLE INC",
+          "quantity": 422.28,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "114260",
+          "name": "KODEX 국고채3년",
+          "quantity": 32.67,
+          "evaluationAmount": 2012589,
+          "marketCap": 0,
+          "weight": 0.403795
+        },
+        {
+          "code": "298340",
+          "name": "PLUS 국채선물3년",
+          "quantity": 2233.33,
+          "evaluationAmount": 125714331,
+          "marketCap": 0,
+          "weight": 25.222672
+        },
+        {
+          "code": "114100",
+          "name": "RISE 국고채3년",
+          "quantity": 400,
+          "evaluationAmount": 42516000,
+          "marketCap": 0,
+          "weight": 8.53019
+        },
+        {
+          "code": "114820",
+          "name": "TIGER 국채3년",
+          "quantity": 482.67,
+          "evaluationAmount": 50571393,
+          "marketCap": 0,
+          "weight": 10.146382
+        },
+        {
+          "code": "KR103501GF63",
+          "name": "국고채권02250-2806(25-4)",
+          "quantity": 0,
+          "evaluationAmount": 65143466,
+          "marketCap": 0,
+          "weight": 13.070048
+        },
+        {
+          "code": "KR103501GFC3",
+          "name": "국고채권02750-2812(25-10)",
+          "quantity": 0,
+          "evaluationAmount": 65410599,
+          "marketCap": 0,
+          "weight": 13.123644
+        },
+        {
+          "code": "KR103503GG37",
+          "name": "국고채권03375-3103(26-3)",
+          "quantity": 0,
+          "evaluationAmount": 65600933,
+          "marketCap": 0,
+          "weight": 13.161831
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 76159882,
+          "weight": 15.280324
+        }
+      ],
+      "collectedAt": "2026-08-02T18:56:43.331Z"
+    },
     "448330": {
       "etf": {
         "code": "448330",
@@ -194282,6 +196666,812 @@
       ],
       "collectedAt": "2026-08-02T18:14:01.576Z"
     },
+    "451000": {
+      "etf": {
+        "code": "451000",
+        "name": "PLUS 종합채권(AA-이상)액티브",
+        "date": "20260803"
+      },
+      "summary": {
+        "totalComponents": 99,
+        "totalWeight": 99.99999600000001
+      },
+      "components": [
+        {
+          "code": "KR4A67690003",
+          "name": "10년국채   F 202609",
+          "quantity": -0.01,
+          "evaluationAmount": -716584,
+          "marketCap": 0,
+          "weight": 0.438078
+        },
+        {
+          "code": "KR6138932B78",
+          "name": "BNK금융지주35-2",
+          "quantity": 0,
+          "evaluationAmount": 586947,
+          "marketCap": 0,
+          "weight": 0.358826
+        },
+        {
+          "code": "KR6138931F18",
+          "name": "BNK금융지주48",
+          "quantity": 0,
+          "evaluationAmount": 2407256,
+          "marketCap": 0,
+          "weight": 1.471659
+        },
+        {
+          "code": "KR6015361F17",
+          "name": "INVENI4-1",
+          "quantity": 0,
+          "evaluationAmount": 2438634,
+          "marketCap": 0,
+          "weight": 1.490841
+        },
+        {
+          "code": "KRZE00601F9H",
+          "name": "KB국민 자금부 20250917-365-1",
+          "quantity": 0,
+          "evaluationAmount": 2443196,
+          "marketCap": 0,
+          "weight": 1.49363
+        },
+        {
+          "code": "KR6003453F20",
+          "name": "KB증권46-3",
+          "quantity": 0,
+          "evaluationAmount": 2357532,
+          "marketCap": 0,
+          "weight": 1.44126
+        },
+        {
+          "code": "KR6003451F55",
+          "name": "KB증권47-1",
+          "quantity": 0,
+          "evaluationAmount": 1702349,
+          "marketCap": 0,
+          "weight": 1.040719
+        },
+        {
+          "code": "KR6003452G12",
+          "name": "KB증권49-2",
+          "quantity": 0,
+          "evaluationAmount": 2393034,
+          "marketCap": 0,
+          "weight": 1.462964
+        },
+        {
+          "code": "KR6030203816",
+          "name": "KT190-3",
+          "quantity": 0,
+          "evaluationAmount": 240542,
+          "marketCap": 0,
+          "weight": 0.147054
+        },
+        {
+          "code": "KR6166261F92",
+          "name": "NH농협금융지주53-1",
+          "quantity": 0,
+          "evaluationAmount": 2415350,
+          "marketCap": 0,
+          "weight": 1.476607
+        },
+        {
+          "code": "491230",
+          "name": "PLUS 국공채머니마켓액티브",
+          "quantity": 28.83,
+          "evaluationAmount": 1509667,
+          "marketCap": 0,
+          "weight": 0.922924
+        },
+        {
+          "code": "289670",
+          "name": "PLUS 국채선물10년",
+          "quantity": 3.91,
+          "evaluationAmount": 203058,
+          "marketCap": 0,
+          "weight": 0.124138
+        },
+        {
+          "code": "298340",
+          "name": "PLUS 국채선물3년",
+          "quantity": 1.95,
+          "evaluationAmount": 110018,
+          "marketCap": 0,
+          "weight": 0.067259
+        },
+        {
+          "code": "278620",
+          "name": "PLUS 단기채권액티브",
+          "quantity": 24.43,
+          "evaluationAmount": 2899333,
+          "marketCap": 0,
+          "weight": 1.772486
+        },
+        {
+          "code": "239660",
+          "name": "PLUS 우량회사채50",
+          "quantity": 4.89,
+          "evaluationAmount": 593050,
+          "marketCap": 0,
+          "weight": 0.362557
+        },
+        {
+          "code": "KR6034732F36",
+          "name": "SK314-2",
+          "quantity": 0,
+          "evaluationAmount": 2346503,
+          "marketCap": 0,
+          "weight": 1.434518
+        },
+        {
+          "code": "KR6017672F90",
+          "name": "SK텔레콤91-2",
+          "quantity": 0,
+          "evaluationAmount": 2314268,
+          "marketCap": 0,
+          "weight": 1.414811
+        },
+        {
+          "code": "KR103502GA34",
+          "name": "국고채권01500-5003(20-2)",
+          "quantity": 0,
+          "evaluationAmount": 163665,
+          "marketCap": 0,
+          "weight": 0.100055
+        },
+        {
+          "code": "KR103502G966",
+          "name": "국고채권01875-2906(19-4)",
+          "quantity": 0,
+          "evaluationAmount": 371018,
+          "marketCap": 0,
+          "weight": 0.226819
+        },
+        {
+          "code": "KR103503GB99",
+          "name": "국고채권01875-4109(21-9)",
+          "quantity": 0,
+          "evaluationAmount": 177622,
+          "marketCap": 0,
+          "weight": 0.108588
+        },
+        {
+          "code": "KR103502GB33",
+          "name": "국고채권01875-5103(21-2)",
+          "quantity": 0,
+          "evaluationAmount": 21,
+          "marketCap": 0,
+          "weight": 0.000013
+        },
+        {
+          "code": "KR103502GB66",
+          "name": "국고채권02000-3106(21-5)",
+          "quantity": 0,
+          "evaluationAmount": 712101,
+          "marketCap": 0,
+          "weight": 0.435338
+        },
+        {
+          "code": "KR103502G636",
+          "name": "국고채권02000-4603(16-1)",
+          "quantity": 0,
+          "evaluationAmount": 147275,
+          "marketCap": 0,
+          "weight": 0.090036
+        },
+        {
+          "code": "KR103502G933",
+          "name": "국고채권02000-4903(19-2)",
+          "quantity": 0,
+          "evaluationAmount": 162384,
+          "marketCap": 0,
+          "weight": 0.099272
+        },
+        {
+          "code": "KR103502G735",
+          "name": "국고채권02125-4703(17-1)",
+          "quantity": 0,
+          "evaluationAmount": 185069,
+          "marketCap": 0,
+          "weight": 0.113141
+        },
+        {
+          "code": "KR103501GF63",
+          "name": "국고채권02250-2806(25-4)",
+          "quantity": 0,
+          "evaluationAmount": 119368,
+          "marketCap": 0,
+          "weight": 0.072975
+        },
+        {
+          "code": "KR103502GBC0",
+          "name": "국고채권02375-3112(21-11)",
+          "quantity": 0,
+          "evaluationAmount": 1932795,
+          "marketCap": 0,
+          "weight": 1.1816
+        },
+        {
+          "code": "KR103502G891",
+          "name": "국고채권02375-3809(18-7)",
+          "quantity": 0,
+          "evaluationAmount": 60245,
+          "marketCap": 0,
+          "weight": 0.03683
+        },
+        {
+          "code": "KR103503GF95",
+          "name": "국고채권02500-3009(25-8)",
+          "quantity": 0,
+          "evaluationAmount": 46531,
+          "marketCap": 0,
+          "weight": 0.028446
+        },
+        {
+          "code": "KR103502GC32",
+          "name": "국고채권02500-5203(22-2)",
+          "quantity": 0,
+          "evaluationAmount": 297975,
+          "marketCap": 0,
+          "weight": 0.182165
+        },
+        {
+          "code": "KR103503GF38",
+          "name": "국고채권02625-3003(25-3)",
+          "quantity": 0,
+          "evaluationAmount": 283118,
+          "marketCap": 0,
+          "weight": 0.173082
+        },
+        {
+          "code": "KR103502G594",
+          "name": "국고채권02625-3509(15-6)",
+          "quantity": 0,
+          "evaluationAmount": 64774,
+          "marketCap": 0,
+          "weight": 0.039599
+        },
+        {
+          "code": "KR103502G834",
+          "name": "국고채권02625-4803(18-2)",
+          "quantity": 0,
+          "evaluationAmount": 473854,
+          "marketCap": 0,
+          "weight": 0.289687
+        },
+        {
+          "code": "KR103502GF39",
+          "name": "국고채권02625-5503(25-2)",
+          "quantity": 0,
+          "evaluationAmount": 2836332,
+          "marketCap": 0,
+          "weight": 1.733971
+        },
+        {
+          "code": "KR103502GF96",
+          "name": "국고채권02625-5509(25-7)",
+          "quantity": 0,
+          "evaluationAmount": 163286,
+          "marketCap": 0,
+          "weight": 0.099824
+        },
+        {
+          "code": "KR103501GFC3",
+          "name": "국고채권02750-2812(25-10)",
+          "quantity": 0,
+          "evaluationAmount": 1198581,
+          "marketCap": 0,
+          "weight": 0.732744
+        },
+        {
+          "code": "KR103502G4C9",
+          "name": "국고채권02750-4412(14-7)",
+          "quantity": 0,
+          "evaluationAmount": 269014,
+          "marketCap": 0,
+          "weight": 0.16446
+        },
+        {
+          "code": "KR103504GF94",
+          "name": "국고채권02750-4509(25-9)",
+          "quantity": 0,
+          "evaluationAmount": 4041235,
+          "marketCap": 0,
+          "weight": 2.47058
+        },
+        {
+          "code": "KR103504GE95",
+          "name": "국고채권02875-4409(24-10)",
+          "quantity": 0,
+          "evaluationAmount": 1585415,
+          "marketCap": 0,
+          "weight": 0.969232
+        },
+        {
+          "code": "KR103501GE98",
+          "name": "국고채권03000-2909(24-7)",
+          "quantity": 0,
+          "evaluationAmount": 120437,
+          "marketCap": 0,
+          "weight": 0.073628
+        },
+        {
+          "code": "KR103502GEC4",
+          "name": "국고채권03000-3412(24-13)",
+          "quantity": 0,
+          "evaluationAmount": 417662,
+          "marketCap": 0,
+          "weight": 0.255335
+        },
+        {
+          "code": "KR10350172C8",
+          "name": "국고채권03000-4212(12-5)",
+          "quantity": 0,
+          "evaluationAmount": 162860,
+          "marketCap": 0,
+          "weight": 0.099563
+        },
+        {
+          "code": "KR103501GD32",
+          "name": "국고채권03250-2803(23-1)",
+          "quantity": 0,
+          "evaluationAmount": 3439,
+          "marketCap": 0,
+          "weight": 0.002102
+        },
+        {
+          "code": "KR103501GE31",
+          "name": "국고채권03250-2903(24-1)",
+          "quantity": 0,
+          "evaluationAmount": 463638,
+          "marketCap": 0,
+          "weight": 0.283442
+        },
+        {
+          "code": "KR103502GD64",
+          "name": "국고채권03250-3306(23-5)",
+          "quantity": 0,
+          "evaluationAmount": 1008549,
+          "marketCap": 0,
+          "weight": 0.616569
+        },
+        {
+          "code": "KR103502GFC1",
+          "name": "국고채권03250-3512(25-11)",
+          "quantity": 0,
+          "evaluationAmount": 1578324,
+          "marketCap": 0,
+          "weight": 0.964897
+        },
+        {
+          "code": "KR103504GC97",
+          "name": "국고채권03250-4209(22-11)",
+          "quantity": 0,
+          "evaluationAmount": 2301933,
+          "marketCap": 0,
+          "weight": 1.40727
+        },
+        {
+          "code": "KR103502GD31",
+          "name": "국고채권03250-5303(23-2)",
+          "quantity": 0,
+          "evaluationAmount": 168860,
+          "marketCap": 0,
+          "weight": 0.103231
+        },
+        {
+          "code": "KR103502GE30",
+          "name": "국고채권03250-5403(24-2)",
+          "quantity": 0,
+          "evaluationAmount": 4049104,
+          "marketCap": 0,
+          "weight": 2.47539
+        },
+        {
+          "code": "KR103503GG37",
+          "name": "국고채권03375-3103(26-3)",
+          "quantity": 0,
+          "evaluationAmount": 1682897,
+          "marketCap": 0,
+          "weight": 1.028827
+        },
+        {
+          "code": "KR103502GE63",
+          "name": "국고채권03500-3406(24-5)",
+          "quantity": 0,
+          "evaluationAmount": 141742,
+          "marketCap": 0,
+          "weight": 0.086653
+        },
+        {
+          "code": "KR103501GG39",
+          "name": "국고채권03500-5603(26-2)",
+          "quantity": 0,
+          "evaluationAmount": 4755212,
+          "marketCap": 0,
+          "weight": 2.907065
+        },
+        {
+          "code": "KR103502GD98",
+          "name": "국고채권03625-5309(23-7)",
+          "quantity": 0,
+          "evaluationAmount": 697611,
+          "marketCap": 0,
+          "weight": 0.426479
+        },
+        {
+          "code": "KR103502G3C1",
+          "name": "국고채권03750-3312(13-8)",
+          "quantity": 0,
+          "evaluationAmount": 71414,
+          "marketCap": 0,
+          "weight": 0.043658
+        },
+        {
+          "code": "KR103504GD96",
+          "name": "국고채권03875-4309(23-9)",
+          "quantity": 0,
+          "evaluationAmount": 460070,
+          "marketCap": 0,
+          "weight": 0.28126
+        },
+        {
+          "code": "KR103502GCC8",
+          "name": "국고채권04250-3212(22-14)",
+          "quantity": 0,
+          "evaluationAmount": 179897,
+          "marketCap": 0,
+          "weight": 0.109979
+        },
+        {
+          "code": "KR103503GG60",
+          "name": "국고채권04250-3606(26-6)",
+          "quantity": 0,
+          "evaluationAmount": 489106,
+          "marketCap": 0,
+          "weight": 0.299011
+        },
+        {
+          "code": "KRC0350C3635",
+          "name": "국고채이자분리채권01640-3603",
+          "quantity": 0,
+          "evaluationAmount": 1617036,
+          "marketCap": 0,
+          "weight": 0.988563
+        },
+        {
+          "code": "KRZF003546FP",
+          "name": "대신증권 20251121-364-39",
+          "quantity": 0,
+          "evaluationAmount": 1221598,
+          "marketCap": 0,
+          "weight": 0.746815
+        },
+        {
+          "code": "KRZF003547FP",
+          "name": "대신증권 20251121-364-40",
+          "quantity": 0,
+          "evaluationAmount": 1221598,
+          "marketCap": 0,
+          "weight": 0.746815
+        },
+        {
+          "code": "KR6003543G13",
+          "name": "대신증권26-2",
+          "quantity": 0,
+          "evaluationAmount": 2392641,
+          "marketCap": 0,
+          "weight": 1.462724
+        },
+        {
+          "code": "KRZF00856MFC",
+          "name": "메리츠증권 20251201-364-21",
+          "quantity": 0,
+          "evaluationAmount": 1221598,
+          "marketCap": 0,
+          "weight": 0.746815
+        },
+        {
+          "code": "KRZF00856NFC",
+          "name": "메리츠증권 20251201-364-22",
+          "quantity": 0,
+          "evaluationAmount": 1221598,
+          "marketCap": 0,
+          "weight": 0.746815
+        },
+        {
+          "code": "KR6008561F93",
+          "name": "메리츠증권2509-1",
+          "quantity": 0,
+          "evaluationAmount": 2415946,
+          "marketCap": 0,
+          "weight": 1.476971
+        },
+        {
+          "code": "KR103503G865",
+          "name": "물가연동국고채권01750-2806(18-5)",
+          "quantity": 0,
+          "evaluationAmount": 303558,
+          "marketCap": 0,
+          "weight": 0.185578
+        },
+        {
+          "code": "KR6006801F14",
+          "name": "미래에셋증권74-1",
+          "quantity": 0,
+          "evaluationAmount": 2438534,
+          "marketCap": 0,
+          "weight": 1.49078
+        },
+        {
+          "code": "KR6082974F57",
+          "name": "미래에셋캐피탈121-2",
+          "quantity": 0,
+          "evaluationAmount": 957515,
+          "marketCap": 0,
+          "weight": 0.58537
+        },
+        {
+          "code": "KR6082971F76",
+          "name": "미래에셋캐피탈123",
+          "quantity": 0,
+          "evaluationAmount": 2383840,
+          "marketCap": 0,
+          "weight": 1.457343
+        },
+        {
+          "code": "KR6016362F14",
+          "name": "삼성증권22-2",
+          "quantity": 0,
+          "evaluationAmount": 2342135,
+          "marketCap": 0,
+          "weight": 1.431847
+        },
+        {
+          "code": "KR6016361G22",
+          "name": "삼성증권24-1",
+          "quantity": 0,
+          "evaluationAmount": 1208774,
+          "marketCap": 0,
+          "weight": 0.738975
+        },
+        {
+          "code": "KR6016362G21",
+          "name": "삼성증권24-2",
+          "quantity": 0,
+          "evaluationAmount": 2397730,
+          "marketCap": 0,
+          "weight": 1.465835
+        },
+        {
+          "code": "KR602978CF54",
+          "name": "삼성카드2777",
+          "quantity": 0,
+          "evaluationAmount": 2358387,
+          "marketCap": 0,
+          "weight": 1.441783
+        },
+        {
+          "code": "KR6029783F91",
+          "name": "삼성카드2814",
+          "quantity": 0,
+          "evaluationAmount": 2341847,
+          "marketCap": 0,
+          "weight": 1.431671
+        },
+        {
+          "code": "KR350201GB67",
+          "name": "서울교통공사2021-2",
+          "quantity": 0,
+          "evaluationAmount": 443463,
+          "marketCap": 0,
+          "weight": 0.271108
+        },
+        {
+          "code": "KR6000013F78",
+          "name": "신한은행29-07-이-2-A",
+          "quantity": 0,
+          "evaluationAmount": 2419137,
+          "marketCap": 0,
+          "weight": 1.478922
+        },
+        {
+          "code": "KR603271EE14",
+          "name": "신한카드2207-3",
+          "quantity": 0,
+          "evaluationAmount": 1219104,
+          "marketCap": 0,
+          "weight": 0.74529
+        },
+        {
+          "code": "KR6019454E67",
+          "name": "아이비케이캐피탈304-4",
+          "quantity": 0,
+          "evaluationAmount": 2452499,
+          "marketCap": 0,
+          "weight": 1.499318
+        },
+        {
+          "code": "KR6019452G75",
+          "name": "아이비케이캐피탈356-2",
+          "quantity": 0,
+          "evaluationAmount": 2449235,
+          "marketCap": 0,
+          "weight": 1.497322
+        },
+        {
+          "code": "KR6176944G46",
+          "name": "아이엠캐피탈149-2",
+          "quantity": 0,
+          "evaluationAmount": 1213049,
+          "marketCap": 0,
+          "weight": 0.741589
+        },
+        {
+          "code": "KR6176942G55",
+          "name": "아이엠캐피탈150-2",
+          "quantity": 0,
+          "evaluationAmount": 2449201,
+          "marketCap": 0,
+          "weight": 1.497301
+        },
+        {
+          "code": "KR6395401EA5",
+          "name": "에스케이위탁관리부동산투자회사5-1",
+          "quantity": 0,
+          "evaluationAmount": 2449323,
+          "marketCap": 0,
+          "weight": 1.497376
+        },
+        {
+          "code": "KR6097248G39",
+          "name": "엔에이치농협캐피탈261-8",
+          "quantity": 0,
+          "evaluationAmount": 1220419,
+          "marketCap": 0,
+          "weight": 0.746094
+        },
+        {
+          "code": "KR6097241G44",
+          "name": "엔에이치농협캐피탈263-1",
+          "quantity": 0,
+          "evaluationAmount": 1700541,
+          "marketCap": 0,
+          "weight": 1.039613
+        },
+        {
+          "code": "KRZE08401FBQ",
+          "name": "우리 여의도중앙기업영업지원팀 20251124-3",
+          "quantity": 0,
+          "evaluationAmount": 2443196,
+          "marketCap": 0,
+          "weight": 1.49363
+        },
+        {
+          "code": "KR6174144E33",
+          "name": "우리카드237-4",
+          "quantity": 0,
+          "evaluationAmount": 2459176,
+          "marketCap": 0,
+          "weight": 1.503399
+        },
+        {
+          "code": "KR6174147F47",
+          "name": "우리카드261-2(사)",
+          "quantity": 0,
+          "evaluationAmount": 1434715,
+          "marketCap": 0,
+          "weight": 0.877103
+        },
+        {
+          "code": "KR355901G3A8",
+          "name": "인천항만공사9",
+          "quantity": 0,
+          "evaluationAmount": 2373679,
+          "marketCap": 0,
+          "weight": 1.451132
+        },
+        {
+          "code": "KR6021963G40",
+          "name": "케이비캐피탈580-3",
+          "quantity": 0,
+          "evaluationAmount": 1461422,
+          "marketCap": 0,
+          "weight": 0.89343
+        },
+        {
+          "code": "KR6420601F27",
+          "name": "코리아에너지터미널5",
+          "quantity": 0,
+          "evaluationAmount": 2417441,
+          "marketCap": 0,
+          "weight": 1.477885
+        },
+        {
+          "code": "KR6263911820",
+          "name": "토지지원리츠제1호위탁관리부동산투자회사2",
+          "quantity": 0,
+          "evaluationAmount": 235093,
+          "marketCap": 0,
+          "weight": 0.143722
+        },
+        {
+          "code": "KRZE08101G7L",
+          "name": "하나 금융기관영업팀 20260720-91-1",
+          "quantity": 0,
+          "evaluationAmount": 2443196,
+          "marketCap": 0,
+          "weight": 1.49363
+        },
+        {
+          "code": "KR6205493E32",
+          "name": "하나카드257-3",
+          "quantity": 0,
+          "evaluationAmount": 2455673,
+          "marketCap": 0,
+          "weight": 1.501258
+        },
+        {
+          "code": "KR6205493EC8",
+          "name": "하나카드271-3",
+          "quantity": 0,
+          "evaluationAmount": 2437256,
+          "marketCap": 0,
+          "weight": 1.489999
+        },
+        {
+          "code": "KR6205497FC6",
+          "name": "하나카드293-2",
+          "quantity": 0,
+          "evaluationAmount": 2434087,
+          "marketCap": 0,
+          "weight": 1.488062
+        },
+        {
+          "code": "KR350802G937",
+          "name": "한국가스공사392",
+          "quantity": 0,
+          "evaluationAmount": 232647,
+          "marketCap": 0,
+          "weight": 0.142227
+        },
+        {
+          "code": "KR350108GA47",
+          "name": "한국전력공사채권1036",
+          "quantity": 0,
+          "evaluationAmount": 448526,
+          "marketCap": 0,
+          "weight": 0.274203
+        },
+        {
+          "code": "KR350102GB83",
+          "name": "한국전력공사채권1058",
+          "quantity": 0,
+          "evaluationAmount": 2208582,
+          "marketCap": 0,
+          "weight": 1.350201
+        },
+        {
+          "code": "KR6095927E25",
+          "name": "현대커머셜508-5",
+          "quantity": 0,
+          "evaluationAmount": 2472487,
+          "marketCap": 0,
+          "weight": 1.511537
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": -27835118,
+          "weight": 17.016798
+        }
+      ],
+      "collectedAt": "2026-08-02T18:56:50.143Z"
+    },
     "451060": {
       "etf": {
         "code": "451060",
@@ -205997,6 +209187,188 @@
         }
       ],
       "collectedAt": "2026-08-02T18:56:27.197Z"
+    },
+    "464920": {
+      "etf": {
+        "code": "464920",
+        "name": "PLUS 일본반도체소부장",
+        "date": "20260803"
+      },
+      "summary": {
+        "totalComponents": 21,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "JP3114800000",
+          "name": "ADEKA CORP",
+          "quantity": 168.16,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3122400009",
+          "name": "ADVANTEST CORP",
+          "quantity": 989.64,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3548770001",
+          "name": "DEXERIALS CORP",
+          "quantity": 292.32,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3548600000",
+          "name": "DISCO CORP",
+          "quantity": 174.04,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3837800006",
+          "name": "HOYA CORP",
+          "quantity": 645.84,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3151600008",
+          "name": "IWATANI CORP",
+          "quantity": 371.88,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3293330001",
+          "name": "KOKUSAI ELECTRIC CORP",
+          "quantity": 383.24,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3750400008",
+          "name": "MICRONICS JAPAN CO LTD",
+          "quantity": 52.64,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3711600001",
+          "name": "NIPPON SANSO HOLDINGS CORP",
+          "quantity": 363.16,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3368000000",
+          "name": "RESONAC HOLDINGS CORP",
+          "quantity": 344.96,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3982200002",
+          "name": "RORZE CORP",
+          "quantity": 180.12,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3494600004",
+          "name": "SCREEN HOLDINGS CO LTD",
+          "quantity": 319.24,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3355000005",
+          "name": "SHIBAURA MECHATRONICS CORP",
+          "quantity": 88.32,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3371200001",
+          "name": "SHIN-ETSU CHEMICAL CO LTD",
+          "quantity": 3265.88,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3322930003",
+          "name": "SUMCO CORP",
+          "quantity": 662.84,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3401400001",
+          "name": "SUMITOMO CHEMICAL CO LTD",
+          "quantity": 2777.24,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3571400005",
+          "name": "TOKYO ELECTRON LTD",
+          "quantity": 581.68,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3571800006",
+          "name": "TOKYO OHKA KOGYO CO LTD",
+          "quantity": 196.2,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3580200008",
+          "name": "TOKYO SEIMITSU CO LTD",
+          "quantity": 71.8,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3126190002",
+          "name": "ULVAC INC",
+          "quantity": 81.08,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 2432155,
+          "weight": 100
+        }
+      ],
+      "collectedAt": "2026-08-02T18:56:47.649Z"
     },
     "465580": {
       "etf": {
@@ -227368,6 +230740,44 @@
       ],
       "collectedAt": "2026-08-02T17:29:54.477Z"
     },
+    "489000": {
+      "etf": {
+        "code": "489000",
+        "name": "PLUS 일본엔화초단기국채(합성)",
+        "date": "20260803"
+      },
+      "summary": {
+        "totalComponents": 3,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "KRYZTRSF4X01",
+          "name": "스왑(메리츠증권)_6369_20250430",
+          "quantity": -24975476.06,
+          "evaluationAmount": -24975476,
+          "marketCap": 0,
+          "weight": 4.797015
+        },
+        {
+          "code": "KRYZTRSF7A01",
+          "name": "스왑(미래에셋증권)_6369_20250710",
+          "quantity": -3015592.77,
+          "evaluationAmount": -3015592,
+          "marketCap": 0,
+          "weight": 0.579202
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 492655114,
+          "weight": 94.623783
+        }
+      ],
+      "collectedAt": "2026-08-02T18:56:47.788Z"
+    },
     "489010": {
       "etf": {
         "code": "489010",
@@ -239105,6 +242515,820 @@
         }
       ],
       "collectedAt": "2026-08-02T17:08:25.333Z"
+    },
+    "495040": {
+      "etf": {
+        "code": "495040",
+        "name": "PLUS 코리아밸류업",
+        "date": "20260803"
+      },
+      "summary": {
+        "totalComponents": 100,
+        "totalWeight": 100.00000099999997
+      },
+      "components": [
+        {
+          "code": "282330",
+          "name": "BGF리테일",
+          "quantity": 12,
+          "evaluationAmount": 1516800,
+          "marketCap": 0,
+          "weight": 0.112593
+        },
+        {
+          "code": "005830",
+          "name": "DB손해보험",
+          "quantity": 55,
+          "evaluationAmount": 8959500,
+          "marketCap": 0,
+          "weight": 0.665068
+        },
+        {
+          "code": "000990",
+          "name": "DB하이텍",
+          "quantity": 41,
+          "evaluationAmount": 2919200,
+          "marketCap": 0,
+          "weight": 0.216694
+        },
+        {
+          "code": "383220",
+          "name": "F&F",
+          "quantity": 19,
+          "evaluationAmount": 1499100,
+          "marketCap": 0,
+          "weight": 0.111279
+        },
+        {
+          "code": "009540",
+          "name": "HD한국조선해양",
+          "quantity": 63,
+          "evaluationAmount": 23215500,
+          "marketCap": 0,
+          "weight": 1.723297
+        },
+        {
+          "code": "267250",
+          "name": "HD현대",
+          "quantity": 60,
+          "evaluationAmount": 11634000,
+          "marketCap": 0,
+          "weight": 0.863597
+        },
+        {
+          "code": "443060",
+          "name": "HD현대마린솔루션",
+          "quantity": 26,
+          "evaluationAmount": 4698200,
+          "marketCap": 0,
+          "weight": 0.34875
+        },
+        {
+          "code": "267260",
+          "name": "HD현대일렉트릭",
+          "quantity": 30,
+          "evaluationAmount": 17490000,
+          "marketCap": 0,
+          "weight": 1.298291
+        },
+        {
+          "code": "329180",
+          "name": "HD현대중공업",
+          "quantity": 44,
+          "evaluationAmount": 19712000,
+          "marketCap": 0,
+          "weight": 1.463231
+        },
+        {
+          "code": "011200",
+          "name": "HMM",
+          "quantity": 418,
+          "evaluationAmount": 8631700,
+          "marketCap": 0,
+          "weight": 0.640735
+        },
+        {
+          "code": "403870",
+          "name": "HPSP",
+          "quantity": 87,
+          "evaluationAmount": 2483850,
+          "marketCap": 0,
+          "weight": 0.184377
+        },
+        {
+          "code": "175330",
+          "name": "JB금융지주",
+          "quantity": 210,
+          "evaluationAmount": 5649000,
+          "marketCap": 0,
+          "weight": 0.419328
+        },
+        {
+          "code": "001060",
+          "name": "JW중외제약",
+          "quantity": 16,
+          "evaluationAmount": 361600,
+          "marketCap": 0,
+          "weight": 0.026842
+        },
+        {
+          "code": "035900",
+          "name": "JYP Ent.",
+          "quantity": 36,
+          "evaluationAmount": 1512000,
+          "marketCap": 0,
+          "weight": 0.112236
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "quantity": 405,
+          "evaluationAmount": 67797000,
+          "marketCap": 0,
+          "weight": 5.032602
+        },
+        {
+          "code": "030200",
+          "name": "KT",
+          "quantity": 294,
+          "evaluationAmount": 15523200,
+          "marketCap": 0,
+          "weight": 1.152294
+        },
+        {
+          "code": "033780",
+          "name": "KT&G",
+          "quantity": 120,
+          "evaluationAmount": 22296000,
+          "marketCap": 0,
+          "weight": 1.655042
+        },
+        {
+          "code": "011070",
+          "name": "LG이노텍",
+          "quantity": 19,
+          "evaluationAmount": 8056000,
+          "marketCap": 0,
+          "weight": 0.598001
+        },
+        {
+          "code": "079550",
+          "name": "LIG디펜스앤에어로스페이스",
+          "quantity": 18,
+          "evaluationAmount": 11538000,
+          "marketCap": 0,
+          "weight": 0.856471
+        },
+        {
+          "code": "005940",
+          "name": "NH투자증권",
+          "quantity": 196,
+          "evaluationAmount": 5213600,
+          "marketCap": 0,
+          "weight": 0.387008
+        },
+        {
+          "code": "030190",
+          "name": "NICE평가정보",
+          "quantity": 44,
+          "evaluationAmount": 631840,
+          "marketCap": 0,
+          "weight": 0.046902
+        },
+        {
+          "code": "018670",
+          "name": "SK가스",
+          "quantity": 3,
+          "evaluationAmount": 679500,
+          "marketCap": 0,
+          "weight": 0.05044
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "quantity": 122,
+          "evaluationAmount": 97478000,
+          "marketCap": 0,
+          "weight": 7.235837
+        },
+        {
+          "code": "017670",
+          "name": "SK텔레콤",
+          "quantity": 199,
+          "evaluationAmount": 15561800,
+          "marketCap": 0,
+          "weight": 1.15516
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "quantity": 179,
+          "evaluationAmount": 236638000,
+          "marketCap": 0,
+          "weight": 17.565747
+        },
+        {
+          "code": "100840",
+          "name": "SNT에너지",
+          "quantity": 12,
+          "evaluationAmount": 267000,
+          "marketCap": 0,
+          "weight": 0.01982
+        },
+        {
+          "code": "067160",
+          "name": "SOOP",
+          "quantity": 10,
+          "evaluationAmount": 482500,
+          "marketCap": 0,
+          "weight": 0.035816
+        },
+        {
+          "code": "035250",
+          "name": "강원랜드",
+          "quantity": 152,
+          "evaluationAmount": 2213120,
+          "marketCap": 0,
+          "weight": 0.164281
+        },
+        {
+          "code": "011780",
+          "name": "금호석유화학",
+          "quantity": 20,
+          "evaluationAmount": 2260000,
+          "marketCap": 0,
+          "weight": 0.167761
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "quantity": 325,
+          "evaluationAmount": 39260000,
+          "marketCap": 0,
+          "weight": 2.914288
+        },
+        {
+          "code": "348210",
+          "name": "넥스틴",
+          "quantity": 10,
+          "evaluationAmount": 253000,
+          "marketCap": 0,
+          "weight": 0.01878
+        },
+        {
+          "code": "003490",
+          "name": "대한항공",
+          "quantity": 341,
+          "evaluationAmount": 8405650,
+          "marketCap": 0,
+          "weight": 0.623955
+        },
+        {
+          "code": "026960",
+          "name": "동서",
+          "quantity": 42,
+          "evaluationAmount": 1096200,
+          "marketCap": 0,
+          "weight": 0.081371
+        },
+        {
+          "code": "014820",
+          "name": "동원시스템즈",
+          "quantity": 7,
+          "evaluationAmount": 141050,
+          "marketCap": 0,
+          "weight": 0.01047
+        },
+        {
+          "code": "005290",
+          "name": "동진쎄미켐",
+          "quantity": 45,
+          "evaluationAmount": 1491750,
+          "marketCap": 0,
+          "weight": 0.110733
+        },
+        {
+          "code": "241560",
+          "name": "두산밥캣",
+          "quantity": 70,
+          "evaluationAmount": 4032000,
+          "marketCap": 0,
+          "weight": 0.299297
+        },
+        {
+          "code": "376300",
+          "name": "디어유",
+          "quantity": 16,
+          "evaluationAmount": 304800,
+          "marketCap": 0,
+          "weight": 0.022625
+        },
+        {
+          "code": "089860",
+          "name": "롯데렌탈",
+          "quantity": 18,
+          "evaluationAmount": 675900,
+          "marketCap": 0,
+          "weight": 0.050172
+        },
+        {
+          "code": "058470",
+          "name": "리노공업",
+          "quantity": 67,
+          "evaluationAmount": 3698400,
+          "marketCap": 0,
+          "weight": 0.274534
+        },
+        {
+          "code": "138040",
+          "name": "메리츠금융지주",
+          "quantity": 99,
+          "evaluationAmount": 12285900,
+          "marketCap": 0,
+          "weight": 0.911988
+        },
+        {
+          "code": "006800",
+          "name": "미래에셋증권",
+          "quantity": 361,
+          "evaluationAmount": 10902200,
+          "marketCap": 0,
+          "weight": 0.809275
+        },
+        {
+          "code": "002840",
+          "name": "미원상사",
+          "quantity": 2,
+          "evaluationAmount": 253800,
+          "marketCap": 0,
+          "weight": 0.01884
+        },
+        {
+          "code": "082920",
+          "name": "비츠로셀",
+          "quantity": 37,
+          "evaluationAmount": 906500,
+          "marketCap": 0,
+          "weight": 0.06729
+        },
+        {
+          "code": "005180",
+          "name": "빙그레",
+          "quantity": 6,
+          "evaluationAmount": 403200,
+          "marketCap": 0,
+          "weight": 0.02993
+        },
+        {
+          "code": "062040",
+          "name": "산일전기",
+          "quantity": 23,
+          "evaluationAmount": 2778400,
+          "marketCap": 0,
+          "weight": 0.206242
+        },
+        {
+          "code": "028050",
+          "name": "삼성E&A",
+          "quantity": 211,
+          "evaluationAmount": 8651000,
+          "marketCap": 0,
+          "weight": 0.642168
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "quantity": 1018,
+          "evaluationAmount": 210726000,
+          "marketCap": 0,
+          "weight": 15.642287
+        },
+        {
+          "code": "016360",
+          "name": "삼성증권",
+          "quantity": 82,
+          "evaluationAmount": 7404600,
+          "marketCap": 0,
+          "weight": 0.549647
+        },
+        {
+          "code": "000810",
+          "name": "삼성화재",
+          "quantity": 40,
+          "evaluationAmount": 24720000,
+          "marketCap": 0,
+          "weight": 1.834977
+        },
+        {
+          "code": "003230",
+          "name": "삼양식품",
+          "quantity": 5,
+          "evaluationAmount": 6215000,
+          "marketCap": 0,
+          "weight": 0.461342
+        },
+        {
+          "code": "075580",
+          "name": "세진중공업",
+          "quantity": 29,
+          "evaluationAmount": 268830,
+          "marketCap": 0,
+          "weight": 0.019955
+        },
+        {
+          "code": "357780",
+          "name": "솔브레인",
+          "quantity": 5,
+          "evaluationAmount": 1122500,
+          "marketCap": 0,
+          "weight": 0.083324
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "quantity": 548,
+          "evaluationAmount": 55238400,
+          "marketCap": 0,
+          "weight": 4.100372
+        },
+        {
+          "code": "090430",
+          "name": "아모레퍼시픽",
+          "quantity": 42,
+          "evaluationAmount": 5628000,
+          "marketCap": 0,
+          "weight": 0.417769
+        },
+        {
+          "code": "005850",
+          "name": "에스엘",
+          "quantity": 21,
+          "evaluationAmount": 1052100,
+          "marketCap": 0,
+          "weight": 0.078098
+        },
+        {
+          "code": "012750",
+          "name": "에스원",
+          "quantity": 33,
+          "evaluationAmount": 2369400,
+          "marketCap": 0,
+          "weight": 0.175882
+        },
+        {
+          "code": "237690",
+          "name": "에스티팜",
+          "quantity": 17,
+          "evaluationAmount": 1439900,
+          "marketCap": 0,
+          "weight": 0.106884
+        },
+        {
+          "code": "278470",
+          "name": "에이피알",
+          "quantity": 33,
+          "evaluationAmount": 10395000,
+          "marketCap": 0,
+          "weight": 0.771626
+        },
+        {
+          "code": "383310",
+          "name": "에코프로에이치엔",
+          "quantity": 18,
+          "evaluationAmount": 373500,
+          "marketCap": 0,
+          "weight": 0.027725
+        },
+        {
+          "code": "290650",
+          "name": "엘앤씨바이오",
+          "quantity": 26,
+          "evaluationAmount": 1339000,
+          "marketCap": 0,
+          "weight": 0.099395
+        },
+        {
+          "code": "484870",
+          "name": "엠앤씨솔루션",
+          "quantity": 10,
+          "evaluationAmount": 131800,
+          "marketCap": 0,
+          "weight": 0.009784
+        },
+        {
+          "code": "271560",
+          "name": "오리온",
+          "quantity": 29,
+          "evaluationAmount": 3923700,
+          "marketCap": 0,
+          "weight": 0.291258
+        },
+        {
+          "code": "316140",
+          "name": "우리금융지주",
+          "quantity": 897,
+          "evaluationAmount": 29331900,
+          "marketCap": 0,
+          "weight": 2.17732
+        },
+        {
+          "code": "079900",
+          "name": "전진건설로봇",
+          "quantity": 5,
+          "evaluationAmount": 133000,
+          "marketCap": 0,
+          "weight": 0.009873
+        },
+        {
+          "code": "033100",
+          "name": "제룡전기",
+          "quantity": 14,
+          "evaluationAmount": 511000,
+          "marketCap": 0,
+          "weight": 0.037932
+        },
+        {
+          "code": "030000",
+          "name": "제일기획",
+          "quantity": 93,
+          "evaluationAmount": 1782810,
+          "marketCap": 0,
+          "weight": 0.132339
+        },
+        {
+          "code": "071320",
+          "name": "지역난방공사",
+          "quantity": 3,
+          "evaluationAmount": 198600,
+          "marketCap": 0,
+          "weight": 0.014742
+        },
+        {
+          "code": "214370",
+          "name": "케어젠",
+          "quantity": 21,
+          "evaluationAmount": 1035300,
+          "marketCap": 0,
+          "weight": 0.076851
+        },
+        {
+          "code": "381970",
+          "name": "케이카",
+          "quantity": 18,
+          "evaluationAmount": 128700,
+          "marketCap": 0,
+          "weight": 0.009553
+        },
+        {
+          "code": "192820",
+          "name": "코스맥스",
+          "quantity": 11,
+          "evaluationAmount": 2044900,
+          "marketCap": 0,
+          "weight": 0.151794
+        },
+        {
+          "code": "021240",
+          "name": "코웨이",
+          "quantity": 72,
+          "evaluationAmount": 6566400,
+          "marketCap": 0,
+          "weight": 0.487427
+        },
+        {
+          "code": "259960",
+          "name": "크래프톤",
+          "quantity": 38,
+          "evaluationAmount": 9842000,
+          "marketCap": 0,
+          "weight": 0.730576
+        },
+        {
+          "code": "214150",
+          "name": "클래시스",
+          "quantity": 39,
+          "evaluationAmount": 1464450,
+          "marketCap": 0,
+          "weight": 0.108707
+        },
+        {
+          "code": "039490",
+          "name": "키움증권",
+          "quantity": 21,
+          "evaluationAmount": 5428500,
+          "marketCap": 0,
+          "weight": 0.40296
+        },
+        {
+          "code": "095610",
+          "name": "테스",
+          "quantity": 16,
+          "evaluationAmount": 1600000,
+          "marketCap": 0,
+          "weight": 0.118769
+        },
+        {
+          "code": "064760",
+          "name": "티씨케이",
+          "quantity": 8,
+          "evaluationAmount": 1105600,
+          "marketCap": 0,
+          "weight": 0.082069
+        },
+        {
+          "code": "214450",
+          "name": "파마리서치",
+          "quantity": 9,
+          "evaluationAmount": 3132000,
+          "marketCap": 0,
+          "weight": 0.23249
+        },
+        {
+          "code": "047050",
+          "name": "포스코인터내셔널",
+          "quantity": 61,
+          "evaluationAmount": 3117100,
+          "marketCap": 0,
+          "weight": 0.231384
+        },
+        {
+          "code": "319660",
+          "name": "피에스케이",
+          "quantity": 26,
+          "evaluationAmount": 2636400,
+          "marketCap": 0,
+          "weight": 0.195701
+        },
+        {
+          "code": "031980",
+          "name": "피에스케이홀딩스",
+          "quantity": 10,
+          "evaluationAmount": 772000,
+          "marketCap": 0,
+          "weight": 0.057306
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "quantity": 332,
+          "evaluationAmount": 41367200,
+          "marketCap": 0,
+          "weight": 3.070706
+        },
+        {
+          "code": "039130",
+          "name": "하나투어",
+          "quantity": 14,
+          "evaluationAmount": 420000,
+          "marketCap": 0,
+          "weight": 0.031177
+        },
+        {
+          "code": "071050",
+          "name": "한국금융지주",
+          "quantity": 55,
+          "evaluationAmount": 9993500,
+          "marketCap": 0,
+          "weight": 0.741822
+        },
+        {
+          "code": "047810",
+          "name": "한국항공우주",
+          "quantity": 94,
+          "evaluationAmount": 11345800,
+          "marketCap": 0,
+          "weight": 0.842204
+        },
+        {
+          "code": "042700",
+          "name": "한미반도체",
+          "quantity": 56,
+          "evaluationAmount": 9385600,
+          "marketCap": 0,
+          "weight": 0.696697
+        },
+        {
+          "code": "008930",
+          "name": "한미사이언스",
+          "quantity": 38,
+          "evaluationAmount": 1320500,
+          "marketCap": 0,
+          "weight": 0.098021
+        },
+        {
+          "code": "128940",
+          "name": "한미약품",
+          "quantity": 8,
+          "evaluationAmount": 2492000,
+          "marketCap": 0,
+          "weight": 0.184982
+        },
+        {
+          "code": "014680",
+          "name": "한솔케미칼",
+          "quantity": 13,
+          "evaluationAmount": 2479100,
+          "marketCap": 0,
+          "weight": 0.184025
+        },
+        {
+          "code": "051600",
+          "name": "한전KPS",
+          "quantity": 30,
+          "evaluationAmount": 1303500,
+          "marketCap": 0,
+          "weight": 0.096759
+        },
+        {
+          "code": "052690",
+          "name": "한전기술",
+          "quantity": 25,
+          "evaluationAmount": 1997500,
+          "marketCap": 0,
+          "weight": 0.148275
+        },
+        {
+          "code": "180640",
+          "name": "한진칼",
+          "quantity": 63,
+          "evaluationAmount": 6835500,
+          "marketCap": 0,
+          "weight": 0.507402
+        },
+        {
+          "code": "272210",
+          "name": "한화시스템",
+          "quantity": 94,
+          "evaluationAmount": 5179400,
+          "marketCap": 0,
+          "weight": 0.384469
+        },
+        {
+          "code": "012450",
+          "name": "한화에어로스페이스",
+          "quantity": 44,
+          "evaluationAmount": 38060000,
+          "marketCap": 0,
+          "weight": 2.825211
+        },
+        {
+          "code": "086280",
+          "name": "현대글로비스",
+          "quantity": 49,
+          "evaluationAmount": 9393300,
+          "marketCap": 0,
+          "weight": 0.697269
+        },
+        {
+          "code": "012330",
+          "name": "현대모비스",
+          "quantity": 83,
+          "evaluationAmount": 36935000,
+          "marketCap": 0,
+          "weight": 2.741702
+        },
+        {
+          "code": "319400",
+          "name": "현대무벡스",
+          "quantity": 75,
+          "evaluationAmount": 1451250,
+          "marketCap": 0,
+          "weight": 0.107727
+        },
+        {
+          "code": "017800",
+          "name": "현대엘리베이터",
+          "quantity": 34,
+          "evaluationAmount": 2261000,
+          "marketCap": 0,
+          "weight": 0.167835
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "quantity": 182,
+          "evaluationAmount": 63882000,
+          "marketCap": 0,
+          "weight": 4.74199
+        },
+        {
+          "code": "298020",
+          "name": "효성티앤씨",
+          "quantity": 3,
+          "evaluationAmount": 895500,
+          "marketCap": 0,
+          "weight": 0.066473
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 4522116,
+          "weight": 0.335679
+        }
+      ],
+      "collectedAt": "2026-08-02T18:56:56.560Z"
     },
     "495230": {
       "etf": {
@@ -334695,7 +338919,1484 @@
         }
       ],
       "collectedAt": "2026-08-02T18:56:31.569Z"
+    },
+    "0184N0": {
+      "etf": {
+        "code": "0184N0",
+        "name": "PLUS 은채권혼합",
+        "date": "20260803"
+      },
+      "summary": {
+        "totalComponents": 11,
+        "totalWeight": 99.999999
+      },
+      "components": [
+        {
+          "code": "US0032641088",
+          "name": "ABRDN PHYSICAL SILVER SHARES",
+          "quantity": 1224.1,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "114460",
+          "name": "ACE 국고채3년",
+          "quantity": 100,
+          "evaluationAmount": 10042000,
+          "marketCap": 0,
+          "weight": 4.459666
+        },
+        {
+          "code": "US46428Q1094",
+          "name": "ISHARES SILVER TRUST",
+          "quantity": 1447.61,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "114260",
+          "name": "KODEX 국고채3년",
+          "quantity": 50,
+          "evaluationAmount": 3080500,
+          "marketCap": 0,
+          "weight": 1.368054
+        },
+        {
+          "code": "298340",
+          "name": "PLUS 국채선물3년",
+          "quantity": 650,
+          "evaluationAmount": 36588500,
+          "marketCap": 0,
+          "weight": 16.249003
+        },
+        {
+          "code": "114100",
+          "name": "RISE 국고채3년",
+          "quantity": 125,
+          "evaluationAmount": 13286250,
+          "marketCap": 0,
+          "weight": 5.900442
+        },
+        {
+          "code": "114820",
+          "name": "TIGER 국채3년",
+          "quantity": 100,
+          "evaluationAmount": 10477500,
+          "marketCap": 0,
+          "weight": 4.653072
+        },
+        {
+          "code": "KR103501GF63",
+          "name": "국고채권02250-2806(25-4)",
+          "quantity": 0,
+          "evaluationAmount": 48857600,
+          "marketCap": 0,
+          "weight": 21.697727
+        },
+        {
+          "code": "KR103501GFC3",
+          "name": "국고채권02750-2812(25-10)",
+          "quantity": 0,
+          "evaluationAmount": 49057950,
+          "marketCap": 0,
+          "weight": 21.786703
+        },
+        {
+          "code": "KR103503GG37",
+          "name": "국고채권03375-3103(26-3)",
+          "quantity": 0,
+          "evaluationAmount": 49200700,
+          "marketCap": 0,
+          "weight": 21.850099
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": -4582812,
+          "weight": 2.035233
+        }
+      ],
+      "collectedAt": "2026-08-02T18:56:45.516Z"
+    },
+    "0098N0": {
+      "etf": {
+        "code": "0098N0",
+        "name": "PLUS 자사주매입고배당주",
+        "date": "20260803"
+      },
+      "summary": {
+        "totalComponents": 31,
+        "totalWeight": 100.00000199999997
+      },
+      "components": [
+        {
+          "code": "138930",
+          "name": "BNK금융지주",
+          "quantity": 1242,
+          "evaluationAmount": 18381600,
+          "marketCap": 0,
+          "weight": 2.945648
+        },
+        {
+          "code": "005830",
+          "name": "DB손해보험",
+          "quantity": 153,
+          "evaluationAmount": 24923700,
+          "marketCap": 0,
+          "weight": 3.994018
+        },
+        {
+          "code": "078930",
+          "name": "GS",
+          "quantity": 200,
+          "evaluationAmount": 17300000,
+          "marketCap": 0,
+          "weight": 2.772322
+        },
+        {
+          "code": "011200",
+          "name": "HMM",
+          "quantity": 1647,
+          "evaluationAmount": 34010550,
+          "marketCap": 0,
+          "weight": 5.450184
+        },
+        {
+          "code": "294870",
+          "name": "IPARK현대산업개발",
+          "quantity": 519,
+          "evaluationAmount": 10053030,
+          "marketCap": 0,
+          "weight": 1.610996
+        },
+        {
+          "code": "175330",
+          "name": "JB금융지주",
+          "quantity": 977,
+          "evaluationAmount": 26281300,
+          "marketCap": 0,
+          "weight": 4.211574
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "quantity": 196,
+          "evaluationAmount": 32810400,
+          "marketCap": 0,
+          "weight": 5.257861
+        },
+        {
+          "code": "030200",
+          "name": "KT",
+          "quantity": 469,
+          "evaluationAmount": 24763200,
+          "marketCap": 0,
+          "weight": 3.968298
+        },
+        {
+          "code": "033780",
+          "name": "KT&G",
+          "quantity": 152,
+          "evaluationAmount": 28241600,
+          "marketCap": 0,
+          "weight": 4.525711
+        },
+        {
+          "code": "001120",
+          "name": "LX인터내셔널",
+          "quantity": 214,
+          "evaluationAmount": 7639800,
+          "marketCap": 0,
+          "weight": 1.224277
+        },
+        {
+          "code": "005940",
+          "name": "NH투자증권",
+          "quantity": 740,
+          "evaluationAmount": 19684000,
+          "marketCap": 0,
+          "weight": 3.154357
+        },
+        {
+          "code": "006120",
+          "name": "SK디스커버리",
+          "quantity": 306,
+          "evaluationAmount": 14229000,
+          "marketCap": 0,
+          "weight": 2.280195
+        },
+        {
+          "code": "139130",
+          "name": "iM금융지주",
+          "quantity": 885,
+          "evaluationAmount": 14611350,
+          "marketCap": 0,
+          "weight": 2.341466
+        },
+        {
+          "code": "035250",
+          "name": "강원랜드",
+          "quantity": 1172,
+          "evaluationAmount": 17064320,
+          "marketCap": 0,
+          "weight": 2.734554
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "quantity": 177,
+          "evaluationAmount": 21381600,
+          "marketCap": 0,
+          "weight": 3.426398
+        },
+        {
+          "code": "024110",
+          "name": "기업은행",
+          "quantity": 1120,
+          "evaluationAmount": 22904000,
+          "marketCap": 0,
+          "weight": 3.670362
+        },
+        {
+          "code": "138040",
+          "name": "메리츠금융지주",
+          "quantity": 307,
+          "evaluationAmount": 38098700,
+          "marketCap": 0,
+          "weight": 6.10531
+        },
+        {
+          "code": "081660",
+          "name": "미스토홀딩스",
+          "quantity": 719,
+          "evaluationAmount": 32750450,
+          "marketCap": 0,
+          "weight": 5.248254
+        },
+        {
+          "code": "016360",
+          "name": "삼성증권",
+          "quantity": 175,
+          "evaluationAmount": 15802500,
+          "marketCap": 0,
+          "weight": 2.532348
+        },
+        {
+          "code": "029780",
+          "name": "삼성카드",
+          "quantity": 398,
+          "evaluationAmount": 18845300,
+          "marketCap": 0,
+          "weight": 3.019956
+        },
+        {
+          "code": "031210",
+          "name": "서울보증보험",
+          "quantity": 392,
+          "evaluationAmount": 16581600,
+          "marketCap": 0,
+          "weight": 2.657198
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "quantity": 306,
+          "evaluationAmount": 30844800,
+          "marketCap": 0,
+          "weight": 4.942874
+        },
+        {
+          "code": "001800",
+          "name": "오리온홀딩스",
+          "quantity": 362,
+          "evaluationAmount": 9176700,
+          "marketCap": 0,
+          "weight": 1.470565
+        },
+        {
+          "code": "316140",
+          "name": "우리금융지주",
+          "quantity": 855,
+          "evaluationAmount": 27958500,
+          "marketCap": 0,
+          "weight": 4.480345
+        },
+        {
+          "code": "030000",
+          "name": "제일기획",
+          "quantity": 816,
+          "evaluationAmount": 15642720,
+          "marketCap": 0,
+          "weight": 2.506743
+        },
+        {
+          "code": "071320",
+          "name": "지역난방공사",
+          "quantity": 156,
+          "evaluationAmount": 10327200,
+          "marketCap": 0,
+          "weight": 1.654932
+        },
+        {
+          "code": "021240",
+          "name": "코웨이",
+          "quantity": 215,
+          "evaluationAmount": 19608000,
+          "marketCap": 0,
+          "weight": 3.142178
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "quantity": 236,
+          "evaluationAmount": 29405600,
+          "marketCap": 0,
+          "weight": 4.712242
+        },
+        {
+          "code": "300720",
+          "name": "한일시멘트",
+          "quantity": 905,
+          "evaluationAmount": 12362300,
+          "marketCap": 0,
+          "weight": 1.981056
+        },
+        {
+          "code": "017800",
+          "name": "현대엘리베이터",
+          "quantity": 148,
+          "evaluationAmount": 9842000,
+          "marketCap": 0,
+          "weight": 1.577179
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 2499850,
+          "weight": 0.400601
+        }
+      ],
+      "collectedAt": "2026-08-02T18:56:49.976Z"
+    },
+    "0184L0": {
+      "etf": {
+        "code": "0184L0",
+        "name": "PLUS 중기종합채권(A-이상)액티브",
+        "date": "20260803"
+      },
+      "summary": {
+        "totalComponents": 14,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "KR4A65690005",
+          "name": "3년국채    F 202609",
+          "quantity": -0.06,
+          "evaluationAmount": -6438750,
+          "marketCap": 0,
+          "weight": 4.651796
+        },
+        {
+          "code": "KR6003343G72",
+          "name": "SK에코플랜트186-3",
+          "quantity": 0,
+          "evaluationAmount": 9615461,
+          "marketCap": 0,
+          "weight": 6.946871
+        },
+        {
+          "code": "KR103503GG37",
+          "name": "국고채권03375-3103(26-3)",
+          "quantity": 0,
+          "evaluationAmount": 11354007,
+          "marketCap": 0,
+          "weight": 8.202916
+        },
+        {
+          "code": "KR103501GG62",
+          "name": "국고채권03500-2906(26-5)",
+          "quantity": 0,
+          "evaluationAmount": 9577173,
+          "marketCap": 0,
+          "weight": 6.919209
+        },
+        {
+          "code": "KR6030626F17",
+          "name": "롯데카드556-2",
+          "quantity": 0,
+          "evaluationAmount": 9445182,
+          "marketCap": 0,
+          "weight": 6.823849
+        },
+        {
+          "code": "KR310203GG56",
+          "name": "산업금융채권26신이0109-0508-2",
+          "quantity": 0,
+          "evaluationAmount": 9649692,
+          "marketCap": 0,
+          "weight": 6.971601
+        },
+        {
+          "code": "KR6174142F75",
+          "name": "우리카드265-2(사)",
+          "quantity": 0,
+          "evaluationAmount": 9382057,
+          "marketCap": 0,
+          "weight": 6.778244
+        },
+        {
+          "code": "KR310502AG50",
+          "name": "중소기업은행(신)2605할1A-08",
+          "quantity": 0,
+          "evaluationAmount": 9356894,
+          "marketCap": 0,
+          "weight": 6.760064
+        },
+        {
+          "code": "KR310101GF76",
+          "name": "통화안정증권02400-2707-02",
+          "quantity": 0,
+          "evaluationAmount": 9556971,
+          "marketCap": 0,
+          "weight": 6.904613
+        },
+        {
+          "code": "KR310101GG42",
+          "name": "통화안정증권03420-2804-02",
+          "quantity": 0,
+          "evaluationAmount": 9596144,
+          "marketCap": 0,
+          "weight": 6.932915
+        },
+        {
+          "code": "KR350703GF66",
+          "name": "한국도로공사고속도로건설채권956",
+          "quantity": 0,
+          "evaluationAmount": 9429759,
+          "marketCap": 0,
+          "weight": 6.812707
+        },
+        {
+          "code": "KR352502GF24",
+          "name": "한국자산관리공사채권제112회(사)",
+          "quantity": 0,
+          "evaluationAmount": 9513403,
+          "marketCap": 0,
+          "weight": 6.873137
+        },
+        {
+          "code": "KR6214344G58",
+          "name": "한국투자캐피탈137-3",
+          "quantity": 0,
+          "evaluationAmount": 9658374,
+          "marketCap": 0,
+          "weight": 6.977874
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": -15840413,
+          "weight": 11.444204
+        }
+      ],
+      "collectedAt": "2026-08-02T18:56:52.369Z"
+    },
+    "0047N0": {
+      "etf": {
+        "code": "0047N0",
+        "name": "PLUS 차이나AI테크TOP10",
+        "date": "20260803"
+      },
+      "summary": {
+        "totalComponents": 11,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "KYG017191142",
+          "name": "ALIBABA GROUP HOLDING LTD",
+          "quantity": 1880.29,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG070341048",
+          "name": "BAIDU INC-CLASS A",
+          "quantity": 2166.36,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CNE100000296",
+          "name": "BYD CO LTD-H",
+          "quantity": 3316.79,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CNE100006WS8",
+          "name": "CONTEMPORARY AMPEREX TECHN-H",
+          "quantity": 598.21,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG8208B1014",
+          "name": "JD.COM INC-CLASS A",
+          "quantity": 2854.5,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG596691041",
+          "name": "MEITUAN-CLASS B",
+          "quantity": 3225.43,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG6427A1022",
+          "name": "NETEASE INC",
+          "quantity": 1573.57,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG8020E1199",
+          "name": "SEMICONDUCTOR MANUFACTURI-H",
+          "quantity": 4323.21,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG875721634",
+          "name": "TENCENT HOLDINGS LTD",
+          "quantity": 539,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG9830T1067",
+          "name": "XIAOMI CORP-CLASS B",
+          "quantity": 8752.14,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 3171380,
+          "weight": 100
+        }
+      ],
+      "collectedAt": "2026-08-02T18:56:54.372Z"
+    },
+    "0128D0": {
+      "etf": {
+        "code": "0128D0",
+        "name": "PLUS 차이나항셍테크위클리타겟커버드콜",
+        "date": "20260803"
+      },
+      "summary": {
+        "totalComponents": 33,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "KYG017191142",
+          "name": "ALIBABA GROUP HOLDING LTD",
+          "quantity": 1251.93,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "BMG0171K1018",
+          "name": "ALIBABA HEALTH INFORMATION T",
+          "quantity": 3409.64,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG070341048",
+          "name": "BAIDU INC-CLASS A",
+          "quantity": 797.14,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG1098A1013",
+          "name": "BILIBILI INC-CLASS Z",
+          "quantity": 168,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CNE100000296",
+          "name": "BYD CO LTD-H",
+          "quantity": 1693.79,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "HK0285041858",
+          "name": "BYD ELECTRONIC INTL CO LTD",
+          "quantity": 415.57,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CNE1000048K8",
+          "name": "HAIER SMART HOME CO LTD-H",
+          "quantity": 1278.21,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG4602S1057",
+          "name": "HORIZON ROBOTICS INC",
+          "quantity": 6177.07,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "HSTEN6C4650",
+          "name": "HSTECH 07/30/26 C4650 INDEX",
+          "quantity": -1.86,
+          "evaluationAmount": -3420338,
+          "marketCap": 0,
+          "weight": 5.21103
+        },
+        {
+          "code": "HCTN6",
+          "name": "HSTECH INDEX FUT JUL 2026",
+          "quantity": 0.79,
+          "evaluationAmount": 34916940,
+          "marketCap": 0,
+          "weight": 53.197442
+        },
+        {
+          "code": "HK0000218211",
+          "name": "HUA HONG GRACE SEMICONDUCTOR",
+          "quantity": 420.5,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG5074A1004",
+          "name": "JD HEALTH INTERNATIONAL INC",
+          "quantity": 592.21,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG8208B1014",
+          "name": "JD.COM INC-CLASS A",
+          "quantity": 839.93,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG532631028",
+          "name": "KUAISHOU TECHNOLOGY",
+          "quantity": 1605.86,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "HK0992009065",
+          "name": "LENOVO GROUP LTD",
+          "quantity": 3595.36,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG5479M1050",
+          "name": "LI AUTO INC-CLASS A",
+          "quantity": 739.64,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG596691041",
+          "name": "MEITUAN-CLASS B",
+          "quantity": 1916.71,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CNE100006M58",
+          "name": "MIDEA GROUP CO LTD-H",
+          "quantity": 325.86,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG6181S1093",
+          "name": "MINIMAX GROUP INC",
+          "quantity": 9.93,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG6427A1022",
+          "name": "NETEASE INC",
+          "quantity": 829.36,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG6525F1028",
+          "name": "NIO INC-CLASS A",
+          "quantity": 326.36,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG8020E1199",
+          "name": "SEMICONDUCTOR MANUFACTURI-H",
+          "quantity": 1999.71,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG8062L1041",
+          "name": "SENSETIME GROUP INC-CLASS B",
+          "quantity": 18107.43,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG8586D1097",
+          "name": "SUNNY OPTICAL TECH",
+          "quantity": 369.57,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG875721634",
+          "name": "TENCENT HOLDINGS LTD",
+          "quantity": 340.29,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG875771134",
+          "name": "TENCENT MUSIC ENT - CLASS A",
+          "quantity": 32.64,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG8918W1069",
+          "name": "TONGCHENG TRAVEL HOLDINGS LT",
+          "quantity": 744.43,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG9066F1019",
+          "name": "TRIP.COM GROUP LTD",
+          "quantity": 145.36,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG9830T1067",
+          "name": "XIAOMI CORP-CLASS B",
+          "quantity": 5532.64,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG982AW1003",
+          "name": "XPENG INC - CLASS A SHARES",
+          "quantity": 857.29,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CNE100007DH9",
+          "name": "Z AI CO LTD",
+          "quantity": 9.36,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CNE100005K77",
+          "name": "ZHEJIANG LEAPMOTOR TECHNOL-H",
+          "quantity": 387.43,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 27299224,
+          "weight": 41.591528
+        }
+      ],
+      "collectedAt": "2026-08-02T18:56:56.696Z"
+    },
+    "0166N0": {
+      "etf": {
+        "code": "0166N0",
+        "name": "PLUS 코스닥150액티브",
+        "date": "20260803"
+      },
+      "summary": {
+        "totalComponents": 68,
+        "totalWeight": 99.999998
+      },
+      "components": [
+        {
+          "code": "195940",
+          "name": "HK이노엔",
+          "quantity": 11,
+          "evaluationAmount": 383900,
+          "marketCap": 0,
+          "weight": 0.1397
+        },
+        {
+          "code": "403870",
+          "name": "HPSP",
+          "quantity": 124,
+          "evaluationAmount": 3540200,
+          "marketCap": 0,
+          "weight": 1.288268
+        },
+        {
+          "code": "095340",
+          "name": "ISC",
+          "quantity": 41,
+          "evaluationAmount": 4366500,
+          "marketCap": 0,
+          "weight": 1.588956
+        },
+        {
+          "code": "078020",
+          "name": "LS증권",
+          "quantity": 184,
+          "evaluationAmount": 1059840,
+          "marketCap": 0,
+          "weight": 0.385672
+        },
+        {
+          "code": "327260",
+          "name": "RF머트리얼즈",
+          "quantity": 66,
+          "evaluationAmount": 1136520,
+          "marketCap": 0,
+          "weight": 0.413576
+        },
+        {
+          "code": "282720",
+          "name": "금양그린파워",
+          "quantity": 375,
+          "evaluationAmount": 2433750,
+          "marketCap": 0,
+          "weight": 0.885634
+        },
+        {
+          "code": "420770",
+          "name": "기가비스",
+          "quantity": 35,
+          "evaluationAmount": 2947000,
+          "marketCap": 0,
+          "weight": 1.072404
+        },
+        {
+          "code": "121600",
+          "name": "나노신소재",
+          "quantity": 8,
+          "evaluationAmount": 284800,
+          "marketCap": 0,
+          "weight": 0.103638
+        },
+        {
+          "code": "330860",
+          "name": "네패스아크",
+          "quantity": 37,
+          "evaluationAmount": 690050,
+          "marketCap": 0,
+          "weight": 0.251107
+        },
+        {
+          "code": "032190",
+          "name": "다우데이타",
+          "quantity": 44,
+          "evaluationAmount": 736560,
+          "marketCap": 0,
+          "weight": 0.268032
+        },
+        {
+          "code": "078600",
+          "name": "대주전자재료",
+          "quantity": 79,
+          "evaluationAmount": 4929600,
+          "marketCap": 0,
+          "weight": 1.793866
+        },
+        {
+          "code": "393890",
+          "name": "더블유씨피",
+          "quantity": 3430,
+          "evaluationAmount": 19859700,
+          "marketCap": 0,
+          "weight": 7.226882
+        },
+        {
+          "code": "403850",
+          "name": "더핑크퐁컴퍼니",
+          "quantity": 48,
+          "evaluationAmount": 511200,
+          "marketCap": 0,
+          "weight": 0.186024
+        },
+        {
+          "code": "213420",
+          "name": "덕산네오룩스",
+          "quantity": 14,
+          "evaluationAmount": 375200,
+          "marketCap": 0,
+          "weight": 0.136534
+        },
+        {
+          "code": "077360",
+          "name": "덕산하이메탈",
+          "quantity": 227,
+          "evaluationAmount": 1566300,
+          "marketCap": 0,
+          "weight": 0.569972
+        },
+        {
+          "code": "005290",
+          "name": "동진쎄미켐",
+          "quantity": 157,
+          "evaluationAmount": 5204550,
+          "marketCap": 0,
+          "weight": 1.893919
+        },
+        {
+          "code": "131970",
+          "name": "두산테스나",
+          "quantity": 96,
+          "evaluationAmount": 4972800,
+          "marketCap": 0,
+          "weight": 1.809586
+        },
+        {
+          "code": "347850",
+          "name": "디앤디파마텍",
+          "quantity": 30,
+          "evaluationAmount": 1371000,
+          "marketCap": 0,
+          "weight": 0.498903
+        },
+        {
+          "code": "281740",
+          "name": "레이크머티리얼즈",
+          "quantity": 30,
+          "evaluationAmount": 289500,
+          "marketCap": 0,
+          "weight": 0.105348
+        },
+        {
+          "code": "058470",
+          "name": "리노공업",
+          "quantity": 112,
+          "evaluationAmount": 6182400,
+          "marketCap": 0,
+          "weight": 2.249756
+        },
+        {
+          "code": "089970",
+          "name": "브이엠",
+          "quantity": 183,
+          "evaluationAmount": 9259800,
+          "marketCap": 0,
+          "weight": 3.369612
+        },
+        {
+          "code": "126340",
+          "name": "비나텍",
+          "quantity": 138,
+          "evaluationAmount": 6085800,
+          "marketCap": 0,
+          "weight": 2.214603
+        },
+        {
+          "code": "091580",
+          "name": "상신이디피",
+          "quantity": 349,
+          "evaluationAmount": 4055380,
+          "marketCap": 0,
+          "weight": 1.47574
+        },
+        {
+          "code": "089980",
+          "name": "상아프론테크",
+          "quantity": 107,
+          "evaluationAmount": 1251900,
+          "marketCap": 0,
+          "weight": 0.455562
+        },
+        {
+          "code": "042600",
+          "name": "새로닉스",
+          "quantity": 950,
+          "evaluationAmount": 6935000,
+          "marketCap": 0,
+          "weight": 2.523625
+        },
+        {
+          "code": "252990",
+          "name": "샘씨엔에스",
+          "quantity": 135,
+          "evaluationAmount": 1224450,
+          "marketCap": 0,
+          "weight": 0.445574
+        },
+        {
+          "code": "006730",
+          "name": "서부T&D",
+          "quantity": 37,
+          "evaluationAmount": 351500,
+          "marketCap": 0,
+          "weight": 0.12791
+        },
+        {
+          "code": "178320",
+          "name": "서진시스템",
+          "quantity": 700,
+          "evaluationAmount": 19530000,
+          "marketCap": 0,
+          "weight": 7.106906
+        },
+        {
+          "code": "171090",
+          "name": "선익시스템",
+          "quantity": 19,
+          "evaluationAmount": 940500,
+          "marketCap": 0,
+          "weight": 0.342245
+        },
+        {
+          "code": "043260",
+          "name": "성호전자",
+          "quantity": 89,
+          "evaluationAmount": 1054650,
+          "marketCap": 0,
+          "weight": 0.383784
+        },
+        {
+          "code": "357780",
+          "name": "솔브레인",
+          "quantity": 24,
+          "evaluationAmount": 5388000,
+          "marketCap": 0,
+          "weight": 1.960676
+        },
+        {
+          "code": "036830",
+          "name": "솔브레인홀딩스",
+          "quantity": 69,
+          "evaluationAmount": 1863000,
+          "marketCap": 0,
+          "weight": 0.67794
+        },
+        {
+          "code": "347700",
+          "name": "스피어",
+          "quantity": 536,
+          "evaluationAmount": 6941200,
+          "marketCap": 0,
+          "weight": 2.525881
+        },
+        {
+          "code": "257720",
+          "name": "실리콘투",
+          "quantity": 79,
+          "evaluationAmount": 2610950,
+          "marketCap": 0,
+          "weight": 0.950116
+        },
+        {
+          "code": "222800",
+          "name": "심텍",
+          "quantity": 79,
+          "evaluationAmount": 5040200,
+          "marketCap": 0,
+          "weight": 1.834113
+        },
+        {
+          "code": "036710",
+          "name": "심텍홀딩스",
+          "quantity": 547,
+          "evaluationAmount": 1430405,
+          "marketCap": 0,
+          "weight": 0.52052
+        },
+        {
+          "code": "458870",
+          "name": "씨어스",
+          "quantity": 810,
+          "evaluationAmount": 17577000,
+          "marketCap": 0,
+          "weight": 6.396215
+        },
+        {
+          "code": "297090",
+          "name": "씨에스베어링",
+          "quantity": 2452,
+          "evaluationAmount": 7858660,
+          "marketCap": 0,
+          "weight": 2.859742
+        },
+        {
+          "code": "388210",
+          "name": "씨엠티엑스",
+          "quantity": 42,
+          "evaluationAmount": 2515800,
+          "marketCap": 0,
+          "weight": 0.915492
+        },
+        {
+          "code": "096530",
+          "name": "씨젠",
+          "quantity": 16,
+          "evaluationAmount": 402400,
+          "marketCap": 0,
+          "weight": 0.146432
+        },
+        {
+          "code": "354320",
+          "name": "알멕",
+          "quantity": 111,
+          "evaluationAmount": 2342100,
+          "marketCap": 0,
+          "weight": 0.852283
+        },
+        {
+          "code": "196170",
+          "name": "알테오젠",
+          "quantity": 14,
+          "evaluationAmount": 3913000,
+          "marketCap": 0,
+          "weight": 1.423928
+        },
+        {
+          "code": "290740",
+          "name": "액트로",
+          "quantity": 154,
+          "evaluationAmount": 954800,
+          "marketCap": 0,
+          "weight": 0.347449
+        },
+        {
+          "code": "237690",
+          "name": "에스티팜",
+          "quantity": 4,
+          "evaluationAmount": 338800,
+          "marketCap": 0,
+          "weight": 0.123288
+        },
+        {
+          "code": "262260",
+          "name": "에이프로",
+          "quantity": 427,
+          "evaluationAmount": 973560,
+          "marketCap": 0,
+          "weight": 0.354275
+        },
+        {
+          "code": "064850",
+          "name": "에프앤가이드",
+          "quantity": 622,
+          "evaluationAmount": 9665880,
+          "marketCap": 0,
+          "weight": 3.517383
+        },
+        {
+          "code": "170920",
+          "name": "엘티씨",
+          "quantity": 89,
+          "evaluationAmount": 2367400,
+          "marketCap": 0,
+          "weight": 0.861489
+        },
+        {
+          "code": "322310",
+          "name": "오로스테크놀로지",
+          "quantity": 63,
+          "evaluationAmount": 702450,
+          "marketCap": 0,
+          "weight": 0.255619
+        },
+        {
+          "code": "138080",
+          "name": "오이솔루션",
+          "quantity": 14,
+          "evaluationAmount": 186200,
+          "marketCap": 0,
+          "weight": 0.067758
+        },
+        {
+          "code": "240810",
+          "name": "원익IPS",
+          "quantity": 89,
+          "evaluationAmount": 6790700,
+          "marketCap": 0,
+          "weight": 2.471114
+        },
+        {
+          "code": "104830",
+          "name": "원익머트리얼즈",
+          "quantity": 269,
+          "evaluationAmount": 7101600,
+          "marketCap": 0,
+          "weight": 2.58425
+        },
+        {
+          "code": "039030",
+          "name": "이오테크닉스",
+          "quantity": 5,
+          "evaluationAmount": 1200000,
+          "marketCap": 0,
+          "weight": 0.436676
+        },
+        {
+          "code": "064290",
+          "name": "인텍플러스",
+          "quantity": 306,
+          "evaluationAmount": 6793200,
+          "marketCap": 0,
+          "weight": 2.472024
+        },
+        {
+          "code": "089890",
+          "name": "코세스",
+          "quantity": 70,
+          "evaluationAmount": 1131900,
+          "marketCap": 0,
+          "weight": 0.411895
+        },
+        {
+          "code": "241710",
+          "name": "코스메카코리아",
+          "quantity": 10,
+          "evaluationAmount": 800000,
+          "marketCap": 0,
+          "weight": 0.291117
+        },
+        {
+          "code": "214150",
+          "name": "클래시스",
+          "quantity": 56,
+          "evaluationAmount": 2102800,
+          "marketCap": 0,
+          "weight": 0.765202
+        },
+        {
+          "code": "095610",
+          "name": "테스",
+          "quantity": 79,
+          "evaluationAmount": 7900000,
+          "marketCap": 0,
+          "weight": 2.874785
+        },
+        {
+          "code": "064760",
+          "name": "티씨케이",
+          "quantity": 44,
+          "evaluationAmount": 6080800,
+          "marketCap": 0,
+          "weight": 2.212784
+        },
+        {
+          "code": "440110",
+          "name": "파두",
+          "quantity": 53,
+          "evaluationAmount": 2586400,
+          "marketCap": 0,
+          "weight": 0.941183
+        },
+        {
+          "code": "214450",
+          "name": "파마리서치",
+          "quantity": 4,
+          "evaluationAmount": 1392000,
+          "marketCap": 0,
+          "weight": 0.506544
+        },
+        {
+          "code": "140860",
+          "name": "파크시스템스",
+          "quantity": 18,
+          "evaluationAmount": 4086000,
+          "marketCap": 0,
+          "weight": 1.486883
+        },
+        {
+          "code": "319660",
+          "name": "피에스케이",
+          "quantity": 76,
+          "evaluationAmount": 7706400,
+          "marketCap": 0,
+          "weight": 2.804335
+        },
+        {
+          "code": "031980",
+          "name": "피에스케이홀딩스",
+          "quantity": 96,
+          "evaluationAmount": 7411200,
+          "marketCap": 0,
+          "weight": 2.696912
+        },
+        {
+          "code": "166090",
+          "name": "하나머티리얼즈",
+          "quantity": 55,
+          "evaluationAmount": 2373250,
+          "marketCap": 0,
+          "weight": 0.863618
+        },
+        {
+          "code": "013030",
+          "name": "하이록코리아",
+          "quantity": 13,
+          "evaluationAmount": 382850,
+          "marketCap": 0,
+          "weight": 0.139318
+        },
+        {
+          "code": "452280",
+          "name": "한선엔지니어링",
+          "quantity": 540,
+          "evaluationAmount": 4822200,
+          "marketCap": 0,
+          "weight": 1.754783
+        },
+        {
+          "code": "107640",
+          "name": "한중엔시에스",
+          "quantity": 335,
+          "evaluationAmount": 8257750,
+          "marketCap": 0,
+          "weight": 3.004969
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 9281941,
+          "weight": 3.377669
+        }
+      ],
+      "collectedAt": "2026-08-02T18:56:58.789Z"
     }
   },
-  "failures": {}
+  "failures": {
+    "122090": {
+      "code": "122090",
+      "name": "PLUS 코스피50",
+      "attempts": 1,
+      "error": "[122090] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "148020": {
+      "code": "148020",
+      "name": "RISE 200",
+      "attempts": 1,
+      "error": "[148020] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "227830": {
+      "code": "227830",
+      "name": "PLUS 코스피",
+      "attempts": 1,
+      "error": "[227830] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "328370": {
+      "code": "328370",
+      "name": "PLUS 코스피TR",
+      "attempts": 1,
+      "error": "[328370] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "361580": {
+      "code": "361580",
+      "name": "RISE 200TR",
+      "attempts": 1,
+      "error": "[361580] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "457990": {
+      "code": "457990",
+      "name": "PLUS 태양광&ESS",
+      "attempts": 1,
+      "error": "[457990] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "0132K0": {
+      "code": "0132K0",
+      "name": "PLUS 테슬라위클리커버드콜채권혼합",
+      "attempts": 1,
+      "error": "[0132K0] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "0000J0": {
+      "code": "0000J0",
+      "name": "PLUS 한화그룹주",
+      "attempts": 1,
+      "error": "[0000J0] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-146\" aria-describedby=\"ui-id-145\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    }
+  }
 }
