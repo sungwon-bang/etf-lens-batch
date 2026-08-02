@@ -1,30 +1,30 @@
 {
-  "capturedAt": "2026-07-26T14:10:19.791Z",
+  "capturedAt": "2026-08-02T01:52:23.212Z",
   "targetCode": "449450",
   "targetDate": "20260724",
   "architecture": {
     "desired": "PDF JSON stores weights only; /api/market-data supplies live returns; browser calculates contributions",
-    "localHasStoredReturns": true,
-    "apiCoercesNullToZero": true,
+    "localHasStoredReturns": false,
+    "apiCoercesNullToZero": false,
     "bundleHasBatchFirstExpression": true,
     "bundleHasLiveFirstExpression": false,
-    "liveFallbackWorksWithCurrentApi": false
+    "liveFallbackWorksWithCurrentApi": true
   },
   "localPdfData": {
-    "date": "20260724",
+    "date": "20260731",
     "componentCount": 11,
     "stockReturnFields": {
-      "missing": 0,
-      "null": 1,
+      "missing": 11,
+      "null": 0,
       "zero": 0,
-      "nonZero": 10,
+      "nonZero": 0,
       "other": 0
     },
     "contributionFields": {
-      "missing": 0,
-      "null": 1,
+      "missing": 11,
+      "null": 0,
       "zero": 0,
-      "nonZero": 10,
+      "nonZero": 0,
       "other": 0
     }
   },
@@ -35,13 +35,13 @@
     "text": null,
     "meta": {
       "source": "krx-api-live",
-      "asOf": "2026-07-24",
-      "etfCount": 1150,
+      "asOf": "2026-07-31",
+      "etfCount": 1155,
       "stockCount": 2872,
       "marketCounts": {
         "kospi": 943,
-        "kosdaq": 1821,
-        "konex": 108
+        "kosdaq": 1820,
+        "konex": 109
       },
       "failedMarkets": [],
       "stockApiComplete": true
@@ -49,146 +49,36 @@
     "targetEtf": {
       "code": "449450",
       "name": "PLUS K방산",
-      "close": 55175,
-      "change": -935,
-      "returnRate": -1.67,
-      "nav": 55488.37
+      "close": 49870,
+      "change": 3920,
+      "returnRate": 8.53,
+      "nav": 49966.08
     },
     "stockCount": 2872
   },
   "batchData": {
-    "status": 200,
-    "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260724&diagnose=1785075003082",
+    "status": 404,
+    "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260724&diagnose=1785635531819",
     "error": null,
     "text": null,
-    "etf": {
-      "code": "449450",
-      "name": "PLUS K방산",
-      "date": "20260724",
-      "parsingTime": "2026-07-26T07:04:22.484Z"
-    },
-    "summary": {
-      "totalComponents": 11,
-      "totalWeight": 99.99999999999999,
-      "totalContribution": -0.945053,
-      "currency": "KRW"
-    },
-    "componentCount": 11,
+    "etf": null,
+    "summary": null,
+    "componentCount": 0,
     "stockReturnFields": {
       "missing": 0,
       "null": 0,
-      "zero": 1,
-      "nonZero": 10,
+      "zero": 0,
+      "nonZero": 0,
       "other": 0
     },
     "contributionFields": {
       "missing": 0,
       "null": 0,
-      "zero": 1,
-      "nonZero": 10,
+      "zero": 0,
+      "nonZero": 0,
       "other": 0
     }
   },
-  "liveCalculationSample": [
-    {
-      "code": "012450",
-      "name": "한화에어로스페이스",
-      "weight": 20.91,
-      "batchStockReturn": 2.19,
-      "batchContribution": 0.457929,
-      "liveReturnRate": 2.19,
-      "liveContribution": 0.457929
-    },
-    {
-      "code": "042660",
-      "name": "한화오션",
-      "weight": 18.23,
-      "batchStockReturn": -2.22,
-      "batchContribution": -0.404706,
-      "liveReturnRate": -2.22,
-      "liveContribution": -0.404706
-    },
-    {
-      "code": "064350",
-      "name": "현대로템",
-      "weight": 17.48,
-      "batchStockReturn": -4.86,
-      "batchContribution": -0.849528,
-      "liveReturnRate": -4.86,
-      "liveContribution": -0.849528
-    },
-    {
-      "code": "047810",
-      "name": "한국항공우주",
-      "weight": 17.01,
-      "batchStockReturn": -3.66,
-      "batchContribution": -0.622566,
-      "liveReturnRate": -3.66,
-      "liveContribution": -0.622566
-    },
-    {
-      "code": "079550",
-      "name": "LIG디펜스앤에어로스페이스",
-      "weight": 15.66,
-      "batchStockReturn": 3.53,
-      "batchContribution": 0.552798,
-      "liveReturnRate": 3.53,
-      "liveContribution": 0.552798
-    },
-    {
-      "code": "272210",
-      "name": "한화시스템",
-      "weight": 7.5,
-      "batchStockReturn": -2.15,
-      "batchContribution": -0.16125,
-      "liveReturnRate": -2.15,
-      "liveContribution": -0.16125
-    },
-    {
-      "code": "103140",
-      "name": "풍산",
-      "weight": 1.82,
-      "batchStockReturn": 4.75,
-      "batchContribution": 0.08645,
-      "liveReturnRate": 4.75,
-      "liveContribution": 0.08645
-    },
-    {
-      "code": "077970",
-      "name": "STX엔진",
-      "weight": 0.6,
-      "batchStockReturn": -2.11,
-      "batchContribution": -0.01266,
-      "liveReturnRate": -2.11,
-      "liveContribution": -0.01266
-    },
-    {
-      "code": "003570",
-      "name": "SNT다이내믹스",
-      "weight": 0.52,
-      "batchStockReturn": 2.79,
-      "batchContribution": 0.014508,
-      "liveReturnRate": 2.79,
-      "liveContribution": 0.014508
-    },
-    {
-      "code": "484870",
-      "name": "엠앤씨솔루션",
-      "weight": 0.22,
-      "batchStockReturn": -2.74,
-      "batchContribution": -0.006028,
-      "liveReturnRate": -2.74,
-      "liveContribution": -0.006028
-    },
-    {
-      "code": "KRD010010001",
-      "name": "원화현금",
-      "weight": 0.05,
-      "batchStockReturn": 0,
-      "batchContribution": 0,
-      "liveReturnRate": null,
-      "liveContribution": null
-    }
-  ],
-  "liveContributionTotalForSample": -0.945053
+  "liveCalculationSample": [],
+  "liveContributionTotalForSample": 0
 }

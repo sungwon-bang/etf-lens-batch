@@ -1,8 +1,13 @@
 {
-  "capturedAt": "2026-07-26T14:09:00.461Z",
+  "capturedAt": "2026-08-02T01:51:18.282Z",
   "targetCode": "449450",
   "siteUrl": "https://etf-attribution-mvp.bang-starone.chatgpt.site",
   "tokenConfigured": true,
   "status": "failed",
+  "policy": {
+    "pdfStoresReturns": false,
+    "batchDataShouldPreserveAbsence": true,
+    "frontendReturnSource": "/api/market-data stocks[code].returnRate"
+  },
   "error": "홈페이지 업로드 실패 (404): {\"raw\":\"Not Found\"}"
 }
