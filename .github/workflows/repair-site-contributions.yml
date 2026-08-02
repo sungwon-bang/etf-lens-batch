@@ -1,4 +1,4 @@
-name: ETF Lens 실시간 수익률 우선 검증
+name: ETF Lens 구성종목 전용 구조 검증
 
 on:
   push:
@@ -10,6 +10,10 @@ on:
 
 permissions:
   contents: write
+
+concurrency:
+  group: etf-composition-only-verification
+  cancel-in-progress: true
 
 jobs:
   verify:
@@ -26,8 +30,8 @@ jobs:
         with:
           node-version: '24'
 
-      - name: PDF 저장 수익률 제거 및 검증
-        id: repair
+      - name: 구성종목 전용 payload 업로드 및 API 검증
+        id: verify
         continue-on-error: true
         env:
           ETF_SITE_URL: https://etf-attribution-mvp.bang-starone.chatgpt.site
@@ -43,10 +47,10 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/site-diagnostics/repair-result.json
           git diff --cached --quiet && exit 0
-          git commit -m "data: verify token-based live return fallback"
+          git commit -m "data: verify composition-only site payload"
           git pull --rebase origin main
           git push
 
-      - name: 검증 실패 처리
-        if: steps.repair.outcome != 'success'
+      - name: 구조 검증 실패 처리
+        if: steps.verify.outcome != 'success'
         run: exit 1
