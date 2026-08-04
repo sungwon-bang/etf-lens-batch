@@ -1,0 +1,70 @@
+name: KB증권 해외주식 API 연결 테스트
+
+on:
+  workflow_dispatch:
+    inputs:
+      quote_url:
+        description: 'KB 공식 문서의 해외주식 단일종목 시세 URL (선택)'
+        required: false
+        default: ''
+      quote_method:
+        description: '시세 API HTTP Method'
+        required: false
+        default: 'GET'
+      quote_tr_id:
+        description: '시세 API TR ID (필요한 경우)'
+        required: false
+        default: ''
+      quote_body:
+        description: 'POST 방식일 때 요청 JSON 문자열 (선택)'
+        required: false
+        default: ''
+
+permissions:
+  contents: read
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Node.js 설치
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: 의존성 설치
+        run: npm ci
+
+      - name: KB 접근토큰 및 해외주식 시세 테스트
+        env:
+          KB_APP_KEY: ${{ secrets.KB_APP_KEY }}
+          KB_APP_SECRET: ${{ secrets.KB_APP_SECRET }}
+          KB_TOKEN_URL: ${{ secrets.KB_TOKEN_URL }}
+          KB_TOKEN_BODY_FORMAT: ${{ vars.KB_TOKEN_BODY_FORMAT || 'json' }}
+          KB_GRANT_TYPE: ${{ vars.KB_GRANT_TYPE || 'client_credentials' }}
+          KB_GRANT_TYPE_FIELD: ${{ vars.KB_GRANT_TYPE_FIELD || 'grant_type' }}
+          KB_APP_KEY_FIELD: ${{ vars.KB_APP_KEY_FIELD || 'appkey' }}
+          KB_APP_SECRET_FIELD: ${{ vars.KB_APP_SECRET_FIELD || 'appsecret' }}
+          KB_QUOTE_URL: ${{ inputs.quote_url || secrets.KB_QUOTE_URL }}
+          KB_QUOTE_METHOD: ${{ inputs.quote_method || vars.KB_QUOTE_METHOD || 'GET' }}
+          KB_QUOTE_TR_ID: ${{ inputs.quote_tr_id || secrets.KB_QUOTE_TR_ID }}
+          KB_QUOTE_BODY: ${{ inputs.quote_body || secrets.KB_QUOTE_BODY }}
+          KB_TR_ID_HEADER: ${{ vars.KB_TR_ID_HEADER || 'tr_id' }}
+          KB_APP_KEY_HEADER: ${{ vars.KB_APP_KEY_HEADER || 'appkey' }}
+          KB_APP_SECRET_HEADER: ${{ vars.KB_APP_SECRET_HEADER || 'appsecret' }}
+          KB_AUTH_SCHEME: ${{ vars.KB_AUTH_SCHEME || 'Bearer' }}
+        run: node kb-api-smoke-test.js
+
+      - name: 진단 결과 저장
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kb-api-smoke-test-${{ github.run_id }}
+          path: data/site-diagnostics/kb-api-smoke-test.json
+          if-no-files-found: warn
+          retention-days: 7
