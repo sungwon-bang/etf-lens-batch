@@ -1,59 +1,34 @@
 {
-  "capturedAt": "2026-08-05T15:40:28.395Z",
+  "capturedAt": "2026-08-05T16:49:01.904Z",
   "targetCode": "449450",
   "collectionState": {
-    "date": "20260805",
-    "total": 1155,
-    "completed": 1155,
-    "failed": 0,
-    "status": "completed",
-    "updatedAt": "2026-08-04T21:58:59.969Z"
+    "date": "20260806",
+    "total": 1160,
+    "completed": 148,
+    "failed": 12,
+    "status": "failed",
+    "updatedAt": "2026-08-05T16:46:09.655Z"
   },
   "localPdfData": {
-    "itemExists": true,
-    "date": "20260805",
-    "componentCount": 11,
+    "itemExists": false,
+    "date": null,
+    "componentCount": 0,
     "stockReturnFields": {
-      "missing": 11,
+      "missing": 0,
       "null": 0,
       "zero": 0,
       "nonZero": 0,
       "other": 0
     },
     "contributionFields": {
-      "missing": 11,
+      "missing": 0,
       "null": 0,
       "zero": 0,
       "nonZero": 0,
       "other": 0
     },
-    "conforms": true,
-    "sample": [
-      {
-        "code": "079550",
-        "name": "LIG디펜스앤에어로스페이스",
-        "quantity": 228,
-        "evaluationAmount": 159372000,
-        "marketCap": 0,
-        "weight": 16.176471
-      },
-      {
-        "code": "003570",
-        "name": "SNT다이내믹스",
-        "quantity": 164,
-        "evaluationAmount": 5018400,
-        "marketCap": 0,
-        "weight": 0.509374
-      },
-      {
-        "code": "077970",
-        "name": "STX엔진",
-        "quantity": 259,
-        "evaluationAmount": 5969950,
-        "marketCap": 0,
-        "weight": 0.605958
-      }
-    ]
+    "conforms": null,
+    "sample": []
   },
   "marketData": {
     "status": 200,
@@ -71,61 +46,66 @@
       "navReturnRate": 9.236277474638378,
       "volume": 448360
     },
-    "targetStocksAvailable": 10
+    "targetStocksAvailable": 0
   },
   "batchData": {
-    "requestedDate": "20260805",
+    "requestedDate": null,
     "attempts": [
       {
-        "date": "20260805",
-        "status": 200,
-        "componentCount": 11,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260805&verify=1785944426967"
+        "date": "20260806",
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260806&verify=1785948526136"
+      },
+      {
+        "date": "20260804",
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260804&verify=1785948526867"
+      },
+      {
+        "date": "20260728",
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260728&verify=1785948531913"
+      },
+      {
+        "date": "20260727",
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260727&verify=1785948537080"
+      },
+      {
+        "date": "20260724",
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260724&verify=1785948540548"
+      },
+      {
+        "date": null,
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&verify=1785948541325"
       }
     ],
-    "status": 200,
-    "componentCount": 11,
+    "status": 404,
+    "componentCount": 0,
     "stockReturnFields": {
-      "missing": 11,
+      "missing": 0,
       "null": 0,
       "zero": 0,
       "nonZero": 0,
       "other": 0
     },
     "contributionFields": {
-      "missing": 11,
+      "missing": 0,
       "null": 0,
       "zero": 0,
       "nonZero": 0,
       "other": 0
     },
-    "preservesNullOrMissing": true,
-    "sample": [
-      {
-        "code": "079550",
-        "name": "LIG디펜스앤에어로스페이스",
-        "quantity": 228,
-        "evaluationAmount": 159372000,
-        "marketCap": 0,
-        "weight": 16.176471
-      },
-      {
-        "code": "003570",
-        "name": "SNT다이내믹스",
-        "quantity": 164,
-        "evaluationAmount": 5018400,
-        "marketCap": 0,
-        "weight": 0.509374
-      },
-      {
-        "code": "077970",
-        "name": "STX엔진",
-        "quantity": 259,
-        "evaluationAmount": 5969950,
-        "marketCap": 0,
-        "weight": 0.605958
-      }
-    ]
+    "preservesNullOrMissing": null,
+    "sample": []
   },
   "deployedBundle": {
     "successfulScriptCount": 6,
@@ -133,8 +113,8 @@
     "usesLiveFirst": false
   },
   "verdict": {
-    "localPdfConforms": true,
-    "batchApiConforms": true,
+    "localPdfConforms": null,
+    "batchApiConforms": null,
     "frontendConforms": false,
     "fullyConforms": false,
     "enrichmentPerformed": false
