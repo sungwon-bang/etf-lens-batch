@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-// automation recheck: 2026-08-07 14:41 KST
+// automation recheck: 2026-08-07 18:44 KST
 const SITE_URL = (process.env.ETF_SITE_URL || 'https://etf-attribution-mvp.bang-starone.chatgpt.site').replace(/\/$/, '');
 const TARGET_CODE = '449450';
 const DATA_PATH = path.join(__dirname, 'data', 'etf-compositions.json');
