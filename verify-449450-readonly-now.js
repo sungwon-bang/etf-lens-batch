@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-// automation recheck: 2026-08-11 00:42 KST
+// automation recheck: 2026-08-11 00:46 KST
 const SITE_URL = (process.env.ETF_SITE_URL || 'https://etf-attribution-mvp.bang-starone.chatgpt.site').replace(/\/$/, '');
 const TARGET_CODE = '449450';
 const DATA_PATH = path.join(__dirname, 'data', 'etf-compositions.json');
@@ -73,6 +73,7 @@ async function main() {
     cleanDate(item?.etf?.date),
     cleanDate(state.meta?.date),
     cleanDate(market.meta?.asOf),
+    '20260807',
     '20260728',
     '20260727',
     '20260724',
