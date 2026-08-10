@@ -1,131 +1,111 @@
 {
-  "capturedAt": "2026-08-10T09:48:39.486Z",
+  "capturedAt": "2026-08-10T15:44:57.261Z",
   "targetCode": "449450",
   "collectionState": {
-    "date": "20260807",
+    "date": "20260811",
     "total": 1160,
-    "completed": 1160,
-    "failed": 0,
-    "status": "completed",
-    "updatedAt": "2026-08-08T14:59:50.937Z"
+    "completed": 64,
+    "failed": 14,
+    "status": "running",
+    "updatedAt": "2026-08-10T15:38:25.054Z"
   },
   "localPdfData": {
-    "itemExists": true,
-    "date": "20260807",
-    "componentCount": 11,
+    "itemExists": false,
+    "date": null,
+    "componentCount": 0,
     "stockReturnFields": {
-      "missing": 11,
+      "missing": 0,
       "null": 0,
       "zero": 0,
       "nonZero": 0,
       "other": 0
     },
     "contributionFields": {
-      "missing": 11,
+      "missing": 0,
       "null": 0,
       "zero": 0,
       "nonZero": 0,
       "other": 0
     },
-    "conforms": true,
-    "sample": [
-      {
-        "code": "012450",
-        "name": "한화에어로스페이스",
-        "quantity": 237,
-        "evaluationAmount": 249798000,
-        "marketCap": 259989000,
-        "weight": 23.13
-      },
-      {
-        "code": "042660",
-        "name": "한화오션",
-        "quantity": 2295,
-        "evaluationAmount": 208156500,
-        "marketCap": 205173000,
-        "weight": 18.25
-      },
-      {
-        "code": "047810",
-        "name": "한국항공우주",
-        "quantity": 1191,
-        "evaluationAmount": 178769100,
-        "marketCap": 183652200,
-        "weight": 16.34
-      }
-    ]
+    "conforms": null,
+    "sample": []
   },
   "marketData": {
     "status": 200,
     "source": "krx-api-live",
-    "asOf": "2026-08-07",
+    "asOf": "2026-08-09",
     "stockApiComplete": true,
     "targetEtf": {
       "code": "449450",
       "name": "PLUS K방산",
-      "close": 56265,
-      "change": 1465,
-      "returnRate": 2.6733576642335777,
-      "nav": 56196.63,
-      "previousNav": 54949.7,
-      "navReturnRate": 2.26922076007694,
-      "volume": 222935
+      "close": 0,
+      "change": 0,
+      "returnRate": 0,
+      "nav": 0,
+      "previousNav": 0,
+      "navReturnRate": null,
+      "volume": 0
     },
-    "targetStocksAvailable": 10
+    "targetStocksAvailable": 0
   },
   "batchData": {
-    "requestedDate": "20260807",
+    "requestedDate": null,
     "attempts": [
       {
-        "date": "20260807",
-        "status": 200,
-        "componentCount": 11,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260807&verify=1786355318520"
+        "date": "20260811",
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260811&verify=1786376683616"
+      },
+      {
+        "date": "20260809",
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260809&verify=1786376684368"
+      },
+      {
+        "date": "20260728",
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260728&verify=1786376688584"
+      },
+      {
+        "date": "20260727",
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260727&verify=1786376693607"
+      },
+      {
+        "date": "20260724",
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260724&verify=1786376696129"
+      },
+      {
+        "date": null,
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&verify=1786376696766"
       }
     ],
-    "status": 200,
-    "componentCount": 11,
+    "status": 404,
+    "componentCount": 0,
     "stockReturnFields": {
-      "missing": 11,
+      "missing": 0,
       "null": 0,
       "zero": 0,
       "nonZero": 0,
       "other": 0
     },
     "contributionFields": {
-      "missing": 11,
+      "missing": 0,
       "null": 0,
       "zero": 0,
       "nonZero": 0,
       "other": 0
     },
-    "preservesNullOrMissing": true,
-    "sample": [
-      {
-        "code": "012450",
-        "name": "한화에어로스페이스",
-        "quantity": 237,
-        "evaluationAmount": 249798000,
-        "marketCap": 259989000,
-        "weight": 23.13
-      },
-      {
-        "code": "042660",
-        "name": "한화오션",
-        "quantity": 2295,
-        "evaluationAmount": 208156500,
-        "marketCap": 205173000,
-        "weight": 18.25
-      },
-      {
-        "code": "047810",
-        "name": "한국항공우주",
-        "quantity": 1191,
-        "evaluationAmount": 178769100,
-        "marketCap": 183652200,
-        "weight": 16.34
-      }
-    ]
+    "preservesNullOrMissing": null,
+    "sample": []
   },
   "deployedBundle": {
     "successfulScriptCount": 6,
@@ -133,8 +113,8 @@
     "usesLiveFirst": false
   },
   "verdict": {
-    "localPdfConforms": true,
-    "batchApiConforms": true,
+    "localPdfConforms": null,
+    "batchApiConforms": null,
     "frontendConforms": false,
     "fullyConforms": false,
     "enrichmentPerformed": false
