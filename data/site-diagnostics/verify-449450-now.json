@@ -1,5 +1,5 @@
 {
-  "capturedAt": "2026-08-10T22:46:31.554Z",
+  "capturedAt": "2026-08-10T23:42:14.862Z",
   "targetCode": "449450",
   "collectionState": {
     "date": "20260811",
@@ -58,20 +58,20 @@
   "marketData": {
     "status": 200,
     "source": "krx-api-live",
-    "asOf": "2026-08-09",
+    "asOf": "2026-08-10",
     "stockApiComplete": true,
     "targetEtf": {
       "code": "449450",
       "name": "PLUS K방산",
-      "close": 0,
-      "change": 0,
-      "returnRate": 0,
-      "nav": 0,
+      "close": 59220,
+      "change": 2955,
+      "returnRate": 5.251932817915228,
+      "nav": 59038.86,
       "previousNav": 0,
       "navReturnRate": null,
-      "volume": 0
+      "volume": 249756
     },
-    "targetStocksAvailable": 0
+    "targetStocksAvailable": 10
   },
   "batchData": {
     "requestedDate": "20260811",
@@ -80,7 +80,7 @@
         "date": "20260811",
         "status": 200,
         "componentCount": 11,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260811&verify=1786401990334"
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260811&verify=1786405332861"
       }
     ],
     "status": 200,
