@@ -1,5 +1,5 @@
 {
-  "capturedAt": "2026-08-11T18:43:38.407Z",
+  "capturedAt": "2026-08-11T23:48:11.599Z",
   "targetCode": "449450",
   "collectionState": {
     "date": "20260812",
@@ -33,20 +33,20 @@
   "marketData": {
     "status": 200,
     "source": "krx-api-live",
-    "asOf": "2026-08-10",
+    "asOf": "2026-08-11",
     "stockApiComplete": true,
     "targetEtf": {
       "code": "449450",
       "name": "PLUS K방산",
-      "close": 59220,
-      "change": 2955,
-      "returnRate": 5.251932817915228,
-      "nav": 59038.86,
-      "previousNav": 0,
-      "navReturnRate": null,
-      "volume": 249756
+      "close": 55100,
+      "change": -4120,
+      "returnRate": -6.957109084768664,
+      "nav": 55088.42,
+      "previousNav": 59038.86,
+      "navReturnRate": -6.691253862286639,
+      "volume": 376989
     },
-    "targetStocksAvailable": null
+    "targetStocksAvailable": 0
   },
   "batchData": {
     "requestedDate": "20260807",
@@ -54,17 +54,20 @@
       {
         "date": "20260812",
         "status": 404,
-        "componentCount": 0
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260812&verify=1786492085316"
       },
       {
-        "date": "20260810",
+        "date": "20260811",
         "status": 404,
-        "componentCount": 0
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260811&verify=1786492086728"
       },
       {
         "date": "20260807",
         "status": 200,
-        "componentCount": 11
+        "componentCount": 11,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260807&verify=1786492089218"
       }
     ],
     "status": 200,
@@ -122,11 +125,5 @@
     "frontendConforms": false,
     "fullyConforms": false,
     "enrichmentPerformed": false
-  },
-  "notes": [
-    "2026-08-12 current main data/etf-compositions.json is stopped at 200/1160 and does not yet contain 449450, so today's local PDF fields cannot be classified.",
-    "Fresh deployment verification restored /api/batch-data for 20260807 to HTTP 200 with 11 components; stockReturn and contribution remain absent and are not converted to zero.",
-    "Deployed frontend still does not match the liveStock.returnRate-first contribution pattern.",
-    "No PDF return/contribution enrichment was performed."
-  ]
+  }
 }
