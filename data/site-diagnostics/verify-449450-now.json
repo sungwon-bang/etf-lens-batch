@@ -1,13 +1,13 @@
 {
-  "capturedAt": "2026-08-11T15:42:43.535Z",
+  "capturedAt": "2026-08-11T18:43:38.407Z",
   "targetCode": "449450",
   "collectionState": {
     "date": "20260812",
     "total": 1160,
-    "completed": 76,
+    "completed": 200,
     "failed": 2,
-    "status": "running",
-    "updatedAt": "2026-08-11T15:32:36.461Z"
+    "status": "failed",
+    "updatedAt": "2026-08-11T16:17:28.447Z"
   },
   "localPdfData": {
     "itemExists": false,
@@ -46,7 +46,7 @@
       "navReturnRate": null,
       "volume": 249756
     },
-    "targetStocksAvailable": 0
+    "targetStocksAvailable": null
   },
   "batchData": {
     "requestedDate": "20260807",
@@ -54,20 +54,17 @@
       {
         "date": "20260812",
         "status": 404,
-        "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260812&verify=1786462953561"
+        "componentCount": 0
       },
       {
         "date": "20260810",
         "status": 404,
-        "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260810&verify=1786462954320"
+        "componentCount": 0
       },
       {
         "date": "20260807",
         "status": 200,
-        "componentCount": 11,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260807&verify=1786462961600"
+        "componentCount": 11
       }
     ],
     "status": 200,
@@ -125,5 +122,11 @@
     "frontendConforms": false,
     "fullyConforms": false,
     "enrichmentPerformed": false
-  }
+  },
+  "notes": [
+    "2026-08-12 current main data/etf-compositions.json is stopped at 200/1160 and does not yet contain 449450, so today's local PDF fields cannot be classified.",
+    "Fresh deployment verification restored /api/batch-data for 20260807 to HTTP 200 with 11 components; stockReturn and contribution remain absent and are not converted to zero.",
+    "Deployed frontend still does not match the liveStock.returnRate-first contribution pattern.",
+    "No PDF return/contribution enrichment was performed."
+  ]
 }
