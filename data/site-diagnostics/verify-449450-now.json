@@ -1,13 +1,13 @@
 {
-  "capturedAt": "2026-08-12T14:47:09.408Z",
+  "capturedAt": "2026-08-12T15:50:09.178Z",
   "targetCode": "449450",
   "collectionState": {
-    "date": "20260812",
-    "total": 1160,
-    "completed": 200,
-    "failed": 2,
-    "status": "failed",
-    "updatedAt": "2026-08-11T16:17:28.447Z"
+    "date": "20260813",
+    "total": 1163,
+    "completed": 58,
+    "failed": 20,
+    "status": "running",
+    "updatedAt": "2026-08-12T15:40:16.413Z"
   },
   "localPdfData": {
     "itemExists": false,
@@ -52,22 +52,22 @@
     "requestedDate": "20260807",
     "attempts": [
       {
-        "date": "20260812",
+        "date": "20260813",
         "status": 404,
         "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260812&verify=1786546023665"
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260813&verify=1786549805310"
       },
       {
         "date": "20260811",
         "status": 404,
         "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260811&verify=1786546025376"
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260811&verify=1786549806198"
       },
       {
         "date": "20260807",
         "status": 200,
         "componentCount": 11,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260807&verify=1786546027574"
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260807&verify=1786549807682"
       }
     ],
     "status": 200,
