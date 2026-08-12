@@ -1,13 +1,13 @@
 {
-  "capturedAt": "2026-08-12T15:50:09.178Z",
+  "capturedAt": "2026-08-12T16:40:47.063Z",
   "targetCode": "449450",
   "collectionState": {
     "date": "20260813",
     "total": 1163,
-    "completed": 58,
-    "failed": 20,
-    "status": "running",
-    "updatedAt": "2026-08-12T15:40:16.413Z"
+    "completed": 256,
+    "failed": 0,
+    "status": "failed",
+    "updatedAt": "2026-08-12T16:38:33.395Z"
   },
   "localPdfData": {
     "itemExists": false,
@@ -49,70 +49,69 @@
     "targetStocksAvailable": 0
   },
   "batchData": {
-    "requestedDate": "20260807",
+    "requestedDate": null,
     "attempts": [
       {
         "date": "20260813",
         "status": 404,
         "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260813&verify=1786549805310"
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260813&verify=1786552845177"
       },
       {
         "date": "20260811",
         "status": 404,
         "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260811&verify=1786549806198"
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260811&verify=1786552845700"
       },
       {
         "date": "20260807",
-        "status": 200,
-        "componentCount": 11,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260807&verify=1786549807682"
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260807&verify=1786552845838"
+      },
+      {
+        "date": "20260728",
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260728&verify=1786552845976"
+      },
+      {
+        "date": "20260727",
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260727&verify=1786552846096"
+      },
+      {
+        "date": "20260724",
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260724&verify=1786552846216"
+      },
+      {
+        "date": null,
+        "status": 404,
+        "componentCount": 0,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&verify=1786552846395"
       }
     ],
-    "status": 200,
-    "componentCount": 11,
+    "status": 404,
+    "componentCount": 0,
     "stockReturnFields": {
-      "missing": 11,
+      "missing": 0,
       "null": 0,
       "zero": 0,
       "nonZero": 0,
       "other": 0
     },
     "contributionFields": {
-      "missing": 11,
+      "missing": 0,
       "null": 0,
       "zero": 0,
       "nonZero": 0,
       "other": 0
     },
-    "preservesNullOrMissing": true,
-    "sample": [
-      {
-        "code": "012450",
-        "name": "한화에어로스페이스",
-        "quantity": 237,
-        "evaluationAmount": 249798000,
-        "marketCap": 259989000,
-        "weight": 23.13
-      },
-      {
-        "code": "042660",
-        "name": "한화오션",
-        "quantity": 2295,
-        "evaluationAmount": 208156500,
-        "marketCap": 205173000,
-        "weight": 18.25
-      },
-      {
-        "code": "047810",
-        "name": "한국항공우주",
-        "quantity": 1191,
-        "evaluationAmount": 178769100,
-        "marketCap": 183652200,
-        "weight": 16.34
-      }
-    ]
+    "preservesNullOrMissing": null,
+    "sample": []
   },
   "deployedBundle": {
     "successfulScriptCount": 6,
@@ -121,7 +120,7 @@
   },
   "verdict": {
     "localPdfConforms": null,
-    "batchApiConforms": true,
+    "batchApiConforms": null,
     "frontendConforms": false,
     "fullyConforms": false,
     "enrichmentPerformed": false
