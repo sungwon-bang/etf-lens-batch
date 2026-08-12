@@ -1,5 +1,5 @@
 {
-  "capturedAt": "2026-08-12T11:49:23.322Z",
+  "capturedAt": "2026-08-12T12:46:06.242Z",
   "targetCode": "449450",
   "collectionState": {
     "date": "20260812",
@@ -49,69 +49,70 @@
     "targetStocksAvailable": 0
   },
   "batchData": {
-    "requestedDate": null,
+    "requestedDate": "20260807",
     "attempts": [
       {
         "date": "20260812",
         "status": 404,
         "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260812&verify=1786535360467"
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260812&verify=1786538760057"
       },
       {
         "date": "20260811",
         "status": 404,
         "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260811&verify=1786535362649"
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260811&verify=1786538761780"
       },
       {
         "date": "20260807",
-        "status": 404,
-        "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260807&verify=1786535362705"
-      },
-      {
-        "date": "20260728",
-        "status": 404,
-        "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260728&verify=1786535362759"
-      },
-      {
-        "date": "20260727",
-        "status": 404,
-        "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260727&verify=1786535362817"
-      },
-      {
-        "date": "20260724",
-        "status": 404,
-        "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260724&verify=1786535362874"
-      },
-      {
-        "date": null,
-        "status": 404,
-        "componentCount": 0,
-        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&verify=1786535362932"
+        "status": 200,
+        "componentCount": 11,
+        "url": "https://etf-attribution-mvp.bang-starone.chatgpt.site/api/batch-data?code=449450&date=20260807&verify=1786538764230"
       }
     ],
-    "status": 404,
-    "componentCount": 0,
+    "status": 200,
+    "componentCount": 11,
     "stockReturnFields": {
-      "missing": 0,
+      "missing": 11,
       "null": 0,
       "zero": 0,
       "nonZero": 0,
       "other": 0
     },
     "contributionFields": {
-      "missing": 0,
+      "missing": 11,
       "null": 0,
       "zero": 0,
       "nonZero": 0,
       "other": 0
     },
-    "preservesNullOrMissing": null,
-    "sample": []
+    "preservesNullOrMissing": true,
+    "sample": [
+      {
+        "code": "012450",
+        "name": "한화에어로스페이스",
+        "quantity": 237,
+        "evaluationAmount": 249798000,
+        "marketCap": 259989000,
+        "weight": 23.13
+      },
+      {
+        "code": "042660",
+        "name": "한화오션",
+        "quantity": 2295,
+        "evaluationAmount": 208156500,
+        "marketCap": 205173000,
+        "weight": 18.25
+      },
+      {
+        "code": "047810",
+        "name": "한국항공우주",
+        "quantity": 1191,
+        "evaluationAmount": 178769100,
+        "marketCap": 183652200,
+        "weight": 16.34
+      }
+    ]
   },
   "deployedBundle": {
     "successfulScriptCount": 6,
@@ -120,7 +121,7 @@
   },
   "verdict": {
     "localPdfConforms": null,
-    "batchApiConforms": null,
+    "batchApiConforms": true,
     "frontendConforms": false,
     "fullyConforms": false,
     "enrichmentPerformed": false
