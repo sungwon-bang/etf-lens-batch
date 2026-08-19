@@ -2,10 +2,10 @@
   "meta": {
     "date": "20260820",
     "total": 1163,
-    "completed": 335,
-    "failed": 0,
+    "completed": 347,
+    "failed": 14,
     "status": "failed",
-    "updatedAt": "2026-08-19T15:52:42.280Z"
+    "updatedAt": "2026-08-19T16:02:36.903Z"
   },
   "items": {
     "100910": {
@@ -27020,6 +27020,52 @@
       ],
       "collectedAt": "2026-08-19T15:06:10.158Z"
     },
+    "261220": {
+      "etf": {
+        "code": "261220",
+        "name": "KODEX WTI원유선물(H)",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 4,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "CLV6",
+          "name": "Crude Oil 2026 10",
+          "quantity": 4.36,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US91232N2071",
+          "name": "United States OIL ETF",
+          "quantity": 392.54,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KR4A75690003",
+          "name": "미국달러 F 202609",
+          "quantity": -35.59,
+          "evaluationAmount": -502690661,
+          "marketCap": 0,
+          "weight": 49.30324
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 516898843,
+          "weight": 50.69676
+        }
+      ],
+      "collectedAt": "2026-08-19T15:52:58.963Z"
+    },
     "261920": {
       "etf": {
         "code": "261920",
@@ -27673,6 +27719,52 @@
         }
       ],
       "collectedAt": "2026-08-19T15:52:37.338Z"
+    },
+    "271050": {
+      "etf": {
+        "code": "271050",
+        "name": "KODEX WTI원유선물인버스(H)",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 4,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "CLV6",
+          "name": "Crude Oil 2026 10",
+          "quantity": -0.39,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US74347Y6564",
+          "name": "PROSHRE U/S BLOOMBERG CRUDE OIL",
+          "quantity": 62.38,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KR4A75690003",
+          "name": "미국달러 F 202609",
+          "quantity": -1.5,
+          "evaluationAmount": -21251154,
+          "marketCap": 0,
+          "weight": 30.624923
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 48140544,
+          "weight": 69.375077
+        }
+      ],
+      "collectedAt": "2026-08-19T15:52:59.152Z"
     },
     "271060": {
       "etf": {
@@ -52822,6 +52914,108 @@
       ],
       "collectedAt": "2026-08-19T15:09:52.298Z"
     },
+    "315930": {
+      "etf": {
+        "code": "315930",
+        "name": "KODEX Top5PlusTR",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 11,
+        "totalWeight": 100.000001
+      },
+      "components": [
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "quantity": 4159,
+          "evaluationAmount": 700791500,
+          "marketCap": 0,
+          "weight": 8.476394
+        },
+        {
+          "code": "035420",
+          "name": "NAVER",
+          "quantity": 1934,
+          "evaluationAmount": 419678000,
+          "marketCap": 0,
+          "weight": 5.076198
+        },
+        {
+          "code": "005490",
+          "name": "POSCO홀딩스",
+          "quantity": 965,
+          "evaluationAmount": 313142500,
+          "marketCap": 0,
+          "weight": 3.787602
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "quantity": 1100,
+          "evaluationAmount": 1828200000,
+          "marketCap": 0,
+          "weight": 22.112917
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "quantity": 3639,
+          "evaluationAmount": 499270800,
+          "marketCap": 0,
+          "weight": 6.038909
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "quantity": 7728,
+          "evaluationAmount": 2074968000,
+          "marketCap": 0,
+          "weight": 25.097689
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "quantity": 5495,
+          "evaluationAmount": 585217500,
+          "marketCap": 0,
+          "weight": 7.078474
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "quantity": 3548,
+          "evaluationAmount": 463723600,
+          "marketCap": 0,
+          "weight": 5.608949
+        },
+        {
+          "code": "012330",
+          "name": "현대모비스",
+          "quantity": 887,
+          "evaluationAmount": 459466000,
+          "marketCap": 0,
+          "weight": 5.557452
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "quantity": 2001,
+          "evaluationAmount": 870435000,
+          "marketCap": 0,
+          "weight": 10.52831
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": -52673232,
+          "weight": 0.637107
+        }
+      ],
+      "collectedAt": "2026-08-19T15:52:56.746Z"
+    },
     "316300": {
       "etf": {
         "code": "316300",
@@ -54701,6 +54895,656 @@
         }
       ],
       "collectedAt": "2026-08-19T15:09:33.284Z"
+    },
+    "329650": {
+      "etf": {
+        "code": "329650",
+        "name": "KODEX TRF3070",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 33,
+        "totalWeight": 100.00000000000003
+      },
+      "components": [
+        {
+          "code": "US4642863926",
+          "name": "ISHARES MSCI WORLD ETF",
+          "quantity": 930.91,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "457690",
+          "name": "KODEX 33-06 국고채액티브",
+          "quantity": 303.03,
+          "evaluationAmount": 3166663,
+          "marketCap": 0,
+          "weight": 0.295432
+        },
+        {
+          "code": "457700",
+          "name": "KODEX 53-09 국고채액티브",
+          "quantity": 606.06,
+          "evaluationAmount": 5403024,
+          "marketCap": 0,
+          "weight": 0.504072
+        },
+        {
+          "code": "251350",
+          "name": "KODEX MSCI선진국",
+          "quantity": 1836.35,
+          "evaluationAmount": 73857997,
+          "marketCap": 0,
+          "weight": 6.890544
+        },
+        {
+          "code": "471230",
+          "name": "KODEX 국고채10년액티브",
+          "quantity": 242.42,
+          "evaluationAmount": 25032289,
+          "marketCap": 0,
+          "weight": 2.335375
+        },
+        {
+          "code": "US4642882579",
+          "name": "iShares MSCI ACWI ETF",
+          "quantity": 315.15,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KR103502G9C8",
+          "name": "국고채권01375-2912(19-8)",
+          "quantity": 0,
+          "evaluationAmount": 3360073,
+          "marketCap": 0,
+          "weight": 0.313476
+        },
+        {
+          "code": "KR103502GAC2",
+          "name": "국고채권01500-3012(20-9)",
+          "quantity": 0,
+          "evaluationAmount": 5245195,
+          "marketCap": 0,
+          "weight": 0.489348
+        },
+        {
+          "code": "KR103502G966",
+          "name": "국고채권01875-2906(19-4)",
+          "quantity": 0,
+          "evaluationAmount": 11525284,
+          "marketCap": 0,
+          "weight": 1.075246
+        },
+        {
+          "code": "KR103502G636",
+          "name": "국고채권02000-4603(16-1)",
+          "quantity": 0,
+          "evaluationAmount": 12161454,
+          "marketCap": 0,
+          "weight": 1.134597
+        },
+        {
+          "code": "KR103502G933",
+          "name": "국고채권02000-4903(19-2)",
+          "quantity": 0,
+          "evaluationAmount": 59949193,
+          "marketCap": 0,
+          "weight": 5.59293
+        },
+        {
+          "code": "KR103502G792",
+          "name": "국고채권02250-3709(17-5)",
+          "quantity": 0,
+          "evaluationAmount": 24852333,
+          "marketCap": 0,
+          "weight": 2.318586
+        },
+        {
+          "code": "KR103502G8C0",
+          "name": "국고채권02375-2812(18-10)",
+          "quantity": 0,
+          "evaluationAmount": 35418654,
+          "marketCap": 0,
+          "weight": 3.304365
+        },
+        {
+          "code": "KR103502G891",
+          "name": "국고채권02375-3809(18-7)",
+          "quantity": 0,
+          "evaluationAmount": 16582763,
+          "marketCap": 0,
+          "weight": 1.54708
+        },
+        {
+          "code": "KR103503GF38",
+          "name": "국고채권02625-3003(25-3)",
+          "quantity": 0,
+          "evaluationAmount": 58606485,
+          "marketCap": 0,
+          "weight": 5.467662
+        },
+        {
+          "code": "KR103502GC99",
+          "name": "국고채권03125-5209(22-9)",
+          "quantity": 0,
+          "evaluationAmount": 23376878,
+          "marketCap": 0,
+          "weight": 2.180934
+        },
+        {
+          "code": "KR103501GE31",
+          "name": "국고채권03250-2903(24-1)",
+          "quantity": 0,
+          "evaluationAmount": 36394763,
+          "marketCap": 0,
+          "weight": 3.395431
+        },
+        {
+          "code": "KR103504GC97",
+          "name": "국고채권03250-4209(22-11)",
+          "quantity": 0,
+          "evaluationAmount": 31292145,
+          "marketCap": 0,
+          "weight": 2.919385
+        },
+        {
+          "code": "KR103502GD31",
+          "name": "국고채권03250-5303(23-2)",
+          "quantity": 0,
+          "evaluationAmount": 23897120,
+          "marketCap": 0,
+          "weight": 2.22947
+        },
+        {
+          "code": "KR103501GG39",
+          "name": "국고채권03500-5603(26-2)",
+          "quantity": 0,
+          "evaluationAmount": 19827927,
+          "marketCap": 0,
+          "weight": 1.849836
+        },
+        {
+          "code": "KR103503GG60",
+          "name": "국고채권04250-3606(26-6)",
+          "quantity": 0,
+          "evaluationAmount": 48403005,
+          "marketCap": 0,
+          "weight": 4.515734
+        },
+        {
+          "code": "KR310203GG49",
+          "name": "산업금융채권26신이0300-0403-2",
+          "quantity": 0,
+          "evaluationAmount": 60406182,
+          "marketCap": 0,
+          "weight": 5.635564
+        },
+        {
+          "code": "KR6023783G10",
+          "name": "신한캐피탈524-3",
+          "quantity": 0,
+          "evaluationAmount": 23652411,
+          "marketCap": 0,
+          "weight": 2.20664
+        },
+        {
+          "code": "KR6019458G38",
+          "name": "아이비케이캐피탈348-5",
+          "quantity": 0,
+          "evaluationAmount": 36178508,
+          "marketCap": 0,
+          "weight": 3.375256
+        },
+        {
+          "code": "KR6033662E66",
+          "name": "우리금융캐피탈503-2",
+          "quantity": 0,
+          "evaluationAmount": 51707818,
+          "marketCap": 0,
+          "weight": 4.824055
+        },
+        {
+          "code": "KR354302GE64",
+          "name": "인천도시공사233",
+          "quantity": 0,
+          "evaluationAmount": 48631563,
+          "marketCap": 0,
+          "weight": 4.537057
+        },
+        {
+          "code": "KR354301GE73",
+          "name": "인천도시공사235",
+          "quantity": 0,
+          "evaluationAmount": 48405963,
+          "marketCap": 0,
+          "weight": 4.51601
+        },
+        {
+          "code": "KR310101GFB3",
+          "name": "통화안정증권02540-2611-01",
+          "quantity": 0,
+          "evaluationAmount": 60603333,
+          "marketCap": 0,
+          "weight": 5.653957
+        },
+        {
+          "code": "KR310102GF34",
+          "name": "통화안정증권02690-2803-03",
+          "quantity": 0,
+          "evaluationAmount": 48065308,
+          "marketCap": 0,
+          "weight": 4.484229
+        },
+        {
+          "code": "KR310102GE35",
+          "name": "통화안정증권03430-2703-03",
+          "quantity": 0,
+          "evaluationAmount": 30600029,
+          "marketCap": 0,
+          "weight": 2.854814
+        },
+        {
+          "code": "KR310101GG75",
+          "name": "통화안정증권03730-2807-02",
+          "quantity": 0,
+          "evaluationAmount": 82202645,
+          "marketCap": 0,
+          "weight": 7.669054
+        },
+        {
+          "code": "KR6063621F70",
+          "name": "한국서부발전70-1",
+          "quantity": 0,
+          "evaluationAmount": 35403672,
+          "marketCap": 0,
+          "weight": 3.302968
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 27663940,
+          "weight": 2.580893
+        }
+      ],
+      "collectedAt": "2026-08-19T15:52:49.727Z"
+    },
+    "329660": {
+      "etf": {
+        "code": "329660",
+        "name": "KODEX TRF5050",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 24,
+        "totalWeight": 99.99999899999999
+      },
+      "components": [
+        {
+          "code": "US4642863926",
+          "name": "ISHARES MSCI WORLD ETF",
+          "quantity": 1137.45,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "251350",
+          "name": "KODEX MSCI선진국",
+          "quantity": 638,
+          "evaluationAmount": 25660360,
+          "marketCap": 0,
+          "weight": 2.598476
+        },
+        {
+          "code": "US78463X4759",
+          "name": "State Street SPDR Portfolio",
+          "quantity": 2168.09,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US4642882579",
+          "name": "iShares MSCI ACWI ETF",
+          "quantity": 955.32,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KR103502G9C8",
+          "name": "국고채권01375-2912(19-8)",
+          "quantity": 0,
+          "evaluationAmount": 3931999,
+          "marketCap": 0,
+          "weight": 0.398171
+        },
+        {
+          "code": "KR103502G966",
+          "name": "국고채권01875-2906(19-4)",
+          "quantity": 0,
+          "evaluationAmount": 12138331,
+          "marketCap": 0,
+          "weight": 1.229178
+        },
+        {
+          "code": "KR103502G636",
+          "name": "국고채권02000-4603(16-1)",
+          "quantity": 0,
+          "evaluationAmount": 42694467,
+          "marketCap": 0,
+          "weight": 4.323421
+        },
+        {
+          "code": "KR103502G933",
+          "name": "국고채권02000-4903(19-2)",
+          "quantity": 0,
+          "evaluationAmount": 2698204,
+          "marketCap": 0,
+          "weight": 0.273231
+        },
+        {
+          "code": "KR103502G792",
+          "name": "국고채권02250-3709(17-5)",
+          "quantity": 0,
+          "evaluationAmount": 34899020,
+          "marketCap": 0,
+          "weight": 3.534022
+        },
+        {
+          "code": "KR103502G8C0",
+          "name": "국고채권02375-2812(18-10)",
+          "quantity": 0,
+          "evaluationAmount": 41447361,
+          "marketCap": 0,
+          "weight": 4.197134
+        },
+        {
+          "code": "KR103502G891",
+          "name": "국고채권02375-3809(18-7)",
+          "quantity": 0,
+          "evaluationAmount": 8688968,
+          "marketCap": 0,
+          "weight": 0.879881
+        },
+        {
+          "code": "KR103501GE31",
+          "name": "국고채권03250-2903(24-1)",
+          "quantity": 0,
+          "evaluationAmount": 42589616,
+          "marketCap": 0,
+          "weight": 4.312804
+        },
+        {
+          "code": "KR103501GG39",
+          "name": "국고채권03500-5603(26-2)",
+          "quantity": 0,
+          "evaluationAmount": 17402170,
+          "marketCap": 0,
+          "weight": 1.762217
+        },
+        {
+          "code": "KR103503GG60",
+          "name": "국고채권04250-3606(26-6)",
+          "quantity": 0,
+          "evaluationAmount": 63722042,
+          "marketCap": 0,
+          "weight": 6.452762
+        },
+        {
+          "code": "KR6023783G10",
+          "name": "신한캐피탈524-3",
+          "quantity": 0,
+          "evaluationAmount": 83035063,
+          "marketCap": 0,
+          "weight": 8.40848
+        },
+        {
+          "code": "KR6019458G38",
+          "name": "아이비케이캐피탈348-5",
+          "quantity": 0,
+          "evaluationAmount": 21168276,
+          "marketCap": 0,
+          "weight": 2.143589
+        },
+        {
+          "code": "KR6033662E66",
+          "name": "우리금융캐피탈503-2",
+          "quantity": 0,
+          "evaluationAmount": 21356170,
+          "marketCap": 0,
+          "weight": 2.162616
+        },
+        {
+          "code": "KR354302GE64",
+          "name": "인천도시공사233",
+          "quantity": 0,
+          "evaluationAmount": 21340978,
+          "marketCap": 0,
+          "weight": 2.161077
+        },
+        {
+          "code": "KR354301GE73",
+          "name": "인천도시공사235",
+          "quantity": 0,
+          "evaluationAmount": 42483956,
+          "marketCap": 0,
+          "weight": 4.302104
+        },
+        {
+          "code": "KR310102GF34",
+          "name": "통화안정증권02690-2803-03",
+          "quantity": 0,
+          "evaluationAmount": 42184978,
+          "marketCap": 0,
+          "weight": 4.271828
+        },
+        {
+          "code": "KR310102GE35",
+          "name": "통화안정증권03430-2703-03",
+          "quantity": 0,
+          "evaluationAmount": 64455382,
+          "marketCap": 0,
+          "weight": 6.527023
+        },
+        {
+          "code": "KR310101GG75",
+          "name": "통화안정증권03730-2807-02",
+          "quantity": 0,
+          "evaluationAmount": 224454031,
+          "marketCap": 0,
+          "weight": 22.729159
+        },
+        {
+          "code": "KR6063621F70",
+          "name": "한국서부발전70-1",
+          "quantity": 0,
+          "evaluationAmount": 82859659,
+          "marketCap": 0,
+          "weight": 8.390718
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 88304724,
+          "weight": 8.942108
+        }
+      ],
+      "collectedAt": "2026-08-19T15:52:53.819Z"
+    },
+    "329670": {
+      "etf": {
+        "code": "329670",
+        "name": "KODEX TRF7030",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 19,
+        "totalWeight": 100.00000100000001
+      },
+      "components": [
+        {
+          "code": "US4642863926",
+          "name": "ISHARES MSCI WORLD ETF",
+          "quantity": 2007,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "251350",
+          "name": "KODEX MSCI선진국",
+          "quantity": 1100,
+          "evaluationAmount": 44242000,
+          "marketCap": 0,
+          "weight": 6.098909
+        },
+        {
+          "code": "US78463X4759",
+          "name": "State Street SPDR Portfolio",
+          "quantity": 3938.75,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US4642882579",
+          "name": "iShares MSCI ACWI ETF",
+          "quantity": 1922.5,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KR103502G9C8",
+          "name": "국고채권01375-2912(19-8)",
+          "quantity": 0,
+          "evaluationAmount": 4620100,
+          "marketCap": 0,
+          "weight": 0.636896
+        },
+        {
+          "code": "KR103502G966",
+          "name": "국고채권01875-2906(19-4)",
+          "quantity": 0,
+          "evaluationAmount": 9508360,
+          "marketCap": 0,
+          "weight": 1.310759
+        },
+        {
+          "code": "KR103502G933",
+          "name": "국고채권02000-4903(19-2)",
+          "quantity": 0,
+          "evaluationAmount": 3170390,
+          "marketCap": 0,
+          "weight": 0.437049
+        },
+        {
+          "code": "KR103502G8C0",
+          "name": "국고채권02375-2812(18-10)",
+          "quantity": 0,
+          "evaluationAmount": 48700650,
+          "marketCap": 0,
+          "weight": 6.713549
+        },
+        {
+          "code": "KR103502G891",
+          "name": "국고채권02375-3809(18-7)",
+          "quantity": 0,
+          "evaluationAmount": 3062861,
+          "marketCap": 0,
+          "weight": 0.422226
+        },
+        {
+          "code": "KR103501GE31",
+          "name": "국고채권03250-2903(24-1)",
+          "quantity": 0,
+          "evaluationAmount": 50042800,
+          "marketCap": 0,
+          "weight": 6.898569
+        },
+        {
+          "code": "KR103501GG39",
+          "name": "국고채권03500-5603(26-2)",
+          "quantity": 0,
+          "evaluationAmount": 40895100,
+          "marketCap": 0,
+          "weight": 5.637527
+        },
+        {
+          "code": "KR103503GG60",
+          "name": "국고채권04250-3606(26-6)",
+          "quantity": 0,
+          "evaluationAmount": 74873400,
+          "marketCap": 0,
+          "weight": 10.321551
+        },
+        {
+          "code": "KR6023783G10",
+          "name": "신한캐피탈524-3",
+          "quantity": 0,
+          "evaluationAmount": 48783100,
+          "marketCap": 0,
+          "weight": 6.724915
+        },
+        {
+          "code": "KR6019458G38",
+          "name": "아이비케이캐피탈348-5",
+          "quantity": 0,
+          "evaluationAmount": 74618175,
+          "marketCap": 0,
+          "weight": 10.286367
+        },
+        {
+          "code": "KR6033662E66",
+          "name": "우리금융캐피탈503-2",
+          "quantity": 0,
+          "evaluationAmount": 12546750,
+          "marketCap": 0,
+          "weight": 1.729612
+        },
+        {
+          "code": "KR354302GE64",
+          "name": "인천도시공사233",
+          "quantity": 0,
+          "evaluationAmount": 25075650,
+          "marketCap": 0,
+          "weight": 3.456763
+        },
+        {
+          "code": "KR310102GE35",
+          "name": "통화안정증권03430-2703-03",
+          "quantity": 0,
+          "evaluationAmount": 25245025,
+          "marketCap": 0,
+          "weight": 3.480112
+        },
+        {
+          "code": "KR310101GG75",
+          "name": "통화안정증권03730-2807-02",
+          "quantity": 0,
+          "evaluationAmount": 150704850,
+          "marketCap": 0,
+          "weight": 20.775171
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 109319242,
+          "weight": 15.070026
+        }
+      ],
+      "collectedAt": "2026-08-19T15:52:54.337Z"
     },
     "332500": {
       "etf": {
@@ -75816,6 +76660,108 @@
       ],
       "collectedAt": "2026-08-19T15:52:15.141Z"
     },
+    "395170": {
+      "etf": {
+        "code": "395170",
+        "name": "KODEX Top10동일가중",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 11,
+        "totalWeight": 100.000001
+      },
+      "components": [
+        {
+          "code": "329180",
+          "name": "HD현대중공업",
+          "quantity": 293,
+          "evaluationAmount": 143423500,
+          "marketCap": 0,
+          "weight": 8.904447
+        },
+        {
+          "code": "373220",
+          "name": "LG에너지솔루션",
+          "quantity": 493,
+          "evaluationAmount": 173043000,
+          "marketCap": 0,
+          "weight": 10.743374
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "quantity": 154,
+          "evaluationAmount": 174790000,
+          "marketCap": 0,
+          "weight": 10.851836
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "quantity": 90,
+          "evaluationAmount": 149580000,
+          "marketCap": 0,
+          "weight": 9.286674
+        },
+        {
+          "code": "028260",
+          "name": "삼성물산",
+          "quantity": 462,
+          "evaluationAmount": 170478000,
+          "marketCap": 0,
+          "weight": 10.584126
+        },
+        {
+          "code": "032830",
+          "name": "삼성생명",
+          "quantity": 519,
+          "evaluationAmount": 161149500,
+          "marketCap": 0,
+          "weight": 10.004966
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "quantity": 105,
+          "evaluationAmount": 151200000,
+          "marketCap": 0,
+          "weight": 9.387251
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "quantity": 634,
+          "evaluationAmount": 170229000,
+          "marketCap": 0,
+          "weight": 10.568667
+        },
+        {
+          "code": "012330",
+          "name": "현대모비스",
+          "quantity": 329,
+          "evaluationAmount": 170422000,
+          "marketCap": 0,
+          "weight": 10.580649
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "quantity": 318,
+          "evaluationAmount": 138330000,
+          "marketCap": 0,
+          "weight": 8.588217
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 8050151,
+          "weight": 0.499794
+        }
+      ],
+      "collectedAt": "2026-08-19T15:52:56.845Z"
+    },
     "395270": {
       "etf": {
         "code": "395270",
@@ -83275,6 +84221,330 @@
         }
       ],
       "collectedAt": "2026-08-19T15:52:42.280Z"
+    },
+    "433980": {
+      "etf": {
+        "code": "433980",
+        "name": "KODEX TDF2040액티브 적격",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 18,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "US46138G6492",
+          "name": "INVESCO NASDAQ 100 ETF",
+          "quantity": 69.09,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "395160",
+          "name": "KODEX AI반도체TOP2플러스",
+          "quantity": 116,
+          "evaluationAmount": 4645800,
+          "marketCap": 0,
+          "weight": 1.363269
+        },
+        {
+          "code": "487240",
+          "name": "KODEX AI전력핵심설비",
+          "quantity": 128,
+          "evaluationAmount": 4711040,
+          "marketCap": 0,
+          "weight": 1.382413
+        },
+        {
+          "code": "439860",
+          "name": "KODEX ESG종합채권(A-이상)액티브",
+          "quantity": 939,
+          "evaluationAmount": 106506075,
+          "marketCap": 0,
+          "weight": 31.253261
+        },
+        {
+          "code": "114260",
+          "name": "KODEX 국고채3년",
+          "quantity": 316,
+          "evaluationAmount": 19511420,
+          "marketCap": 0,
+          "weight": 5.725453
+        },
+        {
+          "code": "214980",
+          "name": "KODEX 단기채권PLUS",
+          "quantity": 254,
+          "evaluationAmount": 29090620,
+          "marketCap": 0,
+          "weight": 8.536384
+        },
+        {
+          "code": "488770",
+          "name": "KODEX 머니마켓액티브",
+          "quantity": 550,
+          "evaluationAmount": 57890250,
+          "marketCap": 0,
+          "weight": 16.987379
+        },
+        {
+          "code": "487230",
+          "name": "KODEX 미국AI전력핵심인프라",
+          "quantity": 304,
+          "evaluationAmount": 6648480,
+          "marketCap": 0,
+          "weight": 1.950937
+        },
+        {
+          "code": "485540",
+          "name": "KODEX 미국AI테크TOP10",
+          "quantity": 520,
+          "evaluationAmount": 7974200,
+          "marketCap": 0,
+          "weight": 2.339958
+        },
+        {
+          "code": "390390",
+          "name": "KODEX 미국반도체",
+          "quantity": 115,
+          "evaluationAmount": 6463000,
+          "marketCap": 0,
+          "weight": 1.89651
+        },
+        {
+          "code": "0038A0",
+          "name": "KODEX 미국휴머노이드로봇",
+          "quantity": 567,
+          "evaluationAmount": 8947260,
+          "marketCap": 0,
+          "weight": 2.625494
+        },
+        {
+          "code": "091160",
+          "name": "KODEX 반도체",
+          "quantity": 39,
+          "evaluationAmount": 4890795,
+          "marketCap": 0,
+          "weight": 1.43516
+        },
+        {
+          "code": "273130",
+          "name": "KODEX 종합채권(AA-이상)액티브",
+          "quantity": 515,
+          "evaluationAmount": 56281775,
+          "marketCap": 0,
+          "weight": 16.515387
+        },
+        {
+          "code": "US78464A8541",
+          "name": "SPDR Portfolio S&P 500 ETF",
+          "quantity": 226.68,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US78463X4759",
+          "name": "State Street SPDR Portfolio",
+          "quantity": 1639.06,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "478150",
+          "name": "TIME 글로벌우주테크&방산액티브",
+          "quantity": 357,
+          "evaluationAmount": 7691565,
+          "marketCap": 0,
+          "weight": 2.257021
+        },
+        {
+          "code": "US9220427424",
+          "name": "Vanguard Total World Stock ETF",
+          "quantity": 894.67,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 19531597,
+          "weight": 5.731374
+        }
+      ],
+      "collectedAt": "2026-08-19T15:52:46.906Z"
+    },
+    "434060": {
+      "etf": {
+        "code": "434060",
+        "name": "KODEX TDF2050액티브 적격",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 19,
+        "totalWeight": 100.00000100000001
+      },
+      "components": [
+        {
+          "code": "US46138G6492",
+          "name": "INVESCO NASDAQ 100 ETF",
+          "quantity": 81.53,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "395160",
+          "name": "KODEX AI반도체TOP2플러스",
+          "quantity": 316,
+          "evaluationAmount": 12655800,
+          "marketCap": 0,
+          "weight": 3.88698
+        },
+        {
+          "code": "487240",
+          "name": "KODEX AI전력핵심설비",
+          "quantity": 320,
+          "evaluationAmount": 11777600,
+          "marketCap": 0,
+          "weight": 3.617258
+        },
+        {
+          "code": "439860",
+          "name": "KODEX ESG종합채권(A-이상)액티브",
+          "quantity": 750,
+          "evaluationAmount": 85068750,
+          "marketCap": 0,
+          "weight": 26.127193
+        },
+        {
+          "code": "114260",
+          "name": "KODEX 국고채3년",
+          "quantity": 297,
+          "evaluationAmount": 18338265,
+          "marketCap": 0,
+          "weight": 5.632237
+        },
+        {
+          "code": "214980",
+          "name": "KODEX 단기채권PLUS",
+          "quantity": 236,
+          "evaluationAmount": 27029080,
+          "marketCap": 0,
+          "weight": 8.30145
+        },
+        {
+          "code": "488770",
+          "name": "KODEX 머니마켓액티브",
+          "quantity": 174,
+          "evaluationAmount": 18314370,
+          "marketCap": 0,
+          "weight": 5.624898
+        },
+        {
+          "code": "487230",
+          "name": "KODEX 미국AI전력핵심인프라",
+          "quantity": 774,
+          "evaluationAmount": 16927380,
+          "marketCap": 0,
+          "weight": 5.198912
+        },
+        {
+          "code": "485540",
+          "name": "KODEX 미국AI테크TOP10",
+          "quantity": 1288,
+          "evaluationAmount": 19751480,
+          "marketCap": 0,
+          "weight": 6.066279
+        },
+        {
+          "code": "390390",
+          "name": "KODEX 미국반도체",
+          "quantity": 288,
+          "evaluationAmount": 16185600,
+          "marketCap": 0,
+          "weight": 4.971089
+        },
+        {
+          "code": "0038A0",
+          "name": "KODEX 미국휴머노이드로봇",
+          "quantity": 1312,
+          "evaluationAmount": 20703360,
+          "marketCap": 0,
+          "weight": 6.35863
+        },
+        {
+          "code": "091160",
+          "name": "KODEX 반도체",
+          "quantity": 126,
+          "evaluationAmount": 15801030,
+          "marketCap": 0,
+          "weight": 4.852976
+        },
+        {
+          "code": "273130",
+          "name": "KODEX 종합채권(AA-이상)액티브",
+          "quantity": 263,
+          "evaluationAmount": 28741955,
+          "marketCap": 0,
+          "weight": 8.827526
+        },
+        {
+          "code": "US78464A8541",
+          "name": "SPDR Portfolio S&P 500 ETF",
+          "quantity": 267.16,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US78463X4759",
+          "name": "State Street SPDR Portfolio",
+          "quantity": 1778.28,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "478150",
+          "name": "TIME 글로벌우주테크&방산액티브",
+          "quantity": 780,
+          "evaluationAmount": 16805100,
+          "marketCap": 0,
+          "weight": 5.161356
+        },
+        {
+          "code": "US9220427424",
+          "name": "Vanguard Total World Stock ETF",
+          "quantity": 970.66,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US4642882579",
+          "name": "iShares MSCI ACWI ETF",
+          "quantity": 104.7,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 17494907,
+          "weight": 5.373217
+        }
+      ],
+      "collectedAt": "2026-08-19T15:52:46.787Z"
     },
     "434730": {
       "etf": {
@@ -109807,6 +111077,82 @@
         }
       ],
       "collectedAt": "2026-08-19T15:08:32.464Z"
+    },
+    "468370": {
+      "etf": {
+        "code": "468370",
+        "name": "KODEX iShares미국인플레이션국채액티브",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 3,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "USDZZ0000001",
+          "name": "USD현금",
+          "quantity": 6.63,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US4642871762",
+          "name": "iShares TIPS Bond ETF",
+          "quantity": 717.17,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 1069030,
+          "weight": 100
+        }
+      ],
+      "collectedAt": "2026-08-19T15:53:01.649Z"
+    },
+    "468630": {
+      "etf": {
+        "code": "468630",
+        "name": "KODEX iShares미국투자등급회사채액티브",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 3,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "US4642872422",
+          "name": "ISHARES IBOXX INVESTMENT GRA",
+          "quantity": 733.7,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "USDZZ0000001",
+          "name": "USD현금",
+          "quantity": 5687.33,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": -6923483,
+          "weight": 100
+        }
+      ],
+      "collectedAt": "2026-08-19T15:53:01.702Z"
     },
     "469150": {
       "etf": {
@@ -183401,7 +184747,266 @@
         }
       ],
       "collectedAt": "2026-08-19T15:52:42.081Z"
+    },
+    "0082V0": {
+      "etf": {
+        "code": "0082V0",
+        "name": "KODEX TDF2060액티브 적격",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 20,
+        "totalWeight": 100.00000000000003
+      },
+      "components": [
+        {
+          "code": "US46138G6492",
+          "name": "INVESCO NASDAQ 100 ETF",
+          "quantity": 54.53,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "395160",
+          "name": "KODEX AI반도체TOP2플러스",
+          "quantity": 199,
+          "evaluationAmount": 7969950,
+          "marketCap": 0,
+          "weight": 3.735203
+        },
+        {
+          "code": "487240",
+          "name": "KODEX AI전력핵심설비",
+          "quantity": 222,
+          "evaluationAmount": 8170710,
+          "marketCap": 0,
+          "weight": 3.829291
+        },
+        {
+          "code": "439860",
+          "name": "KODEX ESG종합채권(A-이상)액티브",
+          "quantity": 501,
+          "evaluationAmount": 56825925,
+          "marketCap": 0,
+          "weight": 26.63208
+        },
+        {
+          "code": "114260",
+          "name": "KODEX 국고채3년",
+          "quantity": 185,
+          "evaluationAmount": 11422825,
+          "marketCap": 0,
+          "weight": 5.35343
+        },
+        {
+          "code": "214980",
+          "name": "KODEX 단기채권PLUS",
+          "quantity": 105,
+          "evaluationAmount": 12025650,
+          "marketCap": 0,
+          "weight": 5.63595
+        },
+        {
+          "code": "488770",
+          "name": "KODEX 머니마켓액티브",
+          "quantity": 184,
+          "evaluationAmount": 19366920,
+          "marketCap": 0,
+          "weight": 9.076515
+        },
+        {
+          "code": "487230",
+          "name": "KODEX 미국AI전력핵심인프라",
+          "quantity": 486,
+          "evaluationAmount": 10628820,
+          "marketCap": 0,
+          "weight": 4.981311
+        },
+        {
+          "code": "485540",
+          "name": "KODEX 미국AI테크TOP10",
+          "quantity": 840,
+          "evaluationAmount": 12881400,
+          "marketCap": 0,
+          "weight": 6.037006
+        },
+        {
+          "code": "390390",
+          "name": "KODEX 미국반도체",
+          "quantity": 195,
+          "evaluationAmount": 10959000,
+          "marketCap": 0,
+          "weight": 5.136053
+        },
+        {
+          "code": "0038A0",
+          "name": "KODEX 미국휴머노이드로봇",
+          "quantity": 876,
+          "evaluationAmount": 13823280,
+          "marketCap": 0,
+          "weight": 6.478429
+        },
+        {
+          "code": "091160",
+          "name": "KODEX 반도체",
+          "quantity": 68,
+          "evaluationAmount": 8527540,
+          "marketCap": 0,
+          "weight": 3.996523
+        },
+        {
+          "code": "273130",
+          "name": "KODEX 종합채권(AA-이상)액티브",
+          "quantity": 174,
+          "evaluationAmount": 19015590,
+          "marketCap": 0,
+          "weight": 8.91186
+        },
+        {
+          "code": "US78464A8541",
+          "name": "SPDR Portfolio S&P 500 ETF",
+          "quantity": 139.62,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US78463X4759",
+          "name": "State Street SPDR Portfolio",
+          "quantity": 924.16,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "478150",
+          "name": "TIME 글로벌우주테크&방산액티브",
+          "quantity": 520,
+          "evaluationAmount": 11203400,
+          "marketCap": 0,
+          "weight": 5.250594
+        },
+        {
+          "code": "US9229083632",
+          "name": "VANGUARD S&P 500 ETF",
+          "quantity": 5.09,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US9220427424",
+          "name": "Vanguard Total World Stock ETF",
+          "quantity": 504.45,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US4642882579",
+          "name": "iShares MSCI ACWI ETF",
+          "quantity": 380.22,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 10552954,
+          "weight": 4.945755
+        }
+      ],
+      "collectedAt": "2026-08-19T15:52:50.348Z"
     }
   },
-  "failures": {}
+  "failures": {
+    "114260": {
+      "code": "114260",
+      "name": "KODEX 국고채3년",
+      "attempts": 1,
+      "error": "[114260] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "117700": {
+      "code": "117700",
+      "name": "KODEX 건설",
+      "attempts": 1,
+      "error": "[117700] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=117700, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃27분 14초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.20 AM 12:53:00 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 USDZZ0000001 USD현금 6.63 - - - US4642871762 iShares TIPS Bond ETF 717.17 - - - KRD010010001 원화현금 - - 1,069,030 - CASH00000001 설정현금액 - - 109,183,079 - 그리드에서 빠져나오시려면 ESC키를 눌러주세요. Open ETF/ETN/ELW/상장형 수익증권 종목 검색 ETF/ETN/ELW/상장형 수익증권 종목 검색 Clos\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "132030": {
+      "code": "132030",
+      "name": "KODEX 골드선물(H)",
+      "attempts": 1,
+      "error": "[132030] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=132030, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃24분 30초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.20 AM 12:53:00 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 USDZZ0000001 USD현금 6.63 - - - US4642871762 iShares TIPS Bond ETF 717.17 - - - KRD010010001 원화현금 - - 1,069,030 - CASH00000001 설정현금액 - - 109,183,079 - 그리드에서 빠져나오시려면 ESC키를 눌러주세요. Open ETF/ETN/ELW/상장형 수익증권 종목 검색 ETF/ETN/ELW/상장형 수익증권 종목 검색 Clos\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "138910": {
+      "code": "138910",
+      "name": "KODEX 구리선물(H)",
+      "attempts": 1,
+      "error": "[138910] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=138910, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃23분 08초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.20 AM 12:53:00 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 USDZZ0000001 USD현금 6.63 - - - US4642871762 iShares TIPS Bond ETF 717.17 - - - KRD010010001 원화현금 - - 1,069,030 - CASH00000001 설정현금액 - - 109,183,079 - 그리드에서 빠져나오시려면 ESC키를 눌러주세요. Open ETF/ETN/ELW/상장형 수익증권 종목 검색 ETF/ETN/ELW/상장형 수익증권 종목 검색 Clos\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "152380": {
+      "code": "152380",
+      "name": "KODEX 국채선물10년",
+      "attempts": 1,
+      "error": "[152380] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=152380, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃20분 24초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.20 AM 12:53:00 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 USDZZ0000001 USD현금 6.63 - - - US4642871762 iShares TIPS Bond ETF 717.17 - - - KRD010010001 원화현금 - - 1,069,030 - CASH00000001 설정현금액 - - 109,183,079 - 그리드에서 빠져나오시려면 ESC키를 눌러주세요. Open ETF/ETN/ELW/상장형 수익증권 종목 검색 ETF/ETN/ELW/상장형 수익증권 종목 검색 Clos\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "176950": {
+      "code": "176950",
+      "name": "KODEX 국채선물10년인버스",
+      "attempts": 1,
+      "error": "[176950] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "266390": {
+      "code": "266390",
+      "name": "KODEX 경기소비재",
+      "attempts": 1,
+      "error": "[266390] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=266390, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃25분 52초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.20 AM 12:53:00 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 USDZZ0000001 USD현금 6.63 - - - US4642871762 iShares TIPS Bond ETF 717.17 - - - KRD010010001 원화현금 - - 1,069,030 - CASH00000001 설정현금액 - - 109,183,079 - 그리드에서 빠져나오시려면 ESC키를 눌러주세요. Open ETF/ETN/ELW/상장형 수익증권 종목 검색 ETF/ETN/ELW/상장형 수익증권 종목 검색 Clos\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "275290": {
+      "code": "275290",
+      "name": "KODEX 가치주",
+      "attempts": 1,
+      "error": "[275290] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "279530": {
+      "code": "279530",
+      "name": "KODEX 고배당주",
+      "attempts": 1,
+      "error": "[279530] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "280940": {
+      "code": "280940",
+      "name": "KODEX 골드선물인버스(H)",
+      "attempts": 1,
+      "error": "[280940] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "300950": {
+      "code": "300950",
+      "name": "KODEX 게임산업",
+      "attempts": 1,
+      "error": "[300950] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "439870": {
+      "code": "439870",
+      "name": "KODEX 국고채30년액티브",
+      "attempts": 1,
+      "error": "[439870] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=439870, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃21분 46초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.20 AM 12:53:00 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 USDZZ0000001 USD현금 6.63 - - - US4642871762 iShares TIPS Bond ETF 717.17 - - - KRD010010001 원화현금 - - 1,069,030 - CASH00000001 설정현금액 - - 109,183,079 - 그리드에서 빠져나오시려면 ESC키를 눌러주세요. Open ETF/ETN/ELW/상장형 수익증권 종목 검색 ETF/ETN/ELW/상장형 수익증권 종목 검색 Clos\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "468380": {
+      "code": "468380",
+      "name": "KODEX iShares미국하이일드액티브",
+      "attempts": 1,
+      "error": "[468380] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=468380, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃28분 37초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.20 AM 12:53:00 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 USDZZ0000001 USD현금 6.63 - - - US4642871762 iShares TIPS Bond ETF 717.17 - - - KRD010010001 원화현금 - - 1,069,030 - CASH00000001 설정현금액 - - 109,183,079 - 그리드에서 빠져나오시려면 ESC키를 눌러주세요. Open ETF/ETN/ELW/상장형 수익증권 종목 검색 ETF/ETN/ELW/상장형 수익증권 종목 검색 Clos\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "471230": {
+      "code": "471230",
+      "name": "KODEX 국고채10년액티브",
+      "attempts": 1,
+      "error": "[471230] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-132\" aria-describedby=\"ui-id-131\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    }
+  }
 }
