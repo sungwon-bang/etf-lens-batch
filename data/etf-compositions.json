@@ -2,10 +2,10 @@
   "meta": {
     "date": "20260820",
     "total": 1163,
-    "completed": 613,
+    "completed": 639,
     "failed": 0,
     "status": "failed",
-    "updatedAt": "2026-08-19T17:25:09.379Z"
+    "updatedAt": "2026-08-19T17:25:55.480Z"
   },
   "items": {
     "100910": {
@@ -16254,6 +16254,90 @@
       ],
       "collectedAt": "2026-08-19T15:06:33.527Z"
     },
+    "195970": {
+      "etf": {
+        "code": "195970",
+        "name": "PLUS 선진국MSCI(합성 H)",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 3,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "KRYZTRSDAX02",
+          "name": "스왑(NH투자증권_231030)",
+          "quantity": 212001626.52,
+          "evaluationAmount": 212001626,
+          "marketCap": 0,
+          "weight": 63.302382
+        },
+        {
+          "code": "KRYZTRSDAX03",
+          "name": "스왑(키움증권_231030)",
+          "quantity": 121801753.56,
+          "evaluationAmount": 121801753,
+          "marketCap": 0,
+          "weight": 36.369255
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 1099699,
+          "weight": 0.328363
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:27.998Z"
+    },
+    "195980": {
+      "etf": {
+        "code": "195980",
+        "name": "PLUS 신흥국MSCI(합성 H)",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 4,
+        "totalWeight": 99.99999999999999
+      },
+      "components": [
+        {
+          "code": "KRYZTRSF2K02",
+          "name": "스왑(KB증권)_6285_250219",
+          "quantity": 101082259.59,
+          "evaluationAmount": 101082259,
+          "marketCap": 0,
+          "weight": 32.947661
+        },
+        {
+          "code": "KRYZTRSE7G05",
+          "name": "스왑(NH투자증권)_6285_240716",
+          "quantity": 21477110.82,
+          "evaluationAmount": 21477110,
+          "marketCap": 0,
+          "weight": 7.000442
+        },
+        {
+          "code": "KRYZTRSDAX04",
+          "name": "스왑(미래에셋증권_231030)",
+          "quantity": 180036139.34,
+          "evaluationAmount": 180036139,
+          "marketCap": 0,
+          "weight": 58.682598
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 4200960,
+          "weight": 1.369299
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:31.213Z"
+    },
     "196030": {
       "etf": {
         "code": "196030",
@@ -31172,6 +31256,492 @@
       ],
       "collectedAt": "2026-08-19T17:02:37.250Z"
     },
+    "238670": {
+      "etf": {
+        "code": "238670",
+        "name": "PLUS 스마트베타Quality채권혼합",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 59,
+        "totalWeight": 100.00000200000001
+      },
+      "components": [
+        {
+          "code": "KR4A65690005",
+          "name": "3년국채    F 202609",
+          "quantity": 1.67,
+          "evaluationAmount": 172227100,
+          "marketCap": 0,
+          "weight": 11.295205
+        },
+        {
+          "code": "282330",
+          "name": "BGF리테일",
+          "quantity": 133,
+          "evaluationAmount": 19045600,
+          "marketCap": 0,
+          "weight": 1.249071
+        },
+        {
+          "code": "001040",
+          "name": "CJ",
+          "quantity": 20,
+          "evaluationAmount": 2538000,
+          "marketCap": 0,
+          "weight": 0.16645
+        },
+        {
+          "code": "000120",
+          "name": "CJ대한통운",
+          "quantity": 170,
+          "evaluationAmount": 12801000,
+          "marketCap": 0,
+          "weight": 0.839531
+        },
+        {
+          "code": "375500",
+          "name": "DL이앤씨",
+          "quantity": 50,
+          "evaluationAmount": 3530000,
+          "marketCap": 0,
+          "weight": 0.231509
+        },
+        {
+          "code": "007340",
+          "name": "DN오토모티브",
+          "quantity": 213,
+          "evaluationAmount": 13376400,
+          "marketCap": 0,
+          "weight": 0.877267
+        },
+        {
+          "code": "009540",
+          "name": "HD한국조선해양",
+          "quantity": 27,
+          "evaluationAmount": 10111500,
+          "marketCap": 0,
+          "weight": 0.663145
+        },
+        {
+          "code": "204320",
+          "name": "HL만도",
+          "quantity": 40,
+          "evaluationAmount": 2128000,
+          "marketCap": 0,
+          "weight": 0.139561
+        },
+        {
+          "code": "114260",
+          "name": "KODEX 국고채3년",
+          "quantity": 1450,
+          "evaluationAmount": 89530250,
+          "marketCap": 0,
+          "weight": 5.87168
+        },
+        {
+          "code": "011070",
+          "name": "LG이노텍",
+          "quantity": 6,
+          "evaluationAmount": 3798000,
+          "marketCap": 0,
+          "weight": 0.249085
+        },
+        {
+          "code": "066570",
+          "name": "LG전자",
+          "quantity": 20,
+          "evaluationAmount": 4160000,
+          "marketCap": 0,
+          "weight": 0.272826
+        },
+        {
+          "code": "010120",
+          "name": "LS ELECTRIC",
+          "quantity": 18,
+          "evaluationAmount": 3762000,
+          "marketCap": 0,
+          "weight": 0.246724
+        },
+        {
+          "code": "036570",
+          "name": "NC",
+          "quantity": 64,
+          "evaluationAmount": 14720000,
+          "marketCap": 0,
+          "weight": 0.965385
+        },
+        {
+          "code": "453010",
+          "name": "PLUS KOFR금리",
+          "quantity": 300,
+          "evaluationAmount": 32917500,
+          "marketCap": 0,
+          "weight": 2.158835
+        },
+        {
+          "code": "298340",
+          "name": "PLUS 국채선물3년",
+          "quantity": 3367,
+          "evaluationAmount": 190083985,
+          "marketCap": 0,
+          "weight": 12.466316
+        },
+        {
+          "code": "477050",
+          "name": "PLUS 머니마켓액티브",
+          "quantity": 233,
+          "evaluationAmount": 12453850,
+          "marketCap": 0,
+          "weight": 0.816763
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "quantity": 2,
+          "evaluationAmount": 2270000,
+          "marketCap": 0,
+          "weight": 0.148874
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "quantity": 2,
+          "evaluationAmount": 3324000,
+          "marketCap": 0,
+          "weight": 0.217999
+        },
+        {
+          "code": "069260",
+          "name": "TKG휴켐스",
+          "quantity": 1044,
+          "evaluationAmount": 16839720,
+          "marketCap": 0,
+          "weight": 1.104403
+        },
+        {
+          "code": "KR103501GF63",
+          "name": "국고채권02250-2806(25-4)",
+          "quantity": 0,
+          "evaluationAmount": 163282332,
+          "marketCap": 0,
+          "weight": 10.708578
+        },
+        {
+          "code": "KR103501GFC3",
+          "name": "국고채권02750-2812(25-10)",
+          "quantity": 0,
+          "evaluationAmount": 163860166,
+          "marketCap": 0,
+          "weight": 10.746474
+        },
+        {
+          "code": "KR103503GG37",
+          "name": "국고채권03375-3103(26-3)",
+          "quantity": 0,
+          "evaluationAmount": 164109832,
+          "marketCap": 0,
+          "weight": 10.762848
+        },
+        {
+          "code": "073240",
+          "name": "금호타이어",
+          "quantity": 2400,
+          "evaluationAmount": 18696000,
+          "marketCap": 0,
+          "weight": 1.226144
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "quantity": 17,
+          "evaluationAmount": 2332400,
+          "marketCap": 0,
+          "weight": 0.152966
+        },
+        {
+          "code": "241560",
+          "name": "두산밥캣",
+          "quantity": 138,
+          "evaluationAmount": 8873400,
+          "marketCap": 0,
+          "weight": 0.581946
+        },
+        {
+          "code": "034020",
+          "name": "두산에너빌리티",
+          "quantity": 35,
+          "evaluationAmount": 2726500,
+          "marketCap": 0,
+          "weight": 0.178813
+        },
+        {
+          "code": "005300",
+          "name": "롯데칠성",
+          "quantity": 147,
+          "evaluationAmount": 14376600,
+          "marketCap": 0,
+          "weight": 0.942863
+        },
+        {
+          "code": "006800",
+          "name": "미래에셋증권",
+          "quantity": 61,
+          "evaluationAmount": 2217350,
+          "marketCap": 0,
+          "weight": 0.145421
+        },
+        {
+          "code": "081660",
+          "name": "미스토홀딩스",
+          "quantity": 325,
+          "evaluationAmount": 14137500,
+          "marketCap": 0,
+          "weight": 0.927183
+        },
+        {
+          "code": "062040",
+          "name": "산일전기",
+          "quantity": 14,
+          "evaluationAmount": 2508800,
+          "marketCap": 0,
+          "weight": 0.164535
+        },
+        {
+          "code": "028260",
+          "name": "삼성물산",
+          "quantity": 6,
+          "evaluationAmount": 2214000,
+          "marketCap": 0,
+          "weight": 0.145201
+        },
+        {
+          "code": "018260",
+          "name": "삼성에스디에스",
+          "quantity": 55,
+          "evaluationAmount": 12567500,
+          "marketCap": 0,
+          "weight": 0.824217
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "quantity": 2,
+          "evaluationAmount": 2880000,
+          "marketCap": 0,
+          "weight": 0.18888
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "quantity": 10,
+          "evaluationAmount": 2685000,
+          "marketCap": 0,
+          "weight": 0.176091
+        },
+        {
+          "code": "004490",
+          "name": "세방전지",
+          "quantity": 150,
+          "evaluationAmount": 8265000,
+          "marketCap": 0,
+          "weight": 0.542045
+        },
+        {
+          "code": "112610",
+          "name": "씨에스윈드",
+          "quantity": 240,
+          "evaluationAmount": 10968000,
+          "marketCap": 0,
+          "weight": 0.719317
+        },
+        {
+          "code": "090430",
+          "name": "아모레퍼시픽",
+          "quantity": 44,
+          "evaluationAmount": 5816800,
+          "marketCap": 0,
+          "weight": 0.381484
+        },
+        {
+          "code": "005850",
+          "name": "에스엘",
+          "quantity": 46,
+          "evaluationAmount": 2681800,
+          "marketCap": 0,
+          "weight": 0.175881
+        },
+        {
+          "code": "012750",
+          "name": "에스원",
+          "quantity": 190,
+          "evaluationAmount": 14725000,
+          "marketCap": 0,
+          "weight": 0.965713
+        },
+        {
+          "code": "278470",
+          "name": "에이피알",
+          "quantity": 18,
+          "evaluationAmount": 7137000,
+          "marketCap": 0,
+          "weight": 0.468067
+        },
+        {
+          "code": "111770",
+          "name": "영원무역",
+          "quantity": 85,
+          "evaluationAmount": 6876500,
+          "marketCap": 0,
+          "weight": 0.450983
+        },
+        {
+          "code": "009970",
+          "name": "영원무역홀딩스",
+          "quantity": 18,
+          "evaluationAmount": 3299400,
+          "marketCap": 0,
+          "weight": 0.216385
+        },
+        {
+          "code": "271560",
+          "name": "오리온",
+          "quantity": 127,
+          "evaluationAmount": 15887700,
+          "marketCap": 0,
+          "weight": 1.041966
+        },
+        {
+          "code": "071320",
+          "name": "지역난방공사",
+          "quantity": 213,
+          "evaluationAmount": 15698100,
+          "marketCap": 0,
+          "weight": 1.029532
+        },
+        {
+          "code": "028670",
+          "name": "팬오션",
+          "quantity": 3041,
+          "evaluationAmount": 18367640,
+          "marketCap": 0,
+          "weight": 1.204609
+        },
+        {
+          "code": "047050",
+          "name": "포스코인터내셔널",
+          "quantity": 76,
+          "evaluationAmount": 3906400,
+          "marketCap": 0,
+          "weight": 0.256194
+        },
+        {
+          "code": "000240",
+          "name": "한국앤컴퍼니",
+          "quantity": 175,
+          "evaluationAmount": 4401250,
+          "marketCap": 0,
+          "weight": 0.288648
+        },
+        {
+          "code": "161890",
+          "name": "한국콜마",
+          "quantity": 70,
+          "evaluationAmount": 9079000,
+          "marketCap": 0,
+          "weight": 0.59543
+        },
+        {
+          "code": "042700",
+          "name": "한미반도체",
+          "quantity": 17,
+          "evaluationAmount": 3893000,
+          "marketCap": 0,
+          "weight": 0.255315
+        },
+        {
+          "code": "008930",
+          "name": "한미사이언스",
+          "quantity": 451,
+          "evaluationAmount": 20114600,
+          "marketCap": 0,
+          "weight": 1.31918
+        },
+        {
+          "code": "128940",
+          "name": "한미약품",
+          "quantity": 31,
+          "evaluationAmount": 12152000,
+          "marketCap": 0,
+          "weight": 0.796967
+        },
+        {
+          "code": "014680",
+          "name": "한솔케미칼",
+          "quantity": 40,
+          "evaluationAmount": 8420000,
+          "marketCap": 0,
+          "weight": 0.552211
+        },
+        {
+          "code": "012450",
+          "name": "한화에어로스페이스",
+          "quantity": 13,
+          "evaluationAmount": 14898000,
+          "marketCap": 0,
+          "weight": 0.977059
+        },
+        {
+          "code": "082740",
+          "name": "한화엔진",
+          "quantity": 144,
+          "evaluationAmount": 6782400,
+          "marketCap": 0,
+          "weight": 0.444812
+        },
+        {
+          "code": "086280",
+          "name": "현대글로비스",
+          "quantity": 21,
+          "evaluationAmount": 4336500,
+          "marketCap": 0,
+          "weight": 0.284402
+        },
+        {
+          "code": "012330",
+          "name": "현대모비스",
+          "quantity": 4,
+          "evaluationAmount": 2072000,
+          "marketCap": 0,
+          "weight": 0.135888
+        },
+        {
+          "code": "307950",
+          "name": "현대오토에버",
+          "quantity": 6,
+          "evaluationAmount": 2706000,
+          "marketCap": 0,
+          "weight": 0.177468
+        },
+        {
+          "code": "298040",
+          "name": "효성중공업",
+          "quantity": 1,
+          "evaluationAmount": 2984000,
+          "marketCap": 0,
+          "weight": 0.1957
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 132228329,
+          "weight": 8.671957
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:28.559Z"
+    },
     "238720": {
       "etf": {
         "code": "238720",
@@ -33025,6 +33595,164 @@
         }
       ],
       "collectedAt": "2026-08-19T15:08:00.033Z"
+    },
+    "239660": {
+      "etf": {
+        "code": "239660",
+        "name": "PLUS 우량회사채50",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 18,
+        "totalWeight": 99.999999
+      },
+      "components": [
+        {
+          "code": "KR4A65690005",
+          "name": "3년국채    F 202609",
+          "quantity": 0.67,
+          "evaluationAmount": 68746458,
+          "marketCap": 0,
+          "weight": 2.742697
+        },
+        {
+          "code": "KR6003451F55",
+          "name": "KB증권47-1",
+          "quantity": 0,
+          "evaluationAmount": 110805222,
+          "marketCap": 0,
+          "weight": 4.420667
+        },
+        {
+          "code": "298340",
+          "name": "PLUS 국채선물3년",
+          "quantity": 1111.11,
+          "evaluationAmount": 62727777,
+          "marketCap": 0,
+          "weight": 2.502577
+        },
+        {
+          "code": "KR103501GF63",
+          "name": "국고채권02250-2806(25-4)",
+          "quantity": 0,
+          "evaluationAmount": 54427444,
+          "marketCap": 0,
+          "weight": 2.171428
+        },
+        {
+          "code": "KR103501GFC3",
+          "name": "국고채권02750-2812(25-10)",
+          "quantity": 0,
+          "evaluationAmount": 109240111,
+          "marketCap": 0,
+          "weight": 4.358226
+        },
+        {
+          "code": "KR103502GG38",
+          "name": "국고채권03000-2803(26-1)",
+          "quantity": 0,
+          "evaluationAmount": 222929111,
+          "marketCap": 0,
+          "weight": 8.893943
+        },
+        {
+          "code": "KR103501GE64",
+          "name": "국고채권03250-2706(24-4)",
+          "quantity": 0,
+          "evaluationAmount": 558308333,
+          "marketCap": 0,
+          "weight": 22.274178
+        },
+        {
+          "code": "KRZFA03546GK",
+          "name": "대신증권 20260727-270-105",
+          "quantity": 0,
+          "evaluationAmount": 111111111,
+          "marketCap": 0,
+          "weight": 4.432871
+        },
+        {
+          "code": "KRZFA03547GK",
+          "name": "대신증권 20260727-270-106",
+          "quantity": 0,
+          "evaluationAmount": 111111111,
+          "marketCap": 0,
+          "weight": 4.432871
+        },
+        {
+          "code": "KR6006801DC5",
+          "name": "미래에셋증권68",
+          "quantity": 0,
+          "evaluationAmount": 112259888,
+          "marketCap": 0,
+          "weight": 4.478702
+        },
+        {
+          "code": "KR6082971G34",
+          "name": "미래에셋캐피탈132-1",
+          "quantity": 0,
+          "evaluationAmount": 110464555,
+          "marketCap": 0,
+          "weight": 4.407076
+        },
+        {
+          "code": "KR603271EE14",
+          "name": "신한카드2207-3",
+          "quantity": 0,
+          "evaluationAmount": 111246444,
+          "marketCap": 0,
+          "weight": 4.43827
+        },
+        {
+          "code": "KR6176944G46",
+          "name": "아이엠캐피탈149-2",
+          "quantity": 0,
+          "evaluationAmount": 110667111,
+          "marketCap": 0,
+          "weight": 4.415157
+        },
+        {
+          "code": "KR6030751EB2",
+          "name": "하나증권12-1",
+          "quantity": 0,
+          "evaluationAmount": 111304999,
+          "marketCap": 0,
+          "weight": 4.440606
+        },
+        {
+          "code": "KR6019801G40",
+          "name": "하나캐피탈477-1",
+          "quantity": 0,
+          "evaluationAmount": 111106222,
+          "marketCap": 0,
+          "weight": 4.432676
+        },
+        {
+          "code": "KR6005442F78",
+          "name": "현대지에프홀딩스1-2",
+          "quantity": 0,
+          "evaluationAmount": 108704111,
+          "marketCap": 0,
+          "weight": 4.336841
+        },
+        {
+          "code": "KR6029888FA4",
+          "name": "현대캐피탈2078-3",
+          "quantity": 0,
+          "evaluationAmount": 109761111,
+          "marketCap": 0,
+          "weight": 4.379011
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 211606082,
+          "weight": 8.442202
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:34.175Z"
     },
     "244580": {
       "etf": {
@@ -47704,6 +48432,44 @@
       ],
       "collectedAt": "2026-08-19T15:06:10.158Z"
     },
+    "256450": {
+      "etf": {
+        "code": "256450",
+        "name": "PLUS 심천차이넥스트(합성)",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 3,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "KRYZTRSDAX07",
+          "name": "스왑(NH투자증권_231030)",
+          "quantity": 126437959.28,
+          "evaluationAmount": 126437959,
+          "marketCap": 0,
+          "weight": 37.625981
+        },
+        {
+          "code": "KRYZTRSDAX08",
+          "name": "스왑(미래에셋증권_231030)",
+          "quantity": 208677321.24,
+          "evaluationAmount": 208677321,
+          "marketCap": 0,
+          "weight": 62.099143
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 923689,
+          "weight": 0.274876
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:31.301Z"
+    },
     "256750": {
       "etf": {
         "code": "256750",
@@ -49789,6 +50555,428 @@
         }
       ],
       "collectedAt": "2026-08-19T17:04:04.809Z"
+    },
+    "266550": {
+      "etf": {
+        "code": "266550",
+        "name": "PLUS 중형주저변동50",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 51,
+        "totalWeight": 100.00000299999998
+      },
+      "components": [
+        {
+          "code": "282330",
+          "name": "BGF리테일",
+          "quantity": 166,
+          "evaluationAmount": 23771200,
+          "marketCap": 0,
+          "weight": 2.545272
+        },
+        {
+          "code": "000120",
+          "name": "CJ대한통운",
+          "quantity": 185,
+          "evaluationAmount": 13930500,
+          "marketCap": 0,
+          "weight": 1.491591
+        },
+        {
+          "code": "097950",
+          "name": "CJ제일제당",
+          "quantity": 141,
+          "evaluationAmount": 25859400,
+          "marketCap": 0,
+          "weight": 2.768863
+        },
+        {
+          "code": "007070",
+          "name": "GS리테일",
+          "quantity": 769,
+          "evaluationAmount": 20955250,
+          "marketCap": 0,
+          "weight": 2.243757
+        },
+        {
+          "code": "012630",
+          "name": "HDC",
+          "quantity": 718,
+          "evaluationAmount": 15939600,
+          "marketCap": 0,
+          "weight": 1.706713
+        },
+        {
+          "code": "298050",
+          "name": "HS효성첨단소재",
+          "quantity": 49,
+          "evaluationAmount": 8334900,
+          "marketCap": 0,
+          "weight": 0.892449
+        },
+        {
+          "code": "294870",
+          "name": "IPARK현대산업개발",
+          "quantity": 574,
+          "evaluationAmount": 12915000,
+          "marketCap": 0,
+          "weight": 1.382858
+        },
+        {
+          "code": "175330",
+          "name": "JB금융지주",
+          "quantity": 873,
+          "evaluationAmount": 24356700,
+          "marketCap": 0,
+          "weight": 2.607963
+        },
+        {
+          "code": "016380",
+          "name": "KG스틸",
+          "quantity": 1685,
+          "evaluationAmount": 9115850,
+          "marketCap": 0,
+          "weight": 0.976068
+        },
+        {
+          "code": "051900",
+          "name": "LG생활건강",
+          "quantity": 91,
+          "evaluationAmount": 27300000,
+          "marketCap": 0,
+          "weight": 2.923114
+        },
+        {
+          "code": "108320",
+          "name": "LX세미콘",
+          "quantity": 267,
+          "evaluationAmount": 10519800,
+          "marketCap": 0,
+          "weight": 1.126394
+        },
+        {
+          "code": "001120",
+          "name": "LX인터내셔널",
+          "quantity": 427,
+          "evaluationAmount": 16439500,
+          "marketCap": 0,
+          "weight": 1.760239
+        },
+        {
+          "code": "036570",
+          "name": "NC",
+          "quantity": 90,
+          "evaluationAmount": 20700000,
+          "marketCap": 0,
+          "weight": 2.216427
+        },
+        {
+          "code": "005090",
+          "name": "SGC에너지",
+          "quantity": 201,
+          "evaluationAmount": 12562500,
+          "marketCap": 0,
+          "weight": 1.345114
+        },
+        {
+          "code": "018670",
+          "name": "SK가스",
+          "quantity": 79,
+          "evaluationAmount": 19118000,
+          "marketCap": 0,
+          "weight": 2.047036
+        },
+        {
+          "code": "001740",
+          "name": "SK네트웍스",
+          "quantity": 2351,
+          "evaluationAmount": 17467930,
+          "marketCap": 0,
+          "weight": 1.870357
+        },
+        {
+          "code": "139130",
+          "name": "iM금융지주",
+          "quantity": 1554,
+          "evaluationAmount": 27008520,
+          "marketCap": 0,
+          "weight": 2.891904
+        },
+        {
+          "code": "035250",
+          "name": "강원랜드",
+          "quantity": 1837,
+          "evaluationAmount": 26544650,
+          "marketCap": 0,
+          "weight": 2.842235
+        },
+        {
+          "code": "011780",
+          "name": "금호석유화학",
+          "quantity": 108,
+          "evaluationAmount": 13662000,
+          "marketCap": 0,
+          "weight": 1.462842
+        },
+        {
+          "code": "251270",
+          "name": "넷마블",
+          "quantity": 315,
+          "evaluationAmount": 11954250,
+          "marketCap": 0,
+          "weight": 1.279986
+        },
+        {
+          "code": "006280",
+          "name": "녹십자",
+          "quantity": 106,
+          "evaluationAmount": 12910800,
+          "marketCap": 0,
+          "weight": 1.382408
+        },
+        {
+          "code": "005250",
+          "name": "녹십자홀딩스",
+          "quantity": 1555,
+          "evaluationAmount": 15674400,
+          "marketCap": 0,
+          "weight": 1.678317
+        },
+        {
+          "code": "004370",
+          "name": "농심",
+          "quantity": 53,
+          "evaluationAmount": 22260000,
+          "marketCap": 0,
+          "weight": 2.383462
+        },
+        {
+          "code": "003540",
+          "name": "대신증권",
+          "quantity": 503,
+          "evaluationAmount": 13228900,
+          "marketCap": 0,
+          "weight": 1.416468
+        },
+        {
+          "code": "069620",
+          "name": "대웅제약",
+          "quantity": 104,
+          "evaluationAmount": 12324000,
+          "marketCap": 0,
+          "weight": 1.319577
+        },
+        {
+          "code": "192080",
+          "name": "더블유게임즈",
+          "quantity": 291,
+          "evaluationAmount": 17110800,
+          "marketCap": 0,
+          "weight": 1.832118
+        },
+        {
+          "code": "023530",
+          "name": "롯데쇼핑",
+          "quantity": 125,
+          "evaluationAmount": 12875000,
+          "marketCap": 0,
+          "weight": 1.378575
+        },
+        {
+          "code": "004000",
+          "name": "롯데정밀화학",
+          "quantity": 328,
+          "evaluationAmount": 15202800,
+          "marketCap": 0,
+          "weight": 1.627821
+        },
+        {
+          "code": "004990",
+          "name": "롯데지주",
+          "quantity": 610,
+          "evaluationAmount": 14274000,
+          "marketCap": 0,
+          "weight": 1.528371
+        },
+        {
+          "code": "081660",
+          "name": "미스토홀딩스",
+          "quantity": 521,
+          "evaluationAmount": 22663500,
+          "marketCap": 0,
+          "weight": 2.426666
+        },
+        {
+          "code": "031210",
+          "name": "서울보증보험",
+          "quantity": 312,
+          "evaluationAmount": 13821600,
+          "marketCap": 0,
+          "weight": 1.479931
+        },
+        {
+          "code": "004170",
+          "name": "신세계",
+          "quantity": 38,
+          "evaluationAmount": 16131000,
+          "marketCap": 0,
+          "weight": 1.727207
+        },
+        {
+          "code": "001720",
+          "name": "신영증권",
+          "quantity": 66,
+          "evaluationAmount": 10659000,
+          "marketCap": 0,
+          "weight": 1.141299
+        },
+        {
+          "code": "010780",
+          "name": "아이에스동서",
+          "quantity": 421,
+          "evaluationAmount": 6622330,
+          "marketCap": 0,
+          "weight": 0.709078
+        },
+        {
+          "code": "012750",
+          "name": "에스원",
+          "quantity": 337,
+          "evaluationAmount": 26117500,
+          "marketCap": 0,
+          "weight": 2.796499
+        },
+        {
+          "code": "271560",
+          "name": "오리온",
+          "quantity": 204,
+          "evaluationAmount": 25520400,
+          "marketCap": 0,
+          "weight": 2.732565
+        },
+        {
+          "code": "003470",
+          "name": "유안타증권",
+          "quantity": 3761,
+          "evaluationAmount": 17074940,
+          "marketCap": 0,
+          "weight": 1.828278
+        },
+        {
+          "code": "214320",
+          "name": "이노션",
+          "quantity": 1318,
+          "evaluationAmount": 25186980,
+          "marketCap": 0,
+          "weight": 2.696865
+        },
+        {
+          "code": "030000",
+          "name": "제일기획",
+          "quantity": 1396,
+          "evaluationAmount": 26314600,
+          "marketCap": 0,
+          "weight": 2.817603
+        },
+        {
+          "code": "003690",
+          "name": "코리안리",
+          "quantity": 1859,
+          "evaluationAmount": 28312570,
+          "marketCap": 0,
+          "weight": 3.031533
+        },
+        {
+          "code": "120110",
+          "name": "코오롱인더",
+          "quantity": 293,
+          "evaluationAmount": 16408000,
+          "marketCap": 0,
+          "weight": 1.756866
+        },
+        {
+          "code": "028670",
+          "name": "팬오션",
+          "quantity": 4117,
+          "evaluationAmount": 24866680,
+          "marketCap": 0,
+          "weight": 2.662569
+        },
+        {
+          "code": "005810",
+          "name": "풍산홀딩스",
+          "quantity": 455,
+          "evaluationAmount": 17108000,
+          "marketCap": 0,
+          "weight": 1.831818
+        },
+        {
+          "code": "161890",
+          "name": "한국콜마",
+          "quantity": 239,
+          "evaluationAmount": 30998300,
+          "marketCap": 0,
+          "weight": 3.319104
+        },
+        {
+          "code": "051600",
+          "name": "한전KPS",
+          "quantity": 453,
+          "evaluationAmount": 20362350,
+          "marketCap": 0,
+          "weight": 2.180273
+        },
+        {
+          "code": "069960",
+          "name": "현대백화점",
+          "quantity": 102,
+          "evaluationAmount": 10200000,
+          "marketCap": 0,
+          "weight": 1.092152
+        },
+        {
+          "code": "017800",
+          "name": "현대엘리베이터",
+          "quantity": 303,
+          "evaluationAmount": 22512900,
+          "marketCap": 0,
+          "weight": 2.410541
+        },
+        {
+          "code": "004020",
+          "name": "현대제철",
+          "quantity": 813,
+          "evaluationAmount": 23292450,
+          "marketCap": 0,
+          "weight": 2.49401
+        },
+        {
+          "code": "001450",
+          "name": "현대해상",
+          "quantity": 611,
+          "evaluationAmount": 30366700,
+          "marketCap": 0,
+          "weight": 3.251477
+        },
+        {
+          "code": "008770",
+          "name": "호텔신라",
+          "quantity": 478,
+          "evaluationAmount": 20864700,
+          "marketCap": 0,
+          "weight": 2.234062
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 4214924,
+          "weight": 0.451308
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:47.705Z"
     },
     "269420": {
       "etf": {
@@ -65510,6 +66698,268 @@
       ],
       "collectedAt": "2026-08-19T15:06:53.533Z"
     },
+    "280920": {
+      "etf": {
+        "code": "280920",
+        "name": "PLUS 주도업종",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 31,
+        "totalWeight": 100.000004
+      },
+      "components": [
+        {
+          "code": "267260",
+          "name": "HD현대일렉트릭",
+          "quantity": 36,
+          "evaluationAmount": 28260000,
+          "marketCap": 0,
+          "weight": 2.346236
+        },
+        {
+          "code": "003550",
+          "name": "LG",
+          "quantity": 134,
+          "evaluationAmount": 15101800,
+          "marketCap": 0,
+          "weight": 1.2538
+        },
+        {
+          "code": "373220",
+          "name": "LG에너지솔루션",
+          "quantity": 77,
+          "evaluationAmount": 27027000,
+          "marketCap": 0,
+          "weight": 2.243868
+        },
+        {
+          "code": "011070",
+          "name": "LG이노텍",
+          "quantity": 23,
+          "evaluationAmount": 14559000,
+          "marketCap": 0,
+          "weight": 1.208735
+        },
+        {
+          "code": "066570",
+          "name": "LG전자",
+          "quantity": 177,
+          "evaluationAmount": 36816000,
+          "marketCap": 0,
+          "weight": 3.056582
+        },
+        {
+          "code": "010120",
+          "name": "LS ELECTRIC",
+          "quantity": 128,
+          "evaluationAmount": 26752000,
+          "marketCap": 0,
+          "weight": 2.221037
+        },
+        {
+          "code": "034730",
+          "name": "SK",
+          "quantity": 55,
+          "evaluationAmount": 32450000,
+          "marketCap": 0,
+          "weight": 2.694103
+        },
+        {
+          "code": "017670",
+          "name": "SK텔레콤",
+          "quantity": 219,
+          "evaluationAmount": 21856200,
+          "marketCap": 0,
+          "weight": 1.814572
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "quantity": 398,
+          "evaluationAmount": 54605600,
+          "marketCap": 0,
+          "weight": 4.533531
+        },
+        {
+          "code": "000150",
+          "name": "두산",
+          "quantity": 11,
+          "evaluationAmount": 13750000,
+          "marketCap": 0,
+          "weight": 1.141569
+        },
+        {
+          "code": "034020",
+          "name": "두산에너빌리티",
+          "quantity": 705,
+          "evaluationAmount": 54919500,
+          "marketCap": 0,
+          "weight": 4.559592
+        },
+        {
+          "code": "006800",
+          "name": "미래에셋증권",
+          "quantity": 414,
+          "evaluationAmount": 15048900,
+          "marketCap": 0,
+          "weight": 1.249408
+        },
+        {
+          "code": "006400",
+          "name": "삼성SDI",
+          "quantity": 97,
+          "evaluationAmount": 47336000,
+          "marketCap": 0,
+          "weight": 3.929986
+        },
+        {
+          "code": "028260",
+          "name": "삼성물산",
+          "quantity": 157,
+          "evaluationAmount": 57933000,
+          "marketCap": 0,
+          "weight": 4.809783
+        },
+        {
+          "code": "032830",
+          "name": "삼성생명",
+          "quantity": 138,
+          "evaluationAmount": 42849000,
+          "marketCap": 0,
+          "weight": 3.557461
+        },
+        {
+          "code": "018260",
+          "name": "삼성에스디에스",
+          "quantity": 62,
+          "evaluationAmount": 14167000,
+          "marketCap": 0,
+          "weight": 1.17619
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "quantity": 90,
+          "evaluationAmount": 129600000,
+          "marketCap": 0,
+          "weight": 10.759806
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "quantity": 905,
+          "evaluationAmount": 242992500,
+          "marketCap": 0,
+          "weight": 20.174014
+        },
+        {
+          "code": "000810",
+          "name": "삼성화재",
+          "quantity": 48,
+          "evaluationAmount": 30048000,
+          "marketCap": 0,
+          "weight": 2.494681
+        },
+        {
+          "code": "004170",
+          "name": "신세계",
+          "quantity": 9,
+          "evaluationAmount": 3820500,
+          "marketCap": 0,
+          "weight": 0.31719
+        },
+        {
+          "code": "033240",
+          "name": "자화전자",
+          "quantity": 20,
+          "evaluationAmount": 587000,
+          "marketCap": 0,
+          "weight": 0.048735
+        },
+        {
+          "code": "489790",
+          "name": "한화비전",
+          "quantity": 55,
+          "evaluationAmount": 2986500,
+          "marketCap": 0,
+          "weight": 0.247949
+        },
+        {
+          "code": "009830",
+          "name": "한화솔루션",
+          "quantity": 232,
+          "evaluationAmount": 7888000,
+          "marketCap": 0,
+          "weight": 0.654887
+        },
+        {
+          "code": "012450",
+          "name": "한화에어로스페이스",
+          "quantity": 56,
+          "evaluationAmount": 64176000,
+          "marketCap": 0,
+          "weight": 5.328097
+        },
+        {
+          "code": "000720",
+          "name": "현대건설",
+          "quantity": 119,
+          "evaluationAmount": 13101900,
+          "marketCap": 0,
+          "weight": 1.087762
+        },
+        {
+          "code": "086280",
+          "name": "현대글로비스",
+          "quantity": 62,
+          "evaluationAmount": 12803000,
+          "marketCap": 0,
+          "weight": 1.062946
+        },
+        {
+          "code": "064350",
+          "name": "현대로템",
+          "quantity": 118,
+          "evaluationAmount": 16897600,
+          "marketCap": 0,
+          "weight": 1.402893
+        },
+        {
+          "code": "012330",
+          "name": "현대모비스",
+          "quantity": 97,
+          "evaluationAmount": 50246000,
+          "marketCap": 0,
+          "weight": 4.171583
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "quantity": 219,
+          "evaluationAmount": 95265000,
+          "marketCap": 0,
+          "weight": 7.909205
+        },
+        {
+          "code": "298040",
+          "name": "효성중공업",
+          "quantity": 9,
+          "evaluationAmount": 26856000,
+          "marketCap": 0,
+          "weight": 2.229671
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 3783666,
+          "weight": 0.314132
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:45.593Z"
+    },
     "280930": {
       "etf": {
         "code": "280930",
@@ -78575,6 +80025,1220 @@
         }
       ],
       "collectedAt": "2026-08-19T16:14:34.899Z"
+    },
+    "301400": {
+      "etf": {
+        "code": "301400",
+        "name": "PLUS 코스닥150",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 150,
+        "totalWeight": 99.99999700000005
+      },
+      "components": [
+        {
+          "code": "035760",
+          "name": "CJ ENM",
+          "quantity": 48,
+          "evaluationAmount": 1524000,
+          "marketCap": 0,
+          "weight": 0.210616
+        },
+        {
+          "code": "195940",
+          "name": "HK이노엔",
+          "quantity": 61,
+          "evaluationAmount": 2461350,
+          "marketCap": 0,
+          "weight": 0.340157
+        },
+        {
+          "code": "028300",
+          "name": "HLB",
+          "quantity": 494,
+          "evaluationAmount": 21316100,
+          "marketCap": 0,
+          "weight": 2.945872
+        },
+        {
+          "code": "403870",
+          "name": "HPSP",
+          "quantity": 274,
+          "evaluationAmount": 11686100,
+          "marketCap": 0,
+          "weight": 1.615012
+        },
+        {
+          "code": "095340",
+          "name": "ISC",
+          "quantity": 43,
+          "evaluationAmount": 7185300,
+          "marketCap": 0,
+          "weight": 0.993004
+        },
+        {
+          "code": "035900",
+          "name": "JYP Ent.",
+          "quantity": 112,
+          "evaluationAmount": 4407200,
+          "marketCap": 0,
+          "weight": 0.609072
+        },
+        {
+          "code": "060370",
+          "name": "LS마린솔루션",
+          "quantity": 66,
+          "evaluationAmount": 2062500,
+          "marketCap": 0,
+          "weight": 0.285036
+        },
+        {
+          "code": "417200",
+          "name": "LS머트리얼즈",
+          "quantity": 160,
+          "evaluationAmount": 1876800,
+          "marketCap": 0,
+          "weight": 0.259373
+        },
+        {
+          "code": "060250",
+          "name": "NHN KCP",
+          "quantity": 91,
+          "evaluationAmount": 1267630,
+          "marketCap": 0,
+          "weight": 0.175186
+        },
+        {
+          "code": "218410",
+          "name": "RFHIC",
+          "quantity": 69,
+          "evaluationAmount": 3519000,
+          "marketCap": 0,
+          "weight": 0.486324
+        },
+        {
+          "code": "056190",
+          "name": "SFA",
+          "quantity": 54,
+          "evaluationAmount": 1323000,
+          "marketCap": 0,
+          "weight": 0.182838
+        },
+        {
+          "code": "222080",
+          "name": "SFA넥셀",
+          "quantity": 216,
+          "evaluationAmount": 1708560,
+          "marketCap": 0,
+          "weight": 0.236122
+        },
+        {
+          "code": "036540",
+          "name": "SFA반도체",
+          "quantity": 312,
+          "evaluationAmount": 1868880,
+          "marketCap": 0,
+          "weight": 0.258278
+        },
+        {
+          "code": "067160",
+          "name": "SOOP",
+          "quantity": 32,
+          "evaluationAmount": 1259200,
+          "marketCap": 0,
+          "weight": 0.174021
+        },
+        {
+          "code": "399720",
+          "name": "가온칩스",
+          "quantity": 26,
+          "evaluationAmount": 1209000,
+          "marketCap": 0,
+          "weight": 0.167083
+        },
+        {
+          "code": "036620",
+          "name": "감성코퍼레이션",
+          "quantity": 259,
+          "evaluationAmount": 1012690,
+          "marketCap": 0,
+          "weight": 0.139953
+        },
+        {
+          "code": "098460",
+          "name": "고영",
+          "quantity": 217,
+          "evaluationAmount": 6575100,
+          "marketCap": 0,
+          "weight": 0.908675
+        },
+        {
+          "code": "420770",
+          "name": "기가비스",
+          "quantity": 21,
+          "evaluationAmount": 2690100,
+          "marketCap": 0,
+          "weight": 0.37177
+        },
+        {
+          "code": "121600",
+          "name": "나노신소재",
+          "quantity": 38,
+          "evaluationAmount": 1827800,
+          "marketCap": 0,
+          "weight": 0.252601
+        },
+        {
+          "code": "253590",
+          "name": "네오셈",
+          "quantity": 83,
+          "evaluationAmount": 933750,
+          "marketCap": 0,
+          "weight": 0.129044
+        },
+        {
+          "code": "095660",
+          "name": "네오위즈",
+          "quantity": 51,
+          "evaluationAmount": 923610,
+          "marketCap": 0,
+          "weight": 0.127642
+        },
+        {
+          "code": "007390",
+          "name": "네이처셀",
+          "quantity": 215,
+          "evaluationAmount": 4859000,
+          "marketCap": 0,
+          "weight": 0.671511
+        },
+        {
+          "code": "348210",
+          "name": "넥스틴",
+          "quantity": 32,
+          "evaluationAmount": 1126400,
+          "marketCap": 0,
+          "weight": 0.155668
+        },
+        {
+          "code": "225570",
+          "name": "넥슨게임즈",
+          "quantity": 97,
+          "evaluationAmount": 869120,
+          "marketCap": 0,
+          "weight": 0.120112
+        },
+        {
+          "code": "032190",
+          "name": "다우데이타",
+          "quantity": 55,
+          "evaluationAmount": 1093950,
+          "marketCap": 0,
+          "weight": 0.151183
+        },
+        {
+          "code": "078600",
+          "name": "대주전자재료",
+          "quantity": 47,
+          "evaluationAmount": 4084300,
+          "marketCap": 0,
+          "weight": 0.564448
+        },
+        {
+          "code": "213420",
+          "name": "덕산네오룩스",
+          "quantity": 54,
+          "evaluationAmount": 1819800,
+          "marketCap": 0,
+          "weight": 0.251495
+        },
+        {
+          "code": "194480",
+          "name": "데브시스터즈",
+          "quantity": 33,
+          "evaluationAmount": 586080,
+          "marketCap": 0,
+          "weight": 0.080996
+        },
+        {
+          "code": "033500",
+          "name": "동성화인텍",
+          "quantity": 75,
+          "evaluationAmount": 1353750,
+          "marketCap": 0,
+          "weight": 0.187087
+        },
+        {
+          "code": "005290",
+          "name": "동진쎄미켐",
+          "quantity": 142,
+          "evaluationAmount": 6134400,
+          "marketCap": 0,
+          "weight": 0.84777
+        },
+        {
+          "code": "025900",
+          "name": "동화기업",
+          "quantity": 45,
+          "evaluationAmount": 312300,
+          "marketCap": 0,
+          "weight": 0.04316
+        },
+        {
+          "code": "131970",
+          "name": "두산테스나",
+          "quantity": 50,
+          "evaluationAmount": 3935000,
+          "marketCap": 0,
+          "weight": 0.543815
+        },
+        {
+          "code": "347850",
+          "name": "디앤디파마텍",
+          "quantity": 146,
+          "evaluationAmount": 8438800,
+          "marketCap": 0,
+          "weight": 1.166237
+        },
+        {
+          "code": "376300",
+          "name": "디어유",
+          "quantity": 50,
+          "evaluationAmount": 940500,
+          "marketCap": 0,
+          "weight": 0.129977
+        },
+        {
+          "code": "281740",
+          "name": "레이크머티리얼즈",
+          "quantity": 155,
+          "evaluationAmount": 1937500,
+          "marketCap": 0,
+          "weight": 0.267761
+        },
+        {
+          "code": "277810",
+          "name": "레인보우로보틱스",
+          "quantity": 33,
+          "evaluationAmount": 15510000,
+          "marketCap": 0,
+          "weight": 2.143473
+        },
+        {
+          "code": "090360",
+          "name": "로보스타",
+          "quantity": 27,
+          "evaluationAmount": 2216700,
+          "marketCap": 0,
+          "weight": 0.306347
+        },
+        {
+          "code": "108490",
+          "name": "로보티즈",
+          "quantity": 48,
+          "evaluationAmount": 13392000,
+          "marketCap": 0,
+          "weight": 1.850766
+        },
+        {
+          "code": "328130",
+          "name": "루닛",
+          "quantity": 270,
+          "evaluationAmount": 2616300,
+          "marketCap": 0,
+          "weight": 0.361571
+        },
+        {
+          "code": "141080",
+          "name": "리가켐바이오",
+          "quantity": 109,
+          "evaluationAmount": 11455900,
+          "marketCap": 0,
+          "weight": 1.583199
+        },
+        {
+          "code": "058470",
+          "name": "리노공업",
+          "quantity": 209,
+          "evaluationAmount": 14170200,
+          "marketCap": 0,
+          "weight": 1.958313
+        },
+        {
+          "code": "215200",
+          "name": "메가스터디교육",
+          "quantity": 26,
+          "evaluationAmount": 937300,
+          "marketCap": 0,
+          "weight": 0.129534
+        },
+        {
+          "code": "100790",
+          "name": "미래에셋벤처투자",
+          "quantity": 76,
+          "evaluationAmount": 1225880,
+          "marketCap": 0,
+          "weight": 0.169416
+        },
+        {
+          "code": "310210",
+          "name": "보로노이",
+          "quantity": 45,
+          "evaluationAmount": 7852500,
+          "marketCap": 0,
+          "weight": 1.085211
+        },
+        {
+          "code": "089970",
+          "name": "브이엠",
+          "quantity": 94,
+          "evaluationAmount": 6269800,
+          "marketCap": 0,
+          "weight": 0.866483
+        },
+        {
+          "code": "018290",
+          "name": "브이티",
+          "quantity": 90,
+          "evaluationAmount": 1126800,
+          "marketCap": 0,
+          "weight": 0.155723
+        },
+        {
+          "code": "083650",
+          "name": "비에이치아이",
+          "quantity": 89,
+          "evaluationAmount": 5242100,
+          "marketCap": 0,
+          "weight": 0.724455
+        },
+        {
+          "code": "082920",
+          "name": "비츠로셀",
+          "quantity": 115,
+          "evaluationAmount": 3513250,
+          "marketCap": 0,
+          "weight": 0.485529
+        },
+        {
+          "code": "000250",
+          "name": "삼천당제약",
+          "quantity": 58,
+          "evaluationAmount": 10712600,
+          "marketCap": 0,
+          "weight": 1.480475
+        },
+        {
+          "code": "038500",
+          "name": "삼표시멘트",
+          "quantity": 159,
+          "evaluationAmount": 1225890,
+          "marketCap": 0,
+          "weight": 0.169417
+        },
+        {
+          "code": "437730",
+          "name": "삼현",
+          "quantity": 48,
+          "evaluationAmount": 1852800,
+          "marketCap": 0,
+          "weight": 0.256056
+        },
+        {
+          "code": "006730",
+          "name": "서부T&D",
+          "quantity": 134,
+          "evaluationAmount": 1416380,
+          "marketCap": 0,
+          "weight": 0.195743
+        },
+        {
+          "code": "178320",
+          "name": "서진시스템",
+          "quantity": 207,
+          "evaluationAmount": 7669350,
+          "marketCap": 0,
+          "weight": 1.0599
+        },
+        {
+          "code": "171090",
+          "name": "선익시스템",
+          "quantity": 22,
+          "evaluationAmount": 1465200,
+          "marketCap": 0,
+          "weight": 0.20249
+        },
+        {
+          "code": "014620",
+          "name": "성광벤드",
+          "quantity": 69,
+          "evaluationAmount": 1697400,
+          "marketCap": 0,
+          "weight": 0.23458
+        },
+        {
+          "code": "015750",
+          "name": "성우하이텍",
+          "quantity": 196,
+          "evaluationAmount": 1181880,
+          "marketCap": 0,
+          "weight": 0.163335
+        },
+        {
+          "code": "043260",
+          "name": "성호전자",
+          "quantity": 135,
+          "evaluationAmount": 2895750,
+          "marketCap": 0,
+          "weight": 0.400191
+        },
+        {
+          "code": "068760",
+          "name": "셀트리온제약",
+          "quantity": 84,
+          "evaluationAmount": 3519600,
+          "marketCap": 0,
+          "weight": 0.486407
+        },
+        {
+          "code": "357780",
+          "name": "솔브레인",
+          "quantity": 17,
+          "evaluationAmount": 5550500,
+          "marketCap": 0,
+          "weight": 0.767076
+        },
+        {
+          "code": "036830",
+          "name": "솔브레인홀딩스",
+          "quantity": 22,
+          "evaluationAmount": 861300,
+          "marketCap": 0,
+          "weight": 0.119031
+        },
+        {
+          "code": "253450",
+          "name": "스튜디오드래곤",
+          "quantity": 57,
+          "evaluationAmount": 1248300,
+          "marketCap": 0,
+          "weight": 0.172514
+        },
+        {
+          "code": "025320",
+          "name": "시노펙스",
+          "quantity": 338,
+          "evaluationAmount": 1355380,
+          "marketCap": 0,
+          "weight": 0.187313
+        },
+        {
+          "code": "065350",
+          "name": "신성델타테크",
+          "quantity": 76,
+          "evaluationAmount": 2291400,
+          "marketCap": 0,
+          "weight": 0.31667
+        },
+        {
+          "code": "257720",
+          "name": "실리콘투",
+          "quantity": 149,
+          "evaluationAmount": 6630500,
+          "marketCap": 0,
+          "weight": 0.916331
+        },
+        {
+          "code": "222800",
+          "name": "심텍",
+          "quantity": 104,
+          "evaluationAmount": 11533600,
+          "marketCap": 0,
+          "weight": 1.593937
+        },
+        {
+          "code": "099320",
+          "name": "쎄트렉아이",
+          "quantity": 29,
+          "evaluationAmount": 2244600,
+          "marketCap": 0,
+          "weight": 0.310202
+        },
+        {
+          "code": "050890",
+          "name": "쏠리드",
+          "quantity": 223,
+          "evaluationAmount": 2160870,
+          "marketCap": 0,
+          "weight": 0.298631
+        },
+        {
+          "code": "352480",
+          "name": "씨앤씨인터내셔널",
+          "quantity": 14,
+          "evaluationAmount": 289800,
+          "marketCap": 0,
+          "weight": 0.04005
+        },
+        {
+          "code": "096530",
+          "name": "씨젠",
+          "quantity": 130,
+          "evaluationAmount": 3939000,
+          "marketCap": 0,
+          "weight": 0.544367
+        },
+        {
+          "code": "025980",
+          "name": "아난티",
+          "quantity": 295,
+          "evaluationAmount": 1327500,
+          "marketCap": 0,
+          "weight": 0.18346
+        },
+        {
+          "code": "214430",
+          "name": "아이쓰리시스템",
+          "quantity": 20,
+          "evaluationAmount": 1348000,
+          "marketCap": 0,
+          "weight": 0.186293
+        },
+        {
+          "code": "124500",
+          "name": "아이티센글로벌",
+          "quantity": 75,
+          "evaluationAmount": 1942500,
+          "marketCap": 0,
+          "weight": 0.268452
+        },
+        {
+          "code": "053800",
+          "name": "안랩",
+          "quantity": 22,
+          "evaluationAmount": 1258400,
+          "marketCap": 0,
+          "weight": 0.17391
+        },
+        {
+          "code": "196170",
+          "name": "알테오젠",
+          "quantity": 223,
+          "evaluationAmount": 66454000,
+          "marketCap": 0,
+          "weight": 9.183903
+        },
+        {
+          "code": "101490",
+          "name": "에스앤에스텍",
+          "quantity": 68,
+          "evaluationAmount": 2975000,
+          "marketCap": 0,
+          "weight": 0.411143
+        },
+        {
+          "code": "041510",
+          "name": "에스엠",
+          "quantity": 57,
+          "evaluationAmount": 4047000,
+          "marketCap": 0,
+          "weight": 0.559293
+        },
+        {
+          "code": "237690",
+          "name": "에스티팜",
+          "quantity": 54,
+          "evaluationAmount": 5416200,
+          "marketCap": 0,
+          "weight": 0.748516
+        },
+        {
+          "code": "058610",
+          "name": "에스피지",
+          "quantity": 57,
+          "evaluationAmount": 6156000,
+          "marketCap": 0,
+          "weight": 0.850756
+        },
+        {
+          "code": "298380",
+          "name": "에이비엘바이오",
+          "quantity": 175,
+          "evaluationAmount": 13965000,
+          "marketCap": 0,
+          "weight": 1.929955
+        },
+        {
+          "code": "295310",
+          "name": "에이치브이엠",
+          "quantity": 33,
+          "evaluationAmount": 1612050,
+          "marketCap": 0,
+          "weight": 0.222784
+        },
+        {
+          "code": "0009K0",
+          "name": "에임드바이오",
+          "quantity": 117,
+          "evaluationAmount": 3018600,
+          "marketCap": 0,
+          "weight": 0.417169
+        },
+        {
+          "code": "086520",
+          "name": "에코프로",
+          "quantity": 412,
+          "evaluationAmount": 35885200,
+          "marketCap": 0,
+          "weight": 4.959313
+        },
+        {
+          "code": "247540",
+          "name": "에코프로비엠",
+          "quantity": 227,
+          "evaluationAmount": 24765700,
+          "marketCap": 0,
+          "weight": 3.422605
+        },
+        {
+          "code": "036810",
+          "name": "에프에스티",
+          "quantity": 68,
+          "evaluationAmount": 1638800,
+          "marketCap": 0,
+          "weight": 0.226481
+        },
+        {
+          "code": "348370",
+          "name": "엔켐",
+          "quantity": 84,
+          "evaluationAmount": 1839600,
+          "marketCap": 0,
+          "weight": 0.254232
+        },
+        {
+          "code": "290650",
+          "name": "엘앤씨바이오",
+          "quantity": 81,
+          "evaluationAmount": 4276800,
+          "marketCap": 0,
+          "weight": 0.591051
+        },
+        {
+          "code": "475830",
+          "name": "오름테라퓨틱",
+          "quantity": 76,
+          "evaluationAmount": 4993200,
+          "marketCap": 0,
+          "weight": 0.690057
+        },
+        {
+          "code": "039200",
+          "name": "오스코텍",
+          "quantity": 139,
+          "evaluationAmount": 5087400,
+          "marketCap": 0,
+          "weight": 0.703076
+        },
+        {
+          "code": "226950",
+          "name": "올릭스",
+          "quantity": 68,
+          "evaluationAmount": 7242000,
+          "marketCap": 0,
+          "weight": 1.00084
+        },
+        {
+          "code": "232140",
+          "name": "와이씨",
+          "quantity": 166,
+          "evaluationAmount": 1761260,
+          "marketCap": 0,
+          "weight": 0.243405
+        },
+        {
+          "code": "122870",
+          "name": "와이지엔터테인먼트",
+          "quantity": 60,
+          "evaluationAmount": 2319000,
+          "marketCap": 0,
+          "weight": 0.320484
+        },
+        {
+          "code": "032820",
+          "name": "우리기술",
+          "quantity": 665,
+          "evaluationAmount": 7647500,
+          "marketCap": 0,
+          "weight": 1.05688
+        },
+        {
+          "code": "041190",
+          "name": "우리기술투자",
+          "quantity": 220,
+          "evaluationAmount": 1008700,
+          "marketCap": 0,
+          "weight": 0.139402
+        },
+        {
+          "code": "240810",
+          "name": "원익IPS",
+          "quantity": 139,
+          "evaluationAmount": 15623600,
+          "marketCap": 0,
+          "weight": 2.159172
+        },
+        {
+          "code": "074600",
+          "name": "원익QnC",
+          "quantity": 66,
+          "evaluationAmount": 1834800,
+          "marketCap": 0,
+          "weight": 0.253568
+        },
+        {
+          "code": "030530",
+          "name": "원익홀딩스",
+          "quantity": 169,
+          "evaluationAmount": 3339440,
+          "marketCap": 0,
+          "weight": 0.461509
+        },
+        {
+          "code": "069080",
+          "name": "웹젠",
+          "quantity": 81,
+          "evaluationAmount": 923400,
+          "marketCap": 0,
+          "weight": 0.127613
+        },
+        {
+          "code": "112040",
+          "name": "위메이드",
+          "quantity": 82,
+          "evaluationAmount": 1303800,
+          "marketCap": 0,
+          "weight": 0.180184
+        },
+        {
+          "code": "101730",
+          "name": "위메이드맥스",
+          "quantity": 88,
+          "evaluationAmount": 360360,
+          "marketCap": 0,
+          "weight": 0.049802
+        },
+        {
+          "code": "388720",
+          "name": "유일로보틱스",
+          "quantity": 25,
+          "evaluationAmount": 1742500,
+          "marketCap": 0,
+          "weight": 0.240812
+        },
+        {
+          "code": "056080",
+          "name": "유진로봇",
+          "quantity": 77,
+          "evaluationAmount": 992530,
+          "marketCap": 0,
+          "weight": 0.137167
+        },
+        {
+          "code": "084370",
+          "name": "유진테크",
+          "quantity": 58,
+          "evaluationAmount": 7702400,
+          "marketCap": 0,
+          "weight": 1.064467
+        },
+        {
+          "code": "272290",
+          "name": "이녹스첨단소재",
+          "quantity": 51,
+          "evaluationAmount": 1083750,
+          "marketCap": 0,
+          "weight": 0.149774
+        },
+        {
+          "code": "039030",
+          "name": "이오테크닉스",
+          "quantity": 35,
+          "evaluationAmount": 14490000,
+          "marketCap": 0,
+          "weight": 2.002509
+        },
+        {
+          "code": "211050",
+          "name": "인카금융서비스",
+          "quantity": 110,
+          "evaluationAmount": 1203400,
+          "marketCap": 0,
+          "weight": 0.166309
+        },
+        {
+          "code": "189300",
+          "name": "인텔리안테크",
+          "quantity": 33,
+          "evaluationAmount": 2306700,
+          "marketCap": 0,
+          "weight": 0.318785
+        },
+        {
+          "code": "033100",
+          "name": "제룡전기",
+          "quantity": 44,
+          "evaluationAmount": 2065800,
+          "marketCap": 0,
+          "weight": 0.285492
+        },
+        {
+          "code": "204270",
+          "name": "제이앤티씨",
+          "quantity": 80,
+          "evaluationAmount": 1429600,
+          "marketCap": 0,
+          "weight": 0.19757
+        },
+        {
+          "code": "080220",
+          "name": "제주반도체",
+          "quantity": 128,
+          "evaluationAmount": 9702400,
+          "marketCap": 0,
+          "weight": 1.340866
+        },
+        {
+          "code": "082270",
+          "name": "젬백스",
+          "quantity": 140,
+          "evaluationAmount": 1535800,
+          "marketCap": 0,
+          "weight": 0.212247
+        },
+        {
+          "code": "036930",
+          "name": "주성엔지니어링",
+          "quantity": 131,
+          "evaluationAmount": 23488300,
+          "marketCap": 0,
+          "weight": 3.246069
+        },
+        {
+          "code": "358570",
+          "name": "지아이이노베이션",
+          "quantity": 255,
+          "evaluationAmount": 2078250,
+          "marketCap": 0,
+          "weight": 0.287213
+        },
+        {
+          "code": "085660",
+          "name": "차바이오텍",
+          "quantity": 282,
+          "evaluationAmount": 2501340,
+          "marketCap": 0,
+          "weight": 0.345684
+        },
+        {
+          "code": "278280",
+          "name": "천보",
+          "quantity": 28,
+          "evaluationAmount": 1003800,
+          "marketCap": 0,
+          "weight": 0.138725
+        },
+        {
+          "code": "293490",
+          "name": "카카오게임즈",
+          "quantity": 163,
+          "evaluationAmount": 1436030,
+          "marketCap": 0,
+          "weight": 0.198458
+        },
+        {
+          "code": "042000",
+          "name": "카페24",
+          "quantity": 78,
+          "evaluationAmount": 1292460,
+          "marketCap": 0,
+          "weight": 0.178617
+        },
+        {
+          "code": "078340",
+          "name": "컴투스",
+          "quantity": 32,
+          "evaluationAmount": 990400,
+          "marketCap": 0,
+          "weight": 0.136873
+        },
+        {
+          "code": "214370",
+          "name": "케어젠",
+          "quantity": 66,
+          "evaluationAmount": 3656400,
+          "marketCap": 0,
+          "weight": 0.505312
+        },
+        {
+          "code": "032500",
+          "name": "케이엠더블유",
+          "quantity": 123,
+          "evaluationAmount": 1961850,
+          "marketCap": 0,
+          "weight": 0.271127
+        },
+        {
+          "code": "052400",
+          "name": "코나아이",
+          "quantity": 35,
+          "evaluationAmount": 1317750,
+          "marketCap": 0,
+          "weight": 0.182112
+        },
+        {
+          "code": "241710",
+          "name": "코스메카코리아",
+          "quantity": 26,
+          "evaluationAmount": 3195400,
+          "marketCap": 0,
+          "weight": 0.441602
+        },
+        {
+          "code": "060280",
+          "name": "큐렉소",
+          "quantity": 122,
+          "evaluationAmount": 1083360,
+          "marketCap": 0,
+          "weight": 0.14972
+        },
+        {
+          "code": "445680",
+          "name": "큐리옥스바이오시스템즈",
+          "quantity": 60,
+          "evaluationAmount": 2685000,
+          "marketCap": 0,
+          "weight": 0.371065
+        },
+        {
+          "code": "214150",
+          "name": "클래시스",
+          "quantity": 121,
+          "evaluationAmount": 4198700,
+          "marketCap": 0,
+          "weight": 0.580258
+        },
+        {
+          "code": "466100",
+          "name": "클로봇",
+          "quantity": 110,
+          "evaluationAmount": 3382500,
+          "marketCap": 0,
+          "weight": 0.467459
+        },
+        {
+          "code": "323280",
+          "name": "태성",
+          "quantity": 90,
+          "evaluationAmount": 4653000,
+          "marketCap": 0,
+          "weight": 0.643042
+        },
+        {
+          "code": "095610",
+          "name": "테스",
+          "quantity": 49,
+          "evaluationAmount": 7007000,
+          "marketCap": 0,
+          "weight": 0.968363
+        },
+        {
+          "code": "089030",
+          "name": "테크윙",
+          "quantity": 112,
+          "evaluationAmount": 5521600,
+          "marketCap": 0,
+          "weight": 0.763082
+        },
+        {
+          "code": "064760",
+          "name": "티씨케이",
+          "quantity": 24,
+          "evaluationAmount": 5568000,
+          "marketCap": 0,
+          "weight": 0.769494
+        },
+        {
+          "code": "131290",
+          "name": "티에스이",
+          "quantity": 23,
+          "evaluationAmount": 6187000,
+          "marketCap": 0,
+          "weight": 0.85504
+        },
+        {
+          "code": "214450",
+          "name": "파마리서치",
+          "quantity": 29,
+          "evaluationAmount": 11397000,
+          "marketCap": 0,
+          "weight": 1.575059
+        },
+        {
+          "code": "140860",
+          "name": "파크시스템스",
+          "quantity": 19,
+          "evaluationAmount": 5310500,
+          "marketCap": 0,
+          "weight": 0.733908
+        },
+        {
+          "code": "263750",
+          "name": "펄어비스",
+          "quantity": 160,
+          "evaluationAmount": 4888000,
+          "marketCap": 0,
+          "weight": 0.675519
+        },
+        {
+          "code": "251970",
+          "name": "펌텍코리아",
+          "quantity": 19,
+          "evaluationAmount": 1045000,
+          "marketCap": 0,
+          "weight": 0.144418
+        },
+        {
+          "code": "087010",
+          "name": "펩트론",
+          "quantity": 90,
+          "evaluationAmount": 16200000,
+          "marketCap": 0,
+          "weight": 2.23883
+        },
+        {
+          "code": "009520",
+          "name": "포스코엠텍",
+          "quantity": 88,
+          "evaluationAmount": 1038400,
+          "marketCap": 0,
+          "weight": 0.143506
+        },
+        {
+          "code": "319660",
+          "name": "피에스케이",
+          "quantity": 83,
+          "evaluationAmount": 10956000,
+          "marketCap": 0,
+          "weight": 1.514113
+        },
+        {
+          "code": "031980",
+          "name": "피에스케이홀딩스",
+          "quantity": 30,
+          "evaluationAmount": 3351000,
+          "marketCap": 0,
+          "weight": 0.463106
+        },
+        {
+          "code": "137400",
+          "name": "피엔티",
+          "quantity": 80,
+          "evaluationAmount": 2408000,
+          "marketCap": 0,
+          "weight": 0.332784
+        },
+        {
+          "code": "161580",
+          "name": "필옵틱스",
+          "quantity": 71,
+          "evaluationAmount": 1991550,
+          "marketCap": 0,
+          "weight": 0.275231
+        },
+        {
+          "code": "067310",
+          "name": "하나마이크론",
+          "quantity": 202,
+          "evaluationAmount": 7918400,
+          "marketCap": 0,
+          "weight": 1.094318
+        },
+        {
+          "code": "166090",
+          "name": "하나머티리얼즈",
+          "quantity": 44,
+          "evaluationAmount": 2486000,
+          "marketCap": 0,
+          "weight": 0.343564
+        },
+        {
+          "code": "003380",
+          "name": "하림지주",
+          "quantity": 184,
+          "evaluationAmount": 1957760,
+          "marketCap": 0,
+          "weight": 0.270561
+        },
+        {
+          "code": "125490",
+          "name": "한라캐스트",
+          "quantity": 94,
+          "evaluationAmount": 1115780,
+          "marketCap": 0,
+          "weight": 0.1542
+        },
+        {
+          "code": "030520",
+          "name": "한컴",
+          "quantity": 64,
+          "evaluationAmount": 1113600,
+          "marketCap": 0,
+          "weight": 0.153899
+        },
+        {
+          "code": "319400",
+          "name": "현대무벡스",
+          "quantity": 235,
+          "evaluationAmount": 5898500,
+          "marketCap": 0,
+          "weight": 0.815169
+        },
+        {
+          "code": "048410",
+          "name": "현대바이오",
+          "quantity": 370,
+          "evaluationAmount": 2701000,
+          "marketCap": 0,
+          "weight": 0.373277
+        },
+        {
+          "code": "090710",
+          "name": "휴림로봇",
+          "quantity": 499,
+          "evaluationAmount": 3507970,
+          "marketCap": 0,
+          "weight": 0.484799
+        },
+        {
+          "code": "145020",
+          "name": "휴젤",
+          "quantity": 23,
+          "evaluationAmount": 5704000,
+          "marketCap": 0,
+          "weight": 0.788289
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 370412,
+          "weight": 0.051191
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:55.479Z"
     },
     "304660": {
       "etf": {
@@ -100039,6 +102703,348 @@
         }
       ],
       "collectedAt": "2026-08-19T17:25:03.671Z"
+    },
+    "332620": {
+      "etf": {
+        "code": "332620",
+        "name": "PLUS 미국장기우량회사채",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 41,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "US037833CH12",
+          "name": "AAPL 4 1/4 02/09/47",
+          "quantity": 1877.01,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US002824BH26",
+          "name": "ABT 4.9 11/30/46",
+          "quantity": 2406.42,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US023135CA22",
+          "name": "AMZN 2 7/8 05/12/41",
+          "quantity": 3475.94,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US06051GKB40",
+          "name": "BAC 2.972 07/21/52",
+          "quantity": 1711.23,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US06051GHS12",
+          "name": "BAC 4.33 03/15/50",
+          "quantity": 1331.55,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US10373QBG47",
+          "name": "BPLN 3 02/24/50",
+          "quantity": 3475.94,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US10373QBR02",
+          "name": "BPLN 3.06 06/17/41",
+          "quantity": 1711.23,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US084664CR08",
+          "name": "BRK 4 1/4 01/15/49",
+          "quantity": 3026.74,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US595620AN51",
+          "name": "BRKHEC 4.4 10/15/44",
+          "quantity": 1877.01,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US149123CJ87",
+          "name": "CAT 3 1/4 04/09/50",
+          "quantity": 1711.23,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US20030NCE94",
+          "name": "CMCSA 3.999 11/01/49",
+          "quantity": 224.6,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US20030NEF42",
+          "name": "CMCSA 5.35 05/15/53",
+          "quantity": 1711.23,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US17275RBU59",
+          "name": "CSCO 5.3 02/26/54",
+          "quantity": 2085.56,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US26442CAU80",
+          "name": "DUK 3.95 03/15/48",
+          "quantity": 1513.37,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US26442CAN48",
+          "name": "DUK 4 09/30/42",
+          "quantity": 1513.37,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US437076BA91",
+          "name": "HD 4.2 04/01/43",
+          "quantity": 1550.8,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US404280DW61",
+          "name": "HSBC 6.332 03/09/44",
+          "quantity": 534.76,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US46647PAL04",
+          "name": "JPM 3.964 11/15/48",
+          "quantity": 4021.39,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US46647PAA49",
+          "name": "JPM 4.26 02/22/48",
+          "quantity": 967.91,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US494368BV45",
+          "name": "KMB 3.2 07/30/46",
+          "quantity": 1877.01,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US191216DC18",
+          "name": "KO 2 1/2 03/15/51",
+          "quantity": 1711.23,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US191216DQ04",
+          "name": "KO 2 7/8 05/05/41",
+          "quantity": 3475.94,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US74005PBD50",
+          "name": "LIN 3.55 11/07/42",
+          "quantity": 363.64,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US59156RCD89",
+          "name": "MET 5 1/4 01/15/54",
+          "quantity": 2406.42,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US594918BT09",
+          "name": "MSFT 3.7 08/08/46",
+          "quantity": 3475.94,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US341081FF99",
+          "name": "NEE 4 1/8 02/01/42",
+          "quantity": 1711.23,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US341081GZ45",
+          "name": "NEE 5.8 03/15/65",
+          "quantity": 2406.42,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US68233JBB98",
+          "name": "ONCRTX 3 3/4 04/01/45",
+          "quantity": 1877.01,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US713448DP06",
+          "name": "PEP 3.45 10/06/46",
+          "quantity": 363.64,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US713448FN30",
+          "name": "PEP 4.2 07/18/52",
+          "quantity": 1711.23,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US717081FA61",
+          "name": "PFE 2.7 05/28/50",
+          "quantity": 2994.65,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US716973AG71",
+          "name": "PFE 5.3 05/19/53",
+          "quantity": 3475.94,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US747525BT99",
+          "name": "QCOM 6 05/20/53",
+          "quantity": 1711.23,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US010392FW36",
+          "name": "SO 3 03/15/52",
+          "quantity": 3475.94,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UC08",
+          "name": "T 4 1/4 08/15/54",
+          "quantity": 1069.52,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US89153VAU35",
+          "name": "TOTAL 3.461 07/12/49",
+          "quantity": 2149.73,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US91324PDQ28",
+          "name": "UNH 4.45 12/15/48",
+          "quantity": 2844.92,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US907818GF96",
+          "name": "UNP 4.95 05/15/53",
+          "quantity": 1711.23,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US911312BW51",
+          "name": "UPS 5.3 04/01/50",
+          "quantity": 1711.23,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US95000U2M49",
+          "name": "WFC 5.013 04/04/51",
+          "quantity": 1711.23,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 2274945,
+          "weight": 100
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:19.648Z"
     },
     "332930": {
       "etf": {
@@ -153968,6 +156974,148 @@
       ],
       "collectedAt": "2026-08-19T15:28:52.906Z"
     },
+    "421320": {
+      "etf": {
+        "code": "421320",
+        "name": "PLUS 우주항공",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 16,
+        "totalWeight": 99.999998
+      },
+      "components": [
+        {
+          "code": "211270",
+          "name": "AP위성",
+          "quantity": 3043,
+          "evaluationAmount": 24922170,
+          "marketCap": 0,
+          "weight": 1.681788
+        },
+        {
+          "code": "079550",
+          "name": "LIG디펜스앤에어로스페이스",
+          "quantity": 243,
+          "evaluationAmount": 193185000,
+          "marketCap": 0,
+          "weight": 13.036436
+        },
+        {
+          "code": "474170",
+          "name": "루미르",
+          "quantity": 2619,
+          "evaluationAmount": 17783010,
+          "marketCap": 0,
+          "weight": 1.200026
+        },
+        {
+          "code": "347700",
+          "name": "스피어",
+          "quantity": 5797,
+          "evaluationAmount": 149272750,
+          "marketCap": 0,
+          "weight": 10.073166
+        },
+        {
+          "code": "099320",
+          "name": "쎄트렉아이",
+          "quantity": 1316,
+          "evaluationAmount": 101858400,
+          "marketCap": 0,
+          "weight": 6.873569
+        },
+        {
+          "code": "295310",
+          "name": "에이치브이엠",
+          "quantity": 2252,
+          "evaluationAmount": 110010200,
+          "marketCap": 0,
+          "weight": 7.423666
+        },
+        {
+          "code": "462350",
+          "name": "이노스페이스",
+          "quantity": 7120,
+          "evaluationAmount": 59380800,
+          "marketCap": 0,
+          "weight": 4.007112
+        },
+        {
+          "code": "189300",
+          "name": "인텔리안테크",
+          "quantity": 1714,
+          "evaluationAmount": 119808600,
+          "marketCap": 0,
+          "weight": 8.084878
+        },
+        {
+          "code": "361390",
+          "name": "제노코",
+          "quantity": 1371,
+          "evaluationAmount": 17987520,
+          "marketCap": 0,
+          "weight": 1.213827
+        },
+        {
+          "code": "451760",
+          "name": "컨텍",
+          "quantity": 3054,
+          "evaluationAmount": 24676320,
+          "marketCap": 0,
+          "weight": 1.665198
+        },
+        {
+          "code": "274090",
+          "name": "켄코아에어로스페이스",
+          "quantity": 2886,
+          "evaluationAmount": 32727240,
+          "marketCap": 0,
+          "weight": 2.208487
+        },
+        {
+          "code": "368770",
+          "name": "파이버프로",
+          "quantity": 5775,
+          "evaluationAmount": 81369750,
+          "marketCap": 0,
+          "weight": 5.490962
+        },
+        {
+          "code": "047810",
+          "name": "한국항공우주",
+          "quantity": 1415,
+          "evaluationAmount": 198100000,
+          "marketCap": 0,
+          "weight": 13.368108
+        },
+        {
+          "code": "272210",
+          "name": "한화시스템",
+          "quantity": 1992,
+          "evaluationAmount": 159160800,
+          "marketCap": 0,
+          "weight": 10.740428
+        },
+        {
+          "code": "012450",
+          "name": "한화에어로스페이스",
+          "quantity": 166,
+          "evaluationAmount": 190236000,
+          "marketCap": 0,
+          "weight": 12.837433
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 1406514,
+          "weight": 0.094914
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:36.884Z"
+    },
     "423160": {
       "etf": {
         "code": "423160",
@@ -179590,6 +182738,100 @@
       ],
       "collectedAt": "2026-08-19T15:08:08.850Z"
     },
+    "447660": {
+      "etf": {
+        "code": "447660",
+        "name": "PLUS 애플채권혼합",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 10,
+        "totalWeight": 100.00000100000001
+      },
+      "components": [
+        {
+          "code": "114460",
+          "name": "ACE 국고채3년",
+          "quantity": 62.5,
+          "evaluationAmount": 6286875,
+          "marketCap": 0,
+          "weight": 1.33169
+        },
+        {
+          "code": "US0378331005",
+          "name": "APPLE INC",
+          "quantity": 486.23,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "114260",
+          "name": "KODEX 국고채3년",
+          "quantity": 62.5,
+          "evaluationAmount": 3859062,
+          "marketCap": 0,
+          "weight": 0.817429
+        },
+        {
+          "code": "298340",
+          "name": "PLUS 국채선물3년",
+          "quantity": 2562.5,
+          "evaluationAmount": 144665937,
+          "marketCap": 0,
+          "weight": 30.643227
+        },
+        {
+          "code": "114100",
+          "name": "RISE 국고채3년",
+          "quantity": 468.75,
+          "evaluationAmount": 49928906,
+          "marketCap": 0,
+          "weight": 10.575971
+        },
+        {
+          "code": "114820",
+          "name": "TIGER 국채3년",
+          "quantity": 609.38,
+          "evaluationAmount": 63984375,
+          "marketCap": 0,
+          "weight": 13.553209
+        },
+        {
+          "code": "KR103501GF63",
+          "name": "국고채권02250-2806(25-4)",
+          "quantity": 0,
+          "evaluationAmount": 61230875,
+          "marketCap": 0,
+          "weight": 12.969961
+        },
+        {
+          "code": "KR103501GFC3",
+          "name": "국고채권02750-2812(25-10)",
+          "quantity": 0,
+          "evaluationAmount": 61447562,
+          "marketCap": 0,
+          "weight": 13.01586
+        },
+        {
+          "code": "KR103503GG37",
+          "name": "국고채권03375-3103(26-3)",
+          "quantity": 0,
+          "evaluationAmount": 61541187,
+          "marketCap": 0,
+          "weight": 13.035692
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 19152820,
+          "weight": 4.056962
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:34.123Z"
+    },
     "448330": {
       "etf": {
         "code": "448330",
@@ -193312,6 +196554,780 @@
       ],
       "collectedAt": "2026-08-19T17:04:01.362Z"
     },
+    "451000": {
+      "etf": {
+        "code": "451000",
+        "name": "PLUS 종합채권(AA-이상)액티브",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 95,
+        "totalWeight": 99.999999
+      },
+      "components": [
+        {
+          "code": "KR6138932B78",
+          "name": "BNK금융지주35-2",
+          "quantity": 0,
+          "evaluationAmount": 571828,
+          "marketCap": 0,
+          "weight": 0.37015
+        },
+        {
+          "code": "KR6138931F18",
+          "name": "BNK금융지주48",
+          "quantity": 0,
+          "evaluationAmount": 2345851,
+          "marketCap": 0,
+          "weight": 1.518492
+        },
+        {
+          "code": "KR6015361F17",
+          "name": "INVENI4-1",
+          "quantity": 0,
+          "evaluationAmount": 2374799,
+          "marketCap": 0,
+          "weight": 1.53723
+        },
+        {
+          "code": "KRZE00601F9H",
+          "name": "KB국민 자금부 20250917-365-1",
+          "quantity": 0,
+          "evaluationAmount": 2374733,
+          "marketCap": 0,
+          "weight": 1.537187
+        },
+        {
+          "code": "KR6003453F20",
+          "name": "KB증권46-3",
+          "quantity": 0,
+          "evaluationAmount": 2295865,
+          "marketCap": 0,
+          "weight": 1.486135
+        },
+        {
+          "code": "KR6003451F55",
+          "name": "KB증권47-1",
+          "quantity": 0,
+          "evaluationAmount": 1657736,
+          "marketCap": 0,
+          "weight": 1.073068
+        },
+        {
+          "code": "KR6003452G12",
+          "name": "KB증권49-2",
+          "quantity": 0,
+          "evaluationAmount": 2332274,
+          "marketCap": 0,
+          "weight": 1.509703
+        },
+        {
+          "code": "KR6030203816",
+          "name": "KT190-3",
+          "quantity": 0,
+          "evaluationAmount": 234397,
+          "marketCap": 0,
+          "weight": 0.151727
+        },
+        {
+          "code": "KR6166261F92",
+          "name": "NH농협금융지주53-1",
+          "quantity": 0,
+          "evaluationAmount": 2353528,
+          "marketCap": 0,
+          "weight": 1.523461
+        },
+        {
+          "code": "491230",
+          "name": "PLUS 국공채머니마켓액티브",
+          "quantity": 28.02,
+          "evaluationAmount": 1469743,
+          "marketCap": 0,
+          "weight": 0.951379
+        },
+        {
+          "code": "289670",
+          "name": "PLUS 국채선물10년",
+          "quantity": 3.8,
+          "evaluationAmount": 196681,
+          "marketCap": 0,
+          "weight": 0.127313
+        },
+        {
+          "code": "298340",
+          "name": "PLUS 국채선물3년",
+          "quantity": 1.9,
+          "evaluationAmount": 107247,
+          "marketCap": 0,
+          "weight": 0.069422
+        },
+        {
+          "code": "278620",
+          "name": "PLUS 단기채권액티브",
+          "quantity": 23.75,
+          "evaluationAmount": 2825097,
+          "marketCap": 0,
+          "weight": 1.828712
+        },
+        {
+          "code": "239660",
+          "name": "PLUS 우량회사채50",
+          "quantity": 4.75,
+          "evaluationAmount": 577479,
+          "marketCap": 0,
+          "weight": 0.373808
+        },
+        {
+          "code": "KR6034732F36",
+          "name": "SK314-2",
+          "quantity": 0,
+          "evaluationAmount": 2285058,
+          "marketCap": 0,
+          "weight": 1.47914
+        },
+        {
+          "code": "KR6017672F90",
+          "name": "SK텔레콤91-2",
+          "quantity": 0,
+          "evaluationAmount": 2252472,
+          "marketCap": 0,
+          "weight": 1.458047
+        },
+        {
+          "code": "KR103502GA34",
+          "name": "국고채권01500-5003(20-2)",
+          "quantity": 0,
+          "evaluationAmount": 154199,
+          "marketCap": 0,
+          "weight": 0.099814
+        },
+        {
+          "code": "KR103502G966",
+          "name": "국고채권01875-2906(19-4)",
+          "quantity": 0,
+          "evaluationAmount": 361278,
+          "marketCap": 0,
+          "weight": 0.233859
+        },
+        {
+          "code": "KR103503GB99",
+          "name": "국고채권01875-4109(21-9)",
+          "quantity": 0,
+          "evaluationAmount": 170460,
+          "marketCap": 0,
+          "weight": 0.11034
+        },
+        {
+          "code": "KR103502GB33",
+          "name": "국고채권01875-5103(21-2)",
+          "quantity": 0,
+          "evaluationAmount": 20,
+          "marketCap": 0,
+          "weight": 0.000013
+        },
+        {
+          "code": "KR103502GB66",
+          "name": "국고채권02000-3106(21-5)",
+          "quantity": 0,
+          "evaluationAmount": 692359,
+          "marketCap": 0,
+          "weight": 0.448171
+        },
+        {
+          "code": "KR103502G636",
+          "name": "국고채권02000-4603(16-1)",
+          "quantity": 0,
+          "evaluationAmount": 140094,
+          "marketCap": 0,
+          "weight": 0.090684
+        },
+        {
+          "code": "KR103502G933",
+          "name": "국고채권02000-4903(19-2)",
+          "quantity": 0,
+          "evaluationAmount": 153607,
+          "marketCap": 0,
+          "weight": 0.099431
+        },
+        {
+          "code": "KR103502G735",
+          "name": "국고채권02125-4703(17-1)",
+          "quantity": 0,
+          "evaluationAmount": 175786,
+          "marketCap": 0,
+          "weight": 0.113788
+        },
+        {
+          "code": "KR103501GF63",
+          "name": "국고채권02250-2806(25-4)",
+          "quantity": 0,
+          "evaluationAmount": 116325,
+          "marketCap": 0,
+          "weight": 0.075298
+        },
+        {
+          "code": "KR103502GBC0",
+          "name": "국고채권02375-3112(21-11)",
+          "quantity": 0,
+          "evaluationAmount": 1879045,
+          "marketCap": 0,
+          "weight": 1.216324
+        },
+        {
+          "code": "KR103502G891",
+          "name": "국고채권02375-3809(18-7)",
+          "quantity": 0,
+          "evaluationAmount": 58187,
+          "marketCap": 0,
+          "weight": 0.037665
+        },
+        {
+          "code": "KR103503GF95",
+          "name": "국고채권02500-3009(25-8)",
+          "quantity": 0,
+          "evaluationAmount": 45276,
+          "marketCap": 0,
+          "weight": 0.029308
+        },
+        {
+          "code": "KR103502GC32",
+          "name": "국고채권02500-5203(22-2)",
+          "quantity": 0,
+          "evaluationAmount": 280779,
+          "marketCap": 0,
+          "weight": 0.181751
+        },
+        {
+          "code": "KR103503GF38",
+          "name": "국고채권02625-3003(25-3)",
+          "quantity": 0,
+          "evaluationAmount": 275568,
+          "marketCap": 0,
+          "weight": 0.178378
+        },
+        {
+          "code": "KR103502G594",
+          "name": "국고채권02625-3509(15-6)",
+          "quantity": 0,
+          "evaluationAmount": 62874,
+          "marketCap": 0,
+          "weight": 0.040699
+        },
+        {
+          "code": "KR103502G834",
+          "name": "국고채권02625-4803(18-2)",
+          "quantity": 0,
+          "evaluationAmount": 449649,
+          "marketCap": 0,
+          "weight": 0.291062
+        },
+        {
+          "code": "KR103502GF39",
+          "name": "국고채권02625-5503(25-2)",
+          "quantity": 0,
+          "evaluationAmount": 2660067,
+          "marketCap": 0,
+          "weight": 1.721887
+        },
+        {
+          "code": "KR103502GF96",
+          "name": "국고채권02625-5509(25-7)",
+          "quantity": 0,
+          "evaluationAmount": 153045,
+          "marketCap": 0,
+          "weight": 0.099067
+        },
+        {
+          "code": "KR103501GFC3",
+          "name": "국고채권02750-2812(25-10)",
+          "quantity": 0,
+          "evaluationAmount": 1167372,
+          "marketCap": 0,
+          "weight": 0.755651
+        },
+        {
+          "code": "KR103502G4C9",
+          "name": "국고채권02750-4412(14-7)",
+          "quantity": 0,
+          "evaluationAmount": 256813,
+          "marketCap": 0,
+          "weight": 0.166237
+        },
+        {
+          "code": "KR103504GF94",
+          "name": "국고채권02750-4509(25-9)",
+          "quantity": 0,
+          "evaluationAmount": 3855267,
+          "marketCap": 0,
+          "weight": 2.495551
+        },
+        {
+          "code": "KR103504GE95",
+          "name": "국고채권02875-4409(24-10)",
+          "quantity": 0,
+          "evaluationAmount": 1514255,
+          "marketCap": 0,
+          "weight": 0.980192
+        },
+        {
+          "code": "KR103501GE98",
+          "name": "국고채권03000-2909(24-7)",
+          "quantity": 0,
+          "evaluationAmount": 117258,
+          "marketCap": 0,
+          "weight": 0.075902
+        },
+        {
+          "code": "KR103502GEC4",
+          "name": "국고채권03000-3412(24-13)",
+          "quantity": 0,
+          "evaluationAmount": 405337,
+          "marketCap": 0,
+          "weight": 0.262378
+        },
+        {
+          "code": "KR10350172C8",
+          "name": "국고채권03000-4212(12-5)",
+          "quantity": 0,
+          "evaluationAmount": 156010,
+          "marketCap": 0,
+          "weight": 0.100987
+        },
+        {
+          "code": "KR103501GD32",
+          "name": "국고채권03250-2803(23-1)",
+          "quantity": 0,
+          "evaluationAmount": 3351,
+          "marketCap": 0,
+          "weight": 0.002169
+        },
+        {
+          "code": "KR103501GE31",
+          "name": "국고채권03250-2903(24-1)",
+          "quantity": 0,
+          "evaluationAmount": 451585,
+          "marketCap": 0,
+          "weight": 0.292315
+        },
+        {
+          "code": "KR103502GD64",
+          "name": "국고채권03250-3306(23-5)",
+          "quantity": 0,
+          "evaluationAmount": 979561,
+          "marketCap": 0,
+          "weight": 0.634079
+        },
+        {
+          "code": "KR103502GFC1",
+          "name": "국고채권03250-3512(25-11)",
+          "quantity": 0,
+          "evaluationAmount": 875479,
+          "marketCap": 0,
+          "weight": 0.566706
+        },
+        {
+          "code": "KR103504GC97",
+          "name": "국고채권03250-4209(22-11)",
+          "quantity": 0,
+          "evaluationAmount": 2207229,
+          "marketCap": 0,
+          "weight": 1.42876
+        },
+        {
+          "code": "KR103502GD31",
+          "name": "국고채권03250-5303(23-2)",
+          "quantity": 0,
+          "evaluationAmount": 159181,
+          "marketCap": 0,
+          "weight": 0.103039
+        },
+        {
+          "code": "KR103502GE30",
+          "name": "국고채권03250-5403(24-2)",
+          "quantity": 0,
+          "evaluationAmount": 3809838,
+          "marketCap": 0,
+          "weight": 2.466144
+        },
+        {
+          "code": "KR103501GG62",
+          "name": "국고채권03500-2906(26-5)",
+          "quantity": 0,
+          "evaluationAmount": 5685908,
+          "marketCap": 0,
+          "weight": 3.680542
+        },
+        {
+          "code": "KR103502GE63",
+          "name": "국고채권03500-3406(24-5)",
+          "quantity": 0,
+          "evaluationAmount": 137603,
+          "marketCap": 0,
+          "weight": 0.089072
+        },
+        {
+          "code": "KR103501GG39",
+          "name": "국고채권03500-5603(26-2)",
+          "quantity": 0,
+          "evaluationAmount": 4855746,
+          "marketCap": 0,
+          "weight": 3.143171
+        },
+        {
+          "code": "KR103502GD98",
+          "name": "국고채권03625-5309(23-7)",
+          "quantity": 0,
+          "evaluationAmount": 657705,
+          "marketCap": 0,
+          "weight": 0.425739
+        },
+        {
+          "code": "KR103502G3C1",
+          "name": "국고채권03750-3312(13-8)",
+          "quantity": 0,
+          "evaluationAmount": 69335,
+          "marketCap": 0,
+          "weight": 0.044881
+        },
+        {
+          "code": "KR103504GD96",
+          "name": "국고채권03875-4309(23-9)",
+          "quantity": 0,
+          "evaluationAmount": 440712,
+          "marketCap": 0,
+          "weight": 0.285277
+        },
+        {
+          "code": "KR103502GCC8",
+          "name": "국고채권04250-3212(22-14)",
+          "quantity": 0,
+          "evaluationAmount": 174664,
+          "marketCap": 0,
+          "weight": 0.113062
+        },
+        {
+          "code": "KR103503GG60",
+          "name": "국고채권04250-3606(26-6)",
+          "quantity": 0,
+          "evaluationAmount": 1185319,
+          "marketCap": 0,
+          "weight": 0.767268
+        },
+        {
+          "code": "KRC0350C3635",
+          "name": "국고채이자분리채권01640-3603",
+          "quantity": 0,
+          "evaluationAmount": 1566620,
+          "marketCap": 0,
+          "weight": 1.014088
+        },
+        {
+          "code": "KRZF003546FP",
+          "name": "대신증권 20251121-364-39",
+          "quantity": 0,
+          "evaluationAmount": 1187366,
+          "marketCap": 0,
+          "weight": 0.768593
+        },
+        {
+          "code": "KRZF003547FP",
+          "name": "대신증권 20251121-364-40",
+          "quantity": 0,
+          "evaluationAmount": 1187366,
+          "marketCap": 0,
+          "weight": 0.768593
+        },
+        {
+          "code": "KR6003543G13",
+          "name": "대신증권26-2",
+          "quantity": 0,
+          "evaluationAmount": 2332180,
+          "marketCap": 0,
+          "weight": 1.509642
+        },
+        {
+          "code": "KR6008561F93",
+          "name": "메리츠증권2509-1",
+          "quantity": 0,
+          "evaluationAmount": 2354229,
+          "marketCap": 0,
+          "weight": 1.523915
+        },
+        {
+          "code": "KR103503G865",
+          "name": "물가연동국고채권01750-2806(18-5)",
+          "quantity": 0,
+          "evaluationAmount": 295372,
+          "marketCap": 0,
+          "weight": 0.191197
+        },
+        {
+          "code": "KR6006801F14",
+          "name": "미래에셋증권74-1",
+          "quantity": 0,
+          "evaluationAmount": 2374713,
+          "marketCap": 0,
+          "weight": 1.537174
+        },
+        {
+          "code": "KR6082974F57",
+          "name": "미래에셋캐피탈121-2",
+          "quantity": 0,
+          "evaluationAmount": 933435,
+          "marketCap": 0,
+          "weight": 0.604221
+        },
+        {
+          "code": "KR6082971F76",
+          "name": "미래에셋캐피탈123",
+          "quantity": 0,
+          "evaluationAmount": 2323619,
+          "marketCap": 0,
+          "weight": 1.504101
+        },
+        {
+          "code": "KR6016362F14",
+          "name": "삼성증권22-2",
+          "quantity": 0,
+          "evaluationAmount": 2281120,
+          "marketCap": 0,
+          "weight": 1.476591
+        },
+        {
+          "code": "KR6016361G22",
+          "name": "삼성증권24-1",
+          "quantity": 0,
+          "evaluationAmount": 1167510,
+          "marketCap": 0,
+          "weight": 0.75574
+        },
+        {
+          "code": "KR6016362G21",
+          "name": "삼성증권24-2",
+          "quantity": 0,
+          "evaluationAmount": 2310738,
+          "marketCap": 0,
+          "weight": 1.495763
+        },
+        {
+          "code": "KR602978CF54",
+          "name": "삼성카드2777",
+          "quantity": 0,
+          "evaluationAmount": 2299776,
+          "marketCap": 0,
+          "weight": 1.488667
+        },
+        {
+          "code": "KR350201GB67",
+          "name": "서울교통공사2021-2",
+          "quantity": 0,
+          "evaluationAmount": 431629,
+          "marketCap": 0,
+          "weight": 0.279398
+        },
+        {
+          "code": "KR6000013F78",
+          "name": "신한은행29-07-이-2-A",
+          "quantity": 0,
+          "evaluationAmount": 2355908,
+          "marketCap": 0,
+          "weight": 1.525002
+        },
+        {
+          "code": "KR603271EE14",
+          "name": "신한카드2207-3",
+          "quantity": 0,
+          "evaluationAmount": 1188812,
+          "marketCap": 0,
+          "weight": 0.769529
+        },
+        {
+          "code": "KR6019454E67",
+          "name": "아이비케이캐피탈304-4",
+          "quantity": 0,
+          "evaluationAmount": 2389394,
+          "marketCap": 0,
+          "weight": 1.546677
+        },
+        {
+          "code": "KR6019452G75",
+          "name": "아이비케이캐피탈356-2",
+          "quantity": 0,
+          "evaluationAmount": 2387694,
+          "marketCap": 0,
+          "weight": 1.545577
+        },
+        {
+          "code": "KR6176944G46",
+          "name": "아이엠캐피탈149-2",
+          "quantity": 0,
+          "evaluationAmount": 1182621,
+          "marketCap": 0,
+          "weight": 0.765522
+        },
+        {
+          "code": "KR6176942G55",
+          "name": "아이엠캐피탈150-2",
+          "quantity": 0,
+          "evaluationAmount": 2363156,
+          "marketCap": 0,
+          "weight": 1.529693
+        },
+        {
+          "code": "KR6395401EA5",
+          "name": "에스케이위탁관리부동산투자회사5-1",
+          "quantity": 0,
+          "evaluationAmount": 2384984,
+          "marketCap": 0,
+          "weight": 1.543823
+        },
+        {
+          "code": "KR6097248G39",
+          "name": "엔에이치농협캐피탈261-8",
+          "quantity": 0,
+          "evaluationAmount": 1190021,
+          "marketCap": 0,
+          "weight": 0.770312
+        },
+        {
+          "code": "KR6097241G44",
+          "name": "엔에이치농협캐피탈263-1",
+          "quantity": 0,
+          "evaluationAmount": 1657540,
+          "marketCap": 0,
+          "weight": 1.072941
+        },
+        {
+          "code": "KRZE08401FBQ",
+          "name": "우리 여의도중앙기업영업지원팀 20251124-3",
+          "quantity": 0,
+          "evaluationAmount": 2374733,
+          "marketCap": 0,
+          "weight": 1.537187
+        },
+        {
+          "code": "KR6174144E33",
+          "name": "우리카드237-4",
+          "quantity": 0,
+          "evaluationAmount": 2395421,
+          "marketCap": 0,
+          "weight": 1.550579
+        },
+        {
+          "code": "KR6174147F47",
+          "name": "우리카드261-2(사)",
+          "quantity": 0,
+          "evaluationAmount": 1398824,
+          "marketCap": 0,
+          "weight": 0.905472
+        },
+        {
+          "code": "KR355901G3A8",
+          "name": "인천항만공사9",
+          "quantity": 0,
+          "evaluationAmount": 2305948,
+          "marketCap": 0,
+          "weight": 1.492662
+        },
+        {
+          "code": "KR6021963G40",
+          "name": "케이비캐피탈580-3",
+          "quantity": 0,
+          "evaluationAmount": 1424786,
+          "marketCap": 0,
+          "weight": 0.922278
+        },
+        {
+          "code": "KR6263911820",
+          "name": "토지지원리츠제1호위탁관리부동산투자회사2",
+          "quantity": 0,
+          "evaluationAmount": 227149,
+          "marketCap": 0,
+          "weight": 0.147036
+        },
+        {
+          "code": "KR310101GG75",
+          "name": "통화안정증권03730-2807-02",
+          "quantity": 0,
+          "evaluationAmount": 2385872,
+          "marketCap": 0,
+          "weight": 1.544398
+        },
+        {
+          "code": "KRZE08101G7L",
+          "name": "하나 금융기관영업팀 20260720-91-1",
+          "quantity": 0,
+          "evaluationAmount": 2374733,
+          "marketCap": 0,
+          "weight": 1.537187
+        },
+        {
+          "code": "KR6205493E32",
+          "name": "하나카드257-3",
+          "quantity": 0,
+          "evaluationAmount": 2392120,
+          "marketCap": 0,
+          "weight": 1.548442
+        },
+        {
+          "code": "KR6205493EC8",
+          "name": "하나카드271-3",
+          "quantity": 0,
+          "evaluationAmount": 2374417,
+          "marketCap": 0,
+          "weight": 1.536983
+        },
+        {
+          "code": "KR6205497FC6",
+          "name": "하나카드293-2",
+          "quantity": 0,
+          "evaluationAmount": 2371633,
+          "marketCap": 0,
+          "weight": 1.535181
+        },
+        {
+          "code": "KR350802G937",
+          "name": "한국가스공사392",
+          "quantity": 0,
+          "evaluationAmount": 226744,
+          "marketCap": 0,
+          "weight": 0.146774
+        },
+        {
+          "code": "KR350108GA47",
+          "name": "한국전력공사채권1036",
+          "quantity": 0,
+          "evaluationAmount": 436900,
+          "marketCap": 0,
+          "weight": 0.28281
+        },
+        {
+          "code": "KR350102GB83",
+          "name": "한국전력공사채권1058",
+          "quantity": 0,
+          "evaluationAmount": 2124730,
+          "marketCap": 0,
+          "weight": 1.375358
+        },
+        {
+          "code": "KR6095927E25",
+          "name": "현대커머셜508-5",
+          "quantity": 0,
+          "evaluationAmount": 2383628,
+          "marketCap": 0,
+          "weight": 1.542945
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": -23893227,
+          "weight": 15.466313
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:42.523Z"
+    },
     "451060": {
       "etf": {
         "code": "451060",
@@ -202738,6 +206754,138 @@
       ],
       "collectedAt": "2026-08-19T15:10:07.032Z"
     },
+    "461900": {
+      "etf": {
+        "code": "461900",
+        "name": "PLUS 미국테크TOP10",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 11,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "US0079031078",
+          "name": "ADVANCED MICRO DEVICES",
+          "quantity": 53.5,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US02079K3059",
+          "name": "ALPHABET INC-CL A",
+          "quantity": 222,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US0231351067",
+          "name": "AMAZON.COM INC",
+          "quantity": 326.81,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US0378331005",
+          "name": "APPLE INC",
+          "quantity": 494.31,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US11135F1012",
+          "name": "BROADCOM INC",
+          "quantity": 153.56,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US30303M1027",
+          "name": "META PLATFORMS INC-CLASS A",
+          "quantity": 83.69,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US5951121038",
+          "name": "MICRON TECHNOLOGY INC",
+          "quantity": 37.25,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US5949181045",
+          "name": "MICROSOFT CORP",
+          "quantity": 245.12,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US67066G1040",
+          "name": "NVIDIA CORP",
+          "quantity": 737.81,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US88160R1014",
+          "name": "TESLA INC",
+          "quantity": 93.5,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 3477529,
+          "weight": 100
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:22.297Z"
+    },
+    "461910": {
+      "etf": {
+        "code": "461910",
+        "name": "PLUS 미국테크TOP10레버리지(합성)",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 2,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "KRYZTRSF2504",
+          "name": "스왑(키움증권)_250205_1",
+          "quantity": -29394415.5,
+          "evaluationAmount": -29394415,
+          "marketCap": 0,
+          "weight": 1.515619
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 1910038920,
+          "weight": 98.484381
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:22.496Z"
+    },
     "461950": {
       "etf": {
         "code": "461950",
@@ -204769,6 +208917,298 @@
         }
       ],
       "collectedAt": "2026-08-19T15:10:52.077Z"
+    },
+    "464470": {
+      "etf": {
+        "code": "464470",
+        "name": "PLUS 미국채30년액티브",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 12,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "US25460G1388",
+          "name": "DIR DLY 20+YR TR BL3X ETF-UI",
+          "quantity": 312.67,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US4642874329",
+          "name": "ISHARES 20+ YEAR TREASURY BD",
+          "quantity": 134.5,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US74347R1721",
+          "name": "PROSHARES ULTRA 20+ YEAR TSY",
+          "quantity": 226.28,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810SU34",
+          "name": "T 1 7/8 02/15/51",
+          "quantity": 3140.78,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810TB44",
+          "name": "T 1 7/8 11/15/51",
+          "quantity": 3264.56,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810SL35",
+          "name": "T 2 02/15/50",
+          "quantity": 5150.49,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810RS96",
+          "name": "T 2 1/2 05/15/46",
+          "quantity": 2927.18,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810SF66",
+          "name": "T 3 02/15/49",
+          "quantity": 4669.9,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810SC36",
+          "name": "T 3 1/8 05/15/48",
+          "quantity": 5228.16,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810RH32",
+          "name": "T 3 1/8 08/15/44",
+          "quantity": 2427.18,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810TL26",
+          "name": "T 4 11/15/52",
+          "quantity": 2368.93,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 37152858,
+          "weight": 100
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:19.184Z"
+    },
+    "464920": {
+      "etf": {
+        "code": "464920",
+        "name": "PLUS 일본반도체소부장",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 21,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "JP3114800000",
+          "name": "ADEKA CORP",
+          "quantity": 168.16,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3122400009",
+          "name": "ADVANTEST CORP",
+          "quantity": 989.64,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3548770001",
+          "name": "DEXERIALS CORP",
+          "quantity": 292.32,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3548600000",
+          "name": "DISCO CORP",
+          "quantity": 174.04,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3837800006",
+          "name": "HOYA CORP",
+          "quantity": 645.84,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3151600008",
+          "name": "IWATANI CORP",
+          "quantity": 371.88,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3293330001",
+          "name": "KOKUSAI ELECTRIC CORP",
+          "quantity": 383.24,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3750400008",
+          "name": "MICRONICS JAPAN CO LTD",
+          "quantity": 52.64,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3711600001",
+          "name": "NIPPON SANSO HOLDINGS CORP",
+          "quantity": 363.16,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3368000000",
+          "name": "RESONAC HOLDINGS CORP",
+          "quantity": 344.96,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3982200002",
+          "name": "RORZE CORP",
+          "quantity": 180.12,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3494600004",
+          "name": "SCREEN HOLDINGS CO LTD",
+          "quantity": 319.24,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3355000005",
+          "name": "SHIBAURA MECHATRONICS CORP",
+          "quantity": 88.32,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3371200001",
+          "name": "SHIN-ETSU CHEMICAL CO LTD",
+          "quantity": 3265.88,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3322930003",
+          "name": "SUMCO CORP",
+          "quantity": 662.84,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3401400001",
+          "name": "SUMITOMO CHEMICAL CO LTD",
+          "quantity": 2777.24,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3571400005",
+          "name": "TOKYO ELECTRON LTD",
+          "quantity": 581.68,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3571800006",
+          "name": "TOKYO OHKA KOGYO CO LTD",
+          "quantity": 196.2,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3580200008",
+          "name": "TOKYO SEIMITSU CO LTD",
+          "quantity": 71.8,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "JP3126190002",
+          "name": "ULVAC INC",
+          "quantity": 81.08,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 2028878,
+          "weight": 100
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:39.675Z"
     },
     "465580": {
       "etf": {
@@ -226572,6 +231012,44 @@
       ],
       "collectedAt": "2026-08-19T16:15:12.872Z"
     },
+    "489000": {
+      "etf": {
+        "code": "489000",
+        "name": "PLUS 일본엔화초단기국채(합성)",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 3,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "KRYZTRSF4X01",
+          "name": "스왑(메리츠증권)_6369_20250430",
+          "quantity": -23106765.34,
+          "evaluationAmount": -23106765,
+          "marketCap": 0,
+          "weight": 4.449519
+        },
+        {
+          "code": "KRYZTRSF7A01",
+          "name": "스왑(미래에셋증권)_6369_20250710",
+          "quantity": -2825519.72,
+          "evaluationAmount": -2825519,
+          "marketCap": 0,
+          "weight": 0.544092
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 493376980,
+          "weight": 95.006389
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:39.556Z"
+    },
     "489010": {
       "etf": {
         "code": "489010",
@@ -238277,6 +242755,820 @@
         }
       ],
       "collectedAt": "2026-08-19T15:51:57.158Z"
+    },
+    "495040": {
+      "etf": {
+        "code": "495040",
+        "name": "PLUS 코리아밸류업",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 100,
+        "totalWeight": 100.00000200000001
+      },
+      "components": [
+        {
+          "code": "282330",
+          "name": "BGF리테일",
+          "quantity": 12,
+          "evaluationAmount": 1718400,
+          "marketCap": 0,
+          "weight": 0.106666
+        },
+        {
+          "code": "005830",
+          "name": "DB손해보험",
+          "quantity": 54,
+          "evaluationAmount": 9828000,
+          "marketCap": 0,
+          "weight": 0.610049
+        },
+        {
+          "code": "000990",
+          "name": "DB하이텍",
+          "quantity": 41,
+          "evaluationAmount": 4001600,
+          "marketCap": 0,
+          "weight": 0.24839
+        },
+        {
+          "code": "383220",
+          "name": "F&F",
+          "quantity": 18,
+          "evaluationAmount": 1168200,
+          "marketCap": 0,
+          "weight": 0.072513
+        },
+        {
+          "code": "009540",
+          "name": "HD한국조선해양",
+          "quantity": 62,
+          "evaluationAmount": 23219000,
+          "marketCap": 0,
+          "weight": 1.441263
+        },
+        {
+          "code": "267250",
+          "name": "HD현대",
+          "quantity": 60,
+          "evaluationAmount": 14070000,
+          "marketCap": 0,
+          "weight": 0.873361
+        },
+        {
+          "code": "443060",
+          "name": "HD현대마린솔루션",
+          "quantity": 26,
+          "evaluationAmount": 5304000,
+          "marketCap": 0,
+          "weight": 0.329233
+        },
+        {
+          "code": "267260",
+          "name": "HD현대일렉트릭",
+          "quantity": 30,
+          "evaluationAmount": 23550000,
+          "marketCap": 0,
+          "weight": 1.461809
+        },
+        {
+          "code": "329180",
+          "name": "HD현대중공업",
+          "quantity": 44,
+          "evaluationAmount": 21538000,
+          "marketCap": 0,
+          "weight": 1.336919
+        },
+        {
+          "code": "011200",
+          "name": "HMM",
+          "quantity": 416,
+          "evaluationAmount": 9422400,
+          "marketCap": 0,
+          "weight": 0.584873
+        },
+        {
+          "code": "403870",
+          "name": "HPSP",
+          "quantity": 87,
+          "evaluationAmount": 3710550,
+          "marketCap": 0,
+          "weight": 0.230323
+        },
+        {
+          "code": "175330",
+          "name": "JB금융지주",
+          "quantity": 207,
+          "evaluationAmount": 5775300,
+          "marketCap": 0,
+          "weight": 0.358488
+        },
+        {
+          "code": "001060",
+          "name": "JW중외제약",
+          "quantity": 16,
+          "evaluationAmount": 436000,
+          "marketCap": 0,
+          "weight": 0.027064
+        },
+        {
+          "code": "035900",
+          "name": "JYP Ent.",
+          "quantity": 36,
+          "evaluationAmount": 1416600,
+          "marketCap": 0,
+          "weight": 0.087932
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "quantity": 403,
+          "evaluationAmount": 67905500,
+          "marketCap": 0,
+          "weight": 4.215069
+        },
+        {
+          "code": "030200",
+          "name": "KT",
+          "quantity": 293,
+          "evaluationAmount": 15909900,
+          "marketCap": 0,
+          "weight": 0.987568
+        },
+        {
+          "code": "033780",
+          "name": "KT&G",
+          "quantity": 119,
+          "evaluationAmount": 21015400,
+          "marketCap": 0,
+          "weight": 1.30448
+        },
+        {
+          "code": "011070",
+          "name": "LG이노텍",
+          "quantity": 19,
+          "evaluationAmount": 12027000,
+          "marketCap": 0,
+          "weight": 0.746547
+        },
+        {
+          "code": "079550",
+          "name": "LIG디펜스앤에어로스페이스",
+          "quantity": 18,
+          "evaluationAmount": 14310000,
+          "marketCap": 0,
+          "weight": 0.888258
+        },
+        {
+          "code": "005940",
+          "name": "NH투자증권",
+          "quantity": 202,
+          "evaluationAmount": 5555000,
+          "marketCap": 0,
+          "weight": 0.344813
+        },
+        {
+          "code": "030190",
+          "name": "NICE평가정보",
+          "quantity": 43,
+          "evaluationAmount": 660050,
+          "marketCap": 0,
+          "weight": 0.040971
+        },
+        {
+          "code": "018670",
+          "name": "SK가스",
+          "quantity": 3,
+          "evaluationAmount": 726000,
+          "marketCap": 0,
+          "weight": 0.045065
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "quantity": 122,
+          "evaluationAmount": 138470000,
+          "marketCap": 0,
+          "weight": 8.595188
+        },
+        {
+          "code": "017670",
+          "name": "SK텔레콤",
+          "quantity": 198,
+          "evaluationAmount": 19760400,
+          "marketCap": 0,
+          "weight": 1.226579
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "quantity": 183,
+          "evaluationAmount": 304146000,
+          "marketCap": 0,
+          "weight": 18.879123
+        },
+        {
+          "code": "100840",
+          "name": "SNT에너지",
+          "quantity": 12,
+          "evaluationAmount": 325200,
+          "marketCap": 0,
+          "weight": 0.020186
+        },
+        {
+          "code": "067160",
+          "name": "SOOP",
+          "quantity": 10,
+          "evaluationAmount": 393500,
+          "marketCap": 0,
+          "weight": 0.024426
+        },
+        {
+          "code": "035250",
+          "name": "강원랜드",
+          "quantity": 152,
+          "evaluationAmount": 2196400,
+          "marketCap": 0,
+          "weight": 0.136336
+        },
+        {
+          "code": "011780",
+          "name": "금호석유화학",
+          "quantity": 20,
+          "evaluationAmount": 2530000,
+          "marketCap": 0,
+          "weight": 0.157044
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "quantity": 324,
+          "evaluationAmount": 44452800,
+          "marketCap": 0,
+          "weight": 2.759299
+        },
+        {
+          "code": "348210",
+          "name": "넥스틴",
+          "quantity": 10,
+          "evaluationAmount": 352000,
+          "marketCap": 0,
+          "weight": 0.02185
+        },
+        {
+          "code": "003490",
+          "name": "대한항공",
+          "quantity": 340,
+          "evaluationAmount": 8585000,
+          "marketCap": 0,
+          "weight": 0.532893
+        },
+        {
+          "code": "026960",
+          "name": "동서",
+          "quantity": 41,
+          "evaluationAmount": 1057800,
+          "marketCap": 0,
+          "weight": 0.06566
+        },
+        {
+          "code": "014820",
+          "name": "동원시스템즈",
+          "quantity": 7,
+          "evaluationAmount": 150500,
+          "marketCap": 0,
+          "weight": 0.009342
+        },
+        {
+          "code": "005290",
+          "name": "동진쎄미켐",
+          "quantity": 45,
+          "evaluationAmount": 1944000,
+          "marketCap": 0,
+          "weight": 0.120669
+        },
+        {
+          "code": "241560",
+          "name": "두산밥캣",
+          "quantity": 69,
+          "evaluationAmount": 4436700,
+          "marketCap": 0,
+          "weight": 0.275397
+        },
+        {
+          "code": "376300",
+          "name": "디어유",
+          "quantity": 16,
+          "evaluationAmount": 300960,
+          "marketCap": 0,
+          "weight": 0.018681
+        },
+        {
+          "code": "089860",
+          "name": "롯데렌탈",
+          "quantity": 17,
+          "evaluationAmount": 770100,
+          "marketCap": 0,
+          "weight": 0.047802
+        },
+        {
+          "code": "058470",
+          "name": "리노공업",
+          "quantity": 66,
+          "evaluationAmount": 4474800,
+          "marketCap": 0,
+          "weight": 0.277762
+        },
+        {
+          "code": "138040",
+          "name": "메리츠금융지주",
+          "quantity": 98,
+          "evaluationAmount": 11485600,
+          "marketCap": 0,
+          "weight": 0.712941
+        },
+        {
+          "code": "006800",
+          "name": "미래에셋증권",
+          "quantity": 359,
+          "evaluationAmount": 13049650,
+          "marketCap": 0,
+          "weight": 0.810025
+        },
+        {
+          "code": "002840",
+          "name": "미원상사",
+          "quantity": 1,
+          "evaluationAmount": 130300,
+          "marketCap": 0,
+          "weight": 0.008088
+        },
+        {
+          "code": "082920",
+          "name": "비츠로셀",
+          "quantity": 36,
+          "evaluationAmount": 1099800,
+          "marketCap": 0,
+          "weight": 0.068267
+        },
+        {
+          "code": "005180",
+          "name": "빙그레",
+          "quantity": 6,
+          "evaluationAmount": 463200,
+          "marketCap": 0,
+          "weight": 0.028752
+        },
+        {
+          "code": "062040",
+          "name": "산일전기",
+          "quantity": 23,
+          "evaluationAmount": 4121600,
+          "marketCap": 0,
+          "weight": 0.255838
+        },
+        {
+          "code": "028050",
+          "name": "삼성E&A",
+          "quantity": 210,
+          "evaluationAmount": 10059000,
+          "marketCap": 0,
+          "weight": 0.624388
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "quantity": 1014,
+          "evaluationAmount": 272259000,
+          "marketCap": 0,
+          "weight": 16.899815
+        },
+        {
+          "code": "016360",
+          "name": "삼성증권",
+          "quantity": 81,
+          "evaluationAmount": 7192800,
+          "marketCap": 0,
+          "weight": 0.446476
+        },
+        {
+          "code": "000810",
+          "name": "삼성화재",
+          "quantity": 39,
+          "evaluationAmount": 24414000,
+          "marketCap": 0,
+          "weight": 1.51544
+        },
+        {
+          "code": "003230",
+          "name": "삼양식품",
+          "quantity": 5,
+          "evaluationAmount": 6670000,
+          "marketCap": 0,
+          "weight": 0.414024
+        },
+        {
+          "code": "075580",
+          "name": "세진중공업",
+          "quantity": 29,
+          "evaluationAmount": 321610,
+          "marketCap": 0,
+          "weight": 0.019963
+        },
+        {
+          "code": "357780",
+          "name": "솔브레인",
+          "quantity": 5,
+          "evaluationAmount": 1632500,
+          "marketCap": 0,
+          "weight": 0.101333
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "quantity": 540,
+          "evaluationAmount": 57510000,
+          "marketCap": 0,
+          "weight": 3.569793
+        },
+        {
+          "code": "090430",
+          "name": "아모레퍼시픽",
+          "quantity": 41,
+          "evaluationAmount": 5420200,
+          "marketCap": 0,
+          "weight": 0.336446
+        },
+        {
+          "code": "005850",
+          "name": "에스엘",
+          "quantity": 21,
+          "evaluationAmount": 1224300,
+          "marketCap": 0,
+          "weight": 0.075995
+        },
+        {
+          "code": "012750",
+          "name": "에스원",
+          "quantity": 33,
+          "evaluationAmount": 2557500,
+          "marketCap": 0,
+          "weight": 0.158751
+        },
+        {
+          "code": "237690",
+          "name": "에스티팜",
+          "quantity": 17,
+          "evaluationAmount": 1705100,
+          "marketCap": 0,
+          "weight": 0.10584
+        },
+        {
+          "code": "278470",
+          "name": "에이피알",
+          "quantity": 33,
+          "evaluationAmount": 13084500,
+          "marketCap": 0,
+          "weight": 0.812189
+        },
+        {
+          "code": "383310",
+          "name": "에코프로에이치엔",
+          "quantity": 18,
+          "evaluationAmount": 437400,
+          "marketCap": 0,
+          "weight": 0.027151
+        },
+        {
+          "code": "290650",
+          "name": "엘앤씨바이오",
+          "quantity": 26,
+          "evaluationAmount": 1372800,
+          "marketCap": 0,
+          "weight": 0.085213
+        },
+        {
+          "code": "484870",
+          "name": "엠앤씨솔루션",
+          "quantity": 10,
+          "evaluationAmount": 165300,
+          "marketCap": 0,
+          "weight": 0.010261
+        },
+        {
+          "code": "271560",
+          "name": "오리온",
+          "quantity": 29,
+          "evaluationAmount": 3627900,
+          "marketCap": 0,
+          "weight": 0.225193
+        },
+        {
+          "code": "316140",
+          "name": "우리금융지주",
+          "quantity": 897,
+          "evaluationAmount": 30273750,
+          "marketCap": 0,
+          "weight": 1.879169
+        },
+        {
+          "code": "079900",
+          "name": "전진건설로봇",
+          "quantity": 5,
+          "evaluationAmount": 169000,
+          "marketCap": 0,
+          "weight": 0.01049
+        },
+        {
+          "code": "033100",
+          "name": "제룡전기",
+          "quantity": 14,
+          "evaluationAmount": 657300,
+          "marketCap": 0,
+          "weight": 0.0408
+        },
+        {
+          "code": "030000",
+          "name": "제일기획",
+          "quantity": 92,
+          "evaluationAmount": 1734200,
+          "marketCap": 0,
+          "weight": 0.107646
+        },
+        {
+          "code": "071320",
+          "name": "지역난방공사",
+          "quantity": 3,
+          "evaluationAmount": 221100,
+          "marketCap": 0,
+          "weight": 0.013724
+        },
+        {
+          "code": "214370",
+          "name": "케어젠",
+          "quantity": 21,
+          "evaluationAmount": 1163400,
+          "marketCap": 0,
+          "weight": 0.072215
+        },
+        {
+          "code": "381970",
+          "name": "케이카",
+          "quantity": 18,
+          "evaluationAmount": 118620,
+          "marketCap": 0,
+          "weight": 0.007363
+        },
+        {
+          "code": "192820",
+          "name": "코스맥스",
+          "quantity": 11,
+          "evaluationAmount": 2629000,
+          "marketCap": 0,
+          "weight": 0.163189
+        },
+        {
+          "code": "021240",
+          "name": "코웨이",
+          "quantity": 72,
+          "evaluationAmount": 6948000,
+          "marketCap": 0,
+          "weight": 0.43128
+        },
+        {
+          "code": "259960",
+          "name": "크래프톤",
+          "quantity": 38,
+          "evaluationAmount": 8607000,
+          "marketCap": 0,
+          "weight": 0.534259
+        },
+        {
+          "code": "214150",
+          "name": "클래시스",
+          "quantity": 38,
+          "evaluationAmount": 1318600,
+          "marketCap": 0,
+          "weight": 0.081849
+        },
+        {
+          "code": "039490",
+          "name": "키움증권",
+          "quantity": 21,
+          "evaluationAmount": 5953500,
+          "marketCap": 0,
+          "weight": 0.369549
+        },
+        {
+          "code": "095610",
+          "name": "테스",
+          "quantity": 16,
+          "evaluationAmount": 2288000,
+          "marketCap": 0,
+          "weight": 0.142022
+        },
+        {
+          "code": "064760",
+          "name": "티씨케이",
+          "quantity": 7,
+          "evaluationAmount": 1624000,
+          "marketCap": 0,
+          "weight": 0.100806
+        },
+        {
+          "code": "214450",
+          "name": "파마리서치",
+          "quantity": 9,
+          "evaluationAmount": 3537000,
+          "marketCap": 0,
+          "weight": 0.219551
+        },
+        {
+          "code": "047050",
+          "name": "포스코인터내셔널",
+          "quantity": 61,
+          "evaluationAmount": 3135400,
+          "marketCap": 0,
+          "weight": 0.194622
+        },
+        {
+          "code": "319660",
+          "name": "피에스케이",
+          "quantity": 26,
+          "evaluationAmount": 3432000,
+          "marketCap": 0,
+          "weight": 0.213033
+        },
+        {
+          "code": "031980",
+          "name": "피에스케이홀딩스",
+          "quantity": 10,
+          "evaluationAmount": 1117000,
+          "marketCap": 0,
+          "weight": 0.069335
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "quantity": 330,
+          "evaluationAmount": 43131000,
+          "marketCap": 0,
+          "weight": 2.677252
+        },
+        {
+          "code": "039130",
+          "name": "하나투어",
+          "quantity": 14,
+          "evaluationAmount": 435400,
+          "marketCap": 0,
+          "weight": 0.027026
+        },
+        {
+          "code": "071050",
+          "name": "한국금융지주",
+          "quantity": 54,
+          "evaluationAmount": 10346400,
+          "marketCap": 0,
+          "weight": 0.642228
+        },
+        {
+          "code": "047810",
+          "name": "한국항공우주",
+          "quantity": 94,
+          "evaluationAmount": 13160000,
+          "marketCap": 0,
+          "weight": 0.816875
+        },
+        {
+          "code": "042700",
+          "name": "한미반도체",
+          "quantity": 56,
+          "evaluationAmount": 12824000,
+          "marketCap": 0,
+          "weight": 0.796019
+        },
+        {
+          "code": "008930",
+          "name": "한미사이언스",
+          "quantity": 38,
+          "evaluationAmount": 1694800,
+          "marketCap": 0,
+          "weight": 0.105201
+        },
+        {
+          "code": "128940",
+          "name": "한미약품",
+          "quantity": 8,
+          "evaluationAmount": 3136000,
+          "marketCap": 0,
+          "weight": 0.19466
+        },
+        {
+          "code": "014680",
+          "name": "한솔케미칼",
+          "quantity": 13,
+          "evaluationAmount": 2736500,
+          "marketCap": 0,
+          "weight": 0.169862
+        },
+        {
+          "code": "051600",
+          "name": "한전KPS",
+          "quantity": 29,
+          "evaluationAmount": 1303550,
+          "marketCap": 0,
+          "weight": 0.080915
+        },
+        {
+          "code": "052690",
+          "name": "한전기술",
+          "quantity": 25,
+          "evaluationAmount": 2412500,
+          "marketCap": 0,
+          "weight": 0.14975
+        },
+        {
+          "code": "180640",
+          "name": "한진칼",
+          "quantity": 63,
+          "evaluationAmount": 7490700,
+          "marketCap": 0,
+          "weight": 0.464967
+        },
+        {
+          "code": "272210",
+          "name": "한화시스템",
+          "quantity": 93,
+          "evaluationAmount": 7430700,
+          "marketCap": 0,
+          "weight": 0.461243
+        },
+        {
+          "code": "012450",
+          "name": "한화에어로스페이스",
+          "quantity": 43,
+          "evaluationAmount": 49278000,
+          "marketCap": 0,
+          "weight": 3.058812
+        },
+        {
+          "code": "086280",
+          "name": "현대글로비스",
+          "quantity": 49,
+          "evaluationAmount": 10118500,
+          "marketCap": 0,
+          "weight": 0.628081
+        },
+        {
+          "code": "012330",
+          "name": "현대모비스",
+          "quantity": 83,
+          "evaluationAmount": 42994000,
+          "marketCap": 0,
+          "weight": 2.668748
+        },
+        {
+          "code": "319400",
+          "name": "현대무벡스",
+          "quantity": 74,
+          "evaluationAmount": 1857400,
+          "marketCap": 0,
+          "weight": 0.115294
+        },
+        {
+          "code": "017800",
+          "name": "현대엘리베이터",
+          "quantity": 34,
+          "evaluationAmount": 2526200,
+          "marketCap": 0,
+          "weight": 0.156808
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "quantity": 181,
+          "evaluationAmount": 78735000,
+          "marketCap": 0,
+          "weight": 4.887284
+        },
+        {
+          "code": "298020",
+          "name": "효성티앤씨",
+          "quantity": 3,
+          "evaluationAmount": 967500,
+          "marketCap": 0,
+          "weight": 0.060055
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 5895474,
+          "weight": 0.365947
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:51.118Z"
     },
     "495230": {
       "etf": {
@@ -334837,6 +340129,1542 @@
         }
       ],
       "collectedAt": "2026-08-19T17:25:09.064Z"
+    },
+    "0193K0": {
+      "etf": {
+        "code": "0193K0",
+        "name": "PLUS 삼성전자단일종목레버리지",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 5,
+        "totalWeight": 100.00000000000001
+      },
+      "components": [
+        {
+          "code": "0192M0",
+          "name": "RISE 삼성전자단일종목레버리지",
+          "quantity": 2932,
+          "evaluationAmount": 35008080,
+          "marketCap": 0,
+          "weight": 5.800016
+        },
+        {
+          "code": "0195R0",
+          "name": "TIGER 삼성전자단일종목레버리지",
+          "quantity": 1752,
+          "evaluationAmount": 20708640,
+          "marketCap": 0,
+          "weight": 3.430935
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "quantity": 943,
+          "evaluationAmount": 253195500,
+          "marketCap": 0,
+          "weight": 41.948545
+        },
+        {
+          "code": "KR4A11690000",
+          "name": "삼성전자   F 202609 (  10)",
+          "quantity": 103.88,
+          "evaluationAmount": 278398400,
+          "marketCap": 0,
+          "weight": 46.124073
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 16275278,
+          "weight": 2.696431
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:25.118Z"
+    },
+    "0193L0": {
+      "etf": {
+        "code": "0193L0",
+        "name": "PLUS 삼성전자선물단일종목인버스2X",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 2,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "KR4A11690000",
+          "name": "삼성전자   F 202609 (  10)",
+          "quantity": -141.39,
+          "evaluationAmount": -378925200,
+          "marketCap": 0,
+          "weight": 66.452871
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 191291250,
+          "weight": 33.547129
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:25.400Z"
+    },
+    "0184N0": {
+      "etf": {
+        "code": "0184N0",
+        "name": "PLUS 은채권혼합",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 12,
+        "totalWeight": 100.00000100000001
+      },
+      "components": [
+        {
+          "code": "US0032641088",
+          "name": "ABRDN PHYSICAL SILVER SHARES",
+          "quantity": 1151.89,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "114460",
+          "name": "ACE 국고채3년",
+          "quantity": 111.11,
+          "evaluationAmount": 11176665,
+          "marketCap": 0,
+          "weight": 4.672853
+        },
+        {
+          "code": "US46428Q1094",
+          "name": "ISHARES SILVER TRUST",
+          "quantity": 1470.82,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "114260",
+          "name": "KODEX 국고채3년",
+          "quantity": 55.56,
+          "evaluationAmount": 3430274,
+          "marketCap": 0,
+          "weight": 1.434163
+        },
+        {
+          "code": "298340",
+          "name": "PLUS 국채선물3년",
+          "quantity": 388.89,
+          "evaluationAmount": 21954717,
+          "marketCap": 0,
+          "weight": 9.179049
+        },
+        {
+          "code": "114100",
+          "name": "RISE 국고채3년",
+          "quantity": 133.33,
+          "evaluationAmount": 14201996,
+          "marketCap": 0,
+          "weight": 5.937714
+        },
+        {
+          "code": "114820",
+          "name": "TIGER 국채3년",
+          "quantity": 111.11,
+          "evaluationAmount": 11666665,
+          "marketCap": 0,
+          "weight": 4.877717
+        },
+        {
+          "code": "157450",
+          "name": "TIGER 단기통안채",
+          "quantity": 38.89,
+          "evaluationAmount": 4372073,
+          "marketCap": 0,
+          "weight": 1.82792
+        },
+        {
+          "code": "KR103501GF63",
+          "name": "국고채권02250-2806(25-4)",
+          "quantity": 0,
+          "evaluationAmount": 54427444,
+          "marketCap": 0,
+          "weight": 22.755574
+        },
+        {
+          "code": "KR103501GFC3",
+          "name": "국고채권02750-2812(25-10)",
+          "quantity": 0,
+          "evaluationAmount": 54620055,
+          "marketCap": 0,
+          "weight": 22.836103
+        },
+        {
+          "code": "KR103503GG37",
+          "name": "국고채권03375-3103(26-3)",
+          "quantity": 0,
+          "evaluationAmount": 54703277,
+          "marketCap": 0,
+          "weight": 22.870897
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": -8629745,
+          "weight": 3.608011
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:36.601Z"
+    },
+    "0098N0": {
+      "etf": {
+        "code": "0098N0",
+        "name": "PLUS 자사주매입고배당주",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 31,
+        "totalWeight": 99.99999999999999
+      },
+      "components": [
+        {
+          "code": "138930",
+          "name": "BNK금융지주",
+          "quantity": 1232,
+          "evaluationAmount": 18258240,
+          "marketCap": 0,
+          "weight": 2.81131
+        },
+        {
+          "code": "005830",
+          "name": "DB손해보험",
+          "quantity": 152,
+          "evaluationAmount": 27664000,
+          "marketCap": 0,
+          "weight": 4.259561
+        },
+        {
+          "code": "078930",
+          "name": "GS",
+          "quantity": 198,
+          "evaluationAmount": 23621400,
+          "marketCap": 0,
+          "weight": 3.637102
+        },
+        {
+          "code": "011200",
+          "name": "HMM",
+          "quantity": 1634,
+          "evaluationAmount": 37010100,
+          "marketCap": 0,
+          "weight": 5.698625
+        },
+        {
+          "code": "294870",
+          "name": "IPARK현대산업개발",
+          "quantity": 515,
+          "evaluationAmount": 11587500,
+          "marketCap": 0,
+          "weight": 1.784184
+        },
+        {
+          "code": "175330",
+          "name": "JB금융지주",
+          "quantity": 969,
+          "evaluationAmount": 27035100,
+          "marketCap": 0,
+          "weight": 4.162726
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "quantity": 195,
+          "evaluationAmount": 32857500,
+          "marketCap": 0,
+          "weight": 5.059229
+        },
+        {
+          "code": "030200",
+          "name": "KT",
+          "quantity": 466,
+          "evaluationAmount": 25303800,
+          "marketCap": 0,
+          "weight": 3.896149
+        },
+        {
+          "code": "033780",
+          "name": "KT&G",
+          "quantity": 151,
+          "evaluationAmount": 26666600,
+          "marketCap": 0,
+          "weight": 4.105986
+        },
+        {
+          "code": "001120",
+          "name": "LX인터내셔널",
+          "quantity": 213,
+          "evaluationAmount": 8200500,
+          "marketCap": 0,
+          "weight": 1.262671
+        },
+        {
+          "code": "005940",
+          "name": "NH투자증권",
+          "quantity": 734,
+          "evaluationAmount": 20185000,
+          "marketCap": 0,
+          "weight": 3.107983
+        },
+        {
+          "code": "006120",
+          "name": "SK디스커버리",
+          "quantity": 303,
+          "evaluationAmount": 16271100,
+          "marketCap": 0,
+          "weight": 2.50534
+        },
+        {
+          "code": "139130",
+          "name": "iM금융지주",
+          "quantity": 878,
+          "evaluationAmount": 15259640,
+          "marketCap": 0,
+          "weight": 2.349601
+        },
+        {
+          "code": "035250",
+          "name": "강원랜드",
+          "quantity": 1162,
+          "evaluationAmount": 16790900,
+          "marketCap": 0,
+          "weight": 2.585377
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "quantity": 175,
+          "evaluationAmount": 24010000,
+          "marketCap": 0,
+          "weight": 3.696937
+        },
+        {
+          "code": "024110",
+          "name": "기업은행",
+          "quantity": 1111,
+          "evaluationAmount": 22719950,
+          "marketCap": 0,
+          "weight": 3.498301
+        },
+        {
+          "code": "138040",
+          "name": "메리츠금융지주",
+          "quantity": 305,
+          "evaluationAmount": 35746000,
+          "marketCap": 0,
+          "weight": 5.503986
+        },
+        {
+          "code": "081660",
+          "name": "미스토홀딩스",
+          "quantity": 713,
+          "evaluationAmount": 31015500,
+          "marketCap": 0,
+          "weight": 4.775607
+        },
+        {
+          "code": "016360",
+          "name": "삼성증권",
+          "quantity": 174,
+          "evaluationAmount": 15451200,
+          "marketCap": 0,
+          "weight": 2.379096
+        },
+        {
+          "code": "029780",
+          "name": "삼성카드",
+          "quantity": 395,
+          "evaluationAmount": 18940250,
+          "marketCap": 0,
+          "weight": 2.916322
+        },
+        {
+          "code": "031210",
+          "name": "서울보증보험",
+          "quantity": 389,
+          "evaluationAmount": 17232700,
+          "marketCap": 0,
+          "weight": 2.653403
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "quantity": 304,
+          "evaluationAmount": 32376000,
+          "marketCap": 0,
+          "weight": 4.98509
+        },
+        {
+          "code": "001800",
+          "name": "오리온홀딩스",
+          "quantity": 359,
+          "evaluationAmount": 9262200,
+          "marketCap": 0,
+          "weight": 1.426146
+        },
+        {
+          "code": "316140",
+          "name": "우리금융지주",
+          "quantity": 848,
+          "evaluationAmount": 28620000,
+          "marketCap": 0,
+          "weight": 4.406761
+        },
+        {
+          "code": "030000",
+          "name": "제일기획",
+          "quantity": 809,
+          "evaluationAmount": 15249650,
+          "marketCap": 0,
+          "weight": 2.348063
+        },
+        {
+          "code": "071320",
+          "name": "지역난방공사",
+          "quantity": 155,
+          "evaluationAmount": 11423500,
+          "marketCap": 0,
+          "weight": 1.758932
+        },
+        {
+          "code": "021240",
+          "name": "코웨이",
+          "quantity": 214,
+          "evaluationAmount": 20651000,
+          "marketCap": 0,
+          "weight": 3.179735
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "quantity": 234,
+          "evaluationAmount": 30583800,
+          "marketCap": 0,
+          "weight": 4.709136
+        },
+        {
+          "code": "300720",
+          "name": "한일시멘트",
+          "quantity": 898,
+          "evaluationAmount": 13505920,
+          "marketCap": 0,
+          "weight": 2.079572
+        },
+        {
+          "code": "017800",
+          "name": "현대엘리베이터",
+          "quantity": 147,
+          "evaluationAmount": 10922100,
+          "marketCap": 0,
+          "weight": 1.681729
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 5035498,
+          "weight": 0.77534
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:42.071Z"
+    },
+    "0184L0": {
+      "etf": {
+        "code": "0184L0",
+        "name": "PLUS 중기종합채권(A-이상)액티브",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 14,
+        "totalWeight": 99.999999
+      },
+      "components": [
+        {
+          "code": "KR6003343G72",
+          "name": "SK에코플랜트186-3",
+          "quantity": 0,
+          "evaluationAmount": 7504352,
+          "marketCap": 0,
+          "weight": 6.779263
+        },
+        {
+          "code": "KR103503GG37",
+          "name": "국고채권03375-3103(26-3)",
+          "quantity": 0,
+          "evaluationAmount": 8850867,
+          "marketCap": 0,
+          "weight": 7.995675
+        },
+        {
+          "code": "KR103501GG62",
+          "name": "국고채권03500-2906(26-5)",
+          "quantity": 0,
+          "evaluationAmount": 14945917,
+          "marketCap": 0,
+          "weight": 13.501806
+        },
+        {
+          "code": "KR6030626F17",
+          "name": "롯데카드556-2",
+          "quantity": 0,
+          "evaluationAmount": 7382262,
+          "marketCap": 0,
+          "weight": 6.66897
+        },
+        {
+          "code": "KR310203GG56",
+          "name": "산업금융채권26신이0109-0508-2",
+          "quantity": 0,
+          "evaluationAmount": 7468082,
+          "marketCap": 0,
+          "weight": 6.746498
+        },
+        {
+          "code": "KR6174142F75",
+          "name": "우리카드265-2(사)",
+          "quantity": 0,
+          "evaluationAmount": 7329827,
+          "marketCap": 0,
+          "weight": 6.621601
+        },
+        {
+          "code": "KR310502AG50",
+          "name": "중소기업은행(신)2605할1A-08",
+          "quantity": 0,
+          "evaluationAmount": 7302344,
+          "marketCap": 0,
+          "weight": 6.596774
+        },
+        {
+          "code": "KR310101GF76",
+          "name": "통화안정증권02400-2707-02",
+          "quantity": 0,
+          "evaluationAmount": 7460239,
+          "marketCap": 0,
+          "weight": 6.739413
+        },
+        {
+          "code": "KR310101GG42",
+          "name": "통화안정증권03420-2804-02",
+          "quantity": 0,
+          "evaluationAmount": 7489782,
+          "marketCap": 0,
+          "weight": 6.766101
+        },
+        {
+          "code": "KR310101GG75",
+          "name": "통화안정증권03730-2807-02",
+          "quantity": 0,
+          "evaluationAmount": 7525775,
+          "marketCap": 0,
+          "weight": 6.798616
+        },
+        {
+          "code": "KR350703GF66",
+          "name": "한국도로공사고속도로건설채권956",
+          "quantity": 0,
+          "evaluationAmount": 7361573,
+          "marketCap": 0,
+          "weight": 6.65028
+        },
+        {
+          "code": "KR352502GF24",
+          "name": "한국자산관리공사채권제112회(사)",
+          "quantity": 0,
+          "evaluationAmount": 7428861,
+          "marketCap": 0,
+          "weight": 6.711067
+        },
+        {
+          "code": "KR6214344G58",
+          "name": "한국투자캐피탈137-3",
+          "quantity": 0,
+          "evaluationAmount": 7548546,
+          "marketCap": 0,
+          "weight": 6.819187
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": -5097257,
+          "weight": 4.604748
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:44.918Z"
+    },
+    "0047N0": {
+      "etf": {
+        "code": "0047N0",
+        "name": "PLUS 차이나AI테크TOP10",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 11,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "KYG017191142",
+          "name": "ALIBABA GROUP HOLDING LTD",
+          "quantity": 2318.54,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG070341048",
+          "name": "BAIDU INC-CLASS A",
+          "quantity": 2651.77,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CNE100000296",
+          "name": "BYD CO LTD-H",
+          "quantity": 3166.31,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CNE100006WS8",
+          "name": "CONTEMPORARY AMPEREX TECHN-H",
+          "quantity": 448.92,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CNE100007DJ5",
+          "name": "GIGADEVICE SEMICONDUCTOR I-H",
+          "quantity": 611.08,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG6427A1022",
+          "name": "NETEASE INC",
+          "quantity": 1465.92,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG8020E1199",
+          "name": "SEMICONDUCTOR MANUFACTURI-H",
+          "quantity": 4367.62,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG875721634",
+          "name": "TENCENT HOLDINGS LTD",
+          "quantity": 603.38,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CNE100007JY1",
+          "name": "VICTORY GIANT TECHNOLOGY H-H",
+          "quantity": 1342.69,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG9830T1067",
+          "name": "XIAOMI CORP-CLASS B",
+          "quantity": 10745.31,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 4075183,
+          "weight": 100
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:47.959Z"
+    },
+    "0128D0": {
+      "etf": {
+        "code": "0128D0",
+        "name": "PLUS 차이나항셍테크위클리타겟커버드콜",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 33,
+        "totalWeight": 99.999999
+      },
+      "components": [
+        {
+          "code": "KYG017191142",
+          "name": "ALIBABA GROUP HOLDING LTD",
+          "quantity": 1251.93,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "BMG0171K1018",
+          "name": "ALIBABA HEALTH INFORMATION T",
+          "quantity": 3409.64,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG070341048",
+          "name": "BAIDU INC-CLASS A",
+          "quantity": 797.14,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG1098A1013",
+          "name": "BILIBILI INC-CLASS Z",
+          "quantity": 168,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CNE100000296",
+          "name": "BYD CO LTD-H",
+          "quantity": 1693.79,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "HK0285041858",
+          "name": "BYD ELECTRONIC INTL CO LTD",
+          "quantity": 415.57,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CNE1000048K8",
+          "name": "HAIER SMART HOME CO LTD-H",
+          "quantity": 1278.21,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG4602S1057",
+          "name": "HORIZON ROBOTICS INC",
+          "quantity": 6177.07,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "HCTQ6",
+          "name": "HSTECH INDEX FUT AUG 2026",
+          "quantity": 0.71,
+          "evaluationAmount": 30760033,
+          "marketCap": 0,
+          "weight": 49.817694
+        },
+        {
+          "code": "HK0000218211",
+          "name": "HUA HONG GRACE SEMICONDUCTOR",
+          "quantity": 420.5,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG5074A1004",
+          "name": "JD HEALTH INTERNATIONAL INC",
+          "quantity": 592.21,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG8208B1014",
+          "name": "JD.COM INC-CLASS A",
+          "quantity": 839.93,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG532631028",
+          "name": "KUAISHOU TECHNOLOGY",
+          "quantity": 1605.86,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "HK0992009065",
+          "name": "LENOVO GROUP LTD",
+          "quantity": 3595.36,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG5479M1050",
+          "name": "LI AUTO INC-CLASS A",
+          "quantity": 739.64,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG596691041",
+          "name": "MEITUAN-CLASS B",
+          "quantity": 1916.71,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CNE100006M58",
+          "name": "MIDEA GROUP CO LTD-H",
+          "quantity": 325.86,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG6181S1093",
+          "name": "MINIMAX GROUP INC",
+          "quantity": 9.93,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG6427A1022",
+          "name": "NETEASE INC",
+          "quantity": 829.36,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG6525F1028",
+          "name": "NIO INC-CLASS A",
+          "quantity": 326.36,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG8020E1199",
+          "name": "SEMICONDUCTOR MANUFACTURI-H",
+          "quantity": 1999.71,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG8062L1041",
+          "name": "SENSETIME GROUP INC-CLASS B",
+          "quantity": 18107.43,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG8586D1097",
+          "name": "SUNNY OPTICAL TECH",
+          "quantity": 369.57,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG875721634",
+          "name": "TENCENT HOLDINGS LTD",
+          "quantity": 340.29,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG875771134",
+          "name": "TENCENT MUSIC ENT - CLASS A",
+          "quantity": 32.64,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG8918W1069",
+          "name": "TONGCHENG TRAVEL HOLDINGS LT",
+          "quantity": 744.43,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG9066F1019",
+          "name": "TRIP.COM GROUP LTD",
+          "quantity": 145.36,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "WHS_F8C4720",
+          "name": "WHSTECHC 08/21/26 C4720 INDEX",
+          "quantity": -2.29,
+          "evaluationAmount": -1810073,
+          "marketCap": 0,
+          "weight": 2.93152
+        },
+        {
+          "code": "KYG9830T1067",
+          "name": "XIAOMI CORP-CLASS B",
+          "quantity": 5532.64,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KYG982AW1003",
+          "name": "XPENG INC - CLASS A SHARES",
+          "quantity": 857.29,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CNE100007DH9",
+          "name": "Z AI CO LTD",
+          "quantity": 9.36,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "CNE100005K77",
+          "name": "ZHEJIANG LEAPMOTOR TECHNOL-H",
+          "quantity": 387.43,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 29175090,
+          "weight": 47.250785
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:50.644Z"
+    },
+    "0166N0": {
+      "etf": {
+        "code": "0166N0",
+        "name": "PLUS 코스닥150액티브",
+        "date": "20260820"
+      },
+      "summary": {
+        "totalComponents": 70,
+        "totalWeight": 100.00000400000002
+      },
+      "components": [
+        {
+          "code": "195940",
+          "name": "HK이노엔",
+          "quantity": 9,
+          "evaluationAmount": 363150,
+          "marketCap": 0,
+          "weight": 0.095712
+        },
+        {
+          "code": "403870",
+          "name": "HPSP",
+          "quantity": 121,
+          "evaluationAmount": 5160650,
+          "marketCap": 0,
+          "weight": 1.360137
+        },
+        {
+          "code": "095340",
+          "name": "ISC",
+          "quantity": 41,
+          "evaluationAmount": 6851100,
+          "marketCap": 0,
+          "weight": 1.805671
+        },
+        {
+          "code": "078020",
+          "name": "LS증권",
+          "quantity": 184,
+          "evaluationAmount": 1236480,
+          "marketCap": 0,
+          "weight": 0.325886
+        },
+        {
+          "code": "327260",
+          "name": "RF머트리얼즈",
+          "quantity": 66,
+          "evaluationAmount": 2319900,
+          "marketCap": 0,
+          "weight": 0.611431
+        },
+        {
+          "code": "282720",
+          "name": "금양그린파워",
+          "quantity": 322,
+          "evaluationAmount": 2405340,
+          "marketCap": 0,
+          "weight": 0.63395
+        },
+        {
+          "code": "420770",
+          "name": "기가비스",
+          "quantity": 35,
+          "evaluationAmount": 4483500,
+          "marketCap": 0,
+          "weight": 1.181668
+        },
+        {
+          "code": "121600",
+          "name": "나노신소재",
+          "quantity": 8,
+          "evaluationAmount": 384800,
+          "marketCap": 0,
+          "weight": 0.101418
+        },
+        {
+          "code": "330860",
+          "name": "네패스아크",
+          "quantity": 13,
+          "evaluationAmount": 360750,
+          "marketCap": 0,
+          "weight": 0.095079
+        },
+        {
+          "code": "194700",
+          "name": "노바렉스",
+          "quantity": 51,
+          "evaluationAmount": 612510,
+          "marketCap": 0,
+          "weight": 0.161433
+        },
+        {
+          "code": "032190",
+          "name": "다우데이타",
+          "quantity": 44,
+          "evaluationAmount": 875160,
+          "marketCap": 0,
+          "weight": 0.230657
+        },
+        {
+          "code": "078600",
+          "name": "대주전자재료",
+          "quantity": 79,
+          "evaluationAmount": 6865100,
+          "marketCap": 0,
+          "weight": 1.809361
+        },
+        {
+          "code": "393890",
+          "name": "더블유씨피",
+          "quantity": 3052,
+          "evaluationAmount": 27132280,
+          "marketCap": 0,
+          "weight": 7.150963
+        },
+        {
+          "code": "403850",
+          "name": "더핑크퐁컴퍼니",
+          "quantity": 48,
+          "evaluationAmount": 548160,
+          "marketCap": 0,
+          "weight": 0.144473
+        },
+        {
+          "code": "213420",
+          "name": "덕산네오룩스",
+          "quantity": 14,
+          "evaluationAmount": 471800,
+          "marketCap": 0,
+          "weight": 0.124347
+        },
+        {
+          "code": "077360",
+          "name": "덕산하이메탈",
+          "quantity": 227,
+          "evaluationAmount": 2238220,
+          "marketCap": 0,
+          "weight": 0.589904
+        },
+        {
+          "code": "005290",
+          "name": "동진쎄미켐",
+          "quantity": 157,
+          "evaluationAmount": 6782400,
+          "marketCap": 0,
+          "weight": 1.787564
+        },
+        {
+          "code": "131970",
+          "name": "두산테스나",
+          "quantity": 96,
+          "evaluationAmount": 7555200,
+          "marketCap": 0,
+          "weight": 1.991243
+        },
+        {
+          "code": "347850",
+          "name": "디앤디파마텍",
+          "quantity": 30,
+          "evaluationAmount": 1734000,
+          "marketCap": 0,
+          "weight": 0.457012
+        },
+        {
+          "code": "281740",
+          "name": "레이크머티리얼즈",
+          "quantity": 30,
+          "evaluationAmount": 375000,
+          "marketCap": 0,
+          "weight": 0.098835
+        },
+        {
+          "code": "058470",
+          "name": "리노공업",
+          "quantity": 112,
+          "evaluationAmount": 7593600,
+          "marketCap": 0,
+          "weight": 2.001364
+        },
+        {
+          "code": "089970",
+          "name": "브이엠",
+          "quantity": 192,
+          "evaluationAmount": 12806400,
+          "marketCap": 0,
+          "weight": 3.375245
+        },
+        {
+          "code": "126340",
+          "name": "비나텍",
+          "quantity": 159,
+          "evaluationAmount": 10589400,
+          "marketCap": 0,
+          "weight": 2.790934
+        },
+        {
+          "code": "091580",
+          "name": "상신이디피",
+          "quantity": 284,
+          "evaluationAmount": 5134720,
+          "marketCap": 0,
+          "weight": 1.353303
+        },
+        {
+          "code": "089980",
+          "name": "상아프론테크",
+          "quantity": 78,
+          "evaluationAmount": 1122420,
+          "marketCap": 0,
+          "weight": 0.295824
+        },
+        {
+          "code": "042600",
+          "name": "새로닉스",
+          "quantity": 907,
+          "evaluationAmount": 9723040,
+          "marketCap": 0,
+          "weight": 2.562597
+        },
+        {
+          "code": "252990",
+          "name": "샘씨엔에스",
+          "quantity": 135,
+          "evaluationAmount": 2008800,
+          "marketCap": 0,
+          "weight": 0.529438
+        },
+        {
+          "code": "006730",
+          "name": "서부T&D",
+          "quantity": 37,
+          "evaluationAmount": 391090,
+          "marketCap": 0,
+          "weight": 0.103075
+        },
+        {
+          "code": "178320",
+          "name": "서진시스템",
+          "quantity": 761,
+          "evaluationAmount": 28195050,
+          "marketCap": 0,
+          "weight": 7.431066
+        },
+        {
+          "code": "171090",
+          "name": "선익시스템",
+          "quantity": 19,
+          "evaluationAmount": 1265400,
+          "marketCap": 0,
+          "weight": 0.333508
+        },
+        {
+          "code": "043260",
+          "name": "성호전자",
+          "quantity": 89,
+          "evaluationAmount": 1909050,
+          "marketCap": 0,
+          "weight": 0.503148
+        },
+        {
+          "code": "357780",
+          "name": "솔브레인",
+          "quantity": 22,
+          "evaluationAmount": 7183000,
+          "marketCap": 0,
+          "weight": 1.893146
+        },
+        {
+          "code": "036830",
+          "name": "솔브레인홀딩스",
+          "quantity": 56,
+          "evaluationAmount": 2192400,
+          "marketCap": 0,
+          "weight": 0.577827
+        },
+        {
+          "code": "347700",
+          "name": "스피어",
+          "quantity": 367,
+          "evaluationAmount": 9450250,
+          "marketCap": 0,
+          "weight": 2.490701
+        },
+        {
+          "code": "257720",
+          "name": "실리콘투",
+          "quantity": 77,
+          "evaluationAmount": 3426500,
+          "marketCap": 0,
+          "weight": 0.903086
+        },
+        {
+          "code": "222800",
+          "name": "심텍",
+          "quantity": 81,
+          "evaluationAmount": 8982900,
+          "marketCap": 0,
+          "weight": 2.367526
+        },
+        {
+          "code": "036710",
+          "name": "심텍홀딩스",
+          "quantity": 609,
+          "evaluationAmount": 2481675,
+          "marketCap": 0,
+          "weight": 0.654068
+        },
+        {
+          "code": "458870",
+          "name": "씨어스",
+          "quantity": 993,
+          "evaluationAmount": 22292850,
+          "marketCap": 0,
+          "weight": 5.875487
+        },
+        {
+          "code": "297090",
+          "name": "씨에스베어링",
+          "quantity": 2452,
+          "evaluationAmount": 9489240,
+          "marketCap": 0,
+          "weight": 2.500977
+        },
+        {
+          "code": "388210",
+          "name": "씨엠티엑스",
+          "quantity": 42,
+          "evaluationAmount": 3225600,
+          "marketCap": 0,
+          "weight": 0.850137
+        },
+        {
+          "code": "096530",
+          "name": "씨젠",
+          "quantity": 16,
+          "evaluationAmount": 484800,
+          "marketCap": 0,
+          "weight": 0.127774
+        },
+        {
+          "code": "354320",
+          "name": "알멕",
+          "quantity": 111,
+          "evaluationAmount": 3690750,
+          "marketCap": 0,
+          "weight": 0.972731
+        },
+        {
+          "code": "196170",
+          "name": "알테오젠",
+          "quantity": 18,
+          "evaluationAmount": 5364000,
+          "marketCap": 0,
+          "weight": 1.413732
+        },
+        {
+          "code": "290740",
+          "name": "액트로",
+          "quantity": 154,
+          "evaluationAmount": 1171940,
+          "marketCap": 0,
+          "weight": 0.308876
+        },
+        {
+          "code": "237690",
+          "name": "에스티팜",
+          "quantity": 4,
+          "evaluationAmount": 401200,
+          "marketCap": 0,
+          "weight": 0.10574
+        },
+        {
+          "code": "262260",
+          "name": "에이프로",
+          "quantity": 228,
+          "evaluationAmount": 733020,
+          "marketCap": 0,
+          "weight": 0.193194
+        },
+        {
+          "code": "064850",
+          "name": "에프앤가이드",
+          "quantity": 680,
+          "evaluationAmount": 12389600,
+          "marketCap": 0,
+          "weight": 3.265394
+        },
+        {
+          "code": "170920",
+          "name": "엘티씨",
+          "quantity": 104,
+          "evaluationAmount": 3941600,
+          "marketCap": 0,
+          "weight": 1.038845
+        },
+        {
+          "code": "322310",
+          "name": "오로스테크놀로지",
+          "quantity": 25,
+          "evaluationAmount": 371000,
+          "marketCap": 0,
+          "weight": 0.09778
+        },
+        {
+          "code": "138080",
+          "name": "오이솔루션",
+          "quantity": 28,
+          "evaluationAmount": 624400,
+          "marketCap": 0,
+          "weight": 0.164566
+        },
+        {
+          "code": "240810",
+          "name": "원익IPS",
+          "quantity": 95,
+          "evaluationAmount": 10678000,
+          "marketCap": 0,
+          "weight": 2.814286
+        },
+        {
+          "code": "104830",
+          "name": "원익머트리얼즈",
+          "quantity": 251,
+          "evaluationAmount": 9010900,
+          "marketCap": 0,
+          "weight": 2.374906
+        },
+        {
+          "code": "039030",
+          "name": "이오테크닉스",
+          "quantity": 7,
+          "evaluationAmount": 2898000,
+          "marketCap": 0,
+          "weight": 0.763795
+        },
+        {
+          "code": "064290",
+          "name": "인텍플러스",
+          "quantity": 307,
+          "evaluationAmount": 11128750,
+          "marketCap": 0,
+          "weight": 2.933085
+        },
+        {
+          "code": "089890",
+          "name": "코세스",
+          "quantity": 70,
+          "evaluationAmount": 1599500,
+          "marketCap": 0,
+          "weight": 0.421563
+        },
+        {
+          "code": "222040",
+          "name": "코스맥스엔비티",
+          "quantity": 122,
+          "evaluationAmount": 1022360,
+          "marketCap": 0,
+          "weight": 0.269452
+        },
+        {
+          "code": "241710",
+          "name": "코스메카코리아",
+          "quantity": 11,
+          "evaluationAmount": 1351900,
+          "marketCap": 0,
+          "weight": 0.356306
+        },
+        {
+          "code": "214150",
+          "name": "클래시스",
+          "quantity": 48,
+          "evaluationAmount": 1665600,
+          "marketCap": 0,
+          "weight": 0.438984
+        },
+        {
+          "code": "095610",
+          "name": "테스",
+          "quantity": 79,
+          "evaluationAmount": 11297000,
+          "marketCap": 0,
+          "weight": 2.977429
+        },
+        {
+          "code": "064760",
+          "name": "티씨케이",
+          "quantity": 35,
+          "evaluationAmount": 8120000,
+          "marketCap": 0,
+          "weight": 2.140101
+        },
+        {
+          "code": "440110",
+          "name": "파두",
+          "quantity": 59,
+          "evaluationAmount": 4029700,
+          "marketCap": 0,
+          "weight": 1.062065
+        },
+        {
+          "code": "214450",
+          "name": "파마리서치",
+          "quantity": 3,
+          "evaluationAmount": 1179000,
+          "marketCap": 0,
+          "weight": 0.310736
+        },
+        {
+          "code": "140860",
+          "name": "파크시스템스",
+          "quantity": 18,
+          "evaluationAmount": 5031000,
+          "marketCap": 0,
+          "weight": 1.325967
+        },
+        {
+          "code": "319660",
+          "name": "피에스케이",
+          "quantity": 88,
+          "evaluationAmount": 11616000,
+          "marketCap": 0,
+          "weight": 3.061504
+        },
+        {
+          "code": "031980",
+          "name": "피에스케이홀딩스",
+          "quantity": 102,
+          "evaluationAmount": 11393400,
+          "marketCap": 0,
+          "weight": 3.002836
+        },
+        {
+          "code": "166090",
+          "name": "하나머티리얼즈",
+          "quantity": 47,
+          "evaluationAmount": 2655500,
+          "marketCap": 0,
+          "weight": 0.699882
+        },
+        {
+          "code": "013030",
+          "name": "하이록코리아",
+          "quantity": 13,
+          "evaluationAmount": 409500,
+          "marketCap": 0,
+          "weight": 0.107928
+        },
+        {
+          "code": "452280",
+          "name": "한선엔지니어링",
+          "quantity": 516,
+          "evaluationAmount": 5923680,
+          "marketCap": 0,
+          "weight": 1.561241
+        },
+        {
+          "code": "107640",
+          "name": "한중엔시에스",
+          "quantity": 335,
+          "evaluationAmount": 11457000,
+          "marketCap": 0,
+          "weight": 3.019598
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 9563341,
+          "weight": 2.520507
+        }
+      ],
+      "collectedAt": "2026-08-19T17:25:53.650Z"
     }
   },
   "failures": {}
