@@ -3,9 +3,9 @@
     "date": "20260821",
     "total": 1162,
     "completed": 846,
-    "failed": 5,
+    "failed": 28,
     "status": "failed",
-    "updatedAt": "2026-08-20T19:24:46.297Z"
+    "updatedAt": "2026-08-20T19:40:01.452Z"
   },
   "items": {
     "100910": {
@@ -456462,11 +456462,53 @@
     }
   },
   "failures": {
+    "102110": {
+      "code": "102110",
+      "name": "TIGER 200",
+      "attempts": 1,
+      "error": "[102110] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=102110, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃16분 09초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.02 -2,108,800 - - KR6145768FC3 BNK캐피탈385-6 - 6,922,123 - - KR6139132F88 iM금융지주28-2 - 6,677,697 - - KR103503GF95 국고채권02500-3009(25-8) - 670,988 - - KR103503GF38 국고채권02625-3003(25-3) - 6,125,047 - - KR103501GFC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "139220": {
+      "code": "139220",
+      "name": "TIGER 200 건설",
+      "attempts": 1,
+      "error": "[139220] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=139220, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃14분 47초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.02 -2,108,800 - - KR6145768FC3 BNK캐피탈385-6 - 6,922,123 - - KR6139132F88 iM금융지주28-2 - 6,677,697 - - KR103503GF95 국고채권02500-3009(25-8) - 670,988 - - KR103503GF38 국고채권02625-3003(25-3) - 6,125,047 - - KR103501GFC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "139260": {
+      "code": "139260",
+      "name": "TIGER 200 IT",
+      "attempts": 1,
+      "error": "[139260] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=139260, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃14분 46초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.01 -1,054,400 - - KR4A65690005 3년국채 F 202609 -0.02 -2,066,000 - - KR6145764EA9 BNK캐피탈363-4 - 194,733 - - KR6145764F80 BNK캐피탈379-4 - 68,515 - - KR6145768FC3 BNK캐피탈385-6 - 619,104 - - KR6079318F41 JB 우리캐피탈534-2\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "139270": {
+      "code": "139270",
+      "name": "TIGER 200 금융",
+      "attempts": 1,
+      "error": "[139270] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=139270, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃13분 24초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.02 -2,108,800 - - KR6145768FC3 BNK캐피탈385-6 - 6,922,123 - - KR6139132F88 iM금융지주28-2 - 6,677,697 - - KR103503GF95 국고채권02500-3009(25-8) - 670,988 - - KR103503GF38 국고채권02625-3003(25-3) - 6,125,047 - - KR103501GFC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "139290": {
+      "code": "139290",
+      "name": "TIGER 200 경기소비재",
+      "attempts": 1,
+      "error": "[139290] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=139290, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃13분 24초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.01 -1,054,400 - - KR4A65690005 3년국채 F 202609 -0.02 -2,066,000 - - KR6145764EA9 BNK캐피탈363-4 - 194,733 - - KR6145764F80 BNK캐피탈379-4 - 68,515 - - KR6145768FC3 BNK캐피탈385-6 - 619,104 - - KR6079318F41 JB 우리캐피탈534-2\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
     "220130": {
       "code": "220130",
       "name": "SOL 차이나강소기업CSI500(합성 H)",
       "attempts": 1,
       "error": "[220130] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=220130, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃28분 37초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.02 -2,108,800 - - KR6145768FC3 BNK캐피탈385-6 - 6,922,123 - - KR6139132F88 iM금융지주28-2 - 6,677,697 - - KR103503GF95 국고채권02500-3009(25-8) - 670,988 - - KR103503GF38 국고채권02625-3003(25-3) - 6,125,047 - - KR103501GFC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "227550": {
+      "code": "227550",
+      "name": "TIGER 200 산업재",
+      "attempts": 1,
+      "error": "[227550] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=227550, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃12분 02초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.01 -1,054,400 - - KR4A65690005 3년국채 F 202609 -0.02 -2,066,000 - - KR6145764EA9 BNK캐피탈363-4 - 194,733 - - KR6145764F80 BNK캐피탈379-4 - 68,515 - - KR6145768FC3 BNK캐피탈385-6 - 619,104 - - KR6079318F41 JB 우리캐피탈534-2\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "227560": {
+      "code": "227560",
+      "name": "TIGER 200 생활소비재",
+      "attempts": 1,
+      "error": "[227560] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=227560, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃12분 01초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.02 -2,108,800 - - KR6145768FC3 BNK캐피탈385-6 - 6,922,123 - - KR6139132F88 iM금융지주28-2 - 6,677,697 - - KR103503GF95 국고채권02500-3009(25-8) - 670,988 - - KR103503GF38 국고채권02625-3003(25-3) - 6,125,047 - - KR103501GFC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
     },
     "397420": {
       "code": "397420",
@@ -456474,11 +456516,47 @@
       "attempts": 1,
       "error": "[397420] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=397420, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃28분 36초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:19:01 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 005930 삼성전자 7,033.00 1,740,667,500 1,905,943,000 34.55 000660 SK하이닉스 857.00 1,285,500,000 1,449,187,000 26.27 402340 SK스퀘어 139.00 139,556,000 156,097,000 2.83 009150 삼성전기 84.00 116,508,000 117,264,000 2.13 005380 현대차 206.00 85,284,000 86,0\"}]"
     },
+    "413220": {
+      "code": "413220",
+      "name": "SOL 차이나태양광CSI(합성)",
+      "attempts": 1,
+      "error": "[413220] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=413220, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃25분 48초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.01 -1,054,400 - - KR4A65690005 3년국채 F 202609 -0.02 -2,066,000 - - KR6145764EA9 BNK캐피탈363-4 - 194,733 - - KR6145764F80 BNK캐피탈379-4 - 68,515 - - KR6145768FC3 BNK캐피탈385-6 - 619,104 - - KR6079318F41 JB 우리캐피탈534-2\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
     "415760": {
       "code": "415760",
       "name": "SOL 차이나육성산업액티브(합성)",
       "attempts": 1,
       "error": "[415760] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=415760, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃27분 14초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.02 -2,108,800 - - KR6145768FC3 BNK캐피탈385-6 - 6,922,123 - - KR6139132F88 iM금융지주28-2 - 6,677,697 - - KR103503GF95 국고채권02500-3009(25-8) - 670,988 - - KR103503GF38 국고채권02625-3003(25-3) - 6,125,047 - - KR103501GFC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "429980": {
+      "code": "429980",
+      "name": "SOL 한국형글로벌전기차&2차전지액티브",
+      "attempts": 1,
+      "error": "[429980] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=429980, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃17분 32초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.01 -1,054,400 - - KR4A65690005 3년국채 F 202609 -0.02 -2,066,000 - - KR6145764EA9 BNK캐피탈363-4 - 194,733 - - KR6145764F80 BNK캐피탈379-4 - 68,515 - - KR6145768FC3 BNK캐피탈385-6 - 619,104 - - KR6079318F41 JB 우리캐피탈534-2\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "444200": {
+      "code": "444200",
+      "name": "SOL 코리아메가테크액티브",
+      "attempts": 1,
+      "error": "[444200] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=444200, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃24분 25초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.02 -2,108,800 - - KR6145768FC3 BNK캐피탈385-6 - 6,922,123 - - KR6139132F88 iM금융지주28-2 - 6,677,697 - - KR103503GF95 국고채권02500-3009(25-8) - 670,988 - - KR103503GF38 국고채권02625-3003(25-3) - 6,125,047 - - KR103501GFC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "450910": {
+      "code": "450910",
+      "name": "SOL 코스닥150",
+      "attempts": 1,
+      "error": "[450910] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=450910, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃23분 03초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.02 -2,108,800 - - KR6145768FC3 BNK캐피탈385-6 - 6,922,123 - - KR6139132F88 iM금융지주28-2 - 6,677,697 - - KR103503GF95 국고채권02500-3009(25-8) - 670,988 - - KR103503GF38 국고채권02625-3003(25-3) - 6,125,047 - - KR103501GFC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "469830": {
+      "code": "469830",
+      "name": "SOL 초단기채권액티브",
+      "attempts": 1,
+      "error": "[469830] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=469830, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃25분 48초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.02 -2,108,800 - - KR6145768FC3 BNK캐피탈385-6 - 6,922,123 - - KR6139132F88 iM금융지주28-2 - 6,677,697 - - KR103503GF95 국고채권02500-3009(25-8) - 670,988 - - KR103503GF38 국고채권02625-3003(25-3) - 6,125,047 - - KR103501GFC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "495550": {
+      "code": "495550",
+      "name": "SOL 코리아밸류업TR",
+      "attempts": 1,
+      "error": "[495550] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=495550, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃23분 02초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.01 -1,054,400 - - KR4A65690005 3년국채 F 202609 -0.02 -2,066,000 - - KR6145764EA9 BNK캐피탈363-4 - 194,733 - - KR6145764F80 BNK캐피탈379-4 - 68,515 - - KR6145768FC3 BNK캐피탈385-6 - 619,104 - - KR6079318F41 JB 우리캐피탈534-2\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
     },
     "0016X0": {
       "code": "0016X0",
@@ -456491,6 +456569,65 @@
       "name": "SOL 차이나소비트렌드",
       "attempts": 1,
       "error": "[0131A0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0131A0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃27분 14초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.01 -1,054,400 - - KR4A65690005 3년국채 F 202609 -0.02 -2,066,000 - - KR6145764EA9 BNK캐피탈363-4 - 194,733 - - KR6145764F80 BNK캐피탈379-4 - 68,515 - - KR6145768FC3 BNK캐피탈385-6 - 619,104 - - KR6079318F41 JB 우리캐피탈534-2\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "0105E0": {
+      "code": "0105E0",
+      "name": "SOL 코리아고배당",
+      "attempts": 1,
+      "error": "[0105E0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0105E0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃24분 25초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.01 -1,054,400 - - KR4A65690005 3년국채 F 202609 -0.02 -2,066,000 - - KR6145764EA9 BNK캐피탈363-4 - 194,733 - - KR6145764F80 BNK캐피탈379-4 - 68,515 - - KR6145768FC3 BNK캐피탈385-6 - 619,104 - - KR6079318F41 JB 우리캐피탈534-2\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "0192T0": {
+      "code": "0192T0",
+      "name": "SOL 코스닥TOP10",
+      "attempts": 1,
+      "error": "[0192T0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0192T0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃21분 39초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.01 -1,054,400 - - KR4A65690005 3년국채 F 202609 -0.02 -2,066,000 - - KR6145764EA9 BNK캐피탈363-4 - 194,733 - - KR6145764F80 BNK캐피탈379-4 - 68,515 - - KR6145768FC3 BNK캐피탈385-6 - 619,104 - - KR6079318F41 JB 우리캐피탈534-2\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "0192S0": {
+      "code": "0192S0",
+      "name": "SOL 코스피200채권혼합50",
+      "attempts": 1,
+      "error": "[0192S0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0192S0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃21분 40초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.02 -2,108,800 - - KR6145768FC3 BNK캐피탈385-6 - 6,922,123 - - KR6139132F88 iM금융지주28-2 - 6,677,697 - - KR103503GF95 국고채권02500-3009(25-8) - 670,988 - - KR103503GF38 국고채권02625-3003(25-3) - 6,125,047 - - KR103501GFC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "0040X0": {
+      "code": "0040X0",
+      "name": "SOL 팔란티어미국채커버드콜혼합",
+      "attempts": 1,
+      "error": "[0040X0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0040X0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃20분 17초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.01 -1,054,400 - - KR4A65690005 3년국채 F 202609 -0.02 -2,066,000 - - KR6145764EA9 BNK캐피탈363-4 - 194,733 - - KR6145764F80 BNK캐피탈379-4 - 68,515 - - KR6145768FC3 BNK캐피탈385-6 - 619,104 - - KR6079318F41 JB 우리캐피탈534-2\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "0040Y0": {
+      "code": "0040Y0",
+      "name": "SOL 팔란티어커버드콜OTM채권혼합",
+      "attempts": 1,
+      "error": "[0040Y0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0040Y0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃20분 17초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.02 -2,108,800 - - KR6145768FC3 BNK캐피탈385-6 - 6,922,123 - - KR6139132F88 iM금융지주28-2 - 6,677,697 - - KR103503GF95 국고채권02500-3009(25-8) - 670,988 - - KR103503GF38 국고채권02625-3003(25-3) - 6,125,047 - - KR103501GFC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "0105D0": {
+      "code": "0105D0",
+      "name": "SOL 한국AI소프트웨어",
+      "attempts": 1,
+      "error": "[0105D0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0105D0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃18분 54초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.01 -1,054,400 - - KR4A65690005 3년국채 F 202609 -0.02 -2,066,000 - - KR6145764EA9 BNK캐피탈363-4 - 194,733 - - KR6145764F80 BNK캐피탈379-4 - 68,515 - - KR6145768FC3 BNK캐피탈385-6 - 619,104 - - KR6079318F41 JB 우리캐피탈534-2\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "0092B0": {
+      "code": "0092B0",
+      "name": "SOL 한국원자력SMR",
+      "attempts": 1,
+      "error": "[0092B0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0092B0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃18분 55초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.02 -2,108,800 - - KR6145768FC3 BNK캐피탈385-6 - 6,922,123 - - KR6139132F88 iM금융지주28-2 - 6,677,697 - - KR103503GF95 국고채권02500-3009(25-8) - 670,988 - - KR103503GF38 국고채권02625-3003(25-3) - 6,125,047 - - KR103501GFC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "0008T0": {
+      "code": "0008T0",
+      "name": "SOL 화장품TOP3플러스",
+      "attempts": 1,
+      "error": "[0008T0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0008T0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃17분 32초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.02 -2,108,800 - - KR6145768FC3 BNK캐피탈385-6 - 6,922,123 - - KR6139132F88 iM금융지주28-2 - 6,677,697 - - KR103503GF95 국고채권02500-3009(25-8) - 670,988 - - KR103503GF38 국고채권02625-3003(25-3) - 6,125,047 - - KR103501GFC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "0139F0": {
+      "code": "0139F0",
+      "name": "TIGER 12월자동연장금융채(AA-이상)액티브",
+      "attempts": 1,
+      "error": "[0139F0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0139F0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃16분 09초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.08.21 AM 04:21:59 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KR4A67690003 10년국채 F 202609 -0.01 -1,054,400 - - KR4A65690005 3년국채 F 202609 -0.02 -2,066,000 - - KR6145764EA9 BNK캐피탈363-4 - 194,733 - - KR6145764F80 BNK캐피탈379-4 - 68,515 - - KR6145768FC3 BNK캐피탈385-6 - 619,104 - - KR6079318F41 JB 우리캐피탈534-2\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "_batch": {
+      "stage": "batch-initialization",
+      "error": "KRX 로그인 진입 버튼을 찾지 못했습니다. 현재 URL: https://data.krx.co.kr/comm/error/blockError_01.jsp",
+      "failedAt": "2026-08-20T19:40:01.451Z"
     }
   }
 }
