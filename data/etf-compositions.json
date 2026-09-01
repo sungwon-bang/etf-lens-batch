@@ -3,9 +3,9 @@
     "date": "20260902",
     "total": 1163,
     "completed": 303,
-    "failed": 12,
+    "failed": 29,
     "status": "failed",
-    "updatedAt": "2026-09-01T19:43:28.856Z"
+    "updatedAt": "2026-09-01T19:54:50.342Z"
   },
   "items": {
     "100910": {
@@ -159660,17 +159660,89 @@
     }
   },
   "failures": {
+    "156080": {
+      "code": "156080",
+      "name": "KODEX MSCI Korea",
+      "attempts": 1,
+      "error": "[156080] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=156080, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃10분 17초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 282330 BGF리테일 6.00 886,800 - - 138930 BNK금융지주 216.00 3,283,200 - - 001040 CJ 12.00 1,558,800 - - 000120 CJ대한통운 11.00 808,500 - - 097950 CJ제일제당 6.00 1,119,000 - - 005830 DB손해보험 33.00 5,976,300 - - 000990 DB하이텍 10.00 950,000 - - 000210 DL 19\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "229720": {
+      "code": "229720",
+      "name": "KODEX KTOP30",
+      "attempts": 1,
+      "error": "[229720] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=229720, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃13분 05초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 282330 BGF리테일 6.00 886,800 - - 138930 BNK금융지주 216.00 3,283,200 - - 001040 CJ 12.00 1,558,800 - - 000120 CJ대한통운 11.00 808,500 - - 097950 CJ제일제당 6.00 1,119,000 - - 005830 DB손해보험 33.00 5,976,300 - - 000990 DB하이텍 10.00 950,000 - - 000210 DL 19\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "266360": {
+      "code": "266360",
+      "name": "KODEX K콘텐츠",
+      "attempts": 1,
+      "error": "[266360] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=266360, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃11분 43초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 114800 KODEX 인버스 1,849.00 1,895,225 - - KR4A01690002 코스피200 F 202609 -0.05 -13,695,176 - - KRD010010001 원화현금 - - 5,865,563 - CASH00000001 설정현금액 - - 7,760,788 - 그리드에서 빠져나오시려면 ESC키를 눌러주세요. Open ETF/ETN/ELW/상장형 수익증권 종목 검색 ETF/ETN/ELW/상장형 수익증권\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "266370": {
+      "code": "266370",
+      "name": "KODEX IT",
+      "attempts": 1,
+      "error": "[266370] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=266370, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃15분 56초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 114800 KODEX 인버스 1,849.00 1,895,225 - - KR4A01690002 코스피200 F 202609 -0.05 -13,695,176 - - KRD010010001 원화현금 - - 5,865,563 - CASH00000001 설정현금액 - - 7,760,788 - 그리드에서 빠져나오시려면 ESC키를 눌러주세요. Open ETF/ETN/ELW/상장형 수익증권 종목 검색 ETF/ETN/ELW/상장형 수익증권\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
     "271060": {
       "code": "271060",
       "name": "KODEX 3대농산물선물(H)",
       "attempts": 1,
       "error": "[271060] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=271060, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃21분 38초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 114800 KODEX 인버스 1,849.00 1,895,225 - - KR4A01690002 코스피200 F 202609 -0.05 -13,695,176 - - KRD010010001 원화현금 - - 5,865,563 - CASH00000001 설정현금액 - - 7,760,788 - 그리드에서 빠져나오시려면 ESC키를 눌러주세요. Open ETF/ETN/ELW/상장형 수익증권 종목 검색 ETF/ETN/ELW/상장형 수익증권\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
     },
+    "289040": {
+      "code": "289040",
+      "name": "KODEX MSCI KOREA ESG유니버설",
+      "attempts": 1,
+      "error": "[289040] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=289040, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃10분 19초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 114800 KODEX 인버스 1,849.00 1,895,225 - - KR4A01690002 코스피200 F 202609 -0.05 -13,695,176 - - KRD010010001 원화현금 - - 5,865,563 - CASH00000001 설정현금액 - - 7,760,788 - 그리드에서 빠져나오시려면 ESC키를 눌러주세요. Open ETF/ETN/ELW/상장형 수익증권 종목 검색 ETF/ETN/ELW/상장형 수익증권\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "291890": {
+      "code": "291890",
+      "name": "KODEX MSCI EM선물(H)",
+      "attempts": 1,
+      "error": "[291890] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=291890, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃11분 41초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 282330 BGF리테일 6.00 886,800 - - 138930 BNK금융지주 216.00 3,283,200 - - 001040 CJ 12.00 1,558,800 - - 000120 CJ대한통운 11.00 808,500 - - 097950 CJ제일제당 6.00 1,119,000 - - 005830 DB손해보험 33.00 5,976,300 - - 000990 DB하이텍 10.00 950,000 - - 000210 DL 19\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "292190": {
+      "code": "292190",
+      "name": "KODEX KRX300",
+      "attempts": 1,
+      "error": "[292190] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=292190, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃14분 31초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 282330 BGF리테일 6.00 886,800 - - 138930 BNK금융지주 216.00 3,283,200 - - 001040 CJ 12.00 1,558,800 - - 000120 CJ대한통운 11.00 808,500 - - 097950 CJ제일제당 6.00 1,119,000 - - 005830 DB손해보험 33.00 5,976,300 - - 000990 DB하이텍 10.00 950,000 - - 000210 DL 19\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
     "305720": {
       "code": "305720",
       "name": "KODEX 2차전지산업",
       "attempts": 1,
       "error": "[305720] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=305720, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃24분 26초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 114800 KODEX 인버스 1,849.00 1,895,225 - - KR4A01690002 코스피200 F 202609 -0.05 -13,695,176 - - KRD010010001 원화현금 - - 5,865,563 - CASH00000001 설정현금액 - - 7,760,788 - 그리드에서 빠져나오시려면 ESC키를 눌러주세요. Open ETF/ETN/ELW/상장형 수익증권 종목 검색 ETF/ETN/ELW/상장형 수익증권\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "306950": {
+      "code": "306950",
+      "name": "KODEX KRX300레버리지",
+      "attempts": 1,
+      "error": "[306950] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=306950, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃13분 08초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 114800 KODEX 인버스 1,849.00 1,895,225 - - KR4A01690002 코스피200 F 202609 -0.05 -13,695,176 - - KRD010010001 원화현금 - - 5,865,563 - CASH00000001 설정현금액 - - 7,760,788 - 그리드에서 빠져나오시려면 ESC키를 눌러주세요. Open ETF/ETN/ELW/상장형 수익증권 종목 검색 ETF/ETN/ELW/상장형 수익증권\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "368680": {
+      "code": "368680",
+      "name": "KODEX K-뉴딜디지털플러스",
+      "attempts": 1,
+      "error": "[368680] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=368680, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃15분 55초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 282330 BGF리테일 6.00 886,800 - - 138930 BNK금융지주 216.00 3,283,200 - - 001040 CJ 12.00 1,558,800 - - 000120 CJ대한통운 11.00 808,500 - - 097950 CJ제일제당 6.00 1,119,000 - - 005830 DB손해보험 33.00 5,976,300 - - 000990 DB하이텍 10.00 950,000 - - 000210 DL 19\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "395160": {
+      "code": "395160",
+      "name": "KODEX AI반도체TOP2플러스",
+      "attempts": 1,
+      "error": "[395160] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=395160, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃20분 10초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 114800 KODEX 인버스 1,849.00 1,895,225 - - KR4A01690002 코스피200 F 202609 -0.05 -13,695,176 - - KRD010010001 원화현금 - - 5,865,563 - CASH00000001 설정현금액 - - 7,760,788 - 그리드에서 빠져나오시려면 ESC키를 눌러주세요. Open ETF/ETN/ELW/상장형 수익증권 종목 검색 ETF/ETN/ELW/상장형 수익증권\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "423160": {
+      "code": "423160",
+      "name": "KODEX KOFR금리액티브(합성)",
+      "attempts": 1,
+      "error": "[423160] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=423160, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃14분 33초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 114800 KODEX 인버스 1,849.00 1,895,225 - - KR4A01690002 코스피200 F 202609 -0.05 -13,695,176 - - KRD010010001 원화현금 - - 5,865,563 - CASH00000001 설정현금액 - - 7,760,788 - 그리드에서 빠져나오시려면 ESC키를 눌러주세요. Open ETF/ETN/ELW/상장형 수익증권 종목 검색 ETF/ETN/ELW/상장형 수익증권\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "439860": {
+      "code": "439860",
+      "name": "KODEX ESG종합채권(A-이상)액티브",
+      "attempts": 1,
+      "error": "[439860] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=439860, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃17분 19초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 282330 BGF리테일 6.00 886,800 - - 138930 BNK금융지주 216.00 3,283,200 - - 001040 CJ 12.00 1,558,800 - - 000120 CJ대한통운 11.00 808,500 - - 097950 CJ제일제당 6.00 1,119,000 - - 005830 DB손해보험 33.00 5,976,300 - - 000990 DB하이텍 10.00 950,000 - - 000210 DL 19\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
     },
     "457690": {
       "code": "457690",
@@ -159684,6 +159756,12 @@
       "attempts": 1,
       "error": "[457700] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=457700, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃21분 36초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 282330 BGF리테일 6.00 886,800 - - 138930 BNK금융지주 216.00 3,283,200 - - 001040 CJ 12.00 1,558,800 - - 000120 CJ대한통운 11.00 808,500 - - 097950 CJ제일제당 6.00 1,119,000 - - 005830 DB손해보험 33.00 5,976,300 - - 000990 DB하이텍 10.00 950,000 - - 000210 DL 19\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
     },
+    "459580": {
+      "code": "459580",
+      "name": "KODEX CD금리액티브(합성)",
+      "attempts": 1,
+      "error": "[459580] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=459580, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃17분 21초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 114800 KODEX 인버스 1,849.00 1,895,225 - - KR4A01690002 코스피200 F 202609 -0.05 -13,695,176 - - KRD010010001 원화현금 - - 5,865,563 - CASH00000001 설정현금액 - - 7,760,788 - 그리드에서 빠져나오시려면 ESC키를 눌러주세요. Open ETF/ETN/ELW/상장형 수익증권 종목 검색 ETF/ETN/ELW/상장형 수익증권\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
     "461950": {
       "code": "461950",
       "name": "KODEX 2차전지핵심소재10",
@@ -159696,11 +159774,29 @@
       "attempts": 1,
       "error": "[462330] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=462330, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃24분 26초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 282330 BGF리테일 6.00 886,800 - - 138930 BNK금융지주 216.00 3,283,200 - - 001040 CJ 12.00 1,558,800 - - 000120 CJ대한통운 11.00 808,500 - - 097950 CJ제일제당 6.00 1,119,000 - - 005830 DB손해보험 33.00 5,976,300 - - 000990 DB하이텍 10.00 950,000 - - 000210 DL 19\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
     },
+    "471990": {
+      "code": "471990",
+      "name": "KODEX AI반도체핵심장비",
+      "attempts": 1,
+      "error": "[471990] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=471990, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃20분 07초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 282330 BGF리테일 6.00 886,800 - - 138930 BNK금융지주 216.00 3,283,200 - - 001040 CJ 12.00 1,558,800 - - 000120 CJ대한통운 11.00 808,500 - - 097950 CJ제일제당 6.00 1,119,000 - - 005830 DB손해보험 33.00 5,976,300 - - 000990 DB하이텍 10.00 950,000 - - 000210 DL 19\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
     "473290": {
       "code": "473290",
       "name": "KODEX 26-12 회사채(AA-이상)액티브",
       "attempts": 1,
       "error": "[473290] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=473290, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃27분 12초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 282330 BGF리테일 6.00 886,800 - - 138930 BNK금융지주 216.00 3,283,200 - - 001040 CJ 12.00 1,558,800 - - 000120 CJ대한통운 11.00 808,500 - - 097950 CJ제일제당 6.00 1,119,000 - - 005830 DB손해보험 33.00 5,976,300 - - 000990 DB하이텍 10.00 950,000 - - 000210 DL 19\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "481050": {
+      "code": "481050",
+      "name": "KODEX CD1년금리플러스액티브(합성)",
+      "attempts": 1,
+      "error": "[481050] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=481050, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃18분 43초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 282330 BGF리테일 6.00 886,800 - - 138930 BNK금융지주 216.00 3,283,200 - - 001040 CJ 12.00 1,558,800 - - 000120 CJ대한통운 11.00 808,500 - - 097950 CJ제일제당 6.00 1,119,000 - - 005830 DB손해보험 33.00 5,976,300 - - 000990 DB하이텍 10.00 950,000 - - 000210 DL 19\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "487240": {
+      "code": "487240",
+      "name": "KODEX AI전력핵심설비",
+      "attempts": 1,
+      "error": "[487240] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=487240, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃18분 45초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 114800 KODEX 인버스 1,849.00 1,895,225 - - KR4A01690002 코스피200 F 202609 -0.05 -13,695,176 - - KRD010010001 원화현금 - - 5,865,563 - CASH00000001 설정현금액 - - 7,760,788 - 그리드에서 빠져나오시려면 ESC키를 눌러주세요. Open ETF/ETN/ELW/상장형 수익증권 종목 검색 ETF/ETN/ELW/상장형 수익증권\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
     },
     "498400": {
       "code": "498400",
@@ -159731,6 +159827,11 @@
       "name": "KODEX 28-12 회사채(AA-이상)액티브",
       "attempts": 1,
       "error": "[0119H0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0119H0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃25분 48초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.02 AM 04:35:04 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 282330 BGF리테일 6.00 886,800 - - 138930 BNK금융지주 216.00 3,283,200 - - 001040 CJ 12.00 1,558,800 - - 000120 CJ대한통운 11.00 808,500 - - 097950 CJ제일제당 6.00 1,119,000 - - 005830 DB손해보험 33.00 5,976,300 - - 000990 DB하이텍 10.00 950,000 - - 000210 DL 19\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "_batch": {
+      "stage": "batch-initialization",
+      "error": "KRX 로그인 진입 버튼을 찾지 못했습니다. 현재 URL: https://data.krx.co.kr/comm/error/blockError_01.jsp",
+      "failedAt": "2026-09-01T19:54:50.342Z"
     }
   }
 }
