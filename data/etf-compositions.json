@@ -2,10 +2,10 @@
   "meta": {
     "date": "20260911",
     "total": 1168,
-    "completed": 705,
-    "failed": 0,
+    "completed": 715,
+    "failed": 16,
     "status": "failed",
-    "updatedAt": "2026-09-10T21:25:54.021Z"
+    "updatedAt": "2026-09-10T21:37:15.600Z"
   },
   "items": {
     "100910": {
@@ -20525,6 +20525,92 @@
         }
       ],
       "collectedAt": "2026-09-10T18:14:47.676Z"
+    },
+    "196230": {
+      "etf": {
+        "code": "196230",
+        "name": "RISE 단기통안채",
+        "date": "20260911"
+      },
+      "summary": {
+        "totalComponents": 9,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "KR310101GFB3",
+          "name": "통화안정증권02540-2611-01",
+          "quantity": 0,
+          "evaluationAmount": 4415661,
+          "marketCap": 0,
+          "weight": 3.774072
+        },
+        {
+          "code": "KR310102GG17",
+          "name": "통화안정증권02550-2701-01",
+          "quantity": 0,
+          "evaluationAmount": 17685943,
+          "marketCap": 0,
+          "weight": 15.116203
+        },
+        {
+          "code": "KR310101GF43",
+          "name": "통화안정증권02620-2704-02",
+          "quantity": 0,
+          "evaluationAmount": 13257023,
+          "marketCap": 0,
+          "weight": 11.330798
+        },
+        {
+          "code": "KR310101GF19",
+          "name": "통화안정증권02700-2701-02",
+          "quantity": 0,
+          "evaluationAmount": 17266768,
+          "marketCap": 0,
+          "weight": 14.757933
+        },
+        {
+          "code": "KR310101GG34",
+          "name": "통화안정증권02700-2703-01",
+          "quantity": 0,
+          "evaluationAmount": 22007319,
+          "marketCap": 0,
+          "weight": 18.809689
+        },
+        {
+          "code": "KR310101GEA8",
+          "name": "통화안정증권02800-2610-02",
+          "quantity": 0,
+          "evaluationAmount": 8864735,
+          "marketCap": 0,
+          "weight": 7.576703
+        },
+        {
+          "code": "KR310101GG59",
+          "name": "통화안정증권02900-2705-01",
+          "quantity": 0,
+          "evaluationAmount": 8830873,
+          "marketCap": 0,
+          "weight": 7.547761
+        },
+        {
+          "code": "KR310102GG74",
+          "name": "통화안정증권03370-2707-01",
+          "quantity": 0,
+          "evaluationAmount": 8866419,
+          "marketCap": 0,
+          "weight": 7.578142
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 15805165,
+          "weight": 13.508699
+        }
+      ],
+      "collectedAt": "2026-09-10T21:25:59.290Z"
     },
     "200030": {
       "etf": {
@@ -110506,6 +110592,108 @@
       ],
       "collectedAt": "2026-09-10T19:48:52.018Z"
     },
+    "315960": {
+      "etf": {
+        "code": "315960",
+        "name": "RISE 대형고배당10TR",
+        "date": "20260911"
+      },
+      "summary": {
+        "totalComponents": 11,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "quantity": 1725,
+          "evaluationAmount": 299115000,
+          "marketCap": 0,
+          "weight": 7.462222
+        },
+        {
+          "code": "005490",
+          "name": "POSCO홀딩스",
+          "quantity": 367,
+          "evaluationAmount": 124413000,
+          "marketCap": 0,
+          "weight": 3.103814
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "quantity": 593,
+          "evaluationAmount": 1098829000,
+          "marketCap": 0,
+          "weight": 27.41322
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "quantity": 1806,
+          "evaluationAmount": 229362000,
+          "marketCap": 0,
+          "weight": 5.722047
+        },
+        {
+          "code": "032830",
+          "name": "삼성생명",
+          "quantity": 925,
+          "evaluationAmount": 286287500,
+          "marketCap": 0,
+          "weight": 7.142205
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "quantity": 3990,
+          "evaluationAmount": 1073310000,
+          "marketCap": 0,
+          "weight": 26.776581
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "quantity": 2195,
+          "evaluationAmount": 242108500,
+          "marketCap": 0,
+          "weight": 6.040042
+        },
+        {
+          "code": "316140",
+          "name": "우리금융지주",
+          "quantity": 3368,
+          "evaluationAmount": 114512000,
+          "marketCap": 0,
+          "weight": 2.856807
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "quantity": 1269,
+          "evaluationAmount": 171695700,
+          "marketCap": 0,
+          "weight": 4.283407
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "quantity": 947,
+          "evaluationAmount": 368383000,
+          "marketCap": 0,
+          "weight": 9.190297
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": -375096,
+          "weight": 0.009358
+        }
+      ],
+      "collectedAt": "2026-09-10T21:26:01.769Z"
+    },
     "316300": {
       "etf": {
         "code": "316300",
@@ -169058,6 +169246,348 @@
       ],
       "collectedAt": "2026-09-10T20:37:37.045Z"
     },
+    "385550": {
+      "etf": {
+        "code": "385550",
+        "name": "RISE 단기채권알파액티브",
+        "date": "20260911"
+      },
+      "summary": {
+        "totalComponents": 41,
+        "totalWeight": 100.000002
+      },
+      "components": [
+        {
+          "code": "KR6145763F16",
+          "name": "BNK캐피탈370-3",
+          "quantity": 0,
+          "evaluationAmount": 3061007,
+          "marketCap": 0,
+          "weight": 2.676083
+        },
+        {
+          "code": "KR6138092C57",
+          "name": "SK에너지49-2",
+          "quantity": 0,
+          "evaluationAmount": 3053293,
+          "marketCap": 0,
+          "weight": 2.669339
+        },
+        {
+          "code": "KR6139133E96",
+          "name": "iM금융지주25-3",
+          "quantity": 0,
+          "evaluationAmount": 3037713,
+          "marketCap": 0,
+          "weight": 2.655719
+        },
+        {
+          "code": "KRZFA34287FN",
+          "name": "니드원제구차 20251021-364-40",
+          "quantity": 0,
+          "evaluationAmount": 1526252,
+          "marketCap": 0,
+          "weight": 1.334325
+        },
+        {
+          "code": "KR6023532E16",
+          "name": "롯데쇼핑98-2",
+          "quantity": 0,
+          "evaluationAmount": 3077316,
+          "marketCap": 0,
+          "weight": 2.690342
+        },
+        {
+          "code": "KR6008562E93",
+          "name": "메리츠증권2409-1",
+          "quantity": 0,
+          "evaluationAmount": 3074227,
+          "marketCap": 0,
+          "weight": 2.687641
+        },
+        {
+          "code": "KR6008561EB3",
+          "name": "메리츠증권2411-1",
+          "quantity": 0,
+          "evaluationAmount": 3065228,
+          "marketCap": 0,
+          "weight": 2.679774
+        },
+        {
+          "code": "KR6008561F69",
+          "name": "메리츠증권2506-1",
+          "quantity": 0,
+          "evaluationAmount": 3045537,
+          "marketCap": 0,
+          "weight": 2.662559
+        },
+        {
+          "code": "KR6169372F92",
+          "name": "메리츠캐피탈284-2",
+          "quantity": 0,
+          "evaluationAmount": 3049487,
+          "marketCap": 0,
+          "weight": 2.666012
+        },
+        {
+          "code": "KRZF14599FG4",
+          "name": "삼양사 20260423-182-15",
+          "quantity": 0,
+          "evaluationAmount": 1526252,
+          "marketCap": 0,
+          "weight": 1.334325
+        },
+        {
+          "code": "KRZF14599GG4",
+          "name": "삼양사 20260423-182-16",
+          "quantity": 0,
+          "evaluationAmount": 1526252,
+          "marketCap": 0,
+          "weight": 1.334325
+        },
+        {
+          "code": "KRZF0047S1G4",
+          "name": "성담 솔트베이 20260422-364-1",
+          "quantity": 0,
+          "evaluationAmount": 1526252,
+          "marketCap": 0,
+          "weight": 1.334325
+        },
+        {
+          "code": "KRZF0047S2G4",
+          "name": "성담 솔트베이 20260422-364-2",
+          "quantity": 0,
+          "evaluationAmount": 1526252,
+          "marketCap": 0,
+          "weight": 1.334325
+        },
+        {
+          "code": "KRZE00701FAF",
+          "name": "수협은행 여의도종합금융본부 20251015-365",
+          "quantity": 0,
+          "evaluationAmount": 1526252,
+          "marketCap": 0,
+          "weight": 1.334325
+        },
+        {
+          "code": "KR6023781G53",
+          "name": "신한캐피탈528-1",
+          "quantity": 0,
+          "evaluationAmount": 3050250,
+          "marketCap": 0,
+          "weight": 2.666679
+        },
+        {
+          "code": "KRZS00867G74",
+          "name": "신한투자증권 20260908-9-6(단)",
+          "quantity": 0,
+          "evaluationAmount": 3052503,
+          "marketCap": 0,
+          "weight": 2.668649
+        },
+        {
+          "code": "KRZF03001DGH",
+          "name": "아이엠증권 20260514-160-46",
+          "quantity": 0,
+          "evaluationAmount": 1526252,
+          "marketCap": 0,
+          "weight": 1.334325
+        },
+        {
+          "code": "KRZF03001EGH",
+          "name": "아이엠증권 20260514-160-47",
+          "quantity": 0,
+          "evaluationAmount": 1526252,
+          "marketCap": 0,
+          "weight": 1.334325
+        },
+        {
+          "code": "KRZF03001PGH",
+          "name": "아이엠증권 20260527-145-56",
+          "quantity": 0,
+          "evaluationAmount": 1526252,
+          "marketCap": 0,
+          "weight": 1.334325
+        },
+        {
+          "code": "KRZF03001QGH",
+          "name": "아이엠증권 20260527-145-57",
+          "quantity": 0,
+          "evaluationAmount": 1526252,
+          "marketCap": 0,
+          "weight": 1.334325
+        },
+        {
+          "code": "KRZF03001RGH",
+          "name": "아이엠증권 20260527-145-58",
+          "quantity": 0,
+          "evaluationAmount": 1526252,
+          "marketCap": 0,
+          "weight": 1.334325
+        },
+        {
+          "code": "KR6176944E63",
+          "name": "아이엠캐피탈116-4",
+          "quantity": 0,
+          "evaluationAmount": 3059990,
+          "marketCap": 0,
+          "weight": 2.675194
+        },
+        {
+          "code": "KR6176947E60",
+          "name": "아이엠캐피탈117-3",
+          "quantity": 0,
+          "evaluationAmount": 3082573,
+          "marketCap": 0,
+          "weight": 2.694938
+        },
+        {
+          "code": "KR6176941E74",
+          "name": "아이엠캐피탈118",
+          "quantity": 0,
+          "evaluationAmount": 3068675,
+          "marketCap": 0,
+          "weight": 2.682787
+        },
+        {
+          "code": "KR6033631E15",
+          "name": "에스케이브로드밴드55-1",
+          "quantity": 0,
+          "evaluationAmount": 3072222,
+          "marketCap": 0,
+          "weight": 2.685888
+        },
+        {
+          "code": "KR6395401F23",
+          "name": "에스케이위탁관리부동산투자회사6-1",
+          "quantity": 0,
+          "evaluationAmount": 3050277,
+          "marketCap": 0,
+          "weight": 2.666703
+        },
+        {
+          "code": "KR6097241F29",
+          "name": "엔에이치농협캐피탈242-1",
+          "quantity": 0,
+          "evaluationAmount": 3038266,
+          "marketCap": 0,
+          "weight": 2.656202
+        },
+        {
+          "code": "KR6033662F99",
+          "name": "우리금융캐피탈532-2",
+          "quantity": 0,
+          "evaluationAmount": 3014725,
+          "marketCap": 0,
+          "weight": 2.635621
+        },
+        {
+          "code": "KR6033662G15",
+          "name": "우리금융캐피탈539-2",
+          "quantity": 0,
+          "evaluationAmount": 3041321,
+          "marketCap": 0,
+          "weight": 2.658873
+        },
+        {
+          "code": "KRZS174140N1",
+          "name": "우리카드 20260813-92-33(단)",
+          "quantity": 0,
+          "evaluationAmount": 6105006,
+          "marketCap": 0,
+          "weight": 5.337298
+        },
+        {
+          "code": "KR6174144E33",
+          "name": "우리카드237-4",
+          "quantity": 0,
+          "evaluationAmount": 3055479,
+          "marketCap": 0,
+          "weight": 2.671251
+        },
+        {
+          "code": "KR354301GE24",
+          "name": "인천도시공사228",
+          "quantity": 0,
+          "evaluationAmount": 3066510,
+          "marketCap": 0,
+          "weight": 2.680894
+        },
+        {
+          "code": "KR6039492E51",
+          "name": "키움증권10-2",
+          "quantity": 0,
+          "evaluationAmount": 3054139,
+          "marketCap": 0,
+          "weight": 2.670079
+        },
+        {
+          "code": "KR6039492E36",
+          "name": "키움증권8-2",
+          "quantity": 0,
+          "evaluationAmount": 6118113,
+          "marketCap": 0,
+          "weight": 5.348756
+        },
+        {
+          "code": "KRZFA3075QF9",
+          "name": "하나증권 20250915-364-90",
+          "quantity": 0,
+          "evaluationAmount": 1526252,
+          "marketCap": 0,
+          "weight": 1.334325
+        },
+        {
+          "code": "KRZF0136J4G2",
+          "name": "하이퍼이머전제이차 20260212-364-4",
+          "quantity": 0,
+          "evaluationAmount": 1526252,
+          "marketCap": 0,
+          "weight": 1.334325
+        },
+        {
+          "code": "KR6064312772",
+          "name": "한국남부발전41-2",
+          "quantity": 0,
+          "evaluationAmount": 3029890,
+          "marketCap": 0,
+          "weight": 2.648879
+        },
+        {
+          "code": "KR6066562754",
+          "name": "한국중부발전38-2",
+          "quantity": 0,
+          "evaluationAmount": 3026230,
+          "marketCap": 0,
+          "weight": 2.64568
+        },
+        {
+          "code": "KR6009832C14",
+          "name": "한화솔루션279-2",
+          "quantity": 0,
+          "evaluationAmount": 3056156,
+          "marketCap": 0,
+          "weight": 2.671842
+        },
+        {
+          "code": "KR609592AG31",
+          "name": "현대커머셜570-1",
+          "quantity": 0,
+          "evaluationAmount": 3068791,
+          "marketCap": 0,
+          "weight": 2.682889
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 5967640,
+          "weight": 5.217206
+        }
+      ],
+      "collectedAt": "2026-09-10T21:25:59.556Z"
+    },
     "385560": {
       "etf": {
         "code": "385560",
@@ -175877,6 +176407,188 @@
         }
       ],
       "collectedAt": "2026-09-10T20:37:23.590Z"
+    },
+    "401170": {
+      "etf": {
+        "code": "401170",
+        "name": "RISE 메타버스",
+        "date": "20260911"
+      },
+      "summary": {
+        "totalComponents": 21,
+        "totalWeight": 100.00000000000001
+      },
+      "components": [
+        {
+          "code": "035760",
+          "name": "CJ ENM",
+          "quantity": 81,
+          "evaluationAmount": 2766150,
+          "marketCap": 0,
+          "weight": 1.293263
+        },
+        {
+          "code": "035900",
+          "name": "JYP Ent.",
+          "quantity": 197,
+          "evaluationAmount": 7722400,
+          "marketCap": 0,
+          "weight": 3.610468
+        },
+        {
+          "code": "034220",
+          "name": "LG디스플레이",
+          "quantity": 2005,
+          "evaluationAmount": 17984850,
+          "marketCap": 0,
+          "weight": 8.40849
+        },
+        {
+          "code": "011070",
+          "name": "LG이노텍",
+          "quantity": 23,
+          "evaluationAmount": 12811000,
+          "marketCap": 0,
+          "weight": 5.98955
+        },
+        {
+          "code": "035420",
+          "name": "NAVER",
+          "quantity": 115,
+          "evaluationAmount": 23920000,
+          "marketCap": 0,
+          "weight": 11.183362
+        },
+        {
+          "code": "036570",
+          "name": "NC",
+          "quantity": 107,
+          "evaluationAmount": 22416500,
+          "marketCap": 0,
+          "weight": 10.480428
+        },
+        {
+          "code": "067160",
+          "name": "SOOP",
+          "quantity": 55,
+          "evaluationAmount": 2040500,
+          "marketCap": 0,
+          "weight": 0.953999
+        },
+        {
+          "code": "251270",
+          "name": "넷마블",
+          "quantity": 215,
+          "evaluationAmount": 7557250,
+          "marketCap": 0,
+          "weight": 3.533255
+        },
+        {
+          "code": "376300",
+          "name": "디어유",
+          "quantity": 84,
+          "evaluationAmount": 1476720,
+          "marketCap": 0,
+          "weight": 0.690414
+        },
+        {
+          "code": "042510",
+          "name": "라온시큐어",
+          "quantity": 46,
+          "evaluationAmount": 404800,
+          "marketCap": 0,
+          "weight": 0.189257
+        },
+        {
+          "code": "418420",
+          "name": "라온텍",
+          "quantity": 157,
+          "evaluationAmount": 635850,
+          "marketCap": 0,
+          "weight": 0.29728
+        },
+        {
+          "code": "452430",
+          "name": "사피엔반도체",
+          "quantity": 40,
+          "evaluationAmount": 1484000,
+          "marketCap": 0,
+          "weight": 0.693817
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "quantity": 14,
+          "evaluationAmount": 19600000,
+          "marketCap": 0,
+          "weight": 9.163624
+        },
+        {
+          "code": "171090",
+          "name": "선익시스템",
+          "quantity": 32,
+          "evaluationAmount": 2182400,
+          "marketCap": 0,
+          "weight": 1.020342
+        },
+        {
+          "code": "041510",
+          "name": "에스엠",
+          "quantity": 96,
+          "evaluationAmount": 7766400,
+          "marketCap": 0,
+          "weight": 3.631039
+        },
+        {
+          "code": "122870",
+          "name": "와이지엔터테인먼트",
+          "quantity": 96,
+          "evaluationAmount": 4075200,
+          "marketCap": 0,
+          "weight": 1.905286
+        },
+        {
+          "code": "035720",
+          "name": "카카오",
+          "quantity": 690,
+          "evaluationAmount": 24081000,
+          "marketCap": 0,
+          "weight": 11.258634
+        },
+        {
+          "code": "259960",
+          "name": "크래프톤",
+          "quantity": 114,
+          "evaluationAmount": 23769000,
+          "marketCap": 0,
+          "weight": 11.112764
+        },
+        {
+          "code": "263750",
+          "name": "펄어비스",
+          "quantity": 269,
+          "evaluationAmount": 9737800,
+          "marketCap": 0,
+          "weight": 4.552732
+        },
+        {
+          "code": "352820",
+          "name": "하이브",
+          "quantity": 120,
+          "evaluationAmount": 20556000,
+          "marketCap": 0,
+          "weight": 9.610585
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 901353,
+          "weight": 0.421411
+        }
+      ],
+      "collectedAt": "2026-09-10T21:26:07.052Z"
     },
     "401470": {
       "etf": {
@@ -231774,6 +232486,2692 @@
       ],
       "collectedAt": "2026-09-10T18:14:24.063Z"
     },
+    "455890": {
+      "etf": {
+        "code": "455890",
+        "name": "RISE 머니마켓액티브",
+        "date": "20260911"
+      },
+      "summary": {
+        "totalComponents": 334,
+        "totalWeight": 99.99991900000042
+      },
+      "components": [
+        {
+          "code": "KR6001041E24",
+          "name": "CJ159",
+          "quantity": 0,
+          "evaluationAmount": 356525,
+          "marketCap": 0,
+          "weight": 0.319855
+        },
+        {
+          "code": "KRZF006261G7",
+          "name": "LS 20260710-82-1",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF00626AG7",
+          "name": "LS 20260710-82-10",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF00626CG7",
+          "name": "LS 20260710-82-12",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF006262G7",
+          "name": "LS 20260710-82-2",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF006263G7",
+          "name": "LS 20260710-82-3",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF006264G7",
+          "name": "LS 20260710-82-4",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF00594DFA",
+          "name": "NH투자증권 20251029-351-13",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF00594EFA",
+          "name": "NH투자증권 20251029-351-14",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF01013CG3",
+          "name": "고려아연 20260327-174-12",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF01013DG3",
+          "name": "고려아연 20260327-174-13",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF01013EG3",
+          "name": "고려아연 20260327-174-14",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF01013FG3",
+          "name": "고려아연 20260327-174-15",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF01013GG3",
+          "name": "고려아연 20260327-174-16",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF01013HG3",
+          "name": "고려아연 20260327-174-17",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZS01013019",
+          "name": "고려아연 20260722-51-2(단)",
+          "quantity": 0,
+          "evaluationAmount": 1064434,
+          "marketCap": 0,
+          "weight": 0.954954
+        },
+        {
+          "code": "KRZS01013022",
+          "name": "고려아연 20260728-49-5(단)",
+          "quantity": 0,
+          "evaluationAmount": 709622,
+          "marketCap": 0,
+          "weight": 0.636635
+        },
+        {
+          "code": "KRZS01013026",
+          "name": "고려아연 20260826-61-3(단)",
+          "quantity": 0,
+          "evaluationAmount": 3548112,
+          "marketCap": 0,
+          "weight": 3.183179
+        },
+        {
+          "code": "KR6192532FB7",
+          "name": "광주은행2025-11이(변)1갑-14",
+          "quantity": 0,
+          "evaluationAmount": 177800,
+          "marketCap": 0,
+          "weight": 0.159513
+        },
+        {
+          "code": "KRZF0025T3GH",
+          "name": "광주희망제1차 20260508-364-36",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0025T4GH",
+          "name": "광주희망제1차 20260508-364-37",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0025T5GH",
+          "name": "광주희망제1차 20260508-364-38",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0025T6GH",
+          "name": "광주희망제1차 20260508-364-39",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF030613G1",
+          "name": "교보증권 20260120-364-3",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF030614G1",
+          "name": "교보증권 20260120-364-4",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03061PG2",
+          "name": "교보증권 20260225-364-23",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03061QG2",
+          "name": "교보증권 20260225-364-24",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA3428MFA",
+          "name": "니드원제구차 20251021-364-21",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA3428NFA",
+          "name": "니드원제구차 20251021-364-22",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA3428PFA",
+          "name": "니드원제구차 20251021-364-23",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA3428QFA",
+          "name": "니드원제구차 20251021-364-24",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA3428RFA",
+          "name": "니드원제구차 20251021-364-25",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA3428SFA",
+          "name": "니드원제구차 20251021-364-26",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA3428TFA",
+          "name": "니드원제구차 20251021-364-27",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA3428VFA",
+          "name": "니드원제구차 20251021-364-28",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA3428WFA",
+          "name": "니드원제구차 20251021-364-29",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA3428XFA",
+          "name": "니드원제구차 20251021-364-30",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA3428YFA",
+          "name": "니드원제구차 20251021-364-31",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA3428ZFA",
+          "name": "니드원제구차 20251021-364-32",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA34280FN",
+          "name": "니드원제구차 20251021-364-33",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF00354HG9",
+          "name": "대신증권 20260904-181-17",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF00354JG9",
+          "name": "대신증권 20260904-181-18",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF00354KG9",
+          "name": "대신증권 20260904-181-19",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF00354LG9",
+          "name": "대신증권 20260904-181-20",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZS0139W004",
+          "name": "디비씨제삼차 20260910-35-1(단)",
+          "quantity": 0,
+          "evaluationAmount": 461255,
+          "marketCap": 0,
+          "weight": 0.413814
+        },
+        {
+          "code": "KRZS0058Z034",
+          "name": "디비엠비피제사차 20260724-91-1(단)",
+          "quantity": 0,
+          "evaluationAmount": 344167,
+          "marketCap": 0,
+          "weight": 0.308769
+        },
+        {
+          "code": "KRZF0112V1G4",
+          "name": "디비엠비피제십차 20260415-183-1",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0112V2G4",
+          "name": "디비엠비피제십차 20260415-183-2",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0112V3G4",
+          "name": "디비엠비피제십차 20260415-183-3",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0112V4G4",
+          "name": "디비엠비피제십차 20260415-183-4",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0112V5G4",
+          "name": "디비엠비피제십차 20260415-183-5",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0112V7G4",
+          "name": "디비엠비피제십차 20260420-183-7",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0112V8G4",
+          "name": "디비엠비피제십차 20260420-183-8",
+          "quantity": 0,
+          "evaluationAmount": 131280,
+          "marketCap": 0,
+          "weight": 0.117778
+        },
+        {
+          "code": "KRZF0112VLG4",
+          "name": "디비엠비피제십차 20260430-183-20",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0112VMG4",
+          "name": "디비엠비피제십차 20260430-183-21",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0112V1G5",
+          "name": "디비엠비피제십차 20260515-182-1",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0112V2G5",
+          "name": "디비엠비피제십차 20260515-182-2",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0112V3G5",
+          "name": "디비엠비피제십차 20260515-182-3",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0112V4G5",
+          "name": "디비엠비피제십차 20260515-182-4",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0112VCG5",
+          "name": "디비엠비피제십차 20260526-184-12",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0112VDG5",
+          "name": "디비엠비피제십차 20260526-184-13",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF016614G3",
+          "name": "디비증권 20260306-228-4",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF016615G3",
+          "name": "디비증권 20260306-228-5",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF016616G3",
+          "name": "디비증권 20260306-228-6",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF01661AG5",
+          "name": "디비증권 20260518-191-10",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF01661BG5",
+          "name": "디비증권 20260518-191-11",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF01661CG5",
+          "name": "디비증권 20260518-191-12",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF01661DG5",
+          "name": "디비증권 20260518-191-13",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF01661EG5",
+          "name": "디비증권 20260518-191-14",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF016619G5",
+          "name": "디비증권 20260518-191-9",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF01661KG5",
+          "name": "디비증권 20260520-149-19",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF01661LG5",
+          "name": "디비증권 20260520-149-20",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF201481FA",
+          "name": "롯데상사 20251015-364-1",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KR603062NDB4",
+          "name": "롯데카드510-4",
+          "quantity": 0,
+          "evaluationAmount": 356473,
+          "marketCap": 0,
+          "weight": 0.319809
+        },
+        {
+          "code": "KR6030624E93",
+          "name": "롯데카드540-4",
+          "quantity": 0,
+          "evaluationAmount": 355096,
+          "marketCap": 0,
+          "weight": 0.318573
+        },
+        {
+          "code": "KRZS0090T021",
+          "name": "멀티솔루션써밋 20260818-31-1(단)",
+          "quantity": 0,
+          "evaluationAmount": 532217,
+          "marketCap": 0,
+          "weight": 0.477477
+        },
+        {
+          "code": "KRZS0090T022",
+          "name": "멀티솔루션써밋 20260818-31-2(단)",
+          "quantity": 0,
+          "evaluationAmount": 1738575,
+          "marketCap": 0,
+          "weight": 1.559758
+        },
+        {
+          "code": "KRZS0070T008",
+          "name": "멀티솔루션에이치에스 20260825-34-1(단)",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF00856YGF",
+          "name": "메리츠증권 20260320-182-64",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF00856ZGF",
+          "name": "메리츠증권 20260320-182-65",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA08560G3",
+          "name": "메리츠증권 20260320-182-66",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA08561G3",
+          "name": "메리츠증권 20260320-182-67",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA08562G3",
+          "name": "메리츠증권 20260320-182-68",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZS001270QX",
+          "name": "부국증권 20260902-28-9(단)",
+          "quantity": 0,
+          "evaluationAmount": 1064434,
+          "marketCap": 0,
+          "weight": 0.954954
+        },
+        {
+          "code": "KR6005282G88",
+          "name": "부산은행2026-08이(변)1A-13",
+          "quantity": 0,
+          "evaluationAmount": 1066807,
+          "marketCap": 0,
+          "weight": 0.957083
+        },
+        {
+          "code": "KRZF153994G3",
+          "name": "비엔케이투자증권 20260303-192-4",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFB53996G3",
+          "name": "비엔케이투자증권 20260319-216-72",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFB53997G3",
+          "name": "비엔케이투자증권 20260319-216-73",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZS0011G001",
+          "name": "비케이씨에스제이십일차 20260731-91-1(단)",
+          "quantity": 0,
+          "evaluationAmount": 532217,
+          "marketCap": 0,
+          "weight": 0.477477
+        },
+        {
+          "code": "KRZS45714321",
+          "name": "비케이프로제구차 20260828-41-12(단)",
+          "quantity": 0,
+          "evaluationAmount": 2476582,
+          "marketCap": 0,
+          "weight": 2.221859
+        },
+        {
+          "code": "KRZS45714322",
+          "name": "비케이프로제구차 20260831-21-13(단)",
+          "quantity": 0,
+          "evaluationAmount": 1419245,
+          "marketCap": 0,
+          "weight": 1.273272
+        },
+        {
+          "code": "KRZS45714326",
+          "name": "비케이프로제구차 20260910-36-3(단)",
+          "quantity": 0,
+          "evaluationAmount": 709622,
+          "marketCap": 0,
+          "weight": 0.636635
+        },
+        {
+          "code": "KRZS0209H001",
+          "name": "비케이플러스제일차 20260713-92-1(단)",
+          "quantity": 0,
+          "evaluationAmount": 1774056,
+          "marketCap": 0,
+          "weight": 1.59159
+        },
+        {
+          "code": "KRZF016361G8",
+          "name": "삼성증권 20260824-364-1",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF016362G8",
+          "name": "삼성증권 20260824-364-2",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF14599HG4",
+          "name": "삼양사 20260423-182-17",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF14599JG4",
+          "name": "삼양사 20260423-182-18",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF14599KG4",
+          "name": "삼양사 20260423-182-19",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF14599LG4",
+          "name": "삼양사 20260423-182-20",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZE00701FAF",
+          "name": "수협은행 여의도종합금융본부 20251015-365",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF001721G4",
+          "name": "신영증권 20260414-183-1",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF001722G4",
+          "name": "신영증권 20260414-183-2",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF001723G4",
+          "name": "신영증권 20260414-183-3",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF001724G4",
+          "name": "신영증권 20260414-183-4",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KR6000016G74",
+          "name": "신한은행30-07-이-6M-A(변동)",
+          "quantity": 0,
+          "evaluationAmount": 355171,
+          "marketCap": 0,
+          "weight": 0.318641
+        },
+        {
+          "code": "KRZF03271HG4",
+          "name": "신한카드 20260415-168-17",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03271JG4",
+          "name": "신한카드 20260415-168-18",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03271KG4",
+          "name": "신한카드 20260415-168-19",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03271LG4",
+          "name": "신한카드 20260415-168-20",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF032711G5",
+          "name": "신한카드 20260507-167-1",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF032712G5",
+          "name": "신한카드 20260507-167-2",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF032713G5",
+          "name": "신한카드 20260507-167-3",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF032714G5",
+          "name": "신한카드 20260507-167-4",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF032715G5",
+          "name": "신한카드 20260507-167-5",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF032716G5",
+          "name": "신한카드 20260507-167-6",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KR6023781EA0",
+          "name": "신한캐피탈502-1",
+          "quantity": 0,
+          "evaluationAmount": 356389,
+          "marketCap": 0,
+          "weight": 0.319733
+        },
+        {
+          "code": "KRZF019453G2",
+          "name": "아이비케이캐피탈 20260209-261-3",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF019454G2",
+          "name": "아이비케이캐피탈 20260209-261-4",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF104777G1",
+          "name": "아이비케이투자증권 20260122-309-7",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF104778G1",
+          "name": "아이비케이투자증권 20260122-309-8",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF030012GE",
+          "name": "아이엠증권 20260226-208-35",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF030013GE",
+          "name": "아이엠증권 20260226-208-36",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF030014GE",
+          "name": "아이엠증권 20260226-208-37",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF030015GE",
+          "name": "아이엠증권 20260226-208-38",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF030016GE",
+          "name": "아이엠증권 20260226-208-39",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF030011G3",
+          "name": "아이엠증권 20260303-199-1",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF030012G3",
+          "name": "아이엠증권 20260303-199-2",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF030013G3",
+          "name": "아이엠증권 20260303-199-3",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03001DG3",
+          "name": "아이엠증권 20260312-190-13",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03001EG3",
+          "name": "아이엠증권 20260312-190-14",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03001FG3",
+          "name": "아이엠증권 20260312-190-15",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03001GG3",
+          "name": "아이엠증권 20260312-190-16",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03001HG3",
+          "name": "아이엠증권 20260312-190-17",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03001JG3",
+          "name": "아이엠증권 20260312-190-18",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03001KG3",
+          "name": "아이엠증권 20260312-190-19",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03001LG3",
+          "name": "아이엠증권 20260312-190-20",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03001MG3",
+          "name": "아이엠증권 20260312-190-21",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03001NG3",
+          "name": "아이엠증권 20260312-190-22",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03001XGF",
+          "name": "아이엠증권 20260326-187-63",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03001YGF",
+          "name": "아이엠증권 20260326-187-64",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03001AG4",
+          "name": "아이엠증권 20260420-185-10",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF030015G4",
+          "name": "아이엠증권 20260420-185-5",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF030016G4",
+          "name": "아이엠증권 20260420-185-6",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF030017G4",
+          "name": "아이엠증권 20260420-185-7",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF030018G4",
+          "name": "아이엠증권 20260420-185-8",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF030019G4",
+          "name": "아이엠증권 20260420-185-9",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03001VG5",
+          "name": "아이엠증권 20260512-125-28",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03001WG5",
+          "name": "아이엠증권 20260512-125-29",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03001XG5",
+          "name": "아이엠증권 20260512-125-30",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03001YG5",
+          "name": "아이엠증권 20260512-125-31",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03001BGH",
+          "name": "아이엠증권 20260514-160-44",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03001CGH",
+          "name": "아이엠증권 20260514-160-45",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF176941G3",
+          "name": "아이엠캐피탈 20260320-182-1",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF176942G3",
+          "name": "아이엠캐피탈 20260320-182-2",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF176943G3",
+          "name": "아이엠캐피탈 20260320-182-3",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF176944G3",
+          "name": "아이엠캐피탈 20260320-182-4",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF176945G3",
+          "name": "아이엠캐피탈 20260320-182-5",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF176946G3",
+          "name": "아이엠캐피탈 20260320-182-6",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZS0076T008",
+          "name": "에스디디피제삼차 20260701-92-1(단)",
+          "quantity": 0,
+          "evaluationAmount": 532217,
+          "marketCap": 0,
+          "weight": 0.477477
+        },
+        {
+          "code": "KRZS49313039",
+          "name": "에스디비제오차 20260730-92-3(단)",
+          "quantity": 0,
+          "evaluationAmount": 354811,
+          "marketCap": 0,
+          "weight": 0.318318
+        },
+        {
+          "code": "KRZF0179W1G6",
+          "name": "에스하본에이치엘 20260630-92-1",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0179WAG6",
+          "name": "에스하본에이치엘 20260630-92-10",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0179WBG6",
+          "name": "에스하본에이치엘 20260630-92-11",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0179WCG6",
+          "name": "에스하본에이치엘 20260630-92-12",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0179W2G6",
+          "name": "에스하본에이치엘 20260630-92-2",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0179W3G6",
+          "name": "에스하본에이치엘 20260630-92-3",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0179W4G6",
+          "name": "에스하본에이치엘 20260630-92-4",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0179W5G6",
+          "name": "에스하본에이치엘 20260630-92-5",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0179W6G6",
+          "name": "에스하본에이치엘 20260630-92-6",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0179W7G6",
+          "name": "에스하본에이치엘 20260630-92-7",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0179W8G6",
+          "name": "에스하본에이치엘 20260630-92-8",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0179W9G6",
+          "name": "에스하본에이치엘 20260630-92-9",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZS46276154",
+          "name": "에이치씨디제삼차 20260715-92-1(단)",
+          "quantity": 0,
+          "evaluationAmount": 354811,
+          "marketCap": 0,
+          "weight": 0.318318
+        },
+        {
+          "code": "KRZFA8019AG8",
+          "name": "에이치씨디제십사차 20260805-184-10",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA8019BG8",
+          "name": "에이치씨디제십사차 20260805-184-11",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA8019CG8",
+          "name": "에이치씨디제십사차 20260805-184-12",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA8019DG8",
+          "name": "에이치씨디제십사차 20260805-184-13",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA80194G8",
+          "name": "에이치씨디제십사차 20260805-184-4",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA80195G8",
+          "name": "에이치씨디제십사차 20260805-184-5",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA80196G8",
+          "name": "에이치씨디제십사차 20260805-184-6",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA80197G8",
+          "name": "에이치씨디제십사차 20260805-184-7",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA80198G8",
+          "name": "에이치씨디제십사차 20260805-184-8",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA80199G8",
+          "name": "에이치씨디제십사차 20260805-184-9",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZS47998012",
+          "name": "에이치아이중동제삼차 20260828-92-1(단)",
+          "quantity": 0,
+          "evaluationAmount": 354811,
+          "marketCap": 0,
+          "weight": 0.318318
+        },
+        {
+          "code": "KRZS0000F018",
+          "name": "엘씨글로리제이차 20260622-90-1(단)",
+          "quantity": 0,
+          "evaluationAmount": 354811,
+          "marketCap": 0,
+          "weight": 0.318318
+        },
+        {
+          "code": "KRZF079559G7",
+          "name": "엘아이지디펜스앤에어로스페이스 20260708-",
+          "quantity": 0,
+          "evaluationAmount": 354811,
+          "marketCap": 0,
+          "weight": 0.318318
+        },
+        {
+          "code": "KRZF079558G7",
+          "name": "엘아이지디펜스앤에어로스페이스 20260708-",
+          "quantity": 0,
+          "evaluationAmount": 354811,
+          "marketCap": 0,
+          "weight": 0.318318
+        },
+        {
+          "code": "KRZF07955AG7",
+          "name": "엘아이지디펜스앤에어로스페이스 20260708-",
+          "quantity": 0,
+          "evaluationAmount": 354811,
+          "marketCap": 0,
+          "weight": 0.318318
+        },
+        {
+          "code": "KRZF079557G7",
+          "name": "엘아이지디펜스앤에어로스페이스 20260708-",
+          "quantity": 0,
+          "evaluationAmount": 354811,
+          "marketCap": 0,
+          "weight": 0.318318
+        },
+        {
+          "code": "KRZF079556G7",
+          "name": "엘아이지디펜스앤에어로스페이스 20260708-",
+          "quantity": 0,
+          "evaluationAmount": 354811,
+          "marketCap": 0,
+          "weight": 0.318318
+        },
+        {
+          "code": "KRZF07955BG7",
+          "name": "엘아이지디펜스앤에어로스페이스 20260708-",
+          "quantity": 0,
+          "evaluationAmount": 354811,
+          "marketCap": 0,
+          "weight": 0.318318
+        },
+        {
+          "code": "KRZF07955EGL",
+          "name": "엘아이지디펜스앤에어로스페이스 20260825-",
+          "quantity": 0,
+          "evaluationAmount": 354811,
+          "marketCap": 0,
+          "weight": 0.318318
+        },
+        {
+          "code": "KRZF07955FGL",
+          "name": "엘아이지디펜스앤에어로스페이스 20260825-",
+          "quantity": 0,
+          "evaluationAmount": 354811,
+          "marketCap": 0,
+          "weight": 0.318318
+        },
+        {
+          "code": "KRZFA78811FA",
+          "name": "엘에스이링크 20251017-364-1",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA78812FA",
+          "name": "엘에스이링크 20251017-364-2",
+          "quantity": 0,
+          "evaluationAmount": 35481,
+          "marketCap": 0,
+          "weight": 0.031832
+        },
+        {
+          "code": "KRZS32845184",
+          "name": "엠디드래곤제이차 20260824-35-2(단)",
+          "quantity": 0,
+          "evaluationAmount": 887028,
+          "marketCap": 0,
+          "weight": 0.795795
+        },
+        {
+          "code": "KRZS32845186",
+          "name": "엠디드래곤제이차 20260824-35-4(단)",
+          "quantity": 0,
+          "evaluationAmount": 1241839,
+          "marketCap": 0,
+          "weight": 1.114113
+        },
+        {
+          "code": "KRZS49907021",
+          "name": "엠에스에너지제일차 20260825-92-2(단)",
+          "quantity": 0,
+          "evaluationAmount": 1774056,
+          "marketCap": 0,
+          "weight": 1.59159
+        },
+        {
+          "code": "KRZS49907022",
+          "name": "엠에스에너지제일차 20260825-92-3(단)",
+          "quantity": 0,
+          "evaluationAmount": 1064434,
+          "marketCap": 0,
+          "weight": 0.954954
+        },
+        {
+          "code": "KRZF131795GL",
+          "name": "연합자산관리 20260826-184-38",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF131796GL",
+          "name": "연합자산관리 20260826-184-39",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF131797GL",
+          "name": "연합자산관리 20260826-184-40",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF131798GL",
+          "name": "연합자산관리 20260826-184-41",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KR6000035G71",
+          "name": "우리은행3007이(변)01갑27(지)",
+          "quantity": 0,
+          "evaluationAmount": 355190,
+          "marketCap": 0,
+          "weight": 0.318658
+        },
+        {
+          "code": "KR6000032G82",
+          "name": "우리은행3008이(변)01갑14(지)",
+          "quantity": 0,
+          "evaluationAmount": 355521,
+          "marketCap": 0,
+          "weight": 0.318955
+        },
+        {
+          "code": "KRZS174140L0",
+          "name": "우리카드 20260810-92-12(단)",
+          "quantity": 0,
+          "evaluationAmount": 1774056,
+          "marketCap": 0,
+          "weight": 1.59159
+        },
+        {
+          "code": "KRZF0029EAG8",
+          "name": "우리하모니제1차 20260806-123-10",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0029EBG8",
+          "name": "우리하모니제1차 20260806-123-11",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0029E2G8",
+          "name": "우리하모니제1차 20260806-123-2",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0029E3G8",
+          "name": "우리하모니제1차 20260806-123-3",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0029E4G8",
+          "name": "우리하모니제1차 20260806-123-4",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0029E5G8",
+          "name": "우리하모니제1차 20260806-123-5",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0029E6G8",
+          "name": "우리하모니제1차 20260806-123-6",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0029E7G8",
+          "name": "우리하모니제1차 20260806-123-7",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0029E8G8",
+          "name": "우리하모니제1차 20260806-123-8",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0029E9G8",
+          "name": "우리하모니제1차 20260806-123-9",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0169N1G3",
+          "name": "위비월드제일차 20260319-183-1",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0169N2G3",
+          "name": "위비월드제일차 20260319-183-2",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0169N3G3",
+          "name": "위비월드제일차 20260319-183-3",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0169N4G3",
+          "name": "위비월드제일차 20260319-183-4",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0169N5G3",
+          "name": "위비월드제일차 20260319-183-5",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0169N6G3",
+          "name": "위비월드제일차 20260319-183-6",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF07931DG8",
+          "name": "제이비우리캐피탈 20260812-33-13",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF07931GG8",
+          "name": "제이비우리캐피탈 20260812-33-16",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF07931HG8",
+          "name": "제이비우리캐피탈 20260812-33-17",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF07931JG8",
+          "name": "제이비우리캐피탈 20260812-33-18",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF07931KG8",
+          "name": "제이비우리캐피탈 20260812-33-19",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF07931LG8",
+          "name": "제이비우리캐피탈 20260812-33-20",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZS0236Z002",
+          "name": "지오인베스트먼트제일차 20260827-40-2(단)",
+          "quantity": 0,
+          "evaluationAmount": 709622,
+          "marketCap": 0,
+          "weight": 0.636635
+        },
+        {
+          "code": "KRZS48994010",
+          "name": "케이더블유오엔제일차 20260814-61-1(단)",
+          "quantity": 0,
+          "evaluationAmount": 1348283,
+          "marketCap": 0,
+          "weight": 1.209609
+        },
+        {
+          "code": "KRZF0026T6G6",
+          "name": "케이더블유티피제이차 20260612-95-6",
+          "quantity": 0,
+          "evaluationAmount": 141924,
+          "marketCap": 0,
+          "weight": 0.127327
+        },
+        {
+          "code": "KRZF0216DQG7",
+          "name": "케이디비첨단전략이에스지제십이차 2026072",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0216DNG7",
+          "name": "케이디비첨단전략이에스지제십이차 2026072",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0216DPG7",
+          "name": "케이디비첨단전략이에스지제십이차 2026072",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0216DRG7",
+          "name": "케이디비첨단전략이에스지제십이차 2026072",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF357798G8",
+          "name": "케이티에스테이트 20260831-287-8",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF357799G8",
+          "name": "케이티에스테이트 20260831-287-9",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF064661FA",
+          "name": "코리아휠 20251027-364-1",
+          "quantity": 0,
+          "evaluationAmount": 106443,
+          "marketCap": 0,
+          "weight": 0.095495
+        },
+        {
+          "code": "KRZS48341012",
+          "name": "큐브에스엔 20260729-62-1(단)",
+          "quantity": 0,
+          "evaluationAmount": 1135396,
+          "marketCap": 0,
+          "weight": 1.018618
+        },
+        {
+          "code": "KRZS27908058",
+          "name": "키스아이비제십육차 20260831-18-1(단)",
+          "quantity": 0,
+          "evaluationAmount": 2962674,
+          "marketCap": 0,
+          "weight": 2.657955
+        },
+        {
+          "code": "KRZS0167T007",
+          "name": "키스온제십차 20260908-91-1(단)",
+          "quantity": 0,
+          "evaluationAmount": 1419245,
+          "marketCap": 0,
+          "weight": 1.273272
+        },
+        {
+          "code": "KRZS0059B007",
+          "name": "키스제이엘제일차 20260714-76-1(단)",
+          "quantity": 0,
+          "evaluationAmount": 979279,
+          "marketCap": 0,
+          "weight": 0.878558
+        },
+        {
+          "code": "KRZS48032088",
+          "name": "프라이든제오차 20260908-36-2(단)",
+          "quantity": 0,
+          "evaluationAmount": 4612546,
+          "marketCap": 0,
+          "weight": 4.138133
+        },
+        {
+          "code": "KRZF0082S1FB",
+          "name": "플러스알파제삼차 20251110-364-1",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0082SAFB",
+          "name": "플러스알파제삼차 20251110-364-10",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0082SBFB",
+          "name": "플러스알파제삼차 20251110-364-11",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0082SCFB",
+          "name": "플러스알파제삼차 20251110-364-12",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0082SDFB",
+          "name": "플러스알파제삼차 20251110-364-13",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0082SEFB",
+          "name": "플러스알파제삼차 20251110-364-14",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0082SFFB",
+          "name": "플러스알파제삼차 20251110-364-15",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0082SGFB",
+          "name": "플러스알파제삼차 20251110-364-16",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0082SHFB",
+          "name": "플러스알파제삼차 20251110-364-17",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0082SJFB",
+          "name": "플러스알파제삼차 20251110-364-18",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0082SKFB",
+          "name": "플러스알파제삼차 20251110-364-19",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0082SLFB",
+          "name": "플러스알파제삼차 20251110-364-20",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0082SMFB",
+          "name": "플러스알파제삼차 20251110-364-21",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0082SNFB",
+          "name": "플러스알파제삼차 20251110-364-22",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0082SPFB",
+          "name": "플러스알파제삼차 20251110-364-23",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0082SQFB",
+          "name": "플러스알파제삼차 20251110-364-24",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0082SRFB",
+          "name": "플러스알파제삼차 20251110-364-25",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0082SSFB",
+          "name": "플러스알파제삼차 20251110-364-26",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0082S8FB",
+          "name": "플러스알파제삼차 20251110-364-8",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0082S9FB",
+          "name": "플러스알파제삼차 20251110-364-9",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZS45263084",
+          "name": "피씨씨제이차 20260630-92-2(단)",
+          "quantity": 0,
+          "evaluationAmount": 1419245,
+          "marketCap": 0,
+          "weight": 1.273272
+        },
+        {
+          "code": "KRZS45263085",
+          "name": "피씨씨제이차 20260710-89-1(단)",
+          "quantity": 0,
+          "evaluationAmount": 784133,
+          "marketCap": 0,
+          "weight": 0.703483
+        },
+        {
+          "code": "KR6004943G90",
+          "name": "하나은행4909이0.5갑-07(1-변)",
+          "quantity": 0,
+          "evaluationAmount": 709622,
+          "marketCap": 0,
+          "weight": 0.636635
+        },
+        {
+          "code": "KRZF03075BGL",
+          "name": "하나증권 20260824-331-44",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03075CGL",
+          "name": "하나증권 20260824-331-45",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KR6205492DC2",
+          "name": "하나카드252-2",
+          "quantity": 0,
+          "evaluationAmount": 359148,
+          "marketCap": 0,
+          "weight": 0.322209
+        },
+        {
+          "code": "KR6205493DC0",
+          "name": "하나카드252-3",
+          "quantity": 0,
+          "evaluationAmount": 359154,
+          "marketCap": 0,
+          "weight": 0.322214
+        },
+        {
+          "code": "KR6019802EB8",
+          "name": "하나캐피탈441-2",
+          "quantity": 0,
+          "evaluationAmount": 355982,
+          "marketCap": 0,
+          "weight": 0.319368
+        },
+        {
+          "code": "KRZF0059S8GL",
+          "name": "하나희망제2차 20260828-110-41",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0059S9GL",
+          "name": "하나희망제2차 20260828-110-42",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0059SAGL",
+          "name": "하나희망제2차 20260828-110-43",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0059SBGL",
+          "name": "하나희망제2차 20260828-110-44",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0059SCGL",
+          "name": "하나희망제2차 20260828-110-45",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0059SDGL",
+          "name": "하나희망제2차 20260828-110-46",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0059SEGL",
+          "name": "하나희망제2차 20260828-110-47",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0059SFGL",
+          "name": "하나희망제2차 20260828-110-48",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF194791G7",
+          "name": "하이베스트제일차 20260701-92-1",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF194792G7",
+          "name": "하이베스트제일차 20260701-92-2",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0136J1G2",
+          "name": "하이퍼이머전제이차 20260212-364-1",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0136J2G2",
+          "name": "하이퍼이머전제이차 20260212-364-2",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0136J3G2",
+          "name": "하이퍼이머전제이차 20260212-364-3",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0136J7G2",
+          "name": "하이퍼이머전제이차 20260212-364-7",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF0136J8G2",
+          "name": "하이퍼이머전제이차 20260212-364-8",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZS06498216",
+          "name": "한국남동발전 20260702-74-3(단)",
+          "quantity": 0,
+          "evaluationAmount": 1064434,
+          "marketCap": 0,
+          "weight": 0.954954
+        },
+        {
+          "code": "KRZF071055FA",
+          "name": "한국투자금융지주 20251001-364-5",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF071056FA",
+          "name": "한국투자금융지주 20251001-364-6",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF071051FN",
+          "name": "한국투자금융지주 20251013-352-34",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF071053FN",
+          "name": "한국투자금융지주 20251013-352-36",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF071052G1",
+          "name": "한국투자금융지주 20260123-319-2",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF071053G1",
+          "name": "한국투자금융지주 20260123-319-3",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF071054G1",
+          "name": "한국투자금융지주 20260123-319-4",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF071055G1",
+          "name": "한국투자금융지주 20260123-319-5",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF071056G1",
+          "name": "한국투자금융지주 20260123-319-6",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF071057G1",
+          "name": "한국투자금융지주 20260123-319-7",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF07105FGH",
+          "name": "한국투자금융지주 20260511-213-48",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF07105GGH",
+          "name": "한국투자금융지주 20260511-213-49",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF071051GL",
+          "name": "한국투자금융지주 20260813-193-34",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF071052GL",
+          "name": "한국투자금융지주 20260813-193-35",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF071053GL",
+          "name": "한국투자금융지주 20260813-193-36",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF071054GL",
+          "name": "한국투자금융지주 20260813-193-37",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF071055GL",
+          "name": "한국투자금융지주 20260813-193-38",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF071056GL",
+          "name": "한국투자금융지주 20260813-193-39",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA7105TG8",
+          "name": "한국투자금융지주 20260819-183-93",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA7105VG8",
+          "name": "한국투자금융지주 20260819-183-94",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA7105WG8",
+          "name": "한국투자금융지주 20260819-183-95",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZFA7105XG8",
+          "name": "한국투자금융지주 20260819-183-96",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF030493FP",
+          "name": "한국투자증권 20251119-364-36",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF030494FP",
+          "name": "한국투자증권 20251119-364-37",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03049BG1",
+          "name": "한국투자증권 20260126-364-11",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF03049CG1",
+          "name": "한국투자증권 20260126-364-12",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KR6214345DC1",
+          "name": "한국투자캐피탈99-2",
+          "quantity": 0,
+          "evaluationAmount": 359501,
+          "marketCap": 0,
+          "weight": 0.322525
+        },
+        {
+          "code": "KR60098339A9",
+          "name": "한화솔루션260-3",
+          "quantity": 0,
+          "evaluationAmount": 355365,
+          "marketCap": 0,
+          "weight": 0.318815
+        },
+        {
+          "code": "KRZF07695AG7",
+          "name": "한화토탈에너지스 20260706-86-10",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF07695BG7",
+          "name": "한화토탈에너지스 20260706-86-11",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF076955G7",
+          "name": "한화토탈에너지스 20260706-86-5",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF076956G7",
+          "name": "한화토탈에너지스 20260706-86-6",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF076957G7",
+          "name": "한화토탈에너지스 20260706-86-7",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF076958G7",
+          "name": "한화토탈에너지스 20260706-86-8",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF076959G7",
+          "name": "한화토탈에너지스 20260706-86-9",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KR6076952C25",
+          "name": "한화토탈에너지스25-2(녹)",
+          "quantity": 0,
+          "evaluationAmount": 354265,
+          "marketCap": 0,
+          "weight": 0.317828
+        },
+        {
+          "code": "KRZF00353QGH",
+          "name": "한화투자증권 20260526-184-57",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF00353RGH",
+          "name": "한화투자증권 20260526-184-58",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF00353SGH",
+          "name": "한화투자증권 20260526-184-59",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF00353TGH",
+          "name": "한화투자증권 20260526-184-60",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZF081051G2",
+          "name": "현대첨단소재 20260223-364-1",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KR606590AEC4",
+          "name": "현대카드921-1",
+          "quantity": 0,
+          "evaluationAmount": 357002,
+          "marketCap": 0,
+          "weight": 0.320283
+        },
+        {
+          "code": "KR6029887DC7",
+          "name": "현대캐피탈2006-4",
+          "quantity": 0,
+          "evaluationAmount": 358476,
+          "marketCap": 0,
+          "weight": 0.321606
+        },
+        {
+          "code": "KRZF09592VCM",
+          "name": "현대커머셜 20220922-1461-61",
+          "quantity": 0,
+          "evaluationAmount": 177406,
+          "marketCap": 0,
+          "weight": 0.159159
+        },
+        {
+          "code": "KRZS09592319",
+          "name": "현대커머셜 20260714-62-3(단)",
+          "quantity": 0,
+          "evaluationAmount": 2838490,
+          "marketCap": 0,
+          "weight": 2.546544
+        },
+        {
+          "code": "KR6095927EA2",
+          "name": "현대커머셜536-3",
+          "quantity": 0,
+          "evaluationAmount": 356563,
+          "marketCap": 0,
+          "weight": 0.31989
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 8665178,
+          "weight": 7.773941
+        }
+      ],
+      "collectedAt": "2026-09-10T21:26:04.491Z"
+    },
     "456200": {
       "etf": {
         "code": "456200",
@@ -239538,6 +242936,52 @@
       ],
       "collectedAt": "2026-09-10T19:25:36.277Z"
     },
+    "472830": {
+      "etf": {
+        "code": "472830",
+        "name": "RISE 미국30년국채커버드콜(합성)",
+        "date": "20260911"
+      },
+      "summary": {
+        "totalComponents": 4,
+        "totalWeight": 100.000001
+      },
+      "components": [
+        {
+          "code": "KRYZTRSG4HAQ",
+          "name": "스왑(메리츠증권)_44F8_260417",
+          "quantity": -23901224.12,
+          "evaluationAmount": -23901224,
+          "marketCap": 0,
+          "weight": 5.180636
+        },
+        {
+          "code": "KRYZTRSFB617",
+          "name": "스왑(미래에셋증권)_44F8_251106",
+          "quantity": -13401156.27,
+          "evaluationAmount": -13401156,
+          "marketCap": 0,
+          "weight": 2.904726
+        },
+        {
+          "code": "KRYZTRSG4HAR",
+          "name": "스왑(키움증권)_44F8_260417",
+          "quantity": -3270859.96,
+          "evaluationAmount": -3270859,
+          "marketCap": 0,
+          "weight": 0.708965
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 420783748,
+          "weight": 91.205674
+        }
+      ],
+      "collectedAt": "2026-09-10T21:26:09.588Z"
+    },
     "472840": {
       "etf": {
         "code": "472840",
@@ -241159,6 +244603,52 @@
         }
       ],
       "collectedAt": "2026-09-10T19:00:42.683Z"
+    },
+    "472870": {
+      "etf": {
+        "code": "472870",
+        "name": "RISE 미국30년국채엔화노출(합성 H)",
+        "date": "20260911"
+      },
+      "summary": {
+        "totalComponents": 4,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "KRYZTRSG6X05",
+          "name": "스왑(메리츠증권)_44F9_20260630",
+          "quantity": -37590669.17,
+          "evaluationAmount": -37590669,
+          "marketCap": 0,
+          "weight": 8.229074
+        },
+        {
+          "code": "KRYZTRSG6C05",
+          "name": "스왑(미래에셋증권)_44F9_20260612",
+          "quantity": -14396253.01,
+          "evaluationAmount": -14396253,
+          "marketCap": 0,
+          "weight": 3.151522
+        },
+        {
+          "code": "KRYZTRSG6C04",
+          "name": "스왑(키움증권)_44F9_20260612",
+          "quantity": -3221221.37,
+          "evaluationAmount": -3221221,
+          "marketCap": 0,
+          "weight": 0.705166
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 401595028,
+          "weight": 87.914238
+        }
+      ],
+      "collectedAt": "2026-09-10T21:26:08.995Z"
     },
     "472920": {
       "etf": {
@@ -250593,6 +254083,92 @@
         }
       ],
       "collectedAt": "2026-09-10T19:49:59.824Z"
+    },
+    "481340": {
+      "etf": {
+        "code": "481340",
+        "name": "RISE 미국30년국채액티브",
+        "date": "20260911"
+      },
+      "summary": {
+        "totalComponents": 9,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "US25460G1388",
+          "name": "DIR DLY 20+YR TR BL3X ETF-UI",
+          "quantity": 1804.67,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US4642874329",
+          "name": "ISHARES 20+ YEAR TREASURY BD",
+          "quantity": 403.46,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US74347R1721",
+          "name": "PROSHARES ULTRA 20+ YEAR TSY",
+          "quantity": 2116.42,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UC08",
+          "name": "T 4 1/4 08/15/54",
+          "quantity": 19035.09,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UM89",
+          "name": "T 4 3/4 08/15/55",
+          "quantity": 7368.42,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UG12",
+          "name": "T 4 5/8 02/15/55",
+          "quantity": 53684.21,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "US912810UA42",
+          "name": "T 4 5/8 05/15/54",
+          "quantity": 18000,
+          "evaluationAmount": 0,
+          "marketCap": 0,
+          "weight": 0
+        },
+        {
+          "code": "610078",
+          "name": "메리츠 3X 레버리지 미국채30년 ETN",
+          "quantity": 266.67,
+          "evaluationAmount": 9465451,
+          "marketCap": 0,
+          "weight": 6.871941
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 128275125,
+          "weight": 93.128059
+        }
+      ],
+      "collectedAt": "2026-09-10T21:26:06.973Z"
     },
     "481430": {
       "etf": {
@@ -374141,7 +377717,652 @@
         }
       ],
       "collectedAt": "2026-09-10T21:25:36.199Z"
+    },
+    "0061Z0": {
+      "etf": {
+        "code": "0061Z0",
+        "name": "RISE 단기특수은행채액티브",
+        "date": "20260911"
+      },
+      "summary": {
+        "totalComponents": 47,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "KRZE00301F9P",
+          "name": "기업 자금부 20250923-365-1",
+          "quantity": 0,
+          "evaluationAmount": 4236091,
+          "marketCap": 0,
+          "weight": 3.259471
+        },
+        {
+          "code": "KRZE00301G4H",
+          "name": "기업 자금부 20260417-182-1",
+          "quantity": 0,
+          "evaluationAmount": 1412030,
+          "marketCap": 0,
+          "weight": 1.08649
+        },
+        {
+          "code": "KRZE00301G6J",
+          "name": "기업 자금부 20260618-214-1",
+          "quantity": 0,
+          "evaluationAmount": 1412030,
+          "marketCap": 0,
+          "weight": 1.08649
+        },
+        {
+          "code": "KRZS0306266P",
+          "name": "롯데카드 20260908-8-7(단)",
+          "quantity": 0,
+          "evaluationAmount": 2824061,
+          "marketCap": 0,
+          "weight": 2.172981
+        },
+        {
+          "code": "KRZS001270QR",
+          "name": "부국증권 20260901-29-4(단)",
+          "quantity": 0,
+          "evaluationAmount": 7060152,
+          "marketCap": 0,
+          "weight": 5.432452
+        },
+        {
+          "code": "KRZE00201G2D",
+          "name": "산업 여의도(지) 20260213-364-1",
+          "quantity": 0,
+          "evaluationAmount": 1412030,
+          "marketCap": 0,
+          "weight": 1.08649
+        },
+        {
+          "code": "KRZE00201G3G",
+          "name": "산업 여의도(지) 20260316-184-1",
+          "quantity": 0,
+          "evaluationAmount": 1412030,
+          "marketCap": 0,
+          "weight": 1.08649
+        },
+        {
+          "code": "KRZE00201G7V",
+          "name": "산업 여의도(지) 20260728-92-1",
+          "quantity": 0,
+          "evaluationAmount": 2824061,
+          "marketCap": 0,
+          "weight": 2.172981
+        },
+        {
+          "code": "KRZE00201G8B",
+          "name": "산업 여의도(지) 20260811-91-1",
+          "quantity": 0,
+          "evaluationAmount": 706015,
+          "marketCap": 0,
+          "weight": 0.543245
+        },
+        {
+          "code": "KRZE00201G8Y",
+          "name": "산업 여의도(지) 20260831-91-1",
+          "quantity": 0,
+          "evaluationAmount": 1412030,
+          "marketCap": 0,
+          "weight": 1.08649
+        },
+        {
+          "code": "KR310208GDA3",
+          "name": "산업금융채권23신이0300-1017-1",
+          "quantity": 0,
+          "evaluationAmount": 1422798,
+          "marketCap": 0,
+          "weight": 1.094776
+        },
+        {
+          "code": "KR310213GD57",
+          "name": "산업금융채권23신이0306-0523-2",
+          "quantity": 0,
+          "evaluationAmount": 1416126,
+          "marketCap": 0,
+          "weight": 1.089642
+        },
+        {
+          "code": "KR310202GEA4",
+          "name": "산업금융채권24신이0200-1010-2",
+          "quantity": 0,
+          "evaluationAmount": 1419618,
+          "marketCap": 0,
+          "weight": 1.092329
+        },
+        {
+          "code": "KR310207GEA3",
+          "name": "산업금융채권24신이0200-1017-1",
+          "quantity": 0,
+          "evaluationAmount": 1418540,
+          "marketCap": 0,
+          "weight": 1.091499
+        },
+        {
+          "code": "KR310212GEA3",
+          "name": "산업금융채권24신이0200-1025-1",
+          "quantity": 0,
+          "evaluationAmount": 1417473,
+          "marketCap": 0,
+          "weight": 1.090678
+        },
+        {
+          "code": "KR310201GEC2",
+          "name": "산업금융채권24신이0200-1202-2",
+          "quantity": 0,
+          "evaluationAmount": 1411795,
+          "marketCap": 0,
+          "weight": 1.086309
+        },
+        {
+          "code": "KR310211GF65",
+          "name": "산업금융채권25신이0103-0625-1",
+          "quantity": 0,
+          "evaluationAmount": 1419208,
+          "marketCap": 0,
+          "weight": 1.092013
+        },
+        {
+          "code": "KR310204GF49",
+          "name": "산업금융채권25신이0106-0421-2",
+          "quantity": 0,
+          "evaluationAmount": 1415934,
+          "marketCap": 0,
+          "weight": 1.089494
+        },
+        {
+          "code": "KR310205GF14",
+          "name": "산업금융채권25신이0109-0110-1",
+          "quantity": 0,
+          "evaluationAmount": 1417928,
+          "marketCap": 0,
+          "weight": 1.091028
+        },
+        {
+          "code": "KR310201AFA6",
+          "name": "산업금융채권25신할0100-1022-1",
+          "quantity": 0,
+          "evaluationAmount": 5627929,
+          "marketCap": 0,
+          "weight": 4.330424
+        },
+        {
+          "code": "KR310203AG86",
+          "name": "산업금융채권26신할0006-0825-1",
+          "quantity": 0,
+          "evaluationAmount": 2779762,
+          "marketCap": 0,
+          "weight": 2.138895
+        },
+        {
+          "code": "KRZS029780GP",
+          "name": "삼성카드 20260907-8-18(단)",
+          "quantity": 0,
+          "evaluationAmount": 2824061,
+          "marketCap": 0,
+          "weight": 2.172981
+        },
+        {
+          "code": "KRZF0022AEGG",
+          "name": "서브마린제일차 20260403-178-47",
+          "quantity": 0,
+          "evaluationAmount": 706015,
+          "marketCap": 0,
+          "weight": 0.543245
+        },
+        {
+          "code": "KRZF0022AFGG",
+          "name": "서브마린제일차 20260403-178-48",
+          "quantity": 0,
+          "evaluationAmount": 706015,
+          "marketCap": 0,
+          "weight": 0.543245
+        },
+        {
+          "code": "KRZS001720XA",
+          "name": "신영증권 20260910-7-24(단)",
+          "quantity": 0,
+          "evaluationAmount": 2824061,
+          "marketCap": 0,
+          "weight": 2.172981
+        },
+        {
+          "code": "KRZS00867G74",
+          "name": "신한투자증권 20260908-9-6(단)",
+          "quantity": 0,
+          "evaluationAmount": 2824061,
+          "marketCap": 0,
+          "weight": 2.172981
+        },
+        {
+          "code": "KR310506AFB6",
+          "name": "중소기업은행(단)2511할304A-17",
+          "quantity": 0,
+          "evaluationAmount": 1411294,
+          "marketCap": 0,
+          "weight": 1.085924
+        },
+        {
+          "code": "KR310503AG18",
+          "name": "중소기업은행(단)2601할334A-12",
+          "quantity": 0,
+          "evaluationAmount": 1400561,
+          "marketCap": 0,
+          "weight": 1.077665
+        },
+        {
+          "code": "KR310503AG34",
+          "name": "중소기업은행(단)2603할184A-13",
+          "quantity": 0,
+          "evaluationAmount": 2823569,
+          "marketCap": 0,
+          "weight": 2.172602
+        },
+        {
+          "code": "KR310504AG82",
+          "name": "중소기업은행(단)2608할184A-13",
+          "quantity": 0,
+          "evaluationAmount": 4175006,
+          "marketCap": 0,
+          "weight": 3.212469
+        },
+        {
+          "code": "KR310502AG84",
+          "name": "중소기업은행(단)2608할237A-04",
+          "quantity": 0,
+          "evaluationAmount": 4155096,
+          "marketCap": 0,
+          "weight": 3.197149
+        },
+        {
+          "code": "KR310511GCA2",
+          "name": "중소기업은행(신)2210이4A-14",
+          "quantity": 0,
+          "evaluationAmount": 4278600,
+          "marketCap": 0,
+          "weight": 3.29218
+        },
+        {
+          "code": "KR310511GEB6",
+          "name": "중소기업은행(신)2411이2A-13",
+          "quantity": 0,
+          "evaluationAmount": 1415448,
+          "marketCap": 0,
+          "weight": 1.08912
+        },
+        {
+          "code": "KR310513AG16",
+          "name": "중소기업은행(신)2601할1A-21",
+          "quantity": 0,
+          "evaluationAmount": 1395012,
+          "marketCap": 0,
+          "weight": 1.073396
+        },
+        {
+          "code": "KRZS205493A0",
+          "name": "하나카드 20260910-5-14(단)",
+          "quantity": 0,
+          "evaluationAmount": 1412030,
+          "marketCap": 0,
+          "weight": 1.08649
+        },
+        {
+          "code": "KRZF096925G9",
+          "name": "한국도로공사 20260907-91-5",
+          "quantity": 0,
+          "evaluationAmount": 1412030,
+          "marketCap": 0,
+          "weight": 1.08649
+        },
+        {
+          "code": "KRZF096926G9",
+          "name": "한국도로공사 20260907-91-6",
+          "quantity": 0,
+          "evaluationAmount": 1412030,
+          "marketCap": 0,
+          "weight": 1.08649
+        },
+        {
+          "code": "KR380807GEA5",
+          "name": "한국수출입금융2410사-이표-2",
+          "quantity": 0,
+          "evaluationAmount": 1418666,
+          "marketCap": 0,
+          "weight": 1.091596
+        },
+        {
+          "code": "KR380807GF50",
+          "name": "한국수출입금융2505아-이표-1.5",
+          "quantity": 0,
+          "evaluationAmount": 2822397,
+          "marketCap": 0,
+          "weight": 2.171701
+        },
+        {
+          "code": "KR380801AG69",
+          "name": "한국수출입금융2606마-할인-122",
+          "quantity": 0,
+          "evaluationAmount": 1407597,
+          "marketCap": 0,
+          "weight": 1.083079
+        },
+        {
+          "code": "KR380807AG71",
+          "name": "한국수출입금융2607차-할인-184",
+          "quantity": 0,
+          "evaluationAmount": 5580508,
+          "marketCap": 0,
+          "weight": 4.293936
+        },
+        {
+          "code": "KR380804AG82",
+          "name": "한국수출입금융2608바-할인-153",
+          "quantity": 0,
+          "evaluationAmount": 4187952,
+          "marketCap": 0,
+          "weight": 3.22243
+        },
+        {
+          "code": "KR380805AG81",
+          "name": "한국수출입금융2608카-할인-184",
+          "quantity": 0,
+          "evaluationAmount": 6952343,
+          "marketCap": 0,
+          "weight": 5.349498
+        },
+        {
+          "code": "KR380801AG93",
+          "name": "한국수출입금융2609라-할인-181",
+          "quantity": 0,
+          "evaluationAmount": 4165039,
+          "marketCap": 0,
+          "weight": 3.2048
+        },
+        {
+          "code": "KRZS06656641",
+          "name": "한국중부발전 20260629-77-14(단)",
+          "quantity": 0,
+          "evaluationAmount": 1412030,
+          "marketCap": 0,
+          "weight": 1.08649
+        },
+        {
+          "code": "KRZS0659097Q",
+          "name": "현대카드 20260904-11-30(단)",
+          "quantity": 0,
+          "evaluationAmount": 7060152,
+          "marketCap": 0,
+          "weight": 5.432452
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": -13903317,
+          "weight": 10.697943
+        }
+      ],
+      "collectedAt": "2026-09-10T21:26:01.955Z"
+    },
+    "0138D0": {
+      "etf": {
+        "code": "0138D0",
+        "name": "RISE 동학개미",
+        "date": "20260911"
+      },
+      "summary": {
+        "totalComponents": 18,
+        "totalWeight": 99.999997
+      },
+      "components": [
+        {
+          "code": "011070",
+          "name": "LG이노텍",
+          "quantity": 51,
+          "evaluationAmount": 28407000,
+          "marketCap": 0,
+          "weight": 4.369982
+        },
+        {
+          "code": "066570",
+          "name": "LG전자",
+          "quantity": 152,
+          "evaluationAmount": 31388000,
+          "marketCap": 0,
+          "weight": 4.828563
+        },
+        {
+          "code": "010120",
+          "name": "LS ELECTRIC",
+          "quantity": 293,
+          "evaluationAmount": 60358000,
+          "marketCap": 0,
+          "weight": 9.285153
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "quantity": 28,
+          "evaluationAmount": 31780000,
+          "marketCap": 0,
+          "weight": 4.888866
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "quantity": 39,
+          "evaluationAmount": 72267000,
+          "marketCap": 0,
+          "weight": 11.11717
+        },
+        {
+          "code": "047040",
+          "name": "대우건설",
+          "quantity": 1701,
+          "evaluationAmount": 33594750,
+          "marketCap": 0,
+          "weight": 5.168037
+        },
+        {
+          "code": "108490",
+          "name": "로보티즈",
+          "quantity": 120,
+          "evaluationAmount": 38820000,
+          "marketCap": 0,
+          "weight": 5.971862
+        },
+        {
+          "code": "006400",
+          "name": "삼성SDI",
+          "quantity": 64,
+          "evaluationAmount": 35904000,
+          "marketCap": 0,
+          "weight": 5.52328
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "quantity": 21,
+          "evaluationAmount": 29400000,
+          "marketCap": 0,
+          "weight": 4.522739
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "quantity": 234,
+          "evaluationAmount": 62946000,
+          "marketCap": 0,
+          "weight": 9.683277
+        },
+        {
+          "code": "240810",
+          "name": "원익IPS",
+          "quantity": 261,
+          "evaluationAmount": 31006800,
+          "marketCap": 0,
+          "weight": 4.769921
+        },
+        {
+          "code": "084370",
+          "name": "유진테크",
+          "quantity": 232,
+          "evaluationAmount": 32364000,
+          "marketCap": 0,
+          "weight": 4.978705
+        },
+        {
+          "code": "036930",
+          "name": "주성엔지니어링",
+          "quantity": 175,
+          "evaluationAmount": 38675000,
+          "marketCap": 0,
+          "weight": 5.949556
+        },
+        {
+          "code": "319660",
+          "name": "피에스케이",
+          "quantity": 233,
+          "evaluationAmount": 30359900,
+          "marketCap": 0,
+          "weight": 4.670405
+        },
+        {
+          "code": "069960",
+          "name": "현대백화점",
+          "quantity": 314,
+          "evaluationAmount": 31180200,
+          "marketCap": 0,
+          "weight": 4.796596
+        },
+        {
+          "code": "307950",
+          "name": "현대오토에버",
+          "quantity": 70,
+          "evaluationAmount": 27615000,
+          "marketCap": 0,
+          "weight": 4.248145
+        },
+        {
+          "code": "298040",
+          "name": "효성중공업",
+          "quantity": 10,
+          "evaluationAmount": 28910000,
+          "marketCap": 0,
+          "weight": 4.44736
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 5072851,
+          "weight": 0.78038
+        }
+      ],
+      "collectedAt": "2026-09-10T21:26:04.267Z"
     }
   },
-  "failures": {}
+  "failures": {
+    "219390": {
+      "code": "219390",
+      "name": "RISE 미국S&P원유생산기업(합성 H)",
+      "attempts": 1,
+      "error": "[219390] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=219390, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃21분 41초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.11 AM 06:26:08 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KRYZTRSG6X05 스왑(메리츠증권)_44F9_20260630 -37,590,669.17 -37,590,669 - - KRYZTRSG6C05 스왑(미래에셋증권)_44F9_20260612 -14,396,253.01 -14,396,253 - - KRYZTRSG6C04 스왑(키움증권)_44F9_20260612 -3,221,221.37 -3,221,221 - - KRD010010001 원화현금 - - 401,595,028 - C\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "354240": {
+      "code": "354240",
+      "name": "RISE 미국고정배당우선증권",
+      "attempts": 1,
+      "error": "[354240] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=354240, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃20분 19초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.11 AM 06:26:08 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KRYZTRSG6X05 스왑(메리츠증권)_44F9_20260630 -37,590,669.17 -37,590,669 - - KRYZTRSG6C05 스왑(미래에셋증권)_44F9_20260612 -14,396,253.01 -14,396,253 - - KRYZTRSG6C04 스왑(키움증권)_44F9_20260612 -3,221,221.37 -3,221,221 - - KRD010010001 원화현금 - - 401,595,028 - C\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "368590": {
+      "code": "368590",
+      "name": "RISE 미국나스닥100",
+      "attempts": 1,
+      "error": "[368590] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=368590, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃20분 19초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.11 AM 06:26:08 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KRYZTRSG4HAQ 스왑(메리츠증권)_44F8_260417 -23,901,224.12 -23,901,224 - - KRYZTRSFB617 스왑(미래에셋증권)_44F8_251106 -13,401,156.27 -13,401,156 - - KRYZTRSG4HAR 스왑(키움증권)_44F8_260417 -3,270,859.96 -3,270,859 - - KRD010010001 원화현금 - - 420,783,748 - CASH000\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "379780": {
+      "code": "379780",
+      "name": "RISE 미국S&P500",
+      "attempts": 1,
+      "error": "[379780] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=379780, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃25분 50초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.11 AM 06:26:08 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KRYZTRSG4HAQ 스왑(메리츠증권)_44F8_260417 -23,901,224.12 -23,901,224 - - KRYZTRSFB617 스왑(미래에셋증권)_44F8_251106 -13,401,156.27 -13,401,156 - - KRYZTRSG4HAR 스왑(키움증권)_44F8_260417 -3,270,859.96 -3,270,859 - - KRD010010001 원화현금 - - 420,783,748 - CASH000\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "437350": {
+      "code": "437350",
+      "name": "RISE 미국단기투자등급회사채액티브",
+      "attempts": 1,
+      "error": "[437350] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=437350, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃18분 55초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.11 AM 06:26:08 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KRYZTRSG6X05 스왑(메리츠증권)_44F9_20260630 -37,590,669.17 -37,590,669 - - KRYZTRSG6C05 스왑(미래에셋증권)_44F9_20260612 -14,396,253.01 -14,396,253 - - KRYZTRSG6C04 스왑(키움증권)_44F9_20260612 -3,221,221.37 -3,221,221 - - KRD010010001 원화현금 - - 401,595,028 - C\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "453330": {
+      "code": "453330",
+      "name": "RISE 미국S&P500(H)",
+      "attempts": 1,
+      "error": "[453330] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=453330, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃24분 27초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.11 AM 06:26:08 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KRYZTRSG6X05 스왑(메리츠증권)_44F9_20260630 -37,590,669.17 -37,590,669 - - KRYZTRSG6C05 스왑(미래에셋증권)_44F9_20260612 -14,396,253.01 -14,396,253 - - KRYZTRSG6C04 스왑(키움증권)_44F9_20260612 -3,221,221.37 -3,221,221 - - KRD010010001 원화현금 - - 401,595,028 - C\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "455960": {
+      "code": "455960",
+      "name": "RISE 미국달러SOFR금리액티브(합성)",
+      "attempts": 1,
+      "error": "[455960] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=455960, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃18분 55초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.11 AM 06:26:08 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KRYZTRSG4HAQ 스왑(메리츠증권)_44F8_260417 -23,901,224.12 -23,901,224 - - KRYZTRSFB617 스왑(미래에셋증권)_44F8_251106 -13,401,156.27 -13,401,156 - - KRYZTRSG4HAR 스왑(키움증권)_44F8_260417 -3,270,859.96 -3,270,859 - - KRD010010001 원화현금 - - 420,783,748 - CASH000\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "460660": {
+      "code": "460660",
+      "name": "RISE 미국S&P배당킹",
+      "attempts": 1,
+      "error": "[460660] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=460660, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃23분 05초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.11 AM 06:26:08 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KRYZTRSG4HAQ 스왑(메리츠증권)_44F8_260417 -23,901,224.12 -23,901,224 - - KRYZTRSFB617 스왑(미래에셋증권)_44F8_251106 -13,401,156.27 -13,401,156 - - KRYZTRSG4HAR 스왑(키움증권)_44F8_260417 -3,270,859.96 -3,270,859 - - KRD010010001 원화현금 - - 420,783,748 - CASH000\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "485690": {
+      "code": "485690",
+      "name": "RISE 미국AI밸류체인TOP3Plus",
+      "attempts": 1,
+      "error": "[485690] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=485690, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃28분 37초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.11 AM 06:26:08 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KRYZTRSG6X05 스왑(메리츠증권)_44F9_20260630 -37,590,669.17 -37,590,669 - - KRYZTRSG6C05 스왑(미래에셋증권)_44F9_20260612 -14,396,253.01 -14,396,253 - - KRYZTRSG6C04 스왑(키움증권)_44F9_20260612 -3,221,221.37 -3,221,221 - - KRD010010001 원화현금 - - 401,595,028 - C\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "490590": {
+      "code": "490590",
+      "name": "RISE 미국AI밸류체인데일리고정커버드콜",
+      "attempts": 1,
+      "error": "[490590] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=490590, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃28분 36초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.11 AM 06:26:08 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KRYZTRSG4HAQ 스왑(메리츠증권)_44F8_260417 -23,901,224.12 -23,901,224 - - KRYZTRSFB617 스왑(미래에셋증권)_44F8_251106 -13,401,156.27 -13,401,156 - - KRYZTRSG4HAR 스왑(키움증권)_44F8_260417 -3,270,859.96 -3,270,859 - - KRD010010001 원화현금 - - 420,783,748 - CASH000\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "495940": {
+      "code": "495940",
+      "name": "RISE 미국AI테크액티브",
+      "attempts": 1,
+      "error": "[495940] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=495940, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃25분 51초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.11 AM 06:26:08 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KRYZTRSG6X05 스왑(메리츠증권)_44F9_20260630 -37,590,669.17 -37,590,669 - - KRYZTRSG6C05 스왑(미래에셋증권)_44F9_20260612 -14,396,253.01 -14,396,253 - - KRYZTRSG6C04 스왑(키움증권)_44F9_20260612 -3,221,221.37 -3,221,221 - - KRD010010001 원화현금 - - 401,595,028 - C\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "0176E0": {
+      "code": "0176E0",
+      "name": "RISE 미국AI전력인프라액티브",
+      "attempts": 1,
+      "error": "[0176E0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0176E0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃27분 13초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.11 AM 06:26:08 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KRYZTRSG6X05 스왑(메리츠증권)_44F9_20260630 -37,590,669.17 -37,590,669 - - KRYZTRSG6C05 스왑(미래에셋증권)_44F9_20260612 -14,396,253.01 -14,396,253 - - KRYZTRSG6C04 스왑(키움증권)_44F9_20260612 -3,221,221.37 -3,221,221 - - KRD010010001 원화현금 - - 401,595,028 - C\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "0127R0": {
+      "code": "0127R0",
+      "name": "RISE 미국AI클라우드인프라",
+      "attempts": 1,
+      "error": "[0127R0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0127R0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃27분 13초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.11 AM 06:26:08 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KRYZTRSG4HAQ 스왑(메리츠증권)_44F8_260417 -23,901,224.12 -23,901,224 - - KRYZTRSFB617 스왑(미래에셋증권)_44F8_251106 -13,401,156.27 -13,401,156 - - KRYZTRSG4HAR 스왑(키움증권)_44F8_260417 -3,270,859.96 -3,270,859 - - KRD010010001 원화현금 - - 420,783,748 - CASH000\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "0138T0": {
+      "code": "0138T0",
+      "name": "RISE 미국S&P500데일리고정커버드콜",
+      "attempts": 1,
+      "error": "[0138T0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0138T0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃24분 27초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.11 AM 06:26:08 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KRYZTRSG4HAQ 스왑(메리츠증권)_44F8_260417 -23,901,224.12 -23,901,224 - - KRYZTRSFB617 스왑(미래에셋증권)_44F8_251106 -13,401,156.27 -13,401,156 - - KRYZTRSG4HAR 스왑(키움증권)_44F8_260417 -3,270,859.96 -3,270,859 - - KRD010010001 원화현금 - - 420,783,748 - CASH000\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "0005C0": {
+      "code": "0005C0",
+      "name": "RISE 미국S&P500엔화노출(합성 H)",
+      "attempts": 1,
+      "error": "[0005C0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0005C0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃23분 04초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.11 AM 06:26:08 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KRYZTRSG6X05 스왑(메리츠증권)_44F9_20260630 -37,590,669.17 -37,590,669 - - KRYZTRSG6C05 스왑(미래에셋증권)_44F9_20260612 -14,396,253.01 -14,396,253 - - KRYZTRSG6C04 스왑(키움증권)_44F9_20260612 -3,221,221.37 -3,221,221 - - KRD010010001 원화현금 - - 401,595,028 - C\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "0115C0": {
+      "code": "0115C0",
+      "name": "RISE 미국고배당다우존스TOP10",
+      "attempts": 1,
+      "error": "[0115C0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0115C0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃21분 42초연장 서비스 소개 통계 쉽게 보는 통계 깊이 있는 통계 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.09.11 AM 06:26:08 (20분 지연 정보) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 KRYZTRSG4HAQ 스왑(메리츠증권)_44F8_260417 -23,901,224.12 -23,901,224 - - KRYZTRSFB617 스왑(미래에셋증권)_44F8_251106 -13,401,156.27 -13,401,156 - - KRYZTRSG4HAR 스왑(키움증권)_44F8_260417 -3,270,859.96 -3,270,859 - - KRD010010001 원화현금 - - 420,783,748 - CASH000\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    }
+  }
 }
