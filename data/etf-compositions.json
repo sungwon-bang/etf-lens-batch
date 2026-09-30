@@ -2,10 +2,10 @@
   "meta": {
     "date": "20261001",
     "total": 1171,
-    "completed": 158,
-    "failed": 0,
+    "completed": 168,
+    "failed": 16,
     "status": "failed",
-    "updatedAt": "2026-09-30T20:28:47.034Z"
+    "updatedAt": "2026-09-30T20:35:09.011Z"
   },
   "items": {
     "105190": {
@@ -12470,6 +12470,68 @@
       ],
       "collectedAt": "2026-09-30T20:28:47.034Z"
     },
+    "304780": {
+      "etf": {
+        "code": "304780",
+        "name": "HANARO 200선물레버리지",
+        "date": "20261001"
+      },
+      "summary": {
+        "totalComponents": 6,
+        "totalWeight": 100.000001
+      },
+      "components": [
+        {
+          "code": "293180",
+          "name": "HANARO 200",
+          "quantity": 5923,
+          "evaluationAmount": 653010750,
+          "marketCap": 0,
+          "weight": 4.069004
+        },
+        {
+          "code": "332930",
+          "name": "HANARO 200TR",
+          "quantity": 5156,
+          "evaluationAmount": 743830340,
+          "marketCap": 0,
+          "weight": 4.634914
+        },
+        {
+          "code": "122630",
+          "name": "KODEX 레버리지",
+          "quantity": 1111,
+          "evaluationAmount": 122526635,
+          "marketCap": 0,
+          "weight": 0.763481
+        },
+        {
+          "code": "267770",
+          "name": "TIGER 200선물레버리지",
+          "quantity": 6111,
+          "evaluationAmount": 516135060,
+          "marketCap": 0,
+          "weight": 3.216112
+        },
+        {
+          "code": "KR4A016C0004",
+          "name": "코스피200 F 202612",
+          "quantity": 35.78,
+          "evaluationAmount": 9804614500,
+          "marketCap": 0,
+          "weight": 61.093963
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 4208300731,
+          "weight": 26.222527
+        }
+      ],
+      "collectedAt": "2026-09-30T20:28:54.373Z"
+    },
     "305050": {
       "etf": {
         "code": "305050",
@@ -18364,6 +18426,36 @@
       ],
       "collectedAt": "2026-09-30T20:28:20.757Z"
     },
+    "306520": {
+      "etf": {
+        "code": "306520",
+        "name": "HANARO 200선물인버스",
+        "date": "20261001"
+      },
+      "summary": {
+        "totalComponents": 2,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "KR4A016C0004",
+          "name": "코스피200 F 202612",
+          "quantity": -0.42,
+          "evaluationAmount": -115090500,
+          "marketCap": 0,
+          "weight": 49.622704
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 116840633,
+          "weight": 50.377296
+        }
+      ],
+      "collectedAt": "2026-09-30T20:28:54.170Z"
+    },
     "309230": {
       "etf": {
         "code": "309230",
@@ -20621,6 +20713,1628 @@
         }
       ],
       "collectedAt": "2026-09-30T19:39:17.597Z"
+    },
+    "332930": {
+      "etf": {
+        "code": "332930",
+        "name": "HANARO 200TR",
+        "date": "20261001"
+      },
+      "summary": {
+        "totalComponents": 201,
+        "totalWeight": 99.99999799999998
+      },
+      "components": [
+        {
+          "code": "282330",
+          "name": "BGF리테일",
+          "quantity": 17,
+          "evaluationAmount": 2254200,
+          "marketCap": 0,
+          "weight": 0.03121
+        },
+        {
+          "code": "138930",
+          "name": "BNK금융지주",
+          "quantity": 528,
+          "evaluationAmount": 8680320,
+          "marketCap": 0,
+          "weight": 0.120183
+        },
+        {
+          "code": "001040",
+          "name": "CJ",
+          "quantity": 27,
+          "evaluationAmount": 3693600,
+          "marketCap": 0,
+          "weight": 0.05114
+        },
+        {
+          "code": "000120",
+          "name": "CJ대한통운",
+          "quantity": 22,
+          "evaluationAmount": 1553200,
+          "marketCap": 0,
+          "weight": 0.021505
+        },
+        {
+          "code": "097950",
+          "name": "CJ제일제당",
+          "quantity": 15,
+          "evaluationAmount": 2689500,
+          "marketCap": 0,
+          "weight": 0.037237
+        },
+        {
+          "code": "005830",
+          "name": "DB손해보험",
+          "quantity": 80,
+          "evaluationAmount": 15328000,
+          "marketCap": 0,
+          "weight": 0.212224
+        },
+        {
+          "code": "000990",
+          "name": "DB하이텍",
+          "quantity": 60,
+          "evaluationAmount": 8388000,
+          "marketCap": 0,
+          "weight": 0.116136
+        },
+        {
+          "code": "000210",
+          "name": "DL",
+          "quantity": 21,
+          "evaluationAmount": 1056300,
+          "marketCap": 0,
+          "weight": 0.014625
+        },
+        {
+          "code": "375500",
+          "name": "DL이앤씨",
+          "quantity": 58,
+          "evaluationAmount": 4558800,
+          "marketCap": 0,
+          "weight": 0.063119
+        },
+        {
+          "code": "007340",
+          "name": "DN오토모티브",
+          "quantity": 41,
+          "evaluationAmount": 2013100,
+          "marketCap": 0,
+          "weight": 0.027872
+        },
+        {
+          "code": "383220",
+          "name": "F&F",
+          "quantity": 27,
+          "evaluationAmount": 1884600,
+          "marketCap": 0,
+          "weight": 0.026093
+        },
+        {
+          "code": "078930",
+          "name": "GS",
+          "quantity": 88,
+          "evaluationAmount": 9565600,
+          "marketCap": 0,
+          "weight": 0.13244
+        },
+        {
+          "code": "007070",
+          "name": "GS리테일",
+          "quantity": 66,
+          "evaluationAmount": 1514700,
+          "marketCap": 0,
+          "weight": 0.020972
+        },
+        {
+          "code": "267270",
+          "name": "HD건설기계",
+          "quantity": 55,
+          "evaluationAmount": 6864000,
+          "marketCap": 0,
+          "weight": 0.095035
+        },
+        {
+          "code": "009540",
+          "name": "HD한국조선해양",
+          "quantity": 92,
+          "evaluationAmount": 29762000,
+          "marketCap": 0,
+          "weight": 0.412069
+        },
+        {
+          "code": "267250",
+          "name": "HD현대",
+          "quantity": 89,
+          "evaluationAmount": 17933500,
+          "marketCap": 0,
+          "weight": 0.248298
+        },
+        {
+          "code": "443060",
+          "name": "HD현대마린솔루션",
+          "quantity": 38,
+          "evaluationAmount": 9025000,
+          "marketCap": 0,
+          "weight": 0.124955
+        },
+        {
+          "code": "071970",
+          "name": "HD현대마린엔진",
+          "quantity": 44,
+          "evaluationAmount": 2076800,
+          "marketCap": 0,
+          "weight": 0.028754
+        },
+        {
+          "code": "267260",
+          "name": "HD현대일렉트릭",
+          "quantity": 44,
+          "evaluationAmount": 29964000,
+          "marketCap": 0,
+          "weight": 0.414866
+        },
+        {
+          "code": "329180",
+          "name": "HD현대중공업",
+          "quantity": 64,
+          "evaluationAmount": 27456000,
+          "marketCap": 0,
+          "weight": 0.380142
+        },
+        {
+          "code": "204320",
+          "name": "HL만도",
+          "quantity": 64,
+          "evaluationAmount": 2937600,
+          "marketCap": 0,
+          "weight": 0.040672
+        },
+        {
+          "code": "011200",
+          "name": "HMM",
+          "quantity": 616,
+          "evaluationAmount": 12936000,
+          "marketCap": 0,
+          "weight": 0.179105
+        },
+        {
+          "code": "298050",
+          "name": "HS효성첨단소재",
+          "quantity": 4,
+          "evaluationAmount": 642400,
+          "marketCap": 0,
+          "weight": 0.008894
+        },
+        {
+          "code": "175330",
+          "name": "JB금융지주",
+          "quantity": 306,
+          "evaluationAmount": 9455400,
+          "marketCap": 0,
+          "weight": 0.130915
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "quantity": 596,
+          "evaluationAmount": 103406000,
+          "marketCap": 0,
+          "weight": 1.431706
+        },
+        {
+          "code": "002380",
+          "name": "KCC",
+          "quantity": 8,
+          "evaluationAmount": 3772000,
+          "marketCap": 0,
+          "weight": 0.052225
+        },
+        {
+          "code": "030200",
+          "name": "KT",
+          "quantity": 434,
+          "evaluationAmount": 22958600,
+          "marketCap": 0,
+          "weight": 0.317873
+        },
+        {
+          "code": "033780",
+          "name": "KT&G",
+          "quantity": 177,
+          "evaluationAmount": 31364400,
+          "marketCap": 0,
+          "weight": 0.434255
+        },
+        {
+          "code": "003550",
+          "name": "LG",
+          "quantity": 176,
+          "evaluationAmount": 19606400,
+          "marketCap": 0,
+          "weight": 0.27146
+        },
+        {
+          "code": "034220",
+          "name": "LG디스플레이",
+          "quantity": 623,
+          "evaluationAmount": 5195820,
+          "marketCap": 0,
+          "weight": 0.071939
+        },
+        {
+          "code": "051900",
+          "name": "LG생활건강",
+          "quantity": 18,
+          "evaluationAmount": 5040000,
+          "marketCap": 0,
+          "weight": 0.069781
+        },
+        {
+          "code": "064400",
+          "name": "LG씨엔에스",
+          "quantity": 94,
+          "evaluationAmount": 6514200,
+          "marketCap": 0,
+          "weight": 0.090192
+        },
+        {
+          "code": "373220",
+          "name": "LG에너지솔루션",
+          "quantity": 97,
+          "evaluationAmount": 34192500,
+          "marketCap": 0,
+          "weight": 0.473412
+        },
+        {
+          "code": "032640",
+          "name": "LG유플러스",
+          "quantity": 537,
+          "evaluationAmount": 7947600,
+          "marketCap": 0,
+          "weight": 0.110038
+        },
+        {
+          "code": "011070",
+          "name": "LG이노텍",
+          "quantity": 28,
+          "evaluationAmount": 16380000,
+          "marketCap": 0,
+          "weight": 0.226789
+        },
+        {
+          "code": "066570",
+          "name": "LG전자",
+          "quantity": 213,
+          "evaluationAmount": 45475500,
+          "marketCap": 0,
+          "weight": 0.62963
+        },
+        {
+          "code": "051910",
+          "name": "LG화학",
+          "quantity": 91,
+          "evaluationAmount": 22750000,
+          "marketCap": 0,
+          "weight": 0.314985
+        },
+        {
+          "code": "079550",
+          "name": "LIG디펜스앤에어로스페이스",
+          "quantity": 27,
+          "evaluationAmount": 18306000,
+          "marketCap": 0,
+          "weight": 0.253455
+        },
+        {
+          "code": "006260",
+          "name": "LS",
+          "quantity": 33,
+          "evaluationAmount": 10411500,
+          "marketCap": 0,
+          "weight": 0.144152
+        },
+        {
+          "code": "010120",
+          "name": "LS ELECTRIC",
+          "quantity": 154,
+          "evaluationAmount": 31570000,
+          "marketCap": 0,
+          "weight": 0.437102
+        },
+        {
+          "code": "035420",
+          "name": "NAVER",
+          "quantity": 262,
+          "evaluationAmount": 51037600,
+          "marketCap": 0,
+          "weight": 0.70664
+        },
+        {
+          "code": "036570",
+          "name": "NC",
+          "quantity": 34,
+          "evaluationAmount": 7174000,
+          "marketCap": 0,
+          "weight": 0.099327
+        },
+        {
+          "code": "005940",
+          "name": "NH투자증권",
+          "quantity": 299,
+          "evaluationAmount": 7848750,
+          "marketCap": 0,
+          "weight": 0.10867
+        },
+        {
+          "code": "456040",
+          "name": "OCI",
+          "quantity": 9,
+          "evaluationAmount": 670500,
+          "marketCap": 0,
+          "weight": 0.009283
+        },
+        {
+          "code": "010060",
+          "name": "OCI홀딩스",
+          "quantity": 26,
+          "evaluationAmount": 5629000,
+          "marketCap": 0,
+          "weight": 0.077936
+        },
+        {
+          "code": "005490",
+          "name": "POSCO홀딩스",
+          "quantity": 133,
+          "evaluationAmount": 40432000,
+          "marketCap": 0,
+          "weight": 0.5598
+        },
+        {
+          "code": "010950",
+          "name": "S-Oil",
+          "quantity": 82,
+          "evaluationAmount": 12939600,
+          "marketCap": 0,
+          "weight": 0.179155
+        },
+        {
+          "code": "034730",
+          "name": "SK",
+          "quantity": 70,
+          "evaluationAmount": 41020000,
+          "marketCap": 0,
+          "weight": 0.567942
+        },
+        {
+          "code": "011790",
+          "name": "SKC",
+          "quantity": 51,
+          "evaluationAmount": 4692000,
+          "marketCap": 0,
+          "weight": 0.064963
+        },
+        {
+          "code": "302440",
+          "name": "SK바이오사이언스",
+          "quantity": 51,
+          "evaluationAmount": 1830900,
+          "marketCap": 0,
+          "weight": 0.02535
+        },
+        {
+          "code": "326030",
+          "name": "SK바이오팜",
+          "quantity": 77,
+          "evaluationAmount": 5767300,
+          "marketCap": 0,
+          "weight": 0.079851
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "quantity": 180,
+          "evaluationAmount": 201240000,
+          "marketCap": 0,
+          "weight": 2.786264
+        },
+        {
+          "code": "361610",
+          "name": "SK아이이테크놀로지",
+          "quantity": 74,
+          "evaluationAmount": 1245420,
+          "marketCap": 0,
+          "weight": 0.017243
+        },
+        {
+          "code": "096770",
+          "name": "SK이노베이션",
+          "quantity": 147,
+          "evaluationAmount": 21447300,
+          "marketCap": 0,
+          "weight": 0.296948
+        },
+        {
+          "code": "285130",
+          "name": "SK케미칼",
+          "quantity": 19,
+          "evaluationAmount": 978500,
+          "marketCap": 0,
+          "weight": 0.013548
+        },
+        {
+          "code": "017670",
+          "name": "SK텔레콤",
+          "quantity": 293,
+          "evaluationAmount": 25256600,
+          "marketCap": 0,
+          "weight": 0.34969
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "quantity": 1113,
+          "evaluationAmount": 1964445000,
+          "marketCap": 0,
+          "weight": 27.198684
+        },
+        {
+          "code": "069260",
+          "name": "TKG휴켐스",
+          "quantity": 43,
+          "evaluationAmount": 702620,
+          "marketCap": 0,
+          "weight": 0.009728
+        },
+        {
+          "code": "139130",
+          "name": "iM금융지주",
+          "quantity": 269,
+          "evaluationAmount": 5073340,
+          "marketCap": 0,
+          "weight": 0.070243
+        },
+        {
+          "code": "035250",
+          "name": "강원랜드",
+          "quantity": 224,
+          "evaluationAmount": 3232320,
+          "marketCap": 0,
+          "weight": 0.044753
+        },
+        {
+          "code": "010130",
+          "name": "고려아연",
+          "quantity": 15,
+          "evaluationAmount": 15960000,
+          "marketCap": 0,
+          "weight": 0.220974
+        },
+        {
+          "code": "011780",
+          "name": "금호석유화학",
+          "quantity": 29,
+          "evaluationAmount": 3369800,
+          "marketCap": 0,
+          "weight": 0.046656
+        },
+        {
+          "code": "073240",
+          "name": "금호타이어",
+          "quantity": 222,
+          "evaluationAmount": 1518480,
+          "marketCap": 0,
+          "weight": 0.021024
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "quantity": 479,
+          "evaluationAmount": 55564000,
+          "marketCap": 0,
+          "weight": 0.76931
+        },
+        {
+          "code": "024110",
+          "name": "기업은행",
+          "quantity": 536,
+          "evaluationAmount": 11095200,
+          "marketCap": 0,
+          "weight": 0.153618
+        },
+        {
+          "code": "251270",
+          "name": "넷마블",
+          "quantity": 61,
+          "evaluationAmount": 2107550,
+          "marketCap": 0,
+          "weight": 0.02918
+        },
+        {
+          "code": "006280",
+          "name": "녹십자",
+          "quantity": 11,
+          "evaluationAmount": 1355200,
+          "marketCap": 0,
+          "weight": 0.018763
+        },
+        {
+          "code": "004370",
+          "name": "농심",
+          "quantity": 6,
+          "evaluationAmount": 2463000,
+          "marketCap": 0,
+          "weight": 0.034101
+        },
+        {
+          "code": "483650",
+          "name": "달바글로벌",
+          "quantity": 20,
+          "evaluationAmount": 3778000,
+          "marketCap": 0,
+          "weight": 0.052308
+        },
+        {
+          "code": "001680",
+          "name": "대상",
+          "quantity": 38,
+          "evaluationAmount": 687040,
+          "marketCap": 0,
+          "weight": 0.009512
+        },
+        {
+          "code": "047040",
+          "name": "대우건설",
+          "quantity": 390,
+          "evaluationAmount": 6774300,
+          "marketCap": 0,
+          "weight": 0.093793
+        },
+        {
+          "code": "003090",
+          "name": "대웅",
+          "quantity": 38,
+          "evaluationAmount": 594320,
+          "marketCap": 0,
+          "weight": 0.008229
+        },
+        {
+          "code": "069620",
+          "name": "대웅제약",
+          "quantity": 9,
+          "evaluationAmount": 965700,
+          "marketCap": 0,
+          "weight": 0.013371
+        },
+        {
+          "code": "006650",
+          "name": "대한유화",
+          "quantity": 7,
+          "evaluationAmount": 619500,
+          "marketCap": 0,
+          "weight": 0.008577
+        },
+        {
+          "code": "001440",
+          "name": "대한전선",
+          "quantity": 233,
+          "evaluationAmount": 6873500,
+          "marketCap": 0,
+          "weight": 0.095167
+        },
+        {
+          "code": "003490",
+          "name": "대한항공",
+          "quantity": 503,
+          "evaluationAmount": 15794200,
+          "marketCap": 0,
+          "weight": 0.218678
+        },
+        {
+          "code": "192080",
+          "name": "더블유게임즈",
+          "quantity": 21,
+          "evaluationAmount": 1236900,
+          "marketCap": 0,
+          "weight": 0.017125
+        },
+        {
+          "code": "026960",
+          "name": "동서",
+          "quantity": 61,
+          "evaluationAmount": 1582950,
+          "marketCap": 0,
+          "weight": 0.021917
+        },
+        {
+          "code": "006040",
+          "name": "동원산업",
+          "quantity": 19,
+          "evaluationAmount": 676400,
+          "marketCap": 0,
+          "weight": 0.009365
+        },
+        {
+          "code": "014820",
+          "name": "동원시스템즈",
+          "quantity": 11,
+          "evaluationAmount": 229900,
+          "marketCap": 0,
+          "weight": 0.003183
+        },
+        {
+          "code": "000150",
+          "name": "두산",
+          "quantity": 14,
+          "evaluationAmount": 19334000,
+          "marketCap": 0,
+          "weight": 0.267689
+        },
+        {
+          "code": "454910",
+          "name": "두산로보틱스",
+          "quantity": 65,
+          "evaluationAmount": 4452500,
+          "marketCap": 0,
+          "weight": 0.061647
+        },
+        {
+          "code": "241560",
+          "name": "두산밥캣",
+          "quantity": 102,
+          "evaluationAmount": 5630400,
+          "marketCap": 0,
+          "weight": 0.077956
+        },
+        {
+          "code": "034020",
+          "name": "두산에너빌리티",
+          "quantity": 849,
+          "evaluationAmount": 67665300,
+          "marketCap": 0,
+          "weight": 0.936859
+        },
+        {
+          "code": "023530",
+          "name": "롯데쇼핑",
+          "quantity": 20,
+          "evaluationAmount": 2040000,
+          "marketCap": 0,
+          "weight": 0.028245
+        },
+        {
+          "code": "280360",
+          "name": "롯데웰푸드",
+          "quantity": 5,
+          "evaluationAmount": 626000,
+          "marketCap": 0,
+          "weight": 0.008667
+        },
+        {
+          "code": "004000",
+          "name": "롯데정밀화학",
+          "quantity": 29,
+          "evaluationAmount": 1257150,
+          "marketCap": 0,
+          "weight": 0.017406
+        },
+        {
+          "code": "004990",
+          "name": "롯데지주",
+          "quantity": 55,
+          "evaluationAmount": 1322750,
+          "marketCap": 0,
+          "weight": 0.018314
+        },
+        {
+          "code": "005300",
+          "name": "롯데칠성",
+          "quantity": 7,
+          "evaluationAmount": 666400,
+          "marketCap": 0,
+          "weight": 0.009227
+        },
+        {
+          "code": "011170",
+          "name": "롯데케미칼",
+          "quantity": 36,
+          "evaluationAmount": 2152800,
+          "marketCap": 0,
+          "weight": 0.029807
+        },
+        {
+          "code": "138040",
+          "name": "메리츠금융지주",
+          "quantity": 146,
+          "evaluationAmount": 19374200,
+          "marketCap": 0,
+          "weight": 0.268245
+        },
+        {
+          "code": "006800",
+          "name": "미래에셋증권",
+          "quantity": 516,
+          "evaluationAmount": 16073400,
+          "marketCap": 0,
+          "weight": 0.222544
+        },
+        {
+          "code": "081660",
+          "name": "미스토홀딩스",
+          "quantity": 60,
+          "evaluationAmount": 2310000,
+          "marketCap": 0,
+          "weight": 0.031983
+        },
+        {
+          "code": "002840",
+          "name": "미원상사",
+          "quantity": 2,
+          "evaluationAmount": 274000,
+          "marketCap": 0,
+          "weight": 0.003794
+        },
+        {
+          "code": "268280",
+          "name": "미원에스씨",
+          "quantity": 1,
+          "evaluationAmount": 132600,
+          "marketCap": 0,
+          "weight": 0.001836
+        },
+        {
+          "code": "062040",
+          "name": "산일전기",
+          "quantity": 33,
+          "evaluationAmount": 6798000,
+          "marketCap": 0,
+          "weight": 0.094122
+        },
+        {
+          "code": "028050",
+          "name": "삼성E&A",
+          "quantity": 310,
+          "evaluationAmount": 14616500,
+          "marketCap": 0,
+          "weight": 0.202372
+        },
+        {
+          "code": "006400",
+          "name": "삼성SDI",
+          "quantity": 120,
+          "evaluationAmount": 61320000,
+          "marketCap": 0,
+          "weight": 0.849005
+        },
+        {
+          "code": "028260",
+          "name": "삼성물산",
+          "quantity": 189,
+          "evaluationAmount": 65205000,
+          "marketCap": 0,
+          "weight": 0.902795
+        },
+        {
+          "code": "207940",
+          "name": "삼성바이오로직스",
+          "quantity": 20,
+          "evaluationAmount": 27700000,
+          "marketCap": 0,
+          "weight": 0.38352
+        },
+        {
+          "code": "032830",
+          "name": "삼성생명",
+          "quantity": 166,
+          "evaluationAmount": 48223000,
+          "marketCap": 0,
+          "weight": 0.667671
+        },
+        {
+          "code": "018260",
+          "name": "삼성에스디에스",
+          "quantity": 75,
+          "evaluationAmount": 16237500,
+          "marketCap": 0,
+          "weight": 0.224816
+        },
+        {
+          "code": "0126Z0",
+          "name": "삼성에피스홀딩스",
+          "quantity": 11,
+          "evaluationAmount": 3734500,
+          "marketCap": 0,
+          "weight": 0.051706
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "quantity": 109,
+          "evaluationAmount": 166552000,
+          "marketCap": 0,
+          "weight": 2.305992
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "quantity": 9136,
+          "evaluationAmount": 2489560000,
+          "marketCap": 0,
+          "weight": 34.469154
+        },
+        {
+          "code": "010140",
+          "name": "삼성중공업",
+          "quantity": 1306,
+          "evaluationAmount": 25244980,
+          "marketCap": 0,
+          "weight": 0.349529
+        },
+        {
+          "code": "016360",
+          "name": "삼성증권",
+          "quantity": 120,
+          "evaluationAmount": 10620000,
+          "marketCap": 0,
+          "weight": 0.147039
+        },
+        {
+          "code": "029780",
+          "name": "삼성카드",
+          "quantity": 53,
+          "evaluationAmount": 2252500,
+          "marketCap": 0,
+          "weight": 0.031187
+        },
+        {
+          "code": "000810",
+          "name": "삼성화재",
+          "quantity": 58,
+          "evaluationAmount": 37874000,
+          "marketCap": 0,
+          "weight": 0.524384
+        },
+        {
+          "code": "003230",
+          "name": "삼양식품",
+          "quantity": 8,
+          "evaluationAmount": 9800000,
+          "marketCap": 0,
+          "weight": 0.135686
+        },
+        {
+          "code": "001430",
+          "name": "세아베스틸지주",
+          "quantity": 24,
+          "evaluationAmount": 1087200,
+          "marketCap": 0,
+          "weight": 0.015053
+        },
+        {
+          "code": "003030",
+          "name": "세아제강지주",
+          "quantity": 3,
+          "evaluationAmount": 333600,
+          "marketCap": 0,
+          "weight": 0.004619
+        },
+        {
+          "code": "068270",
+          "name": "셀트리온",
+          "quantity": 308,
+          "evaluationAmount": 55101200,
+          "marketCap": 0,
+          "weight": 0.762903
+        },
+        {
+          "code": "004170",
+          "name": "신세계",
+          "quantity": 12,
+          "evaluationAmount": 4080000,
+          "marketCap": 0,
+          "weight": 0.05649
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "quantity": 799,
+          "evaluationAmount": 88289500,
+          "marketCap": 0,
+          "weight": 1.222411
+        },
+        {
+          "code": "112610",
+          "name": "씨에스윈드",
+          "quantity": 48,
+          "evaluationAmount": 2419200,
+          "marketCap": 0,
+          "weight": 0.033495
+        },
+        {
+          "code": "090430",
+          "name": "아모레퍼시픽",
+          "quantity": 61,
+          "evaluationAmount": 8704700,
+          "marketCap": 0,
+          "weight": 0.120521
+        },
+        {
+          "code": "002790",
+          "name": "아모레퍼시픽홀딩스",
+          "quantity": 48,
+          "evaluationAmount": 1288800,
+          "marketCap": 0,
+          "weight": 0.017844
+        },
+        {
+          "code": "002030",
+          "name": "아세아",
+          "quantity": 2,
+          "evaluationAmount": 412000,
+          "marketCap": 0,
+          "weight": 0.005704
+        },
+        {
+          "code": "137310",
+          "name": "에스디바이오센서",
+          "quantity": 69,
+          "evaluationAmount": 420900,
+          "marketCap": 0,
+          "weight": 0.005828
+        },
+        {
+          "code": "005850",
+          "name": "에스엘",
+          "quantity": 31,
+          "evaluationAmount": 1540700,
+          "marketCap": 0,
+          "weight": 0.021332
+        },
+        {
+          "code": "012750",
+          "name": "에스원",
+          "quantity": 48,
+          "evaluationAmount": 4008000,
+          "marketCap": 0,
+          "weight": 0.055493
+        },
+        {
+          "code": "278470",
+          "name": "에이피알",
+          "quantity": 48,
+          "evaluationAmount": 17400000,
+          "marketCap": 0,
+          "weight": 0.240911
+        },
+        {
+          "code": "450080",
+          "name": "에코프로머티",
+          "quantity": 76,
+          "evaluationAmount": 2610600,
+          "marketCap": 0,
+          "weight": 0.036145
+        },
+        {
+          "code": "066970",
+          "name": "엘앤에프",
+          "quantity": 60,
+          "evaluationAmount": 6540000,
+          "marketCap": 0,
+          "weight": 0.090549
+        },
+        {
+          "code": "111770",
+          "name": "영원무역",
+          "quantity": 43,
+          "evaluationAmount": 3057300,
+          "marketCap": 0,
+          "weight": 0.04233
+        },
+        {
+          "code": "009970",
+          "name": "영원무역홀딩스",
+          "quantity": 10,
+          "evaluationAmount": 1666000,
+          "marketCap": 0,
+          "weight": 0.023067
+        },
+        {
+          "code": "000670",
+          "name": "영풍",
+          "quantity": 9,
+          "evaluationAmount": 378900,
+          "marketCap": 0,
+          "weight": 0.005246
+        },
+        {
+          "code": "007310",
+          "name": "오뚜기",
+          "quantity": 3,
+          "evaluationAmount": 946500,
+          "marketCap": 0,
+          "weight": 0.013105
+        },
+        {
+          "code": "271560",
+          "name": "오리온",
+          "quantity": 43,
+          "evaluationAmount": 4794500,
+          "marketCap": 0,
+          "weight": 0.066382
+        },
+        {
+          "code": "001800",
+          "name": "오리온홀딩스",
+          "quantity": 39,
+          "evaluationAmount": 945750,
+          "marketCap": 0,
+          "weight": 0.013094
+        },
+        {
+          "code": "316140",
+          "name": "우리금융지주",
+          "quantity": 1326,
+          "evaluationAmount": 48266400,
+          "marketCap": 0,
+          "weight": 0.668271
+        },
+        {
+          "code": "000100",
+          "name": "유한양행",
+          "quantity": 109,
+          "evaluationAmount": 7957000,
+          "marketCap": 0,
+          "weight": 0.110168
+        },
+        {
+          "code": "008730",
+          "name": "율촌화학",
+          "quantity": 21,
+          "evaluationAmount": 305970,
+          "marketCap": 0,
+          "weight": 0.004236
+        },
+        {
+          "code": "139480",
+          "name": "이마트",
+          "quantity": 39,
+          "evaluationAmount": 2808000,
+          "marketCap": 0,
+          "weight": 0.038878
+        },
+        {
+          "code": "457190",
+          "name": "이수스페셜티케미컬",
+          "quantity": 40,
+          "evaluationAmount": 2720000,
+          "marketCap": 0,
+          "weight": 0.03766
+        },
+        {
+          "code": "007660",
+          "name": "이수페타시스",
+          "quantity": 107,
+          "evaluationAmount": 12626000,
+          "marketCap": 0,
+          "weight": 0.174813
+        },
+        {
+          "code": "030000",
+          "name": "제일기획",
+          "quantity": 137,
+          "evaluationAmount": 2449560,
+          "marketCap": 0,
+          "weight": 0.033915
+        },
+        {
+          "code": "185750",
+          "name": "종근당",
+          "quantity": 16,
+          "evaluationAmount": 1030400,
+          "marketCap": 0,
+          "weight": 0.014266
+        },
+        {
+          "code": "071320",
+          "name": "지역난방공사",
+          "quantity": 5,
+          "evaluationAmount": 396500,
+          "marketCap": 0,
+          "weight": 0.00549
+        },
+        {
+          "code": "035720",
+          "name": "카카오",
+          "quantity": 666,
+          "evaluationAmount": 22444200,
+          "marketCap": 0,
+          "weight": 0.310751
+        },
+        {
+          "code": "323410",
+          "name": "카카오뱅크",
+          "quantity": 670,
+          "evaluationAmount": 13567500,
+          "marketCap": 0,
+          "weight": 0.187849
+        },
+        {
+          "code": "377300",
+          "name": "카카오페이",
+          "quantity": 72,
+          "evaluationAmount": 2887200,
+          "marketCap": 0,
+          "weight": 0.039975
+        },
+        {
+          "code": "192820",
+          "name": "코스맥스",
+          "quantity": 16,
+          "evaluationAmount": 4440000,
+          "marketCap": 0,
+          "weight": 0.061474
+        },
+        {
+          "code": "005420",
+          "name": "코스모화학",
+          "quantity": 50,
+          "evaluationAmount": 509000,
+          "marketCap": 0,
+          "weight": 0.007047
+        },
+        {
+          "code": "120110",
+          "name": "코오롱인더",
+          "quantity": 39,
+          "evaluationAmount": 2133300,
+          "marketCap": 0,
+          "weight": 0.029537
+        },
+        {
+          "code": "021240",
+          "name": "코웨이",
+          "quantity": 106,
+          "evaluationAmount": 10759000,
+          "marketCap": 0,
+          "weight": 0.148964
+        },
+        {
+          "code": "259960",
+          "name": "크래프톤",
+          "quantity": 55,
+          "evaluationAmount": 10928500,
+          "marketCap": 0,
+          "weight": 0.15131
+        },
+        {
+          "code": "039490",
+          "name": "키움증권",
+          "quantity": 31,
+          "evaluationAmount": 7920500,
+          "marketCap": 0,
+          "weight": 0.109663
+        },
+        {
+          "code": "034230",
+          "name": "파라다이스",
+          "quantity": 86,
+          "evaluationAmount": 814420,
+          "marketCap": 0,
+          "weight": 0.011276
+        },
+        {
+          "code": "028670",
+          "name": "팬오션",
+          "quantity": 444,
+          "evaluationAmount": 2530800,
+          "marketCap": 0,
+          "weight": 0.03504
+        },
+        {
+          "code": "022100",
+          "name": "포스코DX",
+          "quantity": 99,
+          "evaluationAmount": 1966140,
+          "marketCap": 0,
+          "weight": 0.027222
+        },
+        {
+          "code": "047050",
+          "name": "포스코인터내셔널",
+          "quantity": 90,
+          "evaluationAmount": 4896000,
+          "marketCap": 0,
+          "weight": 0.067787
+        },
+        {
+          "code": "003670",
+          "name": "포스코퓨처엠",
+          "quantity": 70,
+          "evaluationAmount": 12278000,
+          "marketCap": 0,
+          "weight": 0.169995
+        },
+        {
+          "code": "103140",
+          "name": "풍산",
+          "quantity": 33,
+          "evaluationAmount": 2570700,
+          "marketCap": 0,
+          "weight": 0.035593
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "quantity": 482,
+          "evaluationAmount": 65214600,
+          "marketCap": 0,
+          "weight": 0.902927
+        },
+        {
+          "code": "352820",
+          "name": "하이브",
+          "quantity": 49,
+          "evaluationAmount": 7776300,
+          "marketCap": 0,
+          "weight": 0.107667
+        },
+        {
+          "code": "000080",
+          "name": "하이트진로",
+          "quantity": 61,
+          "evaluationAmount": 921710,
+          "marketCap": 0,
+          "weight": 0.012762
+        },
+        {
+          "code": "036460",
+          "name": "한국가스공사",
+          "quantity": 73,
+          "evaluationAmount": 2591500,
+          "marketCap": 0,
+          "weight": 0.035881
+        },
+        {
+          "code": "071050",
+          "name": "한국금융지주",
+          "quantity": 80,
+          "evaluationAmount": 14320000,
+          "marketCap": 0,
+          "weight": 0.198267
+        },
+        {
+          "code": "000240",
+          "name": "한국앤컴퍼니",
+          "quantity": 47,
+          "evaluationAmount": 1175000,
+          "marketCap": 0,
+          "weight": 0.016268
+        },
+        {
+          "code": "015760",
+          "name": "한국전력",
+          "quantity": 622,
+          "evaluationAmount": 18722200,
+          "marketCap": 0,
+          "weight": 0.259218
+        },
+        {
+          "code": "017960",
+          "name": "한국카본",
+          "quantity": 63,
+          "evaluationAmount": 1251180,
+          "marketCap": 0,
+          "weight": 0.017323
+        },
+        {
+          "code": "161890",
+          "name": "한국콜마",
+          "quantity": 34,
+          "evaluationAmount": 5100000,
+          "marketCap": 0,
+          "weight": 0.070612
+        },
+        {
+          "code": "161390",
+          "name": "한국타이어앤테크놀로지",
+          "quantity": 142,
+          "evaluationAmount": 8491600,
+          "marketCap": 0,
+          "weight": 0.11757
+        },
+        {
+          "code": "047810",
+          "name": "한국항공우주",
+          "quantity": 139,
+          "evaluationAmount": 17708600,
+          "marketCap": 0,
+          "weight": 0.245184
+        },
+        {
+          "code": "042700",
+          "name": "한미반도체",
+          "quantity": 83,
+          "evaluationAmount": 20916000,
+          "marketCap": 0,
+          "weight": 0.289592
+        },
+        {
+          "code": "008930",
+          "name": "한미사이언스",
+          "quantity": 55,
+          "evaluationAmount": 2871000,
+          "marketCap": 0,
+          "weight": 0.03975
+        },
+        {
+          "code": "128940",
+          "name": "한미약품",
+          "quantity": 12,
+          "evaluationAmount": 6084000,
+          "marketCap": 0,
+          "weight": 0.084236
+        },
+        {
+          "code": "009240",
+          "name": "한샘",
+          "quantity": 16,
+          "evaluationAmount": 642400,
+          "marketCap": 0,
+          "weight": 0.008894
+        },
+        {
+          "code": "014680",
+          "name": "한솔케미칼",
+          "quantity": 19,
+          "evaluationAmount": 4693000,
+          "marketCap": 0,
+          "weight": 0.064977
+        },
+        {
+          "code": "018880",
+          "name": "한온시스템",
+          "quantity": 690,
+          "evaluationAmount": 2208000,
+          "marketCap": 0,
+          "weight": 0.030571
+        },
+        {
+          "code": "009420",
+          "name": "한올바이오파마",
+          "quantity": 70,
+          "evaluationAmount": 3027500,
+          "marketCap": 0,
+          "weight": 0.041917
+        },
+        {
+          "code": "300720",
+          "name": "한일시멘트",
+          "quantity": 42,
+          "evaluationAmount": 682080,
+          "marketCap": 0,
+          "weight": 0.009444
+        },
+        {
+          "code": "051600",
+          "name": "한전KPS",
+          "quantity": 44,
+          "evaluationAmount": 1986600,
+          "marketCap": 0,
+          "weight": 0.027505
+        },
+        {
+          "code": "052690",
+          "name": "한전기술",
+          "quantity": 37,
+          "evaluationAmount": 4480700,
+          "marketCap": 0,
+          "weight": 0.062037
+        },
+        {
+          "code": "180640",
+          "name": "한진칼",
+          "quantity": 92,
+          "evaluationAmount": 12530400,
+          "marketCap": 0,
+          "weight": 0.173489
+        },
+        {
+          "code": "000880",
+          "name": "한화",
+          "quantity": 39,
+          "evaluationAmount": 4960800,
+          "marketCap": 0,
+          "weight": 0.068685
+        },
+        {
+          "code": "0220W0",
+          "name": "한화머시너리앤서비스홀딩스",
+          "quantity": 62,
+          "evaluationAmount": 362080,
+          "marketCap": 0,
+          "weight": 0.005013
+        },
+        {
+          "code": "088350",
+          "name": "한화생명",
+          "quantity": 653,
+          "evaluationAmount": 3806990,
+          "marketCap": 0,
+          "weight": 0.05271
+        },
+        {
+          "code": "009830",
+          "name": "한화솔루션",
+          "quantity": 280,
+          "evaluationAmount": 9100000,
+          "marketCap": 0,
+          "weight": 0.125994
+        },
+        {
+          "code": "272210",
+          "name": "한화시스템",
+          "quantity": 138,
+          "evaluationAmount": 9922200,
+          "marketCap": 0,
+          "weight": 0.137378
+        },
+        {
+          "code": "012450",
+          "name": "한화에어로스페이스",
+          "quantity": 64,
+          "evaluationAmount": 64768000,
+          "marketCap": 0,
+          "weight": 0.896744
+        },
+        {
+          "code": "082740",
+          "name": "한화엔진",
+          "quantity": 107,
+          "evaluationAmount": 4980850,
+          "marketCap": 0,
+          "weight": 0.068962
+        },
+        {
+          "code": "042660",
+          "name": "한화오션",
+          "quantity": 261,
+          "evaluationAmount": 20514600,
+          "marketCap": 0,
+          "weight": 0.284034
+        },
+        {
+          "code": "000720",
+          "name": "현대건설",
+          "quantity": 145,
+          "evaluationAmount": 16965000,
+          "marketCap": 0,
+          "weight": 0.234889
+        },
+        {
+          "code": "086280",
+          "name": "현대글로비스",
+          "quantity": 73,
+          "evaluationAmount": 14417500,
+          "marketCap": 0,
+          "weight": 0.199617
+        },
+        {
+          "code": "064350",
+          "name": "현대로템",
+          "quantity": 145,
+          "evaluationAmount": 16283500,
+          "marketCap": 0,
+          "weight": 0.225453
+        },
+        {
+          "code": "012330",
+          "name": "현대모비스",
+          "quantity": 121,
+          "evaluationAmount": 44407000,
+          "marketCap": 0,
+          "weight": 0.614836
+        },
+        {
+          "code": "069960",
+          "name": "현대백화점",
+          "quantity": 23,
+          "evaluationAmount": 2058500,
+          "marketCap": 0,
+          "weight": 0.028501
+        },
+        {
+          "code": "017800",
+          "name": "현대엘리베이터",
+          "quantity": 50,
+          "evaluationAmount": 3685000,
+          "marketCap": 0,
+          "weight": 0.051021
+        },
+        {
+          "code": "307950",
+          "name": "현대오토에버",
+          "quantity": 12,
+          "evaluationAmount": 4440000,
+          "marketCap": 0,
+          "weight": 0.061474
+        },
+        {
+          "code": "011210",
+          "name": "현대위아",
+          "quantity": 31,
+          "evaluationAmount": 1646100,
+          "marketCap": 0,
+          "weight": 0.022791
+        },
+        {
+          "code": "004020",
+          "name": "현대제철",
+          "quantity": 166,
+          "evaluationAmount": 4980000,
+          "marketCap": 0,
+          "weight": 0.06895
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "quantity": 266,
+          "evaluationAmount": 93100000,
+          "marketCap": 0,
+          "weight": 1.289014
+        },
+        {
+          "code": "001450",
+          "name": "현대해상",
+          "quantity": 113,
+          "evaluationAmount": 5650000,
+          "marketCap": 0,
+          "weight": 0.078227
+        },
+        {
+          "code": "008770",
+          "name": "호텔신라",
+          "quantity": 61,
+          "evaluationAmount": 2452200,
+          "marketCap": 0,
+          "weight": 0.033952
+        },
+        {
+          "code": "298040",
+          "name": "효성중공업",
+          "quantity": 10,
+          "evaluationAmount": 28040000,
+          "marketCap": 0,
+          "weight": 0.388227
+        },
+        {
+          "code": "298020",
+          "name": "효성티앤씨",
+          "quantity": 5,
+          "evaluationAmount": 1435000,
+          "marketCap": 0,
+          "weight": 0.019868
+        },
+        {
+          "code": "093370",
+          "name": "후성",
+          "quantity": 108,
+          "evaluationAmount": 1524960,
+          "marketCap": 0,
+          "weight": 0.021114
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 12367243,
+          "weight": 0.17123
+        }
+      ],
+      "collectedAt": "2026-09-30T20:28:51.878Z"
     },
     "354500": {
       "etf": {
@@ -29130,6 +30844,250 @@
       ],
       "collectedAt": "2026-09-30T20:02:57.564Z"
     },
+    "395280": {
+      "etf": {
+        "code": "395280",
+        "name": "HANARO Fn K-게임",
+        "date": "20261001"
+      },
+      "summary": {
+        "totalComponents": 14,
+        "totalWeight": 99.999999
+      },
+      "components": [
+        {
+          "code": "036570",
+          "name": "NC",
+          "quantity": 181,
+          "evaluationAmount": 38191000,
+          "marketCap": 0,
+          "weight": 22.76236
+        },
+        {
+          "code": "181710",
+          "name": "NHN",
+          "quantity": 194,
+          "evaluationAmount": 10650600,
+          "marketCap": 0,
+          "weight": 6.347904
+        },
+        {
+          "code": "095660",
+          "name": "네오위즈",
+          "quantity": 167,
+          "evaluationAmount": 3016020,
+          "marketCap": 0,
+          "weight": 1.797589
+        },
+        {
+          "code": "225570",
+          "name": "넥슨게임즈",
+          "quantity": 342,
+          "evaluationAmount": 3758580,
+          "marketCap": 0,
+          "weight": 2.240165
+        },
+        {
+          "code": "251270",
+          "name": "넷마블",
+          "quantity": 450,
+          "evaluationAmount": 15547500,
+          "marketCap": 0,
+          "weight": 9.266523
+        },
+        {
+          "code": "192080",
+          "name": "더블유게임즈",
+          "quantity": 154,
+          "evaluationAmount": 9070600,
+          "marketCap": 0,
+          "weight": 5.406202
+        },
+        {
+          "code": "194480",
+          "name": "데브시스터즈",
+          "quantity": 115,
+          "evaluationAmount": 1643350,
+          "marketCap": 0,
+          "weight": 0.979459
+        },
+        {
+          "code": "462870",
+          "name": "시프트업",
+          "quantity": 496,
+          "evaluationAmount": 15475200,
+          "marketCap": 0,
+          "weight": 9.223431
+        },
+        {
+          "code": "069080",
+          "name": "웹젠",
+          "quantity": 266,
+          "evaluationAmount": 3101560,
+          "marketCap": 0,
+          "weight": 1.848572
+        },
+        {
+          "code": "112040",
+          "name": "위메이드",
+          "quantity": 297,
+          "evaluationAmount": 4520340,
+          "marketCap": 0,
+          "weight": 2.694185
+        },
+        {
+          "code": "078340",
+          "name": "컴투스",
+          "quantity": 113,
+          "evaluationAmount": 4226200,
+          "marketCap": 0,
+          "weight": 2.518873
+        },
+        {
+          "code": "259960",
+          "name": "크래프톤",
+          "quantity": 201,
+          "evaluationAmount": 39938700,
+          "marketCap": 0,
+          "weight": 23.804013
+        },
+        {
+          "code": "263750",
+          "name": "펄어비스",
+          "quantity": 553,
+          "evaluationAmount": 18055450,
+          "marketCap": 0,
+          "weight": 10.761296
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 586273,
+          "weight": 0.349427
+        }
+      ],
+      "collectedAt": "2026-09-30T20:29:02.253Z"
+    },
+    "395290": {
+      "etf": {
+        "code": "395290",
+        "name": "HANARO Fn K-POP&미디어",
+        "date": "20261001"
+      },
+      "summary": {
+        "totalComponents": 13,
+        "totalWeight": 99.999999
+      },
+      "components": [
+        {
+          "code": "035760",
+          "name": "CJ ENM",
+          "quantity": 535,
+          "evaluationAmount": 20865000,
+          "marketCap": 0,
+          "weight": 8.515445
+        },
+        {
+          "code": "035900",
+          "name": "JYP Ent.",
+          "quantity": 1283,
+          "evaluationAmount": 48754000,
+          "marketCap": 0,
+          "weight": 19.897531
+        },
+        {
+          "code": "419530",
+          "name": "SAMG엔터",
+          "quantity": 353,
+          "evaluationAmount": 6209270,
+          "marketCap": 0,
+          "weight": 2.534133
+        },
+        {
+          "code": "034120",
+          "name": "SBS",
+          "quantity": 522,
+          "evaluationAmount": 6107400,
+          "marketCap": 0,
+          "weight": 2.492558
+        },
+        {
+          "code": "037270",
+          "name": "YG PLUS",
+          "quantity": 1970,
+          "evaluationAmount": 6107000,
+          "marketCap": 0,
+          "weight": 2.492395
+        },
+        {
+          "code": "473980",
+          "name": "노머스",
+          "quantity": 353,
+          "evaluationAmount": 3639430,
+          "marketCap": 0,
+          "weight": 1.485328
+        },
+        {
+          "code": "253450",
+          "name": "스튜디오드래곤",
+          "quantity": 634,
+          "evaluationAmount": 13092100,
+          "marketCap": 0,
+          "weight": 5.343161
+        },
+        {
+          "code": "310200",
+          "name": "애니플러스",
+          "quantity": 1443,
+          "evaluationAmount": 2943720,
+          "marketCap": 0,
+          "weight": 1.201394
+        },
+        {
+          "code": "041510",
+          "name": "에스엠",
+          "quantity": 623,
+          "evaluationAmount": 52207400,
+          "marketCap": 0,
+          "weight": 21.306936
+        },
+        {
+          "code": "122870",
+          "name": "와이지엔터테인먼트",
+          "quantity": 649,
+          "evaluationAmount": 27907000,
+          "marketCap": 0,
+          "weight": 11.389433
+        },
+        {
+          "code": "182360",
+          "name": "큐브엔터",
+          "quantity": 284,
+          "evaluationAmount": 1931200,
+          "marketCap": 0,
+          "weight": 0.788163
+        },
+        {
+          "code": "352820",
+          "name": "하이브",
+          "quantity": 338,
+          "evaluationAmount": 53640600,
+          "marketCap": 0,
+          "weight": 21.891855
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 1621251,
+          "weight": 0.661667
+        }
+      ],
+      "collectedAt": "2026-09-30T20:29:01.625Z"
+    },
     "402970": {
       "etf": {
         "code": "402970",
@@ -29935,6 +31893,108 @@
         }
       ],
       "collectedAt": "2026-09-30T20:02:43.606Z"
+    },
+    "407310": {
+      "etf": {
+        "code": "407310",
+        "name": "HANARO 200 TOP10",
+        "date": "20261001"
+      },
+      "summary": {
+        "totalComponents": 11,
+        "totalWeight": 99.999998
+      },
+      "components": [
+        {
+          "code": "329180",
+          "name": "HD현대중공업",
+          "quantity": 146,
+          "evaluationAmount": 62634000,
+          "marketCap": 0,
+          "weight": 7.722252
+        },
+        {
+          "code": "373220",
+          "name": "LG에너지솔루션",
+          "quantity": 245,
+          "evaluationAmount": 86362500,
+          "marketCap": 0,
+          "weight": 10.647779
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "quantity": 77,
+          "evaluationAmount": 86086000,
+          "marketCap": 0,
+          "weight": 10.613689
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "quantity": 45,
+          "evaluationAmount": 79425000,
+          "marketCap": 0,
+          "weight": 9.792443
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "quantity": 605,
+          "evaluationAmount": 70180000,
+          "marketCap": 0,
+          "weight": 8.652611
+        },
+        {
+          "code": "034020",
+          "name": "두산에너빌리티",
+          "quantity": 1065,
+          "evaluationAmount": 84880500,
+          "marketCap": 0,
+          "weight": 10.465061
+        },
+        {
+          "code": "207940",
+          "name": "삼성바이오로직스",
+          "quantity": 73,
+          "evaluationAmount": 101105000,
+          "marketCap": 0,
+          "weight": 12.465407
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "quantity": 316,
+          "evaluationAmount": 86110000,
+          "marketCap": 0,
+          "weight": 10.616648
+        },
+        {
+          "code": "012450",
+          "name": "한화에어로스페이스",
+          "quantity": 93,
+          "evaluationAmount": 94116000,
+          "marketCap": 0,
+          "weight": 11.603721
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "quantity": 158,
+          "evaluationAmount": 55300000,
+          "marketCap": 0,
+          "weight": 6.818031
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 4885620,
+          "weight": 0.602356
+        }
+      ],
+      "collectedAt": "2026-09-30T20:28:51.822Z"
     },
     "411060": {
       "etf": {
@@ -40598,6 +42658,60 @@
       ],
       "collectedAt": "2026-09-30T20:27:58.289Z"
     },
+    "448490": {
+      "etf": {
+        "code": "448490",
+        "name": "HANARO 32-10 국고채액티브",
+        "date": "20261001"
+      },
+      "summary": {
+        "totalComponents": 5,
+        "totalWeight": 100.000001
+      },
+      "components": [
+        {
+          "code": "KR103502G693",
+          "name": "국고채권01500-3609(16-6)",
+          "quantity": 0,
+          "evaluationAmount": 36342952,
+          "marketCap": 0,
+          "weight": 34.580818
+        },
+        {
+          "code": "KR103502G594",
+          "name": "국고채권02625-3509(15-6)",
+          "quantity": 0,
+          "evaluationAmount": 8252238,
+          "marketCap": 0,
+          "weight": 7.852118
+        },
+        {
+          "code": "KR103502GFC1",
+          "name": "국고채권03250-3512(25-11)",
+          "quantity": 0,
+          "evaluationAmount": 8749467,
+          "marketCap": 0,
+          "weight": 8.325238
+        },
+        {
+          "code": "KR103502G3C1",
+          "name": "국고채권03750-3312(13-8)",
+          "quantity": 0,
+          "evaluationAmount": 46301286,
+          "marketCap": 0,
+          "weight": 44.056309
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 5449756,
+          "weight": 5.185518
+        }
+      ],
+      "collectedAt": "2026-09-30T20:28:59.284Z"
+    },
     "448540": {
       "etf": {
         "code": "448540",
@@ -42867,6 +44981,180 @@
         }
       ],
       "collectedAt": "2026-09-30T20:02:21.857Z"
+    },
+    "454320": {
+      "etf": {
+        "code": "454320",
+        "name": "HANARO CAPEX설비투자iSelect",
+        "date": "20261001"
+      },
+      "summary": {
+        "totalComponents": 20,
+        "totalWeight": 99.99999999999999
+      },
+      "components": [
+        {
+          "code": "007340",
+          "name": "DN오토모티브",
+          "quantity": 1151,
+          "evaluationAmount": 56514100,
+          "marketCap": 0,
+          "weight": 2.733561
+        },
+        {
+          "code": "267270",
+          "name": "HD건설기계",
+          "quantity": 1607,
+          "evaluationAmount": 200553600,
+          "marketCap": 0,
+          "weight": 9.700684
+        },
+        {
+          "code": "267260",
+          "name": "HD현대일렉트릭",
+          "quantity": 223,
+          "evaluationAmount": 151863000,
+          "marketCap": 0,
+          "weight": 7.345543
+        },
+        {
+          "code": "006260",
+          "name": "LS",
+          "quantity": 616,
+          "evaluationAmount": 194348000,
+          "marketCap": 0,
+          "weight": 9.400522
+        },
+        {
+          "code": "010120",
+          "name": "LS ELECTRIC",
+          "quantity": 1002,
+          "evaluationAmount": 205410000,
+          "marketCap": 0,
+          "weight": 9.935586
+        },
+        {
+          "code": "060370",
+          "name": "LS마린솔루션",
+          "quantity": 1583,
+          "evaluationAmount": 50972600,
+          "marketCap": 0,
+          "weight": 2.465521
+        },
+        {
+          "code": "100090",
+          "name": "SK오션플랜트",
+          "quantity": 3021,
+          "evaluationAmount": 34862340,
+          "marketCap": 0,
+          "weight": 1.686275
+        },
+        {
+          "code": "475150",
+          "name": "SK이터닉스",
+          "quantity": 1134,
+          "evaluationAmount": 56586600,
+          "marketCap": 0,
+          "weight": 2.737068
+        },
+        {
+          "code": "241560",
+          "name": "두산밥캣",
+          "quantity": 2550,
+          "evaluationAmount": 140760000,
+          "marketCap": 0,
+          "weight": 6.808496
+        },
+        {
+          "code": "034020",
+          "name": "두산에너빌리티",
+          "quantity": 2595,
+          "evaluationAmount": 206821500,
+          "marketCap": 0,
+          "weight": 10.00386
+        },
+        {
+          "code": "062040",
+          "name": "산일전기",
+          "quantity": 673,
+          "evaluationAmount": 138638000,
+          "marketCap": 0,
+          "weight": 6.705856
+        },
+        {
+          "code": "112610",
+          "name": "씨에스윈드",
+          "quantity": 1273,
+          "evaluationAmount": 64159200,
+          "marketCap": 0,
+          "weight": 3.103351
+        },
+        {
+          "code": "058610",
+          "name": "에스피지",
+          "quantity": 715,
+          "evaluationAmount": 69569500,
+          "marketCap": 0,
+          "weight": 3.365044
+        },
+        {
+          "code": "105840",
+          "name": "우진",
+          "quantity": 2620,
+          "evaluationAmount": 34846000,
+          "marketCap": 0,
+          "weight": 1.685485
+        },
+        {
+          "code": "023160",
+          "name": "태광",
+          "quantity": 1762,
+          "evaluationAmount": 48278800,
+          "marketCap": 0,
+          "weight": 2.335223
+        },
+        {
+          "code": "051600",
+          "name": "한전KPS",
+          "quantity": 1105,
+          "evaluationAmount": 49890750,
+          "marketCap": 0,
+          "weight": 2.413192
+        },
+        {
+          "code": "052690",
+          "name": "한전기술",
+          "quantity": 919,
+          "evaluationAmount": 111290900,
+          "marketCap": 0,
+          "weight": 5.383089
+        },
+        {
+          "code": "011210",
+          "name": "현대위아",
+          "quantity": 807,
+          "evaluationAmount": 42851700,
+          "marketCap": 0,
+          "weight": 2.072717
+        },
+        {
+          "code": "298040",
+          "name": "효성중공업",
+          "quantity": 71,
+          "evaluationAmount": 199084000,
+          "marketCap": 0,
+          "weight": 9.629601
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 10116417,
+          "weight": 0.489326
+        }
+      ],
+      "collectedAt": "2026-09-30T20:28:59.147Z"
     },
     "455660": {
       "etf": {
@@ -79787,7 +82075,300 @@
         }
       ],
       "collectedAt": "2026-09-30T20:28:46.656Z"
+    },
+    "0091M0": {
+      "etf": {
+        "code": "0091M0",
+        "name": "HANARO 27-06 회사채(AA-이상)액티브",
+        "date": "20261001"
+      },
+      "summary": {
+        "totalComponents": 14,
+        "totalWeight": 99.99999899999999
+      },
+      "components": [
+        {
+          "code": "KR6138931E68",
+          "name": "BNK금융지주44",
+          "quantity": 0,
+          "evaluationAmount": 7760210,
+          "marketCap": 0,
+          "weight": 7.633273
+        },
+        {
+          "code": "KR6018673A68",
+          "name": "SK가스37-3",
+          "quantity": 0,
+          "evaluationAmount": 7674894,
+          "marketCap": 0,
+          "weight": 7.549352
+        },
+        {
+          "code": "KR6037712E67",
+          "name": "광주신세계2-2",
+          "quantity": 0,
+          "evaluationAmount": 3881726,
+          "marketCap": 0,
+          "weight": 3.818231
+        },
+        {
+          "code": "KR6003541F81",
+          "name": "대신증권25-3",
+          "quantity": 0,
+          "evaluationAmount": 7693764,
+          "marketCap": 0,
+          "weight": 7.567914
+        },
+        {
+          "code": "KR6055551E89",
+          "name": "신한금융지주168-1",
+          "quantity": 0,
+          "evaluationAmount": 7747957,
+          "marketCap": 0,
+          "weight": 7.62122
+        },
+        {
+          "code": "KR6008672F73",
+          "name": "신한투자증권2507-1",
+          "quantity": 0,
+          "evaluationAmount": 7742135,
+          "marketCap": 0,
+          "weight": 7.615493
+        },
+        {
+          "code": "KR6425832C46",
+          "name": "아이지이1-2(녹)",
+          "quantity": 0,
+          "evaluationAmount": 7836243,
+          "marketCap": 0,
+          "weight": 7.708062
+        },
+        {
+          "code": "KR6131791E62",
+          "name": "연합자산관리36-1",
+          "quantity": 0,
+          "evaluationAmount": 7793515,
+          "marketCap": 0,
+          "weight": 7.666033
+        },
+        {
+          "code": "KR6003671E76",
+          "name": "포스코퓨처엠22-1(녹)",
+          "quantity": 0,
+          "evaluationAmount": 7789890,
+          "marketCap": 0,
+          "weight": 7.662467
+        },
+        {
+          "code": "KR6064981F64",
+          "name": "한국남동발전66-1",
+          "quantity": 0,
+          "evaluationAmount": 7754941,
+          "marketCap": 0,
+          "weight": 7.62809
+        },
+        {
+          "code": "KR6066561780",
+          "name": "한국중부발전39-1",
+          "quantity": 0,
+          "evaluationAmount": 7701106,
+          "marketCap": 0,
+          "weight": 7.575136
+        },
+        {
+          "code": "KR6005441F79",
+          "name": "현대지에프홀딩스1-1",
+          "quantity": 0,
+          "evaluationAmount": 7760872,
+          "marketCap": 0,
+          "weight": 7.633924
+        },
+        {
+          "code": "KR6039092E97",
+          "name": "현대트랜시스47-2",
+          "quantity": 0,
+          "evaluationAmount": 7728511,
+          "marketCap": 0,
+          "weight": 7.602092
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 4797182,
+          "weight": 4.718712
+        }
+      ],
+      "collectedAt": "2026-09-30T20:28:56.798Z"
+    },
+    "0123S0": {
+      "etf": {
+        "code": "0123S0",
+        "name": "HANARO 26-12 은행채(AA+이상)액티브",
+        "date": "20261001"
+      },
+      "summary": {
+        "totalComponents": 7,
+        "totalWeight": 100
+      },
+      "components": [
+        {
+          "code": "KR6192532F67",
+          "name": "광주은행2025-06이1.5갑-30",
+          "quantity": 0,
+          "evaluationAmount": 16204870,
+          "marketCap": 0,
+          "weight": 15.882266
+        },
+        {
+          "code": "KR310205GE80",
+          "name": "산업금융채권24신이0206-0808-1",
+          "quantity": 0,
+          "evaluationAmount": 16171548,
+          "marketCap": 0,
+          "weight": 15.849607
+        },
+        {
+          "code": "KR380605GF70",
+          "name": "수산금융채권(은행)25-7이17-28",
+          "quantity": 0,
+          "evaluationAmount": 16129032,
+          "marketCap": 0,
+          "weight": 15.807938
+        },
+        {
+          "code": "KR6000014EC9",
+          "name": "신한은행28-12-이-2-A",
+          "quantity": 0,
+          "evaluationAmount": 16140677,
+          "marketCap": 0,
+          "weight": 15.819351
+        },
+        {
+          "code": "KR310512GF87",
+          "name": "중소기업은행(신)2508이1.5A-21",
+          "quantity": 0,
+          "evaluationAmount": 16103161,
+          "marketCap": 0,
+          "weight": 15.782582
+        },
+        {
+          "code": "KR6004941F69",
+          "name": "하나은행48-06이1.5갑-02",
+          "quantity": 0,
+          "evaluationAmount": 16129032,
+          "marketCap": 0,
+          "weight": 15.807938
+        },
+        {
+          "code": "KRD010010001",
+          "name": "원화현금",
+          "quantity": 0,
+          "evaluationAmount": 0,
+          "marketCap": 5152901,
+          "weight": 5.050318
+        }
+      ],
+      "collectedAt": "2026-09-30T20:28:56.853Z"
     }
   },
-  "failures": {}
+  "failures": {
+    "304760": {
+      "code": "304760",
+      "name": "HANARO KRX300",
+      "attempts": 1,
+      "error": "[304760] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "322400": {
+      "code": "322400",
+      "name": "HANARO e커머스",
+      "attempts": 1,
+      "error": "[322400] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "322410": {
+      "code": "322410",
+      "name": "HANARO K고배당",
+      "attempts": 1,
+      "error": "[322410] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "332940": {
+      "code": "332940",
+      "name": "HANARO MSCI Korea TR",
+      "attempts": 1,
+      "error": "[332940] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "367740": {
+      "code": "367740",
+      "name": "HANARO Fn5G산업",
+      "attempts": 1,
+      "error": "[367740] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "368190": {
+      "code": "368190",
+      "name": "HANARO Fn K-뉴딜디지털플러스",
+      "attempts": 1,
+      "error": "[368190] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "381560": {
+      "code": "381560",
+      "name": "HANARO Fn전기&수소차",
+      "attempts": 1,
+      "error": "[381560] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "381570": {
+      "code": "381570",
+      "name": "HANARO Fn친환경에너지",
+      "attempts": 1,
+      "error": "[381570] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "395270": {
+      "code": "395270",
+      "name": "HANARO Fn K-반도체",
+      "attempts": 1,
+      "error": "[395270] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "402460": {
+      "code": "402460",
+      "name": "HANARO Fn K-메타버스MZ",
+      "attempts": 1,
+      "error": "[402460] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "407300": {
+      "code": "407300",
+      "name": "HANARO Fn골프테마",
+      "attempts": 1,
+      "error": "[407300] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "438900": {
+      "code": "438900",
+      "name": "HANARO Fn K-푸드",
+      "attempts": 1,
+      "error": "[438900] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "441540": {
+      "code": "441540",
+      "name": "HANARO Fn조선해운",
+      "attempts": 1,
+      "error": "[441540] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "453060": {
+      "code": "453060",
+      "name": "HANARO KOFR금리액티브(합성)",
+      "attempts": 1,
+      "error": "[453060] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "479850": {
+      "code": "479850",
+      "name": "HANARO K-뷰티",
+      "attempts": 1,
+      "error": "[479850] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    },
+    "0155N0": {
+      "code": "0155N0",
+      "name": "HANARO K휴머노이드테마TOP10",
+      "attempts": 1,
+      "error": "[0155N0] 종목검색 팝업 열기 실패: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"btnisuCd_finder_secuprodisu1_\"]:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <img alt=\"검색팝업\" src=\"/pub/img/btn_dbg.png\" id=\"btnisuCd_finder_secuprodisu1_0\" name=\"btnisuCd_finder_secuprodisu1_0\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  7 × retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <main class=\"ip-block-container\">…</main> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle\">…</div> from <div tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ui-id-126\" aria-describedby=\"ui-id-125\" id=\"jsLayer_finder_secuprodisu1_0\" class=\"ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ci-dialog pop_opened pop_opened1 ui-draggable\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    }
+  }
 }
