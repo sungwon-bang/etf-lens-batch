@@ -3,9 +3,9 @@
     "date": "20261001",
     "total": 1171,
     "completed": 609,
-    "failed": 12,
+    "failed": 29,
     "status": "failed",
-    "updatedAt": "2026-09-30T23:28:28.078Z"
+    "updatedAt": "2026-09-30T23:39:46.151Z"
   },
   "items": {
     "100910": {
@@ -331968,11 +331968,53 @@
     }
   },
   "failures": {
+    "195970": {
+      "code": "195970",
+      "name": "PLUS 선진국MSCI(합성 H)",
+      "attempts": 1,
+      "error": "[195970] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=195970, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃20분 09초연장 서비스 소개 통계 쉽게 보는 통계 분석보고서 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.10.01 AM 08:20:05 (20분 지연 정보, 정규시장) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 US00724F1012 ADOBE INC 5.03 - - - US0079031078 ADVANCED MICRO DEVICES 20.62 - - - US0090661010 AIRBNB INC-CLASS A 5.48 - - - US02043Q1076 ALNYLAM PHARMACEUTICALS INC 1.52 - - - US02079K3059 ALPHABET INC-CL A 26.86 - - - US02079K1079 ALP\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "195980": {
+      "code": "195980",
+      "name": "PLUS 신흥국MSCI(합성 H)",
+      "attempts": 1,
+      "error": "[195980] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=195980, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃18분 45초연장 서비스 소개 통계 쉽게 보는 통계 분석보고서 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.10.01 AM 08:20:05 (20분 지연 정보, 정규시장) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 US00724F1012 ADOBE INC 5.03 - - - US0079031078 ADVANCED MICRO DEVICES 20.62 - - - US0090661010 AIRBNB INC-CLASS A 5.48 - - - US02043Q1076 ALNYLAM PHARMACEUTICALS INC 1.52 - - - US02079K3059 ALPHABET INC-CL A 26.86 - - - US02079K1079 ALP\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
     "213630": {
       "code": "213630",
       "name": "PLUS 미국다우존스고배당주(합성 H)",
       "attempts": 1,
       "error": "[213630] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=213630, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃28분 35초연장 서비스 소개 통계 쉽게 보는 통계 분석보고서 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.10.01 AM 08:20:05 (20분 지연 정보, 정규시장) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 US00724F1012 ADOBE INC 5.03 - - - US0079031078 ADVANCED MICRO DEVICES 20.62 - - - US0090661010 AIRBNB INC-CLASS A 5.48 - - - US02043Q1076 ALNYLAM PHARMACEUTICALS INC 1.52 - - - US02079K3059 ALPHABET INC-CL A 26.86 - - - US02079K1079 ALP\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "238670": {
+      "code": "238670",
+      "name": "PLUS 스마트베타Quality채권혼합",
+      "attempts": 1,
+      "error": "[238670] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=238670, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃18분 45초연장 서비스 소개 통계 쉽게 보는 통계 분석보고서 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.10.01 AM 08:20:05 (20분 지연 정보, 정규시장) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 IE00B4BNMY34 ACCENTURE PLC-CL A 179.94 - - - US02209S1033 ALTRIA GROUP INC 173.25 - - - GB00BRXH2664 ANGLOGOLD ASHANTI PLC 165.94 - - - US00206R1023 AT&T INC 1,186.22 - - - CA0641491075 BANK OF NOVA SCOTIA 241.22 - - - US09260D1072 BLAC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "239660": {
+      "code": "239660",
+      "name": "PLUS 우량회사채50",
+      "attempts": 1,
+      "error": "[239660] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=239660, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃15분 58초연장 서비스 소개 통계 쉽게 보는 통계 분석보고서 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.10.01 AM 08:20:05 (20분 지연 정보, 정규시장) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 IE00B4BNMY34 ACCENTURE PLC-CL A 179.94 - - - US02209S1033 ALTRIA GROUP INC 173.25 - - - GB00BRXH2664 ANGLOGOLD ASHANTI PLC 165.94 - - - US00206R1023 AT&T INC 1,186.22 - - - CA0641491075 BANK OF NOVA SCOTIA 241.22 - - - US09260D1072 BLAC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "256450": {
+      "code": "256450",
+      "name": "PLUS 심천차이넥스트(합성)",
+      "attempts": 1,
+      "error": "[256450] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=256450, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃17분 22초연장 서비스 소개 통계 쉽게 보는 통계 분석보고서 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.10.01 AM 08:20:05 (20분 지연 정보, 정규시장) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 IE00B4BNMY34 ACCENTURE PLC-CL A 179.94 - - - US02209S1033 ALTRIA GROUP INC 173.25 - - - GB00BRXH2664 ANGLOGOLD ASHANTI PLC 165.94 - - - US00206R1023 AT&T INC 1,186.22 - - - CA0641491075 BANK OF NOVA SCOTIA 241.22 - - - US09260D1072 BLAC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "266550": {
+      "code": "266550",
+      "name": "PLUS 중형주저변동50",
+      "attempts": 1,
+      "error": "[266550] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=266550, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃10분 23초연장 서비스 소개 통계 쉽게 보는 통계 분석보고서 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.10.01 AM 08:20:05 (20분 지연 정보, 정규시장) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 US00724F1012 ADOBE INC 5.03 - - - US0079031078 ADVANCED MICRO DEVICES 20.62 - - - US0090661010 AIRBNB INC-CLASS A 5.48 - - - US02043Q1076 ALNYLAM PHARMACEUTICALS INC 1.52 - - - US02079K3059 ALPHABET INC-CL A 26.86 - - - US02079K1079 ALP\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "280920": {
+      "code": "280920",
+      "name": "PLUS 주도업종",
+      "attempts": 1,
+      "error": "[280920] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=280920, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃11분 46초연장 서비스 소개 통계 쉽게 보는 통계 분석보고서 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.10.01 AM 08:20:05 (20분 지연 정보, 정규시장) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 US00724F1012 ADOBE INC 5.03 - - - US0079031078 ADVANCED MICRO DEVICES 20.62 - - - US0090661010 AIRBNB INC-CLASS A 5.48 - - - US02043Q1076 ALNYLAM PHARMACEUTICALS INC 1.52 - - - US02079K3059 ALPHABET INC-CL A 26.86 - - - US02079K1079 ALP\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
     },
     "287180": {
       "code": "287180",
@@ -331991,6 +332033,24 @@
       "name": "PLUS 미국장기우량회사채",
       "attempts": 1,
       "error": "[332620] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=332620, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃24분 24초연장 서비스 소개 통계 쉽게 보는 통계 분석보고서 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.10.01 AM 08:20:05 (20분 지연 정보, 정규시장) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 US00724F1012 ADOBE INC 5.03 - - - US0079031078 ADVANCED MICRO DEVICES 20.62 - - - US0090661010 AIRBNB INC-CLASS A 5.48 - - - US02043Q1076 ALNYLAM PHARMACEUTICALS INC 1.52 - - - US02079K3059 ALPHABET INC-CL A 26.86 - - - US02079K1079 ALP\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "421320": {
+      "code": "421320",
+      "name": "PLUS 우주항공",
+      "attempts": 1,
+      "error": "[421320] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=421320, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃15분 57초연장 서비스 소개 통계 쉽게 보는 통계 분석보고서 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.10.01 AM 08:20:05 (20분 지연 정보, 정규시장) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 US00724F1012 ADOBE INC 5.03 - - - US0079031078 ADVANCED MICRO DEVICES 20.62 - - - US0090661010 AIRBNB INC-CLASS A 5.48 - - - US02043Q1076 ALNYLAM PHARMACEUTICALS INC 1.52 - - - US02079K3059 ALPHABET INC-CL A 26.86 - - - US02079K1079 ALP\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "447660": {
+      "code": "447660",
+      "name": "PLUS 애플채권혼합",
+      "attempts": 1,
+      "error": "[447660] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=447660, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃17분 21초연장 서비스 소개 통계 쉽게 보는 통계 분석보고서 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.10.01 AM 08:20:05 (20분 지연 정보, 정규시장) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 US00724F1012 ADOBE INC 5.03 - - - US0079031078 ADVANCED MICRO DEVICES 20.62 - - - US0090661010 AIRBNB INC-CLASS A 5.48 - - - US02043Q1076 ALNYLAM PHARMACEUTICALS INC 1.52 - - - US02079K3059 ALPHABET INC-CL A 26.86 - - - US02079K1079 ALP\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "451000": {
+      "code": "451000",
+      "name": "PLUS 종합채권(AA-이상)액티브",
+      "attempts": 1,
+      "error": "[451000] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=451000, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃11분 47초연장 서비스 소개 통계 쉽게 보는 통계 분석보고서 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.10.01 AM 08:20:05 (20분 지연 정보, 정규시장) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 IE00B4BNMY34 ACCENTURE PLC-CL A 179.94 - - - US02209S1033 ALTRIA GROUP INC 173.25 - - - GB00BRXH2664 ANGLOGOLD ASHANTI PLC 165.94 - - - US00206R1023 AT&T INC 1,186.22 - - - CA0641491075 BANK OF NOVA SCOTIA 241.22 - - - US09260D1072 BLAC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
     },
     "456200": {
       "code": "456200",
@@ -332016,6 +332076,18 @@
       "attempts": 1,
       "error": "[464470] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=464470, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃23분 01초연장 서비스 소개 통계 쉽게 보는 통계 분석보고서 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.10.01 AM 08:20:05 (20분 지연 정보, 정규시장) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 IE00B4BNMY34 ACCENTURE PLC-CL A 179.94 - - - US02209S1033 ALTRIA GROUP INC 173.25 - - - GB00BRXH2664 ANGLOGOLD ASHANTI PLC 165.94 - - - US00206R1023 AT&T INC 1,186.22 - - - CA0641491075 BANK OF NOVA SCOTIA 241.22 - - - US09260D1072 BLAC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
     },
+    "464920": {
+      "code": "464920",
+      "name": "PLUS 일본반도체소부장",
+      "attempts": 1,
+      "error": "[464920] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=464920, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃14분 32초연장 서비스 소개 통계 쉽게 보는 통계 분석보고서 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.10.01 AM 08:20:05 (20분 지연 정보, 정규시장) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 US00724F1012 ADOBE INC 5.03 - - - US0079031078 ADVANCED MICRO DEVICES 20.62 - - - US0090661010 AIRBNB INC-CLASS A 5.48 - - - US02043Q1076 ALNYLAM PHARMACEUTICALS INC 1.52 - - - US02079K3059 ALPHABET INC-CL A 26.86 - - - US02079K1079 ALP\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "489000": {
+      "code": "489000",
+      "name": "PLUS 일본엔화초단기국채(합성)",
+      "attempts": 1,
+      "error": "[489000] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=489000, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃13분 10초연장 서비스 소개 통계 쉽게 보는 통계 분석보고서 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.10.01 AM 08:20:05 (20분 지연 정보, 정규시장) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 IE00B4BNMY34 ACCENTURE PLC-CL A 179.94 - - - US02209S1033 ALTRIA GROUP INC 173.25 - - - GB00BRXH2664 ANGLOGOLD ASHANTI PLC 165.94 - - - US00206R1023 AT&T INC 1,186.22 - - - CA0641491075 BANK OF NOVA SCOTIA 241.22 - - - US09260D1072 BLAC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
     "494420": {
       "code": "494420",
       "name": "PLUS 미국배당증가성장주데일리커버드콜",
@@ -332039,6 +332111,35 @@
       "name": "PLUS 삼성전자단일종목레버리지",
       "attempts": 1,
       "error": "[0193K0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0193K0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃21분 38초연장 서비스 소개 통계 쉽게 보는 통계 분석보고서 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.10.01 AM 08:20:05 (20분 지연 정보, 정규시장) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 US00724F1012 ADOBE INC 5.03 - - - US0079031078 ADVANCED MICRO DEVICES 20.62 - - - US0090661010 AIRBNB INC-CLASS A 5.48 - - - US02043Q1076 ALNYLAM PHARMACEUTICALS INC 1.52 - - - US02079K3059 ALPHABET INC-CL A 26.86 - - - US02079K1079 ALP\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "0193L0": {
+      "code": "0193L0",
+      "name": "PLUS 삼성전자선물단일종목인버스2X",
+      "attempts": 1,
+      "error": "[0193L0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0193L0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃20분 10초연장 서비스 소개 통계 쉽게 보는 통계 분석보고서 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.10.01 AM 08:20:05 (20분 지연 정보, 정규시장) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 IE00B4BNMY34 ACCENTURE PLC-CL A 179.94 - - - US02209S1033 ALTRIA GROUP INC 173.25 - - - GB00BRXH2664 ANGLOGOLD ASHANTI PLC 165.94 - - - US00206R1023 AT&T INC 1,186.22 - - - CA0641491075 BANK OF NOVA SCOTIA 241.22 - - - US09260D1072 BLAC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "0184N0": {
+      "code": "0184N0",
+      "name": "PLUS 은채권혼합",
+      "attempts": 1,
+      "error": "[0184N0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0184N0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃14분 34초연장 서비스 소개 통계 쉽게 보는 통계 분석보고서 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.10.01 AM 08:20:05 (20분 지연 정보, 정규시장) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 IE00B4BNMY34 ACCENTURE PLC-CL A 179.94 - - - US02209S1033 ALTRIA GROUP INC 173.25 - - - GB00BRXH2664 ANGLOGOLD ASHANTI PLC 165.94 - - - US00206R1023 AT&T INC 1,186.22 - - - CA0641491075 BANK OF NOVA SCOTIA 241.22 - - - US09260D1072 BLAC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "0098N0": {
+      "code": "0098N0",
+      "name": "PLUS 자사주매입고배당주",
+      "attempts": 1,
+      "error": "[0098N0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0098N0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃13분 09초연장 서비스 소개 통계 쉽게 보는 통계 분석보고서 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.10.01 AM 08:20:05 (20분 지연 정보, 정규시장) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 US00724F1012 ADOBE INC 5.03 - - - US0079031078 ADVANCED MICRO DEVICES 20.62 - - - US0090661010 AIRBNB INC-CLASS A 5.48 - - - US02043Q1076 ALNYLAM PHARMACEUTICALS INC 1.52 - - - US02079K3059 ALPHABET INC-CL A 26.86 - - - US02079K1079 ALP\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "0184L0": {
+      "code": "0184L0",
+      "name": "PLUS 중기종합채권(A-이상)액티브",
+      "attempts": 1,
+      "error": "[0184L0] 검색 결과 선택 실패: ETF 검색 결과가 없습니다. 검색어=0184L0, 화면=[{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"text\":\"본문내용 바로가기 종목검색 ENG MY 방성원님자동 로그아웃10분 23초연장 서비스 소개 통계 쉽게 보는 통계 분석보고서 간행물 데이터 상품 기본 통계 전체열기 지수 주식 증권상품 ETF 전종목 시세 전종목 등락률 개별종목 시세 추이 전종목 기본정보 개별종목 종합정보 투자자별 거래실적 투자자별 거래실적(개별종목) PDF(Portfolio Deposit File) 세부안내 ETN ELW 상장형 수익증권 채권 파생상품 일반상품 해외연계시장 파생결합증권 [13108] PDF(Portfolio Deposit File) [13108] PDF(Portfolio Deposit File) 통계 기본 통계 증권상품 ETF PDF(Portfolio Deposit File) 종목명 조회일자 달력열기 조회 Close 2026.10.01 AM 08:20:05 (20분 지연 정보, 정규시장) 주(계약) 천주(계약) 백만주(계약) 원 천원 백만원 십억원 종목코드 ↕ 구성종목명 ↕ 주식수(계약수) ↕ 평가금액 ↕ 시가총액 ↕ 시가총액기준 구성비중 ↕ 종목코드 구성종목명 주식수(계약수) 평가금액 시가총액 시가총액기준구성비중 IE00B4BNMY34 ACCENTURE PLC-CL A 179.94 - - - US02209S1033 ALTRIA GROUP INC 173.25 - - - GB00BRXH2664 ANGLOGOLD ASHANTI PLC 165.94 - - - US00206R1023 AT&T INC 1,186.22 - - - CA0641491075 BANK OF NOVA SCOTIA 241.22 - - - US09260D1072 BLAC\"},{\"pageUrl\":\"https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108#\",\"frameUrl\":\"\",\"text\":\"\"}]"
+    },
+    "_batch": {
+      "stage": "batch-initialization",
+      "error": "KRX 로그인 진입 버튼을 찾지 못했습니다. 현재 URL: https://data.krx.co.kr/comm/error/blockError_01.jsp",
+      "failedAt": "2026-09-30T23:39:46.151Z"
     }
   }
 }
