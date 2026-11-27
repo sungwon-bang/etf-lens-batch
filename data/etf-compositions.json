@@ -1,18 +1,18 @@
 {
   "meta": {
     "date": "20261127",
-    "total": 0,
+    "total": 1191,
     "completed": 0,
     "failed": 1,
     "status": "failed",
-    "updatedAt": "2026-11-27T11:36:27.613Z"
+    "updatedAt": "2026-11-27T11:47:28.680Z"
   },
   "items": {},
   "failures": {
     "_batch": {
       "stage": "batch-initialization",
-      "error": "KRX ETF 목록 API 오류 (404)",
-      "failedAt": "2026-11-27T11:36:27.612Z"
+      "error": "로그인 후 인증된 PDF 페이지를 찾지 못했습니다: [{\"url\":\"https://data.krx.co.kr/contents/MDC/COMS/client/MDCCOMS001.cmd?locale=ko_KR&redirectURL=b2h0aEZNWThrQ2s4amxkQjNPS3pLdmxteXFTdGFHRElNWlh0c2pYbU4rRnRVSml4MXpWeWwrZUpBVUlJUmlERVdFT1ZUb2k3a2JiMURsalZKenFxUENLK2U2VkZ4eStTbkNjTDlZT25YWXM9\",\"title\":\"로그인 - KRX | KRX Data Marketplace\",\"body\":\"\"}]",
+      "failedAt": "2026-11-27T11:47:28.680Z"
     }
   }
 }
